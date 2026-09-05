@@ -1,78 +1,662 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1450" height="790" viewBox="0 0 1450 790" font-family="Arial, Helvetica, sans-serif">
-<rect width="1450" height="790" fill="#ffffff"/>
-<g transform="translate(0,0)"><text x="725" y="24" text-anchor="middle" font-size="18" font-weight="bold" fill="#202124">Dark</text>
-<text x="725" y="42" text-anchor="middle" font-size="11" fill="#5f6368">DARK — Dark - the knot · Knot topology - Winden eras linked by the cave corridor</text>
-<line x1="1100.0" y1="90.0" x2="1100.0" y2="474.0" stroke="#9aa0a6" stroke-width="2" stroke-opacity="1.0"/>
-<rect x="1093.0" y="72.0" width="14" height="14" fill="#e8f0fe" stroke="#202124"/>
-<text x="1100.0" y="58.0" text-anchor="middle" font-size="11" fill="#202124">E2019: 2019/2020 Winden</text>
-<line x1="850.0" y1="90.0" x2="850.0" y2="258.0" stroke="#9aa0a6" stroke-width="2" stroke-opacity="1.0"/>
-<text x="850.0" y="82.0" text-anchor="middle" font-size="10" fill="#5f6368">* already existed</text>
-<text x="850.0" y="58.0" text-anchor="middle" font-size="11" fill="#202124">E2052: 2052/2053 Winden</text>
-<line x1="600.0" y1="90.0" x2="600.0" y2="312.0" stroke="#9aa0a6" stroke-width="2" stroke-opacity="1.0"/>
-<text x="600.0" y="82.0" text-anchor="middle" font-size="10" fill="#5f6368">* already existed</text>
-<text x="600.0" y="58.0" text-anchor="middle" font-size="11" fill="#202124">E1986: 1986/1987 Winden</text>
-<line x1="350.0" y1="90.0" x2="350.0" y2="96.0" stroke="#9aa0a6" stroke-width="2" stroke-opacity="1.0"/>
-<text x="350.0" y="82.0" text-anchor="middle" font-size="10" fill="#5f6368">* already existed</text>
-<text x="350.0" y="58.0" text-anchor="middle" font-size="11" fill="#202124">E1919: 1920/1921 Winden</text>
-<line x1="100.0" y1="90.0" x2="100.0" y2="96.0" stroke="#9aa0a6" stroke-width="2" stroke-opacity="1.0"/>
-<text x="100.0" y="82.0" text-anchor="middle" font-size="10" fill="#5f6368">* already existed</text>
-<text x="100.0" y="58.0" text-anchor="middle" font-size="11" fill="#202124">E1953: 1953/1954 Winden</text>
-<polyline points="1100.0,150.0 975.0,150.0 975.0,204.0 850.0,204.0" fill="none" stroke="#2f7d4f" stroke-width="2" stroke-opacity="0.6"/>
-<circle cx="975.0" cy="177.0" r="10" fill="#ffffff" stroke="#2f7d4f"/>
-<text x="975.0" y="181.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2f7d4f">·</text>
-<polyline points="850.0,258.0 725.0,258.0 725.0,312.0 600.0,312.0" fill="none" stroke="#2f7d4f" stroke-width="2" stroke-opacity="0.6"/>
-<circle cx="725.0" cy="285.0" r="10" fill="#ffffff" stroke="#2f7d4f"/>
-<text x="725.0" y="289.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2f7d4f">·</text>
-<polyline points="600.0,312.0 850.0,312.0 850.0,420.0 1100.0,420.0" fill="none" stroke="#2f7d4f" stroke-width="2" stroke-opacity="0.6"/>
-<circle cx="850.0" cy="366.0" r="10" fill="#ffffff" stroke="#2f7d4f"/>
-<text x="850.0" y="370.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2f7d4f">·</text>
-<line x1="1100.0" y1="96.0" x2="1100.0" y2="150.0" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
-<line x1="850.0" y1="204.0" x2="850.0" y2="258.0" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
-<line x1="600.0" y1="312.0" x2="600.0" y2="312.0" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
-<line x1="1100.0" y1="150.0" x2="850.0" y2="204.0" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
-<line x1="850.0" y1="258.0" x2="600.0" y2="312.0" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
-<rect x="1094.0" y="90.0" width="12" height="12" fill="#3d8f4f" stroke="#202124"/>
-<text x="1100.0" y="112.0" text-anchor="middle" font-size="9" fill="#5f6368">0</text>
-<circle cx="1100.0" cy="150.0" r="5" fill="#ffffff" stroke="#202124"/>
-<text x="1100.0" y="166.0" text-anchor="middle" font-size="9" fill="#5f6368">10</text>
-<circle cx="850.0" cy="204.0" r="5" fill="#ffffff" stroke="#202124"/>
-<text x="850.0" y="220.0" text-anchor="middle" font-size="9" fill="#5f6368">20</text>
-<circle cx="850.0" cy="258.0" r="5" fill="#ffffff" stroke="#202124"/>
-<text x="850.0" y="274.0" text-anchor="middle" font-size="9" fill="#5f6368">30</text>
-<circle cx="600.0" cy="312.0" r="5" fill="#ffffff" stroke="#202124"/>
-<text x="600.0" y="328.0" text-anchor="middle" font-size="9" fill="#5f6368">40</text>
-<rect x="1094.0" y="360.0" width="12" height="12" fill="#5f6368" stroke="#202124"/>
-<text x="1100.0" y="382.0" text-anchor="middle" font-size="9" fill="#5f6368">50</text>
-<circle cx="1100.0" cy="420.0" r="5" fill="#ffffff" stroke="#202124"/>
-<text x="1100.0" y="436.0" text-anchor="middle" font-size="9" fill="#5f6368">60</text>
-<rect x="1094.0" y="468.0" width="12" height="12" fill="#5f6368" stroke="#202124"/>
-<text x="1100.0" y="490.0" text-anchor="middle" font-size="9" fill="#5f6368">70</text>
-<text x="1114.0" y="370.0" font-size="14" font-weight="bold" fill="#c0392b">×</text>
-<text x="1118.0" y="370.0" font-size="8" fill="#5f6368">martha2-2019</text>
-<text x="1114.0" y="478.0" font-size="14" font-weight="bold" fill="#000000">∅</text>
-<text x="1118.0" y="478.0" font-size="8" fill="#5f6368">jonas-2019</text>
-<line x1="1100.0" y1="96.0" x2="1043.3" y2="75.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="1043.3" y="61.0" font-size="9" fill="#5f6368">Jonas returns to 2019</text>
-<text x="1043.3" y="72.0" font-size="9" fill="#5f6368">after the bunke...</text>
-<line x1="1100.0" y1="150.0" x2="1112.0" y2="172.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="1112.0" y="180.0" font-size="9" fill="#5f6368">Jonas enters the cave</text>
-<text x="1112.0" y="191.0" font-size="9" fill="#5f6368">heading to the future</text>
-<line x1="850.0" y1="204.0" x2="787.9" y2="183.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="787.9" y="169.0" font-size="9" fill="#5f6368">Jonas arrives in 2052 -</text>
-<text x="787.9" y="180.0" font-size="9" fill="#5f6368">the wastela...</text>
-<line x1="850.0" y1="258.0" x2="862.0" y2="280.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="862.0" y="288.0" font-size="9" fill="#5f6368">Jonas leaves 2052 via</text>
-<text x="862.0" y="299.0" font-size="9" fill="#5f6368">the corridor</text>
-<line x1="600.0" y1="312.0" x2="612.0" y2="334.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="612.0" y="342.0" font-size="9" fill="#5f6368">Jonas arrives 1986 -</text>
-<text x="612.0" y="353.0" font-size="9" fill="#5f6368">meets the 1986 strand...</text>
-<line x1="1100.0" y1="366.0" x2="1040.6" y2="345.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="1040.6" y="331.0" font-size="9" fill="#5f6368">Adam (old Jonas) kills</text>
-<text x="1040.6" y="342.0" font-size="9" fill="#5f6368">Martha in 2019/202...</text>
-<line x1="1100.0" y1="420.0" x2="1112.0" y2="420.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="1112.0" y="417.0" font-size="9" fill="#5f6368">Alternate Martha arrives</text>
-<text x="1112.0" y="428.0" font-size="9" fill="#5f6368">- saves Jonas mome...</text>
-<line x1="1100.0" y1="474.0" x2="1112.0" y2="496.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="1112.0" y="504.0" font-size="9" fill="#5f6368">The origin world erases</text>
-<text x="1112.0" y="515.0" font-size="9" fill="#5f6368">both knot world...</text></g>
+<svg xmlns="http://www.w3.org/2000/svg" width="2850" height="6038" viewBox="0 0 2850 6038" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" role="img" aria-labelledby="atlas-title atlas-desc">
+<title id="atlas-title">Dark</title>
+<desc id="atlas-desc">Worlds and Thread atlas. Story order progresses downward. Connections use reserved routing space. Full relationship and citation ledgers follow the chart. The HTML companion contains the complete accessible model.</desc>
+<rect width="2850" height="6038" fill="#f5f6f8"/>
+<defs >
+<marker id="arrow-split" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
+<path d="M 1 1 L 9 5 L 1 9 Z" fill="#ad6200"/>
+</marker>
+<marker id="arrow-transfer" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
+<path d="M 1 1 L 9 5 L 1 9 Z" fill="#285ac7"/>
+</marker>
+<marker id="arrow-route" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
+<path d="M 1 1 L 9 5 L 1 9 Z" fill="#087d60"/>
+</marker>
+<marker id="arrow-reference" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
+<path d="M 1 1 L 9 5 L 1 9 Z" fill="#7a637c"/>
+</marker>
+</defs>
+
+<style>
+text { font-kerning: normal; }
+a { cursor: pointer; }
+a:hover text { text-decoration: underline; }
+.card:hover > rect { stroke: #879ead; }
+:target > rect { stroke: #285ac7; stroke-width: 2; }
+.hide-split .layer-split,
+.hide-transfer .layer-transfer,
+.hide-route .layer-route,
+.hide-evidence .citation { display: none; }
+</style>
+<text letter-spacing="1.5" x="40" y="47" font-size="11" fill="#087d60" font-weight="bold">ELSEHOW  /  WORLDS &amp; THREAD</text>
+<text x="40" y="103" font-size="34" fill="#172a3a" font-weight="bold">Dark</text>
+<text x="40" y="135" font-size="15" fill="#526575">Knot topology - Winden eras linked by the cave corridor</text>
+<text x="40" y="169" font-size="12" fill="#526575">2D · categorical world columns · Story-order ranks, not elapsed time. Equal ranks do not assert physical simultaneity.</text>
+<line x1="45" y1="203" x2="76" y2="203" stroke="#ad6200" stroke-width="4"/>
+<text x="90" y="205" font-size="12" fill="#172a3a">Amber S± — Split outcomes. + and − are signs, not fates.</text>
+<line x1="45" y1="230" x2="76" y2="230" stroke="#285ac7" stroke-width="4"/>
+<text x="90" y="232" font-size="12" fill="#172a3a">Blue T — Directed transfers. B body · M memory · C consciousness · S signal · ? literal/unspecified mechanism.</text>
+<line x1="45" y1="257" x2="76" y2="257" stroke="#087d60" stroke-width="4"/>
+<text x="90" y="259" font-size="12" fill="#172a3a">Emerald V / L — Numbered visits and explicit links only. Emerald centre on a cable means the route follows that connection.</text>
+<line x1="45" y1="284" x2="76" y2="284" stroke="#667b8a" stroke-width="4"/>
+<text x="90" y="286" font-size="12" fill="#172a3a">Slate rail — World identity. Cutoff means chart boundary, not destruction. Crossings are bridges; only markers are joins.</text>
+<line x1="45" y1="311" x2="76" y2="311" stroke="#7a637c" stroke-width="4"/>
+<text x="90" y="313" font-size="12" fill="#172a3a">Evidence / fate — [n] opens the evidence record. × dead · ● alive · ? unknown · ∅ nonexistent. Purple dotted connections are annotation references.</text>
+<g >
+<line x1="32" y1="340" x2="2818" y2="340" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="369" font-size="18" fill="#172a3a" font-weight="bold">Declared interpretation</text>
+</g>
+<g >
+<rect x="32" y="388" width="2786" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="411" font-size="11" fill="#526575" font-weight="bold">PROFILE</text>
+<text x="174" y="411" font-size="12" fill="#172a3a">Profile: dark · rules: none</text>
+</g>
+<g >
+<rect x="32" y="438" width="2786" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="461" font-size="11" fill="#526575" font-weight="bold">PARAMETERS</text>
+<text x="174" y="461" font-size="12" fill="#172a3a">history_model: universes · branching: branch · coexistence: coexisting · time_mechanics: [&quot;body&quot;] · joined_worlds: preexist · turnstiles: none ·</text>
+<text x="174" y="479" font-size="12" fill="#172a3a">protagonist_scope: multiple · axis: story_order · validation: evidence_pending · merges: forbidden · genealogy: bootstrap_cycles</text>
+</g>
+<g >
+<rect x="32" y="504" width="2786" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="527" font-size="11" fill="#526575" font-weight="bold">POLICY</text>
+<text x="174" y="527" font-size="12" fill="#172a3a">Explicit records determine geometry. Profile declarations do not manufacture branches, activation intervals, genealogy, repeated worlds or replacement links.</text>
+<text x="174" y="545" font-size="12" fill="#172a3a">No reset is drawn. World-time coordinates are unavailable in this contract.</text>
+</g>
+<g id="g1">
+<line x1="32" y1="586" x2="2818" y2="586" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="615" font-size="18" fill="#172a3a" font-weight="bold">DARK  /  Dark - the knot</text>
+</g>
+<text x="40" y="646" font-size="12" fill="#526575">5 declared worlds · 8 events · 3 transfers · 0 split records</text>
+<g transform="translate(0 678.00)" role="group" aria-label="Atlas for DARK">
+<text x="24" y="20" font-size="11" fill="#526575" font-weight="bold">STORY</text>
+<text x="24" y="37" font-size="11" fill="#526575" font-weight="bold">ORDER ↓</text>
+<rect x="142" y="166" width="480" height="2558" fill="#eef3f7" stroke="#d6e0e8" rx="10"/>
+<g class="card" role="group" aria-label="{}">
+<rect x="294" y="6" width="304" height="124" fill="#e7edf2" rx="9"/>
+<rect x="294" y="4" width="304" height="124" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<text x="310" y="35" font-size="15" fill="#416f99" font-weight="bold">E1919</text>
+<text x="310" y="60" font-size="14" fill="#172a3a" font-weight="bold">1920/1921 Winden</text>
+<text x="310" y="83" font-size="11" fill="#526575">ALREADY EXISTED</text>
+<text x="310" y="106" font-size="11" fill="#526575">Ancestry: off chart</text>
+</g>
+<rect x="156" y="12" width="5" height="110" fill="#416f99" rx="2"/>
+<rect x="650" y="166" width="480" height="2558" fill="#eef3f7" stroke="#d6e0e8" rx="10"/>
+<g class="card" role="group" aria-label="{}">
+<rect x="802" y="6" width="304" height="124" fill="#e7edf2" rx="9"/>
+<rect x="802" y="4" width="304" height="124" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<text x="818" y="35" font-size="15" fill="#78639a" font-weight="bold">E1953</text>
+<text x="818" y="60" font-size="14" fill="#172a3a" font-weight="bold">1953/1954 Winden</text>
+<text x="818" y="83" font-size="11" fill="#526575">ALREADY EXISTED</text>
+<text x="818" y="106" font-size="11" fill="#526575">Ancestry: off chart</text>
+</g>
+<rect x="664" y="12" width="5" height="110" fill="#78639a" rx="2"/>
+<rect x="1158" y="166" width="520" height="2558" fill="#eef3f7" stroke="#d6e0e8" rx="10"/>
+<g class="card" role="group" aria-label="{}">
+<rect x="1350" y="6" width="304" height="124" fill="#e7edf2" rx="9"/>
+<rect x="1350" y="4" width="304" height="124" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<text x="1366" y="35" font-size="15" fill="#397f78" font-weight="bold">E1986</text>
+<text x="1366" y="60" font-size="14" fill="#172a3a" font-weight="bold">1986/1987 Winden</text>
+<text x="1366" y="83" font-size="11" fill="#526575">ALREADY EXISTED</text>
+<text x="1366" y="106" font-size="11" fill="#526575">Ancestry: off chart</text>
+</g>
+<rect x="1172" y="12" width="5" height="110" fill="#397f78" rx="2"/>
+<rect x="1706" y="166" width="511" height="2558" fill="#eef3f7" stroke="#d6e0e8" rx="10"/>
+<g class="card" role="group" aria-label="{}">
+<rect x="1889" y="6" width="304" height="101" fill="#e7edf2" rx="9"/>
+<rect x="1889" y="4" width="304" height="101" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<text x="1905" y="35" font-size="15" fill="#997144" font-weight="bold">E2019</text>
+<text x="1905" y="60" font-size="14" fill="#172a3a" font-weight="bold">2019/2020 Winden</text>
+<text x="1905" y="83" font-size="11" fill="#526575">INITIAL IN MODEL</text>
+</g>
+<rect x="1720" y="12" width="5" height="110" fill="#997144" rx="2"/>
+<rect x="2245" y="166" width="511" height="2558" fill="#eef3f7" stroke="#d6e0e8" rx="10"/>
+<g class="card" role="group" aria-label="{}">
+<rect x="2428" y="6" width="304" height="124" fill="#e7edf2" rx="9"/>
+<rect x="2428" y="4" width="304" height="124" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<text x="2444" y="35" font-size="15" fill="#93637c" font-weight="bold">E2052</text>
+<text x="2444" y="60" font-size="14" fill="#172a3a" font-weight="bold">2052/2053 Winden</text>
+<text x="2444" y="83" font-size="11" fill="#526575">ALREADY EXISTED</text>
+<text x="2444" y="106" font-size="11" fill="#526575">Ancestry: off chart</text>
+</g>
+<rect x="2259" y="12" width="5" height="110" fill="#93637c" rx="2"/>
+<line x1="20" y1="178" x2="2784" y2="178" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="206" font-size="12" fill="#172a3a" font-weight="bold">0</text>
+<text x="24" y="231" font-size="10" fill="#526575">rank 01</text>
+<line x1="20" y1="407" x2="2784" y2="407" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="435" font-size="12" fill="#172a3a" font-weight="bold">5</text>
+<text x="24" y="460" font-size="10" fill="#526575">rank 02</text>
+<line x1="20" y1="673" x2="2784" y2="673" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="701" font-size="12" fill="#172a3a" font-weight="bold">10</text>
+<text x="24" y="726" font-size="10" fill="#526575">rank 03</text>
+<line x1="20" y1="908" x2="2784" y2="908" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="936" font-size="12" fill="#172a3a" font-weight="bold">20</text>
+<text x="24" y="961" font-size="10" fill="#526575">rank 04</text>
+<line x1="20" y1="1163" x2="2784" y2="1163" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="1191" font-size="12" fill="#172a3a" font-weight="bold">30</text>
+<text x="24" y="1216" font-size="10" fill="#526575">rank 05</text>
+<line x1="20" y1="1398" x2="2784" y2="1398" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="1426" font-size="12" fill="#172a3a" font-weight="bold">40</text>
+<text x="24" y="1451" font-size="10" fill="#526575">rank 06</text>
+<line x1="20" y1="1682" x2="2784" y2="1682" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="1710" font-size="12" fill="#172a3a" font-weight="bold">50</text>
+<text x="24" y="1735" font-size="10" fill="#526575">rank 07</text>
+<line x1="20" y1="1937" x2="2784" y2="1937" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="1965" font-size="12" fill="#172a3a" font-weight="bold">60</text>
+<text x="24" y="1990" font-size="10" fill="#526575">rank 08</text>
+<line x1="20" y1="2169" x2="2784" y2="2169" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="2197" font-size="12" fill="#172a3a" font-weight="bold">65</text>
+<text x="24" y="2222" font-size="10" fill="#526575">rank 09</text>
+<line x1="20" y1="2398" x2="2784" y2="2398" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="2426" font-size="12" fill="#172a3a" font-weight="bold">70</text>
+<text x="24" y="2451" font-size="10" fill="#526575">rank 10</text>
+<path d="M 270.00 178.00 L 270.00 2716.00" fill="none" stroke="#667b8a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 270.00 178.00 l -5 -7 m 5 7 l 5 -7" fill="none" stroke="#416f99" stroke-width="2"/>
+<line x1="263" y1="2716" x2="277" y2="2716" stroke="#667b8a" stroke-width="2"/>
+<text x="285" y="2721" font-size="10" fill="#526575">End of displayed extent</text>
+<path d="M 778.00 178.00 L 778.00 2716.00" fill="none" stroke="#667b8a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 778.00 178.00 l -5 -7 m 5 7 l 5 -7" fill="none" stroke="#78639a" stroke-width="2"/>
+<line x1="771" y1="2716" x2="785" y2="2716" stroke="#667b8a" stroke-width="2"/>
+<text x="793" y="2721" font-size="10" fill="#526575">End of displayed extent</text>
+<path d="M 1326.00 178.00 L 1326.00 2716.00" fill="none" stroke="#667b8a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 1326.00 178.00 l -5 -7 m 5 7 l 5 -7" fill="none" stroke="#397f78" stroke-width="2"/>
+<line x1="1319" y1="2716" x2="1333" y2="2716" stroke="#667b8a" stroke-width="2"/>
+<text x="1341" y="2721" font-size="10" fill="#526575">End of displayed extent</text>
+<path d="M 1865.00 178.00 L 1865.00 2716.00" fill="none" stroke="#667b8a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="1859" y="172" width="12" height="12" fill="#ffffff" stroke="#997144" rx="1" stroke-width="2"/>
+<line x1="1858" y1="2716" x2="1872" y2="2716" stroke="#667b8a" stroke-width="2"/>
+<text x="1880" y="2721" font-size="10" fill="#526575">End of displayed extent</text>
+<path d="M 2404.00 178.00 L 2404.00 2716.00" fill="none" stroke="#667b8a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 2404.00 178.00 l -5 -7 m 5 7 l 5 -7" fill="none" stroke="#93637c" stroke-width="2"/>
+<line x1="2397" y1="2716" x2="2411" y2="2716" stroke="#667b8a" stroke-width="2"/>
+<text x="2419" y="2721" font-size="10" fill="#526575">End of displayed extent</text>
+<g class="layer-route">
+<title>V1 · {&quot;entry&quot;: &quot;e-j2019&quot;, &quot;exit&quot;: &quot;e-cave-2052&quot;, &quot;id&quot;: &quot;jv0&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;E2019&quot;}</title>
+<path d="M 1857.00 223.00 L 1848.00 223.00 L 1848.00 718.00 L 1855.00 718.00" fill="none" stroke="#ffffff" stroke-width="8.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 1857.00 223.00 L 1848.00 223.00 L 1848.00 718.00 L 1855.00 718.00" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+<path d="M 1848.00 461.50 L 1848.00 479.50" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+</g>
+<g class="layer-route">
+<title>V2 · {&quot;entry&quot;: &quot;e-j2052&quot;, &quot;exit&quot;: &quot;e-cave-back&quot;, &quot;id&quot;: &quot;jv1&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;E2052&quot;}</title>
+<path d="M 2396.00 953.00 L 2387.00 953.00 L 2387.00 1208.00 L 2394.00 1208.00" fill="none" stroke="#ffffff" stroke-width="8.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 2396.00 953.00 L 2387.00 953.00 L 2387.00 1208.00 L 2394.00 1208.00" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+<path d="M 2387.00 1071.50 L 2387.00 1089.50" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+</g>
+<g class="layer-route">
+<title>V3 · {&quot;entry&quot;: &quot;e-j1986&quot;, &quot;exit&quot;: &quot;e-j1986&quot;, &quot;id&quot;: &quot;jv2&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;E1986&quot;}</title>
+<path d="M 1318.00 1443.00 L 1309.00 1443.00 L 1309.00 1459.00 L 1318.00 1459.00 L 1318.00 1452.00" fill="none" stroke="#ffffff" stroke-width="8.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 1318.00 1443.00 L 1309.00 1443.00 L 1309.00 1459.00 L 1318.00 1459.00 L 1318.00 1452.00" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+</g>
+<g class="layer-transfer" id="g1-edge-1">
+<title>tr-j-2019-2052 · jonas-mind · e-cave-2052 → e-j2052 · mechanism: time_travel · relation: {&quot;kind&quot;: &quot;different_universes&quot;} · followed by L1
+{&quot;from&quot;: {&quot;exit&quot;: &quot;e-cave-2052&quot;, &quot;universe&quot;: &quot;E2019&quot;}, &quot;id&quot;: &quot;tr-j-2019-2052&quot;, &quot;mechanism&quot;: &quot;time_travel&quot;, &quot;relation&quot;: {&quot;kind&quot;: &quot;different_universes&quot;}, &quot;to&quot;: {&quot;entry&quot;: &quot;e-j2052&quot;, &quot;universe&quot;: &quot;E2052&quot;}, &quot;traveller&quot;: &quot;jonas-mind&quot;}</title>
+<path d="M 1856.00 718.00 L 1825.00 718.00 L 1825.00 878.00 L 1726.00 878.00 L 1726.00 1133.00 L 2364.00 1133.00 L 2364.00 953.00 L 2394.00 953.00" fill="none" stroke="#ffffff" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 1856.00 718.00 L 1825.00 718.00 L 1825.00 878.00 L 1726.00 878.00 L 1726.00 1133.00 L 2364.00 1133.00 L 2364.00 953.00 L 2394.00 953.00" fill="none" stroke="#285ac7" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-transfer)"/>
+<g class="layer-route">
+<path d="M 1856.00 718.00 L 1825.00 718.00 L 1825.00 878.00 L 1726.00 878.00 L 1726.00 1133.00 L 2364.00 1133.00 L 2364.00 953.00 L 2394.00 953.00" fill="none" stroke="#087d60" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<a href="#g1-relationships" aria-label="tr-j-2019-2052 · jonas-mind · e-cave-2052 → e-j2052 · mechanism: time_travel · relation: {&quot;kind&quot;: &quot;different_universes&quot;} · followed by L1">
+<rect x="1751.5" y="868" width="48" height="20" fill="#ffffff" stroke="#285ac7" rx="6" stroke-width="1.6"/>
+<text text-anchor="middle" x="1775.5" y="882" font-size="11" fill="#285ac7" font-weight="bold">T1 ?</text>
+</a>
+</g>
+<g class="layer-transfer" id="g1-edge-2">
+<title>tr-j-2052-1986 · jonas-mind · e-cave-back → e-j1986 · mechanism: time_travel · relation: {&quot;kind&quot;: &quot;different_universes&quot;} · followed by L2
+{&quot;from&quot;: {&quot;exit&quot;: &quot;e-cave-back&quot;, &quot;universe&quot;: &quot;E2052&quot;}, &quot;id&quot;: &quot;tr-j-2052-1986&quot;, &quot;mechanism&quot;: &quot;time_travel&quot;, &quot;relation&quot;: {&quot;kind&quot;: &quot;different_universes&quot;}, &quot;to&quot;: {&quot;entry&quot;: &quot;e-j1986&quot;, &quot;universe&quot;: &quot;E1986&quot;}, &quot;traveller&quot;: &quot;jonas-mind&quot;}</title>
+<path d="M 2395.00 1208.00 L 2364.00 1208.00 L 2364.00 1368.00 L 2265.00 1368.00 L 2265.00 1626.00 L 1286.00 1626.00 L 1286.00 1443.00 L 1316.00 1443.00" fill="none" stroke="#ffffff" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 2395.00 1208.00 L 2364.00 1208.00 L 2364.00 1368.00 L 2265.00 1368.00 L 2265.00 1626.00 L 1286.00 1626.00 L 1286.00 1443.00 L 1316.00 1443.00" fill="none" stroke="#285ac7" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-transfer)"/>
+<g class="layer-route">
+<path d="M 2395.00 1208.00 L 2364.00 1208.00 L 2364.00 1368.00 L 2265.00 1368.00 L 2265.00 1626.00 L 1286.00 1626.00 L 1286.00 1443.00 L 1316.00 1443.00" fill="none" stroke="#087d60" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<a href="#g1-relationships" aria-label="tr-j-2052-1986 · jonas-mind · e-cave-back → e-j1986 · mechanism: time_travel · relation: {&quot;kind&quot;: &quot;different_universes&quot;} · followed by L2">
+<rect x="2290.5" y="1358" width="48" height="20" fill="#ffffff" stroke="#285ac7" rx="6" stroke-width="1.6"/>
+<text text-anchor="middle" x="2314.5" y="1372" font-size="11" fill="#285ac7" font-weight="bold">T2 ?</text>
+</a>
+</g>
+<g class="layer-transfer" id="g1-edge-3">
+<title>tr-m2-save · martha2-mind · e-j1986 → e-m2-save · mechanism: time_travel · relation: {&quot;kind&quot;: &quot;different_universes&quot;}
+{&quot;from&quot;: {&quot;exit&quot;: &quot;e-j1986&quot;, &quot;universe&quot;: &quot;E1986&quot;}, &quot;id&quot;: &quot;tr-m2-save&quot;, &quot;mechanism&quot;: &quot;time_travel&quot;, &quot;relation&quot;: {&quot;kind&quot;: &quot;different_universes&quot;}, &quot;to&quot;: {&quot;entry&quot;: &quot;e-m2-save&quot;, &quot;universe&quot;: &quot;E2019&quot;}, &quot;traveller&quot;: &quot;martha2-mind&quot;}</title>
+<path d="M 1317.00 1443.00 L 1277.00 1443.00 L 1277.00 1652.00 L 1178.00 1652.00 L 1178.00 2139.00 L 1825.00 2139.00 L 1825.00 1982.00 L 1855.00 1982.00" fill="none" stroke="#ffffff" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 1317.00 1443.00 L 1277.00 1443.00 L 1277.00 1652.00 L 1178.00 1652.00 L 1178.00 2139.00 L 1825.00 2139.00 L 1825.00 1982.00 L 1855.00 1982.00" fill="none" stroke="#285ac7" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-transfer)"/>
+<a href="#g1-relationships" aria-label="tr-m2-save · martha2-mind · e-j1986 → e-m2-save · mechanism: time_travel · relation: {&quot;kind&quot;: &quot;different_universes&quot;}">
+<rect x="1203.5" y="1642" width="48" height="20" fill="#ffffff" stroke="#285ac7" rx="6" stroke-width="1.6"/>
+<text text-anchor="middle" x="1227.5" y="1656" font-size="11" fill="#285ac7" font-weight="bold">T3 ?</text>
+</a>
+</g>
+<line x1="1875" y1="223" x2="1889" y2="223" stroke="#997144" stroke-width="1.8"/>
+<g id="g1-item-1" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;S1&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-j2019&quot;, &quot;kind&quot;: &quot;start&quot;, &quot;label&quot;: &quot;Jonas returns to 2019 after the bunker - Mikkel is lost in 1986&quot;, &quot;order&quot;: 0, &quot;universe&quot;: &quot;E2019&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;S1&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-j2019&quot;, &quot;kind&quot;: &quot;start&quot;, &quot;label&quot;: &quot;Jonas returns to 2019 after the bunker - Mikkel is lost in 1986&quot;, &quot;order&quot;: 0, &quot;universe&quot;: &quot;E2019&quot;}</title>
+<rect x="1889" y="200" width="304" height="161" fill="#e7edf2" rx="9"/>
+<rect x="1889" y="198" width="304" height="161" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="1889" y="210" width="3" height="137" fill="#997144" rx="1.5"/>
+<text x="1905" y="225" font-size="11" fill="#526575" font-weight="bold">START · e-j2019</text>
+<text x="1905" y="251" font-size="14" fill="#172a3a">Jonas returns to 2019 after</text>
+<text x="1905" y="271" font-size="14" fill="#172a3a">the bunker - Mikkel is lost in</text>
+<text x="1905" y="291" font-size="14" fill="#172a3a">1986</text>
+<a href="#evidence-1" class="citation" aria-label="[1] · Locator S1 · unavailable">
+<text x="1905" y="314" font-size="11" fill="#285ac7">[1] · Locator S1 · unavailable</text>
+</a>
+<text x="1905" y="337" font-size="11" fill="#087d60" font-weight="bold">V1 entry · jonas-mind</text>
+</g>
+<line x1="1875" y1="718" x2="1889" y2="718" stroke="#997144" stroke-width="1.8"/>
+<g id="g1-item-2" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;S1 finale&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-cave-2052&quot;, &quot;kind&quot;: &quot;exit&quot;, &quot;label&quot;: &quot;Jonas enters the cave heading to the future&quot;, &quot;order&quot;: 10, &quot;universe&quot;: &quot;E2019&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;S1 finale&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-cave-2052&quot;, &quot;kind&quot;: &quot;exit&quot;, &quot;label&quot;: &quot;Jonas enters the cave heading to the future&quot;, &quot;order&quot;: 10, &quot;universe&quot;: &quot;E2019&quot;}</title>
+<rect x="1889" y="695" width="304" height="141" fill="#e7edf2" rx="9"/>
+<rect x="1889" y="693" width="304" height="141" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="1889" y="705" width="3" height="117" fill="#997144" rx="1.5"/>
+<text x="1905" y="720" font-size="11" fill="#526575" font-weight="bold">EXIT · e-cave-2052</text>
+<text x="1905" y="746" font-size="14" fill="#172a3a">Jonas enters the cave heading</text>
+<text x="1905" y="766" font-size="14" fill="#172a3a">to the future</text>
+<a href="#evidence-2" class="citation" aria-label="[2] · Locator S1 finale · unavailable">
+<text x="1905" y="789" font-size="11" fill="#285ac7">[2] · Locator S1 finale · unavailable</text>
+</a>
+<text x="1905" y="812" font-size="11" fill="#087d60" font-weight="bold">V1 exit · jonas-mind</text>
+</g>
+<line x1="2414" y1="953" x2="2428" y2="953" stroke="#93637c" stroke-width="1.8"/>
+<g id="g1-item-3" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;S2 opening&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-j2052&quot;, &quot;kind&quot;: &quot;entry&quot;, &quot;label&quot;: &quot;Jonas arrives in 2052 - the wasteland, survivors, young Charlotte leads them&quot;, &quot;order&quot;: 20, &quot;universe&quot;: &quot;E2052&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;S2 opening&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-j2052&quot;, &quot;kind&quot;: &quot;entry&quot;, &quot;label&quot;: &quot;Jonas arrives in 2052 - the wasteland, survivors, young Charlotte leads them&quot;, &quot;order&quot;: 20, &quot;universe&quot;: &quot;E2052&quot;}</title>
+<rect x="2428" y="930" width="304" height="161" fill="#e7edf2" rx="9"/>
+<rect x="2428" y="928" width="304" height="161" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="2428" y="940" width="3" height="137" fill="#93637c" rx="1.5"/>
+<text x="2444" y="955" font-size="11" fill="#526575" font-weight="bold">ENTRY · e-j2052</text>
+<text x="2444" y="981" font-size="14" fill="#172a3a">Jonas arrives in 2052 - the</text>
+<text x="2444" y="1001" font-size="14" fill="#172a3a">wasteland, survivors, young</text>
+<text x="2444" y="1021" font-size="14" fill="#172a3a">Charlotte leads them</text>
+<a href="#evidence-3" class="citation" aria-label="[3] · Locator S2 opening · unavailable">
+<text x="2444" y="1044" font-size="11" fill="#285ac7">[3] · Locator S2 opening · unavailable</text>
+</a>
+<text x="2444" y="1067" font-size="11" fill="#087d60" font-weight="bold">V2 entry · jonas-mind</text>
+</g>
+<line x1="2414" y1="1208" x2="2428" y2="1208" stroke="#93637c" stroke-width="1.8"/>
+<g id="g1-item-4" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;S2&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-cave-back&quot;, &quot;kind&quot;: &quot;exit&quot;, &quot;label&quot;: &quot;Jonas leaves 2052 via the corridor&quot;, &quot;order&quot;: 30, &quot;universe&quot;: &quot;E2052&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;S2&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-cave-back&quot;, &quot;kind&quot;: &quot;exit&quot;, &quot;label&quot;: &quot;Jonas leaves 2052 via the corridor&quot;, &quot;order&quot;: 30, &quot;universe&quot;: &quot;E2052&quot;}</title>
+<rect x="2428" y="1185" width="304" height="141" fill="#e7edf2" rx="9"/>
+<rect x="2428" y="1183" width="304" height="141" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="2428" y="1195" width="3" height="117" fill="#93637c" rx="1.5"/>
+<text x="2444" y="1210" font-size="11" fill="#526575" font-weight="bold">EXIT · e-cave-back</text>
+<text x="2444" y="1236" font-size="14" fill="#172a3a">Jonas leaves 2052 via the</text>
+<text x="2444" y="1256" font-size="14" fill="#172a3a">corridor</text>
+<a href="#evidence-4" class="citation" aria-label="[4] · Locator S2 · unavailable">
+<text x="2444" y="1279" font-size="11" fill="#285ac7">[4] · Locator S2 · unavailable</text>
+</a>
+<text x="2444" y="1302" font-size="11" fill="#087d60" font-weight="bold">V2 exit · jonas-mind</text>
+</g>
+<line x1="1336" y1="1443" x2="1350" y2="1443" stroke="#397f78" stroke-width="1.8"/>
+<g id="g1-item-5" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;S2&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-j1986&quot;, &quot;kind&quot;: &quot;entry&quot;, &quot;label&quot;: &quot;Jonas arrives 1986 - meets the 1986 strand of the knot&quot;, &quot;order&quot;: 40, &quot;universe&quot;: &quot;E1986&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;S2&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-j1986&quot;, &quot;kind&quot;: &quot;entry&quot;, &quot;label&quot;: &quot;Jonas arrives 1986 - meets the 1986 strand of the knot&quot;, &quot;order&quot;: 40, &quot;universe&quot;: &quot;E1986&quot;}</title>
+<rect x="1350" y="1420" width="304" height="164" fill="#e7edf2" rx="9"/>
+<rect x="1350" y="1418" width="304" height="164" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="1350" y="1430" width="3" height="140" fill="#397f78" rx="1.5"/>
+<text x="1366" y="1445" font-size="11" fill="#526575" font-weight="bold">ENTRY · e-j1986</text>
+<text x="1366" y="1471" font-size="14" fill="#172a3a">Jonas arrives 1986 - meets the</text>
+<text x="1366" y="1491" font-size="14" fill="#172a3a">1986 strand of the knot</text>
+<a href="#evidence-4" class="citation" aria-label="[4] · Locator S2 · unavailable">
+<text x="1366" y="1514" font-size="11" fill="#285ac7">[4] · Locator S2 · unavailable</text>
+</a>
+<text x="1366" y="1537" font-size="11" fill="#087d60" font-weight="bold">V3 entry · jonas-mind</text>
+<text x="1366" y="1560" font-size="11" fill="#087d60" font-weight="bold">V3 exit · jonas-mind</text>
+</g>
+<line x1="1875" y1="1727" x2="1889" y2="1727" stroke="#997144" stroke-width="1.8"/>
+<g id="g1-item-6" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;S2 finale&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-m-death&quot;, &quot;kind&quot;: &quot;cutoff&quot;, &quot;label&quot;: &quot;Adam (old Jonas) kills Martha in 2019/2020 - the knot&#x27;s hinge&quot;, &quot;order&quot;: 50, &quot;universe&quot;: &quot;E2019&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;S2 finale&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-m-death&quot;, &quot;kind&quot;: &quot;cutoff&quot;, &quot;label&quot;: &quot;Adam (old Jonas) kills Martha in 2019/2020 - the knot&#x27;s hinge&quot;, &quot;order&quot;: 50, &quot;universe&quot;: &quot;E2019&quot;}</title>
+<rect x="1889" y="1704" width="304" height="187" fill="#e7edf2" rx="9"/>
+<rect x="1889" y="1702" width="304" height="187" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="1889" y="1714" width="3" height="163" fill="#997144" rx="1.5"/>
+<text x="1905" y="1729" font-size="11" fill="#526575" font-weight="bold">CUTOFF · e-m-death</text>
+<text x="1905" y="1755" font-size="14" fill="#172a3a">Adam (old Jonas) kills Martha</text>
+<text x="1905" y="1775" font-size="14" fill="#172a3a">in 2019/2020 - the knot&#x27;s hinge</text>
+<a href="#evidence-5" class="citation" aria-label="[5] · Locator S2 finale · unavailable">
+<text x="1905" y="1798" font-size="11" fill="#285ac7">[5] · Locator S2 finale · unavailable</text>
+</a>
+<text x="1905" y="1822" font-size="12" fill="#b82f46" font-weight="bold">× DEAD · martha2-2019</text>
+<text x="1905" y="1844" font-size="11" fill="#526575">Fate f-martha · at e-m-death</text>
+<a href="#evidence-5" class="citation" aria-label="[5] · Locator S2 finale · unavailable">
+<text x="1905" y="1867" font-size="11" fill="#285ac7">[5] · Locator S2 finale · unavailable</text>
+</a>
+</g>
+<line x1="1875" y1="1982" x2="1889" y2="1982" stroke="#997144" stroke-width="1.8"/>
+<g id="g1-item-7" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;S3 opening&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-m2-save&quot;, &quot;kind&quot;: &quot;entry&quot;, &quot;label&quot;: &quot;Alternate Martha arrives - saves Jonas moments after Martha&#x27;s death&quot;, &quot;order&quot;: 60, &quot;universe&quot;: &quot;E2019&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;S3 opening&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-m2-save&quot;, &quot;kind&quot;: &quot;entry&quot;, &quot;label&quot;: &quot;Alternate Martha arrives - saves Jonas moments after Martha&#x27;s death&quot;, &quot;order&quot;: 60, &quot;universe&quot;: &quot;E2019&quot;}</title>
+<rect x="1889" y="1959" width="304" height="138" fill="#e7edf2" rx="9"/>
+<rect x="1889" y="1957" width="304" height="138" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="1889" y="1969" width="3" height="114" fill="#997144" rx="1.5"/>
+<text x="1905" y="1984" font-size="11" fill="#526575" font-weight="bold">ENTRY · e-m2-save</text>
+<text x="1905" y="2010" font-size="14" fill="#172a3a">Alternate Martha arrives -</text>
+<text x="1905" y="2030" font-size="14" fill="#172a3a">saves Jonas moments after</text>
+<text x="1905" y="2050" font-size="14" fill="#172a3a">Martha&#x27;s death</text>
+<a href="#evidence-6" class="citation" aria-label="[6] · Locator S3 opening · unavailable">
+<text x="1905" y="2073" font-size="11" fill="#285ac7">[6] · Locator S3 opening · unavailable</text>
+</a>
+</g>
+<line x1="1875" y1="2443" x2="1889" y2="2443" stroke="#997144" stroke-width="1.8"/>
+<g id="g1-item-8" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;S3 finale&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-end&quot;, &quot;kind&quot;: &quot;cutoff&quot;, &quot;label&quot;: &quot;The origin world erases both knot worlds - Hannah and Daniel at the lake&quot;, &quot;order&quot;: 70, &quot;universe&quot;: &quot;E2019&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;S3 finale&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-end&quot;, &quot;kind&quot;: &quot;cutoff&quot;, &quot;label&quot;: &quot;The origin world erases both knot worlds - Hannah and Daniel at the lake&quot;, &quot;order&quot;: 70, &quot;universe&quot;: &quot;E2019&quot;}</title>
+<rect x="1889" y="2420" width="304" height="224" fill="#e7edf2" rx="9"/>
+<rect x="1889" y="2418" width="304" height="224" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="1889" y="2430" width="3" height="200" fill="#997144" rx="1.5"/>
+<text x="1905" y="2445" font-size="11" fill="#526575" font-weight="bold">CUTOFF · e-end</text>
+<text x="1905" y="2471" font-size="14" fill="#172a3a">The origin world erases both</text>
+<text x="1905" y="2491" font-size="14" fill="#172a3a">knot worlds - Hannah and Daniel</text>
+<text x="1905" y="2511" font-size="14" fill="#172a3a">at the lake</text>
+<a href="#evidence-7" class="citation" aria-label="[7] · Locator S3 finale · unavailable">
+<text x="1905" y="2534" font-size="11" fill="#285ac7">[7] · Locator S3 finale · unavailable</text>
+</a>
+<text x="1905" y="2558" font-size="12" fill="#343a47" font-weight="bold">∅ NONEXISTENT · jonas-2019</text>
+<text x="1905" y="2580" font-size="11" fill="#526575">Fate f-jonas-end · at e-end</text>
+<a href="#evidence-9" class="citation" aria-label="[9] · Locator Erased with the knot · unavailable">
+<text x="1905" y="2603" font-size="11" fill="#285ac7">[9] · Locator Erased with the knot ·</text>
+<text x="1905" y="2620" font-size="11" fill="#285ac7">unavailable</text>
+</a>
+</g>
+<line x1="1875" y1="452" x2="1889" y2="452" stroke="#997144" stroke-width="1.8"/>
+<g id="g1-item-9" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;S2/S3 genealogy reveals&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;b-boot&quot;, &quot;order&quot;: 5, &quot;segment&quot;: &quot;seg-2019&quot;, &quot;text&quot;: &quot;Charlotte holds baby Elisabeth; decades later Elisabeth carries baby Charlotte back - the pair bootstrap themselves&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;S2/S3 genealogy reveals&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;b-boot&quot;, &quot;order&quot;: 5, &quot;segment&quot;: &quot;seg-2019&quot;, &quot;text&quot;: &quot;Charlotte holds baby Elisabeth; decades later Elisabeth carries baby Charlotte back - the pair bootstrap themselves&quot;}</title>
+<rect x="1889" y="429" width="304" height="198" fill="#e7edf2" rx="9"/>
+<rect x="1889" y="427" width="304" height="198" fill="#f9fafc" stroke="#d3dde5" rx="9"/>
+<rect x="1889" y="439" width="3" height="174" fill="#997144" rx="1.5"/>
+<text x="1905" y="454" font-size="11" fill="#526575" font-weight="bold">BEAT · b-boot</text>
+<text x="1905" y="480" font-size="14" fill="#172a3a">Charlotte holds baby Elisabeth;</text>
+<text x="1905" y="500" font-size="14" fill="#172a3a">decades later Elisabeth carries</text>
+<text x="1905" y="520" font-size="14" fill="#172a3a">baby Charlotte back - the pair</text>
+<text x="1905" y="540" font-size="14" fill="#172a3a">bootstrap themselves</text>
+<text x="1905" y="563" font-size="11" fill="#526575">Segment: seg-2019</text>
+<a href="#evidence-8" class="citation" aria-label="[8] · Locator S2/S3 genealogy reveals · unavailable">
+<text x="1905" y="586" font-size="11" fill="#285ac7">[8] · Locator S2/S3 genealogy reveals</text>
+<text x="1905" y="603" font-size="11" fill="#285ac7">· unavailable</text>
+</a>
+</g>
+<line x1="1875" y1="2214" x2="1889" y2="2214" stroke="#997144" stroke-width="1.8"/>
+<g id="g1-item-10" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;S3 finale&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;b-knot&quot;, &quot;order&quot;: 65, &quot;segment&quot;: &quot;seg-2019&quot;, &quot;text&quot;: &quot;Eva&#x27;s world and Adam&#x27;s world are two faces of one knot; the origin world deletes both&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;S3 finale&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;b-knot&quot;, &quot;order&quot;: 65, &quot;segment&quot;: &quot;seg-2019&quot;, &quot;text&quot;: &quot;Eva&#x27;s world and Adam&#x27;s world are two faces of one knot; the origin world deletes both&quot;}</title>
+<rect x="1889" y="2191" width="304" height="161" fill="#e7edf2" rx="9"/>
+<rect x="1889" y="2189" width="304" height="161" fill="#f9fafc" stroke="#d3dde5" rx="9"/>
+<rect x="1889" y="2201" width="3" height="137" fill="#997144" rx="1.5"/>
+<text x="1905" y="2216" font-size="11" fill="#526575" font-weight="bold">BEAT · b-knot</text>
+<text x="1905" y="2242" font-size="14" fill="#172a3a">Eva&#x27;s world and Adam&#x27;s world</text>
+<text x="1905" y="2262" font-size="14" fill="#172a3a">are two faces of one knot; the</text>
+<text x="1905" y="2282" font-size="14" fill="#172a3a">origin world deletes both</text>
+<text x="1905" y="2305" font-size="11" fill="#526575">Segment: seg-2019</text>
+<a href="#evidence-7" class="citation" aria-label="[7] · Locator S3 finale · unavailable">
+<text x="1905" y="2328" font-size="11" fill="#285ac7">[7] · Locator S3 finale · unavailable</text>
+</a>
+</g>
+<g class="event-node">
+<title>e-j2019 · Jonas returns to 2019 after the bunker - Mikkel is lost in 1986</title>
+<circle cx="1865" cy="223" r="11" fill="#ffffff"/>
+<rect x="1858" y="216" width="14" height="14" fill="#087d60" stroke="#ffffff" rx="2" stroke-width="2"/>
+</g>
+<g class="event-node">
+<title>e-cave-2052 · Jonas enters the cave heading to the future</title>
+<circle cx="1865" cy="718" r="11" fill="#ffffff"/>
+<circle cx="1865" cy="718" r="8" fill="#ffffff" stroke="#997144" stroke-width="2.5"/>
+<polygon points="1868.00,714.00 1862.00,718.00 1868.00,722.00" fill="#997144"/>
+</g>
+<g class="event-node">
+<title>e-j2052 · Jonas arrives in 2052 - the wasteland, survivors, young Charlotte leads them</title>
+<circle cx="2404" cy="953" r="11" fill="#ffffff"/>
+<circle cx="2404" cy="953" r="8" fill="#ffffff" stroke="#93637c" stroke-width="2.5"/>
+<polygon points="2401.00,949.00 2407.00,953.00 2401.00,957.00" fill="#93637c"/>
+</g>
+<g class="event-node">
+<title>e-cave-back · Jonas leaves 2052 via the corridor</title>
+<circle cx="2404" cy="1208" r="11" fill="#ffffff"/>
+<circle cx="2404" cy="1208" r="8" fill="#ffffff" stroke="#93637c" stroke-width="2.5"/>
+<polygon points="2407.00,1204.00 2401.00,1208.00 2407.00,1212.00" fill="#93637c"/>
+</g>
+<g class="event-node">
+<title>e-j1986 · Jonas arrives 1986 - meets the 1986 strand of the knot</title>
+<circle cx="1326" cy="1443" r="11" fill="#ffffff"/>
+<circle cx="1326" cy="1443" r="8" fill="#ffffff" stroke="#397f78" stroke-width="2.5"/>
+<polygon points="1323.00,1439.00 1329.00,1443.00 1323.00,1447.00" fill="#397f78"/>
+</g>
+<g class="event-node">
+<title>e-m-death · Adam (old Jonas) kills Martha in 2019/2020 - the knot&#x27;s hinge</title>
+<circle cx="1865" cy="1727" r="11" fill="#ffffff"/>
+<line x1="1856" y1="1723" x2="1874" y2="1723" stroke="#997144" stroke-width="3"/>
+<line x1="1856" y1="1731" x2="1874" y2="1731" stroke="#997144" stroke-width="3"/>
+</g>
+<g class="event-node">
+<title>e-m2-save · Alternate Martha arrives - saves Jonas moments after Martha&#x27;s death</title>
+<circle cx="1865" cy="1982" r="11" fill="#ffffff"/>
+<circle cx="1865" cy="1982" r="8" fill="#ffffff" stroke="#997144" stroke-width="2.5"/>
+<polygon points="1862.00,1978.00 1868.00,1982.00 1862.00,1986.00" fill="#997144"/>
+</g>
+<g class="event-node">
+<title>e-end · The origin world erases both knot worlds - Hannah and Daniel at the lake</title>
+<circle cx="1865" cy="2443" r="11" fill="#ffffff"/>
+<line x1="1856" y1="2439" x2="1874" y2="2439" stroke="#997144" stroke-width="3"/>
+<line x1="1856" y1="2447" x2="1874" y2="2447" stroke="#997144" stroke-width="3"/>
+</g>
+<g class="event-node">
+<title>b-boot · </title>
+<circle cx="1865" cy="452" r="11" fill="#ffffff"/>
+<circle cx="1865" cy="452" r="4" fill="#ffffff" stroke="#997144" stroke-width="2"/>
+</g>
+<g class="event-node">
+<title>b-knot · </title>
+<circle cx="1865" cy="2214" r="11" fill="#ffffff"/>
+<circle cx="1865" cy="2214" r="4" fill="#ffffff" stroke="#997144" stroke-width="2"/>
+</g>
+</g>
+<g id="g1-relationships">
+<line x1="32" y1="3459" x2="2818" y2="3459" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="3488" font-size="18" fill="#172a3a" font-weight="bold">Relationship ledger</text>
+</g>
+<g >
+<rect x="32" y="3507" width="2786" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3530" font-size="11" fill="#285ac7" font-weight="bold">T1</text>
+<text x="174" y="3530" font-size="12" fill="#172a3a">tr-j-2019-2052 · jonas-mind · e-cave-2052 → e-j2052 · mechanism: time_travel · relation: {&quot;kind&quot;: &quot;different_universes&quot;} · followed by L1</text>
+</g>
+<g >
+<rect x="32" y="3557" width="2786" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3580" font-size="11" fill="#285ac7" font-weight="bold">T2</text>
+<text x="174" y="3580" font-size="12" fill="#172a3a">tr-j-2052-1986 · jonas-mind · e-cave-back → e-j1986 · mechanism: time_travel · relation: {&quot;kind&quot;: &quot;different_universes&quot;} · followed by L2</text>
+</g>
+<g >
+<rect x="32" y="3607" width="2786" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3630" font-size="11" fill="#285ac7" font-weight="bold">T3</text>
+<text x="174" y="3630" font-size="12" fill="#172a3a">tr-m2-save · martha2-mind · e-j1986 → e-m2-save · mechanism: time_travel · relation: {&quot;kind&quot;: &quot;different_universes&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="3675" x2="2818" y2="3675" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="3704" font-size="18" fill="#172a3a" font-weight="bold">Thread / jonas-mind</text>
+</g>
+<g >
+<rect x="32" y="3723" width="2786" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3746" font-size="11" fill="#087d60" font-weight="bold">ROUTE 01</text>
+<text x="174" y="3746" font-size="12" fill="#172a3a">V1 · jv0 · e-j2019 → e-cave-2052 · {&quot;entry&quot;: &quot;e-j2019&quot;, &quot;exit&quot;: &quot;e-cave-2052&quot;, &quot;id&quot;: &quot;jv0&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;E2019&quot;}</text>
+</g>
+<g >
+<rect x="32" y="3773" width="2786" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3796" font-size="11" fill="#087d60" font-weight="bold">ROUTE 02</text>
+<text x="174" y="3796" font-size="12" fill="#172a3a">V2 · jv1 · e-j2052 → e-cave-back · {&quot;entry&quot;: &quot;e-j2052&quot;, &quot;exit&quot;: &quot;e-cave-back&quot;, &quot;id&quot;: &quot;jv1&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;E2052&quot;}</text>
+</g>
+<g >
+<rect x="32" y="3823" width="2786" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3846" font-size="11" fill="#087d60" font-weight="bold">ROUTE 03</text>
+<text x="174" y="3846" font-size="12" fill="#172a3a">V3 · jv2 · e-j1986 → e-j1986 · {&quot;entry&quot;: &quot;e-j1986&quot;, &quot;exit&quot;: &quot;e-j1986&quot;, &quot;id&quot;: &quot;jv2&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;E1986&quot;}</text>
+</g>
+<g >
+<rect x="32" y="3873" width="2786" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3896" font-size="11" fill="#087d60" font-weight="bold">ROUTE 04</text>
+<text x="174" y="3896" font-size="12" fill="#172a3a">L1 · jv0 → jv1 · {&quot;from&quot;: &quot;jv0&quot;, &quot;kind&quot;: &quot;transfer&quot;, &quot;to&quot;: &quot;jv1&quot;, &quot;via&quot;: &quot;tr-j-2019-2052&quot;}</text>
+</g>
+<g >
+<rect x="32" y="3923" width="2786" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3946" font-size="11" fill="#087d60" font-weight="bold">ROUTE 05</text>
+<text x="174" y="3946" font-size="12" fill="#172a3a">L2 · jv1 → jv2 · {&quot;from&quot;: &quot;jv1&quot;, &quot;kind&quot;: &quot;transfer&quot;, &quot;to&quot;: &quot;jv2&quot;, &quot;via&quot;: &quot;tr-j-2052-1986&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="3991" x2="2818" y2="3991" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="4020" font-size="18" fill="#172a3a" font-weight="bold">Declared segments</text>
+</g>
+<g >
+<rect x="32" y="4039" width="2786" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4062" font-size="11" fill="#526575" font-weight="bold">seg-2019</text>
+<text x="174" y="4062" font-size="12" fill="#172a3a">2019 - the loop tightens · E2019 · e-j2019 → e-cave-2052</text>
+</g>
+<g >
+<rect x="32" y="4089" width="2786" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4112" font-size="11" fill="#526575" font-weight="bold">seg-2052</text>
+<text x="174" y="4112" font-size="12" fill="#172a3a">2052 - the wasteland · E2052 · e-j2052 → e-cave-back</text>
+</g>
+<g >
+<rect x="32" y="4139" width="2786" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4162" font-size="11" fill="#526575" font-weight="bold">seg-1986</text>
+<text x="174" y="4162" font-size="12" fill="#172a3a">1986 - corridor stop · E1986 · e-j1986 → e-j1986</text>
+</g>
+<g >
+<line x1="32" y1="4207" x2="2818" y2="4207" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="4236" font-size="18" fill="#172a3a" font-weight="bold">Interpretive assumptions / model notes</text>
+</g>
+<g >
+<rect x="32" y="4255" width="2786" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4278" font-size="11" fill="#526575" font-weight="bold">NOTE 01</text>
+<text x="174" y="4278" font-size="12" fill="#172a3a">E1919 and E1953 lanes charted but unused by the fixture&#x27;s events (corridor exists; trips omitted for size)</text>
+</g>
+<g >
+<rect x="32" y="4305" width="2786" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4328" font-size="11" fill="#526575" font-weight="bold">NOTE 02</text>
+<text x="174" y="4328" font-size="12" fill="#172a3a">Adam/Eva orchestrations are beats, not mechanisms</text>
+</g>
+<g >
+<rect x="32" y="4355" width="2786" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4378" font-size="11" fill="#526575" font-weight="bold">NOTE 03</text>
+<text x="174" y="4378" font-size="12" fill="#172a3a">The origin-world deletion is terminal, not a split</text>
+</g>
+<g >
+<rect x="32" y="4405" width="2786" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4428" font-size="11" fill="#526575" font-weight="bold">NOTE 04</text>
+<text x="174" y="4428" font-size="12" fill="#172a3a">Declared merge count: 0. A count supplies no merge locations; none are invented.</text>
+</g>
+<g id="evidence">
+<line x1="32" y1="4487" x2="2818" y2="4487" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="4516" font-size="18" fill="#172a3a" font-weight="bold">Evidence / complete citation register</text>
+</g>
+<text x="40" y="4547" font-size="12" fill="#526575">Status is the supplied evidence status, not a truth rating. Repeated citations are deduplicated; all owners remain listed.</text>
+<g id="evidence-1">
+<rect x="32" y="4568" width="2786" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4591" font-size="11" fill="#285ac7" font-weight="bold">[1]</text>
+<text x="174" y="4591" font-size="12" fill="#172a3a">source: canon · locator: S1 · status: unavailable · Referenced by: document / e-j2019</text>
+</g>
+<g id="evidence-2">
+<rect x="32" y="4618" width="2786" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4641" font-size="11" fill="#285ac7" font-weight="bold">[2]</text>
+<text x="174" y="4641" font-size="12" fill="#172a3a">source: canon · locator: S1 finale · status: unavailable · Referenced by: document / e-cave-2052</text>
+</g>
+<g id="evidence-3">
+<rect x="32" y="4668" width="2786" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4691" font-size="11" fill="#285ac7" font-weight="bold">[3]</text>
+<text x="174" y="4691" font-size="12" fill="#172a3a">source: canon · locator: S2 opening · status: unavailable · Referenced by: document / e-j2052</text>
+</g>
+<g id="evidence-4">
+<rect x="32" y="4718" width="2786" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4741" font-size="11" fill="#285ac7" font-weight="bold">[4]</text>
+<text x="174" y="4741" font-size="12" fill="#172a3a">source: canon · locator: S2 · status: unavailable · Referenced by: document / e-cave-back; document / e-j1986</text>
+</g>
+<g id="evidence-5">
+<rect x="32" y="4768" width="2786" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4791" font-size="11" fill="#285ac7" font-weight="bold">[5]</text>
+<text x="174" y="4791" font-size="12" fill="#172a3a">source: canon · locator: S2 finale · status: unavailable · Referenced by: document / e-m-death; document / f-martha</text>
+</g>
+<g id="evidence-6">
+<rect x="32" y="4818" width="2786" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4841" font-size="11" fill="#285ac7" font-weight="bold">[6]</text>
+<text x="174" y="4841" font-size="12" fill="#172a3a">source: canon · locator: S3 opening · status: unavailable · Referenced by: document / e-m2-save</text>
+</g>
+<g id="evidence-7">
+<rect x="32" y="4868" width="2786" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4891" font-size="11" fill="#285ac7" font-weight="bold">[7]</text>
+<text x="174" y="4891" font-size="12" fill="#172a3a">source: canon · locator: S3 finale · status: unavailable · Referenced by: document / e-end; document / b-knot</text>
+</g>
+<g id="evidence-8">
+<rect x="32" y="4918" width="2786" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4941" font-size="11" fill="#285ac7" font-weight="bold">[8]</text>
+<text x="174" y="4941" font-size="12" fill="#172a3a">source: canon · locator: S2/S3 genealogy reveals · status: unavailable · Referenced by: document / b-boot</text>
+</g>
+<g id="evidence-9">
+<rect x="32" y="4968" width="2786" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4991" font-size="11" fill="#285ac7" font-weight="bold">[9]</text>
+<text x="174" y="4991" font-size="12" fill="#172a3a">source: canon · locator: Erased with the knot · status: unavailable · Referenced by: document / f-jonas-end</text>
+</g>
+<g >
+<line x1="32" y1="5036" x2="2818" y2="5036" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="5065" font-size="18" fill="#172a3a" font-weight="bold">Sources — including fixture provenance</text>
+</g>
+<g >
+<rect x="32" y="5084" width="2786" height="76" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5107" font-size="11" fill="#526575" font-weight="bold">canon</text>
+<text x="174" y="5107" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;canon&quot;, &quot;kind&quot;: &quot;canon_statement&quot;, &quot;text&quot;: &quot;Winden&#x27;s cave connects 1920, 1953, 1986, 2019, 2053. Jonas travels between eras; Martha dies in 2019</text>
+<text x="174" y="5125" font-size="12" fill="#172a3a">(S2) and an alternate Martha saves Jonas (S3). The Unknown exists across eras. Charlotte is Elisabeth&#x27;s daughter; Elisabeth is Charlotte&#x27;s daughter - a</text>
+<text x="174" y="5143" font-size="12" fill="#172a3a">bootstrap pair. Adam (old Jonas) and Eva orchestrate the knot; S3 ends with the origin world deleting both knot worlds.&quot;, &quot;title&quot;: &quot;Dark S1-S3 (Netflix)&quot;}</text>
+</g>
+<g >
+<rect x="32" y="5168" width="2786" height="76" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5191" font-size="11" fill="#526575" font-weight="bold">allocation</text>
+<text x="174" y="5191" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;allocation&quot;, &quot;kind&quot;: &quot;test_fixture&quot;, &quot;text&quot;: &quot;Eras are charted as lanes (preexisting). Cave trips are transfers (time_travel, body). The</text>
+<text x="174" y="5209" font-size="12" fill="#172a3a">Charlotte/Elisabeth bootstrap is recorded as genealogy edges + a closed cycle object per schema; render support for cycles is OPEN (E244). The</text>
+<text x="174" y="5227" font-size="12" fill="#172a3a">origin-world deletion is a beat, not a universe split (knot worlds preexist).&quot;, &quot;title&quot;: &quot;Fixture allocations&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="5270" x2="2818" y2="5270" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="5299" font-size="18" fill="#172a3a" font-weight="bold">Characters</text>
+</g>
+<g >
+<rect x="32" y="5318" width="2786" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5341" font-size="11" fill="#526575" font-weight="bold">jonas</text>
+<text x="174" y="5341" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;jonas&quot;, &quot;label&quot;: &quot;Jonas&quot;}</text>
+</g>
+<g >
+<rect x="32" y="5368" width="2786" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5391" font-size="11" fill="#526575" font-weight="bold">martha</text>
+<text x="174" y="5391" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;martha&quot;, &quot;label&quot;: &quot;Martha&quot;}</text>
+</g>
+<g >
+<rect x="32" y="5418" width="2786" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5441" font-size="11" fill="#526575" font-weight="bold">charlotte</text>
+<text x="174" y="5441" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;charlotte&quot;, &quot;label&quot;: &quot;Charlotte&quot;}</text>
+</g>
+<g >
+<rect x="32" y="5468" width="2786" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5491" font-size="11" fill="#526575" font-weight="bold">elisabeth</text>
+<text x="174" y="5491" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;elisabeth&quot;, &quot;label&quot;: &quot;Elisabeth&quot;}</text>
+</g>
+<g >
+<rect x="32" y="5518" width="2786" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5541" font-size="11" fill="#526575" font-weight="bold">adam</text>
+<text x="174" y="5541" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;adam&quot;, &quot;label&quot;: &quot;Adam&quot;}</text>
+</g>
+<g >
+<rect x="32" y="5568" width="2786" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5591" font-size="11" fill="#526575" font-weight="bold">eva</text>
+<text x="174" y="5591" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;eva&quot;, &quot;label&quot;: &quot;Eva&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="5636" x2="2818" y2="5636" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="5665" font-size="18" fill="#172a3a" font-weight="bold">Travellers</text>
+</g>
+<g >
+<rect x="32" y="5684" width="2786" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5707" font-size="11" fill="#526575" font-weight="bold">jonas-mind</text>
+<text x="174" y="5707" font-size="12" fill="#172a3a">{&quot;character&quot;: &quot;jonas&quot;, &quot;id&quot;: &quot;jonas-mind&quot;}</text>
+</g>
+<g >
+<rect x="32" y="5734" width="2786" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5757" font-size="11" fill="#526575" font-weight="bold">martha2-mind</text>
+<text x="174" y="5757" font-size="12" fill="#172a3a">{&quot;character&quot;: &quot;martha&quot;, &quot;id&quot;: &quot;martha2-mind&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="5802" x2="2818" y2="5802" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="5831" font-size="18" fill="#172a3a" font-weight="bold">Namespaces</text>
+</g>
+<g >
+<rect x="32" y="5850" width="2786" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5873" font-size="11" fill="#526575" font-weight="bold">DARK</text>
+<text x="174" y="5873" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;DARK&quot;, &quot;label&quot;: &quot;Dark - the knot&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="5918" x2="2818" y2="5918" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="5947" font-size="18" fill="#172a3a" font-weight="bold">Chart note</text>
+</g>
+<text x="40" y="5979" font-size="13" fill="#526575">Bootstrap genealogy (Charlotte/Elisabeth) recorded; cycle support OPEN (E244/genealogy).</text>
 </svg>

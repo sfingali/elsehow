@@ -1,6 +1,6 @@
 # Samples
 
-Public, published films rendered with `render.py` — every model in both `2d` and `2.5d`. (Sensitive/unpublished screenplays are intentionally excluded from the gallery.)
+Public, published films rendered with `render.py` — each model in both `2d` and `2.5d`. (Sensitive/unpublished screenplays are intentionally excluded from the gallery.)
 
 ## Back to the Future Part II
 - worlds: **1** — One world, multiple revision passes (single-lane revision).

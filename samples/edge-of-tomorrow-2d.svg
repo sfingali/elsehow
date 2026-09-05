@@ -1,33 +1,352 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="574" viewBox="0 0 900 574" font-family="Arial, Helvetica, sans-serif">
-<rect width="900" height="574" fill="#ffffff"/>
-<g transform="translate(0,0)"><text x="225" y="24" text-anchor="middle" font-size="18" font-weight="bold" fill="#202124">EDGE OF TOMORROW — The Verdun loop</text>
-<text x="225" y="42" text-anchor="middle" font-size="11" fill="#5f6368">EOT — The Verdun loop · One world looping on an external reset; memory only in the traveller</text>
-<line x1="100.0" y1="90.0" x2="100.0" y2="258.0" stroke="#9aa0a6" stroke-width="2" stroke-opacity="1.0"/>
-<rect x="93.0" y="72.0" width="14" height="14" fill="#e8f0fe" stroke="#202124"/>
-<text x="100.0" y="58.0" text-anchor="middle" font-size="11" fill="#202124">E: The battle of Verdun</text>
-<line x1="100.0" y1="96.0" x2="100.0" y2="258.0" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
-<rect x="94.0" y="90.0" width="12" height="12" fill="#3d8f4f" stroke="#202124"/>
-<text x="100.0" y="112.0" text-anchor="middle" font-size="9" fill="#5f6368">0</text>
-<circle cx="100.0" cy="150.0" r="7" fill="#e8a33d" stroke="#202124"/>
-<text x="100.0" y="166.0" text-anchor="middle" font-size="9" fill="#5f6368">10</text>
-<circle cx="100.0" cy="204.0" r="4" fill="#202124"/>
-<text x="100.0" y="220.0" text-anchor="middle" font-size="9" fill="#5f6368">20</text>
-<rect x="94.0" y="252.0" width="12" height="12" fill="#5f6368" stroke="#202124"/>
-<text x="100.0" y="274.0" text-anchor="middle" font-size="9" fill="#5f6368">30</text>
-<text x="114.0" y="262.0" font-size="14" font-weight="bold" fill="#2f7d4f">●</text>
-<text x="118.0" y="262.0" font-size="8" fill="#5f6368">cage-e</text>
-<text x="114.0" y="262.0" font-size="14" font-weight="bold" fill="#2f7d4f">●</text>
-<text x="118.0" y="262.0" font-size="8" fill="#5f6368">rita-e</text>
-<line x1="100.0" y1="96.0" x2="40.6" y2="75.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="40.6" y="61.0" font-size="9" fill="#5f6368">The day resets — Cage</text>
-<text x="40.6" y="72.0" font-size="9" fill="#5f6368">wakes on the transport</text>
-<line x1="100.0" y1="150.0" x2="112.0" y2="150.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="112.0" y="147.0" font-size="9" fill="#5f6368">He dies in combat — the</text>
-<text x="112.0" y="158.0" font-size="9" fill="#5f6368">Omega resets the day</text>
-<line x1="100.0" y1="204.0" x2="112.0" y2="204.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="112.0" y="201.0" font-size="9" fill="#5f6368">Touched by the Alpha —</text>
-<text x="112.0" y="212.0" font-size="9" fill="#5f6368">only Cage keeps the l...</text>
-<line x1="100.0" y1="258.0" x2="112.0" y2="280.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="112.0" y="288.0" font-size="9" fill="#5f6368">The loop breaks — the</text>
-<text x="112.0" y="299.0" font-size="9" fill="#5f6368">Omega is defeated</text></g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1234" height="3827" viewBox="0 0 1234 3827" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" role="img" aria-labelledby="atlas-title atlas-desc">
+<title id="atlas-title">EDGE OF TOMORROW — The Verdun loop</title>
+<desc id="atlas-desc">Worlds and Thread atlas. Story order progresses downward. Connections use reserved routing space. Full relationship and citation ledgers follow the chart. The HTML companion contains the complete accessible model.</desc>
+<rect width="1234" height="3827" fill="#f5f6f8"/>
+<defs >
+<marker id="arrow-split" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
+<path d="M 1 1 L 9 5 L 1 9 Z" fill="#ad6200"/>
+</marker>
+<marker id="arrow-transfer" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
+<path d="M 1 1 L 9 5 L 1 9 Z" fill="#285ac7"/>
+</marker>
+<marker id="arrow-route" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
+<path d="M 1 1 L 9 5 L 1 9 Z" fill="#087d60"/>
+</marker>
+<marker id="arrow-reference" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
+<path d="M 1 1 L 9 5 L 1 9 Z" fill="#7a637c"/>
+</marker>
+</defs>
+
+<style>
+text { font-kerning: normal; }
+a { cursor: pointer; }
+a:hover text { text-decoration: underline; }
+.card:hover > rect { stroke: #879ead; }
+:target > rect { stroke: #285ac7; stroke-width: 2; }
+.hide-split .layer-split,
+.hide-transfer .layer-transfer,
+.hide-route .layer-route,
+.hide-evidence .citation { display: none; }
+</style>
+<text letter-spacing="1.5" x="40" y="47" font-size="11" fill="#087d60" font-weight="bold">ELSEHOW  /  WORLDS &amp; THREAD</text>
+<text x="40" y="103" font-size="34" fill="#172a3a" font-weight="bold">EDGE OF TOMORROW — The Verdun loop</text>
+<text x="40" y="135" font-size="15" fill="#526575">One world looping on an external reset; memory only in the traveller</text>
+<text x="40" y="169" font-size="12" fill="#526575">2D · categorical world columns · Story-order ranks, not elapsed time. Equal ranks do not assert physical simultaneity.</text>
+<line x1="45" y1="203" x2="76" y2="203" stroke="#ad6200" stroke-width="4"/>
+<text x="90" y="205" font-size="12" fill="#172a3a">Amber S± — Split outcomes. + and − are signs, not fates.</text>
+<line x1="45" y1="230" x2="76" y2="230" stroke="#285ac7" stroke-width="4"/>
+<text x="90" y="232" font-size="12" fill="#172a3a">Blue T — Directed transfers. B body · M memory · C consciousness · S signal · ? literal/unspecified mechanism.</text>
+<line x1="45" y1="257" x2="76" y2="257" stroke="#087d60" stroke-width="4"/>
+<text x="90" y="259" font-size="12" fill="#172a3a">Emerald V / L — Numbered visits and explicit links only. Emerald centre on a cable means the route follows that connection.</text>
+<line x1="45" y1="284" x2="76" y2="284" stroke="#667b8a" stroke-width="4"/>
+<text x="90" y="286" font-size="12" fill="#172a3a">Slate rail — World identity. Cutoff means chart boundary, not destruction. Crossings are bridges; only markers are joins.</text>
+<line x1="45" y1="311" x2="76" y2="311" stroke="#7a637c" stroke-width="4"/>
+<text x="90" y="313" font-size="12" fill="#172a3a">Evidence / fate — [n] opens the evidence record. × dead · ● alive · ? unknown · ∅ nonexistent. Purple dotted connections are annotation references.</text>
+<g >
+<line x1="32" y1="340" x2="1202" y2="340" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="369" font-size="18" fill="#172a3a" font-weight="bold">Declared interpretation</text>
+</g>
+<g >
+<rect x="32" y="388" width="1170" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="411" font-size="11" fill="#526575" font-weight="bold">PROFILE</text>
+<text x="174" y="411" font-size="12" fill="#172a3a">Profile: edge-of-tomorrow · rules: unspecified</text>
+</g>
+<g >
+<rect x="32" y="438" width="1170" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="461" font-size="11" fill="#526575" font-weight="bold">PARAMETERS</text>
+<text x="174" y="461" font-size="12" fill="#172a3a">history_model: iterations · branching: overwrite · coexistence: single_active · time_mechanics: [&quot;memory&quot;] · joined_worlds: not_preexist ·</text>
+<text x="174" y="479" font-size="12" fill="#172a3a">turnstiles: none · protagonist_scope: singular · axis: story_order · validation: evidence_pending · merges: forbidden · genealogy: acyclic</text>
+</g>
+<g >
+<rect x="32" y="504" width="1170" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="527" font-size="11" fill="#526575" font-weight="bold">POLICY</text>
+<text x="174" y="527" font-size="12" fill="#172a3a">Explicit records determine geometry. Profile declarations do not manufacture branches, activation intervals, genealogy, repeated worlds or</text>
+<text x="174" y="545" font-size="12" fill="#172a3a">replacement links. No reset is drawn. World-time coordinates are unavailable in this contract.</text>
+</g>
+<g id="g1">
+<line x1="32" y1="586" x2="1202" y2="586" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="615" font-size="18" fill="#172a3a" font-weight="bold">EOT  /  The Verdun loop</text>
+</g>
+<text x="40" y="646" font-size="12" fill="#526575">1 declared worlds · 4 events · 0 transfers · 0 split records</text>
+<g transform="translate(0 678.00)" role="group" aria-label="Atlas for EOT">
+<text x="24" y="20" font-size="11" fill="#526575" font-weight="bold">STORY</text>
+<text x="24" y="37" font-size="11" fill="#526575" font-weight="bold">ORDER ↓</text>
+<rect x="142" y="180" width="490" height="1305" fill="#eef3f7" stroke="#d6e0e8" rx="10"/>
+<g class="card" role="group" aria-label="{}">
+<rect x="304" y="6" width="304" height="101" fill="#e7edf2" rx="9"/>
+<rect x="304" y="4" width="304" height="101" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<text x="320" y="35" font-size="15" fill="#416f99" font-weight="bold">E</text>
+<text x="320" y="60" font-size="14" fill="#172a3a" font-weight="bold">The battle of Verdun</text>
+<text x="320" y="83" font-size="11" fill="#526575">INITIAL IN MODEL</text>
+</g>
+<rect x="156" y="12" width="5" height="124" fill="#416f99" rx="2"/>
+<rect x="660" y="180" width="480" height="1305" fill="#eef3f7" stroke="#d6e0e8" rx="10"/>
+<g class="card" role="group" aria-label="{}">
+<rect x="812" y="6" width="304" height="138" fill="#e7edf2" rx="9"/>
+<rect x="812" y="4" width="304" height="138" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<text x="828" y="35" font-size="15" fill="#a33732" font-weight="bold">UNRESOLVED</text>
+<text x="828" y="60" font-size="14" fill="#172a3a" font-weight="bold">Undeclared reference: (missing</text>
+<text x="828" y="80" font-size="14" fill="#172a3a" font-weight="bold">universe)</text>
+<text x="828" y="103" font-size="11" fill="#526575">UNDECLARED WORLD — DIAGNOSTIC</text>
+<text x="828" y="120" font-size="11" fill="#526575">ONLY</text>
+</g>
+<rect x="674" y="12" width="5" height="124" fill="#a33732" rx="2"/>
+<line x1="20" y1="192" x2="1168" y2="192" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="220" font-size="12" fill="#172a3a" font-weight="bold">0</text>
+<text x="24" y="245" font-size="10" fill="#526575">rank 01</text>
+<line x1="20" y1="418" x2="1168" y2="418" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="446" font-size="12" fill="#172a3a" font-weight="bold">10</text>
+<text x="24" y="471" font-size="10" fill="#526575">rank 02</text>
+<line x1="20" y1="621" x2="1168" y2="621" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="649" font-size="12" fill="#172a3a" font-weight="bold">15</text>
+<text x="24" y="674" font-size="10" fill="#526575">rank 03</text>
+<line x1="20" y1="867" x2="1168" y2="867" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="895" font-size="12" fill="#172a3a" font-weight="bold">20</text>
+<text x="24" y="920" font-size="10" fill="#526575">rank 04</text>
+<line x1="20" y1="1087" x2="1168" y2="1087" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="1115" font-size="12" fill="#172a3a" font-weight="bold">30</text>
+<text x="24" y="1140" font-size="10" fill="#526575">rank 05</text>
+<path d="M 280.00 192.00 L 280.00 1477.00" fill="none" stroke="#667b8a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="274" y="186" width="12" height="12" fill="#ffffff" stroke="#416f99" rx="1" stroke-width="2"/>
+<line x1="273" y1="1477" x2="287" y2="1477" stroke="#667b8a" stroke-width="2"/>
+<text x="295" y="1482" font-size="10" fill="#526575">End of displayed extent</text>
+<g class="layer-route">
+<title>V1 · {&quot;entry&quot;: &quot;e-start&quot;, &quot;exit&quot;: &quot;e-end&quot;, &quot;id&quot;: &quot;v1&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;E&quot;}</title>
+<path d="M 272.00 237.00 L 263.00 237.00 L 263.00 1132.00 L 270.00 1132.00" fill="none" stroke="#ffffff" stroke-width="8.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 272.00 237.00 L 263.00 237.00 L 263.00 1132.00 L 270.00 1132.00" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+<path d="M 263.00 675.50 L 263.00 693.50" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+</g>
+<line x1="290" y1="237" x2="304" y2="237" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-1" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;The day resets — Cage wakes on the transport&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-start&quot;, &quot;kind&quot;: &quot;start&quot;, &quot;label&quot;: &quot;The day resets — Cage wakes on the transport&quot;, &quot;order&quot;: 0, &quot;universe&quot;: &quot;E&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;The day resets — Cage wakes on the transport&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-start&quot;, &quot;kind&quot;: &quot;start&quot;, &quot;label&quot;: &quot;The day resets — Cage wakes on the transport&quot;, &quot;order&quot;: 0, &quot;universe&quot;: &quot;E&quot;}</title>
+<rect x="304" y="214" width="304" height="158" fill="#e7edf2" rx="9"/>
+<rect x="304" y="212" width="304" height="158" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="304" y="224" width="3" height="134" fill="#416f99" rx="1.5"/>
+<text x="320" y="239" font-size="11" fill="#526575" font-weight="bold">START · e-start</text>
+<text x="320" y="265" font-size="14" fill="#172a3a">The day resets — Cage wakes on</text>
+<text x="320" y="285" font-size="14" fill="#172a3a">the transport</text>
+<a href="#evidence-1" class="citation" aria-label="[1] · Locator The day resets — Cage wakes on the transport · unavailable">
+<text x="320" y="308" font-size="11" fill="#285ac7">[1] · Locator The day resets — Cage</text>
+<text x="320" y="325" font-size="11" fill="#285ac7">wakes on the transport · unavailable</text>
+</a>
+<text x="320" y="348" font-size="11" fill="#087d60" font-weight="bold">V1 entry · cage-mind</text>
+</g>
+<line x1="290" y1="463" x2="304" y2="463" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-2" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;He dies in combat — the Omega resets the day&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-die&quot;, &quot;kind&quot;: &quot;split&quot;, &quot;label&quot;: &quot;He dies in combat — the Omega resets the day&quot;, &quot;order&quot;: 10, &quot;universe&quot;: &quot;E&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;He dies in combat — the Omega resets the day&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-die&quot;, &quot;kind&quot;: &quot;split&quot;, &quot;label&quot;: &quot;He dies in combat — the Omega resets the day&quot;, &quot;order&quot;: 10, &quot;universe&quot;: &quot;E&quot;}</title>
+<rect x="304" y="440" width="304" height="135" fill="#e7edf2" rx="9"/>
+<rect x="304" y="438" width="304" height="135" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="304" y="450" width="3" height="111" fill="#416f99" rx="1.5"/>
+<text x="320" y="465" font-size="11" fill="#526575" font-weight="bold">SPLIT · e-die</text>
+<text x="320" y="491" font-size="14" fill="#172a3a">He dies in combat — the Omega</text>
+<text x="320" y="511" font-size="14" fill="#172a3a">resets the day</text>
+<a href="#evidence-2" class="citation" aria-label="[2] · Locator He dies in combat — the Omega resets the day · unavailable">
+<text x="320" y="534" font-size="11" fill="#285ac7">[2] · Locator He dies in combat — the</text>
+<text x="320" y="551" font-size="11" fill="#285ac7">Omega resets the day · unavailable</text>
+</a>
+</g>
+<line x1="290" y1="912" x2="304" y2="912" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-3" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Touched by the Alpha — only Cage keeps the loop memory&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-alpha&quot;, &quot;kind&quot;: &quot;outcome&quot;, &quot;label&quot;: &quot;Touched by the Alpha — only Cage keeps the loop memory&quot;, &quot;order&quot;: 20, &quot;universe&quot;: &quot;E&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Touched by the Alpha — only Cage keeps the loop memory&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-alpha&quot;, &quot;kind&quot;: &quot;outcome&quot;, &quot;label&quot;: &quot;Touched by the Alpha — only Cage keeps the loop memory&quot;, &quot;order&quot;: 20, &quot;universe&quot;: &quot;E&quot;}</title>
+<rect x="304" y="889" width="304" height="152" fill="#e7edf2" rx="9"/>
+<rect x="304" y="887" width="304" height="152" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="304" y="899" width="3" height="128" fill="#416f99" rx="1.5"/>
+<text x="320" y="914" font-size="11" fill="#526575" font-weight="bold">OUTCOME · e-alpha</text>
+<text x="320" y="940" font-size="14" fill="#172a3a">Touched by the Alpha — only</text>
+<text x="320" y="960" font-size="14" fill="#172a3a">Cage keeps the loop memory</text>
+<a href="#evidence-3" class="citation" aria-label="[3] · Locator Touched by the Alpha — only Cage keeps the loop memory · unavailable">
+<text x="320" y="983" font-size="11" fill="#285ac7">[3] · Locator Touched by the Alpha —</text>
+<text x="320" y="1000" font-size="11" fill="#285ac7">only Cage keeps the loop memory ·</text>
+<text x="320" y="1017" font-size="11" fill="#285ac7">unavailable</text>
+</a>
+</g>
+<line x1="290" y1="1132" x2="304" y2="1132" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-4" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;The loop breaks — the Omega is defeated&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-end&quot;, &quot;kind&quot;: &quot;cutoff&quot;, &quot;label&quot;: &quot;The loop breaks — the Omega is defeated&quot;, &quot;order&quot;: 30, &quot;universe&quot;: &quot;E&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;The loop breaks — the Omega is defeated&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-end&quot;, &quot;kind&quot;: &quot;cutoff&quot;, &quot;label&quot;: &quot;The loop breaks — the Omega is defeated&quot;, &quot;order&quot;: 30, &quot;universe&quot;: &quot;E&quot;}</title>
+<rect x="304" y="1109" width="304" height="296" fill="#e7edf2" rx="9"/>
+<rect x="304" y="1107" width="304" height="296" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="304" y="1119" width="3" height="272" fill="#416f99" rx="1.5"/>
+<text x="320" y="1134" font-size="11" fill="#526575" font-weight="bold">CUTOFF · e-end</text>
+<text x="320" y="1160" font-size="14" fill="#172a3a">The loop breaks — the Omega is</text>
+<text x="320" y="1180" font-size="14" fill="#172a3a">defeated</text>
+<a href="#evidence-4" class="citation" aria-label="[4] · Locator The loop breaks — the Omega is defeated · unavailable">
+<text x="320" y="1203" font-size="11" fill="#285ac7">[4] · Locator The loop breaks — the</text>
+<text x="320" y="1220" font-size="11" fill="#285ac7">Omega is defeated · unavailable</text>
+</a>
+<text x="320" y="1244" font-size="12" fill="#087d60" font-weight="bold">● ALIVE · cage-e</text>
+<text x="320" y="1266" font-size="11" fill="#526575">Fate f-cage · at e-end</text>
+<text x="320" y="1289" font-size="11" fill="#526575">No citation supplied</text>
+<text x="320" y="1313" font-size="12" fill="#087d60" font-weight="bold">● ALIVE · rita-e</text>
+<text x="320" y="1335" font-size="11" fill="#526575">Fate f-rita · at e-end</text>
+<text x="320" y="1358" font-size="11" fill="#526575">No citation supplied</text>
+<text x="320" y="1381" font-size="11" fill="#087d60" font-weight="bold">V1 exit · cage-mind</text>
+</g>
+<line x1="798" y1="666" x2="812" y2="666" stroke="#a33732" stroke-width="1.8"/>
+<g id="g1-item-5" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;loop repetition&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;b-loop&quot;, &quot;order&quot;: 15, &quot;segment&quot;: &quot;seg-e&quot;, &quot;text&quot;: &quot;The day repeats many times; only Cage&#x27;s memory persists (iterations, external reset).&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;loop repetition&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;b-loop&quot;, &quot;order&quot;: 15, &quot;segment&quot;: &quot;seg-e&quot;, &quot;text&quot;: &quot;The day repeats many times; only Cage&#x27;s memory persists (iterations, external reset).&quot;}</title>
+<rect x="812" y="643" width="304" height="178" fill="#e7edf2" rx="9"/>
+<rect x="812" y="641" width="304" height="178" fill="#f9fafc" stroke="#d3dde5" rx="9"/>
+<rect x="812" y="653" width="3" height="154" fill="#a33732" rx="1.5"/>
+<text x="828" y="668" font-size="11" fill="#526575" font-weight="bold">BEAT · b-loop</text>
+<text x="828" y="694" font-size="14" fill="#172a3a">The day repeats many times;</text>
+<text x="828" y="714" font-size="14" fill="#172a3a">only Cage&#x27;s memory persists</text>
+<text x="828" y="734" font-size="14" fill="#172a3a">(iterations, external reset).</text>
+<text x="828" y="757" font-size="11" fill="#526575">Segment: seg-e</text>
+<a href="#evidence-5" class="citation" aria-label="[5] · Locator loop repetition · unavailable">
+<text x="828" y="780" font-size="11" fill="#285ac7">[5] · Locator loop repetition ·</text>
+<text x="828" y="797" font-size="11" fill="#285ac7">unavailable</text>
+</a>
+</g>
+<g class="event-node">
+<title>e-start · The day resets — Cage wakes on the transport</title>
+<circle cx="280" cy="237" r="11" fill="#ffffff"/>
+<rect x="273" y="230" width="14" height="14" fill="#087d60" stroke="#ffffff" rx="2" stroke-width="2"/>
+</g>
+<g class="event-node">
+<title>e-die · He dies in combat — the Omega resets the day</title>
+<circle cx="280" cy="463" r="11" fill="#ffffff"/>
+<circle cx="280" cy="463" r="8" fill="#fff1d7" stroke="#ad6200" stroke-width="2.5"/>
+<text text-anchor="middle" x="280" y="467" font-size="11" fill="#ad6200" font-weight="bold">Y</text>
+</g>
+<g class="event-node">
+<title>e-alpha · Touched by the Alpha — only Cage keeps the loop memory</title>
+<circle cx="280" cy="912" r="11" fill="#ffffff"/>
+<circle cx="280" cy="912" r="6" fill="#416f99" stroke="#ffffff" stroke-width="2"/>
+</g>
+<g class="event-node">
+<title>e-end · The loop breaks — the Omega is defeated</title>
+<circle cx="280" cy="1132" r="11" fill="#ffffff"/>
+<line x1="271" y1="1128" x2="289" y2="1128" stroke="#416f99" stroke-width="3"/>
+<line x1="271" y1="1136" x2="289" y2="1136" stroke="#416f99" stroke-width="3"/>
+</g>
+<g class="event-node">
+<title>b-loop · </title>
+<circle cx="788" cy="666" r="11" fill="#ffffff"/>
+<circle cx="788" cy="666" r="4" fill="#ffffff" stroke="#a33732" stroke-width="2"/>
+</g>
+</g>
+<g id="g1-relationships">
+<line x1="32" y1="2220" x2="1202" y2="2220" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="2249" font-size="18" fill="#172a3a" font-weight="bold">Relationship ledger</text>
+</g>
+<text x="40" y="2280" font-size="12" fill="#172a3a">No split or transfer edges supplied.</text>
+<g >
+<line x1="32" y1="2315.4" x2="1202" y2="2315.4" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="2344.4" font-size="18" fill="#172a3a" font-weight="bold">Thread / cage-mind</text>
+</g>
+<g >
+<rect x="32" y="2363.4" width="1170" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="2386.4" font-size="11" fill="#087d60" font-weight="bold">ROUTE 01</text>
+<text x="174" y="2386.4" font-size="12" fill="#172a3a">V1 · v1 · e-start → e-end · {&quot;entry&quot;: &quot;e-start&quot;, &quot;exit&quot;: &quot;e-end&quot;, &quot;id&quot;: &quot;v1&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;E&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="2431.4" x2="1202" y2="2431.4" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="2460.4" font-size="18" fill="#172a3a" font-weight="bold">Interpretive assumptions / model notes</text>
+</g>
+<g >
+<rect x="32" y="2479.4" width="1170" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="2502.4" font-size="11" fill="#526575" font-weight="bold">NOTE 01</text>
+<text x="174" y="2502.4" font-size="12" fill="#172a3a">One world looping; no universe is created (history_model=iterations, overwrite).</text>
+</g>
+<g >
+<rect x="32" y="2529.4" width="1170" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="2552.4" font-size="11" fill="#526575" font-weight="bold">NOTE 02</text>
+<text x="174" y="2552.4" font-size="12" fill="#172a3a">The reset is external (the Omega&#x27;s blood), not a willed branch.</text>
+</g>
+<g >
+<rect x="32" y="2579.4" width="1170" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="2602.4" font-size="11" fill="#526575" font-weight="bold">NOTE 03</text>
+<text x="174" y="2602.4" font-size="12" fill="#172a3a">Memory persists in the traveller only — every other actor resets.</text>
+</g>
+<g >
+<rect x="32" y="2629.4" width="1170" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="2652.4" font-size="11" fill="#526575" font-weight="bold">NOTE 04</text>
+<text x="174" y="2652.4" font-size="12" fill="#172a3a">Declared merge count: 0. A count supplies no merge locations; none are invented.</text>
+</g>
+<g >
+<line x1="32" y1="2697.4" x2="1202" y2="2697.4" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="2726.4" font-size="18" fill="#172a3a" font-weight="bold">Diagnostics — records retained, nothing guessed</text>
+</g>
+<g >
+<rect x="32" y="2745.4" width="1170" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="2768.4" font-size="11" fill="#a33732" font-weight="bold">CHECK 01</text>
+<text x="174" y="2768.4" font-size="12" fill="#172a3a">Undeclared world reference: (missing universe). Its column is diagnostic, not an inferred world.</text>
+</g>
+<g id="evidence">
+<line x1="32" y1="2827.4" x2="1202" y2="2827.4" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="2856.4" font-size="18" fill="#172a3a" font-weight="bold">Evidence / complete citation register</text>
+</g>
+<text x="40" y="2887.4" font-size="12" fill="#526575">Status is the supplied evidence status, not a truth rating. Repeated citations are deduplicated; all owners remain listed.</text>
+<g id="evidence-1">
+<rect x="32" y="2908.4" width="1170" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="2931.4" font-size="11" fill="#285ac7" font-weight="bold">[1]</text>
+<text x="174" y="2931.4" font-size="12" fill="#172a3a">source: canon · locator: The day resets — Cage wakes on the transport · status: unavailable · Referenced by: document / e-start</text>
+</g>
+<g id="evidence-2">
+<rect x="32" y="2958.4" width="1170" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="2981.4" font-size="11" fill="#285ac7" font-weight="bold">[2]</text>
+<text x="174" y="2981.4" font-size="12" fill="#172a3a">source: canon · locator: He dies in combat — the Omega resets the day · status: unavailable · Referenced by: document / e-die</text>
+</g>
+<g id="evidence-3">
+<rect x="32" y="3008.4" width="1170" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3031.4" font-size="11" fill="#285ac7" font-weight="bold">[3]</text>
+<text x="174" y="3031.4" font-size="12" fill="#172a3a">source: canon · locator: Touched by the Alpha — only Cage keeps the loop memory · status: unavailable · Referenced by: document / e-alpha</text>
+</g>
+<g id="evidence-4">
+<rect x="32" y="3058.4" width="1170" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3081.4" font-size="11" fill="#285ac7" font-weight="bold">[4]</text>
+<text x="174" y="3081.4" font-size="12" fill="#172a3a">source: canon · locator: The loop breaks — the Omega is defeated · status: unavailable · Referenced by: document / e-end</text>
+</g>
+<g id="evidence-5">
+<rect x="32" y="3108.4" width="1170" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3131.4" font-size="11" fill="#285ac7" font-weight="bold">[5]</text>
+<text x="174" y="3131.4" font-size="12" fill="#172a3a">source: canon · locator: loop repetition · status: unavailable · Referenced by: document / b-loop</text>
+</g>
+<g >
+<line x1="32" y1="3176.4" x2="1202" y2="3176.4" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="3205.4" font-size="18" fill="#172a3a" font-weight="bold">Sources — including fixture provenance</text>
+</g>
+<g >
+<rect x="32" y="3224.4" width="1170" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3247.4" font-size="11" fill="#526575" font-weight="bold">canon</text>
+<text x="174" y="3247.4" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;canon&quot;, &quot;kind&quot;: &quot;canon_statement&quot;, &quot;text&quot;: &quot;The day resets on Cage&#x27;s death; he alone remembers; the loop ends when the Omega falls.&quot;,</text>
+<text x="174" y="3265.4" font-size="12" fill="#172a3a">&quot;title&quot;: &quot;FILM — structural reading&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="3308.4" x2="1202" y2="3308.4" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="3337.4" font-size="18" fill="#172a3a" font-weight="bold">Characters</text>
+</g>
+<g >
+<rect x="32" y="3356.4" width="1170" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3379.4" font-size="11" fill="#526575" font-weight="bold">cage</text>
+<text x="174" y="3379.4" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;cage&quot;, &quot;label&quot;: &quot;Cage&quot;}</text>
+</g>
+<g >
+<rect x="32" y="3406.4" width="1170" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3429.4" font-size="11" fill="#526575" font-weight="bold">rita</text>
+<text x="174" y="3429.4" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;rita&quot;, &quot;label&quot;: &quot;Rita&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="3474.4" x2="1202" y2="3474.4" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="3503.4" font-size="18" fill="#172a3a" font-weight="bold">Travellers</text>
+</g>
+<g >
+<rect x="32" y="3522.4" width="1170" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3545.4" font-size="11" fill="#526575" font-weight="bold">cage-mind</text>
+<text x="174" y="3545.4" font-size="12" fill="#172a3a">{&quot;character&quot;: &quot;cage&quot;, &quot;id&quot;: &quot;cage-mind&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="3590.4" x2="1202" y2="3590.4" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="3619.4" font-size="18" fill="#172a3a" font-weight="bold">Namespaces</text>
+</g>
+<g >
+<rect x="32" y="3638.4" width="1170" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3661.4" font-size="11" fill="#526575" font-weight="bold">EOT</text>
+<text x="174" y="3661.4" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;EOT&quot;, &quot;label&quot;: &quot;Edge of Tomorrow&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="3706.4" x2="1202" y2="3706.4" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="3735.4" font-size="18" fill="#172a3a" font-weight="bold">Chart note</text>
+</g>
+<text x="40" y="3767.4" font-size="13" fill="#526575">Iterations, not branching — the world is overwritten each cycle.</text>
 </svg>

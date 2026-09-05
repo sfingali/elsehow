@@ -1,43 +1,375 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="682" viewBox="0 0 900 682" font-family="Arial, Helvetica, sans-serif">
-<rect width="900" height="682" fill="#ffffff"/>
-<g transform="translate(0,0)"><text x="225" y="24" text-anchor="middle" font-size="18" font-weight="bold" fill="#202124">INTERSTELLAR — The tesseract signal</text>
-<text x="225" y="42" text-anchor="middle" font-size="11" fill="#5f6368">INT — The tesseract signal · Deterministic self-consistent bootstrap; no world fork</text>
-<line x1="100.0" y1="90.0" x2="100.0" y2="366.0" stroke="#9aa0a6" stroke-width="2" stroke-opacity="1.0"/>
-<rect x="93.0" y="72.0" width="14" height="14" fill="#e8f0fe" stroke="#202124"/>
-<text x="100.0" y="58.0" text-anchor="middle" font-size="11" fill="#202124">E: The Earth timeline</text>
-<line x1="100.0" y1="96.0" x2="100.0" y2="366.0" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
-<rect x="94.0" y="90.0" width="12" height="12" fill="#3d8f4f" stroke="#202124"/>
-<text x="100.0" y="112.0" text-anchor="middle" font-size="9" fill="#5f6368">0</text>
-<circle cx="100.0" cy="150.0" r="5" fill="#ffffff" stroke="#202124"/>
-<text x="100.0" y="166.0" text-anchor="middle" font-size="9" fill="#5f6368">10</text>
-<circle cx="100.0" cy="204.0" r="5" fill="#ffffff" stroke="#202124"/>
-<text x="100.0" y="220.0" text-anchor="middle" font-size="9" fill="#5f6368">20</text>
-<path d="M 100.0 252.0 L 106.0 258.0 L 100.0 264.0 L 94.0 258.0 Z" fill="#5f6368" stroke="#202124"/>
-<text x="100.0" y="274.0" text-anchor="middle" font-size="9" fill="#5f6368">30</text>
-<circle cx="100.0" cy="312.0" r="4" fill="#202124"/>
-<text x="100.0" y="328.0" text-anchor="middle" font-size="9" fill="#5f6368">35</text>
-<rect x="94.0" y="360.0" width="12" height="12" fill="#5f6368" stroke="#202124"/>
-<text x="100.0" y="382.0" text-anchor="middle" font-size="9" fill="#5f6368">40</text>
-<text x="114.0" y="370.0" font-size="14" font-weight="bold" fill="#2f7d4f">●</text>
-<text x="118.0" y="370.0" font-size="8" fill="#5f6368">cooper-e</text>
-<text x="114.0" y="370.0" font-size="14" font-weight="bold" fill="#2f7d4f">●</text>
-<text x="118.0" y="370.0" font-size="8" fill="#5f6368">murph-e</text>
-<line x1="100.0" y1="96.0" x2="43.3" y2="75.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="43.3" y="61.0" font-size="9" fill="#5f6368">Cooper leaves the</text>
-<text x="43.3" y="72.0" font-size="9" fill="#5f6368">blighted Earth for...</text>
-<line x1="100.0" y1="150.0" x2="112.0" y2="150.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="112.0" y="147.0" font-size="9" fill="#5f6368">Passes the wormhole — a</text>
-<text x="112.0" y="158.0" font-size="9" fill="#5f6368">tesseract opens onto...</text>
-<line x1="100.0" y1="204.0" x2="112.0" y2="204.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="112.0" y="201.0" font-size="9" fill="#5f6368">Miller's planet — hours</text>
-<text x="112.0" y="212.0" font-size="9" fill="#5f6368">cost decades (dilati...</text>
-<line x1="100.0" y1="258.0" x2="112.0" y2="258.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="112.0" y="255.0" font-size="9" fill="#5f6368">Cooper in the tesseract</text>
-<text x="112.0" y="266.0" font-size="9" fill="#5f6368">— can send a signal...</text>
-<line x1="100.0" y1="312.0" x2="112.0" y2="312.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="112.0" y="309.0" font-size="9" fill="#5f6368">He transmits the</text>
-<text x="112.0" y="320.0" font-size="9" fill="#5f6368">black-hole data to yo...</text>
-<line x1="100.0" y1="366.0" x2="112.0" y2="388.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="112.0" y="396.0" font-size="9" fill="#5f6368">Murph decodes it; Cooper</text>
-<text x="112.0" y="407.0" font-size="9" fill="#5f6368">reunites</text></g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1124" height="4138" viewBox="0 0 1124 4138" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" role="img" aria-labelledby="atlas-title atlas-desc">
+<title id="atlas-title">INTERSTELLAR — The tesseract signal</title>
+<desc id="atlas-desc">Worlds and Thread atlas. Story order progresses downward. Connections use reserved routing space. Full relationship and citation ledgers follow the chart. The HTML companion contains the complete accessible model.</desc>
+<rect width="1124" height="4138" fill="#f5f6f8"/>
+<defs >
+<marker id="arrow-split" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
+<path d="M 1 1 L 9 5 L 1 9 Z" fill="#ad6200"/>
+</marker>
+<marker id="arrow-transfer" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
+<path d="M 1 1 L 9 5 L 1 9 Z" fill="#285ac7"/>
+</marker>
+<marker id="arrow-route" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
+<path d="M 1 1 L 9 5 L 1 9 Z" fill="#087d60"/>
+</marker>
+<marker id="arrow-reference" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
+<path d="M 1 1 L 9 5 L 1 9 Z" fill="#7a637c"/>
+</marker>
+</defs>
+
+<style>
+text { font-kerning: normal; }
+a { cursor: pointer; }
+a:hover text { text-decoration: underline; }
+.card:hover > rect { stroke: #879ead; }
+:target > rect { stroke: #285ac7; stroke-width: 2; }
+.hide-split .layer-split,
+.hide-transfer .layer-transfer,
+.hide-route .layer-route,
+.hide-evidence .citation { display: none; }
+</style>
+<text letter-spacing="1.5" x="40" y="47" font-size="11" fill="#087d60" font-weight="bold">ELSEHOW  /  WORLDS &amp; THREAD</text>
+<text x="40" y="103" font-size="34" fill="#172a3a" font-weight="bold">INTERSTELLAR — The tesseract signal</text>
+<text x="40" y="135" font-size="15" fill="#526575">Deterministic self-consistent bootstrap; no world fork</text>
+<text x="40" y="169" font-size="12" fill="#526575">2D · categorical world columns · Story-order ranks, not elapsed time. Equal ranks do not assert physical simultaneity.</text>
+<line x1="45" y1="203" x2="76" y2="203" stroke="#ad6200" stroke-width="4"/>
+<text x="90" y="205" font-size="12" fill="#172a3a">Amber S± — Split outcomes. + and − are signs, not fates.</text>
+<line x1="45" y1="230" x2="76" y2="230" stroke="#285ac7" stroke-width="4"/>
+<text x="90" y="232" font-size="12" fill="#172a3a">Blue T — Directed transfers. B body · M memory · C consciousness · S signal · ? literal/unspecified mechanism.</text>
+<line x1="45" y1="257" x2="76" y2="257" stroke="#087d60" stroke-width="4"/>
+<text x="90" y="259" font-size="12" fill="#172a3a">Emerald V / L — Numbered visits and explicit links only. Emerald centre on a cable means the route follows that connection.</text>
+<line x1="45" y1="284" x2="76" y2="284" stroke="#667b8a" stroke-width="4"/>
+<text x="90" y="286" font-size="12" fill="#172a3a">Slate rail — World identity. Cutoff means chart boundary, not destruction. Crossings are bridges; only markers are joins.</text>
+<line x1="45" y1="311" x2="76" y2="311" stroke="#7a637c" stroke-width="4"/>
+<text x="90" y="313" font-size="12" fill="#172a3a">Evidence / fate — [n] opens the evidence record. × dead · ● alive · ? unknown · ∅ nonexistent. Purple dotted connections are</text>
+<text x="90" y="331" font-size="12" fill="#172a3a">annotation references.</text>
+<g >
+<line x1="32" y1="358" x2="1092" y2="358" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="387" font-size="18" fill="#172a3a" font-weight="bold">Declared interpretation</text>
+</g>
+<g >
+<rect x="32" y="406" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="429" font-size="11" fill="#526575" font-weight="bold">PROFILE</text>
+<text x="174" y="429" font-size="12" fill="#172a3a">Profile: interstellar · rules: unspecified</text>
+</g>
+<g >
+<rect x="32" y="456" width="1060" height="76" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="479" font-size="11" fill="#526575" font-weight="bold">PARAMETERS</text>
+<text x="174" y="479" font-size="12" fill="#172a3a">history_model: universes · branching: undeclared · coexistence: undeclared · time_mechanics: [&quot;signal&quot;] · joined_worlds:</text>
+<text x="174" y="497" font-size="12" fill="#172a3a">undeclared · turnstiles: none · protagonist_scope: singular · axis: story_order · validation: observation_only · merges:</text>
+<text x="174" y="515" font-size="12" fill="#172a3a">forbidden · genealogy: bootstrap_cycles</text>
+</g>
+<g >
+<rect x="32" y="540" width="1060" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="563" font-size="11" fill="#526575" font-weight="bold">POLICY</text>
+<text x="174" y="563" font-size="12" fill="#172a3a">Explicit records determine geometry. Profile declarations do not manufacture branches, activation intervals, genealogy,</text>
+<text x="174" y="581" font-size="12" fill="#172a3a">repeated worlds or replacement links. No reset is drawn. World-time coordinates are unavailable in this contract.</text>
+</g>
+<g id="g1">
+<line x1="32" y1="622" x2="1092" y2="622" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="651" font-size="18" fill="#172a3a" font-weight="bold">INT  /  The tesseract signal</text>
+</g>
+<text x="40" y="682" font-size="12" fill="#526575">1 declared worlds · 6 events · 0 transfers · 0 split records</text>
+<g transform="translate(0 714.00)" role="group" aria-label="Atlas for INT">
+<text x="24" y="20" font-size="11" fill="#526575" font-weight="bold">STORY</text>
+<text x="24" y="37" font-size="11" fill="#526575" font-weight="bold">ORDER ↓</text>
+<rect x="142" y="143" width="490" height="1553" fill="#eef3f7" stroke="#d6e0e8" rx="10"/>
+<g class="card" role="group" aria-label="{}">
+<rect x="304" y="6" width="304" height="101" fill="#e7edf2" rx="9"/>
+<rect x="304" y="4" width="304" height="101" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<text x="320" y="35" font-size="15" fill="#416f99" font-weight="bold">E</text>
+<text x="320" y="60" font-size="14" fill="#172a3a" font-weight="bold">The Earth timeline</text>
+<text x="320" y="83" font-size="11" fill="#526575">INITIAL IN MODEL</text>
+</g>
+<rect x="156" y="12" width="5" height="87" fill="#416f99" rx="2"/>
+<line x1="20" y1="155" x2="998" y2="155" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="183" font-size="12" fill="#172a3a" font-weight="bold">0</text>
+<text x="24" y="208" font-size="10" fill="#526575">rank 01</text>
+<line x1="20" y1="398" x2="998" y2="398" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="426" font-size="12" fill="#172a3a" font-weight="bold">10</text>
+<text x="24" y="451" font-size="10" fill="#526575">rank 02</text>
+<line x1="20" y1="618" x2="998" y2="618" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="646" font-size="12" fill="#172a3a" font-weight="bold">20</text>
+<text x="24" y="671" font-size="10" fill="#526575">rank 03</text>
+<line x1="20" y1="858" x2="998" y2="858" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="886" font-size="12" fill="#172a3a" font-weight="bold">30</text>
+<text x="24" y="911" font-size="10" fill="#526575">rank 04</text>
+<line x1="20" y1="1078" x2="998" y2="1078" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="1106" font-size="12" fill="#172a3a" font-weight="bold">35</text>
+<text x="24" y="1131" font-size="10" fill="#526575">rank 05</text>
+<line x1="20" y1="1298" x2="998" y2="1298" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="1326" font-size="12" fill="#172a3a" font-weight="bold">40</text>
+<text x="24" y="1351" font-size="10" fill="#526575">rank 06</text>
+<path d="M 280.00 155.00 L 280.00 1688.00" fill="none" stroke="#667b8a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="274" y="149" width="12" height="12" fill="#ffffff" stroke="#416f99" rx="1" stroke-width="2"/>
+<line x1="273" y1="1688" x2="287" y2="1688" stroke="#667b8a" stroke-width="2"/>
+<text x="295" y="1693" font-size="10" fill="#526575">End of displayed extent</text>
+<g class="layer-route">
+<title>V1 · {&quot;entry&quot;: &quot;e-start&quot;, &quot;exit&quot;: &quot;e-end&quot;, &quot;id&quot;: &quot;v1&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;E&quot;}</title>
+<path d="M 272.00 200.00 L 263.00 200.00 L 263.00 1343.00 L 270.00 1343.00" fill="none" stroke="#ffffff" stroke-width="8.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 272.00 200.00 L 263.00 200.00 L 263.00 1343.00 L 270.00 1343.00" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+<path d="M 263.00 762.50 L 263.00 780.50" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+</g>
+<line x1="290" y1="200" x2="304" y2="200" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-1" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Cooper leaves the blighted Earth for the wormhole&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-start&quot;, &quot;kind&quot;: &quot;start&quot;, &quot;label&quot;: &quot;Cooper leaves the blighted Earth for the wormhole&quot;, &quot;order&quot;: 0, &quot;universe&quot;: &quot;E&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Cooper leaves the blighted Earth for the wormhole&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-start&quot;, &quot;kind&quot;: &quot;start&quot;, &quot;label&quot;: &quot;Cooper leaves the blighted Earth for the wormhole&quot;, &quot;order&quot;: 0, &quot;universe&quot;: &quot;E&quot;}</title>
+<rect x="304" y="177" width="304" height="175" fill="#e7edf2" rx="9"/>
+<rect x="304" y="175" width="304" height="175" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="304" y="187" width="3" height="151" fill="#416f99" rx="1.5"/>
+<text x="320" y="202" font-size="11" fill="#526575" font-weight="bold">START · e-start</text>
+<text x="320" y="228" font-size="14" fill="#172a3a">Cooper leaves the blighted</text>
+<text x="320" y="248" font-size="14" fill="#172a3a">Earth for the wormhole</text>
+<a href="#evidence-1" class="citation" aria-label="[1] · Locator Cooper leaves the blighted Earth for the wormhole · unavailable">
+<text x="320" y="271" font-size="11" fill="#285ac7">[1] · Locator Cooper leaves the</text>
+<text x="320" y="288" font-size="11" fill="#285ac7">blighted Earth for the wormhole ·</text>
+<text x="320" y="305" font-size="11" fill="#285ac7">unavailable</text>
+</a>
+<text x="320" y="328" font-size="11" fill="#087d60" font-weight="bold">V1 entry · cooper-mind</text>
+</g>
+<line x1="290" y1="443" x2="304" y2="443" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-2" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Passes the wormhole — a tesseract opens onto the past&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-wormhole&quot;, &quot;kind&quot;: &quot;exit&quot;, &quot;label&quot;: &quot;Passes the wormhole — a tesseract opens onto the past&quot;, &quot;order&quot;: 10, &quot;universe&quot;: &quot;E&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Passes the wormhole — a tesseract opens onto the past&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-wormhole&quot;, &quot;kind&quot;: &quot;exit&quot;, &quot;label&quot;: &quot;Passes the wormhole — a tesseract opens onto the past&quot;, &quot;order&quot;: 10, &quot;universe&quot;: &quot;E&quot;}</title>
+<rect x="304" y="420" width="304" height="152" fill="#e7edf2" rx="9"/>
+<rect x="304" y="418" width="304" height="152" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="304" y="430" width="3" height="128" fill="#416f99" rx="1.5"/>
+<text x="320" y="445" font-size="11" fill="#526575" font-weight="bold">EXIT · e-wormhole</text>
+<text x="320" y="471" font-size="14" fill="#172a3a">Passes the wormhole — a</text>
+<text x="320" y="491" font-size="14" fill="#172a3a">tesseract opens onto the past</text>
+<a href="#evidence-2" class="citation" aria-label="[2] · Locator Passes the wormhole — a tesseract opens onto the past · unavailable">
+<text x="320" y="514" font-size="11" fill="#285ac7">[2] · Locator Passes the wormhole — a</text>
+<text x="320" y="531" font-size="11" fill="#285ac7">tesseract opens onto the past ·</text>
+<text x="320" y="548" font-size="11" fill="#285ac7">unavailable</text>
+</a>
+</g>
+<line x1="290" y1="663" x2="304" y2="663" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-3" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Miller&#x27;s planet — hours cost decades (dilation, not a branch)&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-miller&quot;, &quot;kind&quot;: &quot;entry&quot;, &quot;label&quot;: &quot;Miller&#x27;s planet — hours cost decades (dilation, not a branch)&quot;, &quot;order&quot;: 20, &quot;universe&quot;: &quot;E&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Miller&#x27;s planet — hours cost decades (dilation, not a branch)&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-miller&quot;, &quot;kind&quot;: &quot;entry&quot;, &quot;label&quot;: &quot;Miller&#x27;s planet — hours cost decades (dilation, not a branch)&quot;, &quot;order&quot;: 20, &quot;universe&quot;: &quot;E&quot;}</title>
+<rect x="304" y="640" width="304" height="172" fill="#e7edf2" rx="9"/>
+<rect x="304" y="638" width="304" height="172" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="304" y="650" width="3" height="148" fill="#416f99" rx="1.5"/>
+<text x="320" y="665" font-size="11" fill="#526575" font-weight="bold">ENTRY · e-miller</text>
+<text x="320" y="691" font-size="14" fill="#172a3a">Miller&#x27;s planet — hours cost</text>
+<text x="320" y="711" font-size="14" fill="#172a3a">decades (dilation, not a</text>
+<text x="320" y="731" font-size="14" fill="#172a3a">branch)</text>
+<a href="#evidence-3" class="citation" aria-label="[3] · Locator Miller&#x27;s planet — hours cost decades (dilation, not a branch) · unavailable">
+<text x="320" y="754" font-size="11" fill="#285ac7">[3] · Locator Miller&#x27;s planet — hours</text>
+<text x="320" y="771" font-size="11" fill="#285ac7">cost decades (dilation, not a branch) ·</text>
+<text x="320" y="788" font-size="11" fill="#285ac7">unavailable</text>
+</a>
+</g>
+<line x1="290" y1="903" x2="304" y2="903" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-4" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Cooper in the tesseract — can send a signal to the past&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-tesseract&quot;, &quot;kind&quot;: &quot;anchor&quot;, &quot;label&quot;: &quot;Cooper in the tesseract — can send a signal to the past&quot;, &quot;order&quot;: 30, &quot;universe&quot;: &quot;E&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Cooper in the tesseract — can send a signal to the past&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-tesseract&quot;, &quot;kind&quot;: &quot;anchor&quot;, &quot;label&quot;: &quot;Cooper in the tesseract — can send a signal to the past&quot;, &quot;order&quot;: 30, &quot;universe&quot;: &quot;E&quot;}</title>
+<rect x="304" y="880" width="304" height="152" fill="#e7edf2" rx="9"/>
+<rect x="304" y="878" width="304" height="152" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="304" y="890" width="3" height="128" fill="#416f99" rx="1.5"/>
+<text x="320" y="905" font-size="11" fill="#526575" font-weight="bold">ANCHOR · e-tesseract</text>
+<text x="320" y="931" font-size="14" fill="#172a3a">Cooper in the tesseract — can</text>
+<text x="320" y="951" font-size="14" fill="#172a3a">send a signal to the past</text>
+<a href="#evidence-4" class="citation" aria-label="[4] · Locator Cooper in the tesseract — can send a signal to the past · unavailable">
+<text x="320" y="974" font-size="11" fill="#285ac7">[4] · Locator Cooper in the tesseract —</text>
+<text x="320" y="991" font-size="11" fill="#285ac7">can send a signal to the past ·</text>
+<text x="320" y="1008" font-size="11" fill="#285ac7">unavailable</text>
+</a>
+</g>
+<line x1="290" y1="1123" x2="304" y2="1123" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-5" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;He transmits the black-hole data to young Murph&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-signal&quot;, &quot;kind&quot;: &quot;outcome&quot;, &quot;label&quot;: &quot;He transmits the black-hole data to young Murph&quot;, &quot;order&quot;: 35, &quot;universe&quot;: &quot;E&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;He transmits the black-hole data to young Murph&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-signal&quot;, &quot;kind&quot;: &quot;outcome&quot;, &quot;label&quot;: &quot;He transmits the black-hole data to young Murph&quot;, &quot;order&quot;: 35, &quot;universe&quot;: &quot;E&quot;}</title>
+<rect x="304" y="1100" width="304" height="152" fill="#e7edf2" rx="9"/>
+<rect x="304" y="1098" width="304" height="152" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="304" y="1110" width="3" height="128" fill="#416f99" rx="1.5"/>
+<text x="320" y="1125" font-size="11" fill="#526575" font-weight="bold">OUTCOME · e-signal</text>
+<text x="320" y="1151" font-size="14" fill="#172a3a">He transmits the black-hole</text>
+<text x="320" y="1171" font-size="14" fill="#172a3a">data to young Murph</text>
+<a href="#evidence-5" class="citation" aria-label="[5] · Locator He transmits the black-hole data to young Murph · unavailable">
+<text x="320" y="1194" font-size="11" fill="#285ac7">[5] · Locator He transmits the</text>
+<text x="320" y="1211" font-size="11" fill="#285ac7">black-hole data to young Murph ·</text>
+<text x="320" y="1228" font-size="11" fill="#285ac7">unavailable</text>
+</a>
+</g>
+<line x1="290" y1="1343" x2="304" y2="1343" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-6" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Murph decodes it; Cooper reunites&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-end&quot;, &quot;kind&quot;: &quot;cutoff&quot;, &quot;label&quot;: &quot;Murph decodes it; Cooper reunites&quot;, &quot;order&quot;: 40, &quot;universe&quot;: &quot;E&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Murph decodes it; Cooper reunites&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-end&quot;, &quot;kind&quot;: &quot;cutoff&quot;, &quot;label&quot;: &quot;Murph decodes it; Cooper reunites&quot;, &quot;order&quot;: 40, &quot;universe&quot;: &quot;E&quot;}</title>
+<rect x="304" y="1320" width="304" height="296" fill="#e7edf2" rx="9"/>
+<rect x="304" y="1318" width="304" height="296" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="304" y="1330" width="3" height="272" fill="#416f99" rx="1.5"/>
+<text x="320" y="1345" font-size="11" fill="#526575" font-weight="bold">CUTOFF · e-end</text>
+<text x="320" y="1371" font-size="14" fill="#172a3a">Murph decodes it; Cooper</text>
+<text x="320" y="1391" font-size="14" fill="#172a3a">reunites</text>
+<a href="#evidence-6" class="citation" aria-label="[6] · Locator Murph decodes it; Cooper reunites · unavailable">
+<text x="320" y="1414" font-size="11" fill="#285ac7">[6] · Locator Murph decodes it; Cooper</text>
+<text x="320" y="1431" font-size="11" fill="#285ac7">reunites · unavailable</text>
+</a>
+<text x="320" y="1455" font-size="12" fill="#087d60" font-weight="bold">● ALIVE · cooper-e</text>
+<text x="320" y="1477" font-size="11" fill="#526575">Fate f-cooper · at e-end</text>
+<text x="320" y="1500" font-size="11" fill="#526575">No citation supplied</text>
+<text x="320" y="1524" font-size="12" fill="#087d60" font-weight="bold">● ALIVE · murph-e</text>
+<text x="320" y="1546" font-size="11" fill="#526575">Fate f-murph · at e-end</text>
+<text x="320" y="1569" font-size="11" fill="#526575">No citation supplied</text>
+<text x="320" y="1592" font-size="11" fill="#087d60" font-weight="bold">V1 exit · cooper-mind</text>
+</g>
+<g class="event-node">
+<title>e-start · Cooper leaves the blighted Earth for the wormhole</title>
+<circle cx="280" cy="200" r="11" fill="#ffffff"/>
+<rect x="273" y="193" width="14" height="14" fill="#087d60" stroke="#ffffff" rx="2" stroke-width="2"/>
+</g>
+<g class="event-node">
+<title>e-wormhole · Passes the wormhole — a tesseract opens onto the past</title>
+<circle cx="280" cy="443" r="11" fill="#ffffff"/>
+<circle cx="280" cy="443" r="8" fill="#ffffff" stroke="#416f99" stroke-width="2.5"/>
+<polygon points="283.00,439.00 277.00,443.00 283.00,447.00" fill="#416f99"/>
+</g>
+<g class="event-node">
+<title>e-miller · Miller&#x27;s planet — hours cost decades (dilation, not a branch)</title>
+<circle cx="280" cy="663" r="11" fill="#ffffff"/>
+<circle cx="280" cy="663" r="8" fill="#ffffff" stroke="#416f99" stroke-width="2.5"/>
+<polygon points="277.00,659.00 283.00,663.00 277.00,667.00" fill="#416f99"/>
+</g>
+<g class="event-node">
+<title>e-tesseract · Cooper in the tesseract — can send a signal to the past</title>
+<circle cx="280" cy="903" r="11" fill="#ffffff"/>
+<polygon points="280.00,895.00 288.00,903.00 280.00,911.00 272.00,903.00" fill="#ffffff" stroke="#416f99" stroke-width="2.5"/>
+</g>
+<g class="event-node">
+<title>e-signal · He transmits the black-hole data to young Murph</title>
+<circle cx="280" cy="1123" r="11" fill="#ffffff"/>
+<circle cx="280" cy="1123" r="6" fill="#416f99" stroke="#ffffff" stroke-width="2"/>
+</g>
+<g class="event-node">
+<title>e-end · Murph decodes it; Cooper reunites</title>
+<circle cx="280" cy="1343" r="11" fill="#ffffff"/>
+<line x1="271" y1="1339" x2="289" y2="1339" stroke="#416f99" stroke-width="3"/>
+<line x1="271" y1="1347" x2="289" y2="1347" stroke="#416f99" stroke-width="3"/>
+</g>
+</g>
+<g id="g1-relationships">
+<line x1="32" y1="2467" x2="1092" y2="2467" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="2496" font-size="18" fill="#172a3a" font-weight="bold">Relationship ledger</text>
+</g>
+<text x="40" y="2527" font-size="12" fill="#172a3a">No split or transfer edges supplied.</text>
+<g >
+<line x1="32" y1="2562.4" x2="1092" y2="2562.4" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="2591.4" font-size="18" fill="#172a3a" font-weight="bold">Thread / cooper-mind</text>
+</g>
+<g >
+<rect x="32" y="2610.4" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="2633.4" font-size="11" fill="#087d60" font-weight="bold">ROUTE 01</text>
+<text x="174" y="2633.4" font-size="12" fill="#172a3a">V1 · v1 · e-start → e-end · {&quot;entry&quot;: &quot;e-start&quot;, &quot;exit&quot;: &quot;e-end&quot;, &quot;id&quot;: &quot;v1&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;E&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="2678.4" x2="1092" y2="2678.4" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="2707.4" font-size="18" fill="#172a3a" font-weight="bold">Interpretive assumptions / model notes</text>
+</g>
+<g >
+<rect x="32" y="2726.4" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="2749.4" font-size="11" fill="#526575" font-weight="bold">NOTE 01</text>
+<text x="174" y="2749.4" font-size="12" fill="#172a3a">Deterministic, self-consistent timeline: no branch is created by the tesseract.</text>
+</g>
+<g >
+<rect x="32" y="2776.4" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="2799.4" font-size="11" fill="#526575" font-weight="bold">NOTE 02</text>
+<text x="174" y="2799.4" font-size="12" fill="#172a3a">Time travel is a signal-to-the-past (gravity data), not body travel between worlds.</text>
+</g>
+<g >
+<rect x="32" y="2826.4" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="2849.4" font-size="11" fill="#526575" font-weight="bold">NOTE 03</text>
+<text x="174" y="2849.4" font-size="12" fill="#172a3a">THE MESSAGE WAS ALWAYS SENT — bootstrap causality observed, not forked (genealogy=bootstrap_cycles).</text>
+</g>
+<g >
+<rect x="32" y="2876.4" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="2899.4" font-size="11" fill="#526575" font-weight="bold">NOTE 04</text>
+<text x="174" y="2899.4" font-size="12" fill="#172a3a">Time dilation alters elapsed time but does not fork a universe.</text>
+</g>
+<g >
+<rect x="32" y="2926.4" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="2949.4" font-size="11" fill="#526575" font-weight="bold">NOTE 05</text>
+<text x="174" y="2949.4" font-size="12" fill="#172a3a">Declared merge count: 0. A count supplies no merge locations; none are invented.</text>
+</g>
+<g id="evidence">
+<line x1="32" y1="3008.4" x2="1092" y2="3008.4" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="3037.4" font-size="18" fill="#172a3a" font-weight="bold">Evidence / complete citation register</text>
+</g>
+<text x="40" y="3068.4" font-size="12" fill="#526575">Status is the supplied evidence status, not a truth rating. Repeated citations are deduplicated; all owners remain listed.</text>
+<g id="evidence-1">
+<rect x="32" y="3089.4" width="1060" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3112.4" font-size="11" fill="#285ac7" font-weight="bold">[1]</text>
+<text x="174" y="3112.4" font-size="12" fill="#172a3a">source: canon · locator: Cooper leaves the blighted Earth for the wormhole · status: unavailable · Referenced by: document /</text>
+<text x="174" y="3130.4" font-size="12" fill="#172a3a">e-start</text>
+</g>
+<g id="evidence-2">
+<rect x="32" y="3155.4" width="1060" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3178.4" font-size="11" fill="#285ac7" font-weight="bold">[2]</text>
+<text x="174" y="3178.4" font-size="12" fill="#172a3a">source: canon · locator: Passes the wormhole — a tesseract opens onto the past · status: unavailable · Referenced by:</text>
+<text x="174" y="3196.4" font-size="12" fill="#172a3a">document / e-wormhole</text>
+</g>
+<g id="evidence-3">
+<rect x="32" y="3221.4" width="1060" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3244.4" font-size="11" fill="#285ac7" font-weight="bold">[3]</text>
+<text x="174" y="3244.4" font-size="12" fill="#172a3a">source: canon · locator: Miller&#x27;s planet — hours cost decades (dilation, not a branch) · status: unavailable · Referenced by:</text>
+<text x="174" y="3262.4" font-size="12" fill="#172a3a">document / e-miller</text>
+</g>
+<g id="evidence-4">
+<rect x="32" y="3287.4" width="1060" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3310.4" font-size="11" fill="#285ac7" font-weight="bold">[4]</text>
+<text x="174" y="3310.4" font-size="12" fill="#172a3a">source: canon · locator: Cooper in the tesseract — can send a signal to the past · status: unavailable · Referenced by:</text>
+<text x="174" y="3328.4" font-size="12" fill="#172a3a">document / e-tesseract</text>
+</g>
+<g id="evidence-5">
+<rect x="32" y="3353.4" width="1060" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3376.4" font-size="11" fill="#285ac7" font-weight="bold">[5]</text>
+<text x="174" y="3376.4" font-size="12" fill="#172a3a">source: canon · locator: He transmits the black-hole data to young Murph · status: unavailable · Referenced by: document /</text>
+<text x="174" y="3394.4" font-size="12" fill="#172a3a">e-signal</text>
+</g>
+<g id="evidence-6">
+<rect x="32" y="3419.4" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3442.4" font-size="11" fill="#285ac7" font-weight="bold">[6]</text>
+<text x="174" y="3442.4" font-size="12" fill="#172a3a">source: canon · locator: Murph decodes it; Cooper reunites · status: unavailable · Referenced by: document / e-end</text>
+</g>
+<g >
+<line x1="32" y1="3487.4" x2="1092" y2="3487.4" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="3516.4" font-size="18" fill="#172a3a" font-weight="bold">Sources — including fixture provenance</text>
+</g>
+<g >
+<rect x="32" y="3535.4" width="1060" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3558.4" font-size="11" fill="#526575" font-weight="bold">canon</text>
+<text x="174" y="3558.4" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;canon&quot;, &quot;kind&quot;: &quot;canon_statement&quot;, &quot;text&quot;: &quot;Cooper sends the black-hole solution to the past through the tesseract;</text>
+<text x="174" y="3576.4" font-size="12" fill="#172a3a">the loop is self-consistent.&quot;, &quot;title&quot;: &quot;FILM — structural reading&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="3619.4" x2="1092" y2="3619.4" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="3648.4" font-size="18" fill="#172a3a" font-weight="bold">Characters</text>
+</g>
+<g >
+<rect x="32" y="3667.4" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3690.4" font-size="11" fill="#526575" font-weight="bold">cooper</text>
+<text x="174" y="3690.4" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;cooper&quot;, &quot;label&quot;: &quot;Cooper&quot;}</text>
+</g>
+<g >
+<rect x="32" y="3717.4" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3740.4" font-size="11" fill="#526575" font-weight="bold">murph</text>
+<text x="174" y="3740.4" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;murph&quot;, &quot;label&quot;: &quot;Murph&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="3785.4" x2="1092" y2="3785.4" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="3814.4" font-size="18" fill="#172a3a" font-weight="bold">Travellers</text>
+</g>
+<g >
+<rect x="32" y="3833.4" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3856.4" font-size="11" fill="#526575" font-weight="bold">cooper-mind</text>
+<text x="174" y="3856.4" font-size="12" fill="#172a3a">{&quot;character&quot;: &quot;cooper&quot;, &quot;id&quot;: &quot;cooper-mind&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="3901.4" x2="1092" y2="3901.4" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="3930.4" font-size="18" fill="#172a3a" font-weight="bold">Namespaces</text>
+</g>
+<g >
+<rect x="32" y="3949.4" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3972.4" font-size="11" fill="#526575" font-weight="bold">INT</text>
+<text x="174" y="3972.4" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;INT&quot;, &quot;label&quot;: &quot;Interstellar&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="4017.4" x2="1092" y2="4017.4" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="4046.4" font-size="18" fill="#172a3a" font-weight="bold">Chart note</text>
+</g>
+<text x="40" y="4078.4" font-size="13" fill="#526575">Causality is observed, not branched. Signal-to-past via the tesseract.</text>
 </svg>

@@ -1,37 +1,326 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="628" viewBox="0 0 900 628" font-family="Arial, Helvetica, sans-serif">
-<rect width="900" height="628" fill="#ffffff"/>
-<g transform="translate(0,0)"><text x="225" y="24" text-anchor="middle" font-size="18" font-weight="bold" fill="#202124">PREDESTINATION — The temporal agency loop</text>
-<text x="225" y="42" text-anchor="middle" font-size="11" fill="#5f6368">PRE — The temporal agency loop · Single closed timeline, bootstrap self-ancestry</text>
-<line x1="79.1" y1="94.2" x2="32.9" y2="282.3" stroke="#9aa0a6" stroke-width="2" stroke-opacity="1.0"/>
-<rect x="93.0" y="72.0" width="14" height="14" fill="#e8f0fe" stroke="#202124"/>
-<text x="100.0" y="58.0" text-anchor="middle" font-size="11" fill="#202124">T: The closed timeline</text>
-<polygon points="65.4,91.7 92.8,96.8 46.6,284.8 19.3,279.8" fill="#e8f0fe" stroke="#9aa0a6" stroke-width="1"/>
-<line x1="77.9" y1="98.3" x2="32.9" y2="281.3" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
-<rect x="71.9" y="93.3" width="12" height="12" fill="#3d8f4f" stroke="#202124"/>
-<text x="77.9" y="115.3" text-anchor="middle" font-size="9" fill="#5f6368">0</text>
-<path d="M 66.6 139.1 L 72.6 145.1 L 66.6 151.1 L 60.6 145.1 Z" fill="#5f6368" stroke="#202124"/>
-<text x="66.6" y="161.1" text-anchor="middle" font-size="9" fill="#5f6368">10</text>
-<circle cx="55.4" cy="190.8" r="4" fill="#202124"/>
-<text x="55.4" y="206.8" text-anchor="middle" font-size="9" fill="#5f6368">20</text>
-<path d="M 44.2 230.6 L 50.2 236.6 L 44.2 242.6 L 38.2 236.6 Z" fill="#5f6368" stroke="#202124"/>
-<text x="44.2" y="252.6" text-anchor="middle" font-size="9" fill="#5f6368">30</text>
-<rect x="26.9" y="276.3" width="12" height="12" fill="#5f6368" stroke="#202124"/>
-<text x="32.9" y="298.3" text-anchor="middle" font-size="9" fill="#5f6368">40</text>
-<text x="46.6" y="288.8" font-size="14" font-weight="bold" fill="#2f7d4f">●</text>
-<text x="50.6" y="288.8" font-size="8" fill="#5f6368">a-t</text>
-<line x1="77.9" y1="99.3" x2="89.9" y2="121.3" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="89.9" y="129.3" font-size="9" fill="#5f6368">The bartender's ordinary</text>
-<text x="89.9" y="140.3" font-size="9" fill="#5f6368">day</text>
-<line x1="66.6" y1="145.1" x2="78.6" y2="167.1" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="78.6" y="175.1" font-size="9" fill="#5f6368">He meets the Unmarried</text>
-<text x="78.6" y="186.1" font-size="9" fill="#5f6368">Mother</text>
-<line x1="55.4" y1="190.8" x2="67.4" y2="212.8" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="67.4" y="220.8" font-size="9" fill="#5f6368">The surgery — he is 'the</text>
-<text x="67.4" y="231.8" font-size="9" fill="#5f6368">Unmarried Mother'</text>
-<line x1="44.2" y1="236.6" x2="56.2" y2="258.6" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="56.2" y="266.6" font-size="9" fill="#5f6368">He is sent to meet his</text>
-<text x="56.2" y="277.6" font-size="9" fill="#5f6368">own past self</text>
-<line x1="32.9" y1="282.3" x2="44.9" y2="304.3" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="44.9" y="312.3" font-size="9" fill="#5f6368">He takes the place of</text>
-<text x="44.9" y="323.3" font-size="9" fill="#5f6368">the bartender — the l...</text></g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1124" height="3558" viewBox="0 0 1124 3558" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" role="img" aria-labelledby="atlas-title atlas-desc">
+<title id="atlas-title">PREDESTINATION — The temporal agency loop</title>
+<desc id="atlas-desc">Worlds and Thread atlas. Story order progresses downward. Connections use reserved routing space. Full relationship and citation ledgers follow the chart. The HTML companion contains the complete accessible model.</desc>
+<rect width="1124" height="3558" fill="#f5f6f8"/>
+<defs >
+<marker id="arrow-split" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
+<path d="M 1 1 L 9 5 L 1 9 Z" fill="#ad6200"/>
+</marker>
+<marker id="arrow-transfer" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
+<path d="M 1 1 L 9 5 L 1 9 Z" fill="#285ac7"/>
+</marker>
+<marker id="arrow-route" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
+<path d="M 1 1 L 9 5 L 1 9 Z" fill="#087d60"/>
+</marker>
+<marker id="arrow-reference" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
+<path d="M 1 1 L 9 5 L 1 9 Z" fill="#7a637c"/>
+</marker>
+</defs>
+
+<style>
+text { font-kerning: normal; }
+a { cursor: pointer; }
+a:hover text { text-decoration: underline; }
+.card:hover > rect { stroke: #879ead; }
+:target > rect { stroke: #285ac7; stroke-width: 2; }
+.hide-split .layer-split,
+.hide-transfer .layer-transfer,
+.hide-route .layer-route,
+.hide-evidence .citation { display: none; }
+</style>
+<text letter-spacing="1.5" x="40" y="47" font-size="11" fill="#087d60" font-weight="bold">ELSEHOW  /  WORLDS &amp; THREAD</text>
+<text x="40" y="103" font-size="34" fill="#172a3a" font-weight="bold">PREDESTINATION — The temporal agency loop</text>
+<text x="40" y="135" font-size="15" fill="#526575">Single closed timeline, bootstrap self-ancestry</text>
+<text x="40" y="169" font-size="12" fill="#526575">2.5D · cabinet axonometric · depth separates surfaces only · Story-order ranks, not elapsed time. Equal ranks do not assert physical</text>
+<text x="40" y="187" font-size="12" fill="#526575">simultaneity.</text>
+<line x1="45" y1="221" x2="76" y2="221" stroke="#ad6200" stroke-width="4"/>
+<text x="90" y="223" font-size="12" fill="#172a3a">Amber S± — Split outcomes. + and − are signs, not fates.</text>
+<line x1="45" y1="248" x2="76" y2="248" stroke="#285ac7" stroke-width="4"/>
+<text x="90" y="250" font-size="12" fill="#172a3a">Blue T — Directed transfers. B body · M memory · C consciousness · S signal · ? literal/unspecified mechanism.</text>
+<line x1="45" y1="275" x2="76" y2="275" stroke="#087d60" stroke-width="4"/>
+<text x="90" y="277" font-size="12" fill="#172a3a">Emerald V / L — Numbered visits and explicit links only. Emerald centre on a cable means the route follows that connection.</text>
+<line x1="45" y1="302" x2="76" y2="302" stroke="#667b8a" stroke-width="4"/>
+<text x="90" y="304" font-size="12" fill="#172a3a">Slate rail — World identity. Cutoff means chart boundary, not destruction. Crossings are bridges; only markers are joins.</text>
+<line x1="45" y1="329" x2="76" y2="329" stroke="#7a637c" stroke-width="4"/>
+<text x="90" y="331" font-size="12" fill="#172a3a">Evidence / fate — [n] opens the evidence record. × dead · ● alive · ? unknown · ∅ nonexistent. Purple dotted connections are</text>
+<text x="90" y="349" font-size="12" fill="#172a3a">annotation references.</text>
+<g >
+<line x1="32" y1="376" x2="1092" y2="376" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="405" font-size="18" fill="#172a3a" font-weight="bold">Declared interpretation</text>
+</g>
+<g >
+<rect x="32" y="424" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="447" font-size="11" fill="#526575" font-weight="bold">PROFILE</text>
+<text x="174" y="447" font-size="12" fill="#172a3a">Profile: predestination · rules: unspecified</text>
+</g>
+<g >
+<rect x="32" y="474" width="1060" height="76" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="497" font-size="11" fill="#526575" font-weight="bold">PARAMETERS</text>
+<text x="174" y="497" font-size="12" fill="#172a3a">history_model: universes · branching: undeclared · coexistence: undeclared · time_mechanics: [&quot;body&quot;, &quot;memory&quot;] ·</text>
+<text x="174" y="515" font-size="12" fill="#172a3a">joined_worlds: undeclared · turnstiles: none · protagonist_scope: singular · axis: story_order · validation: observation_only ·</text>
+<text x="174" y="533" font-size="12" fill="#172a3a">merges: forbidden · genealogy: bootstrap_cycles</text>
+</g>
+<g >
+<rect x="32" y="558" width="1060" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="581" font-size="11" fill="#526575" font-weight="bold">POLICY</text>
+<text x="174" y="581" font-size="12" fill="#172a3a">Explicit records determine geometry. Profile declarations do not manufacture branches, activation intervals, genealogy,</text>
+<text x="174" y="599" font-size="12" fill="#172a3a">repeated worlds or replacement links. No reset is drawn. World-time coordinates are unavailable in this contract.</text>
+</g>
+<g id="g1">
+<line x1="32" y1="640" x2="1092" y2="640" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="669" font-size="18" fill="#172a3a" font-weight="bold">PRE  /  The temporal agency loop</text>
+</g>
+<text x="40" y="700" font-size="12" fill="#526575">1 declared worlds · 5 events · 0 transfers · 0 split records</text>
+<g transform="translate(0 732.00)" role="group" aria-label="Atlas for PRE">
+<text x="24" y="20" font-size="11" fill="#526575" font-weight="bold">STORY</text>
+<text x="24" y="37" font-size="11" fill="#526575" font-weight="bold">ORDER ↓</text>
+<polygon points="644.00,135.80 632.00,143.00 632.00,1296.00 644.00,1288.80" fill="#d9e2ea" stroke="#becbd6" stroke-width="1"/>
+<polygon points="154.00,1288.80 644.00,1288.80 632.00,1296.00 142.00,1296.00" fill="#cbd7e1" stroke="#b7c6d2" stroke-width="1"/>
+<polygon points="154.00,135.80 644.00,135.80 644.00,1288.80 154.00,1288.80" fill="#eef3f7" stroke="#c7d3dd" stroke-width="1"/>
+<g class="card" role="group" aria-label="{}">
+<rect x="316.0" y="-1.1999999999999993" width="304" height="101" fill="#e7edf2" rx="9"/>
+<rect x="316.0" y="-3.1999999999999993" width="304" height="101" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<text x="332.0" y="27.8" font-size="15" fill="#416f99" font-weight="bold">T</text>
+<text x="332.0" y="52.8" font-size="14" fill="#172a3a" font-weight="bold">The closed timeline</text>
+<text x="332.0" y="75.8" font-size="11" fill="#526575">INITIAL IN MODEL</text>
+</g>
+<rect x="168.0" y="4.800000000000001" width="5" height="87" fill="#416f99" rx="2"/>
+<line x1="20" y1="147.8" x2="998" y2="147.8" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="175.8" font-size="12" fill="#172a3a" font-weight="bold">0</text>
+<text x="24" y="200.8" font-size="10" fill="#526575">rank 01</text>
+<line x1="20" y1="353.8" x2="998" y2="353.8" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="381.8" font-size="12" fill="#172a3a" font-weight="bold">10</text>
+<text x="24" y="406.8" font-size="10" fill="#526575">rank 02</text>
+<line x1="20" y1="536.8" x2="998" y2="536.8" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="564.8" font-size="12" fill="#172a3a" font-weight="bold">20</text>
+<text x="24" y="589.8" font-size="10" fill="#526575">rank 03</text>
+<line x1="20" y1="739.8" x2="998" y2="739.8" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="767.8" font-size="12" fill="#172a3a" font-weight="bold">30</text>
+<text x="24" y="792.8" font-size="10" fill="#526575">rank 04</text>
+<line x1="20" y1="942.8" x2="998" y2="942.8" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="970.8" font-size="12" fill="#172a3a" font-weight="bold">40</text>
+<text x="24" y="995.8" font-size="10" fill="#526575">rank 05</text>
+<path d="M 292.00 147.80 L 292.00 1280.80" fill="none" stroke="#667b8a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="286.0" y="141.8" width="12" height="12" fill="#ffffff" stroke="#416f99" rx="1" stroke-width="2"/>
+<line x1="285.0" y1="1280.8" x2="299.0" y2="1280.8" stroke="#667b8a" stroke-width="2"/>
+<text x="307.0" y="1285.8" font-size="10" fill="#526575">End of displayed extent</text>
+<g class="layer-route">
+<title>V1 · {&quot;entry&quot;: &quot;e-start&quot;, &quot;exit&quot;: &quot;e-end&quot;, &quot;id&quot;: &quot;v1&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;T&quot;}</title>
+<path d="M 284.00 192.80 L 275.00 192.80 L 275.00 987.80 L 282.00 987.80" fill="none" stroke="#ffffff" stroke-width="8.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 284.00 192.80 L 275.00 192.80 L 275.00 987.80 L 282.00 987.80" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+<path d="M 275.00 581.30 L 275.00 599.30" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+</g>
+<line x1="302.0" y1="192.8" x2="316.0" y2="192.8" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-1" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;The bartender&#x27;s ordinary day&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-start&quot;, &quot;kind&quot;: &quot;start&quot;, &quot;label&quot;: &quot;The bartender&#x27;s ordinary day&quot;, &quot;order&quot;: 0, &quot;universe&quot;: &quot;T&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;The bartender&#x27;s ordinary day&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-start&quot;, &quot;kind&quot;: &quot;start&quot;, &quot;label&quot;: &quot;The bartender&#x27;s ordinary day&quot;, &quot;order&quot;: 0, &quot;universe&quot;: &quot;T&quot;}</title>
+<rect x="316.0" y="169.8" width="304" height="138" fill="#e7edf2" rx="9"/>
+<rect x="316.0" y="167.8" width="304" height="138" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="316.0" y="179.8" width="3" height="114" fill="#416f99" rx="1.5"/>
+<text x="332.0" y="194.8" font-size="11" fill="#526575" font-weight="bold">START · e-start</text>
+<text x="332.0" y="220.8" font-size="14" fill="#172a3a">The bartender&#x27;s ordinary day</text>
+<a href="#evidence-1" class="citation" aria-label="[1] · Locator The bartender&#x27;s ordinary day · unavailable">
+<text x="332.0" y="243.8" font-size="11" fill="#285ac7">[1] · Locator The bartender&#x27;s ordinary</text>
+<text x="332.0" y="260.8" font-size="11" fill="#285ac7">day · unavailable</text>
+</a>
+<text x="332.0" y="283.8" font-size="11" fill="#087d60" font-weight="bold">V1 entry · b-mind</text>
+</g>
+<line x1="302.0" y1="398.8" x2="316.0" y2="398.8" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-2" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;He meets the Unmarried Mother&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-meet&quot;, &quot;kind&quot;: &quot;anchor&quot;, &quot;label&quot;: &quot;He meets the Unmarried Mother&quot;, &quot;order&quot;: 10, &quot;universe&quot;: &quot;T&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;He meets the Unmarried Mother&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-meet&quot;, &quot;kind&quot;: &quot;anchor&quot;, &quot;label&quot;: &quot;He meets the Unmarried Mother&quot;, &quot;order&quot;: 10, &quot;universe&quot;: &quot;T&quot;}</title>
+<rect x="316.0" y="375.8" width="304" height="115" fill="#e7edf2" rx="9"/>
+<rect x="316.0" y="373.8" width="304" height="115" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="316.0" y="385.8" width="3" height="91" fill="#416f99" rx="1.5"/>
+<text x="332.0" y="400.8" font-size="11" fill="#526575" font-weight="bold">ANCHOR · e-meet</text>
+<text x="332.0" y="426.8" font-size="14" fill="#172a3a">He meets the Unmarried Mother</text>
+<a href="#evidence-2" class="citation" aria-label="[2] · Locator He meets the Unmarried Mother · unavailable">
+<text x="332.0" y="449.8" font-size="11" fill="#285ac7">[2] · Locator He meets the Unmarried</text>
+<text x="332.0" y="466.8" font-size="11" fill="#285ac7">Mother · unavailable</text>
+</a>
+</g>
+<line x1="302.0" y1="581.8" x2="316.0" y2="581.8" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-3" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;The surgery — he is &#x27;the Unmarried Mother&#x27;&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-surgery&quot;, &quot;kind&quot;: &quot;outcome&quot;, &quot;label&quot;: &quot;The surgery — he is &#x27;the Unmarried Mother&#x27;&quot;, &quot;order&quot;: 20, &quot;universe&quot;: &quot;T&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;The surgery — he is &#x27;the Unmarried Mother&#x27;&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-surgery&quot;, &quot;kind&quot;: &quot;outcome&quot;, &quot;label&quot;: &quot;The surgery — he is &#x27;the Unmarried Mother&#x27;&quot;, &quot;order&quot;: 20, &quot;universe&quot;: &quot;T&quot;}</title>
+<rect x="316.0" y="558.8" width="304" height="135" fill="#e7edf2" rx="9"/>
+<rect x="316.0" y="556.8" width="304" height="135" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="316.0" y="568.8" width="3" height="111" fill="#416f99" rx="1.5"/>
+<text x="332.0" y="583.8" font-size="11" fill="#526575" font-weight="bold">OUTCOME · e-surgery</text>
+<text x="332.0" y="609.8" font-size="14" fill="#172a3a">The surgery — he is &#x27;the</text>
+<text x="332.0" y="629.8" font-size="14" fill="#172a3a">Unmarried Mother&#x27;</text>
+<a href="#evidence-3" class="citation" aria-label="[3] · Locator The surgery — he is &#x27;the Unmarried Mother&#x27; · unavailable">
+<text x="332.0" y="652.8" font-size="11" fill="#285ac7">[3] · Locator The surgery — he is &#x27;the</text>
+<text x="332.0" y="669.8" font-size="11" fill="#285ac7">Unmarried Mother&#x27; · unavailable</text>
+</a>
+</g>
+<line x1="302.0" y1="784.8" x2="316.0" y2="784.8" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-4" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;He is sent to meet his own past self&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-meet2&quot;, &quot;kind&quot;: &quot;anchor&quot;, &quot;label&quot;: &quot;He is sent to meet his own past self&quot;, &quot;order&quot;: 30, &quot;universe&quot;: &quot;T&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;He is sent to meet his own past self&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-meet2&quot;, &quot;kind&quot;: &quot;anchor&quot;, &quot;label&quot;: &quot;He is sent to meet his own past self&quot;, &quot;order&quot;: 30, &quot;universe&quot;: &quot;T&quot;}</title>
+<rect x="316.0" y="761.8" width="304" height="135" fill="#e7edf2" rx="9"/>
+<rect x="316.0" y="759.8" width="304" height="135" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="316.0" y="771.8" width="3" height="111" fill="#416f99" rx="1.5"/>
+<text x="332.0" y="786.8" font-size="11" fill="#526575" font-weight="bold">ANCHOR · e-meet2</text>
+<text x="332.0" y="812.8" font-size="14" fill="#172a3a">He is sent to meet his own past</text>
+<text x="332.0" y="832.8" font-size="14" fill="#172a3a">self</text>
+<a href="#evidence-4" class="citation" aria-label="[4] · Locator He is sent to meet his own past self · unavailable">
+<text x="332.0" y="855.8" font-size="11" fill="#285ac7">[4] · Locator He is sent to meet his own</text>
+<text x="332.0" y="872.8" font-size="11" fill="#285ac7">past self · unavailable</text>
+</a>
+</g>
+<line x1="302.0" y1="987.8" x2="316.0" y2="987.8" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-5" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;He takes the place of the bartender — the loop closes&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-end&quot;, &quot;kind&quot;: &quot;cutoff&quot;, &quot;label&quot;: &quot;He takes the place of the bartender — the loop closes&quot;, &quot;order&quot;: 40, &quot;universe&quot;: &quot;T&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;He takes the place of the bartender — the loop closes&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-end&quot;, &quot;kind&quot;: &quot;cutoff&quot;, &quot;label&quot;: &quot;He takes the place of the bartender — the loop closes&quot;, &quot;order&quot;: 40, &quot;universe&quot;: &quot;T&quot;}</title>
+<rect x="316.0" y="964.8" width="304" height="244" fill="#e7edf2" rx="9"/>
+<rect x="316.0" y="962.8" width="304" height="244" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="316.0" y="974.8" width="3" height="220" fill="#416f99" rx="1.5"/>
+<text x="332.0" y="989.8" font-size="11" fill="#526575" font-weight="bold">CUTOFF · e-end</text>
+<text x="332.0" y="1015.8" font-size="14" fill="#172a3a">He takes the place of the</text>
+<text x="332.0" y="1035.8" font-size="14" fill="#172a3a">bartender — the loop closes</text>
+<a href="#evidence-5" class="citation" aria-label="[5] · Locator He takes the place of the bartender — the loop closes · unavailable">
+<text x="332.0" y="1058.8" font-size="11" fill="#285ac7">[5] · Locator He takes the place of the</text>
+<text x="332.0" y="1075.8" font-size="11" fill="#285ac7">bartender — the loop closes ·</text>
+<text x="332.0" y="1092.8" font-size="11" fill="#285ac7">unavailable</text>
+</a>
+<text x="332.0" y="1116.8" font-size="12" fill="#087d60" font-weight="bold">● ALIVE · a-t</text>
+<text x="332.0" y="1138.8" font-size="11" fill="#526575">Fate f-b · at e-end</text>
+<text x="332.0" y="1161.8" font-size="11" fill="#526575">No citation supplied</text>
+<text x="332.0" y="1184.8" font-size="11" fill="#087d60" font-weight="bold">V1 exit · b-mind</text>
+</g>
+<g class="event-node">
+<title>e-start · The bartender&#x27;s ordinary day</title>
+<circle cx="292.0" cy="192.8" r="11" fill="#ffffff"/>
+<rect x="285.0" y="185.8" width="14" height="14" fill="#087d60" stroke="#ffffff" rx="2" stroke-width="2"/>
+</g>
+<g class="event-node">
+<title>e-meet · He meets the Unmarried Mother</title>
+<circle cx="292.0" cy="398.8" r="11" fill="#ffffff"/>
+<polygon points="292.00,390.80 300.00,398.80 292.00,406.80 284.00,398.80" fill="#ffffff" stroke="#416f99" stroke-width="2.5"/>
+</g>
+<g class="event-node">
+<title>e-surgery · The surgery — he is &#x27;the Unmarried Mother&#x27;</title>
+<circle cx="292.0" cy="581.8" r="11" fill="#ffffff"/>
+<circle cx="292.0" cy="581.8" r="6" fill="#416f99" stroke="#ffffff" stroke-width="2"/>
+</g>
+<g class="event-node">
+<title>e-meet2 · He is sent to meet his own past self</title>
+<circle cx="292.0" cy="784.8" r="11" fill="#ffffff"/>
+<polygon points="292.00,776.80 300.00,784.80 292.00,792.80 284.00,784.80" fill="#ffffff" stroke="#416f99" stroke-width="2.5"/>
+</g>
+<g class="event-node">
+<title>e-end · He takes the place of the bartender — the loop closes</title>
+<circle cx="292.0" cy="987.8" r="11" fill="#ffffff"/>
+<line x1="283.0" y1="983.8" x2="301.0" y2="983.8" stroke="#416f99" stroke-width="3"/>
+<line x1="283.0" y1="991.8" x2="301.0" y2="991.8" stroke="#416f99" stroke-width="3"/>
+</g>
+</g>
+<g id="g1-relationships">
+<line x1="32" y1="2085" x2="1092" y2="2085" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="2114" font-size="18" fill="#172a3a" font-weight="bold">Relationship ledger</text>
+</g>
+<text x="40" y="2145" font-size="12" fill="#172a3a">No split or transfer edges supplied.</text>
+<g >
+<line x1="32" y1="2180.4" x2="1092" y2="2180.4" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="2209.4" font-size="18" fill="#172a3a" font-weight="bold">Thread / b-mind</text>
+</g>
+<g >
+<rect x="32" y="2228.4" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="2251.4" font-size="11" fill="#087d60" font-weight="bold">ROUTE 01</text>
+<text x="174" y="2251.4" font-size="12" fill="#172a3a">V1 · v1 · e-start → e-end · {&quot;entry&quot;: &quot;e-start&quot;, &quot;exit&quot;: &quot;e-end&quot;, &quot;id&quot;: &quot;v1&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;T&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="2296.4" x2="1092" y2="2296.4" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="2325.4" font-size="18" fill="#172a3a" font-weight="bold">Interpretive assumptions / model notes</text>
+</g>
+<g >
+<rect x="32" y="2344.4" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="2367.4" font-size="11" fill="#526575" font-weight="bold">NOTE 01</text>
+<text x="174" y="2367.4" font-size="12" fill="#172a3a">Single closed timeline, no world fork.</text>
+</g>
+<g >
+<rect x="32" y="2394.4" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="2417.4" font-size="11" fill="#526575" font-weight="bold">NOTE 02</text>
+<text x="174" y="2417.4" font-size="12" fill="#172a3a">Bootstrap self-ancestry: the protagonist is their own history and their own partner.</text>
+</g>
+<g >
+<rect x="32" y="2444.4" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="2467.4" font-size="11" fill="#526575" font-weight="bold">NOTE 03</text>
+<text x="174" y="2467.4" font-size="12" fill="#172a3a">Ontology undeclared — the causation is self-referential (genealogy=bootstrap_cycles, observation_only).</text>
+</g>
+<g >
+<rect x="32" y="2494.4" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="2517.4" font-size="11" fill="#526575" font-weight="bold">NOTE 04</text>
+<text x="174" y="2517.4" font-size="12" fill="#172a3a">Declared merge count: 0. A count supplies no merge locations; none are invented.</text>
+</g>
+<g id="evidence">
+<line x1="32" y1="2576.4" x2="1092" y2="2576.4" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="2605.4" font-size="18" fill="#172a3a" font-weight="bold">Evidence / complete citation register</text>
+</g>
+<text x="40" y="2636.4" font-size="12" fill="#526575">Status is the supplied evidence status, not a truth rating. Repeated citations are deduplicated; all owners remain listed.</text>
+<g id="evidence-1">
+<rect x="32" y="2657.4" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="2680.4" font-size="11" fill="#285ac7" font-weight="bold">[1]</text>
+<text x="174" y="2680.4" font-size="12" fill="#172a3a">source: canon · locator: The bartender&#x27;s ordinary day · status: unavailable · Referenced by: document / e-start</text>
+</g>
+<g id="evidence-2">
+<rect x="32" y="2707.4" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="2730.4" font-size="11" fill="#285ac7" font-weight="bold">[2]</text>
+<text x="174" y="2730.4" font-size="12" fill="#172a3a">source: canon · locator: He meets the Unmarried Mother · status: unavailable · Referenced by: document / e-meet</text>
+</g>
+<g id="evidence-3">
+<rect x="32" y="2757.4" width="1060" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="2780.4" font-size="11" fill="#285ac7" font-weight="bold">[3]</text>
+<text x="174" y="2780.4" font-size="12" fill="#172a3a">source: canon · locator: The surgery — he is &#x27;the Unmarried Mother&#x27; · status: unavailable · Referenced by: document /</text>
+<text x="174" y="2798.4" font-size="12" fill="#172a3a">e-surgery</text>
+</g>
+<g id="evidence-4">
+<rect x="32" y="2823.4" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="2846.4" font-size="11" fill="#285ac7" font-weight="bold">[4]</text>
+<text x="174" y="2846.4" font-size="12" fill="#172a3a">source: canon · locator: He is sent to meet his own past self · status: unavailable · Referenced by: document / e-meet2</text>
+</g>
+<g id="evidence-5">
+<rect x="32" y="2873.4" width="1060" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="2896.4" font-size="11" fill="#285ac7" font-weight="bold">[5]</text>
+<text x="174" y="2896.4" font-size="12" fill="#172a3a">source: canon · locator: He takes the place of the bartender — the loop closes · status: unavailable · Referenced by: document</text>
+<text x="174" y="2914.4" font-size="12" fill="#172a3a">/ e-end</text>
+</g>
+<g >
+<line x1="32" y1="2957.4" x2="1092" y2="2957.4" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="2986.4" font-size="18" fill="#172a3a" font-weight="bold">Sources — including fixture provenance</text>
+</g>
+<g >
+<rect x="32" y="3005.4" width="1060" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3028.4" font-size="11" fill="#526575" font-weight="bold">canon</text>
+<text x="174" y="3028.4" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;canon&quot;, &quot;kind&quot;: &quot;canon_statement&quot;, &quot;text&quot;: &quot;A temporal-agent loop where the agent parents and partners themselves in</text>
+<text x="174" y="3046.4" font-size="12" fill="#172a3a">one closed timeline.&quot;, &quot;title&quot;: &quot;FILM — structural reading&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="3089.4" x2="1092" y2="3089.4" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="3118.4" font-size="18" fill="#172a3a" font-weight="bold">Characters</text>
+</g>
+<g >
+<rect x="32" y="3137.4" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3160.4" font-size="11" fill="#526575" font-weight="bold">b</text>
+<text x="174" y="3160.4" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;b&quot;, &quot;label&quot;: &quot;The Bartender / Agent&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="3205.4" x2="1092" y2="3205.4" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="3234.4" font-size="18" fill="#172a3a" font-weight="bold">Travellers</text>
+</g>
+<g >
+<rect x="32" y="3253.4" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3276.4" font-size="11" fill="#526575" font-weight="bold">b-mind</text>
+<text x="174" y="3276.4" font-size="12" fill="#172a3a">{&quot;character&quot;: &quot;b&quot;, &quot;id&quot;: &quot;b-mind&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="3321.4" x2="1092" y2="3321.4" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="3350.4" font-size="18" fill="#172a3a" font-weight="bold">Namespaces</text>
+</g>
+<g >
+<rect x="32" y="3369.4" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3392.4" font-size="11" fill="#526575" font-weight="bold">PRE</text>
+<text x="174" y="3392.4" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;PRE&quot;, &quot;label&quot;: &quot;Predestination&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="3437.4" x2="1092" y2="3437.4" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="3466.4" font-size="18" fill="#172a3a" font-weight="bold">Chart note</text>
+</g>
+<text x="40" y="3498.4" font-size="13" fill="#526575">One lifetime observed as a closed loop; ontology undeclared.</text>
 </svg>

@@ -1,53 +1,577 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="682" viewBox="0 0 900 682" font-family="Arial, Helvetica, sans-serif">
-<rect width="900" height="682" fill="#ffffff"/>
-<g transform="translate(0,0)"><text x="225" y="24" text-anchor="middle" font-size="18" font-weight="bold" fill="#202124">Steins;Gate</text>
-<text x="225" y="42" text-anchor="middle" font-size="11" fill="#5f6368">SG — Steins;Gate · Worldline shifts with divergence metric - Okabe's Reading Steiner carries memory across</text>
-<line x1="100.0" y1="90.0" x2="100.0" y2="366.0" stroke="#9aa0a6" stroke-width="2" stroke-opacity="1.0"/>
-<rect x="93.0" y="72.0" width="14" height="14" fill="#e8f0fe" stroke="#202124"/>
-<text x="100.0" y="58.0" text-anchor="middle" font-size="11" fill="#202124">W: One mutable worldline</text>
-<line x1="100.0" y1="96.0" x2="100.0" y2="96.0" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
-<line x1="100.0" y1="150.0" x2="100.0" y2="204.0" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
-<line x1="100.0" y1="258.0" x2="100.0" y2="258.0" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
-<line x1="100.0" y1="312.0" x2="100.0" y2="366.0" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
-<line x1="100.0" y1="96.0" x2="100.0" y2="150.0" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
-<line x1="100.0" y1="204.0" x2="100.0" y2="258.0" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
-<line x1="100.0" y1="258.0" x2="100.0" y2="312.0" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
-<rect x="94.0" y="90.0" width="12" height="12" fill="#3d8f4f" stroke="#202124"/>
-<text x="100.0" y="112.0" text-anchor="middle" font-size="9" fill="#5f6368">0</text>
-<path d="M 100.0 144.0 L 106.0 150.0 L 100.0 156.0 L 94.0 150.0 Z" fill="#5f6368" stroke="#202124"/>
-<text x="100.0" y="166.0" text-anchor="middle" font-size="9" fill="#5f6368">10</text>
-<rect x="94.0" y="198.0" width="12" height="12" fill="#5f6368" stroke="#202124"/>
-<text x="100.0" y="220.0" text-anchor="middle" font-size="9" fill="#5f6368">20</text>
-<path d="M 100.0 252.0 L 106.0 258.0 L 100.0 264.0 L 94.0 258.0 Z" fill="#5f6368" stroke="#202124"/>
-<text x="100.0" y="274.0" text-anchor="middle" font-size="9" fill="#5f6368">30</text>
-<circle cx="100.0" cy="312.0" r="4" fill="#202124"/>
-<text x="100.0" y="328.0" text-anchor="middle" font-size="9" fill="#5f6368">40</text>
-<rect x="94.0" y="360.0" width="12" height="12" fill="#5f6368" stroke="#202124"/>
-<text x="100.0" y="382.0" text-anchor="middle" font-size="9" fill="#5f6368">50</text>
-<text x="114.0" y="100.0" font-size="14" font-weight="bold" fill="#7f8c8d">?</text>
-<text x="118.0" y="100.0" font-size="8" fill="#5f6368">kurisu</text>
-<text x="114.0" y="208.0" font-size="14" font-weight="bold" fill="#c0392b">×</text>
-<text x="118.0" y="208.0" font-size="8" fill="#5f6368">mayuri</text>
-<text x="114.0" y="370.0" font-size="14" font-weight="bold" fill="#2f7d4f">●</text>
-<text x="118.0" y="370.0" font-size="8" fill="#5f6368">kurisu</text>
-<text x="114.0" y="370.0" font-size="14" font-weight="bold" fill="#2f7d4f">●</text>
-<text x="118.0" y="370.0" font-size="8" fill="#5f6368">mayuri</text>
-<line x1="100.0" y1="96.0" x2="40.6" y2="75.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="40.6" y="61.0" font-size="9" fill="#5f6368">Kurisu found in a pool</text>
-<text x="40.6" y="72.0" font-size="9" fill="#5f6368">of blood - the b...</text>
-<line x1="100.0" y1="150.0" x2="112.0" y2="150.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="112.0" y="147.0" font-size="9" fill="#5f6368">The first D-Mail crosses</text>
-<text x="112.0" y="158.0" font-size="9" fill="#5f6368">to the past - worldl...</text>
-<line x1="100.0" y1="204.0" x2="112.0" y2="204.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="112.0" y="201.0" font-size="9" fill="#5f6368">Mayuri dies again and</text>
-<text x="112.0" y="212.0" font-size="9" fill="#5f6368">again - alph...</text>
-<line x1="100.0" y1="258.0" x2="112.0" y2="258.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="112.0" y="255.0" font-size="9" fill="#5f6368">D-Mails undone one by</text>
-<text x="112.0" y="266.0" font-size="9" fill="#5f6368">one - back to beta;...</text>
-<line x1="100.0" y1="312.0" x2="112.0" y2="312.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="112.0" y="309.0" font-size="9" fill="#5f6368">Operation Skuld - the</text>
-<text x="112.0" y="320.0" font-size="9" fill="#5f6368">lie that fools...</text>
-<line x1="100.0" y1="366.0" x2="112.0" y2="388.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="112.0" y="396.0" font-size="9" fill="#5f6368">Steins Gate - Kurisu</text>
-<text x="112.0" y="407.0" font-size="9" fill="#5f6368">alive, Mayuri alive,...</text></g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1124" height="5978" viewBox="0 0 1124 5978" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" role="img" aria-labelledby="atlas-title atlas-desc">
+<title id="atlas-title">Steins;Gate</title>
+<desc id="atlas-desc">Worlds and Thread atlas. Story order progresses downward. Connections use reserved routing space. Full relationship and citation ledgers follow the chart. The HTML companion contains the complete accessible model.</desc>
+<rect width="1124" height="5978" fill="#f5f6f8"/>
+<defs >
+<marker id="arrow-split" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
+<path d="M 1 1 L 9 5 L 1 9 Z" fill="#ad6200"/>
+</marker>
+<marker id="arrow-transfer" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
+<path d="M 1 1 L 9 5 L 1 9 Z" fill="#285ac7"/>
+</marker>
+<marker id="arrow-route" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
+<path d="M 1 1 L 9 5 L 1 9 Z" fill="#087d60"/>
+</marker>
+<marker id="arrow-reference" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
+<path d="M 1 1 L 9 5 L 1 9 Z" fill="#7a637c"/>
+</marker>
+</defs>
+
+<style>
+text { font-kerning: normal; }
+a { cursor: pointer; }
+a:hover text { text-decoration: underline; }
+.card:hover > rect { stroke: #879ead; }
+:target > rect { stroke: #285ac7; stroke-width: 2; }
+.hide-split .layer-split,
+.hide-transfer .layer-transfer,
+.hide-route .layer-route,
+.hide-evidence .citation { display: none; }
+</style>
+<text letter-spacing="1.5" x="40" y="47" font-size="11" fill="#087d60" font-weight="bold">ELSEHOW  /  WORLDS &amp; THREAD</text>
+<text x="40" y="103" font-size="34" fill="#172a3a" font-weight="bold">Steins;Gate</text>
+<text x="40" y="135" font-size="15" fill="#526575">Worldline shifts with divergence metric - Okabe&#x27;s Reading Steiner carries memory across</text>
+<text x="40" y="169" font-size="12" fill="#526575">2D · categorical world columns · Story-order ranks, not elapsed time. Equal ranks do not assert physical simultaneity.</text>
+<line x1="45" y1="203" x2="76" y2="203" stroke="#ad6200" stroke-width="4"/>
+<text x="90" y="205" font-size="12" fill="#172a3a">Amber S± — Split outcomes. + and − are signs, not fates.</text>
+<line x1="45" y1="230" x2="76" y2="230" stroke="#285ac7" stroke-width="4"/>
+<text x="90" y="232" font-size="12" fill="#172a3a">Blue T — Directed transfers. B body · M memory · C consciousness · S signal · ? literal/unspecified mechanism.</text>
+<line x1="45" y1="257" x2="76" y2="257" stroke="#087d60" stroke-width="4"/>
+<text x="90" y="259" font-size="12" fill="#172a3a">Emerald V / L — Numbered visits and explicit links only. Emerald centre on a cable means the route follows that connection.</text>
+<line x1="45" y1="284" x2="76" y2="284" stroke="#667b8a" stroke-width="4"/>
+<text x="90" y="286" font-size="12" fill="#172a3a">Slate rail — World identity. Cutoff means chart boundary, not destruction. Crossings are bridges; only markers are joins.</text>
+<line x1="45" y1="311" x2="76" y2="311" stroke="#7a637c" stroke-width="4"/>
+<text x="90" y="313" font-size="12" fill="#172a3a">Evidence / fate — [n] opens the evidence record. × dead · ● alive · ? unknown · ∅ nonexistent. Purple dotted connections are</text>
+<text x="90" y="331" font-size="12" fill="#172a3a">annotation references.</text>
+<g >
+<line x1="32" y1="358" x2="1092" y2="358" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="387" font-size="18" fill="#172a3a" font-weight="bold">Declared interpretation</text>
+</g>
+<g >
+<rect x="32" y="406" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="429" font-size="11" fill="#526575" font-weight="bold">PROFILE</text>
+<text x="174" y="429" font-size="12" fill="#172a3a">Profile: steins-gate · rules: none</text>
+</g>
+<g >
+<rect x="32" y="456" width="1060" height="76" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="479" font-size="11" fill="#526575" font-weight="bold">PARAMETERS</text>
+<text x="174" y="479" font-size="12" fill="#172a3a">history_model: revisions · branching: overwrite · coexistence: single_active · time_mechanics: [&quot;memory&quot;] · joined_worlds:</text>
+<text x="174" y="497" font-size="12" fill="#172a3a">preexist · turnstiles: none · protagonist_scope: singular · axis: story_order · validation: evidence_pending · merges:</text>
+<text x="174" y="515" font-size="12" fill="#172a3a">forbidden · genealogy: acyclic</text>
+</g>
+<g >
+<rect x="32" y="540" width="1060" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="563" font-size="11" fill="#526575" font-weight="bold">POLICY</text>
+<text x="174" y="563" font-size="12" fill="#172a3a">Explicit records determine geometry. Profile declarations do not manufacture branches, activation intervals, genealogy,</text>
+<text x="174" y="581" font-size="12" fill="#172a3a">repeated worlds or replacement links. No reset is drawn. World-time coordinates are unavailable in this contract.</text>
+</g>
+<g id="g1">
+<line x1="32" y1="622" x2="1092" y2="622" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="651" font-size="18" fill="#172a3a" font-weight="bold">SG  /  Steins;Gate</text>
+</g>
+<text x="40" y="682" font-size="12" fill="#526575">1 declared worlds · 6 events · 0 transfers · 0 split records</text>
+<g transform="translate(0 714.00)" role="group" aria-label="Atlas for SG">
+<text x="24" y="20" font-size="11" fill="#526575" font-weight="bold">STORY</text>
+<text x="24" y="37" font-size="11" fill="#526575" font-weight="bold">ORDER ↓</text>
+<rect x="142" y="143" width="574" height="2435" fill="#eef3f7" stroke="#d6e0e8" rx="10"/>
+<g class="card" role="group" aria-label="{}">
+<rect x="388" y="6" width="304" height="101" fill="#e7edf2" rx="9"/>
+<rect x="388" y="4" width="304" height="101" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<text x="404" y="35" font-size="15" fill="#416f99" font-weight="bold">W</text>
+<text x="404" y="60" font-size="14" fill="#172a3a" font-weight="bold">One mutable worldline</text>
+<text x="404" y="83" font-size="11" fill="#526575">INITIAL IN MODEL</text>
+</g>
+<rect x="156" y="12" width="5" height="87" fill="#416f99" rx="2"/>
+<line x1="20" y1="155" x2="998" y2="155" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="183" font-size="12" fill="#172a3a" font-weight="bold">0</text>
+<text x="24" y="208" font-size="10" fill="#526575">rank 01</text>
+<line x1="20" y1="516" x2="998" y2="516" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="544" font-size="12" fill="#172a3a" font-weight="bold">10</text>
+<text x="24" y="569" font-size="10" fill="#526575">rank 02</text>
+<line x1="20" y1="771" x2="998" y2="771" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="799" font-size="12" fill="#172a3a" font-weight="bold">15</text>
+<text x="24" y="824" font-size="10" fill="#526575">rank 03</text>
+<line x1="20" y1="1017" x2="998" y2="1017" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="1045" font-size="12" fill="#172a3a" font-weight="bold">20</text>
+<text x="24" y="1070" font-size="10" fill="#526575">rank 04</text>
+<line x1="20" y1="1375" x2="998" y2="1375" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="1403" font-size="12" fill="#172a3a" font-weight="bold">30</text>
+<text x="24" y="1428" font-size="10" fill="#526575">rank 05</text>
+<line x1="20" y1="1696" x2="998" y2="1696" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="1724" font-size="12" fill="#172a3a" font-weight="bold">40</text>
+<text x="24" y="1749" font-size="10" fill="#526575">rank 06</text>
+<line x1="20" y1="1968" x2="998" y2="1968" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="1996" font-size="12" fill="#172a3a" font-weight="bold">45</text>
+<text x="24" y="2021" font-size="10" fill="#526575">rank 07</text>
+<line x1="20" y1="2197" x2="998" y2="2197" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="2225" font-size="12" fill="#172a3a" font-weight="bold">50</text>
+<text x="24" y="2250" font-size="10" fill="#526575">rank 08</text>
+<path d="M 364.00 155.00 L 364.00 2570.00" fill="none" stroke="#667b8a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="358" y="149" width="12" height="12" fill="#ffffff" stroke="#416f99" rx="1" stroke-width="2"/>
+<line x1="357" y1="2570" x2="371" y2="2570" stroke="#667b8a" stroke-width="2"/>
+<text x="379" y="2575" font-size="10" fill="#526575">End of displayed extent</text>
+<g class="layer-route">
+<title>V1 · {&quot;entry&quot;: &quot;e-kurisu&quot;, &quot;exit&quot;: &quot;e-kurisu&quot;, &quot;id&quot;: &quot;ov0&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;W&quot;}</title>
+<path d="M 356.00 200.00 L 347.00 200.00 L 347.00 216.00 L 356.00 216.00 L 356.00 209.00" fill="none" stroke="#ffffff" stroke-width="8.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 356.00 200.00 L 347.00 200.00 L 347.00 216.00 L 356.00 216.00 L 356.00 209.00" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+</g>
+<g class="layer-route">
+<title>V2 · {&quot;entry&quot;: &quot;e-dmail&quot;, &quot;exit&quot;: &quot;e-mayuri&quot;, &quot;id&quot;: &quot;ov1&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;W&quot;}</title>
+<path d="M 356.00 561.00 L 337.00 561.00 L 337.00 1062.00 L 354.00 1062.00" fill="none" stroke="#ffffff" stroke-width="8.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 356.00 561.00 L 337.00 561.00 L 337.00 1062.00 L 354.00 1062.00" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+<path d="M 337.00 802.50 L 337.00 820.50" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+</g>
+<g class="layer-route">
+<title>V3 · {&quot;entry&quot;: &quot;e-undone&quot;, &quot;exit&quot;: &quot;e-undone&quot;, &quot;id&quot;: &quot;ov2&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;W&quot;}</title>
+<path d="M 356.00 1420.00 L 327.00 1420.00 L 327.00 1436.00 L 356.00 1436.00 L 356.00 1429.00" fill="none" stroke="#ffffff" stroke-width="8.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 356.00 1420.00 L 327.00 1420.00 L 327.00 1436.00 L 356.00 1436.00 L 356.00 1429.00" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+</g>
+<g class="layer-route">
+<title>V4 · {&quot;entry&quot;: &quot;e-operation-skuld&quot;, &quot;exit&quot;: &quot;e-end&quot;, &quot;id&quot;: &quot;ov3&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;W&quot;}</title>
+<path d="M 356.00 1741.00 L 317.00 1741.00 L 317.00 2242.00 L 354.00 2242.00" fill="none" stroke="#ffffff" stroke-width="8.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 356.00 1741.00 L 317.00 1741.00 L 317.00 2242.00 L 354.00 2242.00" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+<path d="M 317.00 1982.50 L 317.00 2000.50" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+</g>
+<g class="layer-route" id="g1-edge-1">
+<title>L1 · ov0 → ov1 · {&quot;from&quot;: &quot;ov0&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;ov1&quot;, &quot;via&quot;: null}
+{&quot;from&quot;: &quot;ov0&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;ov1&quot;, &quot;via&quot;: null}</title>
+<path d="M 355.00 200.00 L 294.00 200.00 L 294.00 486.00 L 162.00 486.00 L 162.00 741.00 L 294.00 741.00 L 294.00 561.00 L 354.00 561.00" fill="none" stroke="#ffffff" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 355.00 200.00 L 294.00 200.00 L 294.00 486.00 L 162.00 486.00 L 162.00 741.00 L 294.00 741.00 L 294.00 561.00 L 354.00 561.00" fill="none" stroke="#087d60" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+<a href="#g1-relationships" aria-label="L1 · ov0 → ov1 · {&quot;from&quot;: &quot;ov0&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;ov1&quot;, &quot;via&quot;: null}">
+<rect x="204.0" y="476" width="48" height="20" fill="#ffffff" stroke="#087d60" rx="6" stroke-width="1.6"/>
+<text text-anchor="middle" x="228.0" y="490" font-size="11" fill="#087d60" font-weight="bold">L1</text>
+</a>
+</g>
+<g class="layer-route" id="g1-edge-2">
+<title>L2 · ov1 → ov2 · {&quot;from&quot;: &quot;ov1&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;ov2&quot;, &quot;via&quot;: null}
+{&quot;from&quot;: &quot;ov1&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;ov2&quot;, &quot;via&quot;: null}</title>
+<path d="M 355.00 1062.00 L 294.00 1062.00 L 294.00 1345.00 L 174.00 1345.00 L 174.00 1640.00 L 294.00 1640.00 L 294.00 1420.00 L 354.00 1420.00" fill="none" stroke="#ffffff" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 355.00 1062.00 L 294.00 1062.00 L 294.00 1345.00 L 174.00 1345.00 L 174.00 1640.00 L 294.00 1640.00 L 294.00 1420.00 L 354.00 1420.00" fill="none" stroke="#087d60" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+<a href="#g1-relationships" aria-label="L2 · ov1 → ov2 · {&quot;from&quot;: &quot;ov1&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;ov2&quot;, &quot;via&quot;: null}">
+<rect x="210.0" y="1335" width="48" height="20" fill="#ffffff" stroke="#087d60" rx="6" stroke-width="1.6"/>
+<text text-anchor="middle" x="234.0" y="1349" font-size="11" fill="#087d60" font-weight="bold">L2</text>
+</a>
+</g>
+<g class="layer-route" id="g1-edge-3">
+<title>L3 · ov2 → ov3 · {&quot;from&quot;: &quot;ov2&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;ov3&quot;, &quot;via&quot;: null}
+{&quot;from&quot;: &quot;ov2&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;ov3&quot;, &quot;via&quot;: null}</title>
+<path d="M 355.00 1420.00 L 285.00 1420.00 L 285.00 1666.00 L 186.00 1666.00 L 186.00 1938.00 L 294.00 1938.00 L 294.00 1741.00 L 354.00 1741.00" fill="none" stroke="#ffffff" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 355.00 1420.00 L 285.00 1420.00 L 285.00 1666.00 L 186.00 1666.00 L 186.00 1938.00 L 294.00 1938.00 L 294.00 1741.00 L 354.00 1741.00" fill="none" stroke="#087d60" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+<a href="#g1-relationships" aria-label="L3 · ov2 → ov3 · {&quot;from&quot;: &quot;ov2&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;ov3&quot;, &quot;via&quot;: null}">
+<rect x="211.5" y="1656" width="48" height="20" fill="#ffffff" stroke="#087d60" rx="6" stroke-width="1.6"/>
+<text text-anchor="middle" x="235.5" y="1670" font-size="11" fill="#087d60" font-weight="bold">L3</text>
+</a>
+</g>
+<line x1="374" y1="200" x2="388" y2="200" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-1" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Opening discovery&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-kurisu&quot;, &quot;kind&quot;: &quot;start&quot;, &quot;label&quot;: &quot;Kurisu found in a pool of blood - the beta worldline begins&quot;, &quot;order&quot;: 0, &quot;universe&quot;: &quot;W&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Opening discovery&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-kurisu&quot;, &quot;kind&quot;: &quot;start&quot;, &quot;label&quot;: &quot;Kurisu found in a pool of blood - the beta worldline begins&quot;, &quot;order&quot;: 0, &quot;universe&quot;: &quot;W&quot;}</title>
+<rect x="388" y="177" width="304" height="267" fill="#e7edf2" rx="9"/>
+<rect x="388" y="175" width="304" height="267" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="388" y="187" width="3" height="243" fill="#416f99" rx="1.5"/>
+<text x="404" y="202" font-size="11" fill="#526575" font-weight="bold">START · e-kurisu</text>
+<text x="404" y="228" font-size="14" fill="#172a3a">Kurisu found in a pool of blood</text>
+<text x="404" y="248" font-size="14" fill="#172a3a">- the beta worldline begins</text>
+<a href="#evidence-1" class="citation" aria-label="[1] · Locator Opening discovery · unavailable">
+<text x="404" y="271" font-size="11" fill="#285ac7">[1] · Locator Opening discovery ·</text>
+<text x="404" y="288" font-size="11" fill="#285ac7">unavailable</text>
+</a>
+<text x="404" y="312" font-size="12" fill="#64717d" font-weight="bold">? UNKNOWN · kurisu</text>
+<text x="404" y="334" font-size="11" fill="#526575">Fate f-kurisu-beta · at e-kurisu</text>
+<a href="#evidence-9" class="citation" aria-label="[9] · Locator Blood pool - fate ambiguous until rSTEINS · unavailable">
+<text x="404" y="357" font-size="11" fill="#285ac7">[9] · Locator Blood pool - fate</text>
+<text x="404" y="374" font-size="11" fill="#285ac7">ambiguous until rSTEINS · unavailable</text>
+</a>
+<text x="404" y="397" font-size="11" fill="#087d60" font-weight="bold">V1 entry · okabe-mind</text>
+<text x="404" y="420" font-size="11" fill="#087d60" font-weight="bold">V1 exit · okabe-mind</text>
+</g>
+<line x1="374" y1="561" x2="388" y2="561" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-2" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;D-Mail #1&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-dmail&quot;, &quot;kind&quot;: &quot;anchor&quot;, &quot;label&quot;: &quot;The first D-Mail crosses to the past - worldline shifts to alpha&quot;, &quot;order&quot;: 10, &quot;universe&quot;: &quot;W&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;D-Mail #1&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-dmail&quot;, &quot;kind&quot;: &quot;anchor&quot;, &quot;label&quot;: &quot;The first D-Mail crosses to the past - worldline shifts to alpha&quot;, &quot;order&quot;: 10, &quot;universe&quot;: &quot;W&quot;}</title>
+<rect x="388" y="538" width="304" height="161" fill="#e7edf2" rx="9"/>
+<rect x="388" y="536" width="304" height="161" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="388" y="548" width="3" height="137" fill="#416f99" rx="1.5"/>
+<text x="404" y="563" font-size="11" fill="#526575" font-weight="bold">ANCHOR · e-dmail</text>
+<text x="404" y="589" font-size="14" fill="#172a3a">The first D-Mail crosses to</text>
+<text x="404" y="609" font-size="14" fill="#172a3a">the past - worldline shifts to</text>
+<text x="404" y="629" font-size="14" fill="#172a3a">alpha</text>
+<a href="#evidence-2" class="citation" aria-label="[2] · Locator D-Mail #1 · unavailable">
+<text x="404" y="652" font-size="11" fill="#285ac7">[2] · Locator D-Mail #1 · unavailable</text>
+</a>
+<text x="404" y="675" font-size="11" fill="#087d60" font-weight="bold">V2 entry · okabe-mind</text>
+</g>
+<line x1="374" y1="1062" x2="388" y2="1062" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-3" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Mayuri death loop&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-mayuri&quot;, &quot;kind&quot;: &quot;cutoff&quot;, &quot;label&quot;: &quot;Mayuri dies again and again - alpha&#x27;s attractor converges on her death&quot;, &quot;order&quot;: 20, &quot;universe&quot;: &quot;W&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Mayuri death loop&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-mayuri&quot;, &quot;kind&quot;: &quot;cutoff&quot;, &quot;label&quot;: &quot;Mayuri dies again and again - alpha&#x27;s attractor converges on her death&quot;, &quot;order&quot;: 20, &quot;universe&quot;: &quot;W&quot;}</title>
+<rect x="388" y="1039" width="304" height="264" fill="#e7edf2" rx="9"/>
+<rect x="388" y="1037" width="304" height="264" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="388" y="1049" width="3" height="240" fill="#416f99" rx="1.5"/>
+<text x="404" y="1064" font-size="11" fill="#526575" font-weight="bold">CUTOFF · e-mayuri</text>
+<text x="404" y="1090" font-size="14" fill="#172a3a">Mayuri dies again and again -</text>
+<text x="404" y="1110" font-size="14" fill="#172a3a">alpha&#x27;s attractor converges on</text>
+<text x="404" y="1130" font-size="14" fill="#172a3a">her death</text>
+<a href="#evidence-3" class="citation" aria-label="[3] · Locator Mayuri death loop · unavailable">
+<text x="404" y="1153" font-size="11" fill="#285ac7">[3] · Locator Mayuri death loop ·</text>
+<text x="404" y="1170" font-size="11" fill="#285ac7">unavailable</text>
+</a>
+<text x="404" y="1194" font-size="12" fill="#b82f46" font-weight="bold">× DEAD · mayuri</text>
+<text x="404" y="1216" font-size="11" fill="#526575">Fate f-mayuri-alpha · at e-mayuri</text>
+<a href="#evidence-10" class="citation" aria-label="[10] · Locator Alpha convergence · unavailable">
+<text x="404" y="1239" font-size="11" fill="#285ac7">[10] · Locator Alpha convergence ·</text>
+<text x="404" y="1256" font-size="11" fill="#285ac7">unavailable</text>
+</a>
+<text x="404" y="1279" font-size="11" fill="#087d60" font-weight="bold">V2 exit · okabe-mind</text>
+</g>
+<line x1="374" y1="1420" x2="388" y2="1420" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-4" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Alpha undo sequence&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-undone&quot;, &quot;kind&quot;: &quot;anchor&quot;, &quot;label&quot;: &quot;D-Mails undone one by one - back to beta; now Mayuri is doomed instead&quot;, &quot;order&quot;: 30, &quot;universe&quot;: &quot;W&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Alpha undo sequence&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-undone&quot;, &quot;kind&quot;: &quot;anchor&quot;, &quot;label&quot;: &quot;D-Mails undone one by one - back to beta; now Mayuri is doomed instead&quot;, &quot;order&quot;: 30, &quot;universe&quot;: &quot;W&quot;}</title>
+<rect x="388" y="1397" width="304" height="201" fill="#e7edf2" rx="9"/>
+<rect x="388" y="1395" width="304" height="201" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="388" y="1407" width="3" height="177" fill="#416f99" rx="1.5"/>
+<text x="404" y="1422" font-size="11" fill="#526575" font-weight="bold">ANCHOR · e-undone</text>
+<text x="404" y="1448" font-size="14" fill="#172a3a">D-Mails undone one by one -</text>
+<text x="404" y="1468" font-size="14" fill="#172a3a">back to beta; now Mayuri is</text>
+<text x="404" y="1488" font-size="14" fill="#172a3a">doomed instead</text>
+<a href="#evidence-4" class="citation" aria-label="[4] · Locator Alpha undo sequence · unavailable">
+<text x="404" y="1511" font-size="11" fill="#285ac7">[4] · Locator Alpha undo sequence ·</text>
+<text x="404" y="1528" font-size="11" fill="#285ac7">unavailable</text>
+</a>
+<text x="404" y="1551" font-size="11" fill="#087d60" font-weight="bold">V3 entry · okabe-mind</text>
+<text x="404" y="1574" font-size="11" fill="#087d60" font-weight="bold">V3 exit · okabe-mind</text>
+</g>
+<line x1="374" y1="1741" x2="388" y2="1741" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-5" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Operation Skuld&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-operation-skuld&quot;, &quot;kind&quot;: &quot;outcome&quot;, &quot;label&quot;: &quot;Operation Skuld - the lie that fools the world; divergence passes 1%&quot;, &quot;order&quot;: 40, &quot;universe&quot;: &quot;W&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Operation Skuld&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-operation-skuld&quot;, &quot;kind&quot;: &quot;outcome&quot;, &quot;label&quot;: &quot;Operation Skuld - the lie that fools the world; divergence passes 1%&quot;, &quot;order&quot;: 40, &quot;universe&quot;: &quot;W&quot;}</title>
+<rect x="388" y="1718" width="304" height="178" fill="#e7edf2" rx="9"/>
+<rect x="388" y="1716" width="304" height="178" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="388" y="1728" width="3" height="154" fill="#416f99" rx="1.5"/>
+<text x="404" y="1743" font-size="11" fill="#526575" font-weight="bold">OUTCOME · e-operation-skuld</text>
+<text x="404" y="1769" font-size="14" fill="#172a3a">Operation Skuld - the lie that</text>
+<text x="404" y="1789" font-size="14" fill="#172a3a">fools the world; divergence</text>
+<text x="404" y="1809" font-size="14" fill="#172a3a">passes 1%</text>
+<a href="#evidence-5" class="citation" aria-label="[5] · Locator Operation Skuld · unavailable">
+<text x="404" y="1832" font-size="11" fill="#285ac7">[5] · Locator Operation Skuld ·</text>
+<text x="404" y="1849" font-size="11" fill="#285ac7">unavailable</text>
+</a>
+<text x="404" y="1872" font-size="11" fill="#087d60" font-weight="bold">V4 entry · okabe-mind</text>
+</g>
+<line x1="374" y1="2242" x2="388" y2="2242" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-6" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Final scene&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-end&quot;, &quot;kind&quot;: &quot;cutoff&quot;, &quot;label&quot;: &quot;Steins Gate - Kurisu alive, Mayuri alive, no SERN dystopia&quot;, &quot;order&quot;: 50, &quot;universe&quot;: &quot;W&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Final scene&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-end&quot;, &quot;kind&quot;: &quot;cutoff&quot;, &quot;label&quot;: &quot;Steins Gate - Kurisu alive, Mayuri alive, no SERN dystopia&quot;, &quot;order&quot;: 50, &quot;universe&quot;: &quot;W&quot;}</title>
+<rect x="388" y="2219" width="304" height="279" fill="#e7edf2" rx="9"/>
+<rect x="388" y="2217" width="304" height="279" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="388" y="2229" width="3" height="255" fill="#416f99" rx="1.5"/>
+<text x="404" y="2244" font-size="11" fill="#526575" font-weight="bold">CUTOFF · e-end</text>
+<text x="404" y="2270" font-size="14" fill="#172a3a">Steins Gate - Kurisu alive,</text>
+<text x="404" y="2290" font-size="14" fill="#172a3a">Mayuri alive, no SERN dystopia</text>
+<a href="#evidence-6" class="citation" aria-label="[6] · Locator Final scene · unavailable">
+<text x="404" y="2313" font-size="11" fill="#285ac7">[6] · Locator Final scene · unavailable</text>
+</a>
+<text x="404" y="2337" font-size="12" fill="#087d60" font-weight="bold">● ALIVE · kurisu</text>
+<text x="404" y="2359" font-size="11" fill="#526575">Fate f-kurisu-steins · at e-end</text>
+<a href="#evidence-6" class="citation" aria-label="[6] · Locator Final scene · unavailable">
+<text x="404" y="2382" font-size="11" fill="#285ac7">[6] · Locator Final scene · unavailable</text>
+</a>
+<text x="404" y="2406" font-size="12" fill="#087d60" font-weight="bold">● ALIVE · mayuri</text>
+<text x="404" y="2428" font-size="11" fill="#526575">Fate f-mayuri-steins · at e-end</text>
+<a href="#evidence-6" class="citation" aria-label="[6] · Locator Final scene · unavailable">
+<text x="404" y="2451" font-size="11" fill="#285ac7">[6] · Locator Final scene · unavailable</text>
+</a>
+<text x="404" y="2474" font-size="11" fill="#087d60" font-weight="bold">V4 exit · okabe-mind</text>
+</g>
+<line x1="374" y1="816" x2="388" y2="816" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-7" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Worldline shift montage&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;b-rs&quot;, &quot;order&quot;: 15, &quot;segment&quot;: &quot;seg-alpha&quot;, &quot;text&quot;: &quot;Only Okabe carries memory across the shift - Reading Steiner as the sole continuity&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Worldline shift montage&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;b-rs&quot;, &quot;order&quot;: 15, &quot;segment&quot;: &quot;seg-alpha&quot;, &quot;text&quot;: &quot;Only Okabe carries memory across the shift - Reading Steiner as the sole continuity&quot;}</title>
+<rect x="388" y="793" width="304" height="178" fill="#e7edf2" rx="9"/>
+<rect x="388" y="791" width="304" height="178" fill="#f9fafc" stroke="#d3dde5" rx="9"/>
+<rect x="388" y="803" width="3" height="154" fill="#416f99" rx="1.5"/>
+<text x="404" y="818" font-size="11" fill="#526575" font-weight="bold">BEAT · b-rs</text>
+<text x="404" y="844" font-size="14" fill="#172a3a">Only Okabe carries memory</text>
+<text x="404" y="864" font-size="14" fill="#172a3a">across the shift - Reading</text>
+<text x="404" y="884" font-size="14" fill="#172a3a">Steiner as the sole continuity</text>
+<text x="404" y="907" font-size="11" fill="#526575">Segment: seg-alpha</text>
+<a href="#evidence-7" class="citation" aria-label="[7] · Locator Worldline shift montage · unavailable">
+<text x="404" y="930" font-size="11" fill="#285ac7">[7] · Locator Worldline shift montage ·</text>
+<text x="404" y="947" font-size="11" fill="#285ac7">unavailable</text>
+</a>
+</g>
+<line x1="374" y1="2013" x2="388" y2="2013" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-8" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;The lie&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;b-lie&quot;, &quot;order&quot;: 45, &quot;segment&quot;: &quot;seg-steins&quot;, &quot;text&quot;: &quot;He lies to the world about Kurisu&#x27;s death - the deception that shifts the field&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;The lie&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;b-lie&quot;, &quot;order&quot;: 45, &quot;segment&quot;: &quot;seg-steins&quot;, &quot;text&quot;: &quot;He lies to the world about Kurisu&#x27;s death - the deception that shifts the field&quot;}</title>
+<rect x="388" y="1990" width="304" height="161" fill="#e7edf2" rx="9"/>
+<rect x="388" y="1988" width="304" height="161" fill="#f9fafc" stroke="#d3dde5" rx="9"/>
+<rect x="388" y="2000" width="3" height="137" fill="#416f99" rx="1.5"/>
+<text x="404" y="2015" font-size="11" fill="#526575" font-weight="bold">BEAT · b-lie</text>
+<text x="404" y="2041" font-size="14" fill="#172a3a">He lies to the world about</text>
+<text x="404" y="2061" font-size="14" fill="#172a3a">Kurisu&#x27;s death - the deception</text>
+<text x="404" y="2081" font-size="14" fill="#172a3a">that shifts the field</text>
+<text x="404" y="2104" font-size="11" fill="#526575">Segment: seg-steins</text>
+<a href="#evidence-8" class="citation" aria-label="[8] · Locator The lie · unavailable">
+<text x="404" y="2127" font-size="11" fill="#285ac7">[8] · Locator The lie · unavailable</text>
+</a>
+</g>
+<g class="event-node">
+<title>e-kurisu · Kurisu found in a pool of blood - the beta worldline begins</title>
+<circle cx="364" cy="200" r="11" fill="#ffffff"/>
+<rect x="357" y="193" width="14" height="14" fill="#087d60" stroke="#ffffff" rx="2" stroke-width="2"/>
+</g>
+<g class="event-node">
+<title>e-dmail · The first D-Mail crosses to the past - worldline shifts to alpha</title>
+<circle cx="364" cy="561" r="11" fill="#ffffff"/>
+<polygon points="364.00,553.00 372.00,561.00 364.00,569.00 356.00,561.00" fill="#ffffff" stroke="#416f99" stroke-width="2.5"/>
+</g>
+<g class="event-node">
+<title>e-mayuri · Mayuri dies again and again - alpha&#x27;s attractor converges on her death</title>
+<circle cx="364" cy="1062" r="11" fill="#ffffff"/>
+<line x1="355" y1="1058" x2="373" y2="1058" stroke="#416f99" stroke-width="3"/>
+<line x1="355" y1="1066" x2="373" y2="1066" stroke="#416f99" stroke-width="3"/>
+</g>
+<g class="event-node">
+<title>e-undone · D-Mails undone one by one - back to beta; now Mayuri is doomed instead</title>
+<circle cx="364" cy="1420" r="11" fill="#ffffff"/>
+<polygon points="364.00,1412.00 372.00,1420.00 364.00,1428.00 356.00,1420.00" fill="#ffffff" stroke="#416f99" stroke-width="2.5"/>
+</g>
+<g class="event-node">
+<title>e-operation-skuld · Operation Skuld - the lie that fools the world; divergence passes 1%</title>
+<circle cx="364" cy="1741" r="11" fill="#ffffff"/>
+<circle cx="364" cy="1741" r="6" fill="#416f99" stroke="#ffffff" stroke-width="2"/>
+</g>
+<g class="event-node">
+<title>e-end · Steins Gate - Kurisu alive, Mayuri alive, no SERN dystopia</title>
+<circle cx="364" cy="2242" r="11" fill="#ffffff"/>
+<line x1="355" y1="2238" x2="373" y2="2238" stroke="#416f99" stroke-width="3"/>
+<line x1="355" y1="2246" x2="373" y2="2246" stroke="#416f99" stroke-width="3"/>
+</g>
+<g class="event-node">
+<title>b-rs · </title>
+<circle cx="364" cy="816" r="11" fill="#ffffff"/>
+<circle cx="364" cy="816" r="4" fill="#ffffff" stroke="#416f99" stroke-width="2"/>
+</g>
+<g class="event-node">
+<title>b-lie · </title>
+<circle cx="364" cy="2013" r="11" fill="#ffffff"/>
+<circle cx="364" cy="2013" r="4" fill="#ffffff" stroke="#416f99" stroke-width="2"/>
+</g>
+</g>
+<g id="g1-relationships">
+<line x1="32" y1="3349" x2="1092" y2="3349" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="3378" font-size="18" fill="#172a3a" font-weight="bold">Relationship ledger</text>
+</g>
+<g >
+<rect x="32" y="3397" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3420" font-size="11" fill="#087d60" font-weight="bold">L1</text>
+<text x="174" y="3420" font-size="12" fill="#172a3a">L1 · ov0 → ov1 · {&quot;from&quot;: &quot;ov0&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;ov1&quot;, &quot;via&quot;: null}</text>
+</g>
+<g >
+<rect x="32" y="3447" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3470" font-size="11" fill="#087d60" font-weight="bold">L2</text>
+<text x="174" y="3470" font-size="12" fill="#172a3a">L2 · ov1 → ov2 · {&quot;from&quot;: &quot;ov1&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;ov2&quot;, &quot;via&quot;: null}</text>
+</g>
+<g >
+<rect x="32" y="3497" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3520" font-size="11" fill="#087d60" font-weight="bold">L3</text>
+<text x="174" y="3520" font-size="12" fill="#172a3a">L3 · ov2 → ov3 · {&quot;from&quot;: &quot;ov2&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;ov3&quot;, &quot;via&quot;: null}</text>
+</g>
+<g >
+<line x1="32" y1="3565" x2="1092" y2="3565" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="3594" font-size="18" fill="#172a3a" font-weight="bold">Thread / okabe-mind</text>
+</g>
+<g >
+<rect x="32" y="3613" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3636" font-size="11" fill="#087d60" font-weight="bold">ROUTE 01</text>
+<text x="174" y="3636" font-size="12" fill="#172a3a">V1 · ov0 · e-kurisu → e-kurisu · {&quot;entry&quot;: &quot;e-kurisu&quot;, &quot;exit&quot;: &quot;e-kurisu&quot;, &quot;id&quot;: &quot;ov0&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;W&quot;}</text>
+</g>
+<g >
+<rect x="32" y="3663" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3686" font-size="11" fill="#087d60" font-weight="bold">ROUTE 02</text>
+<text x="174" y="3686" font-size="12" fill="#172a3a">V2 · ov1 · e-dmail → e-mayuri · {&quot;entry&quot;: &quot;e-dmail&quot;, &quot;exit&quot;: &quot;e-mayuri&quot;, &quot;id&quot;: &quot;ov1&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;W&quot;}</text>
+</g>
+<g >
+<rect x="32" y="3713" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3736" font-size="11" fill="#087d60" font-weight="bold">ROUTE 03</text>
+<text x="174" y="3736" font-size="12" fill="#172a3a">V3 · ov2 · e-undone → e-undone · {&quot;entry&quot;: &quot;e-undone&quot;, &quot;exit&quot;: &quot;e-undone&quot;, &quot;id&quot;: &quot;ov2&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;W&quot;}</text>
+</g>
+<g >
+<rect x="32" y="3763" width="1060" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3786" font-size="11" fill="#087d60" font-weight="bold">ROUTE 04</text>
+<text x="174" y="3786" font-size="12" fill="#172a3a">V4 · ov3 · e-operation-skuld → e-end · {&quot;entry&quot;: &quot;e-operation-skuld&quot;, &quot;exit&quot;: &quot;e-end&quot;, &quot;id&quot;: &quot;ov3&quot;, &quot;passes&quot;: [], &quot;universe&quot;:</text>
+<text x="174" y="3804" font-size="12" fill="#172a3a">&quot;W&quot;}</text>
+</g>
+<g >
+<rect x="32" y="3829" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3852" font-size="11" fill="#087d60" font-weight="bold">ROUTE 05</text>
+<text x="174" y="3852" font-size="12" fill="#172a3a">L1 · ov0 → ov1 · {&quot;from&quot;: &quot;ov0&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;ov1&quot;, &quot;via&quot;: null}</text>
+</g>
+<g >
+<rect x="32" y="3879" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3902" font-size="11" fill="#087d60" font-weight="bold">ROUTE 06</text>
+<text x="174" y="3902" font-size="12" fill="#172a3a">L2 · ov1 → ov2 · {&quot;from&quot;: &quot;ov1&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;ov2&quot;, &quot;via&quot;: null}</text>
+</g>
+<g >
+<rect x="32" y="3929" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3952" font-size="11" fill="#087d60" font-weight="bold">ROUTE 07</text>
+<text x="174" y="3952" font-size="12" fill="#172a3a">L3 · ov2 → ov3 · {&quot;from&quot;: &quot;ov2&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;ov3&quot;, &quot;via&quot;: null}</text>
+</g>
+<g >
+<line x1="32" y1="3997" x2="1092" y2="3997" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="4026" font-size="18" fill="#172a3a" font-weight="bold">Declared segments</text>
+</g>
+<g >
+<rect x="32" y="4045" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4068" font-size="11" fill="#526575" font-weight="bold">seg-beta</text>
+<text x="174" y="4068" font-size="12" fill="#172a3a">beta - the world as first seen · W · e-kurisu → e-kurisu</text>
+</g>
+<g >
+<rect x="32" y="4095" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4118" font-size="11" fill="#526575" font-weight="bold">seg-alpha</text>
+<text x="174" y="4118" font-size="12" fill="#172a3a">alpha - SERN&#x27;s shadow · W · e-dmail → e-mayuri</text>
+</g>
+<g >
+<rect x="32" y="4145" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4168" font-size="11" fill="#526575" font-weight="bold">seg-steins</text>
+<text x="174" y="4168" font-size="12" fill="#172a3a">Steins Gate - past the 1% barrier · W · e-operation-skuld → e-end</text>
+</g>
+<g >
+<line x1="32" y1="4213" x2="1092" y2="4213" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="4242" font-size="18" fill="#172a3a" font-weight="bold">Interpretive assumptions / model notes</text>
+</g>
+<g >
+<rect x="32" y="4261" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4284" font-size="11" fill="#526575" font-weight="bold">NOTE 01</text>
+<text x="174" y="4284" font-size="12" fill="#172a3a">No physical transfers: every crossing is a memory-only revision link (E118/R8 semantics)</text>
+</g>
+<g >
+<rect x="32" y="4311" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4334" font-size="11" fill="#526575" font-weight="bold">NOTE 02</text>
+<text x="174" y="4334" font-size="12" fill="#172a3a">Divergence values are fixture allocations keyed to canon numbers</text>
+</g>
+<g >
+<rect x="32" y="4361" width="1060" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4384" font-size="11" fill="#526575" font-weight="bold">NOTE 03</text>
+<text x="174" y="4384" font-size="12" fill="#172a3a">Attractor-field convergence (why Mayuri always dies in alpha) is canon constraint, not mechanism - charted as the death loop</text>
+<text x="174" y="4402" font-size="12" fill="#172a3a">cutoff</text>
+</g>
+<g >
+<rect x="32" y="4427" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4450" font-size="11" fill="#526575" font-weight="bold">NOTE 04</text>
+<text x="174" y="4450" font-size="12" fill="#172a3a">Declared merge count: 0. A count supplies no merge locations; none are invented.</text>
+</g>
+<g id="evidence">
+<line x1="32" y1="4509" x2="1092" y2="4509" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="4538" font-size="18" fill="#172a3a" font-weight="bold">Evidence / complete citation register</text>
+</g>
+<text x="40" y="4569" font-size="12" fill="#526575">Status is the supplied evidence status, not a truth rating. Repeated citations are deduplicated; all owners remain listed.</text>
+<g id="evidence-1">
+<rect x="32" y="4590" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4613" font-size="11" fill="#285ac7" font-weight="bold">[1]</text>
+<text x="174" y="4613" font-size="12" fill="#172a3a">source: canon · locator: Opening discovery · status: unavailable · Referenced by: document / e-kurisu</text>
+</g>
+<g id="evidence-2">
+<rect x="32" y="4640" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4663" font-size="11" fill="#285ac7" font-weight="bold">[2]</text>
+<text x="174" y="4663" font-size="12" fill="#172a3a">source: canon · locator: D-Mail #1 · status: unavailable · Referenced by: document / e-dmail</text>
+</g>
+<g id="evidence-3">
+<rect x="32" y="4690" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4713" font-size="11" fill="#285ac7" font-weight="bold">[3]</text>
+<text x="174" y="4713" font-size="12" fill="#172a3a">source: canon · locator: Mayuri death loop · status: unavailable · Referenced by: document / e-mayuri</text>
+</g>
+<g id="evidence-4">
+<rect x="32" y="4740" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4763" font-size="11" fill="#285ac7" font-weight="bold">[4]</text>
+<text x="174" y="4763" font-size="12" fill="#172a3a">source: canon · locator: Alpha undo sequence · status: unavailable · Referenced by: document / e-undone</text>
+</g>
+<g id="evidence-5">
+<rect x="32" y="4790" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4813" font-size="11" fill="#285ac7" font-weight="bold">[5]</text>
+<text x="174" y="4813" font-size="12" fill="#172a3a">source: canon · locator: Operation Skuld · status: unavailable · Referenced by: document / e-operation-skuld</text>
+</g>
+<g id="evidence-6">
+<rect x="32" y="4840" width="1060" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4863" font-size="11" fill="#285ac7" font-weight="bold">[6]</text>
+<text x="174" y="4863" font-size="12" fill="#172a3a">source: canon · locator: Final scene · status: unavailable · Referenced by: document / e-end; document / f-kurisu-steins;</text>
+<text x="174" y="4881" font-size="12" fill="#172a3a">document / f-mayuri-steins</text>
+</g>
+<g id="evidence-7">
+<rect x="32" y="4906" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4929" font-size="11" fill="#285ac7" font-weight="bold">[7]</text>
+<text x="174" y="4929" font-size="12" fill="#172a3a">source: canon · locator: Worldline shift montage · status: unavailable · Referenced by: document / b-rs</text>
+</g>
+<g id="evidence-8">
+<rect x="32" y="4956" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4979" font-size="11" fill="#285ac7" font-weight="bold">[8]</text>
+<text x="174" y="4979" font-size="12" fill="#172a3a">source: canon · locator: The lie · status: unavailable · Referenced by: document / b-lie</text>
+</g>
+<g id="evidence-9">
+<rect x="32" y="5006" width="1060" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5029" font-size="11" fill="#285ac7" font-weight="bold">[9]</text>
+<text x="174" y="5029" font-size="12" fill="#172a3a">source: canon · locator: Blood pool - fate ambiguous until rSTEINS · status: unavailable · Referenced by: document /</text>
+<text x="174" y="5047" font-size="12" fill="#172a3a">f-kurisu-beta</text>
+</g>
+<g id="evidence-10">
+<rect x="32" y="5072" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5095" font-size="11" fill="#285ac7" font-weight="bold">[10]</text>
+<text x="174" y="5095" font-size="12" fill="#172a3a">source: canon · locator: Alpha convergence · status: unavailable · Referenced by: document / f-mayuri-alpha</text>
+</g>
+<g >
+<line x1="32" y1="5140" x2="1092" y2="5140" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="5169" font-size="18" fill="#172a3a" font-weight="bold">Sources — including fixture provenance</text>
+</g>
+<g >
+<rect x="32" y="5188" width="1060" height="94" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5211" font-size="11" fill="#526575" font-weight="bold">canon</text>
+<text x="174" y="5211" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;canon&quot;, &quot;kind&quot;: &quot;canon_statement&quot;, &quot;text&quot;: &quot;Okabe alone remembers prior worldlines (Reading Steiner). The D-Mail</text>
+<text x="174" y="5229" font-size="12" fill="#172a3a">chain shifts worldlines: beta (Mayuri dies) to alpha (Kurisu dies, SERN dystopia). Each shift rewrites the single world; bodies</text>
+<text x="174" y="5247" font-size="12" fill="#172a3a">do not travel - only his memory crosses. The 1% barrier separates attractor fields; reaching divergence &gt;1% lands the Steins</text>
+<text x="174" y="5265" font-size="12" fill="#172a3a">Gate worldline where both survive.&quot;, &quot;title&quot;: &quot;Steins;Gate (2011), theatrical cut&quot;}</text>
+</g>
+<g >
+<rect x="32" y="5290" width="1060" height="94" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5313" font-size="11" fill="#526575" font-weight="bold">allocation</text>
+<text x="174" y="5313" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;allocation&quot;, &quot;kind&quot;: &quot;test_fixture&quot;, &quot;text&quot;: &quot;Worldlines modeled as revisions: rBETA (original), rALPHA (post-D-Mail</text>
+<text x="174" y="5331" font-size="12" fill="#172a3a">attractor field alpha), rSTEINS (divergence 1.048596). Divergence values recorded on revision objects as allocated test data.</text>
+<text x="174" y="5349" font-size="12" fill="#172a3a">Kurisu&#x27;s apparent death in rBETA is &#x27;unknown&#x27; fate (she is saved in rSTEINS - same world, different revision).&quot;, &quot;title&quot;:</text>
+<text x="174" y="5367" font-size="12" fill="#172a3a">&quot;Fixture allocations&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="5410" x2="1092" y2="5410" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="5439" font-size="18" fill="#172a3a" font-weight="bold">Characters</text>
+</g>
+<g >
+<rect x="32" y="5458" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5481" font-size="11" fill="#526575" font-weight="bold">okabe</text>
+<text x="174" y="5481" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;okabe&quot;, &quot;label&quot;: &quot;Rintaro Okabe&quot;}</text>
+</g>
+<g >
+<rect x="32" y="5508" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5531" font-size="11" fill="#526575" font-weight="bold">kurisu</text>
+<text x="174" y="5531" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;kurisu&quot;, &quot;label&quot;: &quot;Kurisu Makise&quot;}</text>
+</g>
+<g >
+<rect x="32" y="5558" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5581" font-size="11" fill="#526575" font-weight="bold">mayuri</text>
+<text x="174" y="5581" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;mayuri&quot;, &quot;label&quot;: &quot;Mayuri Shiina&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="5626" x2="1092" y2="5626" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="5655" font-size="18" fill="#172a3a" font-weight="bold">Travellers</text>
+</g>
+<g >
+<rect x="32" y="5674" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5697" font-size="11" fill="#526575" font-weight="bold">okabe-mind</text>
+<text x="174" y="5697" font-size="12" fill="#172a3a">{&quot;character&quot;: &quot;okabe&quot;, &quot;id&quot;: &quot;okabe-mind&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="5742" x2="1092" y2="5742" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="5771" font-size="18" fill="#172a3a" font-weight="bold">Namespaces</text>
+</g>
+<g >
+<rect x="32" y="5790" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5813" font-size="11" fill="#526575" font-weight="bold">SG</text>
+<text x="174" y="5813" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;SG&quot;, &quot;label&quot;: &quot;Steins;Gate&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="5858" x2="1092" y2="5858" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="5887" font-size="18" fill="#172a3a" font-weight="bold">Chart note</text>
+</g>
+<text x="40" y="5919" font-size="13" fill="#526575">Worldlines are revisions of one world; divergence values gate convergence (attractor field).</text>
 </svg>

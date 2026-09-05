@@ -3,37 +3,41 @@
 A **renderer** for the `elsewhen` abstract timeline model. It reads a
 presentation-agnostic abstract story (worlds, origins, events, splits,
 transfers, route, fates, citations, profile parameters) and produces a
-**"Worlds and Thread" 2D vertical timeline atlas** as SVG (primary) or a
-self-contained HTML.
+**clarity-first "Worlds and Thread" atlas** as SVG (primary) plus a self-contained
+HTML companion.
 
 This is the *consumer* side of the split: `elsewhen` describes *what* a film's
 universe structure is; `elsehow` decides *how to see it*. It has no opinion on
 the model — it reads the abstract JSON contract and renders it.
 
-Design source: [`references/visual-representation-design.md`](references/visual-representation-design.md)
-(Astra, 2026-09-05).
+Design source:
+[`references/visual-overhaul-design.md`](references/visual-overhaul-design.md)
+(Astra, 2026-09-05) — a complete visual overhaul replacing the earlier atlas
+([`references/visual-representation-design.md`](references/visual-representation-design.md)
+and [`references/2.5d-guide.md`](references/2.5d-guide.md)).
 
-## The atlas
+## The design
 
-- **World rails** — one thin vertical rail per universe; the opening universe is
-  placed rightmost and the thread migrates leftward.
-- **Origin markers** — initial (square), born (rail starts at its birth fork),
-  preexisting (enters from the top, "already existed"), unknown (`?`).
-- **Event nodes** — start (green square), split (amber circle), entry/exit
-  (dot/anchor diamond), cutoff (grey square); story order printed downward.
-- **Splits** — structural edges from the split node to every outcome, marked
-  `+` and `−`. Both are *outcome signs*, not follow/death: the followed tine
-  comes from the route links, never from the sign. Never a "reset".
-- **Transfers** — elbowed connectors with a mechanism badge **B/M/C/S**
-  (body / memory / consciousness / signal).
-- **Route/thread** — a thick green stroke along the protagonist's visits.
-- **Fates** — badges `× dead · ● alive · ? unknown · ∅ nonexistent`.
-- **Citations** — numbered evidence tabs (scene/page) beside events.
-
-Profile parameters (history_model, branching, coexistence, turnstiles,
-genealogy, …) drive what is drawn — e.g. `iterations` packs repeat bands on one
-world, `revisions` keeps an archive, `branching=undeclared` stays neutral. The
-renderer never invents topology.
+- **Untruncated event cards** — every event gets a full-size card (name, story
+  order, description, attributes, fate badge, citation chips). The canvas grows
+  instead of shrinking typography.
+- **Reserved routing gutters** — connections occupy dedicated tracks, not label
+  space. Separate tracks plus arrowheads, white crossing bridges and keyed
+  badges preserve attribution.
+- **Colour = meaning** — slate rails identify worlds; **amber** = split
+  outcomes; **blue** = transfers (with B/M/C/S mechanism badges); **emerald** =
+  explicitly recorded route visits and links.
+- **Legends + ledger + appendix** — a legend explains every element; a
+  relationship ledger lists every connection; numbered citations resolve to a
+  complete evidence appendix; sources and notes are included.
+- **2D vs 2.5D** — the flat layout and the **cabinet-axonometric** variant share
+  a Projection: 2D `(x, y)`, 2.5D `(x+0.5z, y−0.3z)` with decks at `z=24` and
+  cables at `z=40`. Depth is *decorative separation only*, never time,
+  probability or "more real"; text stays screen-facing.
+- **No invention** — never draws a reset, never infers an unmodelled link,
+  world, transfer or world-time value; `time_travel`/`body`/`memory`/
+  `consciousness`/`signal` are reported as declared; `∅ nonexistent` stays
+  `∅`.
 
 ## Usage
 
@@ -42,10 +46,11 @@ renderer never invents topology.
 python3 <elsewhen>/to_abstract.py <fixture>.json -o story.json     # elsewhen
 python3 <elsewhen>/author.py ...                                     # elsewhen
 
-# Render it here
-python3 render.py story.json -o story.svg                  # 2D atlas (SVG)
-python3 render.py story.json -o story.html --format html   # 2D (HTML)
-python3 render.py story.json -o story-25d.svg --view 2.5d   # 2.5D orthographic
+# Render it here — every invocation writes an SVG master + an HTML companion
+python3 render.py story.json -o story.svg                  # 2D atlas
+python3 render.py story.json -o story-25d.svg --view 2.5d   # 2.5D cabinet-axonometric
+python3 render.py story.json -o story.html --format html    # HTML primary
+python3 render.py --self-test                                # run the self-test
 ```
 
 The renderer is intentionally decoupled: it reads the abstract JSON directly and
@@ -55,21 +60,22 @@ render here, any time.
 ## Layout
 
 ```
-render.py                     the "Worlds and Thread" renderer (abstract JSON -> SVG/HTML, 2D + 2.5D)
-references/visual-representation-design.md   the Astra design it implements
-references/2.5d-guide.md      the Astra guide for the 2.5D projection
+render.py                     the clarity-first atlas renderer (abstract JSON -> SVG + HTML, 2D + 2.5D)
+references/visual-overhaul-design.md   the Astra redesign it implements (current)
+references/visual-representation-design.md  the prior design (superseded)
+references/2.5d-guide.md      the Astra 2.5D guide (superseded)
 samples/                      sample renders (published films only, 2D + 2.5D as SVG + PNG)
 ```
 
-Review-drive corrections applied: ordinal order bands (not proportional spacing),
-link-driven route thread (missing links are gaps, not guessed continuity),
-unknown-world diagnostic cards, birth-aware rails, corrected `+`/`−` legend, and
-world+order collision grouping.
+## Self-test
+
+`python3 render.py --self-test` validates the renderer against a built-in model
+and reports diagnostics.
 
 ## Provenance
 
-Design by Astra (gpt-6-astra) via Experiential Labs. Rendered with the `elsewhen`
-abstract model. Committed on `sfingali`.
+Design and implementation by Astra (gpt-6-astra) via OpenRouter, 2026-09-05.
+Committed on `sfingali`.
 
 The `samples/` gallery publishes **published films only** — sensitive or
 unpublished screenplays (e.g. THE WAIF) are deliberately excluded and never

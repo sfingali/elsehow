@@ -1,88 +1,779 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="950" height="844" viewBox="0 0 950 844" font-family="Arial, Helvetica, sans-serif">
-<rect width="950" height="844" fill="#ffffff"/>
-<g transform="translate(0,0)"><text x="475" y="24" text-anchor="middle" font-size="18" font-weight="bold" fill="#202124">Tenet</text>
-<text x="475" y="42" text-anchor="middle" font-size="11" fill="#5f6368">TNT — Tenet · Per-traveller direction; turnstiles fork forward and inverted strands</text>
-<line x1="568.2" y1="184.3" x2="477.1" y2="555.3" stroke="#9aa0a6" stroke-width="2" stroke-opacity="1.0"/>
-<rect x="593.0" y="72.0" width="14" height="14" fill="#e8f0fe" stroke="#202124"/>
-<text x="600.0" y="58.0" text-anchor="middle" font-size="11" fill="#202124">FWD: Forward flow (default)</text>
-<polygon points="554.5,181.8 581.9,186.8 490.8,557.8 463.4,552.8" fill="#e8f0fe" stroke="#9aa0a6" stroke-width="1"/>
-<line x1="323.6" y1="139.3" x2="277.5" y2="327.3" stroke="#9aa0a6" stroke-width="2" stroke-opacity="1.0"/>
-<text x="350.0" y="82.0" text-anchor="middle" font-size="10" fill="#5f6368">* already existed</text>
-<text x="350.0" y="58.0" text-anchor="middle" font-size="11" fill="#202124">INV: Inverted flow (turnstile s</text>
-<polygon points="309.9,136.7 337.3,141.8 291.2,329.8 263.8,324.8" fill="#e6f4ea" stroke="#9aa0a6" stroke-width="1"/>
-<line x1="79.1" y1="94.2" x2="-0.7" y2="419.5" stroke="#9aa0a6" stroke-width="2" stroke-opacity="1.0"/>
-<text x="100.0" y="82.0" text-anchor="middle" font-size="10" fill="#5f6368">* already existed</text>
-<text x="100.0" y="58.0" text-anchor="middle" font-size="11" fill="#202124">STALSK: Stalsk-12 pincer battlefie</text>
-<polygon points="65.4,91.7 92.8,96.8 13.0,422.1 -14.4,417.0" fill="#e6f4ea" stroke="#9aa0a6" stroke-width="1"/>
-<line x1="544.5" y1="280.8" x2="555.7" y2="235.1" stroke="#e8a33d" stroke-width="2" stroke-opacity="1.0"/>
-<text x="550.1" y="252.0" text-anchor="middle" font-size="13" font-weight="bold" fill="#e8a33d">+</text>
-<line x1="544.5" y1="280.8" x2="288.7" y2="281.6" stroke="#e8a33d" stroke-width="2" stroke-dasharray="6,4" stroke-opacity="1.0"/>
-<text x="416.6" y="275.2" text-anchor="middle" font-size="13" font-weight="bold" fill="#e8a33d">-</text>
-<line x1="510.8" y1="418.1" x2="477.1" y2="555.3" stroke="#e8a33d" stroke-width="2" stroke-opacity="1.0"/>
-<text x="494.0" y="480.7" text-anchor="middle" font-size="13" font-weight="bold" fill="#e8a33d">+</text>
-<line x1="510.8" y1="418.1" x2="10.5" y2="373.8" stroke="#e8a33d" stroke-width="2" stroke-dasharray="6,4" stroke-opacity="1.0"/>
-<text x="260.6" y="389.9" text-anchor="middle" font-size="13" font-weight="bold" fill="#e8a33d">-</text>
-<polyline points="544.5,272.8 422.2,250.3 411.0,296.1 288.7,273.6" fill="none" stroke="#2f7d4f" stroke-width="2" stroke-opacity="0.6"/>
-<circle cx="416.6" cy="273.2" r="10" fill="#ffffff" stroke="#2f7d4f"/>
-<text x="416.6" y="277.2" text-anchor="middle" font-size="12" font-weight="bold" fill="#2f7d4f">·</text>
-<polyline points="277.5,319.3 399.8,341.8 433.4,204.6 555.7,227.1" fill="none" stroke="#2f7d4f" stroke-width="2" stroke-opacity="0.6"/>
-<circle cx="416.6" cy="273.2" r="10" fill="#ffffff" stroke="#2f7d4f"/>
-<text x="416.6" y="277.2" text-anchor="middle" font-size="12" font-weight="bold" fill="#2f7d4f">·</text>
-<polyline points="277.5,319.3 155.2,296.8 132.8,388.3 10.5,365.8" fill="none" stroke="#2f7d4f" stroke-width="2" stroke-opacity="0.6"/>
-<circle cx="144.0" cy="342.6" r="10" fill="#ffffff" stroke="#2f7d4f"/>
-<text x="144.0" y="346.6" text-anchor="middle" font-size="12" font-weight="bold" fill="#2f7d4f">·</text>
-<line x1="566.9" y1="188.4" x2="544.5" y2="279.8" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
-<line x1="288.7" y1="280.6" x2="277.5" y2="326.3" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
-<line x1="555.7" y1="234.1" x2="477.1" y2="554.3" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
-<line x1="544.5" y1="279.8" x2="288.7" y2="280.6" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
-<line x1="277.5" y1="326.3" x2="555.7" y2="234.1" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
-<rect x="560.9" y="183.4" width="12" height="12" fill="#3d8f4f" stroke="#202124"/>
-<text x="566.9" y="205.4" text-anchor="middle" font-size="9" fill="#5f6368">0</text>
-<circle cx="555.7" cy="235.1" r="4" fill="#202124"/>
-<text x="555.7" y="251.1" text-anchor="middle" font-size="9" fill="#5f6368">10</text>
-<circle cx="544.5" cy="280.8" r="7" fill="#e8a33d" stroke="#202124"/>
-<text x="544.5" y="296.8" text-anchor="middle" font-size="9" fill="#5f6368">20</text>
-<circle cx="288.7" cy="281.6" r="5" fill="#ffffff" stroke="#202124"/>
-<text x="288.7" y="297.6" text-anchor="middle" font-size="9" fill="#5f6368">30</text>
-<circle cx="277.5" cy="327.3" r="4" fill="#202124"/>
-<text x="277.5" y="343.3" text-anchor="middle" font-size="9" fill="#5f6368">40</text>
-<circle cx="510.8" cy="418.1" r="7" fill="#e8a33d" stroke="#202124"/>
-<text x="510.8" y="434.1" text-anchor="middle" font-size="9" fill="#5f6368">50</text>
-<circle cx="10.5" cy="373.8" r="5" fill="#ffffff" stroke="#202124"/>
-<text x="10.5" y="389.8" text-anchor="middle" font-size="9" fill="#5f6368">60</text>
-<rect x="-6.7" y="413.5" width="12" height="12" fill="#5f6368" stroke="#202124"/>
-<text x="-0.7" y="435.5" text-anchor="middle" font-size="9" fill="#5f6368">70</text>
-<rect x="471.1" y="549.3" width="12" height="12" fill="#5f6368" stroke="#202124"/>
-<text x="477.1" y="571.3" text-anchor="middle" font-size="9" fill="#5f6368">80</text>
-<text x="13.0" y="426.1" font-size="14" font-weight="bold" fill="#c0392b">×</text>
-<text x="17.0" y="426.1" font-size="8" fill="#5f6368">neil-stalsk</text>
-<text x="490.8" y="561.8" font-size="14" font-weight="bold" fill="#2f7d4f">●</text>
-<text x="494.8" y="561.8" font-size="8" fill="#5f6368">prot-fwd</text>
-<line x1="566.9" y1="189.4" x2="578.9" y2="211.4" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="578.9" y="219.4" font-size="9" fill="#5f6368">Kyiv opera siege - the</text>
-<text x="578.9" y="230.4" font-size="9" fill="#5f6368">Protagonist is saved...</text>
-<line x1="555.7" y1="235.1" x2="567.7" y2="257.1" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="567.7" y="265.1" font-size="9" fill="#5f6368">Oslo freeport -</text>
-<text x="567.7" y="276.1" font-size="9" fill="#5f6368">rotated-artwork fi...</text>
-<line x1="544.5" y1="280.8" x2="556.5" y2="302.8" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="556.5" y="310.8" font-size="9" fill="#5f6368">Tallinn turnstile -</text>
-<text x="556.5" y="321.8" font-size="9" fill="#5f6368">inversion crossing</text>
-<line x1="288.7" y1="281.6" x2="300.7" y2="303.6" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="300.7" y="311.6" font-size="9" fill="#5f6368">Inverted: the</text>
-<text x="300.7" y="322.6" font-size="9" fill="#5f6368">Protagonist and N...</text>
-<line x1="277.5" y1="327.3" x2="289.5" y2="349.3" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="289.5" y="357.3" font-size="9" fill="#5f6368">Inverted arrival at Oslo</text>
-<text x="289.5" y="368.3" font-size="9" fill="#5f6368">- re-inversion thro...</text>
-<line x1="10.5" y1="373.8" x2="22.5" y2="395.8" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="22.5" y="403.8" font-size="9" fill="#5f6368">Neil goes inverted with</text>
-<text x="22.5" y="414.8" font-size="9" fill="#5f6368">blue team</text>
-<line x1="510.8" y1="418.1" x2="522.8" y2="440.1" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="522.8" y="448.1" font-size="9" fill="#5f6368">Stalsk-12 - the temporal</text>
-<text x="522.8" y="459.1" font-size="9" fill="#5f6368">pincer begins (...</text>
-<line x1="-0.7" y1="419.5" x2="11.3" y2="441.5" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="11.3" y="449.5" font-size="9" fill="#5f6368">Neil dies inside the</text>
-<text x="11.3" y="460.5" font-size="9" fill="#5f6368">tunnel - already d...</text>
-<line x1="477.1" y1="555.3" x2="489.1" y2="577.3" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="489.1" y="585.3" font-size="9" fill="#5f6368">The Algorithm's parts</text>
-<text x="489.1" y="596.3" font-size="9" fill="#5f6368">are scattered into...</text></g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1909" height="7083" viewBox="0 0 1909 7083" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" role="img" aria-labelledby="atlas-title atlas-desc">
+<title id="atlas-title">Tenet</title>
+<desc id="atlas-desc">Worlds and Thread atlas. Story order progresses downward. Connections use reserved routing space. Full relationship and citation ledgers follow the chart. The HTML companion contains the complete accessible model.</desc>
+<rect width="1909" height="7083" fill="#f5f6f8"/>
+<defs >
+<marker id="arrow-split" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
+<path d="M 1 1 L 9 5 L 1 9 Z" fill="#ad6200"/>
+</marker>
+<marker id="arrow-transfer" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
+<path d="M 1 1 L 9 5 L 1 9 Z" fill="#285ac7"/>
+</marker>
+<marker id="arrow-route" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
+<path d="M 1 1 L 9 5 L 1 9 Z" fill="#087d60"/>
+</marker>
+<marker id="arrow-reference" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
+<path d="M 1 1 L 9 5 L 1 9 Z" fill="#7a637c"/>
+</marker>
+</defs>
+
+<style>
+text { font-kerning: normal; }
+a { cursor: pointer; }
+a:hover text { text-decoration: underline; }
+.card:hover > rect { stroke: #879ead; }
+:target > rect { stroke: #285ac7; stroke-width: 2; }
+.hide-split .layer-split,
+.hide-transfer .layer-transfer,
+.hide-route .layer-route,
+.hide-evidence .citation { display: none; }
+</style>
+<text letter-spacing="1.5" x="40" y="47" font-size="11" fill="#087d60" font-weight="bold">ELSEHOW  /  WORLDS &amp; THREAD</text>
+<text x="40" y="103" font-size="34" fill="#172a3a" font-weight="bold">Tenet</text>
+<text x="40" y="135" font-size="15" fill="#526575">Per-traveller direction; turnstiles fork forward and inverted strands</text>
+<text x="40" y="169" font-size="12" fill="#526575">2.5D · cabinet axonometric · depth separates surfaces only · Story-order ranks, not elapsed time. Equal ranks do not assert physical simultaneity.</text>
+<line x1="45" y1="203" x2="76" y2="203" stroke="#ad6200" stroke-width="4"/>
+<text x="90" y="205" font-size="12" fill="#172a3a">Amber S± — Split outcomes. + and − are signs, not fates.</text>
+<line x1="45" y1="230" x2="76" y2="230" stroke="#285ac7" stroke-width="4"/>
+<text x="90" y="232" font-size="12" fill="#172a3a">Blue T — Directed transfers. B body · M memory · C consciousness · S signal · ? literal/unspecified mechanism.</text>
+<line x1="45" y1="257" x2="76" y2="257" stroke="#087d60" stroke-width="4"/>
+<text x="90" y="259" font-size="12" fill="#172a3a">Emerald V / L — Numbered visits and explicit links only. Emerald centre on a cable means the route follows that connection.</text>
+<line x1="45" y1="284" x2="76" y2="284" stroke="#667b8a" stroke-width="4"/>
+<text x="90" y="286" font-size="12" fill="#172a3a">Slate rail — World identity. Cutoff means chart boundary, not destruction. Crossings are bridges; only markers are joins.</text>
+<line x1="45" y1="311" x2="76" y2="311" stroke="#7a637c" stroke-width="4"/>
+<text x="90" y="313" font-size="12" fill="#172a3a">Evidence / fate — [n] opens the evidence record. × dead · ● alive · ? unknown · ∅ nonexistent. Purple dotted connections are annotation references.</text>
+<g >
+<line x1="32" y1="340" x2="1877" y2="340" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="369" font-size="18" fill="#172a3a" font-weight="bold">Declared interpretation</text>
+</g>
+<g >
+<rect x="32" y="388" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="411" font-size="11" fill="#526575" font-weight="bold">PROFILE</text>
+<text x="174" y="411" font-size="12" fill="#172a3a">Profile: tenet · rules: none</text>
+</g>
+<g >
+<rect x="32" y="438" width="1845" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="461" font-size="11" fill="#526575" font-weight="bold">PARAMETERS</text>
+<text x="174" y="461" font-size="12" fill="#172a3a">history_model: universes · branching: branch · coexistence: coexisting · time_mechanics: [&quot;body&quot;, &quot;memory&quot;] · joined_worlds: preexist · turnstiles:</text>
+<text x="174" y="479" font-size="12" fill="#172a3a">both_signs · protagonist_scope: singular · axis: story_order · validation: evidence_pending · merges: forbidden · genealogy: acyclic</text>
+</g>
+<g >
+<rect x="32" y="504" width="1845" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="527" font-size="11" fill="#526575" font-weight="bold">POLICY</text>
+<text x="174" y="527" font-size="12" fill="#172a3a">Explicit records determine geometry. Profile declarations do not manufacture branches, activation intervals, genealogy, repeated worlds or replacement links.</text>
+<text x="174" y="545" font-size="12" fill="#172a3a">No reset is drawn. World-time coordinates are unavailable in this contract.</text>
+</g>
+<g id="g1">
+<line x1="32" y1="586" x2="1877" y2="586" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="615" font-size="18" fill="#172a3a" font-weight="bold">TNT  /  Tenet</text>
+</g>
+<text x="40" y="646" font-size="12" fill="#526575">3 declared worlds · 9 events · 3 transfers · 2 split records</text>
+<g transform="translate(0 678.00)" role="group" aria-label="Atlas for TNT">
+<text x="24" y="20" font-size="11" fill="#526575" font-weight="bold">STORY</text>
+<text x="24" y="37" font-size="11" fill="#526575" font-weight="bold">ORDER ↓</text>
+<polygon points="741.00,178.80 729.00,186.00 729.00,3405.00 741.00,3397.80" fill="#d9e2ea" stroke="#becbd6" stroke-width="1"/>
+<polygon points="154.00,3397.80 741.00,3397.80 729.00,3405.00 142.00,3405.00" fill="#cbd7e1" stroke="#b7c6d2" stroke-width="1"/>
+<polygon points="154.00,178.80 741.00,178.80 741.00,3397.80 154.00,3397.80" fill="#eef3f7" stroke="#c7d3dd" stroke-width="1"/>
+<g class="card" role="group" aria-label="{}">
+<rect x="413.0" y="-1.1999999999999993" width="304" height="101" fill="#e7edf2" rx="9"/>
+<rect x="413.0" y="-3.1999999999999993" width="304" height="101" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<text x="429.0" y="27.8" font-size="15" fill="#416f99" font-weight="bold">FWD</text>
+<text x="429.0" y="52.8" font-size="14" fill="#172a3a" font-weight="bold">Forward flow (default)</text>
+<text x="429.0" y="75.8" font-size="11" fill="#526575">INITIAL IN MODEL</text>
+</g>
+<rect x="168.0" y="4.800000000000001" width="5" height="130" fill="#416f99" rx="2"/>
+<polygon points="1301.00,178.80 1289.00,186.00 1289.00,3405.00 1301.00,3397.80" fill="#d9e2ea" stroke="#becbd6" stroke-width="1"/>
+<polygon points="769.00,3397.80 1301.00,3397.80 1289.00,3405.00 757.00,3405.00" fill="#cbd7e1" stroke="#b7c6d2" stroke-width="1"/>
+<polygon points="769.00,178.80 1301.00,178.80 1301.00,3397.80 769.00,3397.80" fill="#eef3f7" stroke="#c7d3dd" stroke-width="1"/>
+<g class="card" role="group" aria-label="{}">
+<rect x="973.0" y="-1.1999999999999993" width="304" height="144" fill="#e7edf2" rx="9"/>
+<rect x="973.0" y="-3.1999999999999993" width="304" height="144" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<text x="989.0" y="27.8" font-size="15" fill="#78639a" font-weight="bold">INV</text>
+<text x="989.0" y="52.8" font-size="14" fill="#172a3a" font-weight="bold">Inverted flow (turnstile</text>
+<text x="989.0" y="72.8" font-size="14" fill="#172a3a" font-weight="bold">strands)</text>
+<text x="989.0" y="95.8" font-size="11" fill="#526575">ALREADY EXISTED</text>
+<text x="989.0" y="118.8" font-size="11" fill="#526575">Ancestry: off chart</text>
+</g>
+<rect x="783.0" y="4.800000000000001" width="5" height="130" fill="#78639a" rx="2"/>
+<polygon points="1827.00,178.80 1815.00,186.00 1815.00,3405.00 1827.00,3397.80" fill="#d9e2ea" stroke="#becbd6" stroke-width="1"/>
+<polygon points="1329.00,3397.80 1827.00,3397.80 1815.00,3405.00 1317.00,3405.00" fill="#cbd7e1" stroke="#b7c6d2" stroke-width="1"/>
+<polygon points="1329.00,178.80 1827.00,178.80 1827.00,3397.80 1329.00,3397.80" fill="#eef3f7" stroke="#c7d3dd" stroke-width="1"/>
+<g class="card" role="group" aria-label="{}">
+<rect x="1499.0" y="-1.1999999999999993" width="304" height="124" fill="#e7edf2" rx="9"/>
+<rect x="1499.0" y="-3.1999999999999993" width="304" height="124" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<text x="1515.0" y="27.8" font-size="15" fill="#397f78" font-weight="bold">STALSK</text>
+<text x="1515.0" y="52.8" font-size="14" fill="#172a3a" font-weight="bold">Stalsk-12 pincer battlefield</text>
+<text x="1515.0" y="75.8" font-size="11" fill="#526575">ALREADY EXISTED</text>
+<text x="1515.0" y="98.8" font-size="11" fill="#526575">Ancestry: off chart</text>
+</g>
+<rect x="1343.0" y="4.800000000000001" width="5" height="130" fill="#397f78" rx="2"/>
+<line x1="20" y1="190.8" x2="1843" y2="190.8" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="218.8" font-size="12" fill="#172a3a" font-weight="bold">0</text>
+<text x="24" y="243.8" font-size="10" fill="#526575">rank 01</text>
+<line x1="20" y1="436.8" x2="1843" y2="436.8" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="464.8" font-size="12" fill="#172a3a" font-weight="bold">5</text>
+<text x="24" y="489.8" font-size="10" fill="#526575">rank 02</text>
+<line x1="20" y1="662.8" x2="1843" y2="662.8" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="690.8" font-size="12" fill="#172a3a" font-weight="bold">10</text>
+<text x="24" y="715.8" font-size="10" fill="#526575">rank 03</text>
+<line x1="20" y1="960.8" x2="1843" y2="960.8" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="988.8" font-size="12" fill="#172a3a" font-weight="bold">20</text>
+<text x="24" y="1013.8" font-size="10" fill="#526575">rank 04</text>
+<line x1="20" y1="1321.8" x2="1843" y2="1321.8" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="1349.8" font-size="12" fill="#172a3a" font-weight="bold">30</text>
+<text x="24" y="1374.8" font-size="10" fill="#526575">rank 05</text>
+<line x1="20" y1="1619.8" x2="1843" y2="1619.8" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="1647.8" font-size="12" fill="#172a3a" font-weight="bold">40</text>
+<text x="24" y="1672.8" font-size="10" fill="#526575">rank 06</text>
+<line x1="20" y1="1917.8" x2="1843" y2="1917.8" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="1945.8" font-size="12" fill="#172a3a" font-weight="bold">50</text>
+<text x="24" y="1970.8" font-size="10" fill="#526575">rank 07</text>
+<line x1="20" y1="2249.8" x2="1843" y2="2249.8" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="2277.8" font-size="12" fill="#172a3a" font-weight="bold">60</text>
+<text x="24" y="2302.8" font-size="10" fill="#526575">rank 08</text>
+<line x1="20" y1="2504.8" x2="1843" y2="2504.8" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="2532.8" font-size="12" fill="#172a3a" font-weight="bold">65</text>
+<text x="24" y="2557.8" font-size="10" fill="#526575">rank 09</text>
+<line x1="20" y1="2730.8" x2="1843" y2="2730.8" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="2758.8" font-size="12" fill="#172a3a" font-weight="bold">70</text>
+<text x="24" y="2783.8" font-size="10" fill="#526575">rank 10</text>
+<line x1="20" y1="3039.8" x2="1843" y2="3039.8" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="3067.8" font-size="12" fill="#172a3a" font-weight="bold">80</text>
+<text x="24" y="3092.8" font-size="10" fill="#526575">rank 11</text>
+<path d="M 389.00 190.80 L 389.00 3389.80" fill="none" stroke="#667b8a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="383.0" y="184.8" width="12" height="12" fill="#ffffff" stroke="#416f99" rx="1" stroke-width="2"/>
+<line x1="382.0" y1="3389.8" x2="396.0" y2="3389.8" stroke="#667b8a" stroke-width="2"/>
+<text x="404.0" y="3394.8" font-size="10" fill="#526575">End of displayed extent</text>
+<path d="M 949.00 190.80 L 949.00 3389.80" fill="none" stroke="#667b8a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 949.00 190.80 l -5 -7 m 5 7 l 5 -7" fill="none" stroke="#78639a" stroke-width="2"/>
+<line x1="942.0" y1="3389.8" x2="956.0" y2="3389.8" stroke="#667b8a" stroke-width="2"/>
+<text x="964.0" y="3394.8" font-size="10" fill="#526575">End of displayed extent</text>
+<path d="M 1475.00 190.80 L 1475.00 3389.80" fill="none" stroke="#667b8a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 1475.00 190.80 l -5 -7 m 5 7 l 5 -7" fill="none" stroke="#397f78" stroke-width="2"/>
+<line x1="1468.0" y1="3389.8" x2="1482.0" y2="3389.8" stroke="#667b8a" stroke-width="2"/>
+<text x="1490.0" y="3394.8" font-size="10" fill="#526575">End of displayed extent</text>
+<g class="layer-route">
+<title>V1 · {&quot;entry&quot;: &quot;e-opera&quot;, &quot;exit&quot;: &quot;e-turn1&quot;, &quot;id&quot;: &quot;pv0&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;FWD&quot;}</title>
+<path d="M 381.00 235.80 L 372.00 235.80 L 372.00 1005.80 L 379.00 1005.80" fill="none" stroke="#ffffff" stroke-width="8.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 381.00 235.80 L 372.00 235.80 L 372.00 1005.80 L 379.00 1005.80" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+<path d="M 372.00 611.80 L 372.00 629.80" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+</g>
+<g class="layer-route">
+<title>V2 · {&quot;entry&quot;: &quot;e-inv-tallinn&quot;, &quot;exit&quot;: &quot;e-inv-oslo&quot;, &quot;id&quot;: &quot;pv1&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;INV&quot;}</title>
+<path d="M 941.00 1366.80 L 932.00 1366.80 L 932.00 1664.80 L 939.00 1664.80" fill="none" stroke="#ffffff" stroke-width="8.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 941.00 1366.80 L 932.00 1366.80 L 932.00 1664.80 L 939.00 1664.80" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+<path d="M 932.00 1506.80 L 932.00 1524.80" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+</g>
+<g class="layer-route">
+<title>V3 · {&quot;entry&quot;: &quot;e-freeport&quot;, &quot;exit&quot;: &quot;e-end&quot;, &quot;id&quot;: &quot;pv2&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;FWD&quot;}</title>
+<path d="M 381.00 707.80 L 362.00 707.80 L 362.00 3084.80 L 379.00 3084.80" fill="none" stroke="#ffffff" stroke-width="8.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 381.00 707.80 L 362.00 707.80 L 362.00 3084.80 L 379.00 3084.80" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+<path d="M 362.00 1887.30 L 362.00 1905.30" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+</g>
+<g class="layer-split" id="g1-edge-1">
+<title>e-turn1 → e-freeport · outcome + · {&quot;entry&quot;: &quot;e-freeport&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;keeps moving forward&quot;, &quot;instance&quot;: &quot;prot-fwd&quot;, &quot;outcome&quot;: &quot;continues&quot;}], &quot;universe&quot;: &quot;FWD&quot;, &quot;universe_outcome&quot;: &quot;continues&quot;}
+{&quot;outcome&quot;: {&quot;entry&quot;: &quot;e-freeport&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;keeps moving forward&quot;, &quot;instance&quot;: &quot;prot-fwd&quot;, &quot;outcome&quot;: &quot;continues&quot;}], &quot;universe&quot;: &quot;FWD&quot;, &quot;universe_outcome&quot;: &quot;continues&quot;}, &quot;split&quot;: {&quot;automatic&quot;: false, &quot;cause&quot;: &quot;branch&quot;, &quot;event&quot;: &quot;e-turn1&quot;, &quot;outcomes&quot;: {&quot;+&quot;: {&quot;entry&quot;: &quot;e-freeport&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;keeps moving forward&quot;, &quot;instance&quot;: &quot;prot-fwd&quot;, &quot;outcome&quot;: &quot;continues&quot;}], &quot;universe&quot;: &quot;FWD&quot;, &quot;universe_outcome&quot;: &quot;continues&quot;}, &quot;-&quot;: {&quot;entry&quot;: &quot;e-inv-tallinn&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;inverted strand&quot;, &quot;instance&quot;: &quot;prot-inv&quot;, &quot;outcome&quot;: &quot;continues&quot;}], &quot;universe&quot;: &quot;INV&quot;, &quot;universe_outcome&quot;: &quot;continues&quot;}}, &quot;source_disposition&quot;: &quot;continues&quot;, &quot;source_universe&quot;: &quot;FWD&quot;, &quot;traveller&quot;: &quot;prot-mind&quot;}}</title>
+<line x1="380.0" y1="1005.8" x2="388.0" y2="1001.0" stroke="#ffffff" stroke-width="8"/>
+<line x1="380.0" y1="1005.8" x2="388.0" y2="1001.0" stroke="#ad6200" stroke-width="3"/>
+<line x1="379.0" y1="707.8" x2="387.0" y2="703.0" stroke="#ffffff" stroke-width="8"/>
+<line x1="379.0" y1="707.8" x2="387.0" y2="703.0" stroke="#ad6200" stroke-width="3"/>
+<path d="M 388.00 1001.00 L 347.00 1001.00 L 347.00 1235.00 L 182.00 1235.00 L 182.00 900.00 L 347.00 900.00 L 347.00 703.00 L 387.00 703.00" fill="none" stroke="#ffffff" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 388.00 1001.00 L 347.00 1001.00 L 347.00 1235.00 L 182.00 1235.00 L 182.00 900.00 L 347.00 900.00 L 347.00 703.00 L 387.00 703.00" fill="none" stroke="#ad6200" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-split)"/>
+<a href="#g1-relationships" aria-label="e-turn1 → e-freeport · outcome + · {&quot;entry&quot;: &quot;e-freeport&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;keeps moving forward&quot;, &quot;instance&quot;: &quot;prot-fwd&quot;, &quot;outcome&quot;: &quot;continues&quot;}], &quot;universe&quot;: &quot;FWD&quot;, &quot;universe_outcome&quot;: &quot;continues&quot;}">
+<rect x="240.5" y="1225.0" width="48" height="20" fill="#ffffff" stroke="#ad6200" rx="6" stroke-width="1.6"/>
+<text text-anchor="middle" x="264.5" y="1239.0" font-size="11" fill="#ad6200" font-weight="bold">S1+</text>
+</a>
+</g>
+<g class="layer-split" id="g1-edge-2">
+<title>e-turn1 → e-inv-tallinn · outcome − · {&quot;entry&quot;: &quot;e-inv-tallinn&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;inverted strand&quot;, &quot;instance&quot;: &quot;prot-inv&quot;, &quot;outcome&quot;: &quot;continues&quot;}], &quot;universe&quot;: &quot;INV&quot;, &quot;universe_outcome&quot;: &quot;continues&quot;}
+{&quot;outcome&quot;: {&quot;entry&quot;: &quot;e-inv-tallinn&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;inverted strand&quot;, &quot;instance&quot;: &quot;prot-inv&quot;, &quot;outcome&quot;: &quot;continues&quot;}], &quot;universe&quot;: &quot;INV&quot;, &quot;universe_outcome&quot;: &quot;continues&quot;}, &quot;split&quot;: {&quot;automatic&quot;: false, &quot;cause&quot;: &quot;branch&quot;, &quot;event&quot;: &quot;e-turn1&quot;, &quot;outcomes&quot;: {&quot;+&quot;: {&quot;entry&quot;: &quot;e-freeport&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;keeps moving forward&quot;, &quot;instance&quot;: &quot;prot-fwd&quot;, &quot;outcome&quot;: &quot;continues&quot;}], &quot;universe&quot;: &quot;FWD&quot;, &quot;universe_outcome&quot;: &quot;continues&quot;}, &quot;-&quot;: {&quot;entry&quot;: &quot;e-inv-tallinn&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;inverted strand&quot;, &quot;instance&quot;: &quot;prot-inv&quot;, &quot;outcome&quot;: &quot;continues&quot;}], &quot;universe&quot;: &quot;INV&quot;, &quot;universe_outcome&quot;: &quot;continues&quot;}}, &quot;source_disposition&quot;: &quot;continues&quot;, &quot;source_universe&quot;: &quot;FWD&quot;, &quot;traveller&quot;: &quot;prot-mind&quot;}}</title>
+<line x1="380.0" y1="1005.8" x2="388.0" y2="1001.0" stroke="#ffffff" stroke-width="8"/>
+<line x1="380.0" y1="1005.8" x2="388.0" y2="1001.0" stroke="#ad6200" stroke-width="3"/>
+<line x1="939.0" y1="1366.8" x2="947.0" y2="1362.0" stroke="#ffffff" stroke-width="8"/>
+<line x1="939.0" y1="1366.8" x2="947.0" y2="1362.0" stroke="#ad6200" stroke-width="3"/>
+<path d="M 388.00 1001.00 L 338.00 1001.00 L 338.00 1261.00 L 194.00 1261.00 L 194.00 1559.00 L 917.00 1559.00 L 917.00 1362.00 L 947.00 1362.00" fill="none" stroke="#ffffff" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 388.00 1001.00 L 338.00 1001.00 L 338.00 1261.00 L 194.00 1261.00 L 194.00 1559.00 L 917.00 1559.00 L 917.00 1362.00 L 947.00 1362.00" fill="none" stroke="#ad6200" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 5" marker-end="url(#arrow-split)"/>
+<a href="#g1-relationships" aria-label="e-turn1 → e-inv-tallinn · outcome − · {&quot;entry&quot;: &quot;e-inv-tallinn&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;inverted strand&quot;, &quot;instance&quot;: &quot;prot-inv&quot;, &quot;outcome&quot;: &quot;continues&quot;}], &quot;universe&quot;: &quot;INV&quot;, &quot;universe_outcome&quot;: &quot;continues&quot;}">
+<rect x="242.0" y="1251.0" width="48" height="20" fill="#ffffff" stroke="#ad6200" rx="6" stroke-width="1.6"/>
+<text text-anchor="middle" x="266.0" y="1265.0" font-size="11" fill="#ad6200" font-weight="bold">S1−</text>
+</a>
+</g>
+<g class="layer-split" id="g1-edge-3">
+<title>e-stalsk → e-end · outcome + · {&quot;entry&quot;: &quot;e-end&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;remains forward&quot;, &quot;instance&quot;: &quot;neil-fwd&quot;, &quot;outcome&quot;: &quot;continues&quot;}], &quot;universe&quot;: &quot;FWD&quot;, &quot;universe_outcome&quot;: &quot;continues&quot;}
+{&quot;outcome&quot;: {&quot;entry&quot;: &quot;e-end&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;remains forward&quot;, &quot;instance&quot;: &quot;neil-fwd&quot;, &quot;outcome&quot;: &quot;continues&quot;}], &quot;universe&quot;: &quot;FWD&quot;, &quot;universe_outcome&quot;: &quot;continues&quot;}, &quot;split&quot;: {&quot;automatic&quot;: false, &quot;cause&quot;: &quot;branch&quot;, &quot;event&quot;: &quot;e-stalsk&quot;, &quot;outcomes&quot;: {&quot;+&quot;: {&quot;entry&quot;: &quot;e-end&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;remains forward&quot;, &quot;instance&quot;: &quot;neil-fwd&quot;, &quot;outcome&quot;: &quot;continues&quot;}], &quot;universe&quot;: &quot;FWD&quot;, &quot;universe_outcome&quot;: &quot;continues&quot;}, &quot;-&quot;: {&quot;entry&quot;: &quot;e-neil-inv&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;dies in the tunnel, inverted&quot;, &quot;instance&quot;: &quot;neil-stalsk&quot;, &quot;outcome&quot;: &quot;dies&quot;}], &quot;universe&quot;: &quot;STALSK&quot;, &quot;universe_outcome&quot;: &quot;continues&quot;}}, &quot;source_disposition&quot;: &quot;continues&quot;, &quot;source_universe&quot;: &quot;FWD&quot;, &quot;traveller&quot;: &quot;neil-mind&quot;}}</title>
+<line x1="380.0" y1="1962.8" x2="388.0" y2="1958.0" stroke="#ffffff" stroke-width="8"/>
+<line x1="380.0" y1="1962.8" x2="388.0" y2="1958.0" stroke="#ad6200" stroke-width="3"/>
+<line x1="379.0" y1="3084.8" x2="387.0" y2="3080.0" stroke="#ffffff" stroke-width="8"/>
+<line x1="379.0" y1="3084.8" x2="387.0" y2="3080.0" stroke="#ad6200" stroke-width="3"/>
+<path d="M 388.00 1958.00 L 347.00 1958.00 L 347.00 2189.00 L 206.00 2189.00 L 206.00 3329.00 L 347.00 3329.00 L 347.00 3080.00 L 387.00 3080.00" fill="none" stroke="#ffffff" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 388.00 1958.00 L 347.00 1958.00 L 347.00 2189.00 L 206.00 2189.00 L 206.00 3329.00 L 347.00 3329.00 L 347.00 3080.00 L 387.00 3080.00" fill="none" stroke="#ad6200" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-split)"/>
+<a href="#g1-relationships" aria-label="e-stalsk → e-end · outcome + · {&quot;entry&quot;: &quot;e-end&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;remains forward&quot;, &quot;instance&quot;: &quot;neil-fwd&quot;, &quot;outcome&quot;: &quot;continues&quot;}], &quot;universe&quot;: &quot;FWD&quot;, &quot;universe_outcome&quot;: &quot;continues&quot;}">
+<rect x="252.5" y="2179.0" width="48" height="20" fill="#ffffff" stroke="#ad6200" rx="6" stroke-width="1.6"/>
+<text text-anchor="middle" x="276.5" y="2193.0" font-size="11" fill="#ad6200" font-weight="bold">S2+</text>
+</a>
+</g>
+<g class="layer-split" id="g1-edge-4">
+<title>e-stalsk → e-neil-inv · outcome − · {&quot;entry&quot;: &quot;e-neil-inv&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;dies in the tunnel, inverted&quot;, &quot;instance&quot;: &quot;neil-stalsk&quot;, &quot;outcome&quot;: &quot;dies&quot;}], &quot;universe&quot;: &quot;STALSK&quot;, &quot;universe_outcome&quot;: &quot;continues&quot;}
+{&quot;outcome&quot;: {&quot;entry&quot;: &quot;e-neil-inv&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;dies in the tunnel, inverted&quot;, &quot;instance&quot;: &quot;neil-stalsk&quot;, &quot;outcome&quot;: &quot;dies&quot;}], &quot;universe&quot;: &quot;STALSK&quot;, &quot;universe_outcome&quot;: &quot;continues&quot;}, &quot;split&quot;: {&quot;automatic&quot;: false, &quot;cause&quot;: &quot;branch&quot;, &quot;event&quot;: &quot;e-stalsk&quot;, &quot;outcomes&quot;: {&quot;+&quot;: {&quot;entry&quot;: &quot;e-end&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;remains forward&quot;, &quot;instance&quot;: &quot;neil-fwd&quot;, &quot;outcome&quot;: &quot;continues&quot;}], &quot;universe&quot;: &quot;FWD&quot;, &quot;universe_outcome&quot;: &quot;continues&quot;}, &quot;-&quot;: {&quot;entry&quot;: &quot;e-neil-inv&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;dies in the tunnel, inverted&quot;, &quot;instance&quot;: &quot;neil-stalsk&quot;, &quot;outcome&quot;: &quot;dies&quot;}], &quot;universe&quot;: &quot;STALSK&quot;, &quot;universe_outcome&quot;: &quot;continues&quot;}}, &quot;source_disposition&quot;: &quot;continues&quot;, &quot;source_universe&quot;: &quot;FWD&quot;, &quot;traveller&quot;: &quot;neil-mind&quot;}}</title>
+<line x1="380.0" y1="1962.8" x2="388.0" y2="1958.0" stroke="#ffffff" stroke-width="8"/>
+<line x1="380.0" y1="1962.8" x2="388.0" y2="1958.0" stroke="#ad6200" stroke-width="3"/>
+<line x1="1465.0" y1="2294.8" x2="1473.0" y2="2290.0" stroke="#ffffff" stroke-width="8"/>
+<line x1="1465.0" y1="2294.8" x2="1473.0" y2="2290.0" stroke="#ad6200" stroke-width="3"/>
+<path d="M 388.00 1958.00 L 338.00 1958.00 L 338.00 2215.00 L 218.00 2215.00 L 218.00 2444.00 L 1453.00 2444.00 L 1453.00 2290.00 L 1473.00 2290.00" fill="none" stroke="#ffffff" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 388.00 1958.00 L 338.00 1958.00 L 338.00 2215.00 L 218.00 2215.00 L 218.00 2444.00 L 1453.00 2444.00 L 1453.00 2290.00 L 1473.00 2290.00" fill="none" stroke="#ad6200" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 5" marker-end="url(#arrow-split)"/>
+<a href="#g1-relationships" aria-label="e-stalsk → e-neil-inv · outcome − · {&quot;entry&quot;: &quot;e-neil-inv&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;dies in the tunnel, inverted&quot;, &quot;instance&quot;: &quot;neil-stalsk&quot;, &quot;outcome&quot;: &quot;dies&quot;}], &quot;universe&quot;: &quot;STALSK&quot;, &quot;universe_outcome&quot;: &quot;continues&quot;}">
+<rect x="254.0" y="2205.0" width="48" height="20" fill="#ffffff" stroke="#ad6200" rx="6" stroke-width="1.6"/>
+<text text-anchor="middle" x="278.0" y="2219.0" font-size="11" fill="#ad6200" font-weight="bold">S2−</text>
+</a>
+</g>
+<g class="layer-transfer" id="g1-edge-5">
+<title>tr-prot-inv · prot-mind · e-turn1 → e-inv-tallinn · mechanism: time_travel · relation: {&quot;kind&quot;: &quot;different_universes&quot;} · followed by L1
+{&quot;from&quot;: {&quot;exit&quot;: &quot;e-turn1&quot;, &quot;universe&quot;: &quot;FWD&quot;}, &quot;id&quot;: &quot;tr-prot-inv&quot;, &quot;mechanism&quot;: &quot;time_travel&quot;, &quot;relation&quot;: {&quot;kind&quot;: &quot;different_universes&quot;}, &quot;to&quot;: {&quot;entry&quot;: &quot;e-inv-tallinn&quot;, &quot;universe&quot;: &quot;INV&quot;}, &quot;traveller&quot;: &quot;prot-mind&quot;}</title>
+<line x1="380.0" y1="1005.8" x2="388.0" y2="1001.0" stroke="#ffffff" stroke-width="8"/>
+<line x1="380.0" y1="1005.8" x2="388.0" y2="1001.0" stroke="#285ac7" stroke-width="3"/>
+<line x1="939.0" y1="1366.8" x2="947.0" y2="1362.0" stroke="#ffffff" stroke-width="8"/>
+<line x1="939.0" y1="1366.8" x2="947.0" y2="1362.0" stroke="#285ac7" stroke-width="3"/>
+<path d="M 388.00 1001.00 L 329.00 1001.00 L 329.00 1287.00 L 230.00 1287.00 L 230.00 1585.00 L 908.00 1585.00 L 908.00 1362.00 L 947.00 1362.00" fill="none" stroke="#ffffff" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 388.00 1001.00 L 329.00 1001.00 L 329.00 1287.00 L 230.00 1287.00 L 230.00 1585.00 L 908.00 1585.00 L 908.00 1362.00 L 947.00 1362.00" fill="none" stroke="#285ac7" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-transfer)"/>
+<g class="layer-route">
+<path d="M 388.00 1001.00 L 329.00 1001.00 L 329.00 1287.00 L 230.00 1287.00 L 230.00 1585.00 L 908.00 1585.00 L 908.00 1362.00 L 947.00 1362.00" fill="none" stroke="#087d60" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<a href="#g1-relationships" aria-label="tr-prot-inv · prot-mind · e-turn1 → e-inv-tallinn · mechanism: time_travel · relation: {&quot;kind&quot;: &quot;different_universes&quot;} · followed by L1">
+<rect x="255.5" y="1277.0" width="48" height="20" fill="#ffffff" stroke="#285ac7" rx="6" stroke-width="1.6"/>
+<text text-anchor="middle" x="279.5" y="1291.0" font-size="11" fill="#285ac7" font-weight="bold">T1 ?</text>
+</a>
+</g>
+<g class="layer-transfer" id="g1-edge-6">
+<title>tr-prot-back · prot-mind · e-inv-oslo → e-freeport · mechanism: time_travel · relation: {&quot;kind&quot;: &quot;different_universes&quot;} · followed by L2
+{&quot;from&quot;: {&quot;exit&quot;: &quot;e-inv-oslo&quot;, &quot;universe&quot;: &quot;INV&quot;}, &quot;id&quot;: &quot;tr-prot-back&quot;, &quot;mechanism&quot;: &quot;time_travel&quot;, &quot;relation&quot;: {&quot;kind&quot;: &quot;different_universes&quot;}, &quot;to&quot;: {&quot;entry&quot;: &quot;e-freeport&quot;, &quot;universe&quot;: &quot;FWD&quot;}, &quot;traveller&quot;: &quot;prot-mind&quot;}</title>
+<line x1="940.0" y1="1664.8" x2="948.0" y2="1660.0" stroke="#ffffff" stroke-width="8"/>
+<line x1="940.0" y1="1664.8" x2="948.0" y2="1660.0" stroke="#285ac7" stroke-width="3"/>
+<line x1="379.0" y1="707.8" x2="387.0" y2="703.0" stroke="#ffffff" stroke-width="8"/>
+<line x1="379.0" y1="707.8" x2="387.0" y2="703.0" stroke="#285ac7" stroke-width="3"/>
+<path d="M 948.00 1660.00 L 917.00 1660.00 L 917.00 1857.00 L 797.00 1857.00 L 797.00 926.00 L 338.00 926.00 L 338.00 703.00 L 387.00 703.00" fill="none" stroke="#ffffff" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 948.00 1660.00 L 917.00 1660.00 L 917.00 1857.00 L 797.00 1857.00 L 797.00 926.00 L 338.00 926.00 L 338.00 703.00 L 387.00 703.00" fill="none" stroke="#285ac7" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-transfer)"/>
+<g class="layer-route">
+<path d="M 948.00 1660.00 L 917.00 1660.00 L 917.00 1857.00 L 797.00 1857.00 L 797.00 926.00 L 338.00 926.00 L 338.00 703.00 L 387.00 703.00" fill="none" stroke="#087d60" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<a href="#g1-relationships" aria-label="tr-prot-back · prot-mind · e-inv-oslo → e-freeport · mechanism: time_travel · relation: {&quot;kind&quot;: &quot;different_universes&quot;} · followed by L2">
+<rect x="833.0" y="1847.0" width="48" height="20" fill="#ffffff" stroke="#285ac7" rx="6" stroke-width="1.6"/>
+<text text-anchor="middle" x="857.0" y="1861.0" font-size="11" fill="#285ac7" font-weight="bold">T2 ?</text>
+</a>
+</g>
+<g class="layer-transfer" id="g1-edge-7">
+<title>tr-neil-stalsk · neil-mind · e-inv-oslo → e-neil-inv · mechanism: time_travel · relation: {&quot;kind&quot;: &quot;different_universes&quot;}
+{&quot;from&quot;: {&quot;exit&quot;: &quot;e-inv-oslo&quot;, &quot;universe&quot;: &quot;INV&quot;}, &quot;id&quot;: &quot;tr-neil-stalsk&quot;, &quot;mechanism&quot;: &quot;time_travel&quot;, &quot;relation&quot;: {&quot;kind&quot;: &quot;different_universes&quot;}, &quot;to&quot;: {&quot;entry&quot;: &quot;e-neil-inv&quot;, &quot;universe&quot;: &quot;STALSK&quot;}, &quot;traveller&quot;: &quot;neil-mind&quot;}</title>
+<line x1="940.0" y1="1664.8" x2="948.0" y2="1660.0" stroke="#ffffff" stroke-width="8"/>
+<line x1="940.0" y1="1664.8" x2="948.0" y2="1660.0" stroke="#285ac7" stroke-width="3"/>
+<line x1="1465.0" y1="2294.8" x2="1473.0" y2="2290.0" stroke="#ffffff" stroke-width="8"/>
+<line x1="1465.0" y1="2294.8" x2="1473.0" y2="2290.0" stroke="#285ac7" stroke-width="3"/>
+<path d="M 948.00 1660.00 L 908.00 1660.00 L 908.00 1883.00 L 809.00 1883.00 L 809.00 2470.00 L 1444.00 2470.00 L 1444.00 2290.00 L 1473.00 2290.00" fill="none" stroke="#ffffff" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 948.00 1660.00 L 908.00 1660.00 L 908.00 1883.00 L 809.00 1883.00 L 809.00 2470.00 L 1444.00 2470.00 L 1444.00 2290.00 L 1473.00 2290.00" fill="none" stroke="#285ac7" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-transfer)"/>
+<a href="#g1-relationships" aria-label="tr-neil-stalsk · neil-mind · e-inv-oslo → e-neil-inv · mechanism: time_travel · relation: {&quot;kind&quot;: &quot;different_universes&quot;}">
+<rect x="834.5" y="1873.0" width="48" height="20" fill="#ffffff" stroke="#285ac7" rx="6" stroke-width="1.6"/>
+<text text-anchor="middle" x="858.5" y="1887.0" font-size="11" fill="#285ac7" font-weight="bold">T3 ?</text>
+</a>
+</g>
+<line x1="399.0" y1="235.8" x2="413.0" y2="235.8" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-1" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Opening siege&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-opera&quot;, &quot;kind&quot;: &quot;start&quot;, &quot;label&quot;: &quot;Kyiv opera siege - the Protagonist is saved by a soldier with a red token&quot;, &quot;order&quot;: 0, &quot;universe&quot;: &quot;FWD&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Opening siege&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-opera&quot;, &quot;kind&quot;: &quot;start&quot;, &quot;label&quot;: &quot;Kyiv opera siege - the Protagonist is saved by a soldier with a red token&quot;, &quot;order&quot;: 0, &quot;universe&quot;: &quot;FWD&quot;}</title>
+<rect x="413.0" y="212.8" width="304" height="178" fill="#e7edf2" rx="9"/>
+<rect x="413.0" y="210.8" width="304" height="178" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="413.0" y="222.8" width="3" height="154" fill="#416f99" rx="1.5"/>
+<text x="429.0" y="237.8" font-size="11" fill="#526575" font-weight="bold">START · e-opera</text>
+<text x="429.0" y="263.8" font-size="14" fill="#172a3a">Kyiv opera siege - the</text>
+<text x="429.0" y="283.8" font-size="14" fill="#172a3a">Protagonist is saved by a</text>
+<text x="429.0" y="303.8" font-size="14" fill="#172a3a">soldier with a red token</text>
+<a href="#evidence-1" class="citation" aria-label="[1] · Locator Opening siege · unavailable">
+<text x="429.0" y="326.8" font-size="11" fill="#285ac7">[1] · Locator Opening siege ·</text>
+<text x="429.0" y="343.8" font-size="11" fill="#285ac7">unavailable</text>
+</a>
+<text x="429.0" y="366.8" font-size="11" fill="#087d60" font-weight="bold">V1 entry · prot-mind</text>
+</g>
+<line x1="399.0" y1="707.8" x2="413.0" y2="707.8" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-2" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Freeport fight&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-freeport&quot;, &quot;kind&quot;: &quot;outcome&quot;, &quot;label&quot;: &quot;Oslo freeport - rotated-artwork fight with a masked inverted attacker&quot;, &quot;order&quot;: 10, &quot;universe&quot;: &quot;FWD&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Freeport fight&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-freeport&quot;, &quot;kind&quot;: &quot;outcome&quot;, &quot;label&quot;: &quot;Oslo freeport - rotated-artwork fight with a masked inverted attacker&quot;, &quot;order&quot;: 10, &quot;universe&quot;: &quot;FWD&quot;}</title>
+<rect x="413.0" y="684.8" width="304" height="178" fill="#e7edf2" rx="9"/>
+<rect x="413.0" y="682.8" width="304" height="178" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="413.0" y="694.8" width="3" height="154" fill="#416f99" rx="1.5"/>
+<text x="429.0" y="709.8" font-size="11" fill="#526575" font-weight="bold">OUTCOME · e-freeport</text>
+<text x="429.0" y="735.8" font-size="14" fill="#172a3a">Oslo freeport -</text>
+<text x="429.0" y="755.8" font-size="14" fill="#172a3a">rotated-artwork fight with a</text>
+<text x="429.0" y="775.8" font-size="14" fill="#172a3a">masked inverted attacker</text>
+<a href="#evidence-2" class="citation" aria-label="[2] · Locator Freeport fight · unavailable">
+<text x="429.0" y="798.8" font-size="11" fill="#285ac7">[2] · Locator Freeport fight ·</text>
+<text x="429.0" y="815.8" font-size="11" fill="#285ac7">unavailable</text>
+</a>
+<text x="429.0" y="838.8" font-size="11" fill="#087d60" font-weight="bold">V3 entry · prot-mind</text>
+</g>
+<line x1="399.0" y1="1005.8" x2="413.0" y2="1005.8" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-3" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Tallinn highway + turnstile&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-turn1&quot;, &quot;kind&quot;: &quot;split&quot;, &quot;label&quot;: &quot;Tallinn turnstile - inversion crossing&quot;, &quot;order&quot;: 20, &quot;universe&quot;: &quot;FWD&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Tallinn highway + turnstile&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-turn1&quot;, &quot;kind&quot;: &quot;split&quot;, &quot;label&quot;: &quot;Tallinn turnstile - inversion crossing&quot;, &quot;order&quot;: 20, &quot;universe&quot;: &quot;FWD&quot;}</title>
+<rect x="413.0" y="982.8" width="304" height="215" fill="#e7edf2" rx="9"/>
+<rect x="413.0" y="980.8" width="304" height="215" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="413.0" y="992.8" width="3" height="191" fill="#416f99" rx="1.5"/>
+<text x="429.0" y="1007.8" font-size="11" fill="#526575" font-weight="bold">SPLIT · e-turn1</text>
+<text x="429.0" y="1033.8" font-size="14" fill="#172a3a">Tallinn turnstile - inversion</text>
+<text x="429.0" y="1053.8" font-size="14" fill="#172a3a">crossing</text>
+<a href="#evidence-3" class="citation" aria-label="[3] · Locator Tallinn highway + turnstile · unavailable">
+<text x="429.0" y="1076.8" font-size="11" fill="#285ac7">[3] · Locator Tallinn highway +</text>
+<text x="429.0" y="1093.8" font-size="11" fill="#285ac7">turnstile · unavailable</text>
+</a>
+<text x="429.0" y="1116.8" font-size="11" fill="#ad6200">S1 · cause: branch · automatic: false ·</text>
+<text x="429.0" y="1133.8" font-size="11" fill="#ad6200">traveller: prot-mind · source</text>
+<text x="429.0" y="1150.8" font-size="11" fill="#ad6200">disposition: continues</text>
+<text x="429.0" y="1173.8" font-size="11" fill="#087d60" font-weight="bold">V1 exit · prot-mind</text>
+</g>
+<line x1="959.0" y1="1366.8" x2="973.0" y2="1366.8" stroke="#78639a" stroke-width="1.8"/>
+<g id="g1-item-4" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Inverted Tallinn-Oslo&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-inv-tallinn&quot;, &quot;kind&quot;: &quot;entry&quot;, &quot;label&quot;: &quot;Inverted: the Protagonist and Neil move backward from Tallinn to Oslo&quot;, &quot;order&quot;: 30, &quot;universe&quot;: &quot;INV&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Inverted Tallinn-Oslo&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-inv-tallinn&quot;, &quot;kind&quot;: &quot;entry&quot;, &quot;label&quot;: &quot;Inverted: the Protagonist and Neil move backward from Tallinn to Oslo&quot;, &quot;order&quot;: 30, &quot;universe&quot;: &quot;INV&quot;}</title>
+<rect x="973.0" y="1343.8" width="304" height="178" fill="#e7edf2" rx="9"/>
+<rect x="973.0" y="1341.8" width="304" height="178" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="973.0" y="1353.8" width="3" height="154" fill="#78639a" rx="1.5"/>
+<text x="989.0" y="1368.8" font-size="11" fill="#526575" font-weight="bold">ENTRY · e-inv-tallinn</text>
+<text x="989.0" y="1394.8" font-size="14" fill="#172a3a">Inverted: the Protagonist and</text>
+<text x="989.0" y="1414.8" font-size="14" fill="#172a3a">Neil move backward from Tallinn</text>
+<text x="989.0" y="1434.8" font-size="14" fill="#172a3a">to Oslo</text>
+<a href="#evidence-4" class="citation" aria-label="[4] · Locator Inverted Tallinn-Oslo · unavailable">
+<text x="989.0" y="1457.8" font-size="11" fill="#285ac7">[4] · Locator Inverted Tallinn-Oslo ·</text>
+<text x="989.0" y="1474.8" font-size="11" fill="#285ac7">unavailable</text>
+</a>
+<text x="989.0" y="1497.8" font-size="11" fill="#087d60" font-weight="bold">V2 entry · prot-mind</text>
+</g>
+<line x1="959.0" y1="1664.8" x2="973.0" y2="1664.8" stroke="#78639a" stroke-width="1.8"/>
+<g id="g1-item-5" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Oslo re-inversion&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-inv-oslo&quot;, &quot;kind&quot;: &quot;outcome&quot;, &quot;label&quot;: &quot;Inverted arrival at Oslo - re-inversion through the freeport turnstile&quot;, &quot;order&quot;: 40, &quot;universe&quot;: &quot;INV&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Oslo re-inversion&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-inv-oslo&quot;, &quot;kind&quot;: &quot;outcome&quot;, &quot;label&quot;: &quot;Inverted arrival at Oslo - re-inversion through the freeport turnstile&quot;, &quot;order&quot;: 40, &quot;universe&quot;: &quot;INV&quot;}</title>
+<rect x="973.0" y="1641.8" width="304" height="178" fill="#e7edf2" rx="9"/>
+<rect x="973.0" y="1639.8" width="304" height="178" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="973.0" y="1651.8" width="3" height="154" fill="#78639a" rx="1.5"/>
+<text x="989.0" y="1666.8" font-size="11" fill="#526575" font-weight="bold">OUTCOME · e-inv-oslo</text>
+<text x="989.0" y="1692.8" font-size="14" fill="#172a3a">Inverted arrival at Oslo -</text>
+<text x="989.0" y="1712.8" font-size="14" fill="#172a3a">re-inversion through the</text>
+<text x="989.0" y="1732.8" font-size="14" fill="#172a3a">freeport turnstile</text>
+<a href="#evidence-5" class="citation" aria-label="[5] · Locator Oslo re-inversion · unavailable">
+<text x="989.0" y="1755.8" font-size="11" fill="#285ac7">[5] · Locator Oslo re-inversion ·</text>
+<text x="989.0" y="1772.8" font-size="11" fill="#285ac7">unavailable</text>
+</a>
+<text x="989.0" y="1795.8" font-size="11" fill="#087d60" font-weight="bold">V2 exit · prot-mind</text>
+</g>
+<line x1="399.0" y1="1962.8" x2="413.0" y2="1962.8" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-6" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Stalsk-12 assault&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-stalsk&quot;, &quot;kind&quot;: &quot;split&quot;, &quot;label&quot;: &quot;Stalsk-12 - the temporal pincer begins (red forward, blue inverted)&quot;, &quot;order&quot;: 50, &quot;universe&quot;: &quot;FWD&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Stalsk-12 assault&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-stalsk&quot;, &quot;kind&quot;: &quot;split&quot;, &quot;label&quot;: &quot;Stalsk-12 - the temporal pincer begins (red forward, blue inverted)&quot;, &quot;order&quot;: 50, &quot;universe&quot;: &quot;FWD&quot;}</title>
+<rect x="413.0" y="1939.8" width="304" height="212" fill="#e7edf2" rx="9"/>
+<rect x="413.0" y="1937.8" width="304" height="212" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="413.0" y="1949.8" width="3" height="188" fill="#416f99" rx="1.5"/>
+<text x="429.0" y="1964.8" font-size="11" fill="#526575" font-weight="bold">SPLIT · e-stalsk</text>
+<text x="429.0" y="1990.8" font-size="14" fill="#172a3a">Stalsk-12 - the temporal pincer</text>
+<text x="429.0" y="2010.8" font-size="14" fill="#172a3a">begins (red forward, blue</text>
+<text x="429.0" y="2030.8" font-size="14" fill="#172a3a">inverted)</text>
+<a href="#evidence-6" class="citation" aria-label="[6] · Locator Stalsk-12 assault · unavailable">
+<text x="429.0" y="2053.8" font-size="11" fill="#285ac7">[6] · Locator Stalsk-12 assault ·</text>
+<text x="429.0" y="2070.8" font-size="11" fill="#285ac7">unavailable</text>
+</a>
+<text x="429.0" y="2093.8" font-size="11" fill="#ad6200">S2 · cause: branch · automatic: false ·</text>
+<text x="429.0" y="2110.8" font-size="11" fill="#ad6200">traveller: neil-mind · source disposition:</text>
+<text x="429.0" y="2127.8" font-size="11" fill="#ad6200">continues</text>
+</g>
+<line x1="1485.0" y1="2294.8" x2="1499.0" y2="2294.8" stroke="#397f78" stroke-width="1.8"/>
+<g id="g1-item-7" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Blue team deployment&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-neil-inv&quot;, &quot;kind&quot;: &quot;entry&quot;, &quot;label&quot;: &quot;Neil goes inverted with blue team&quot;, &quot;order&quot;: 60, &quot;universe&quot;: &quot;STALSK&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Blue team deployment&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-neil-inv&quot;, &quot;kind&quot;: &quot;entry&quot;, &quot;label&quot;: &quot;Neil goes inverted with blue team&quot;, &quot;order&quot;: 60, &quot;universe&quot;: &quot;STALSK&quot;}</title>
+<rect x="1499.0" y="2271.8" width="304" height="135" fill="#e7edf2" rx="9"/>
+<rect x="1499.0" y="2269.8" width="304" height="135" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="1499.0" y="2281.8" width="3" height="111" fill="#397f78" rx="1.5"/>
+<text x="1515.0" y="2296.8" font-size="11" fill="#526575" font-weight="bold">ENTRY · e-neil-inv</text>
+<text x="1515.0" y="2322.8" font-size="14" fill="#172a3a">Neil goes inverted with blue</text>
+<text x="1515.0" y="2342.8" font-size="14" fill="#172a3a">team</text>
+<a href="#evidence-7" class="citation" aria-label="[7] · Locator Blue team deployment · unavailable">
+<text x="1515.0" y="2365.8" font-size="11" fill="#285ac7">[7] · Locator Blue team deployment ·</text>
+<text x="1515.0" y="2382.8" font-size="11" fill="#285ac7">unavailable</text>
+</a>
+</g>
+<line x1="1485.0" y1="2775.8" x2="1499.0" y2="2775.8" stroke="#397f78" stroke-width="1.8"/>
+<g id="g1-item-8" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Tunnel death + reveal&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-neil-death&quot;, &quot;kind&quot;: &quot;cutoff&quot;, &quot;label&quot;: &quot;Neil dies inside the tunnel - already dead when the Protagonist arrives&quot;, &quot;order&quot;: 70, &quot;universe&quot;: &quot;STALSK&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Tunnel death + reveal&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-neil-death&quot;, &quot;kind&quot;: &quot;cutoff&quot;, &quot;label&quot;: &quot;Neil dies inside the tunnel - already dead when the Protagonist arrives&quot;, &quot;order&quot;: 70, &quot;universe&quot;: &quot;STALSK&quot;}</title>
+<rect x="1499.0" y="2752.8" width="304" height="241" fill="#e7edf2" rx="9"/>
+<rect x="1499.0" y="2750.8" width="304" height="241" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="1499.0" y="2762.8" width="3" height="217" fill="#397f78" rx="1.5"/>
+<text x="1515.0" y="2777.8" font-size="11" fill="#526575" font-weight="bold">CUTOFF · e-neil-death</text>
+<text x="1515.0" y="2803.8" font-size="14" fill="#172a3a">Neil dies inside the tunnel -</text>
+<text x="1515.0" y="2823.8" font-size="14" fill="#172a3a">already dead when the</text>
+<text x="1515.0" y="2843.8" font-size="14" fill="#172a3a">Protagonist arrives</text>
+<a href="#evidence-8" class="citation" aria-label="[8] · Locator Tunnel death + reveal · unavailable">
+<text x="1515.0" y="2866.8" font-size="11" fill="#285ac7">[8] · Locator Tunnel death + reveal ·</text>
+<text x="1515.0" y="2883.8" font-size="11" fill="#285ac7">unavailable</text>
+</a>
+<text x="1515.0" y="2907.8" font-size="12" fill="#b82f46" font-weight="bold">× DEAD · neil-stalsk</text>
+<text x="1515.0" y="2929.8" font-size="11" fill="#526575">Fate f-neil-stalsk · at e-neil-death</text>
+<a href="#evidence-12" class="citation" aria-label="[12] · Locator Tunnel death · unavailable">
+<text x="1515.0" y="2952.8" font-size="11" fill="#285ac7">[12] · Locator Tunnel death ·</text>
+<text x="1515.0" y="2969.8" font-size="11" fill="#285ac7">unavailable</text>
+</a>
+</g>
+<line x1="399.0" y1="3084.8" x2="413.0" y2="3084.8" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-9" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Ending&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-end&quot;, &quot;kind&quot;: &quot;cutoff&quot;, &quot;label&quot;: &quot;The Algorithm&#x27;s parts are scattered into the past; the Protagonist walks away&quot;, &quot;order&quot;: 80, &quot;universe&quot;: &quot;FWD&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Ending&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-end&quot;, &quot;kind&quot;: &quot;cutoff&quot;, &quot;label&quot;: &quot;The Algorithm&#x27;s parts are scattered into the past; the Protagonist walks away&quot;, &quot;order&quot;: 80, &quot;universe&quot;: &quot;FWD&quot;}</title>
+<rect x="413.0" y="3061.8" width="304" height="230" fill="#e7edf2" rx="9"/>
+<rect x="413.0" y="3059.8" width="304" height="230" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="413.0" y="3071.8" width="3" height="206" fill="#416f99" rx="1.5"/>
+<text x="429.0" y="3086.8" font-size="11" fill="#526575" font-weight="bold">CUTOFF · e-end</text>
+<text x="429.0" y="3112.8" font-size="14" fill="#172a3a">The Algorithm&#x27;s parts are</text>
+<text x="429.0" y="3132.8" font-size="14" fill="#172a3a">scattered into the past; the</text>
+<text x="429.0" y="3152.8" font-size="14" fill="#172a3a">Protagonist walks away</text>
+<a href="#evidence-9" class="citation" aria-label="[9] · Locator Ending · unavailable">
+<text x="429.0" y="3175.8" font-size="11" fill="#285ac7">[9] · Locator Ending · unavailable</text>
+</a>
+<text x="429.0" y="3199.8" font-size="12" fill="#087d60" font-weight="bold">● ALIVE · prot-fwd</text>
+<text x="429.0" y="3221.8" font-size="11" fill="#526575">Fate f-prot-fwd · at e-end</text>
+<a href="#evidence-13" class="citation" aria-label="[13] · Locator Final walk · unavailable">
+<text x="429.0" y="3244.8" font-size="11" fill="#285ac7">[13] · Locator Final walk · unavailable</text>
+</a>
+<text x="429.0" y="3267.8" font-size="11" fill="#087d60" font-weight="bold">V3 exit · prot-mind</text>
+</g>
+<line x1="399.0" y1="481.8" x2="413.0" y2="481.8" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-10" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Token handover&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;b-token&quot;, &quot;order&quot;: 5, &quot;segment&quot;: &quot;seg-fwd&quot;, &quot;text&quot;: &quot;The red token - proof the future sent someone back&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Token handover&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;b-token&quot;, &quot;order&quot;: 5, &quot;segment&quot;: &quot;seg-fwd&quot;, &quot;text&quot;: &quot;The red token - proof the future sent someone back&quot;}</title>
+<rect x="413.0" y="458.8" width="304" height="158" fill="#e7edf2" rx="9"/>
+<rect x="413.0" y="456.8" width="304" height="158" fill="#f9fafc" stroke="#d3dde5" rx="9"/>
+<rect x="413.0" y="468.8" width="3" height="134" fill="#416f99" rx="1.5"/>
+<text x="429.0" y="483.8" font-size="11" fill="#526575" font-weight="bold">BEAT · b-token</text>
+<text x="429.0" y="509.8" font-size="14" fill="#172a3a">The red token - proof the</text>
+<text x="429.0" y="529.8" font-size="14" fill="#172a3a">future sent someone back</text>
+<text x="429.0" y="552.8" font-size="11" fill="#526575">Segment: seg-fwd</text>
+<a href="#evidence-10" class="citation" aria-label="[10] · Locator Token handover · unavailable">
+<text x="429.0" y="575.8" font-size="11" fill="#285ac7">[10] · Locator Token handover ·</text>
+<text x="429.0" y="592.8" font-size="11" fill="#285ac7">unavailable</text>
+</a>
+</g>
+<line x1="1485.0" y1="2549.8" x2="1499.0" y2="2549.8" stroke="#397f78" stroke-width="1.8"/>
+<g id="g1-item-11" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Pincer coordination&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;b-pincer&quot;, &quot;order&quot;: 65, &quot;segment&quot;: &quot;seg-stalsk&quot;, &quot;text&quot;: &quot;Red and blue teams exchange intel at the offset midpoint&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Pincer coordination&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;b-pincer&quot;, &quot;order&quot;: 65, &quot;segment&quot;: &quot;seg-stalsk&quot;, &quot;text&quot;: &quot;Red and blue teams exchange intel at the offset midpoint&quot;}</title>
+<rect x="1499.0" y="2526.8" width="304" height="158" fill="#e7edf2" rx="9"/>
+<rect x="1499.0" y="2524.8" width="304" height="158" fill="#f9fafc" stroke="#d3dde5" rx="9"/>
+<rect x="1499.0" y="2536.8" width="3" height="134" fill="#397f78" rx="1.5"/>
+<text x="1515.0" y="2551.8" font-size="11" fill="#526575" font-weight="bold">BEAT · b-pincer</text>
+<text x="1515.0" y="2577.8" font-size="14" fill="#172a3a">Red and blue teams exchange</text>
+<text x="1515.0" y="2597.8" font-size="14" fill="#172a3a">intel at the offset midpoint</text>
+<text x="1515.0" y="2620.8" font-size="11" fill="#526575">Segment: seg-stalsk</text>
+<a href="#evidence-11" class="citation" aria-label="[11] · Locator Pincer coordination · unavailable">
+<text x="1515.0" y="2643.8" font-size="11" fill="#285ac7">[11] · Locator Pincer coordination ·</text>
+<text x="1515.0" y="2660.8" font-size="11" fill="#285ac7">unavailable</text>
+</a>
+</g>
+<g class="event-node">
+<title>e-opera · Kyiv opera siege - the Protagonist is saved by a soldier with a red token</title>
+<circle cx="389.0" cy="235.8" r="11" fill="#ffffff"/>
+<rect x="382.0" y="228.8" width="14" height="14" fill="#087d60" stroke="#ffffff" rx="2" stroke-width="2"/>
+</g>
+<g class="event-node">
+<title>e-freeport · Oslo freeport - rotated-artwork fight with a masked inverted attacker</title>
+<circle cx="389.0" cy="707.8" r="11" fill="#ffffff"/>
+<circle cx="389.0" cy="707.8" r="6" fill="#416f99" stroke="#ffffff" stroke-width="2"/>
+</g>
+<g class="event-node">
+<title>e-turn1 · Tallinn turnstile - inversion crossing</title>
+<circle cx="389.0" cy="1005.8" r="11" fill="#ffffff"/>
+<circle cx="389.0" cy="1005.8" r="8" fill="#fff1d7" stroke="#ad6200" stroke-width="2.5"/>
+<text text-anchor="middle" x="389.0" y="1009.8" font-size="11" fill="#ad6200" font-weight="bold">Y</text>
+</g>
+<g class="event-node">
+<title>e-inv-tallinn · Inverted: the Protagonist and Neil move backward from Tallinn to Oslo</title>
+<circle cx="949.0" cy="1366.8" r="11" fill="#ffffff"/>
+<circle cx="949.0" cy="1366.8" r="8" fill="#ffffff" stroke="#78639a" stroke-width="2.5"/>
+<polygon points="946.00,1362.80 952.00,1366.80 946.00,1370.80" fill="#78639a"/>
+</g>
+<g class="event-node">
+<title>e-inv-oslo · Inverted arrival at Oslo - re-inversion through the freeport turnstile</title>
+<circle cx="949.0" cy="1664.8" r="11" fill="#ffffff"/>
+<circle cx="949.0" cy="1664.8" r="6" fill="#78639a" stroke="#ffffff" stroke-width="2"/>
+</g>
+<g class="event-node">
+<title>e-stalsk · Stalsk-12 - the temporal pincer begins (red forward, blue inverted)</title>
+<circle cx="389.0" cy="1962.8" r="11" fill="#ffffff"/>
+<circle cx="389.0" cy="1962.8" r="8" fill="#fff1d7" stroke="#ad6200" stroke-width="2.5"/>
+<text text-anchor="middle" x="389.0" y="1966.8" font-size="11" fill="#ad6200" font-weight="bold">Y</text>
+</g>
+<g class="event-node">
+<title>e-neil-inv · Neil goes inverted with blue team</title>
+<circle cx="1475.0" cy="2294.8" r="11" fill="#ffffff"/>
+<circle cx="1475.0" cy="2294.8" r="8" fill="#ffffff" stroke="#397f78" stroke-width="2.5"/>
+<polygon points="1472.00,2290.80 1478.00,2294.80 1472.00,2298.80" fill="#397f78"/>
+</g>
+<g class="event-node">
+<title>e-neil-death · Neil dies inside the tunnel - already dead when the Protagonist arrives</title>
+<circle cx="1475.0" cy="2775.8" r="11" fill="#ffffff"/>
+<line x1="1466.0" y1="2771.8" x2="1484.0" y2="2771.8" stroke="#397f78" stroke-width="3"/>
+<line x1="1466.0" y1="2779.8" x2="1484.0" y2="2779.8" stroke="#397f78" stroke-width="3"/>
+</g>
+<g class="event-node">
+<title>e-end · The Algorithm&#x27;s parts are scattered into the past; the Protagonist walks away</title>
+<circle cx="389.0" cy="3084.8" r="11" fill="#ffffff"/>
+<line x1="380.0" y1="3080.8" x2="398.0" y2="3080.8" stroke="#416f99" stroke-width="3"/>
+<line x1="380.0" y1="3088.8" x2="398.0" y2="3088.8" stroke="#416f99" stroke-width="3"/>
+</g>
+<g class="event-node">
+<title>b-token · </title>
+<circle cx="389.0" cy="481.8" r="11" fill="#ffffff"/>
+<circle cx="389.0" cy="481.8" r="4" fill="#ffffff" stroke="#416f99" stroke-width="2"/>
+</g>
+<g class="event-node">
+<title>b-pincer · </title>
+<circle cx="1475.0" cy="2549.8" r="11" fill="#ffffff"/>
+<circle cx="1475.0" cy="2549.8" r="4" fill="#ffffff" stroke="#397f78" stroke-width="2"/>
+</g>
+</g>
+<g id="g1-relationships">
+<line x1="32" y1="4140" x2="1877" y2="4140" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="4169" font-size="18" fill="#172a3a" font-weight="bold">Relationship ledger</text>
+</g>
+<g >
+<rect x="32" y="4188" width="1845" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4211" font-size="11" fill="#ad6200" font-weight="bold">S1+</text>
+<text x="174" y="4211" font-size="12" fill="#172a3a">e-turn1 → e-freeport · outcome + · {&quot;entry&quot;: &quot;e-freeport&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;keeps moving forward&quot;, &quot;instance&quot;: &quot;prot-fwd&quot;, &quot;outcome&quot;:</text>
+<text x="174" y="4229" font-size="12" fill="#172a3a">&quot;continues&quot;}], &quot;universe&quot;: &quot;FWD&quot;, &quot;universe_outcome&quot;: &quot;continues&quot;}</text>
+</g>
+<g >
+<rect x="32" y="4254" width="1845" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4277" font-size="11" fill="#ad6200" font-weight="bold">S1−</text>
+<text x="174" y="4277" font-size="12" fill="#172a3a">e-turn1 → e-inv-tallinn · outcome − · {&quot;entry&quot;: &quot;e-inv-tallinn&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;inverted strand&quot;, &quot;instance&quot;: &quot;prot-inv&quot;, &quot;outcome&quot;: &quot;continues&quot;}],</text>
+<text x="174" y="4295" font-size="12" fill="#172a3a">&quot;universe&quot;: &quot;INV&quot;, &quot;universe_outcome&quot;: &quot;continues&quot;}</text>
+</g>
+<g >
+<rect x="32" y="4320" width="1845" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4343" font-size="11" fill="#ad6200" font-weight="bold">S2+</text>
+<text x="174" y="4343" font-size="12" fill="#172a3a">e-stalsk → e-end · outcome + · {&quot;entry&quot;: &quot;e-end&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;remains forward&quot;, &quot;instance&quot;: &quot;neil-fwd&quot;, &quot;outcome&quot;: &quot;continues&quot;}], &quot;universe&quot;:</text>
+<text x="174" y="4361" font-size="12" fill="#172a3a">&quot;FWD&quot;, &quot;universe_outcome&quot;: &quot;continues&quot;}</text>
+</g>
+<g >
+<rect x="32" y="4386" width="1845" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4409" font-size="11" fill="#ad6200" font-weight="bold">S2−</text>
+<text x="174" y="4409" font-size="12" fill="#172a3a">e-stalsk → e-neil-inv · outcome − · {&quot;entry&quot;: &quot;e-neil-inv&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;dies in the tunnel, inverted&quot;, &quot;instance&quot;: &quot;neil-stalsk&quot;, &quot;outcome&quot;:</text>
+<text x="174" y="4427" font-size="12" fill="#172a3a">&quot;dies&quot;}], &quot;universe&quot;: &quot;STALSK&quot;, &quot;universe_outcome&quot;: &quot;continues&quot;}</text>
+</g>
+<g >
+<rect x="32" y="4452" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4475" font-size="11" fill="#285ac7" font-weight="bold">T1</text>
+<text x="174" y="4475" font-size="12" fill="#172a3a">tr-prot-inv · prot-mind · e-turn1 → e-inv-tallinn · mechanism: time_travel · relation: {&quot;kind&quot;: &quot;different_universes&quot;} · followed by L1</text>
+</g>
+<g >
+<rect x="32" y="4502" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4525" font-size="11" fill="#285ac7" font-weight="bold">T2</text>
+<text x="174" y="4525" font-size="12" fill="#172a3a">tr-prot-back · prot-mind · e-inv-oslo → e-freeport · mechanism: time_travel · relation: {&quot;kind&quot;: &quot;different_universes&quot;} · followed by L2</text>
+</g>
+<g >
+<rect x="32" y="4552" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4575" font-size="11" fill="#285ac7" font-weight="bold">T3</text>
+<text x="174" y="4575" font-size="12" fill="#172a3a">tr-neil-stalsk · neil-mind · e-inv-oslo → e-neil-inv · mechanism: time_travel · relation: {&quot;kind&quot;: &quot;different_universes&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="4620" x2="1877" y2="4620" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="4649" font-size="18" fill="#172a3a" font-weight="bold">Thread / prot-mind</text>
+</g>
+<g >
+<rect x="32" y="4668" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4691" font-size="11" fill="#087d60" font-weight="bold">ROUTE 01</text>
+<text x="174" y="4691" font-size="12" fill="#172a3a">V1 · pv0 · e-opera → e-turn1 · {&quot;entry&quot;: &quot;e-opera&quot;, &quot;exit&quot;: &quot;e-turn1&quot;, &quot;id&quot;: &quot;pv0&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;FWD&quot;}</text>
+</g>
+<g >
+<rect x="32" y="4718" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4741" font-size="11" fill="#087d60" font-weight="bold">ROUTE 02</text>
+<text x="174" y="4741" font-size="12" fill="#172a3a">V2 · pv1 · e-inv-tallinn → e-inv-oslo · {&quot;entry&quot;: &quot;e-inv-tallinn&quot;, &quot;exit&quot;: &quot;e-inv-oslo&quot;, &quot;id&quot;: &quot;pv1&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;INV&quot;}</text>
+</g>
+<g >
+<rect x="32" y="4768" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4791" font-size="11" fill="#087d60" font-weight="bold">ROUTE 03</text>
+<text x="174" y="4791" font-size="12" fill="#172a3a">V3 · pv2 · e-freeport → e-end · {&quot;entry&quot;: &quot;e-freeport&quot;, &quot;exit&quot;: &quot;e-end&quot;, &quot;id&quot;: &quot;pv2&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;FWD&quot;}</text>
+</g>
+<g >
+<rect x="32" y="4818" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4841" font-size="11" fill="#087d60" font-weight="bold">ROUTE 04</text>
+<text x="174" y="4841" font-size="12" fill="#172a3a">L1 · pv0 → pv1 · {&quot;from&quot;: &quot;pv0&quot;, &quot;kind&quot;: &quot;transfer&quot;, &quot;to&quot;: &quot;pv1&quot;, &quot;via&quot;: &quot;tr-prot-inv&quot;}</text>
+</g>
+<g >
+<rect x="32" y="4868" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4891" font-size="11" fill="#087d60" font-weight="bold">ROUTE 05</text>
+<text x="174" y="4891" font-size="12" fill="#172a3a">L2 · pv1 → pv2 · {&quot;from&quot;: &quot;pv1&quot;, &quot;kind&quot;: &quot;transfer&quot;, &quot;to&quot;: &quot;pv2&quot;, &quot;via&quot;: &quot;tr-prot-back&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="4936" x2="1877" y2="4936" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="4965" font-size="18" fill="#172a3a" font-weight="bold">Declared segments</text>
+</g>
+<g >
+<rect x="32" y="4984" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5007" font-size="11" fill="#526575" font-weight="bold">seg-fwd</text>
+<text x="174" y="5007" font-size="12" fill="#172a3a">Forward - recruitment to the Algorithm · FWD · e-opera → e-end</text>
+</g>
+<g >
+<rect x="32" y="5034" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5057" font-size="11" fill="#526575" font-weight="bold">seg-inv</text>
+<text x="174" y="5057" font-size="12" fill="#172a3a">Inverted strand - Tallinn to Oslo backward · INV · e-inv-tallinn → e-inv-oslo</text>
+</g>
+<g >
+<rect x="32" y="5084" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5107" font-size="11" fill="#526575" font-weight="bold">seg-stalsk</text>
+<text x="174" y="5107" font-size="12" fill="#172a3a">Stalsk-12 - blue team · STALSK · e-neil-inv → e-neil-death</text>
+</g>
+<g >
+<line x1="32" y1="5152" x2="1877" y2="5152" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="5181" font-size="18" fill="#172a3a" font-weight="bold">Interpretive assumptions / model notes</text>
+</g>
+<g >
+<rect x="32" y="5200" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5223" font-size="11" fill="#526575" font-weight="bold">NOTE 01</text>
+<text x="174" y="5223" font-size="12" fill="#172a3a">Inverted strand coexistence is not double-counted in counts (census prohibited)</text>
+</g>
+<g >
+<rect x="32" y="5250" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5273" font-size="11" fill="#526575" font-weight="bold">NOTE 02</text>
+<text x="174" y="5273" font-size="12" fill="#172a3a">Pincer coordination (E258) remains an OPEN ISSUE - links here are narrative, not semantically proven</text>
+</g>
+<g >
+<rect x="32" y="5300" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5323" font-size="11" fill="#526575" font-weight="bold">NOTE 03</text>
+<text x="174" y="5323" font-size="12" fill="#172a3a">Kat and Sator strands omitted from this fixture for size; the Algorithm bootstrap is annotated, not mechanized</text>
+</g>
+<g >
+<rect x="32" y="5350" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5373" font-size="11" fill="#526575" font-weight="bold">NOTE 04</text>
+<text x="174" y="5373" font-size="12" fill="#172a3a">Declared merge count: 0. A count supplies no merge locations; none are invented.</text>
+</g>
+<g id="evidence">
+<line x1="32" y1="5432" x2="1877" y2="5432" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="5461" font-size="18" fill="#172a3a" font-weight="bold">Evidence / complete citation register</text>
+</g>
+<text x="40" y="5492" font-size="12" fill="#526575">Status is the supplied evidence status, not a truth rating. Repeated citations are deduplicated; all owners remain listed.</text>
+<g id="evidence-1">
+<rect x="32" y="5513" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5536" font-size="11" fill="#285ac7" font-weight="bold">[1]</text>
+<text x="174" y="5536" font-size="12" fill="#172a3a">source: canon · locator: Opening siege · status: unavailable · Referenced by: document / e-opera</text>
+</g>
+<g id="evidence-2">
+<rect x="32" y="5563" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5586" font-size="11" fill="#285ac7" font-weight="bold">[2]</text>
+<text x="174" y="5586" font-size="12" fill="#172a3a">source: canon · locator: Freeport fight · status: unavailable · Referenced by: document / e-freeport</text>
+</g>
+<g id="evidence-3">
+<rect x="32" y="5613" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5636" font-size="11" fill="#285ac7" font-weight="bold">[3]</text>
+<text x="174" y="5636" font-size="12" fill="#172a3a">source: canon · locator: Tallinn highway + turnstile · status: unavailable · Referenced by: document / e-turn1</text>
+</g>
+<g id="evidence-4">
+<rect x="32" y="5663" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5686" font-size="11" fill="#285ac7" font-weight="bold">[4]</text>
+<text x="174" y="5686" font-size="12" fill="#172a3a">source: canon · locator: Inverted Tallinn-Oslo · status: unavailable · Referenced by: document / e-inv-tallinn</text>
+</g>
+<g id="evidence-5">
+<rect x="32" y="5713" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5736" font-size="11" fill="#285ac7" font-weight="bold">[5]</text>
+<text x="174" y="5736" font-size="12" fill="#172a3a">source: canon · locator: Oslo re-inversion · status: unavailable · Referenced by: document / e-inv-oslo</text>
+</g>
+<g id="evidence-6">
+<rect x="32" y="5763" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5786" font-size="11" fill="#285ac7" font-weight="bold">[6]</text>
+<text x="174" y="5786" font-size="12" fill="#172a3a">source: canon · locator: Stalsk-12 assault · status: unavailable · Referenced by: document / e-stalsk</text>
+</g>
+<g id="evidence-7">
+<rect x="32" y="5813" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5836" font-size="11" fill="#285ac7" font-weight="bold">[7]</text>
+<text x="174" y="5836" font-size="12" fill="#172a3a">source: canon · locator: Blue team deployment · status: unavailable · Referenced by: document / e-neil-inv</text>
+</g>
+<g id="evidence-8">
+<rect x="32" y="5863" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5886" font-size="11" fill="#285ac7" font-weight="bold">[8]</text>
+<text x="174" y="5886" font-size="12" fill="#172a3a">source: canon · locator: Tunnel death + reveal · status: unavailable · Referenced by: document / e-neil-death</text>
+</g>
+<g id="evidence-9">
+<rect x="32" y="5913" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5936" font-size="11" fill="#285ac7" font-weight="bold">[9]</text>
+<text x="174" y="5936" font-size="12" fill="#172a3a">source: canon · locator: Ending · status: unavailable · Referenced by: document / e-end</text>
+</g>
+<g id="evidence-10">
+<rect x="32" y="5963" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5986" font-size="11" fill="#285ac7" font-weight="bold">[10]</text>
+<text x="174" y="5986" font-size="12" fill="#172a3a">source: canon · locator: Token handover · status: unavailable · Referenced by: document / b-token</text>
+</g>
+<g id="evidence-11">
+<rect x="32" y="6013" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="6036" font-size="11" fill="#285ac7" font-weight="bold">[11]</text>
+<text x="174" y="6036" font-size="12" fill="#172a3a">source: canon · locator: Pincer coordination · status: unavailable · Referenced by: document / b-pincer</text>
+</g>
+<g id="evidence-12">
+<rect x="32" y="6063" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="6086" font-size="11" fill="#285ac7" font-weight="bold">[12]</text>
+<text x="174" y="6086" font-size="12" fill="#172a3a">source: canon · locator: Tunnel death · status: unavailable · Referenced by: document / f-neil-stalsk</text>
+</g>
+<g id="evidence-13">
+<rect x="32" y="6113" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="6136" font-size="11" fill="#285ac7" font-weight="bold">[13]</text>
+<text x="174" y="6136" font-size="12" fill="#172a3a">source: canon · locator: Final walk · status: unavailable · Referenced by: document / f-prot-fwd</text>
+</g>
+<g >
+<line x1="32" y1="6181" x2="1877" y2="6181" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="6210" font-size="18" fill="#172a3a" font-weight="bold">Sources — including fixture provenance</text>
+</g>
+<g >
+<rect x="32" y="6229" width="1845" height="76" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="6252" font-size="11" fill="#526575" font-weight="bold">canon</text>
+<text x="174" y="6252" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;canon&quot;, &quot;kind&quot;: &quot;canon_statement&quot;, &quot;text&quot;: &quot;Turnstiles invert a traveller&#x27;s time direction. The Protagonist recruits Neil; they run a temporal pincer</text>
+<text x="174" y="6270" font-size="12" fill="#172a3a">on Stalsk-12 (red team forward, blue team inverted, 10-minute offset). Neil is revealed as the soldier who died saving the Protagonist at the Kyiv opera - an</text>
+<text x="174" y="6288" font-size="12" fill="#172a3a">inverted strand from the future. The Algorithm is assembled and hidden in the past.&quot;, &quot;title&quot;: &quot;Tenet (2020), theatrical cut&quot;}</text>
+</g>
+<g >
+<rect x="32" y="6313" width="1845" height="76" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="6336" font-size="11" fill="#526575" font-weight="bold">allocation</text>
+<text x="174" y="6336" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;allocation&quot;, &quot;kind&quot;: &quot;test_fixture&quot;, &quot;text&quot;: &quot;Inverted passage is modelled as a transfer with mechanism time_travel between lane Forward and lane</text>
+<text x="174" y="6354" font-size="12" fill="#172a3a">Inverted; the same body exists twice during overlap windows (temporal pincer). Boundary double-count (E257) is a KNOWN OPEN ISSUE - both exit and entry</text>
+<text x="174" y="6372" font-size="12" fill="#172a3a">are charted as separate events here.&quot;, &quot;title&quot;: &quot;Fixture allocations&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="6415" x2="1877" y2="6415" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="6444" font-size="18" fill="#172a3a" font-weight="bold">Characters</text>
+</g>
+<g >
+<rect x="32" y="6463" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="6486" font-size="11" fill="#526575" font-weight="bold">prot</text>
+<text x="174" y="6486" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;prot&quot;, &quot;label&quot;: &quot;The Protagonist&quot;}</text>
+</g>
+<g >
+<rect x="32" y="6513" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="6536" font-size="11" fill="#526575" font-weight="bold">neil</text>
+<text x="174" y="6536" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;neil&quot;, &quot;label&quot;: &quot;Neil&quot;}</text>
+</g>
+<g >
+<rect x="32" y="6563" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="6586" font-size="11" fill="#526575" font-weight="bold">kat</text>
+<text x="174" y="6586" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;kat&quot;, &quot;label&quot;: &quot;Kat&quot;}</text>
+</g>
+<g >
+<rect x="32" y="6613" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="6636" font-size="11" fill="#526575" font-weight="bold">sator</text>
+<text x="174" y="6636" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;sator&quot;, &quot;label&quot;: &quot;Sator&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="6681" x2="1877" y2="6681" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="6710" font-size="18" fill="#172a3a" font-weight="bold">Travellers</text>
+</g>
+<g >
+<rect x="32" y="6729" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="6752" font-size="11" fill="#526575" font-weight="bold">prot-mind</text>
+<text x="174" y="6752" font-size="12" fill="#172a3a">{&quot;character&quot;: &quot;prot&quot;, &quot;id&quot;: &quot;prot-mind&quot;}</text>
+</g>
+<g >
+<rect x="32" y="6779" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="6802" font-size="11" fill="#526575" font-weight="bold">neil-mind</text>
+<text x="174" y="6802" font-size="12" fill="#172a3a">{&quot;character&quot;: &quot;neil&quot;, &quot;id&quot;: &quot;neil-mind&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="6847" x2="1877" y2="6847" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="6876" font-size="18" fill="#172a3a" font-weight="bold">Namespaces</text>
+</g>
+<g >
+<rect x="32" y="6895" width="1845" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="6918" font-size="11" fill="#526575" font-weight="bold">TNT</text>
+<text x="174" y="6918" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;TNT&quot;, &quot;label&quot;: &quot;Tenet&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="6963" x2="1877" y2="6963" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="6992" font-size="18" fill="#172a3a" font-weight="bold">Chart note</text>
+</g>
+<text x="40" y="7024" font-size="13" fill="#526575">Inverted strands charted as separate lanes; coexistence intervals marked. Pincer coordination OPEN (E258).</text>
 </svg>

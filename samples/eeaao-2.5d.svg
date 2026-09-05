@@ -1,80 +1,613 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="736" viewBox="0 0 1200 736" font-family="Arial, Helvetica, sans-serif">
-<rect width="1200" height="736" fill="#ffffff"/>
-<g transform="translate(0,0)"><text x="600" y="24" text-anchor="middle" font-size="18" font-weight="bold" fill="#202124">EVERYTHING EVERYWHERE ALL AT ONCE — The verse-jump net</text>
-<text x="600" y="42" text-anchor="middle" font-size="11" fill="#5f6368">EE — The verse-jump net · Coexisting multiverse, consciousness-hopped across parallel selves</text>
-<line x1="812.7" y1="229.3" x2="744.1" y2="508.8" stroke="#9aa0a6" stroke-width="2" stroke-opacity="1.0"/>
-<rect x="843.0" y="72.0" width="14" height="14" fill="#e8f0fe" stroke="#202124"/>
-<text x="850.0" y="58.0" text-anchor="middle" font-size="11" fill="#202124">E0: The base verse — the laund</text>
-<polygon points="799.0,226.8 826.4,231.8 757.8,511.4 730.4,506.3" fill="#e8f0fe" stroke="#9aa0a6" stroke-width="1"/>
-<line x1="568.2" y1="184.3" x2="533.2" y2="326.6" stroke="#9aa0a6" stroke-width="2" stroke-opacity="1.0"/>
-<text x="600.0" y="82.0" text-anchor="middle" font-size="10" fill="#5f6368">* already existed</text>
-<text x="600.0" y="58.0" text-anchor="middle" font-size="11" fill="#202124">A: The Alpha verse — where ve</text>
-<polygon points="554.5,181.8 581.9,186.8 546.9,329.1 519.6,324.1" fill="#e6f4ea" stroke="#9aa0a6" stroke-width="1"/>
-<line x1="323.6" y1="139.3" x2="277.5" y2="327.3" stroke="#9aa0a6" stroke-width="2" stroke-opacity="1.0"/>
-<text x="350.0" y="82.0" text-anchor="middle" font-size="10" fill="#5f6368">* already existed</text>
-<text x="350.0" y="58.0" text-anchor="middle" font-size="11" fill="#202124">V1: A parallel verse (the hot-</text>
-<polygon points="309.9,136.7 337.3,141.8 291.2,329.8 263.8,324.8" fill="#e6f4ea" stroke="#9aa0a6" stroke-width="1"/>
-<line x1="79.1" y1="94.2" x2="21.7" y2="328.0" stroke="#9aa0a6" stroke-width="2" stroke-opacity="1.0"/>
-<text x="100.0" y="82.0" text-anchor="middle" font-size="10" fill="#5f6368">* already existed</text>
-<text x="100.0" y="58.0" text-anchor="middle" font-size="11" fill="#202124">V2: A comfort verse</text>
-<polygon points="65.4,91.7 92.8,96.8 35.4,330.6 8.0,325.5" fill="#e6f4ea" stroke="#9aa0a6" stroke-width="1"/>
-<line x1="789.0" y1="325.9" x2="533.2" y2="326.6" stroke="#e8a33d" stroke-width="2" stroke-opacity="1.0"/>
-<text x="661.1" y="320.2" text-anchor="middle" font-size="13" font-weight="bold" fill="#e8a33d">+</text>
-<line x1="789.0" y1="325.9" x2="277.5" y2="327.3" stroke="#e8a33d" stroke-width="2" stroke-dasharray="6,4" stroke-opacity="1.0"/>
-<text x="533.2" y="320.6" text-anchor="middle" font-size="13" font-weight="bold" fill="#e8a33d">-</text>
-<polyline points="800.2,272.1 678.0,249.6 655.5,341.1 533.2,318.6" fill="none" stroke="#2f7d4f" stroke-width="2" stroke-opacity="0.6"/>
-<circle cx="666.7" cy="295.3" r="10" fill="#ffffff" stroke="#2f7d4f"/>
-<text x="666.7" y="299.3" text-anchor="middle" font-size="12" font-weight="bold" fill="#2f7d4f">C</text>
-<polyline points="533.2,318.6 411.0,296.1 399.8,341.8 277.5,319.3" fill="none" stroke="#2f7d4f" stroke-width="2" stroke-opacity="0.6"/>
-<circle cx="405.4" cy="319.0" r="10" fill="#ffffff" stroke="#2f7d4f"/>
-<text x="405.4" y="323.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2f7d4f">C</text>
-<polyline points="277.5,319.3 155.2,296.8 144.0,342.6 21.7,320.0" fill="none" stroke="#2f7d4f" stroke-width="2" stroke-opacity="0.6"/>
-<circle cx="149.6" cy="319.7" r="10" fill="#ffffff" stroke="#2f7d4f"/>
-<text x="149.6" y="323.7" text-anchor="middle" font-size="12" font-weight="bold" fill="#2f7d4f">C</text>
-<line x1="811.5" y1="233.4" x2="800.2" y2="279.1" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
-<line x1="533.2" y1="325.6" x2="533.2" y2="325.6" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
-<line x1="277.5" y1="326.3" x2="277.5" y2="326.3" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
-<line x1="21.7" y1="327.0" x2="21.7" y2="327.0" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
-<line x1="800.2" y1="279.1" x2="533.2" y2="325.6" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
-<line x1="533.2" y1="325.6" x2="277.5" y2="326.3" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
-<line x1="277.5" y1="326.3" x2="21.7" y2="327.0" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
-<rect x="805.5" y="228.4" width="12" height="12" fill="#3d8f4f" stroke="#202124"/>
-<text x="811.5" y="250.4" text-anchor="middle" font-size="9" fill="#5f6368">0</text>
-<circle cx="800.2" cy="280.1" r="5" fill="#ffffff" stroke="#202124"/>
-<text x="800.2" y="296.1" text-anchor="middle" font-size="9" fill="#5f6368">10</text>
-<circle cx="789.0" cy="325.9" r="7" fill="#e8a33d" stroke="#202124"/>
-<text x="789.0" y="341.9" text-anchor="middle" font-size="9" fill="#5f6368">20</text>
-<circle cx="533.2" cy="326.6" r="5" fill="#ffffff" stroke="#202124"/>
-<text x="533.2" y="342.6" text-anchor="middle" font-size="9" fill="#5f6368">25</text>
-<circle cx="277.5" cy="327.3" r="5" fill="#ffffff" stroke="#202124"/>
-<text x="277.5" y="343.3" text-anchor="middle" font-size="9" fill="#5f6368">30</text>
-<circle cx="21.7" cy="328.0" r="5" fill="#ffffff" stroke="#202124"/>
-<text x="21.7" y="344.0" text-anchor="middle" font-size="9" fill="#5f6368">40</text>
-<rect x="738.1" y="502.8" width="12" height="12" fill="#5f6368" stroke="#202124"/>
-<text x="744.1" y="524.8" text-anchor="middle" font-size="9" fill="#5f6368">50</text>
-<text x="757.8" y="515.4" font-size="14" font-weight="bold" fill="#2f7d4f">●</text>
-<text x="761.8" y="515.4" font-size="8" fill="#5f6368">ev-e0</text>
-<text x="757.8" y="515.4" font-size="14" font-weight="bold" fill="#2f7d4f">●</text>
-<text x="761.8" y="515.4" font-size="8" fill="#5f6368">ev-v1</text>
-<line x1="811.5" y1="234.4" x2="823.5" y2="256.4" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="823.5" y="264.4" font-size="9" fill="#5f6368">Evelyn at the laundromat</text>
-<text x="823.5" y="275.4" font-size="9" fill="#5f6368">before the IRS audit</text>
-<line x1="800.2" y1="280.1" x2="812.2" y2="302.1" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="812.2" y="310.1" font-size="9" fill="#5f6368">She learns to verse-jump</text>
-<text x="812.2" y="321.1" font-size="9" fill="#5f6368">into her parallel selves</text>
-<line x1="789.0" y1="325.9" x2="801.0" y2="347.9" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="801.0" y="355.9" font-size="9" fill="#5f6368">A decision that spawns a</text>
-<text x="801.0" y="366.9" font-size="9" fill="#5f6368">branch verse</text>
-<line x1="533.2" y1="326.6" x2="545.2" y2="348.6" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="545.2" y="356.6" font-size="9" fill="#5f6368">She enters the Alpha</text>
-<text x="545.2" y="367.6" font-size="9" fill="#5f6368">verse</text>
-<line x1="277.5" y1="327.3" x2="289.5" y2="349.3" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="289.5" y="357.3" font-size="9" fill="#5f6368">She hops into the</text>
-<text x="289.5" y="368.3" font-size="9" fill="#5f6368">hot-dog-fingers verse</text>
-<line x1="21.7" y1="328.0" x2="33.7" y2="350.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="33.7" y="358.0" font-size="9" fill="#5f6368">She takes comfort in a</text>
-<text x="33.7" y="369.0" font-size="9" fill="#5f6368">quieter verse</text>
-<line x1="744.1" y1="508.8" x2="756.1" y2="530.8" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="756.1" y="538.8" font-size="9" fill="#5f6368">She chooses the</text>
-<text x="756.1" y="549.8" font-size="9" fill="#5f6368">googly-eyed family...</text></g>
+<svg xmlns="http://www.w3.org/2000/svg" width="2421" height="5333" viewBox="0 0 2421 5333" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" role="img" aria-labelledby="atlas-title atlas-desc">
+<title id="atlas-title">EVERYTHING EVERYWHERE ALL AT ONCE — The verse-jump net</title>
+<desc id="atlas-desc">Worlds and Thread atlas. Story order progresses downward. Connections use reserved routing space. Full relationship and citation ledgers follow the chart. The HTML companion contains the complete accessible model.</desc>
+<rect width="2421" height="5333" fill="#f5f6f8"/>
+<defs >
+<marker id="arrow-split" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
+<path d="M 1 1 L 9 5 L 1 9 Z" fill="#ad6200"/>
+</marker>
+<marker id="arrow-transfer" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
+<path d="M 1 1 L 9 5 L 1 9 Z" fill="#285ac7"/>
+</marker>
+<marker id="arrow-route" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
+<path d="M 1 1 L 9 5 L 1 9 Z" fill="#087d60"/>
+</marker>
+<marker id="arrow-reference" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
+<path d="M 1 1 L 9 5 L 1 9 Z" fill="#7a637c"/>
+</marker>
+</defs>
+
+<style>
+text { font-kerning: normal; }
+a { cursor: pointer; }
+a:hover text { text-decoration: underline; }
+.card:hover > rect { stroke: #879ead; }
+:target > rect { stroke: #285ac7; stroke-width: 2; }
+.hide-split .layer-split,
+.hide-transfer .layer-transfer,
+.hide-route .layer-route,
+.hide-evidence .citation { display: none; }
+</style>
+<text letter-spacing="1.5" x="40" y="47" font-size="11" fill="#087d60" font-weight="bold">ELSEHOW  /  WORLDS &amp; THREAD</text>
+<text x="40" y="103" font-size="34" fill="#172a3a" font-weight="bold">EVERYTHING EVERYWHERE ALL AT ONCE — The verse-jump net</text>
+<text x="40" y="135" font-size="15" fill="#526575">Coexisting multiverse, consciousness-hopped across parallel selves</text>
+<text x="40" y="169" font-size="12" fill="#526575">2.5D · cabinet axonometric · depth separates surfaces only · Story-order ranks, not elapsed time. Equal ranks do not assert physical simultaneity.</text>
+<line x1="45" y1="203" x2="76" y2="203" stroke="#ad6200" stroke-width="4"/>
+<text x="90" y="205" font-size="12" fill="#172a3a">Amber S± — Split outcomes. + and − are signs, not fates.</text>
+<line x1="45" y1="230" x2="76" y2="230" stroke="#285ac7" stroke-width="4"/>
+<text x="90" y="232" font-size="12" fill="#172a3a">Blue T — Directed transfers. B body · M memory · C consciousness · S signal · ? literal/unspecified mechanism.</text>
+<line x1="45" y1="257" x2="76" y2="257" stroke="#087d60" stroke-width="4"/>
+<text x="90" y="259" font-size="12" fill="#172a3a">Emerald V / L — Numbered visits and explicit links only. Emerald centre on a cable means the route follows that connection.</text>
+<line x1="45" y1="284" x2="76" y2="284" stroke="#667b8a" stroke-width="4"/>
+<text x="90" y="286" font-size="12" fill="#172a3a">Slate rail — World identity. Cutoff means chart boundary, not destruction. Crossings are bridges; only markers are joins.</text>
+<line x1="45" y1="311" x2="76" y2="311" stroke="#7a637c" stroke-width="4"/>
+<text x="90" y="313" font-size="12" fill="#172a3a">Evidence / fate — [n] opens the evidence record. × dead · ● alive · ? unknown · ∅ nonexistent. Purple dotted connections are annotation references.</text>
+<g >
+<line x1="32" y1="340" x2="2389" y2="340" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="369" font-size="18" fill="#172a3a" font-weight="bold">Declared interpretation</text>
+</g>
+<g >
+<rect x="32" y="388" width="2357" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="411" font-size="11" fill="#526575" font-weight="bold">PROFILE</text>
+<text x="174" y="411" font-size="12" fill="#172a3a">Profile: eeaao · rules: unspecified</text>
+</g>
+<g >
+<rect x="32" y="438" width="2357" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="461" font-size="11" fill="#526575" font-weight="bold">PARAMETERS</text>
+<text x="174" y="461" font-size="12" fill="#172a3a">history_model: universes · branching: branch · coexistence: coexisting · time_mechanics: [&quot;consciousness&quot;, &quot;body&quot;] · joined_worlds: preexist · turnstiles:</text>
+<text x="174" y="479" font-size="12" fill="#172a3a">none · protagonist_scope: multiple · axis: story_order · validation: evidence_pending · merges: forbidden · genealogy: acyclic</text>
+</g>
+<g >
+<rect x="32" y="504" width="2357" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="527" font-size="11" fill="#526575" font-weight="bold">POLICY</text>
+<text x="174" y="527" font-size="12" fill="#172a3a">Explicit records determine geometry. Profile declarations do not manufacture branches, activation intervals, genealogy, repeated worlds or replacement links.</text>
+<text x="174" y="545" font-size="12" fill="#172a3a">No reset is drawn. World-time coordinates are unavailable in this contract.</text>
+</g>
+<g id="g1">
+<line x1="32" y1="586" x2="2389" y2="586" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="615" font-size="18" fill="#172a3a" font-weight="bold">EE  /  The verse-jump net</text>
+</g>
+<text x="40" y="646" font-size="12" fill="#526575">4 declared worlds · 7 events · 3 transfers · 1 split records</text>
+<g transform="translate(0 678.00)" role="group" aria-label="Atlas for EE">
+<text x="24" y="20" font-size="11" fill="#526575" font-weight="bold">STORY</text>
+<text x="24" y="37" font-size="11" fill="#526575" font-weight="bold">ORDER ↓</text>
+<polygon points="698.00,178.80 686.00,186.00 686.00,2289.00 698.00,2281.80" fill="#d9e2ea" stroke="#becbd6" stroke-width="1"/>
+<polygon points="154.00,2281.80 698.00,2281.80 686.00,2289.00 142.00,2289.00" fill="#cbd7e1" stroke="#b7c6d2" stroke-width="1"/>
+<polygon points="154.00,178.80 698.00,178.80 698.00,2281.80 154.00,2281.80" fill="#eef3f7" stroke="#c7d3dd" stroke-width="1"/>
+<g class="card" role="group" aria-label="{}">
+<rect x="370.0" y="-1.1999999999999993" width="304" height="121" fill="#e7edf2" rx="9"/>
+<rect x="370.0" y="-3.1999999999999993" width="304" height="121" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<text x="386.0" y="27.8" font-size="15" fill="#416f99" font-weight="bold">E0</text>
+<text x="386.0" y="52.8" font-size="14" fill="#172a3a" font-weight="bold">The base verse — the</text>
+<text x="386.0" y="72.8" font-size="14" fill="#172a3a" font-weight="bold">laundromat</text>
+<text x="386.0" y="95.8" font-size="11" fill="#526575">INITIAL IN MODEL</text>
+</g>
+<rect x="168.0" y="4.800000000000001" width="5" height="130" fill="#416f99" rx="2"/>
+<polygon points="1255.00,178.80 1243.00,186.00 1243.00,2289.00 1255.00,2281.80" fill="#d9e2ea" stroke="#becbd6" stroke-width="1"/>
+<polygon points="726.00,2281.80 1255.00,2281.80 1243.00,2289.00 714.00,2289.00" fill="#cbd7e1" stroke="#b7c6d2" stroke-width="1"/>
+<polygon points="726.00,178.80 1255.00,178.80 1255.00,2281.80 726.00,2281.80" fill="#eef3f7" stroke="#c7d3dd" stroke-width="1"/>
+<g class="card" role="group" aria-label="{}">
+<rect x="927.0" y="-1.1999999999999993" width="304" height="144" fill="#e7edf2" rx="9"/>
+<rect x="927.0" y="-3.1999999999999993" width="304" height="144" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<text x="943.0" y="27.8" font-size="15" fill="#78639a" font-weight="bold">A</text>
+<text x="943.0" y="52.8" font-size="14" fill="#172a3a" font-weight="bold">The Alpha verse — where</text>
+<text x="943.0" y="72.8" font-size="14" fill="#172a3a" font-weight="bold">verse-jump tech was built</text>
+<text x="943.0" y="95.8" font-size="11" fill="#526575">ALREADY EXISTED</text>
+<text x="943.0" y="118.8" font-size="11" fill="#526575">Ancestry: off chart</text>
+</g>
+<rect x="740.0" y="4.800000000000001" width="5" height="130" fill="#78639a" rx="2"/>
+<polygon points="1812.00,178.80 1800.00,186.00 1800.00,2289.00 1812.00,2281.80" fill="#d9e2ea" stroke="#becbd6" stroke-width="1"/>
+<polygon points="1283.00,2281.80 1812.00,2281.80 1800.00,2289.00 1271.00,2289.00" fill="#cbd7e1" stroke="#b7c6d2" stroke-width="1"/>
+<polygon points="1283.00,178.80 1812.00,178.80 1812.00,2281.80 1283.00,2281.80" fill="#eef3f7" stroke="#c7d3dd" stroke-width="1"/>
+<g class="card" role="group" aria-label="{}">
+<rect x="1484.0" y="-1.1999999999999993" width="304" height="144" fill="#e7edf2" rx="9"/>
+<rect x="1484.0" y="-3.1999999999999993" width="304" height="144" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<text x="1500.0" y="27.8" font-size="15" fill="#397f78" font-weight="bold">V1</text>
+<text x="1500.0" y="52.8" font-size="14" fill="#172a3a" font-weight="bold">A parallel verse (the</text>
+<text x="1500.0" y="72.8" font-size="14" fill="#172a3a" font-weight="bold">hot-dog-fingers world)</text>
+<text x="1500.0" y="95.8" font-size="11" fill="#526575">ALREADY EXISTED</text>
+<text x="1500.0" y="118.8" font-size="11" fill="#526575">Ancestry: off chart</text>
+</g>
+<rect x="1297.0" y="4.800000000000001" width="5" height="130" fill="#397f78" rx="2"/>
+<polygon points="2339.00,178.80 2327.00,186.00 2327.00,2289.00 2339.00,2281.80" fill="#d9e2ea" stroke="#becbd6" stroke-width="1"/>
+<polygon points="1840.00,2281.80 2339.00,2281.80 2327.00,2289.00 1828.00,2289.00" fill="#cbd7e1" stroke="#b7c6d2" stroke-width="1"/>
+<polygon points="1840.00,178.80 2339.00,178.80 2339.00,2281.80 1840.00,2281.80" fill="#eef3f7" stroke="#c7d3dd" stroke-width="1"/>
+<g class="card" role="group" aria-label="{}">
+<rect x="2011.0" y="-1.1999999999999993" width="304" height="124" fill="#e7edf2" rx="9"/>
+<rect x="2011.0" y="-3.1999999999999993" width="304" height="124" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<text x="2027.0" y="27.8" font-size="15" fill="#997144" font-weight="bold">V2</text>
+<text x="2027.0" y="52.8" font-size="14" fill="#172a3a" font-weight="bold">A comfort verse</text>
+<text x="2027.0" y="75.8" font-size="11" fill="#526575">ALREADY EXISTED</text>
+<text x="2027.0" y="98.8" font-size="11" fill="#526575">Ancestry: off chart</text>
+</g>
+<rect x="1854.0" y="4.800000000000001" width="5" height="130" fill="#997144" rx="2"/>
+<line x1="20" y1="190.8" x2="2355" y2="190.8" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="218.8" font-size="12" fill="#172a3a" font-weight="bold">0</text>
+<text x="24" y="243.8" font-size="10" fill="#526575">rank 01</text>
+<line x1="20" y1="416.8" x2="2355" y2="416.8" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="444.8" font-size="12" fill="#172a3a" font-weight="bold">10</text>
+<text x="24" y="469.8" font-size="10" fill="#526575">rank 02</text>
+<line x1="20" y1="668.8" x2="2355" y2="668.8" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="696.8" font-size="12" fill="#172a3a" font-weight="bold">20</text>
+<text x="24" y="721.8" font-size="10" fill="#526575">rank 03</text>
+<line x1="20" y1="980.8" x2="2355" y2="980.8" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="1008.8" font-size="12" fill="#172a3a" font-weight="bold">25</text>
+<text x="24" y="1033.8" font-size="10" fill="#526575">rank 04</text>
+<line x1="20" y1="1287.8" x2="2355" y2="1287.8" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="1315.8" font-size="12" fill="#172a3a" font-weight="bold">30</text>
+<text x="24" y="1340.8" font-size="10" fill="#526575">rank 05</text>
+<line x1="20" y1="1614.8" x2="2355" y2="1614.8" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="1642.8" font-size="12" fill="#172a3a" font-weight="bold">40</text>
+<text x="24" y="1667.8" font-size="10" fill="#526575">rank 06</text>
+<line x1="20" y1="1889.8" x2="2355" y2="1889.8" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="1917.8" font-size="12" fill="#172a3a" font-weight="bold">50</text>
+<text x="24" y="1942.8" font-size="10" fill="#526575">rank 07</text>
+<path d="M 346.00 190.80 L 346.00 2273.80" fill="none" stroke="#667b8a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="340.0" y="184.8" width="12" height="12" fill="#ffffff" stroke="#416f99" rx="1" stroke-width="2"/>
+<line x1="339.0" y1="2273.8" x2="353.0" y2="2273.8" stroke="#667b8a" stroke-width="2"/>
+<text x="361.0" y="2278.8" font-size="10" fill="#526575">End of displayed extent</text>
+<path d="M 903.00 190.80 L 903.00 2273.80" fill="none" stroke="#667b8a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 903.00 190.80 l -5 -7 m 5 7 l 5 -7" fill="none" stroke="#78639a" stroke-width="2"/>
+<line x1="896.0" y1="2273.8" x2="910.0" y2="2273.8" stroke="#667b8a" stroke-width="2"/>
+<text x="918.0" y="2278.8" font-size="10" fill="#526575">End of displayed extent</text>
+<path d="M 1460.00 190.80 L 1460.00 2273.80" fill="none" stroke="#667b8a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 1460.00 190.80 l -5 -7 m 5 7 l 5 -7" fill="none" stroke="#397f78" stroke-width="2"/>
+<line x1="1453.0" y1="2273.8" x2="1467.0" y2="2273.8" stroke="#667b8a" stroke-width="2"/>
+<text x="1475.0" y="2278.8" font-size="10" fill="#526575">End of displayed extent</text>
+<path d="M 1987.00 190.80 L 1987.00 2273.80" fill="none" stroke="#667b8a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 1987.00 190.80 l -5 -7 m 5 7 l 5 -7" fill="none" stroke="#997144" stroke-width="2"/>
+<line x1="1980.0" y1="2273.8" x2="1994.0" y2="2273.8" stroke="#667b8a" stroke-width="2"/>
+<text x="2002.0" y="2278.8" font-size="10" fill="#526575">End of displayed extent</text>
+<g class="layer-route">
+<title>V1 · {&quot;entry&quot;: &quot;e-start&quot;, &quot;exit&quot;: &quot;e-verse-ap&quot;, &quot;id&quot;: &quot;v1&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;E0&quot;}</title>
+<path d="M 338.00 235.80 L 329.00 235.80 L 329.00 461.80 L 336.00 461.80" fill="none" stroke="#ffffff" stroke-width="8.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 338.00 235.80 L 329.00 235.80 L 329.00 461.80 L 336.00 461.80" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+<path d="M 329.00 339.80 L 329.00 357.80" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+</g>
+<g class="layer-route">
+<title>V2 · {&quot;entry&quot;: &quot;e-a&quot;, &quot;exit&quot;: &quot;e-a&quot;, &quot;id&quot;: &quot;v2&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;A&quot;}</title>
+<path d="M 895.00 1025.80 L 886.00 1025.80 L 886.00 1041.80 L 895.00 1041.80 L 895.00 1034.80" fill="none" stroke="#ffffff" stroke-width="8.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 895.00 1025.80 L 886.00 1025.80 L 886.00 1041.80 L 895.00 1041.80 L 895.00 1034.80" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+</g>
+<g class="layer-route">
+<title>V3 · {&quot;entry&quot;: &quot;e-v1&quot;, &quot;exit&quot;: &quot;e-v1&quot;, &quot;id&quot;: &quot;v3&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;V1&quot;}</title>
+<path d="M 1452.00 1332.80 L 1443.00 1332.80 L 1443.00 1348.80 L 1452.00 1348.80 L 1452.00 1341.80" fill="none" stroke="#ffffff" stroke-width="8.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 1452.00 1332.80 L 1443.00 1332.80 L 1443.00 1348.80 L 1452.00 1348.80 L 1452.00 1341.80" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+</g>
+<g class="layer-route">
+<title>V4 · {&quot;entry&quot;: &quot;e-v2&quot;, &quot;exit&quot;: &quot;e-v2&quot;, &quot;id&quot;: &quot;v4&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;V2&quot;}</title>
+<path d="M 1979.00 1659.80 L 1970.00 1659.80 L 1970.00 1675.80 L 1979.00 1675.80 L 1979.00 1668.80" fill="none" stroke="#ffffff" stroke-width="8.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 1979.00 1659.80 L 1970.00 1659.80 L 1970.00 1675.80 L 1979.00 1675.80 L 1979.00 1668.80" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+</g>
+<g class="layer-split" id="g1-edge-1">
+<title>e-choice → e-a · outcome + · {&quot;entry&quot;: &quot;e-a&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;survives the choice&quot;, &quot;instance&quot;: &quot;ev-e0&quot;, &quot;outcome&quot;: &quot;continues&quot;}], &quot;universe&quot;: &quot;E0&quot;, &quot;universe_outcome&quot;: &quot;continues&quot;}
+{&quot;outcome&quot;: {&quot;entry&quot;: &quot;e-a&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;survives the choice&quot;, &quot;instance&quot;: &quot;ev-e0&quot;, &quot;outcome&quot;: &quot;continues&quot;}], &quot;universe&quot;: &quot;E0&quot;, &quot;universe_outcome&quot;: &quot;continues&quot;}, &quot;split&quot;: {&quot;automatic&quot;: true, &quot;cause&quot;: &quot;branch&quot;, &quot;event&quot;: &quot;e-choice&quot;, &quot;outcomes&quot;: {&quot;+&quot;: {&quot;entry&quot;: &quot;e-a&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;survives the choice&quot;, &quot;instance&quot;: &quot;ev-e0&quot;, &quot;outcome&quot;: &quot;continues&quot;}], &quot;universe&quot;: &quot;E0&quot;, &quot;universe_outcome&quot;: &quot;continues&quot;}, &quot;-&quot;: {&quot;entry&quot;: &quot;e-v1&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;that verse&#x27;s Evelyn dies&quot;, &quot;instance&quot;: &quot;ev-v1&quot;, &quot;outcome&quot;: &quot;dies&quot;}], &quot;universe&quot;: &quot;V1&quot;, &quot;universe_outcome&quot;: &quot;born&quot;}}, &quot;source_disposition&quot;: &quot;continues&quot;, &quot;source_universe&quot;: &quot;E0&quot;, &quot;traveller&quot;: &quot;ev-e0&quot;}}</title>
+<line x1="337.0" y1="713.8" x2="345.0" y2="709.0" stroke="#ffffff" stroke-width="8"/>
+<line x1="337.0" y1="713.8" x2="345.0" y2="709.0" stroke="#ad6200" stroke-width="3"/>
+<line x1="893.0" y1="1025.8" x2="901.0" y2="1021.0" stroke="#ffffff" stroke-width="8"/>
+<line x1="893.0" y1="1025.8" x2="901.0" y2="1021.0" stroke="#ad6200" stroke-width="3"/>
+<path d="M 345.00 709.00 L 314.00 709.00 L 314.00 920.00 L 182.00 920.00 L 182.00 1201.00 L 871.00 1201.00 L 871.00 1021.00 L 901.00 1021.00" fill="none" stroke="#ffffff" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 345.00 709.00 L 314.00 709.00 L 314.00 920.00 L 182.00 920.00 L 182.00 1201.00 L 871.00 1201.00 L 871.00 1021.00 L 901.00 1021.00" fill="none" stroke="#ad6200" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-split)"/>
+<a href="#g1-relationships" aria-label="e-choice → e-a · outcome + · {&quot;entry&quot;: &quot;e-a&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;survives the choice&quot;, &quot;instance&quot;: &quot;ev-e0&quot;, &quot;outcome&quot;: &quot;continues&quot;}], &quot;universe&quot;: &quot;E0&quot;, &quot;universe_outcome&quot;: &quot;continues&quot;}">
+<rect x="224.0" y="910.0" width="48" height="20" fill="#ffffff" stroke="#ad6200" rx="6" stroke-width="1.6"/>
+<text text-anchor="middle" x="248.0" y="924.0" font-size="11" fill="#ad6200" font-weight="bold">S1+</text>
+</a>
+</g>
+<g class="layer-split" id="g1-edge-2">
+<title>e-choice → e-v1 · outcome − · {&quot;entry&quot;: &quot;e-v1&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;that verse&#x27;s Evelyn dies&quot;, &quot;instance&quot;: &quot;ev-v1&quot;, &quot;outcome&quot;: &quot;dies&quot;}], &quot;universe&quot;: &quot;V1&quot;, &quot;universe_outcome&quot;: &quot;born&quot;}
+{&quot;outcome&quot;: {&quot;entry&quot;: &quot;e-v1&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;that verse&#x27;s Evelyn dies&quot;, &quot;instance&quot;: &quot;ev-v1&quot;, &quot;outcome&quot;: &quot;dies&quot;}], &quot;universe&quot;: &quot;V1&quot;, &quot;universe_outcome&quot;: &quot;born&quot;}, &quot;split&quot;: {&quot;automatic&quot;: true, &quot;cause&quot;: &quot;branch&quot;, &quot;event&quot;: &quot;e-choice&quot;, &quot;outcomes&quot;: {&quot;+&quot;: {&quot;entry&quot;: &quot;e-a&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;survives the choice&quot;, &quot;instance&quot;: &quot;ev-e0&quot;, &quot;outcome&quot;: &quot;continues&quot;}], &quot;universe&quot;: &quot;E0&quot;, &quot;universe_outcome&quot;: &quot;continues&quot;}, &quot;-&quot;: {&quot;entry&quot;: &quot;e-v1&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;that verse&#x27;s Evelyn dies&quot;, &quot;instance&quot;: &quot;ev-v1&quot;, &quot;outcome&quot;: &quot;dies&quot;}], &quot;universe&quot;: &quot;V1&quot;, &quot;universe_outcome&quot;: &quot;born&quot;}}, &quot;source_disposition&quot;: &quot;continues&quot;, &quot;source_universe&quot;: &quot;E0&quot;, &quot;traveller&quot;: &quot;ev-e0&quot;}}</title>
+<line x1="337.0" y1="713.8" x2="345.0" y2="709.0" stroke="#ffffff" stroke-width="8"/>
+<line x1="337.0" y1="713.8" x2="345.0" y2="709.0" stroke="#ad6200" stroke-width="3"/>
+<line x1="1450.0" y1="1332.8" x2="1458.0" y2="1328.0" stroke="#ffffff" stroke-width="8"/>
+<line x1="1450.0" y1="1332.8" x2="1458.0" y2="1328.0" stroke="#ad6200" stroke-width="3"/>
+<path d="M 345.00 709.00 L 305.00 709.00 L 305.00 946.00 L 194.00 946.00 L 194.00 1528.00 L 1428.00 1528.00 L 1428.00 1328.00 L 1458.00 1328.00" fill="none" stroke="#ffffff" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 345.00 709.00 L 305.00 709.00 L 305.00 946.00 L 194.00 946.00 L 194.00 1528.00 L 1428.00 1528.00 L 1428.00 1328.00 L 1458.00 1328.00" fill="none" stroke="#ad6200" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 5" marker-end="url(#arrow-split)"/>
+<a href="#g1-relationships" aria-label="e-choice → e-v1 · outcome − · {&quot;entry&quot;: &quot;e-v1&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;that verse&#x27;s Evelyn dies&quot;, &quot;instance&quot;: &quot;ev-v1&quot;, &quot;outcome&quot;: &quot;dies&quot;}], &quot;universe&quot;: &quot;V1&quot;, &quot;universe_outcome&quot;: &quot;born&quot;}">
+<rect x="225.5" y="936.0" width="48" height="20" fill="#ffffff" stroke="#ad6200" rx="6" stroke-width="1.6"/>
+<text text-anchor="middle" x="249.5" y="950.0" font-size="11" fill="#ad6200" font-weight="bold">S1−</text>
+</a>
+</g>
+<g class="layer-transfer" id="g1-edge-3">
+<title>t-ap · ev-e0 · e-verse-ap → e-a · mechanism: consciousness_transfer · relation: {&quot;kind&quot;: &quot;different_universes&quot;} · followed by L1
+{&quot;from&quot;: {&quot;exit&quot;: &quot;e-verse-ap&quot;, &quot;universe&quot;: &quot;E0&quot;}, &quot;id&quot;: &quot;t-ap&quot;, &quot;mechanism&quot;: &quot;consciousness_transfer&quot;, &quot;relation&quot;: {&quot;kind&quot;: &quot;different_universes&quot;}, &quot;to&quot;: {&quot;entry&quot;: &quot;e-a&quot;, &quot;universe&quot;: &quot;A&quot;}, &quot;traveller&quot;: &quot;ev-e0&quot;}</title>
+<line x1="337.0" y1="461.8" x2="345.0" y2="457.0" stroke="#ffffff" stroke-width="8"/>
+<line x1="337.0" y1="461.8" x2="345.0" y2="457.0" stroke="#285ac7" stroke-width="3"/>
+<line x1="893.0" y1="1025.8" x2="901.0" y2="1021.0" stroke="#ffffff" stroke-width="8"/>
+<line x1="893.0" y1="1025.8" x2="901.0" y2="1021.0" stroke="#285ac7" stroke-width="3"/>
+<path d="M 345.00 457.00 L 314.00 457.00 L 314.00 634.00 L 206.00 634.00 L 206.00 1227.00 L 862.00 1227.00 L 862.00 1021.00 L 901.00 1021.00" fill="none" stroke="#ffffff" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 345.00 457.00 L 314.00 457.00 L 314.00 634.00 L 206.00 634.00 L 206.00 1227.00 L 862.00 1227.00 L 862.00 1021.00 L 901.00 1021.00" fill="none" stroke="#285ac7" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-transfer)"/>
+<g class="layer-route">
+<path d="M 345.00 457.00 L 314.00 457.00 L 314.00 634.00 L 206.00 634.00 L 206.00 1227.00 L 862.00 1227.00 L 862.00 1021.00 L 901.00 1021.00" fill="none" stroke="#087d60" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<a href="#g1-relationships" aria-label="t-ap · ev-e0 · e-verse-ap → e-a · mechanism: consciousness_transfer · relation: {&quot;kind&quot;: &quot;different_universes&quot;} · followed by L1">
+<rect x="236.0" y="624.0" width="48" height="20" fill="#ffffff" stroke="#285ac7" rx="6" stroke-width="1.6"/>
+<text text-anchor="middle" x="260.0" y="638.0" font-size="11" fill="#285ac7" font-weight="bold">T1 C</text>
+</a>
+</g>
+<g class="layer-transfer" id="g1-edge-4">
+<title>t-hd · ev-e0 · e-a → e-v1 · mechanism: consciousness_transfer · relation: {&quot;kind&quot;: &quot;different_universes&quot;} · followed by L2
+{&quot;from&quot;: {&quot;exit&quot;: &quot;e-a&quot;, &quot;universe&quot;: &quot;A&quot;}, &quot;id&quot;: &quot;t-hd&quot;, &quot;mechanism&quot;: &quot;consciousness_transfer&quot;, &quot;relation&quot;: {&quot;kind&quot;: &quot;different_universes&quot;}, &quot;to&quot;: {&quot;entry&quot;: &quot;e-v1&quot;, &quot;universe&quot;: &quot;V1&quot;}, &quot;traveller&quot;: &quot;ev-e0&quot;}</title>
+<line x1="894.0" y1="1025.8" x2="902.0" y2="1021.0" stroke="#ffffff" stroke-width="8"/>
+<line x1="894.0" y1="1025.8" x2="902.0" y2="1021.0" stroke="#285ac7" stroke-width="3"/>
+<line x1="1450.0" y1="1332.8" x2="1458.0" y2="1328.0" stroke="#ffffff" stroke-width="8"/>
+<line x1="1450.0" y1="1332.8" x2="1458.0" y2="1328.0" stroke="#285ac7" stroke-width="3"/>
+<path d="M 902.00 1021.00 L 853.00 1021.00 L 853.00 1253.00 L 754.00 1253.00 L 754.00 1554.00 L 1419.00 1554.00 L 1419.00 1328.00 L 1458.00 1328.00" fill="none" stroke="#ffffff" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 902.00 1021.00 L 853.00 1021.00 L 853.00 1253.00 L 754.00 1253.00 L 754.00 1554.00 L 1419.00 1554.00 L 1419.00 1328.00 L 1458.00 1328.00" fill="none" stroke="#285ac7" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-transfer)"/>
+<g class="layer-route">
+<path d="M 902.00 1021.00 L 853.00 1021.00 L 853.00 1253.00 L 754.00 1253.00 L 754.00 1554.00 L 1419.00 1554.00 L 1419.00 1328.00 L 1458.00 1328.00" fill="none" stroke="#087d60" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<a href="#g1-relationships" aria-label="t-hd · ev-e0 · e-a → e-v1 · mechanism: consciousness_transfer · relation: {&quot;kind&quot;: &quot;different_universes&quot;} · followed by L2">
+<rect x="779.5" y="1243.0" width="48" height="20" fill="#ffffff" stroke="#285ac7" rx="6" stroke-width="1.6"/>
+<text text-anchor="middle" x="803.5" y="1257.0" font-size="11" fill="#285ac7" font-weight="bold">T2 C</text>
+</a>
+</g>
+<g class="layer-transfer" id="g1-edge-5">
+<title>t-cf · ev-e0 · e-v1 → e-v2 · mechanism: consciousness_transfer · relation: {&quot;kind&quot;: &quot;different_universes&quot;} · followed by L3
+{&quot;from&quot;: {&quot;exit&quot;: &quot;e-v1&quot;, &quot;universe&quot;: &quot;V1&quot;}, &quot;id&quot;: &quot;t-cf&quot;, &quot;mechanism&quot;: &quot;consciousness_transfer&quot;, &quot;relation&quot;: {&quot;kind&quot;: &quot;different_universes&quot;}, &quot;to&quot;: {&quot;entry&quot;: &quot;e-v2&quot;, &quot;universe&quot;: &quot;V2&quot;}, &quot;traveller&quot;: &quot;ev-e0&quot;}</title>
+<line x1="1451.0" y1="1332.8" x2="1459.0" y2="1328.0" stroke="#ffffff" stroke-width="8"/>
+<line x1="1451.0" y1="1332.8" x2="1459.0" y2="1328.0" stroke="#285ac7" stroke-width="3"/>
+<line x1="1977.0" y1="1659.8" x2="1985.0" y2="1655.0" stroke="#ffffff" stroke-width="8"/>
+<line x1="1977.0" y1="1659.8" x2="1985.0" y2="1655.0" stroke="#285ac7" stroke-width="3"/>
+<path d="M 1459.00 1328.00 L 1410.00 1328.00 L 1410.00 1580.00 L 1311.00 1580.00 L 1311.00 1855.00 L 1955.00 1855.00 L 1955.00 1655.00 L 1985.00 1655.00" fill="none" stroke="#ffffff" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 1459.00 1328.00 L 1410.00 1328.00 L 1410.00 1580.00 L 1311.00 1580.00 L 1311.00 1855.00 L 1955.00 1855.00 L 1955.00 1655.00 L 1985.00 1655.00" fill="none" stroke="#285ac7" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-transfer)"/>
+<g class="layer-route">
+<path d="M 1459.00 1328.00 L 1410.00 1328.00 L 1410.00 1580.00 L 1311.00 1580.00 L 1311.00 1855.00 L 1955.00 1855.00 L 1955.00 1655.00 L 1985.00 1655.00" fill="none" stroke="#087d60" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<a href="#g1-relationships" aria-label="t-cf · ev-e0 · e-v1 → e-v2 · mechanism: consciousness_transfer · relation: {&quot;kind&quot;: &quot;different_universes&quot;} · followed by L3">
+<rect x="1336.5" y="1570.0" width="48" height="20" fill="#ffffff" stroke="#285ac7" rx="6" stroke-width="1.6"/>
+<text text-anchor="middle" x="1360.5" y="1584.0" font-size="11" fill="#285ac7" font-weight="bold">T3 C</text>
+</a>
+</g>
+<line x1="356.0" y1="235.8" x2="370.0" y2="235.8" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-1" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Evelyn at the laundromat before the IRS audit&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-start&quot;, &quot;kind&quot;: &quot;start&quot;, &quot;label&quot;: &quot;Evelyn at the laundromat before the IRS audit&quot;, &quot;order&quot;: 0, &quot;universe&quot;: &quot;E0&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Evelyn at the laundromat before the IRS audit&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-start&quot;, &quot;kind&quot;: &quot;start&quot;, &quot;label&quot;: &quot;Evelyn at the laundromat before the IRS audit&quot;, &quot;order&quot;: 0, &quot;universe&quot;: &quot;E0&quot;}</title>
+<rect x="370.0" y="212.8" width="304" height="158" fill="#e7edf2" rx="9"/>
+<rect x="370.0" y="210.8" width="304" height="158" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="370.0" y="222.8" width="3" height="134" fill="#416f99" rx="1.5"/>
+<text x="386.0" y="237.8" font-size="11" fill="#526575" font-weight="bold">START · e-start</text>
+<text x="386.0" y="263.8" font-size="14" fill="#172a3a">Evelyn at the laundromat</text>
+<text x="386.0" y="283.8" font-size="14" fill="#172a3a">before the IRS audit</text>
+<a href="#evidence-1" class="citation" aria-label="[1] · Locator Evelyn at the laundromat before the IRS audit · unavailable">
+<text x="386.0" y="306.8" font-size="11" fill="#285ac7">[1] · Locator Evelyn at the laundromat</text>
+<text x="386.0" y="323.8" font-size="11" fill="#285ac7">before the IRS audit · unavailable</text>
+</a>
+<text x="386.0" y="346.8" font-size="11" fill="#087d60" font-weight="bold">V1 entry · ev-e0</text>
+</g>
+<line x1="356.0" y1="461.8" x2="370.0" y2="461.8" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-2" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;She learns to verse-jump into her parallel selves&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-verse-ap&quot;, &quot;kind&quot;: &quot;exit&quot;, &quot;label&quot;: &quot;She learns to verse-jump into her parallel selves&quot;, &quot;order&quot;: 10, &quot;universe&quot;: &quot;E0&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;She learns to verse-jump into her parallel selves&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-verse-ap&quot;, &quot;kind&quot;: &quot;exit&quot;, &quot;label&quot;: &quot;She learns to verse-jump into her parallel selves&quot;, &quot;order&quot;: 10, &quot;universe&quot;: &quot;E0&quot;}</title>
+<rect x="370.0" y="438.8" width="304" height="158" fill="#e7edf2" rx="9"/>
+<rect x="370.0" y="436.8" width="304" height="158" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="370.0" y="448.8" width="3" height="134" fill="#416f99" rx="1.5"/>
+<text x="386.0" y="463.8" font-size="11" fill="#526575" font-weight="bold">EXIT · e-verse-ap</text>
+<text x="386.0" y="489.8" font-size="14" fill="#172a3a">She learns to verse-jump into</text>
+<text x="386.0" y="509.8" font-size="14" fill="#172a3a">her parallel selves</text>
+<a href="#evidence-2" class="citation" aria-label="[2] · Locator She learns to verse-jump into her parallel selves · unavailable">
+<text x="386.0" y="532.8" font-size="11" fill="#285ac7">[2] · Locator She learns to verse-jump</text>
+<text x="386.0" y="549.8" font-size="11" fill="#285ac7">into her parallel selves · unavailable</text>
+</a>
+<text x="386.0" y="572.8" font-size="11" fill="#087d60" font-weight="bold">V1 exit · ev-e0</text>
+</g>
+<line x1="356.0" y1="713.8" x2="370.0" y2="713.8" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-3" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;A decision that spawns a branch verse&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-choice&quot;, &quot;kind&quot;: &quot;split&quot;, &quot;label&quot;: &quot;A decision that spawns a branch verse&quot;, &quot;order&quot;: 20, &quot;universe&quot;: &quot;E0&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;A decision that spawns a branch verse&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-choice&quot;, &quot;kind&quot;: &quot;split&quot;, &quot;label&quot;: &quot;A decision that spawns a branch verse&quot;, &quot;order&quot;: 20, &quot;universe&quot;: &quot;E0&quot;}</title>
+<rect x="370.0" y="690.8" width="304" height="192" fill="#e7edf2" rx="9"/>
+<rect x="370.0" y="688.8" width="304" height="192" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="370.0" y="700.8" width="3" height="168" fill="#416f99" rx="1.5"/>
+<text x="386.0" y="715.8" font-size="11" fill="#526575" font-weight="bold">SPLIT · e-choice</text>
+<text x="386.0" y="741.8" font-size="14" fill="#172a3a">A decision that spawns a branch</text>
+<text x="386.0" y="761.8" font-size="14" fill="#172a3a">verse</text>
+<a href="#evidence-3" class="citation" aria-label="[3] · Locator A decision that spawns a branch verse · unavailable">
+<text x="386.0" y="784.8" font-size="11" fill="#285ac7">[3] · Locator A decision that spawns a</text>
+<text x="386.0" y="801.8" font-size="11" fill="#285ac7">branch verse · unavailable</text>
+</a>
+<text x="386.0" y="824.8" font-size="11" fill="#ad6200">S1 · cause: branch · automatic: true ·</text>
+<text x="386.0" y="841.8" font-size="11" fill="#ad6200">traveller: ev-e0 · source disposition:</text>
+<text x="386.0" y="858.8" font-size="11" fill="#ad6200">continues</text>
+</g>
+<line x1="913.0" y1="1025.8" x2="927.0" y2="1025.8" stroke="#78639a" stroke-width="1.8"/>
+<g id="g1-item-4" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;She enters the Alpha verse&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-a&quot;, &quot;kind&quot;: &quot;entry&quot;, &quot;label&quot;: &quot;She enters the Alpha verse&quot;, &quot;order&quot;: 25, &quot;universe&quot;: &quot;A&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;She enters the Alpha verse&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-a&quot;, &quot;kind&quot;: &quot;entry&quot;, &quot;label&quot;: &quot;She enters the Alpha verse&quot;, &quot;order&quot;: 25, &quot;universe&quot;: &quot;A&quot;}</title>
+<rect x="927.0" y="1002.8" width="304" height="161" fill="#e7edf2" rx="9"/>
+<rect x="927.0" y="1000.8" width="304" height="161" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="927.0" y="1012.8" width="3" height="137" fill="#78639a" rx="1.5"/>
+<text x="943.0" y="1027.8" font-size="11" fill="#526575" font-weight="bold">ENTRY · e-a</text>
+<text x="943.0" y="1053.8" font-size="14" fill="#172a3a">She enters the Alpha verse</text>
+<a href="#evidence-4" class="citation" aria-label="[4] · Locator She enters the Alpha verse · unavailable">
+<text x="943.0" y="1076.8" font-size="11" fill="#285ac7">[4] · Locator She enters the Alpha</text>
+<text x="943.0" y="1093.8" font-size="11" fill="#285ac7">verse · unavailable</text>
+</a>
+<text x="943.0" y="1116.8" font-size="11" fill="#087d60" font-weight="bold">V2 entry · ev-e0</text>
+<text x="943.0" y="1139.8" font-size="11" fill="#087d60" font-weight="bold">V2 exit · ev-e0</text>
+</g>
+<line x1="1470.0" y1="1332.8" x2="1484.0" y2="1332.8" stroke="#397f78" stroke-width="1.8"/>
+<g id="g1-item-5" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;She hops into the hot-dog-fingers verse&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-v1&quot;, &quot;kind&quot;: &quot;entry&quot;, &quot;label&quot;: &quot;She hops into the hot-dog-fingers verse&quot;, &quot;order&quot;: 30, &quot;universe&quot;: &quot;V1&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;She hops into the hot-dog-fingers verse&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-v1&quot;, &quot;kind&quot;: &quot;entry&quot;, &quot;label&quot;: &quot;She hops into the hot-dog-fingers verse&quot;, &quot;order&quot;: 30, &quot;universe&quot;: &quot;V1&quot;}</title>
+<rect x="1484.0" y="1309.8" width="304" height="181" fill="#e7edf2" rx="9"/>
+<rect x="1484.0" y="1307.8" width="304" height="181" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="1484.0" y="1319.8" width="3" height="157" fill="#397f78" rx="1.5"/>
+<text x="1500.0" y="1334.8" font-size="11" fill="#526575" font-weight="bold">ENTRY · e-v1</text>
+<text x="1500.0" y="1360.8" font-size="14" fill="#172a3a">She hops into the</text>
+<text x="1500.0" y="1380.8" font-size="14" fill="#172a3a">hot-dog-fingers verse</text>
+<a href="#evidence-5" class="citation" aria-label="[5] · Locator She hops into the hot-dog-fingers verse · unavailable">
+<text x="1500.0" y="1403.8" font-size="11" fill="#285ac7">[5] · Locator She hops into the</text>
+<text x="1500.0" y="1420.8" font-size="11" fill="#285ac7">hot-dog-fingers verse · unavailable</text>
+</a>
+<text x="1500.0" y="1443.8" font-size="11" fill="#087d60" font-weight="bold">V3 entry · ev-e0</text>
+<text x="1500.0" y="1466.8" font-size="11" fill="#087d60" font-weight="bold">V3 exit · ev-e0</text>
+</g>
+<line x1="1997.0" y1="1659.8" x2="2011.0" y2="1659.8" stroke="#997144" stroke-width="1.8"/>
+<g id="g1-item-6" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;She takes comfort in a quieter verse&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-v2&quot;, &quot;kind&quot;: &quot;entry&quot;, &quot;label&quot;: &quot;She takes comfort in a quieter verse&quot;, &quot;order&quot;: 40, &quot;universe&quot;: &quot;V2&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;She takes comfort in a quieter verse&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-v2&quot;, &quot;kind&quot;: &quot;entry&quot;, &quot;label&quot;: &quot;She takes comfort in a quieter verse&quot;, &quot;order&quot;: 40, &quot;universe&quot;: &quot;V2&quot;}</title>
+<rect x="2011.0" y="1636.8" width="304" height="181" fill="#e7edf2" rx="9"/>
+<rect x="2011.0" y="1634.8" width="304" height="181" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="2011.0" y="1646.8" width="3" height="157" fill="#997144" rx="1.5"/>
+<text x="2027.0" y="1661.8" font-size="11" fill="#526575" font-weight="bold">ENTRY · e-v2</text>
+<text x="2027.0" y="1687.8" font-size="14" fill="#172a3a">She takes comfort in a quieter</text>
+<text x="2027.0" y="1707.8" font-size="14" fill="#172a3a">verse</text>
+<a href="#evidence-6" class="citation" aria-label="[6] · Locator She takes comfort in a quieter verse · unavailable">
+<text x="2027.0" y="1730.8" font-size="11" fill="#285ac7">[6] · Locator She takes comfort in a</text>
+<text x="2027.0" y="1747.8" font-size="11" fill="#285ac7">quieter verse · unavailable</text>
+</a>
+<text x="2027.0" y="1770.8" font-size="11" fill="#087d60" font-weight="bold">V4 entry · ev-e0</text>
+<text x="2027.0" y="1793.8" font-size="11" fill="#087d60" font-weight="bold">V4 exit · ev-e0</text>
+</g>
+<line x1="356.0" y1="1934.8" x2="370.0" y2="1934.8" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-7" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;She chooses the googly-eyed family in the base verse&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-end&quot;, &quot;kind&quot;: &quot;cutoff&quot;, &quot;label&quot;: &quot;She chooses the googly-eyed family in the base verse&quot;, &quot;order&quot;: 50, &quot;universe&quot;: &quot;E0&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;She chooses the googly-eyed family in the base verse&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-end&quot;, &quot;kind&quot;: &quot;cutoff&quot;, &quot;label&quot;: &quot;She chooses the googly-eyed family in the base verse&quot;, &quot;order&quot;: 50, &quot;universe&quot;: &quot;E0&quot;}</title>
+<rect x="370.0" y="1911.8" width="304" height="290" fill="#e7edf2" rx="9"/>
+<rect x="370.0" y="1909.8" width="304" height="290" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="370.0" y="1921.8" width="3" height="266" fill="#416f99" rx="1.5"/>
+<text x="386.0" y="1936.8" font-size="11" fill="#526575" font-weight="bold">CUTOFF · e-end</text>
+<text x="386.0" y="1962.8" font-size="14" fill="#172a3a">She chooses the googly-eyed</text>
+<text x="386.0" y="1982.8" font-size="14" fill="#172a3a">family in the base verse</text>
+<a href="#evidence-7" class="citation" aria-label="[7] · Locator She chooses the googly-eyed family in the base verse · unavailable">
+<text x="386.0" y="2005.8" font-size="11" fill="#285ac7">[7] · Locator She chooses the</text>
+<text x="386.0" y="2022.8" font-size="11" fill="#285ac7">googly-eyed family in the base verse ·</text>
+<text x="386.0" y="2039.8" font-size="11" fill="#285ac7">unavailable</text>
+</a>
+<text x="386.0" y="2063.8" font-size="12" fill="#087d60" font-weight="bold">● ALIVE · ev-e0</text>
+<text x="386.0" y="2085.8" font-size="11" fill="#526575">Fate f-ev · at e-end</text>
+<text x="386.0" y="2108.8" font-size="11" fill="#526575">No citation supplied</text>
+<text x="386.0" y="2132.8" font-size="12" fill="#087d60" font-weight="bold">● ALIVE · ev-v1</text>
+<text x="386.0" y="2154.8" font-size="11" fill="#526575">Fate f-joy · at e-end</text>
+<text x="386.0" y="2177.8" font-size="11" fill="#526575">No citation supplied</text>
+</g>
+<g class="event-node">
+<title>e-start · Evelyn at the laundromat before the IRS audit</title>
+<circle cx="346.0" cy="235.8" r="11" fill="#ffffff"/>
+<rect x="339.0" y="228.8" width="14" height="14" fill="#087d60" stroke="#ffffff" rx="2" stroke-width="2"/>
+</g>
+<g class="event-node">
+<title>e-verse-ap · She learns to verse-jump into her parallel selves</title>
+<circle cx="346.0" cy="461.8" r="11" fill="#ffffff"/>
+<circle cx="346.0" cy="461.8" r="8" fill="#ffffff" stroke="#416f99" stroke-width="2.5"/>
+<polygon points="349.00,457.80 343.00,461.80 349.00,465.80" fill="#416f99"/>
+</g>
+<g class="event-node">
+<title>e-choice · A decision that spawns a branch verse</title>
+<circle cx="346.0" cy="713.8" r="11" fill="#ffffff"/>
+<circle cx="346.0" cy="713.8" r="8" fill="#fff1d7" stroke="#ad6200" stroke-width="2.5"/>
+<text text-anchor="middle" x="346.0" y="717.8" font-size="11" fill="#ad6200" font-weight="bold">Y</text>
+</g>
+<g class="event-node">
+<title>e-a · She enters the Alpha verse</title>
+<circle cx="903.0" cy="1025.8" r="11" fill="#ffffff"/>
+<circle cx="903.0" cy="1025.8" r="8" fill="#ffffff" stroke="#78639a" stroke-width="2.5"/>
+<polygon points="900.00,1021.80 906.00,1025.80 900.00,1029.80" fill="#78639a"/>
+</g>
+<g class="event-node">
+<title>e-v1 · She hops into the hot-dog-fingers verse</title>
+<circle cx="1460.0" cy="1332.8" r="11" fill="#ffffff"/>
+<circle cx="1460.0" cy="1332.8" r="8" fill="#ffffff" stroke="#397f78" stroke-width="2.5"/>
+<polygon points="1457.00,1328.80 1463.00,1332.80 1457.00,1336.80" fill="#397f78"/>
+</g>
+<g class="event-node">
+<title>e-v2 · She takes comfort in a quieter verse</title>
+<circle cx="1987.0" cy="1659.8" r="11" fill="#ffffff"/>
+<circle cx="1987.0" cy="1659.8" r="8" fill="#ffffff" stroke="#997144" stroke-width="2.5"/>
+<polygon points="1984.00,1655.80 1990.00,1659.80 1984.00,1663.80" fill="#997144"/>
+</g>
+<g class="event-node">
+<title>e-end · She chooses the googly-eyed family in the base verse</title>
+<circle cx="346.0" cy="1934.8" r="11" fill="#ffffff"/>
+<line x1="337.0" y1="1930.8" x2="355.0" y2="1930.8" stroke="#416f99" stroke-width="3"/>
+<line x1="337.0" y1="1938.8" x2="355.0" y2="1938.8" stroke="#416f99" stroke-width="3"/>
+</g>
+</g>
+<g id="g1-relationships">
+<line x1="32" y1="3024" x2="2389" y2="3024" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="3053" font-size="18" fill="#172a3a" font-weight="bold">Relationship ledger</text>
+</g>
+<g >
+<rect x="32" y="3072" width="2357" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3095" font-size="11" fill="#ad6200" font-weight="bold">S1+</text>
+<text x="174" y="3095" font-size="12" fill="#172a3a">e-choice → e-a · outcome + · {&quot;entry&quot;: &quot;e-a&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;survives the choice&quot;, &quot;instance&quot;: &quot;ev-e0&quot;, &quot;outcome&quot;: &quot;continues&quot;}], &quot;universe&quot;: &quot;E0&quot;,</text>
+<text x="174" y="3113" font-size="12" fill="#172a3a">&quot;universe_outcome&quot;: &quot;continues&quot;}</text>
+</g>
+<g >
+<rect x="32" y="3138" width="2357" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3161" font-size="11" fill="#ad6200" font-weight="bold">S1−</text>
+<text x="174" y="3161" font-size="12" fill="#172a3a">e-choice → e-v1 · outcome − · {&quot;entry&quot;: &quot;e-v1&quot;, &quot;instances&quot;: [{&quot;fate&quot;: &quot;that verse&#x27;s Evelyn dies&quot;, &quot;instance&quot;: &quot;ev-v1&quot;, &quot;outcome&quot;: &quot;dies&quot;}], &quot;universe&quot;:</text>
+<text x="174" y="3179" font-size="12" fill="#172a3a">&quot;V1&quot;, &quot;universe_outcome&quot;: &quot;born&quot;}</text>
+</g>
+<g >
+<rect x="32" y="3204" width="2357" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3227" font-size="11" fill="#285ac7" font-weight="bold">T1</text>
+<text x="174" y="3227" font-size="12" fill="#172a3a">t-ap · ev-e0 · e-verse-ap → e-a · mechanism: consciousness_transfer · relation: {&quot;kind&quot;: &quot;different_universes&quot;} · followed by L1</text>
+</g>
+<g >
+<rect x="32" y="3254" width="2357" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3277" font-size="11" fill="#285ac7" font-weight="bold">T2</text>
+<text x="174" y="3277" font-size="12" fill="#172a3a">t-hd · ev-e0 · e-a → e-v1 · mechanism: consciousness_transfer · relation: {&quot;kind&quot;: &quot;different_universes&quot;} · followed by L2</text>
+</g>
+<g >
+<rect x="32" y="3304" width="2357" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3327" font-size="11" fill="#285ac7" font-weight="bold">T3</text>
+<text x="174" y="3327" font-size="12" fill="#172a3a">t-cf · ev-e0 · e-v1 → e-v2 · mechanism: consciousness_transfer · relation: {&quot;kind&quot;: &quot;different_universes&quot;} · followed by L3</text>
+</g>
+<g >
+<line x1="32" y1="3372" x2="2389" y2="3372" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="3401" font-size="18" fill="#172a3a" font-weight="bold">Thread / ev-e0</text>
+</g>
+<g >
+<rect x="32" y="3420" width="2357" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3443" font-size="11" fill="#087d60" font-weight="bold">ROUTE 01</text>
+<text x="174" y="3443" font-size="12" fill="#172a3a">V1 · v1 · e-start → e-verse-ap · {&quot;entry&quot;: &quot;e-start&quot;, &quot;exit&quot;: &quot;e-verse-ap&quot;, &quot;id&quot;: &quot;v1&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;E0&quot;}</text>
+</g>
+<g >
+<rect x="32" y="3470" width="2357" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3493" font-size="11" fill="#087d60" font-weight="bold">ROUTE 02</text>
+<text x="174" y="3493" font-size="12" fill="#172a3a">V2 · v2 · e-a → e-a · {&quot;entry&quot;: &quot;e-a&quot;, &quot;exit&quot;: &quot;e-a&quot;, &quot;id&quot;: &quot;v2&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;A&quot;}</text>
+</g>
+<g >
+<rect x="32" y="3520" width="2357" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3543" font-size="11" fill="#087d60" font-weight="bold">ROUTE 03</text>
+<text x="174" y="3543" font-size="12" fill="#172a3a">V3 · v3 · e-v1 → e-v1 · {&quot;entry&quot;: &quot;e-v1&quot;, &quot;exit&quot;: &quot;e-v1&quot;, &quot;id&quot;: &quot;v3&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;V1&quot;}</text>
+</g>
+<g >
+<rect x="32" y="3570" width="2357" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3593" font-size="11" fill="#087d60" font-weight="bold">ROUTE 04</text>
+<text x="174" y="3593" font-size="12" fill="#172a3a">V4 · v4 · e-v2 → e-v2 · {&quot;entry&quot;: &quot;e-v2&quot;, &quot;exit&quot;: &quot;e-v2&quot;, &quot;id&quot;: &quot;v4&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;V2&quot;}</text>
+</g>
+<g >
+<rect x="32" y="3620" width="2357" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3643" font-size="11" fill="#087d60" font-weight="bold">ROUTE 05</text>
+<text x="174" y="3643" font-size="12" fill="#172a3a">L1 · v1 → v2 · {&quot;from&quot;: &quot;v1&quot;, &quot;kind&quot;: &quot;transfer&quot;, &quot;to&quot;: &quot;v2&quot;, &quot;via&quot;: &quot;t-ap&quot;}</text>
+</g>
+<g >
+<rect x="32" y="3670" width="2357" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3693" font-size="11" fill="#087d60" font-weight="bold">ROUTE 06</text>
+<text x="174" y="3693" font-size="12" fill="#172a3a">L2 · v2 → v3 · {&quot;from&quot;: &quot;v2&quot;, &quot;kind&quot;: &quot;transfer&quot;, &quot;to&quot;: &quot;v3&quot;, &quot;via&quot;: &quot;t-hd&quot;}</text>
+</g>
+<g >
+<rect x="32" y="3720" width="2357" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3743" font-size="11" fill="#087d60" font-weight="bold">ROUTE 07</text>
+<text x="174" y="3743" font-size="12" fill="#172a3a">L3 · v3 → v4 · {&quot;from&quot;: &quot;v3&quot;, &quot;kind&quot;: &quot;transfer&quot;, &quot;to&quot;: &quot;v4&quot;, &quot;via&quot;: &quot;t-cf&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="3788" x2="2389" y2="3788" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="3817" font-size="18" fill="#172a3a" font-weight="bold">Interpretive assumptions / model notes</text>
+</g>
+<g >
+<rect x="32" y="3836" width="2357" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3859" font-size="11" fill="#526575" font-weight="bold">NOTE 01</text>
+<text x="174" y="3859" font-size="12" fill="#172a3a">Coexisting infinitude of verses; each choice forks a new verse (branch).</text>
+</g>
+<g >
+<rect x="32" y="3886" width="2357" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3909" font-size="11" fill="#526575" font-weight="bold">NOTE 02</text>
+<text x="174" y="3909" font-size="12" fill="#172a3a">Verse-jump = consciousness transfer into a parallel self; the body stays.</text>
+</g>
+<g >
+<rect x="32" y="3936" width="2357" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3959" font-size="11" fill="#526575" font-weight="bold">NOTE 03</text>
+<text x="174" y="3959" font-size="12" fill="#172a3a">Many actors (Evelyn, Waymond, Joy/Jobu) — Evelyn&#x27;s thread charted here, others are separate graphs.</text>
+</g>
+<g >
+<rect x="32" y="3986" width="2357" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4009" font-size="11" fill="#526575" font-weight="bold">NOTE 04</text>
+<text x="174" y="4009" font-size="12" fill="#172a3a">Alpha verse has no native Evelyn — arrival, not a born counterpart.</text>
+</g>
+<g >
+<rect x="32" y="4036" width="2357" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4059" font-size="11" fill="#526575" font-weight="bold">NOTE 05</text>
+<text x="174" y="4059" font-size="12" fill="#172a3a">Declared merge count: 0. A count supplies no merge locations; none are invented.</text>
+</g>
+<g >
+<line x1="32" y1="4104" x2="2389" y2="4104" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="4133" font-size="18" fill="#172a3a" font-weight="bold">Diagnostics — records retained, nothing guessed</text>
+</g>
+<g >
+<rect x="32" y="4152" width="2357" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4175" font-size="11" fill="#a33732" font-weight="bold">CHECK 01</text>
+<text x="174" y="4175" font-size="12" fill="#172a3a">Split S1 outcome +: declared world &#x27;E0&#x27; disagrees with event world &#x27;A&#x27;; the event is the connection anchor.</text>
+</g>
+<g id="evidence">
+<line x1="32" y1="4234" x2="2389" y2="4234" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="4263" font-size="18" fill="#172a3a" font-weight="bold">Evidence / complete citation register</text>
+</g>
+<text x="40" y="4294" font-size="12" fill="#526575">Status is the supplied evidence status, not a truth rating. Repeated citations are deduplicated; all owners remain listed.</text>
+<g id="evidence-1">
+<rect x="32" y="4315" width="2357" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4338" font-size="11" fill="#285ac7" font-weight="bold">[1]</text>
+<text x="174" y="4338" font-size="12" fill="#172a3a">source: canon · locator: Evelyn at the laundromat before the IRS audit · status: unavailable · Referenced by: document / e-start</text>
+</g>
+<g id="evidence-2">
+<rect x="32" y="4365" width="2357" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4388" font-size="11" fill="#285ac7" font-weight="bold">[2]</text>
+<text x="174" y="4388" font-size="12" fill="#172a3a">source: canon · locator: She learns to verse-jump into her parallel selves · status: unavailable · Referenced by: document / e-verse-ap</text>
+</g>
+<g id="evidence-3">
+<rect x="32" y="4415" width="2357" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4438" font-size="11" fill="#285ac7" font-weight="bold">[3]</text>
+<text x="174" y="4438" font-size="12" fill="#172a3a">source: canon · locator: A decision that spawns a branch verse · status: unavailable · Referenced by: document / e-choice</text>
+</g>
+<g id="evidence-4">
+<rect x="32" y="4465" width="2357" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4488" font-size="11" fill="#285ac7" font-weight="bold">[4]</text>
+<text x="174" y="4488" font-size="12" fill="#172a3a">source: canon · locator: She enters the Alpha verse · status: unavailable · Referenced by: document / e-a</text>
+</g>
+<g id="evidence-5">
+<rect x="32" y="4515" width="2357" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4538" font-size="11" fill="#285ac7" font-weight="bold">[5]</text>
+<text x="174" y="4538" font-size="12" fill="#172a3a">source: canon · locator: She hops into the hot-dog-fingers verse · status: unavailable · Referenced by: document / e-v1</text>
+</g>
+<g id="evidence-6">
+<rect x="32" y="4565" width="2357" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4588" font-size="11" fill="#285ac7" font-weight="bold">[6]</text>
+<text x="174" y="4588" font-size="12" fill="#172a3a">source: canon · locator: She takes comfort in a quieter verse · status: unavailable · Referenced by: document / e-v2</text>
+</g>
+<g id="evidence-7">
+<rect x="32" y="4615" width="2357" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4638" font-size="11" fill="#285ac7" font-weight="bold">[7]</text>
+<text x="174" y="4638" font-size="12" fill="#172a3a">source: canon · locator: She chooses the googly-eyed family in the base verse · status: unavailable · Referenced by: document / e-end</text>
+</g>
+<g >
+<line x1="32" y1="4683" x2="2389" y2="4683" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="4712" font-size="18" fill="#172a3a" font-weight="bold">Sources — including fixture provenance</text>
+</g>
+<g >
+<rect x="32" y="4731" width="2357" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4754" font-size="11" fill="#526575" font-weight="bold">canon</text>
+<text x="174" y="4754" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;canon&quot;, &quot;kind&quot;: &quot;canon_statement&quot;, &quot;text&quot;: &quot;Evelyn can absorb the lives of her parallel selves; every choice branches a verse; the Alpha world holds</text>
+<text x="174" y="4772" font-size="12" fill="#172a3a">the verse-jump tech.&quot;, &quot;title&quot;: &quot;FILM — structural reading&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="4815" x2="2389" y2="4815" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="4844" font-size="18" fill="#172a3a" font-weight="bold">Characters</text>
+</g>
+<g >
+<rect x="32" y="4863" width="2357" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4886" font-size="11" fill="#526575" font-weight="bold">evelyn</text>
+<text x="174" y="4886" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;evelyn&quot;, &quot;label&quot;: &quot;Evelyn&quot;}</text>
+</g>
+<g >
+<rect x="32" y="4913" width="2357" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4936" font-size="11" fill="#526575" font-weight="bold">joy</text>
+<text x="174" y="4936" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;joy&quot;, &quot;label&quot;: &quot;Joy / Jobu&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="4981" x2="2389" y2="4981" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="5010" font-size="18" fill="#172a3a" font-weight="bold">Travellers</text>
+</g>
+<g >
+<rect x="32" y="5029" width="2357" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5052" font-size="11" fill="#526575" font-weight="bold">ev-e0</text>
+<text x="174" y="5052" font-size="12" fill="#172a3a">{&quot;character&quot;: &quot;evelyn&quot;, &quot;id&quot;: &quot;ev-e0&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="5097" x2="2389" y2="5097" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="5126" font-size="18" fill="#172a3a" font-weight="bold">Namespaces</text>
+</g>
+<g >
+<rect x="32" y="5145" width="2357" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5168" font-size="11" fill="#526575" font-weight="bold">EE</text>
+<text x="174" y="5168" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;EE&quot;, &quot;label&quot;: &quot;Everything Everywhere&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="5213" x2="2389" y2="5213" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="5242" font-size="18" fill="#172a3a" font-weight="bold">Chart note</text>
+</g>
+<text x="40" y="5274" font-size="13" fill="#526575">Multiverse coexistence; consciousness transfer between already-running verses.</text>
 </svg>

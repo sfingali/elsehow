@@ -1,53 +1,567 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="682" viewBox="0 0 900 682" font-family="Arial, Helvetica, sans-serif">
-<rect width="900" height="682" fill="#ffffff"/>
-<g transform="translate(0,0)"><text x="225" y="24" text-anchor="middle" font-size="18" font-weight="bold" fill="#202124">Groundhog Day</text>
-<text x="225" y="42" text-anchor="middle" font-size="11" fill="#5f6368">GHD — Groundhog Day · P3 closed loop - mind persists across resets</text>
-<line x1="79.1" y1="94.2" x2="21.7" y2="328.0" stroke="#9aa0a6" stroke-width="2" stroke-opacity="1.0"/>
-<rect x="93.0" y="72.0" width="14" height="14" fill="#e8f0fe" stroke="#202124"/>
-<text x="100.0" y="58.0" text-anchor="middle" font-size="11" fill="#202124">U: February 2, Punxsutawney</text>
-<polygon points="65.4,91.7 92.8,96.8 35.4,330.6 8.0,325.5" fill="#e8f0fe" stroke="#9aa0a6" stroke-width="1"/>
-<line x1="77.9" y1="98.3" x2="66.6" y2="144.1" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
-<line x1="55.4" y1="189.8" x2="44.2" y2="235.6" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
-<line x1="32.9" y1="281.3" x2="21.7" y2="327.0" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
-<line x1="66.6" y1="144.1" x2="55.4" y2="189.8" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
-<line x1="44.2" y1="235.6" x2="32.9" y2="281.3" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
-<rect x="71.9" y="93.3" width="12" height="12" fill="#3d8f4f" stroke="#202124"/>
-<text x="77.9" y="115.3" text-anchor="middle" font-size="9" fill="#5f6368">0</text>
-<rect x="60.6" y="139.1" width="12" height="12" fill="#5f6368" stroke="#202124"/>
-<text x="66.6" y="161.1" text-anchor="middle" font-size="9" fill="#5f6368">5</text>
-<circle cx="55.4" cy="190.8" r="5" fill="#ffffff" stroke="#202124"/>
-<text x="55.4" y="206.8" text-anchor="middle" font-size="9" fill="#5f6368">10</text>
-<rect x="38.2" y="230.6" width="12" height="12" fill="#5f6368" stroke="#202124"/>
-<text x="44.2" y="252.6" text-anchor="middle" font-size="9" fill="#5f6368">15</text>
-<circle cx="32.9" cy="282.3" r="5" fill="#ffffff" stroke="#202124"/>
-<text x="32.9" y="298.3" text-anchor="middle" font-size="9" fill="#5f6368">20</text>
-<rect x="15.7" y="322.0" width="12" height="12" fill="#5f6368" stroke="#202124"/>
-<text x="21.7" y="344.0" text-anchor="middle" font-size="9" fill="#5f6368">25</text>
-<text x="80.3" y="151.6" font-size="14" font-weight="bold" fill="#2f7d4f">●</text>
-<text x="84.3" y="151.6" font-size="8" fill="#5f6368">phil-body</text>
-<text x="57.9" y="243.1" font-size="14" font-weight="bold" fill="#2f7d4f">●</text>
-<text x="61.9" y="243.1" font-size="8" fill="#5f6368">phil-body</text>
-<text x="35.4" y="334.6" font-size="14" font-weight="bold" fill="#2f7d4f">●</text>
-<text x="39.4" y="334.6" font-size="8" fill="#5f6368">phil-body</text>
-<text x="80.3" y="151.6" font-size="14" font-weight="bold" fill="#2f7d4f">●</text>
-<text x="84.3" y="151.6" font-size="8" fill="#5f6368">rita-body</text>
-<text x="57.9" y="243.1" font-size="14" font-weight="bold" fill="#2f7d4f">●</text>
-<text x="61.9" y="243.1" font-size="8" fill="#5f6368">rita-body</text>
-<text x="35.4" y="334.6" font-size="14" font-weight="bold" fill="#2f7d4f">●</text>
-<text x="39.4" y="334.6" font-size="8" fill="#5f6368">rita-body</text>
-<line x1="77.9" y1="99.3" x2="89.9" y2="121.3" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="89.9" y="129.3" font-size="9" fill="#5f6368">6:00 - Sonny &amp; Cher; the</text>
-<text x="89.9" y="140.3" font-size="9" fill="#5f6368">day begins (first time)</text>
-<line x1="66.6" y1="145.1" x2="78.6" y2="161.6" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="78.6" y="169.6" font-size="9" fill="#5f6368">6:00 reset - day repeats</text>
-<line x1="55.4" y1="190.8" x2="67.4" y2="212.8" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="67.4" y="220.8" font-size="9" fill="#5f6368">6:00 again - same day,</text>
-<text x="67.4" y="231.8" font-size="9" fill="#5f6368">carried memory</text>
-<line x1="44.2" y1="236.6" x2="56.2" y2="253.1" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="56.2" y="261.1" font-size="9" fill="#5f6368">6:00 reset - day repeats</text>
-<line x1="32.9" y1="282.3" x2="44.9" y2="298.8" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="44.9" y="306.8" font-size="9" fill="#5f6368">6:00 - he wakes changed</text>
-<line x1="21.7" y1="328.0" x2="33.7" y2="350.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
-<text x="33.7" y="358.0" font-size="9" fill="#5f6368">February 3 - the day no</text>
-<text x="33.7" y="369.0" font-size="9" fill="#5f6368">longer repeats</text></g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1124" height="5773" viewBox="0 0 1124 5773" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" role="img" aria-labelledby="atlas-title atlas-desc">
+<title id="atlas-title">Groundhog Day</title>
+<desc id="atlas-desc">Worlds and Thread atlas. Story order progresses downward. Connections use reserved routing space. Full relationship and citation ledgers follow the chart. The HTML companion contains the complete accessible model.</desc>
+<rect width="1124" height="5773" fill="#f5f6f8"/>
+<defs >
+<marker id="arrow-split" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
+<path d="M 1 1 L 9 5 L 1 9 Z" fill="#ad6200"/>
+</marker>
+<marker id="arrow-transfer" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
+<path d="M 1 1 L 9 5 L 1 9 Z" fill="#285ac7"/>
+</marker>
+<marker id="arrow-route" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
+<path d="M 1 1 L 9 5 L 1 9 Z" fill="#087d60"/>
+</marker>
+<marker id="arrow-reference" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
+<path d="M 1 1 L 9 5 L 1 9 Z" fill="#7a637c"/>
+</marker>
+</defs>
+
+<style>
+text { font-kerning: normal; }
+a { cursor: pointer; }
+a:hover text { text-decoration: underline; }
+.card:hover > rect { stroke: #879ead; }
+:target > rect { stroke: #285ac7; stroke-width: 2; }
+.hide-split .layer-split,
+.hide-transfer .layer-transfer,
+.hide-route .layer-route,
+.hide-evidence .citation { display: none; }
+</style>
+<text letter-spacing="1.5" x="40" y="47" font-size="11" fill="#087d60" font-weight="bold">ELSEHOW  /  WORLDS &amp; THREAD</text>
+<text x="40" y="103" font-size="34" fill="#172a3a" font-weight="bold">Groundhog Day</text>
+<text x="40" y="135" font-size="15" fill="#526575">P3 closed loop - mind persists across resets</text>
+<text x="40" y="169" font-size="12" fill="#526575">2.5D · cabinet axonometric · depth separates surfaces only · Story-order ranks, not elapsed time. Equal ranks do not assert physical</text>
+<text x="40" y="187" font-size="12" fill="#526575">simultaneity.</text>
+<line x1="45" y1="221" x2="76" y2="221" stroke="#ad6200" stroke-width="4"/>
+<text x="90" y="223" font-size="12" fill="#172a3a">Amber S± — Split outcomes. + and − are signs, not fates.</text>
+<line x1="45" y1="248" x2="76" y2="248" stroke="#285ac7" stroke-width="4"/>
+<text x="90" y="250" font-size="12" fill="#172a3a">Blue T — Directed transfers. B body · M memory · C consciousness · S signal · ? literal/unspecified mechanism.</text>
+<line x1="45" y1="275" x2="76" y2="275" stroke="#087d60" stroke-width="4"/>
+<text x="90" y="277" font-size="12" fill="#172a3a">Emerald V / L — Numbered visits and explicit links only. Emerald centre on a cable means the route follows that connection.</text>
+<line x1="45" y1="302" x2="76" y2="302" stroke="#667b8a" stroke-width="4"/>
+<text x="90" y="304" font-size="12" fill="#172a3a">Slate rail — World identity. Cutoff means chart boundary, not destruction. Crossings are bridges; only markers are joins.</text>
+<line x1="45" y1="329" x2="76" y2="329" stroke="#7a637c" stroke-width="4"/>
+<text x="90" y="331" font-size="12" fill="#172a3a">Evidence / fate — [n] opens the evidence record. × dead · ● alive · ? unknown · ∅ nonexistent. Purple dotted connections are</text>
+<text x="90" y="349" font-size="12" fill="#172a3a">annotation references.</text>
+<g >
+<line x1="32" y1="376" x2="1092" y2="376" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="405" font-size="18" fill="#172a3a" font-weight="bold">Declared interpretation</text>
+</g>
+<g >
+<rect x="32" y="424" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="447" font-size="11" fill="#526575" font-weight="bold">PROFILE</text>
+<text x="174" y="447" font-size="12" fill="#172a3a">Profile: P3 · rules: none</text>
+</g>
+<g >
+<rect x="32" y="474" width="1060" height="76" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="497" font-size="11" fill="#526575" font-weight="bold">PARAMETERS</text>
+<text x="174" y="497" font-size="12" fill="#172a3a">history_model: iterations · branching: overwrite · coexistence: single_active · time_mechanics: [&quot;memory&quot;] · joined_worlds:</text>
+<text x="174" y="515" font-size="12" fill="#172a3a">not_preexist · turnstiles: none · protagonist_scope: singular · axis: story_order · validation: evidence_pending · merges:</text>
+<text x="174" y="533" font-size="12" fill="#172a3a">forbidden · genealogy: acyclic</text>
+</g>
+<g >
+<rect x="32" y="558" width="1060" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="581" font-size="11" fill="#526575" font-weight="bold">POLICY</text>
+<text x="174" y="581" font-size="12" fill="#172a3a">Explicit records determine geometry. Profile declarations do not manufacture branches, activation intervals, genealogy,</text>
+<text x="174" y="599" font-size="12" fill="#172a3a">repeated worlds or replacement links. No reset is drawn. World-time coordinates are unavailable in this contract.</text>
+</g>
+<g id="g1">
+<line x1="32" y1="640" x2="1092" y2="640" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="669" font-size="18" fill="#172a3a" font-weight="bold">GHD  /  Groundhog Day</text>
+</g>
+<text x="40" y="700" font-size="12" fill="#526575">1 declared worlds · 6 events · 0 transfers · 0 split records</text>
+<g transform="translate(0 732.00)" role="group" aria-label="Atlas for GHD">
+<text x="24" y="20" font-size="11" fill="#526575" font-weight="bold">STORY</text>
+<text x="24" y="37" font-size="11" fill="#526575" font-weight="bold">ORDER ↓</text>
+<polygon points="697.00,135.80 685.00,143.00 685.00,2557.00 697.00,2549.80" fill="#d9e2ea" stroke="#becbd6" stroke-width="1"/>
+<polygon points="154.00,2549.80 697.00,2549.80 685.00,2557.00 142.00,2557.00" fill="#cbd7e1" stroke="#b7c6d2" stroke-width="1"/>
+<polygon points="154.00,135.80 697.00,135.80 697.00,2549.80 154.00,2549.80" fill="#eef3f7" stroke="#c7d3dd" stroke-width="1"/>
+<g class="card" role="group" aria-label="{}">
+<rect x="369.0" y="-1.1999999999999993" width="304" height="101" fill="#e7edf2" rx="9"/>
+<rect x="369.0" y="-3.1999999999999993" width="304" height="101" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<text x="385.0" y="27.8" font-size="15" fill="#416f99" font-weight="bold">U</text>
+<text x="385.0" y="52.8" font-size="14" fill="#172a3a" font-weight="bold">February 2, Punxsutawney</text>
+<text x="385.0" y="75.8" font-size="11" fill="#526575">INITIAL IN MODEL</text>
+</g>
+<rect x="168.0" y="4.800000000000001" width="5" height="87" fill="#416f99" rx="2"/>
+<line x1="20" y1="147.8" x2="998" y2="147.8" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="175.8" font-size="12" fill="#172a3a" font-weight="bold">0</text>
+<text x="24" y="200.8" font-size="10" fill="#526575">rank 01</text>
+<line x1="20" y1="373.8" x2="998" y2="373.8" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="401.8" font-size="12" fill="#172a3a" font-weight="bold">5</text>
+<text x="24" y="426.8" font-size="10" fill="#526575">rank 02</text>
+<line x1="20" y1="777.8" x2="998" y2="777.8" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="805.8" font-size="12" fill="#172a3a" font-weight="bold">10</text>
+<text x="24" y="830.8" font-size="10" fill="#526575">rank 03</text>
+<line x1="20" y1="1029.8" x2="998" y2="1029.8" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="1057.8" font-size="12" fill="#172a3a" font-weight="bold">12</text>
+<text x="24" y="1082.8" font-size="10" fill="#526575">rank 04</text>
+<line x1="20" y1="1255.8" x2="998" y2="1255.8" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="1283.8" font-size="12" fill="#172a3a" font-weight="bold">15</text>
+<text x="24" y="1308.8" font-size="10" fill="#526575">rank 05</text>
+<line x1="20" y1="1659.8" x2="998" y2="1659.8" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="1687.8" font-size="12" fill="#172a3a" font-weight="bold">20</text>
+<text x="24" y="1712.8" font-size="10" fill="#526575">rank 06</text>
+<line x1="20" y1="1891.8" x2="998" y2="1891.8" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="1919.8" font-size="12" fill="#172a3a" font-weight="bold">22</text>
+<text x="24" y="1944.8" font-size="10" fill="#526575">rank 07</text>
+<line x1="20" y1="2117.8" x2="998" y2="2117.8" stroke="#d3dde5" stroke-width="1"/>
+<text x="24" y="2145.8" font-size="12" fill="#172a3a" font-weight="bold">25</text>
+<text x="24" y="2170.8" font-size="10" fill="#526575">rank 08</text>
+<path d="M 345.00 147.80 L 345.00 2541.80" fill="none" stroke="#667b8a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="339.0" y="141.8" width="12" height="12" fill="#ffffff" stroke="#416f99" rx="1" stroke-width="2"/>
+<line x1="338.0" y1="2541.8" x2="352.0" y2="2541.8" stroke="#667b8a" stroke-width="2"/>
+<text x="360.0" y="2546.8" font-size="10" fill="#526575">End of displayed extent</text>
+<g class="layer-route">
+<title>V1 · {&quot;entry&quot;: &quot;s0&quot;, &quot;exit&quot;: &quot;x0&quot;, &quot;id&quot;: &quot;v0&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;U&quot;}</title>
+<path d="M 337.00 192.80 L 328.00 192.80 L 328.00 418.80 L 335.00 418.80" fill="none" stroke="#ffffff" stroke-width="8.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 337.00 192.80 L 328.00 192.80 L 328.00 418.80 L 335.00 418.80" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+<path d="M 328.00 296.80 L 328.00 314.80" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+</g>
+<g class="layer-route">
+<title>V2 · {&quot;entry&quot;: &quot;s1&quot;, &quot;exit&quot;: &quot;x1&quot;, &quot;id&quot;: &quot;v1&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;U&quot;}</title>
+<path d="M 337.00 822.80 L 318.00 822.80 L 318.00 1300.80 L 335.00 1300.80" fill="none" stroke="#ffffff" stroke-width="8.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 337.00 822.80 L 318.00 822.80 L 318.00 1300.80 L 335.00 1300.80" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+<path d="M 318.00 1052.80 L 318.00 1070.80" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+</g>
+<g class="layer-route">
+<title>V3 · {&quot;entry&quot;: &quot;s2&quot;, &quot;exit&quot;: &quot;end&quot;, &quot;id&quot;: &quot;v2&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;U&quot;}</title>
+<path d="M 337.00 1704.80 L 308.00 1704.80 L 308.00 2162.80 L 335.00 2162.80" fill="none" stroke="#ffffff" stroke-width="8.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 337.00 1704.80 L 308.00 1704.80 L 308.00 2162.80 L 335.00 2162.80" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+<path d="M 308.00 1924.80 L 308.00 1942.80" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+</g>
+<g class="layer-route" id="g1-edge-1">
+<title>L1 · v0 → v1 · {&quot;from&quot;: &quot;v0&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;v1&quot;, &quot;via&quot;: null}
+{&quot;from&quot;: &quot;v0&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;v1&quot;, &quot;via&quot;: null}</title>
+<line x1="336.0" y1="418.8" x2="344.0" y2="414.0" stroke="#ffffff" stroke-width="8"/>
+<line x1="336.0" y1="418.8" x2="344.0" y2="414.0" stroke="#087d60" stroke-width="3"/>
+<line x1="335.0" y1="822.8" x2="343.0" y2="818.0" stroke="#ffffff" stroke-width="8"/>
+<line x1="335.0" y1="822.8" x2="343.0" y2="818.0" stroke="#087d60" stroke-width="3"/>
+<path d="M 344.00 414.00 L 293.00 414.00 L 293.00 743.00 L 182.00 743.00 L 182.00 995.00 L 293.00 995.00 L 293.00 818.00 L 343.00 818.00" fill="none" stroke="#ffffff" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 344.00 414.00 L 293.00 414.00 L 293.00 743.00 L 182.00 743.00 L 182.00 995.00 L 293.00 995.00 L 293.00 818.00 L 343.00 818.00" fill="none" stroke="#087d60" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+<a href="#g1-relationships" aria-label="L1 · v0 → v1 · {&quot;from&quot;: &quot;v0&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;v1&quot;, &quot;via&quot;: null}">
+<rect x="213.5" y="733.0" width="48" height="20" fill="#ffffff" stroke="#087d60" rx="6" stroke-width="1.6"/>
+<text text-anchor="middle" x="237.5" y="747.0" font-size="11" fill="#087d60" font-weight="bold">L1</text>
+</a>
+</g>
+<g class="layer-route" id="g1-edge-2">
+<title>L2 · v1 → v2 · {&quot;from&quot;: &quot;v1&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;v2&quot;, &quot;via&quot;: null}
+{&quot;from&quot;: &quot;v1&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;v2&quot;, &quot;via&quot;: null}</title>
+<line x1="336.0" y1="1300.8" x2="344.0" y2="1296.0" stroke="#ffffff" stroke-width="8"/>
+<line x1="336.0" y1="1300.8" x2="344.0" y2="1296.0" stroke="#087d60" stroke-width="3"/>
+<line x1="335.0" y1="1704.8" x2="343.0" y2="1700.0" stroke="#ffffff" stroke-width="8"/>
+<line x1="335.0" y1="1704.8" x2="343.0" y2="1700.0" stroke="#087d60" stroke-width="3"/>
+<path d="M 344.00 1296.00 L 293.00 1296.00 L 293.00 1625.00 L 194.00 1625.00 L 194.00 1857.00 L 293.00 1857.00 L 293.00 1700.00 L 343.00 1700.00" fill="none" stroke="#ffffff" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 344.00 1296.00 L 293.00 1296.00 L 293.00 1625.00 L 194.00 1625.00 L 194.00 1857.00 L 293.00 1857.00 L 293.00 1700.00 L 343.00 1700.00" fill="none" stroke="#087d60" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
+<a href="#g1-relationships" aria-label="L2 · v1 → v2 · {&quot;from&quot;: &quot;v1&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;v2&quot;, &quot;via&quot;: null}">
+<rect x="219.5" y="1615.0" width="48" height="20" fill="#ffffff" stroke="#087d60" rx="6" stroke-width="1.6"/>
+<text text-anchor="middle" x="243.5" y="1629.0" font-size="11" fill="#087d60" font-weight="bold">L2</text>
+</a>
+</g>
+<line x1="355.0" y1="192.8" x2="369.0" y2="192.8" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-1" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Opening morning&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;s0&quot;, &quot;kind&quot;: &quot;start&quot;, &quot;label&quot;: &quot;6:00 - Sonny &amp; Cher; the day begins (first time)&quot;, &quot;order&quot;: 0, &quot;universe&quot;: &quot;U&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Opening morning&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;s0&quot;, &quot;kind&quot;: &quot;start&quot;, &quot;label&quot;: &quot;6:00 - Sonny &amp; Cher; the day begins (first time)&quot;, &quot;order&quot;: 0, &quot;universe&quot;: &quot;U&quot;}</title>
+<rect x="369.0" y="169.8" width="304" height="158" fill="#e7edf2" rx="9"/>
+<rect x="369.0" y="167.8" width="304" height="158" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="369.0" y="179.8" width="3" height="134" fill="#416f99" rx="1.5"/>
+<text x="385.0" y="194.8" font-size="11" fill="#526575" font-weight="bold">START · s0</text>
+<text x="385.0" y="220.8" font-size="14" fill="#172a3a">6:00 - Sonny &amp; Cher; the day</text>
+<text x="385.0" y="240.8" font-size="14" fill="#172a3a">begins (first time)</text>
+<a href="#evidence-1" class="citation" aria-label="[1] · Locator Opening morning · unavailable">
+<text x="385.0" y="263.8" font-size="11" fill="#285ac7">[1] · Locator Opening morning ·</text>
+<text x="385.0" y="280.8" font-size="11" fill="#285ac7">unavailable</text>
+</a>
+<text x="385.0" y="303.8" font-size="11" fill="#087d60" font-weight="bold">V1 entry · phil-mind</text>
+</g>
+<line x1="355.0" y1="418.8" x2="369.0" y2="418.8" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-2" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;First 6:00 wake-up repeat&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;x0&quot;, &quot;kind&quot;: &quot;cutoff&quot;, &quot;label&quot;: &quot;6:00 reset - day repeats&quot;, &quot;order&quot;: 5, &quot;universe&quot;: &quot;U&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;First 6:00 wake-up repeat&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;x0&quot;, &quot;kind&quot;: &quot;cutoff&quot;, &quot;label&quot;: &quot;6:00 reset - day repeats&quot;, &quot;order&quot;: 5, &quot;universe&quot;: &quot;U&quot;}</title>
+<rect x="369.0" y="395.8" width="304" height="310" fill="#e7edf2" rx="9"/>
+<rect x="369.0" y="393.8" width="304" height="310" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="369.0" y="405.8" width="3" height="286" fill="#416f99" rx="1.5"/>
+<text x="385.0" y="420.8" font-size="11" fill="#526575" font-weight="bold">CUTOFF · x0</text>
+<text x="385.0" y="446.8" font-size="14" fill="#172a3a">6:00 reset - day repeats</text>
+<a href="#evidence-2" class="citation" aria-label="[2] · Locator First 6:00 wake-up repeat · unavailable">
+<text x="385.0" y="469.8" font-size="11" fill="#285ac7">[2] · Locator First 6:00 wake-up repeat</text>
+<text x="385.0" y="486.8" font-size="11" fill="#285ac7">· unavailable</text>
+</a>
+<text x="385.0" y="510.8" font-size="12" fill="#087d60" font-weight="bold">● ALIVE · phil-body</text>
+<text x="385.0" y="532.8" font-size="11" fill="#526575">Fate f-phil-r0 · at x0</text>
+<a href="#evidence-9" class="citation" aria-label="[9] · Locator Body resets with the day · unavailable">
+<text x="385.0" y="555.8" font-size="11" fill="#285ac7">[9] · Locator Body resets with the day</text>
+<text x="385.0" y="572.8" font-size="11" fill="#285ac7">· unavailable</text>
+</a>
+<text x="385.0" y="596.8" font-size="12" fill="#087d60" font-weight="bold">● ALIVE · rita-body</text>
+<text x="385.0" y="618.8" font-size="11" fill="#526575">Fate f-rita-r0 · at x0</text>
+<a href="#evidence-11" class="citation" aria-label="[11] · Locator Rita in represented repetition 0 · unavailable">
+<text x="385.0" y="641.8" font-size="11" fill="#285ac7">[11] · Locator Rita in represented</text>
+<text x="385.0" y="658.8" font-size="11" fill="#285ac7">repetition 0 · unavailable</text>
+</a>
+<text x="385.0" y="681.8" font-size="11" fill="#087d60" font-weight="bold">V1 exit · phil-mind</text>
+</g>
+<line x1="355.0" y1="822.8" x2="369.0" y2="822.8" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-3" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Montage into exhaustion&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;s1&quot;, &quot;kind&quot;: &quot;entry&quot;, &quot;label&quot;: &quot;6:00 again - same day, carried memory&quot;, &quot;order&quot;: 10, &quot;universe&quot;: &quot;U&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Montage into exhaustion&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;s1&quot;, &quot;kind&quot;: &quot;entry&quot;, &quot;label&quot;: &quot;6:00 again - same day, carried memory&quot;, &quot;order&quot;: 10, &quot;universe&quot;: &quot;U&quot;}</title>
+<rect x="369.0" y="799.8" width="304" height="158" fill="#e7edf2" rx="9"/>
+<rect x="369.0" y="797.8" width="304" height="158" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="369.0" y="809.8" width="3" height="134" fill="#416f99" rx="1.5"/>
+<text x="385.0" y="824.8" font-size="11" fill="#526575" font-weight="bold">ENTRY · s1</text>
+<text x="385.0" y="850.8" font-size="14" fill="#172a3a">6:00 again - same day, carried</text>
+<text x="385.0" y="870.8" font-size="14" fill="#172a3a">memory</text>
+<a href="#evidence-3" class="citation" aria-label="[3] · Locator Montage into exhaustion · unavailable">
+<text x="385.0" y="893.8" font-size="11" fill="#285ac7">[3] · Locator Montage into exhaustion</text>
+<text x="385.0" y="910.8" font-size="11" fill="#285ac7">· unavailable</text>
+</a>
+<text x="385.0" y="933.8" font-size="11" fill="#087d60" font-weight="bold">V2 entry · phil-mind</text>
+</g>
+<line x1="355.0" y1="1300.8" x2="369.0" y2="1300.8" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-4" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Reset after despair stretch&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;x1&quot;, &quot;kind&quot;: &quot;cutoff&quot;, &quot;label&quot;: &quot;6:00 reset - day repeats&quot;, &quot;order&quot;: 15, &quot;universe&quot;: &quot;U&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Reset after despair stretch&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;x1&quot;, &quot;kind&quot;: &quot;cutoff&quot;, &quot;label&quot;: &quot;6:00 reset - day repeats&quot;, &quot;order&quot;: 15, &quot;universe&quot;: &quot;U&quot;}</title>
+<rect x="369.0" y="1277.8" width="304" height="310" fill="#e7edf2" rx="9"/>
+<rect x="369.0" y="1275.8" width="304" height="310" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="369.0" y="1287.8" width="3" height="286" fill="#416f99" rx="1.5"/>
+<text x="385.0" y="1302.8" font-size="11" fill="#526575" font-weight="bold">CUTOFF · x1</text>
+<text x="385.0" y="1328.8" font-size="14" fill="#172a3a">6:00 reset - day repeats</text>
+<a href="#evidence-4" class="citation" aria-label="[4] · Locator Reset after despair stretch · unavailable">
+<text x="385.0" y="1351.8" font-size="11" fill="#285ac7">[4] · Locator Reset after despair</text>
+<text x="385.0" y="1368.8" font-size="11" fill="#285ac7">stretch · unavailable</text>
+</a>
+<text x="385.0" y="1392.8" font-size="12" fill="#087d60" font-weight="bold">● ALIVE · phil-body</text>
+<text x="385.0" y="1414.8" font-size="11" fill="#526575">Fate f-phil-r1 · at x1</text>
+<a href="#evidence-9" class="citation" aria-label="[9] · Locator Body resets with the day · unavailable">
+<text x="385.0" y="1437.8" font-size="11" fill="#285ac7">[9] · Locator Body resets with the day</text>
+<text x="385.0" y="1454.8" font-size="11" fill="#285ac7">· unavailable</text>
+</a>
+<text x="385.0" y="1478.8" font-size="12" fill="#087d60" font-weight="bold">● ALIVE · rita-body</text>
+<text x="385.0" y="1500.8" font-size="11" fill="#526575">Fate f-rita-r1 · at x1</text>
+<a href="#evidence-12" class="citation" aria-label="[12] · Locator Rita in represented repetition 1 · unavailable">
+<text x="385.0" y="1523.8" font-size="11" fill="#285ac7">[12] · Locator Rita in represented</text>
+<text x="385.0" y="1540.8" font-size="11" fill="#285ac7">repetition 1 · unavailable</text>
+</a>
+<text x="385.0" y="1563.8" font-size="11" fill="#087d60" font-weight="bold">V2 exit · phil-mind</text>
+</g>
+<line x1="355.0" y1="1704.8" x2="369.0" y2="1704.8" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-5" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Final February 2&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;s2&quot;, &quot;kind&quot;: &quot;entry&quot;, &quot;label&quot;: &quot;6:00 - he wakes changed&quot;, &quot;order&quot;: 20, &quot;universe&quot;: &quot;U&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Final February 2&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;s2&quot;, &quot;kind&quot;: &quot;entry&quot;, &quot;label&quot;: &quot;6:00 - he wakes changed&quot;, &quot;order&quot;: 20, &quot;universe&quot;: &quot;U&quot;}</title>
+<rect x="369.0" y="1681.8" width="304" height="138" fill="#e7edf2" rx="9"/>
+<rect x="369.0" y="1679.8" width="304" height="138" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="369.0" y="1691.8" width="3" height="114" fill="#416f99" rx="1.5"/>
+<text x="385.0" y="1706.8" font-size="11" fill="#526575" font-weight="bold">ENTRY · s2</text>
+<text x="385.0" y="1732.8" font-size="14" fill="#172a3a">6:00 - he wakes changed</text>
+<a href="#evidence-5" class="citation" aria-label="[5] · Locator Final February 2 · unavailable">
+<text x="385.0" y="1755.8" font-size="11" fill="#285ac7">[5] · Locator Final February 2 ·</text>
+<text x="385.0" y="1772.8" font-size="11" fill="#285ac7">unavailable</text>
+</a>
+<text x="385.0" y="1795.8" font-size="11" fill="#087d60" font-weight="bold">V3 entry · phil-mind</text>
+</g>
+<line x1="355.0" y1="2162.8" x2="369.0" y2="2162.8" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-6" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Ending awakening&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;end&quot;, &quot;kind&quot;: &quot;cutoff&quot;, &quot;label&quot;: &quot;February 3 - the day no longer repeats&quot;, &quot;order&quot;: 25, &quot;universe&quot;: &quot;U&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Ending awakening&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;end&quot;, &quot;kind&quot;: &quot;cutoff&quot;, &quot;label&quot;: &quot;February 3 - the day no longer repeats&quot;, &quot;order&quot;: 25, &quot;universe&quot;: &quot;U&quot;}</title>
+<rect x="369.0" y="2139.8" width="304" height="330" fill="#e7edf2" rx="9"/>
+<rect x="369.0" y="2137.8" width="304" height="330" fill="#ffffff" stroke="#d3dde5" rx="9"/>
+<rect x="369.0" y="2149.8" width="3" height="306" fill="#416f99" rx="1.5"/>
+<text x="385.0" y="2164.8" font-size="11" fill="#526575" font-weight="bold">CUTOFF · end</text>
+<text x="385.0" y="2190.8" font-size="14" fill="#172a3a">February 3 - the day no longer</text>
+<text x="385.0" y="2210.8" font-size="14" fill="#172a3a">repeats</text>
+<a href="#evidence-6" class="citation" aria-label="[6] · Locator Ending awakening · unavailable">
+<text x="385.0" y="2233.8" font-size="11" fill="#285ac7">[6] · Locator Ending awakening ·</text>
+<text x="385.0" y="2250.8" font-size="11" fill="#285ac7">unavailable</text>
+</a>
+<text x="385.0" y="2274.8" font-size="12" fill="#087d60" font-weight="bold">● ALIVE · phil-body</text>
+<text x="385.0" y="2296.8" font-size="11" fill="#526575">Fate f-phil-r2 · at end</text>
+<a href="#evidence-10" class="citation" aria-label="[10] · Locator Wakes on February 3 · unavailable">
+<text x="385.0" y="2319.8" font-size="11" fill="#285ac7">[10] · Locator Wakes on February 3 ·</text>
+<text x="385.0" y="2336.8" font-size="11" fill="#285ac7">unavailable</text>
+</a>
+<text x="385.0" y="2360.8" font-size="12" fill="#087d60" font-weight="bold">● ALIVE · rita-body</text>
+<text x="385.0" y="2382.8" font-size="11" fill="#526575">Fate f-rita-r2 · at end</text>
+<a href="#evidence-13" class="citation" aria-label="[13] · Locator Rita in the final represented day · unavailable">
+<text x="385.0" y="2405.8" font-size="11" fill="#285ac7">[13] · Locator Rita in the final</text>
+<text x="385.0" y="2422.8" font-size="11" fill="#285ac7">represented day · unavailable</text>
+</a>
+<text x="385.0" y="2445.8" font-size="11" fill="#087d60" font-weight="bold">V3 exit · phil-mind</text>
+</g>
+<line x1="355.0" y1="1074.8" x2="369.0" y2="1074.8" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-7" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Exhaustion montage&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;b-learn&quot;, &quot;order&quot;: 12, &quot;segment&quot;: &quot;seg-r1&quot;, &quot;text&quot;: &quot;Interventions stop working; nothing carries over but him&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Exhaustion montage&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;b-learn&quot;, &quot;order&quot;: 12, &quot;segment&quot;: &quot;seg-r1&quot;, &quot;text&quot;: &quot;Interventions stop working; nothing carries over but him&quot;}</title>
+<rect x="369.0" y="1051.8" width="304" height="158" fill="#e7edf2" rx="9"/>
+<rect x="369.0" y="1049.8" width="304" height="158" fill="#f9fafc" stroke="#d3dde5" rx="9"/>
+<rect x="369.0" y="1061.8" width="3" height="134" fill="#416f99" rx="1.5"/>
+<text x="385.0" y="1076.8" font-size="11" fill="#526575" font-weight="bold">BEAT · b-learn</text>
+<text x="385.0" y="1102.8" font-size="14" fill="#172a3a">Interventions stop working;</text>
+<text x="385.0" y="1122.8" font-size="14" fill="#172a3a">nothing carries over but him</text>
+<text x="385.0" y="1145.8" font-size="11" fill="#526575">Segment: seg-r1</text>
+<a href="#evidence-7" class="citation" aria-label="[7] · Locator Exhaustion montage · unavailable">
+<text x="385.0" y="1168.8" font-size="11" fill="#285ac7">[7] · Locator Exhaustion montage ·</text>
+<text x="385.0" y="1185.8" font-size="11" fill="#285ac7">unavailable</text>
+</a>
+</g>
+<line x1="355.0" y1="1936.8" x2="369.0" y2="1936.8" stroke="#416f99" stroke-width="1.8"/>
+<g id="g1-item-8" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Final day with Rita&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;b-rita&quot;, &quot;order&quot;: 22, &quot;segment&quot;: &quot;seg-r2&quot;, &quot;text&quot;: &quot;Rita sees the man he became in one day&quot;}">
+<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Final day with Rita&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;b-rita&quot;, &quot;order&quot;: 22, &quot;segment&quot;: &quot;seg-r2&quot;, &quot;text&quot;: &quot;Rita sees the man he became in one day&quot;}</title>
+<rect x="369.0" y="1913.8" width="304" height="158" fill="#e7edf2" rx="9"/>
+<rect x="369.0" y="1911.8" width="304" height="158" fill="#f9fafc" stroke="#d3dde5" rx="9"/>
+<rect x="369.0" y="1923.8" width="3" height="134" fill="#416f99" rx="1.5"/>
+<text x="385.0" y="1938.8" font-size="11" fill="#526575" font-weight="bold">BEAT · b-rita</text>
+<text x="385.0" y="1964.8" font-size="14" fill="#172a3a">Rita sees the man he became in</text>
+<text x="385.0" y="1984.8" font-size="14" fill="#172a3a">one day</text>
+<text x="385.0" y="2007.8" font-size="11" fill="#526575">Segment: seg-r2</text>
+<a href="#evidence-8" class="citation" aria-label="[8] · Locator Final day with Rita · unavailable">
+<text x="385.0" y="2030.8" font-size="11" fill="#285ac7">[8] · Locator Final day with Rita ·</text>
+<text x="385.0" y="2047.8" font-size="11" fill="#285ac7">unavailable</text>
+</a>
+</g>
+<g class="event-node">
+<title>s0 · 6:00 - Sonny &amp; Cher; the day begins (first time)</title>
+<circle cx="345.0" cy="192.8" r="11" fill="#ffffff"/>
+<rect x="338.0" y="185.8" width="14" height="14" fill="#087d60" stroke="#ffffff" rx="2" stroke-width="2"/>
+</g>
+<g class="event-node">
+<title>x0 · 6:00 reset - day repeats</title>
+<circle cx="345.0" cy="418.8" r="11" fill="#ffffff"/>
+<line x1="336.0" y1="414.8" x2="354.0" y2="414.8" stroke="#416f99" stroke-width="3"/>
+<line x1="336.0" y1="422.8" x2="354.0" y2="422.8" stroke="#416f99" stroke-width="3"/>
+</g>
+<g class="event-node">
+<title>s1 · 6:00 again - same day, carried memory</title>
+<circle cx="345.0" cy="822.8" r="11" fill="#ffffff"/>
+<circle cx="345.0" cy="822.8" r="8" fill="#ffffff" stroke="#416f99" stroke-width="2.5"/>
+<polygon points="342.00,818.80 348.00,822.80 342.00,826.80" fill="#416f99"/>
+</g>
+<g class="event-node">
+<title>x1 · 6:00 reset - day repeats</title>
+<circle cx="345.0" cy="1300.8" r="11" fill="#ffffff"/>
+<line x1="336.0" y1="1296.8" x2="354.0" y2="1296.8" stroke="#416f99" stroke-width="3"/>
+<line x1="336.0" y1="1304.8" x2="354.0" y2="1304.8" stroke="#416f99" stroke-width="3"/>
+</g>
+<g class="event-node">
+<title>s2 · 6:00 - he wakes changed</title>
+<circle cx="345.0" cy="1704.8" r="11" fill="#ffffff"/>
+<circle cx="345.0" cy="1704.8" r="8" fill="#ffffff" stroke="#416f99" stroke-width="2.5"/>
+<polygon points="342.00,1700.80 348.00,1704.80 342.00,1708.80" fill="#416f99"/>
+</g>
+<g class="event-node">
+<title>end · February 3 - the day no longer repeats</title>
+<circle cx="345.0" cy="2162.8" r="11" fill="#ffffff"/>
+<line x1="336.0" y1="2158.8" x2="354.0" y2="2158.8" stroke="#416f99" stroke-width="3"/>
+<line x1="336.0" y1="2166.8" x2="354.0" y2="2166.8" stroke="#416f99" stroke-width="3"/>
+</g>
+<g class="event-node">
+<title>b-learn · </title>
+<circle cx="345.0" cy="1074.8" r="11" fill="#ffffff"/>
+<circle cx="345.0" cy="1074.8" r="4" fill="#ffffff" stroke="#416f99" stroke-width="2"/>
+</g>
+<g class="event-node">
+<title>b-rita · </title>
+<circle cx="345.0" cy="1936.8" r="11" fill="#ffffff"/>
+<circle cx="345.0" cy="1936.8" r="4" fill="#ffffff" stroke="#416f99" stroke-width="2"/>
+</g>
+</g>
+<g id="g1-relationships">
+<line x1="32" y1="3346" x2="1092" y2="3346" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="3375" font-size="18" fill="#172a3a" font-weight="bold">Relationship ledger</text>
+</g>
+<g >
+<rect x="32" y="3394" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3417" font-size="11" fill="#087d60" font-weight="bold">L1</text>
+<text x="174" y="3417" font-size="12" fill="#172a3a">L1 · v0 → v1 · {&quot;from&quot;: &quot;v0&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;v1&quot;, &quot;via&quot;: null}</text>
+</g>
+<g >
+<rect x="32" y="3444" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3467" font-size="11" fill="#087d60" font-weight="bold">L2</text>
+<text x="174" y="3467" font-size="12" fill="#172a3a">L2 · v1 → v2 · {&quot;from&quot;: &quot;v1&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;v2&quot;, &quot;via&quot;: null}</text>
+</g>
+<g >
+<line x1="32" y1="3512" x2="1092" y2="3512" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="3541" font-size="18" fill="#172a3a" font-weight="bold">Thread / phil-mind</text>
+</g>
+<g >
+<rect x="32" y="3560" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3583" font-size="11" fill="#087d60" font-weight="bold">ROUTE 01</text>
+<text x="174" y="3583" font-size="12" fill="#172a3a">V1 · v0 · s0 → x0 · {&quot;entry&quot;: &quot;s0&quot;, &quot;exit&quot;: &quot;x0&quot;, &quot;id&quot;: &quot;v0&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;U&quot;}</text>
+</g>
+<g >
+<rect x="32" y="3610" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3633" font-size="11" fill="#087d60" font-weight="bold">ROUTE 02</text>
+<text x="174" y="3633" font-size="12" fill="#172a3a">V2 · v1 · s1 → x1 · {&quot;entry&quot;: &quot;s1&quot;, &quot;exit&quot;: &quot;x1&quot;, &quot;id&quot;: &quot;v1&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;U&quot;}</text>
+</g>
+<g >
+<rect x="32" y="3660" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3683" font-size="11" fill="#087d60" font-weight="bold">ROUTE 03</text>
+<text x="174" y="3683" font-size="12" fill="#172a3a">V3 · v2 · s2 → end · {&quot;entry&quot;: &quot;s2&quot;, &quot;exit&quot;: &quot;end&quot;, &quot;id&quot;: &quot;v2&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;U&quot;}</text>
+</g>
+<g >
+<rect x="32" y="3710" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3733" font-size="11" fill="#087d60" font-weight="bold">ROUTE 04</text>
+<text x="174" y="3733" font-size="12" fill="#172a3a">L1 · v0 → v1 · {&quot;from&quot;: &quot;v0&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;v1&quot;, &quot;via&quot;: null}</text>
+</g>
+<g >
+<rect x="32" y="3760" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3783" font-size="11" fill="#087d60" font-weight="bold">ROUTE 05</text>
+<text x="174" y="3783" font-size="12" fill="#172a3a">L2 · v1 → v2 · {&quot;from&quot;: &quot;v1&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;v2&quot;, &quot;via&quot;: null}</text>
+</g>
+<g >
+<line x1="32" y1="3828" x2="1092" y2="3828" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="3857" font-size="18" fill="#172a3a" font-weight="bold">Declared segments</text>
+</g>
+<g >
+<rect x="32" y="3876" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3899" font-size="11" fill="#526575" font-weight="bold">seg-r0</text>
+<text x="174" y="3899" font-size="12" fill="#172a3a">First repetition · U · s0 → x0</text>
+</g>
+<g >
+<rect x="32" y="3926" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3949" font-size="11" fill="#526575" font-weight="bold">seg-r1</text>
+<text x="174" y="3949" font-size="12" fill="#172a3a">The exhausted stretch (represented) · U · s1 → x1</text>
+</g>
+<g >
+<rect x="32" y="3976" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="3999" font-size="11" fill="#526575" font-weight="bold">seg-r2</text>
+<text x="174" y="3999" font-size="12" fill="#172a3a">The changed man · U · s2 → end</text>
+</g>
+<g >
+<line x1="32" y1="4044" x2="1092" y2="4044" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="4073" font-size="18" fill="#172a3a" font-weight="bold">Interpretive assumptions / model notes</text>
+</g>
+<g >
+<rect x="32" y="4092" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4115" font-size="11" fill="#526575" font-weight="bold">NOTE 01</text>
+<text x="174" y="4115" font-size="12" fill="#172a3a">Unrepresented iterations exist but are not charted; counts are never invented</text>
+</g>
+<g >
+<rect x="32" y="4142" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4165" font-size="11" fill="#526575" font-weight="bold">NOTE 02</text>
+<text x="174" y="4165" font-size="12" fill="#172a3a">Memory-only traversal: Phil&#x27;s body stays, his mind crosses revisions (R8: terminal continuity vs memory)</text>
+</g>
+<g >
+<rect x="32" y="4192" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4215" font-size="11" fill="#526575" font-weight="bold">NOTE 03</text>
+<text x="174" y="4215" font-size="12" fill="#172a3a">Declared merge count: 0. A count supplies no merge locations; none are invented.</text>
+</g>
+<g id="evidence">
+<line x1="32" y1="4274" x2="1092" y2="4274" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="4303" font-size="18" fill="#172a3a" font-weight="bold">Evidence / complete citation register</text>
+</g>
+<text x="40" y="4334" font-size="12" fill="#526575">Status is the supplied evidence status, not a truth rating. Repeated citations are deduplicated; all owners remain listed.</text>
+<g id="evidence-1">
+<rect x="32" y="4355" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4378" font-size="11" fill="#285ac7" font-weight="bold">[1]</text>
+<text x="174" y="4378" font-size="12" fill="#172a3a">source: canon · locator: Opening morning · status: unavailable · Referenced by: document / s0</text>
+</g>
+<g id="evidence-2">
+<rect x="32" y="4405" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4428" font-size="11" fill="#285ac7" font-weight="bold">[2]</text>
+<text x="174" y="4428" font-size="12" fill="#172a3a">source: canon · locator: First 6:00 wake-up repeat · status: unavailable · Referenced by: document / x0</text>
+</g>
+<g id="evidence-3">
+<rect x="32" y="4455" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4478" font-size="11" fill="#285ac7" font-weight="bold">[3]</text>
+<text x="174" y="4478" font-size="12" fill="#172a3a">source: canon · locator: Montage into exhaustion · status: unavailable · Referenced by: document / s1</text>
+</g>
+<g id="evidence-4">
+<rect x="32" y="4505" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4528" font-size="11" fill="#285ac7" font-weight="bold">[4]</text>
+<text x="174" y="4528" font-size="12" fill="#172a3a">source: canon · locator: Reset after despair stretch · status: unavailable · Referenced by: document / x1</text>
+</g>
+<g id="evidence-5">
+<rect x="32" y="4555" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4578" font-size="11" fill="#285ac7" font-weight="bold">[5]</text>
+<text x="174" y="4578" font-size="12" fill="#172a3a">source: canon · locator: Final February 2 · status: unavailable · Referenced by: document / s2</text>
+</g>
+<g id="evidence-6">
+<rect x="32" y="4605" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4628" font-size="11" fill="#285ac7" font-weight="bold">[6]</text>
+<text x="174" y="4628" font-size="12" fill="#172a3a">source: canon · locator: Ending awakening · status: unavailable · Referenced by: document / end</text>
+</g>
+<g id="evidence-7">
+<rect x="32" y="4655" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4678" font-size="11" fill="#285ac7" font-weight="bold">[7]</text>
+<text x="174" y="4678" font-size="12" fill="#172a3a">source: canon · locator: Exhaustion montage · status: unavailable · Referenced by: document / b-learn</text>
+</g>
+<g id="evidence-8">
+<rect x="32" y="4705" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4728" font-size="11" fill="#285ac7" font-weight="bold">[8]</text>
+<text x="174" y="4728" font-size="12" fill="#172a3a">source: canon · locator: Final day with Rita · status: unavailable · Referenced by: document / b-rita</text>
+</g>
+<g id="evidence-9">
+<rect x="32" y="4755" width="1060" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4778" font-size="11" fill="#285ac7" font-weight="bold">[9]</text>
+<text x="174" y="4778" font-size="12" fill="#172a3a">source: allocation · locator: Body resets with the day · status: unavailable · Referenced by: document / f-phil-r0; document /</text>
+<text x="174" y="4796" font-size="12" fill="#172a3a">f-phil-r1</text>
+</g>
+<g id="evidence-10">
+<rect x="32" y="4821" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4844" font-size="11" fill="#285ac7" font-weight="bold">[10]</text>
+<text x="174" y="4844" font-size="12" fill="#172a3a">source: canon · locator: Wakes on February 3 · status: unavailable · Referenced by: document / f-phil-r2</text>
+</g>
+<g id="evidence-11">
+<rect x="32" y="4871" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4894" font-size="11" fill="#285ac7" font-weight="bold">[11]</text>
+<text x="174" y="4894" font-size="12" fill="#172a3a">source: allocation · locator: Rita in represented repetition 0 · status: unavailable · Referenced by: document / f-rita-r0</text>
+</g>
+<g id="evidence-12">
+<rect x="32" y="4921" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4944" font-size="11" fill="#285ac7" font-weight="bold">[12]</text>
+<text x="174" y="4944" font-size="12" fill="#172a3a">source: allocation · locator: Rita in represented repetition 1 · status: unavailable · Referenced by: document / f-rita-r1</text>
+</g>
+<g id="evidence-13">
+<rect x="32" y="4971" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="4994" font-size="11" fill="#285ac7" font-weight="bold">[13]</text>
+<text x="174" y="4994" font-size="12" fill="#172a3a">source: canon · locator: Rita in the final represented day · status: unavailable · Referenced by: document / f-rita-r2</text>
+</g>
+<g >
+<line x1="32" y1="5039" x2="1092" y2="5039" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="5068" font-size="18" fill="#172a3a" font-weight="bold">Sources — including fixture provenance</text>
+</g>
+<g >
+<rect x="32" y="5087" width="1060" height="76" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5110" font-size="11" fill="#526575" font-weight="bold">canon</text>
+<text x="174" y="5110" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;canon&quot;, &quot;kind&quot;: &quot;canon_statement&quot;, &quot;text&quot;: &quot;Phil relives February 2 in Punxsutawney. His body resets; his memory</text>
+<text x="174" y="5128" font-size="12" fill="#172a3a">persists. The film represents three iterations (opening day, an exhausted stretch, the changed man) of an uncounted larger</text>
+<text x="174" y="5146" font-size="12" fill="#172a3a">number. No other world exists; the loop ends when his day stops repeating.&quot;, &quot;title&quot;: &quot;Groundhog Day (1993), theatrical cut&quot;}</text>
+</g>
+<g >
+<rect x="32" y="5171" width="1060" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5194" font-size="11" fill="#526575" font-weight="bold">allocation</text>
+<text x="174" y="5194" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;allocation&quot;, &quot;kind&quot;: &quot;test_fixture&quot;, &quot;text&quot;: &quot;Iteration count beyond the three represented days is unknown and labeled</text>
+<text x="174" y="5212" font-size="12" fill="#172a3a">as such. Rita fates are tracked per represented iteration.&quot;, &quot;title&quot;: &quot;Fixture allocations&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="5255" x2="1092" y2="5255" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="5284" font-size="18" fill="#172a3a" font-weight="bold">Characters</text>
+</g>
+<g >
+<rect x="32" y="5303" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5326" font-size="11" fill="#526575" font-weight="bold">phil</text>
+<text x="174" y="5326" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;phil&quot;, &quot;label&quot;: &quot;Phil Connors&quot;}</text>
+</g>
+<g >
+<rect x="32" y="5353" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5376" font-size="11" fill="#526575" font-weight="bold">rita</text>
+<text x="174" y="5376" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;rita&quot;, &quot;label&quot;: &quot;Rita&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="5421" x2="1092" y2="5421" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="5450" font-size="18" fill="#172a3a" font-weight="bold">Travellers</text>
+</g>
+<g >
+<rect x="32" y="5469" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5492" font-size="11" fill="#526575" font-weight="bold">phil-mind</text>
+<text x="174" y="5492" font-size="12" fill="#172a3a">{&quot;character&quot;: &quot;phil&quot;, &quot;id&quot;: &quot;phil-mind&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="5537" x2="1092" y2="5537" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="5566" font-size="18" fill="#172a3a" font-weight="bold">Namespaces</text>
+</g>
+<g >
+<rect x="32" y="5585" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
+<text x="46" y="5608" font-size="11" fill="#526575" font-weight="bold">GHD</text>
+<text x="174" y="5608" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;GHD&quot;, &quot;label&quot;: &quot;Groundhog Day&quot;}</text>
+</g>
+<g >
+<line x1="32" y1="5653" x2="1092" y2="5653" stroke="#d3dde5" stroke-width="1.5"/>
+<text x="40" y="5682" font-size="18" fill="#172a3a" font-weight="bold">Chart note</text>
+</g>
+<text x="40" y="5714" font-size="13" fill="#526575">Iterations are revisions of one world, not universes.</text>
 </svg>

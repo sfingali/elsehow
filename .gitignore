@@ -3,6 +3,7 @@ __pycache__/
 *.pyc
 *.png
 !samples/*.png
+samples/*.html
 .cairovenv/
 /*.svg
 /*.html
