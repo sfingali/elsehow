@@ -1,577 +1,260 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1124" height="5978" viewBox="0 0 1124 5978" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" role="img" aria-labelledby="atlas-title atlas-desc">
-<title id="atlas-title">Steins;Gate</title>
-<desc id="atlas-desc">Worlds and Thread atlas. Story order progresses downward. Connections use reserved routing space. Full relationship and citation ledgers follow the chart. The HTML companion contains the complete accessible model.</desc>
-<rect width="1124" height="5978" fill="#f5f6f8"/>
-<defs >
-<marker id="arrow-split" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
-<path d="M 1 1 L 9 5 L 1 9 Z" fill="#ad6200"/>
-</marker>
-<marker id="arrow-transfer" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
-<path d="M 1 1 L 9 5 L 1 9 Z" fill="#285ac7"/>
-</marker>
-<marker id="arrow-route" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
-<path d="M 1 1 L 9 5 L 1 9 Z" fill="#087d60"/>
-</marker>
-<marker id="arrow-reference" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
-<path d="M 1 1 L 9 5 L 1 9 Z" fill="#7a637c"/>
-</marker>
-</defs>
-
-<style>
-text { font-kerning: normal; }
-a { cursor: pointer; }
-a:hover text { text-decoration: underline; }
-.card:hover > rect { stroke: #879ead; }
-:target > rect { stroke: #285ac7; stroke-width: 2; }
-.hide-split .layer-split,
-.hide-transfer .layer-transfer,
-.hide-route .layer-route,
-.hide-evidence .citation { display: none; }
-</style>
-<text letter-spacing="1.5" x="40" y="47" font-size="11" fill="#087d60" font-weight="bold">ELSEHOW  /  WORLDS &amp; THREAD</text>
-<text x="40" y="103" font-size="34" fill="#172a3a" font-weight="bold">Steins;Gate</text>
-<text x="40" y="135" font-size="15" fill="#526575">Worldline shifts with divergence metric - Okabe&#x27;s Reading Steiner carries memory across</text>
-<text x="40" y="169" font-size="12" fill="#526575">2D · categorical world columns · Story-order ranks, not elapsed time. Equal ranks do not assert physical simultaneity.</text>
-<line x1="45" y1="203" x2="76" y2="203" stroke="#ad6200" stroke-width="4"/>
-<text x="90" y="205" font-size="12" fill="#172a3a">Amber S± — Split outcomes. + and − are signs, not fates.</text>
-<line x1="45" y1="230" x2="76" y2="230" stroke="#285ac7" stroke-width="4"/>
-<text x="90" y="232" font-size="12" fill="#172a3a">Blue T — Directed transfers. B body · M memory · C consciousness · S signal · ? literal/unspecified mechanism.</text>
-<line x1="45" y1="257" x2="76" y2="257" stroke="#087d60" stroke-width="4"/>
-<text x="90" y="259" font-size="12" fill="#172a3a">Emerald V / L — Numbered visits and explicit links only. Emerald centre on a cable means the route follows that connection.</text>
-<line x1="45" y1="284" x2="76" y2="284" stroke="#667b8a" stroke-width="4"/>
-<text x="90" y="286" font-size="12" fill="#172a3a">Slate rail — World identity. Cutoff means chart boundary, not destruction. Crossings are bridges; only markers are joins.</text>
-<line x1="45" y1="311" x2="76" y2="311" stroke="#7a637c" stroke-width="4"/>
-<text x="90" y="313" font-size="12" fill="#172a3a">Evidence / fate — [n] opens the evidence record. × dead · ● alive · ? unknown · ∅ nonexistent. Purple dotted connections are</text>
-<text x="90" y="331" font-size="12" fill="#172a3a">annotation references.</text>
-<g >
-<line x1="32" y1="358" x2="1092" y2="358" stroke="#d3dde5" stroke-width="1.5"/>
-<text x="40" y="387" font-size="18" fill="#172a3a" font-weight="bold">Declared interpretation</text>
-</g>
-<g >
-<rect x="32" y="406" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="429" font-size="11" fill="#526575" font-weight="bold">PROFILE</text>
-<text x="174" y="429" font-size="12" fill="#172a3a">Profile: steins-gate · rules: none</text>
-</g>
-<g >
-<rect x="32" y="456" width="1060" height="76" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="479" font-size="11" fill="#526575" font-weight="bold">PARAMETERS</text>
-<text x="174" y="479" font-size="12" fill="#172a3a">history_model: revisions · branching: overwrite · coexistence: single_active · time_mechanics: [&quot;memory&quot;] · joined_worlds:</text>
-<text x="174" y="497" font-size="12" fill="#172a3a">preexist · turnstiles: none · protagonist_scope: singular · axis: story_order · validation: evidence_pending · merges:</text>
-<text x="174" y="515" font-size="12" fill="#172a3a">forbidden · genealogy: acyclic</text>
-</g>
-<g >
-<rect x="32" y="540" width="1060" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="563" font-size="11" fill="#526575" font-weight="bold">POLICY</text>
-<text x="174" y="563" font-size="12" fill="#172a3a">Explicit records determine geometry. Profile declarations do not manufacture branches, activation intervals, genealogy,</text>
-<text x="174" y="581" font-size="12" fill="#172a3a">repeated worlds or replacement links. No reset is drawn. World-time coordinates are unavailable in this contract.</text>
-</g>
-<g id="g1">
-<line x1="32" y1="622" x2="1092" y2="622" stroke="#d3dde5" stroke-width="1.5"/>
-<text x="40" y="651" font-size="18" fill="#172a3a" font-weight="bold">SG  /  Steins;Gate</text>
-</g>
-<text x="40" y="682" font-size="12" fill="#526575">1 declared worlds · 6 events · 0 transfers · 0 split records</text>
-<g transform="translate(0 714.00)" role="group" aria-label="Atlas for SG">
-<text x="24" y="20" font-size="11" fill="#526575" font-weight="bold">STORY</text>
-<text x="24" y="37" font-size="11" fill="#526575" font-weight="bold">ORDER ↓</text>
-<rect x="142" y="143" width="574" height="2435" fill="#eef3f7" stroke="#d6e0e8" rx="10"/>
-<g class="card" role="group" aria-label="{}">
-<rect x="388" y="6" width="304" height="101" fill="#e7edf2" rx="9"/>
-<rect x="388" y="4" width="304" height="101" fill="#ffffff" stroke="#d3dde5" rx="9"/>
-<text x="404" y="35" font-size="15" fill="#416f99" font-weight="bold">W</text>
-<text x="404" y="60" font-size="14" fill="#172a3a" font-weight="bold">One mutable worldline</text>
-<text x="404" y="83" font-size="11" fill="#526575">INITIAL IN MODEL</text>
-</g>
-<rect x="156" y="12" width="5" height="87" fill="#416f99" rx="2"/>
-<line x1="20" y1="155" x2="998" y2="155" stroke="#d3dde5" stroke-width="1"/>
-<text x="24" y="183" font-size="12" fill="#172a3a" font-weight="bold">0</text>
-<text x="24" y="208" font-size="10" fill="#526575">rank 01</text>
-<line x1="20" y1="516" x2="998" y2="516" stroke="#d3dde5" stroke-width="1"/>
-<text x="24" y="544" font-size="12" fill="#172a3a" font-weight="bold">10</text>
-<text x="24" y="569" font-size="10" fill="#526575">rank 02</text>
-<line x1="20" y1="771" x2="998" y2="771" stroke="#d3dde5" stroke-width="1"/>
-<text x="24" y="799" font-size="12" fill="#172a3a" font-weight="bold">15</text>
-<text x="24" y="824" font-size="10" fill="#526575">rank 03</text>
-<line x1="20" y1="1017" x2="998" y2="1017" stroke="#d3dde5" stroke-width="1"/>
-<text x="24" y="1045" font-size="12" fill="#172a3a" font-weight="bold">20</text>
-<text x="24" y="1070" font-size="10" fill="#526575">rank 04</text>
-<line x1="20" y1="1375" x2="998" y2="1375" stroke="#d3dde5" stroke-width="1"/>
-<text x="24" y="1403" font-size="12" fill="#172a3a" font-weight="bold">30</text>
-<text x="24" y="1428" font-size="10" fill="#526575">rank 05</text>
-<line x1="20" y1="1696" x2="998" y2="1696" stroke="#d3dde5" stroke-width="1"/>
-<text x="24" y="1724" font-size="12" fill="#172a3a" font-weight="bold">40</text>
-<text x="24" y="1749" font-size="10" fill="#526575">rank 06</text>
-<line x1="20" y1="1968" x2="998" y2="1968" stroke="#d3dde5" stroke-width="1"/>
-<text x="24" y="1996" font-size="12" fill="#172a3a" font-weight="bold">45</text>
-<text x="24" y="2021" font-size="10" fill="#526575">rank 07</text>
-<line x1="20" y1="2197" x2="998" y2="2197" stroke="#d3dde5" stroke-width="1"/>
-<text x="24" y="2225" font-size="12" fill="#172a3a" font-weight="bold">50</text>
-<text x="24" y="2250" font-size="10" fill="#526575">rank 08</text>
-<path d="M 364.00 155.00 L 364.00 2570.00" fill="none" stroke="#667b8a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-<rect x="358" y="149" width="12" height="12" fill="#ffffff" stroke="#416f99" rx="1" stroke-width="2"/>
-<line x1="357" y1="2570" x2="371" y2="2570" stroke="#667b8a" stroke-width="2"/>
-<text x="379" y="2575" font-size="10" fill="#526575">End of displayed extent</text>
-<g class="layer-route">
-<title>V1 · {&quot;entry&quot;: &quot;e-kurisu&quot;, &quot;exit&quot;: &quot;e-kurisu&quot;, &quot;id&quot;: &quot;ov0&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;W&quot;}</title>
-<path d="M 356.00 200.00 L 347.00 200.00 L 347.00 216.00 L 356.00 216.00 L 356.00 209.00" fill="none" stroke="#ffffff" stroke-width="8.5" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M 356.00 200.00 L 347.00 200.00 L 347.00 216.00 L 356.00 216.00 L 356.00 209.00" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
-</g>
-<g class="layer-route">
-<title>V2 · {&quot;entry&quot;: &quot;e-dmail&quot;, &quot;exit&quot;: &quot;e-mayuri&quot;, &quot;id&quot;: &quot;ov1&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;W&quot;}</title>
-<path d="M 356.00 561.00 L 337.00 561.00 L 337.00 1062.00 L 354.00 1062.00" fill="none" stroke="#ffffff" stroke-width="8.5" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M 356.00 561.00 L 337.00 561.00 L 337.00 1062.00 L 354.00 1062.00" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
-<path d="M 337.00 802.50 L 337.00 820.50" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
-</g>
-<g class="layer-route">
-<title>V3 · {&quot;entry&quot;: &quot;e-undone&quot;, &quot;exit&quot;: &quot;e-undone&quot;, &quot;id&quot;: &quot;ov2&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;W&quot;}</title>
-<path d="M 356.00 1420.00 L 327.00 1420.00 L 327.00 1436.00 L 356.00 1436.00 L 356.00 1429.00" fill="none" stroke="#ffffff" stroke-width="8.5" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M 356.00 1420.00 L 327.00 1420.00 L 327.00 1436.00 L 356.00 1436.00 L 356.00 1429.00" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
-</g>
-<g class="layer-route">
-<title>V4 · {&quot;entry&quot;: &quot;e-operation-skuld&quot;, &quot;exit&quot;: &quot;e-end&quot;, &quot;id&quot;: &quot;ov3&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;W&quot;}</title>
-<path d="M 356.00 1741.00 L 317.00 1741.00 L 317.00 2242.00 L 354.00 2242.00" fill="none" stroke="#ffffff" stroke-width="8.5" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M 356.00 1741.00 L 317.00 1741.00 L 317.00 2242.00 L 354.00 2242.00" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
-<path d="M 317.00 1982.50 L 317.00 2000.50" fill="none" stroke="#087d60" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
-</g>
-<g class="layer-route" id="g1-edge-1">
-<title>L1 · ov0 → ov1 · {&quot;from&quot;: &quot;ov0&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;ov1&quot;, &quot;via&quot;: null}
-{&quot;from&quot;: &quot;ov0&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;ov1&quot;, &quot;via&quot;: null}</title>
-<path d="M 355.00 200.00 L 294.00 200.00 L 294.00 486.00 L 162.00 486.00 L 162.00 741.00 L 294.00 741.00 L 294.00 561.00 L 354.00 561.00" fill="none" stroke="#ffffff" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M 355.00 200.00 L 294.00 200.00 L 294.00 486.00 L 162.00 486.00 L 162.00 741.00 L 294.00 741.00 L 294.00 561.00 L 354.00 561.00" fill="none" stroke="#087d60" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
-<a href="#g1-relationships" aria-label="L1 · ov0 → ov1 · {&quot;from&quot;: &quot;ov0&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;ov1&quot;, &quot;via&quot;: null}">
-<rect x="204.0" y="476" width="48" height="20" fill="#ffffff" stroke="#087d60" rx="6" stroke-width="1.6"/>
-<text text-anchor="middle" x="228.0" y="490" font-size="11" fill="#087d60" font-weight="bold">L1</text>
-</a>
-</g>
-<g class="layer-route" id="g1-edge-2">
-<title>L2 · ov1 → ov2 · {&quot;from&quot;: &quot;ov1&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;ov2&quot;, &quot;via&quot;: null}
-{&quot;from&quot;: &quot;ov1&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;ov2&quot;, &quot;via&quot;: null}</title>
-<path d="M 355.00 1062.00 L 294.00 1062.00 L 294.00 1345.00 L 174.00 1345.00 L 174.00 1640.00 L 294.00 1640.00 L 294.00 1420.00 L 354.00 1420.00" fill="none" stroke="#ffffff" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M 355.00 1062.00 L 294.00 1062.00 L 294.00 1345.00 L 174.00 1345.00 L 174.00 1640.00 L 294.00 1640.00 L 294.00 1420.00 L 354.00 1420.00" fill="none" stroke="#087d60" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
-<a href="#g1-relationships" aria-label="L2 · ov1 → ov2 · {&quot;from&quot;: &quot;ov1&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;ov2&quot;, &quot;via&quot;: null}">
-<rect x="210.0" y="1335" width="48" height="20" fill="#ffffff" stroke="#087d60" rx="6" stroke-width="1.6"/>
-<text text-anchor="middle" x="234.0" y="1349" font-size="11" fill="#087d60" font-weight="bold">L2</text>
-</a>
-</g>
-<g class="layer-route" id="g1-edge-3">
-<title>L3 · ov2 → ov3 · {&quot;from&quot;: &quot;ov2&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;ov3&quot;, &quot;via&quot;: null}
-{&quot;from&quot;: &quot;ov2&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;ov3&quot;, &quot;via&quot;: null}</title>
-<path d="M 355.00 1420.00 L 285.00 1420.00 L 285.00 1666.00 L 186.00 1666.00 L 186.00 1938.00 L 294.00 1938.00 L 294.00 1741.00 L 354.00 1741.00" fill="none" stroke="#ffffff" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M 355.00 1420.00 L 285.00 1420.00 L 285.00 1666.00 L 186.00 1666.00 L 186.00 1938.00 L 294.00 1938.00 L 294.00 1741.00 L 354.00 1741.00" fill="none" stroke="#087d60" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-route)"/>
-<a href="#g1-relationships" aria-label="L3 · ov2 → ov3 · {&quot;from&quot;: &quot;ov2&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;ov3&quot;, &quot;via&quot;: null}">
-<rect x="211.5" y="1656" width="48" height="20" fill="#ffffff" stroke="#087d60" rx="6" stroke-width="1.6"/>
-<text text-anchor="middle" x="235.5" y="1670" font-size="11" fill="#087d60" font-weight="bold">L3</text>
-</a>
-</g>
-<line x1="374" y1="200" x2="388" y2="200" stroke="#416f99" stroke-width="1.8"/>
-<g id="g1-item-1" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Opening discovery&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-kurisu&quot;, &quot;kind&quot;: &quot;start&quot;, &quot;label&quot;: &quot;Kurisu found in a pool of blood - the beta worldline begins&quot;, &quot;order&quot;: 0, &quot;universe&quot;: &quot;W&quot;}">
-<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Opening discovery&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-kurisu&quot;, &quot;kind&quot;: &quot;start&quot;, &quot;label&quot;: &quot;Kurisu found in a pool of blood - the beta worldline begins&quot;, &quot;order&quot;: 0, &quot;universe&quot;: &quot;W&quot;}</title>
-<rect x="388" y="177" width="304" height="267" fill="#e7edf2" rx="9"/>
-<rect x="388" y="175" width="304" height="267" fill="#ffffff" stroke="#d3dde5" rx="9"/>
-<rect x="388" y="187" width="3" height="243" fill="#416f99" rx="1.5"/>
-<text x="404" y="202" font-size="11" fill="#526575" font-weight="bold">START · e-kurisu</text>
-<text x="404" y="228" font-size="14" fill="#172a3a">Kurisu found in a pool of blood</text>
-<text x="404" y="248" font-size="14" fill="#172a3a">- the beta worldline begins</text>
-<a href="#evidence-1" class="citation" aria-label="[1] · Locator Opening discovery · unavailable">
-<text x="404" y="271" font-size="11" fill="#285ac7">[1] · Locator Opening discovery ·</text>
-<text x="404" y="288" font-size="11" fill="#285ac7">unavailable</text>
-</a>
-<text x="404" y="312" font-size="12" fill="#64717d" font-weight="bold">? UNKNOWN · kurisu</text>
-<text x="404" y="334" font-size="11" fill="#526575">Fate f-kurisu-beta · at e-kurisu</text>
-<a href="#evidence-9" class="citation" aria-label="[9] · Locator Blood pool - fate ambiguous until rSTEINS · unavailable">
-<text x="404" y="357" font-size="11" fill="#285ac7">[9] · Locator Blood pool - fate</text>
-<text x="404" y="374" font-size="11" fill="#285ac7">ambiguous until rSTEINS · unavailable</text>
-</a>
-<text x="404" y="397" font-size="11" fill="#087d60" font-weight="bold">V1 entry · okabe-mind</text>
-<text x="404" y="420" font-size="11" fill="#087d60" font-weight="bold">V1 exit · okabe-mind</text>
-</g>
-<line x1="374" y1="561" x2="388" y2="561" stroke="#416f99" stroke-width="1.8"/>
-<g id="g1-item-2" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;D-Mail #1&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-dmail&quot;, &quot;kind&quot;: &quot;anchor&quot;, &quot;label&quot;: &quot;The first D-Mail crosses to the past - worldline shifts to alpha&quot;, &quot;order&quot;: 10, &quot;universe&quot;: &quot;W&quot;}">
-<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;D-Mail #1&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-dmail&quot;, &quot;kind&quot;: &quot;anchor&quot;, &quot;label&quot;: &quot;The first D-Mail crosses to the past - worldline shifts to alpha&quot;, &quot;order&quot;: 10, &quot;universe&quot;: &quot;W&quot;}</title>
-<rect x="388" y="538" width="304" height="161" fill="#e7edf2" rx="9"/>
-<rect x="388" y="536" width="304" height="161" fill="#ffffff" stroke="#d3dde5" rx="9"/>
-<rect x="388" y="548" width="3" height="137" fill="#416f99" rx="1.5"/>
-<text x="404" y="563" font-size="11" fill="#526575" font-weight="bold">ANCHOR · e-dmail</text>
-<text x="404" y="589" font-size="14" fill="#172a3a">The first D-Mail crosses to</text>
-<text x="404" y="609" font-size="14" fill="#172a3a">the past - worldline shifts to</text>
-<text x="404" y="629" font-size="14" fill="#172a3a">alpha</text>
-<a href="#evidence-2" class="citation" aria-label="[2] · Locator D-Mail #1 · unavailable">
-<text x="404" y="652" font-size="11" fill="#285ac7">[2] · Locator D-Mail #1 · unavailable</text>
-</a>
-<text x="404" y="675" font-size="11" fill="#087d60" font-weight="bold">V2 entry · okabe-mind</text>
-</g>
-<line x1="374" y1="1062" x2="388" y2="1062" stroke="#416f99" stroke-width="1.8"/>
-<g id="g1-item-3" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Mayuri death loop&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-mayuri&quot;, &quot;kind&quot;: &quot;cutoff&quot;, &quot;label&quot;: &quot;Mayuri dies again and again - alpha&#x27;s attractor converges on her death&quot;, &quot;order&quot;: 20, &quot;universe&quot;: &quot;W&quot;}">
-<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Mayuri death loop&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-mayuri&quot;, &quot;kind&quot;: &quot;cutoff&quot;, &quot;label&quot;: &quot;Mayuri dies again and again - alpha&#x27;s attractor converges on her death&quot;, &quot;order&quot;: 20, &quot;universe&quot;: &quot;W&quot;}</title>
-<rect x="388" y="1039" width="304" height="264" fill="#e7edf2" rx="9"/>
-<rect x="388" y="1037" width="304" height="264" fill="#ffffff" stroke="#d3dde5" rx="9"/>
-<rect x="388" y="1049" width="3" height="240" fill="#416f99" rx="1.5"/>
-<text x="404" y="1064" font-size="11" fill="#526575" font-weight="bold">CUTOFF · e-mayuri</text>
-<text x="404" y="1090" font-size="14" fill="#172a3a">Mayuri dies again and again -</text>
-<text x="404" y="1110" font-size="14" fill="#172a3a">alpha&#x27;s attractor converges on</text>
-<text x="404" y="1130" font-size="14" fill="#172a3a">her death</text>
-<a href="#evidence-3" class="citation" aria-label="[3] · Locator Mayuri death loop · unavailable">
-<text x="404" y="1153" font-size="11" fill="#285ac7">[3] · Locator Mayuri death loop ·</text>
-<text x="404" y="1170" font-size="11" fill="#285ac7">unavailable</text>
-</a>
-<text x="404" y="1194" font-size="12" fill="#b82f46" font-weight="bold">× DEAD · mayuri</text>
-<text x="404" y="1216" font-size="11" fill="#526575">Fate f-mayuri-alpha · at e-mayuri</text>
-<a href="#evidence-10" class="citation" aria-label="[10] · Locator Alpha convergence · unavailable">
-<text x="404" y="1239" font-size="11" fill="#285ac7">[10] · Locator Alpha convergence ·</text>
-<text x="404" y="1256" font-size="11" fill="#285ac7">unavailable</text>
-</a>
-<text x="404" y="1279" font-size="11" fill="#087d60" font-weight="bold">V2 exit · okabe-mind</text>
-</g>
-<line x1="374" y1="1420" x2="388" y2="1420" stroke="#416f99" stroke-width="1.8"/>
-<g id="g1-item-4" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Alpha undo sequence&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-undone&quot;, &quot;kind&quot;: &quot;anchor&quot;, &quot;label&quot;: &quot;D-Mails undone one by one - back to beta; now Mayuri is doomed instead&quot;, &quot;order&quot;: 30, &quot;universe&quot;: &quot;W&quot;}">
-<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Alpha undo sequence&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-undone&quot;, &quot;kind&quot;: &quot;anchor&quot;, &quot;label&quot;: &quot;D-Mails undone one by one - back to beta; now Mayuri is doomed instead&quot;, &quot;order&quot;: 30, &quot;universe&quot;: &quot;W&quot;}</title>
-<rect x="388" y="1397" width="304" height="201" fill="#e7edf2" rx="9"/>
-<rect x="388" y="1395" width="304" height="201" fill="#ffffff" stroke="#d3dde5" rx="9"/>
-<rect x="388" y="1407" width="3" height="177" fill="#416f99" rx="1.5"/>
-<text x="404" y="1422" font-size="11" fill="#526575" font-weight="bold">ANCHOR · e-undone</text>
-<text x="404" y="1448" font-size="14" fill="#172a3a">D-Mails undone one by one -</text>
-<text x="404" y="1468" font-size="14" fill="#172a3a">back to beta; now Mayuri is</text>
-<text x="404" y="1488" font-size="14" fill="#172a3a">doomed instead</text>
-<a href="#evidence-4" class="citation" aria-label="[4] · Locator Alpha undo sequence · unavailable">
-<text x="404" y="1511" font-size="11" fill="#285ac7">[4] · Locator Alpha undo sequence ·</text>
-<text x="404" y="1528" font-size="11" fill="#285ac7">unavailable</text>
-</a>
-<text x="404" y="1551" font-size="11" fill="#087d60" font-weight="bold">V3 entry · okabe-mind</text>
-<text x="404" y="1574" font-size="11" fill="#087d60" font-weight="bold">V3 exit · okabe-mind</text>
-</g>
-<line x1="374" y1="1741" x2="388" y2="1741" stroke="#416f99" stroke-width="1.8"/>
-<g id="g1-item-5" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Operation Skuld&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-operation-skuld&quot;, &quot;kind&quot;: &quot;outcome&quot;, &quot;label&quot;: &quot;Operation Skuld - the lie that fools the world; divergence passes 1%&quot;, &quot;order&quot;: 40, &quot;universe&quot;: &quot;W&quot;}">
-<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Operation Skuld&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-operation-skuld&quot;, &quot;kind&quot;: &quot;outcome&quot;, &quot;label&quot;: &quot;Operation Skuld - the lie that fools the world; divergence passes 1%&quot;, &quot;order&quot;: 40, &quot;universe&quot;: &quot;W&quot;}</title>
-<rect x="388" y="1718" width="304" height="178" fill="#e7edf2" rx="9"/>
-<rect x="388" y="1716" width="304" height="178" fill="#ffffff" stroke="#d3dde5" rx="9"/>
-<rect x="388" y="1728" width="3" height="154" fill="#416f99" rx="1.5"/>
-<text x="404" y="1743" font-size="11" fill="#526575" font-weight="bold">OUTCOME · e-operation-skuld</text>
-<text x="404" y="1769" font-size="14" fill="#172a3a">Operation Skuld - the lie that</text>
-<text x="404" y="1789" font-size="14" fill="#172a3a">fools the world; divergence</text>
-<text x="404" y="1809" font-size="14" fill="#172a3a">passes 1%</text>
-<a href="#evidence-5" class="citation" aria-label="[5] · Locator Operation Skuld · unavailable">
-<text x="404" y="1832" font-size="11" fill="#285ac7">[5] · Locator Operation Skuld ·</text>
-<text x="404" y="1849" font-size="11" fill="#285ac7">unavailable</text>
-</a>
-<text x="404" y="1872" font-size="11" fill="#087d60" font-weight="bold">V4 entry · okabe-mind</text>
-</g>
-<line x1="374" y1="2242" x2="388" y2="2242" stroke="#416f99" stroke-width="1.8"/>
-<g id="g1-item-6" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Final scene&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-end&quot;, &quot;kind&quot;: &quot;cutoff&quot;, &quot;label&quot;: &quot;Steins Gate - Kurisu alive, Mayuri alive, no SERN dystopia&quot;, &quot;order&quot;: 50, &quot;universe&quot;: &quot;W&quot;}">
-<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Final scene&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;e-end&quot;, &quot;kind&quot;: &quot;cutoff&quot;, &quot;label&quot;: &quot;Steins Gate - Kurisu alive, Mayuri alive, no SERN dystopia&quot;, &quot;order&quot;: 50, &quot;universe&quot;: &quot;W&quot;}</title>
-<rect x="388" y="2219" width="304" height="279" fill="#e7edf2" rx="9"/>
-<rect x="388" y="2217" width="304" height="279" fill="#ffffff" stroke="#d3dde5" rx="9"/>
-<rect x="388" y="2229" width="3" height="255" fill="#416f99" rx="1.5"/>
-<text x="404" y="2244" font-size="11" fill="#526575" font-weight="bold">CUTOFF · e-end</text>
-<text x="404" y="2270" font-size="14" fill="#172a3a">Steins Gate - Kurisu alive,</text>
-<text x="404" y="2290" font-size="14" fill="#172a3a">Mayuri alive, no SERN dystopia</text>
-<a href="#evidence-6" class="citation" aria-label="[6] · Locator Final scene · unavailable">
-<text x="404" y="2313" font-size="11" fill="#285ac7">[6] · Locator Final scene · unavailable</text>
-</a>
-<text x="404" y="2337" font-size="12" fill="#087d60" font-weight="bold">● ALIVE · kurisu</text>
-<text x="404" y="2359" font-size="11" fill="#526575">Fate f-kurisu-steins · at e-end</text>
-<a href="#evidence-6" class="citation" aria-label="[6] · Locator Final scene · unavailable">
-<text x="404" y="2382" font-size="11" fill="#285ac7">[6] · Locator Final scene · unavailable</text>
-</a>
-<text x="404" y="2406" font-size="12" fill="#087d60" font-weight="bold">● ALIVE · mayuri</text>
-<text x="404" y="2428" font-size="11" fill="#526575">Fate f-mayuri-steins · at e-end</text>
-<a href="#evidence-6" class="citation" aria-label="[6] · Locator Final scene · unavailable">
-<text x="404" y="2451" font-size="11" fill="#285ac7">[6] · Locator Final scene · unavailable</text>
-</a>
-<text x="404" y="2474" font-size="11" fill="#087d60" font-weight="bold">V4 exit · okabe-mind</text>
-</g>
-<line x1="374" y1="816" x2="388" y2="816" stroke="#416f99" stroke-width="1.8"/>
-<g id="g1-item-7" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;Worldline shift montage&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;b-rs&quot;, &quot;order&quot;: 15, &quot;segment&quot;: &quot;seg-alpha&quot;, &quot;text&quot;: &quot;Only Okabe carries memory across the shift - Reading Steiner as the sole continuity&quot;}">
-<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;Worldline shift montage&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;b-rs&quot;, &quot;order&quot;: 15, &quot;segment&quot;: &quot;seg-alpha&quot;, &quot;text&quot;: &quot;Only Okabe carries memory across the shift - Reading Steiner as the sole continuity&quot;}</title>
-<rect x="388" y="793" width="304" height="178" fill="#e7edf2" rx="9"/>
-<rect x="388" y="791" width="304" height="178" fill="#f9fafc" stroke="#d3dde5" rx="9"/>
-<rect x="388" y="803" width="3" height="154" fill="#416f99" rx="1.5"/>
-<text x="404" y="818" font-size="11" fill="#526575" font-weight="bold">BEAT · b-rs</text>
-<text x="404" y="844" font-size="14" fill="#172a3a">Only Okabe carries memory</text>
-<text x="404" y="864" font-size="14" fill="#172a3a">across the shift - Reading</text>
-<text x="404" y="884" font-size="14" fill="#172a3a">Steiner as the sole continuity</text>
-<text x="404" y="907" font-size="11" fill="#526575">Segment: seg-alpha</text>
-<a href="#evidence-7" class="citation" aria-label="[7] · Locator Worldline shift montage · unavailable">
-<text x="404" y="930" font-size="11" fill="#285ac7">[7] · Locator Worldline shift montage ·</text>
-<text x="404" y="947" font-size="11" fill="#285ac7">unavailable</text>
-</a>
-</g>
-<line x1="374" y1="2013" x2="388" y2="2013" stroke="#416f99" stroke-width="1.8"/>
-<g id="g1-item-8" class="card" role="group" aria-label="{&quot;cite&quot;: {&quot;locator&quot;: &quot;The lie&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;b-lie&quot;, &quot;order&quot;: 45, &quot;segment&quot;: &quot;seg-steins&quot;, &quot;text&quot;: &quot;He lies to the world about Kurisu&#x27;s death - the deception that shifts the field&quot;}">
-<title>{&quot;cite&quot;: {&quot;locator&quot;: &quot;The lie&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;source&quot;: &quot;canon&quot;, &quot;status&quot;: &quot;unavailable&quot;}, &quot;id&quot;: &quot;b-lie&quot;, &quot;order&quot;: 45, &quot;segment&quot;: &quot;seg-steins&quot;, &quot;text&quot;: &quot;He lies to the world about Kurisu&#x27;s death - the deception that shifts the field&quot;}</title>
-<rect x="388" y="1990" width="304" height="161" fill="#e7edf2" rx="9"/>
-<rect x="388" y="1988" width="304" height="161" fill="#f9fafc" stroke="#d3dde5" rx="9"/>
-<rect x="388" y="2000" width="3" height="137" fill="#416f99" rx="1.5"/>
-<text x="404" y="2015" font-size="11" fill="#526575" font-weight="bold">BEAT · b-lie</text>
-<text x="404" y="2041" font-size="14" fill="#172a3a">He lies to the world about</text>
-<text x="404" y="2061" font-size="14" fill="#172a3a">Kurisu&#x27;s death - the deception</text>
-<text x="404" y="2081" font-size="14" fill="#172a3a">that shifts the field</text>
-<text x="404" y="2104" font-size="11" fill="#526575">Segment: seg-steins</text>
-<a href="#evidence-8" class="citation" aria-label="[8] · Locator The lie · unavailable">
-<text x="404" y="2127" font-size="11" fill="#285ac7">[8] · Locator The lie · unavailable</text>
-</a>
-</g>
-<g class="event-node">
-<title>e-kurisu · Kurisu found in a pool of blood - the beta worldline begins</title>
-<circle cx="364" cy="200" r="11" fill="#ffffff"/>
-<rect x="357" y="193" width="14" height="14" fill="#087d60" stroke="#ffffff" rx="2" stroke-width="2"/>
-</g>
-<g class="event-node">
-<title>e-dmail · The first D-Mail crosses to the past - worldline shifts to alpha</title>
-<circle cx="364" cy="561" r="11" fill="#ffffff"/>
-<polygon points="364.00,553.00 372.00,561.00 364.00,569.00 356.00,561.00" fill="#ffffff" stroke="#416f99" stroke-width="2.5"/>
-</g>
-<g class="event-node">
-<title>e-mayuri · Mayuri dies again and again - alpha&#x27;s attractor converges on her death</title>
-<circle cx="364" cy="1062" r="11" fill="#ffffff"/>
-<line x1="355" y1="1058" x2="373" y2="1058" stroke="#416f99" stroke-width="3"/>
-<line x1="355" y1="1066" x2="373" y2="1066" stroke="#416f99" stroke-width="3"/>
-</g>
-<g class="event-node">
-<title>e-undone · D-Mails undone one by one - back to beta; now Mayuri is doomed instead</title>
-<circle cx="364" cy="1420" r="11" fill="#ffffff"/>
-<polygon points="364.00,1412.00 372.00,1420.00 364.00,1428.00 356.00,1420.00" fill="#ffffff" stroke="#416f99" stroke-width="2.5"/>
-</g>
-<g class="event-node">
-<title>e-operation-skuld · Operation Skuld - the lie that fools the world; divergence passes 1%</title>
-<circle cx="364" cy="1741" r="11" fill="#ffffff"/>
-<circle cx="364" cy="1741" r="6" fill="#416f99" stroke="#ffffff" stroke-width="2"/>
-</g>
-<g class="event-node">
-<title>e-end · Steins Gate - Kurisu alive, Mayuri alive, no SERN dystopia</title>
-<circle cx="364" cy="2242" r="11" fill="#ffffff"/>
-<line x1="355" y1="2238" x2="373" y2="2238" stroke="#416f99" stroke-width="3"/>
-<line x1="355" y1="2246" x2="373" y2="2246" stroke="#416f99" stroke-width="3"/>
-</g>
-<g class="event-node">
-<title>b-rs · </title>
-<circle cx="364" cy="816" r="11" fill="#ffffff"/>
-<circle cx="364" cy="816" r="4" fill="#ffffff" stroke="#416f99" stroke-width="2"/>
-</g>
-<g class="event-node">
-<title>b-lie · </title>
-<circle cx="364" cy="2013" r="11" fill="#ffffff"/>
-<circle cx="364" cy="2013" r="4" fill="#ffffff" stroke="#416f99" stroke-width="2"/>
-</g>
-</g>
-<g id="g1-relationships">
-<line x1="32" y1="3349" x2="1092" y2="3349" stroke="#d3dde5" stroke-width="1.5"/>
-<text x="40" y="3378" font-size="18" fill="#172a3a" font-weight="bold">Relationship ledger</text>
-</g>
-<g >
-<rect x="32" y="3397" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="3420" font-size="11" fill="#087d60" font-weight="bold">L1</text>
-<text x="174" y="3420" font-size="12" fill="#172a3a">L1 · ov0 → ov1 · {&quot;from&quot;: &quot;ov0&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;ov1&quot;, &quot;via&quot;: null}</text>
-</g>
-<g >
-<rect x="32" y="3447" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="3470" font-size="11" fill="#087d60" font-weight="bold">L2</text>
-<text x="174" y="3470" font-size="12" fill="#172a3a">L2 · ov1 → ov2 · {&quot;from&quot;: &quot;ov1&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;ov2&quot;, &quot;via&quot;: null}</text>
-</g>
-<g >
-<rect x="32" y="3497" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="3520" font-size="11" fill="#087d60" font-weight="bold">L3</text>
-<text x="174" y="3520" font-size="12" fill="#172a3a">L3 · ov2 → ov3 · {&quot;from&quot;: &quot;ov2&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;ov3&quot;, &quot;via&quot;: null}</text>
-</g>
-<g >
-<line x1="32" y1="3565" x2="1092" y2="3565" stroke="#d3dde5" stroke-width="1.5"/>
-<text x="40" y="3594" font-size="18" fill="#172a3a" font-weight="bold">Thread / okabe-mind</text>
-</g>
-<g >
-<rect x="32" y="3613" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="3636" font-size="11" fill="#087d60" font-weight="bold">ROUTE 01</text>
-<text x="174" y="3636" font-size="12" fill="#172a3a">V1 · ov0 · e-kurisu → e-kurisu · {&quot;entry&quot;: &quot;e-kurisu&quot;, &quot;exit&quot;: &quot;e-kurisu&quot;, &quot;id&quot;: &quot;ov0&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;W&quot;}</text>
-</g>
-<g >
-<rect x="32" y="3663" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="3686" font-size="11" fill="#087d60" font-weight="bold">ROUTE 02</text>
-<text x="174" y="3686" font-size="12" fill="#172a3a">V2 · ov1 · e-dmail → e-mayuri · {&quot;entry&quot;: &quot;e-dmail&quot;, &quot;exit&quot;: &quot;e-mayuri&quot;, &quot;id&quot;: &quot;ov1&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;W&quot;}</text>
-</g>
-<g >
-<rect x="32" y="3713" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="3736" font-size="11" fill="#087d60" font-weight="bold">ROUTE 03</text>
-<text x="174" y="3736" font-size="12" fill="#172a3a">V3 · ov2 · e-undone → e-undone · {&quot;entry&quot;: &quot;e-undone&quot;, &quot;exit&quot;: &quot;e-undone&quot;, &quot;id&quot;: &quot;ov2&quot;, &quot;passes&quot;: [], &quot;universe&quot;: &quot;W&quot;}</text>
-</g>
-<g >
-<rect x="32" y="3763" width="1060" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="3786" font-size="11" fill="#087d60" font-weight="bold">ROUTE 04</text>
-<text x="174" y="3786" font-size="12" fill="#172a3a">V4 · ov3 · e-operation-skuld → e-end · {&quot;entry&quot;: &quot;e-operation-skuld&quot;, &quot;exit&quot;: &quot;e-end&quot;, &quot;id&quot;: &quot;ov3&quot;, &quot;passes&quot;: [], &quot;universe&quot;:</text>
-<text x="174" y="3804" font-size="12" fill="#172a3a">&quot;W&quot;}</text>
-</g>
-<g >
-<rect x="32" y="3829" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="3852" font-size="11" fill="#087d60" font-weight="bold">ROUTE 05</text>
-<text x="174" y="3852" font-size="12" fill="#172a3a">L1 · ov0 → ov1 · {&quot;from&quot;: &quot;ov0&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;ov1&quot;, &quot;via&quot;: null}</text>
-</g>
-<g >
-<rect x="32" y="3879" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="3902" font-size="11" fill="#087d60" font-weight="bold">ROUTE 06</text>
-<text x="174" y="3902" font-size="12" fill="#172a3a">L2 · ov1 → ov2 · {&quot;from&quot;: &quot;ov1&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;ov2&quot;, &quot;via&quot;: null}</text>
-</g>
-<g >
-<rect x="32" y="3929" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="3952" font-size="11" fill="#087d60" font-weight="bold">ROUTE 07</text>
-<text x="174" y="3952" font-size="12" fill="#172a3a">L3 · ov2 → ov3 · {&quot;from&quot;: &quot;ov2&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;to&quot;: &quot;ov3&quot;, &quot;via&quot;: null}</text>
-</g>
-<g >
-<line x1="32" y1="3997" x2="1092" y2="3997" stroke="#d3dde5" stroke-width="1.5"/>
-<text x="40" y="4026" font-size="18" fill="#172a3a" font-weight="bold">Declared segments</text>
-</g>
-<g >
-<rect x="32" y="4045" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="4068" font-size="11" fill="#526575" font-weight="bold">seg-beta</text>
-<text x="174" y="4068" font-size="12" fill="#172a3a">beta - the world as first seen · W · e-kurisu → e-kurisu</text>
-</g>
-<g >
-<rect x="32" y="4095" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="4118" font-size="11" fill="#526575" font-weight="bold">seg-alpha</text>
-<text x="174" y="4118" font-size="12" fill="#172a3a">alpha - SERN&#x27;s shadow · W · e-dmail → e-mayuri</text>
-</g>
-<g >
-<rect x="32" y="4145" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="4168" font-size="11" fill="#526575" font-weight="bold">seg-steins</text>
-<text x="174" y="4168" font-size="12" fill="#172a3a">Steins Gate - past the 1% barrier · W · e-operation-skuld → e-end</text>
-</g>
-<g >
-<line x1="32" y1="4213" x2="1092" y2="4213" stroke="#d3dde5" stroke-width="1.5"/>
-<text x="40" y="4242" font-size="18" fill="#172a3a" font-weight="bold">Interpretive assumptions / model notes</text>
-</g>
-<g >
-<rect x="32" y="4261" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="4284" font-size="11" fill="#526575" font-weight="bold">NOTE 01</text>
-<text x="174" y="4284" font-size="12" fill="#172a3a">No physical transfers: every crossing is a memory-only revision link (E118/R8 semantics)</text>
-</g>
-<g >
-<rect x="32" y="4311" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="4334" font-size="11" fill="#526575" font-weight="bold">NOTE 02</text>
-<text x="174" y="4334" font-size="12" fill="#172a3a">Divergence values are fixture allocations keyed to canon numbers</text>
-</g>
-<g >
-<rect x="32" y="4361" width="1060" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="4384" font-size="11" fill="#526575" font-weight="bold">NOTE 03</text>
-<text x="174" y="4384" font-size="12" fill="#172a3a">Attractor-field convergence (why Mayuri always dies in alpha) is canon constraint, not mechanism - charted as the death loop</text>
-<text x="174" y="4402" font-size="12" fill="#172a3a">cutoff</text>
-</g>
-<g >
-<rect x="32" y="4427" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="4450" font-size="11" fill="#526575" font-weight="bold">NOTE 04</text>
-<text x="174" y="4450" font-size="12" fill="#172a3a">Declared merge count: 0. A count supplies no merge locations; none are invented.</text>
-</g>
-<g id="evidence">
-<line x1="32" y1="4509" x2="1092" y2="4509" stroke="#d3dde5" stroke-width="1.5"/>
-<text x="40" y="4538" font-size="18" fill="#172a3a" font-weight="bold">Evidence / complete citation register</text>
-</g>
-<text x="40" y="4569" font-size="12" fill="#526575">Status is the supplied evidence status, not a truth rating. Repeated citations are deduplicated; all owners remain listed.</text>
-<g id="evidence-1">
-<rect x="32" y="4590" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="4613" font-size="11" fill="#285ac7" font-weight="bold">[1]</text>
-<text x="174" y="4613" font-size="12" fill="#172a3a">source: canon · locator: Opening discovery · status: unavailable · Referenced by: document / e-kurisu</text>
-</g>
-<g id="evidence-2">
-<rect x="32" y="4640" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="4663" font-size="11" fill="#285ac7" font-weight="bold">[2]</text>
-<text x="174" y="4663" font-size="12" fill="#172a3a">source: canon · locator: D-Mail #1 · status: unavailable · Referenced by: document / e-dmail</text>
-</g>
-<g id="evidence-3">
-<rect x="32" y="4690" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="4713" font-size="11" fill="#285ac7" font-weight="bold">[3]</text>
-<text x="174" y="4713" font-size="12" fill="#172a3a">source: canon · locator: Mayuri death loop · status: unavailable · Referenced by: document / e-mayuri</text>
-</g>
-<g id="evidence-4">
-<rect x="32" y="4740" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="4763" font-size="11" fill="#285ac7" font-weight="bold">[4]</text>
-<text x="174" y="4763" font-size="12" fill="#172a3a">source: canon · locator: Alpha undo sequence · status: unavailable · Referenced by: document / e-undone</text>
-</g>
-<g id="evidence-5">
-<rect x="32" y="4790" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="4813" font-size="11" fill="#285ac7" font-weight="bold">[5]</text>
-<text x="174" y="4813" font-size="12" fill="#172a3a">source: canon · locator: Operation Skuld · status: unavailable · Referenced by: document / e-operation-skuld</text>
-</g>
-<g id="evidence-6">
-<rect x="32" y="4840" width="1060" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="4863" font-size="11" fill="#285ac7" font-weight="bold">[6]</text>
-<text x="174" y="4863" font-size="12" fill="#172a3a">source: canon · locator: Final scene · status: unavailable · Referenced by: document / e-end; document / f-kurisu-steins;</text>
-<text x="174" y="4881" font-size="12" fill="#172a3a">document / f-mayuri-steins</text>
-</g>
-<g id="evidence-7">
-<rect x="32" y="4906" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="4929" font-size="11" fill="#285ac7" font-weight="bold">[7]</text>
-<text x="174" y="4929" font-size="12" fill="#172a3a">source: canon · locator: Worldline shift montage · status: unavailable · Referenced by: document / b-rs</text>
-</g>
-<g id="evidence-8">
-<rect x="32" y="4956" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="4979" font-size="11" fill="#285ac7" font-weight="bold">[8]</text>
-<text x="174" y="4979" font-size="12" fill="#172a3a">source: canon · locator: The lie · status: unavailable · Referenced by: document / b-lie</text>
-</g>
-<g id="evidence-9">
-<rect x="32" y="5006" width="1060" height="58" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="5029" font-size="11" fill="#285ac7" font-weight="bold">[9]</text>
-<text x="174" y="5029" font-size="12" fill="#172a3a">source: canon · locator: Blood pool - fate ambiguous until rSTEINS · status: unavailable · Referenced by: document /</text>
-<text x="174" y="5047" font-size="12" fill="#172a3a">f-kurisu-beta</text>
-</g>
-<g id="evidence-10">
-<rect x="32" y="5072" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="5095" font-size="11" fill="#285ac7" font-weight="bold">[10]</text>
-<text x="174" y="5095" font-size="12" fill="#172a3a">source: canon · locator: Alpha convergence · status: unavailable · Referenced by: document / f-mayuri-alpha</text>
-</g>
-<g >
-<line x1="32" y1="5140" x2="1092" y2="5140" stroke="#d3dde5" stroke-width="1.5"/>
-<text x="40" y="5169" font-size="18" fill="#172a3a" font-weight="bold">Sources — including fixture provenance</text>
-</g>
-<g >
-<rect x="32" y="5188" width="1060" height="94" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="5211" font-size="11" fill="#526575" font-weight="bold">canon</text>
-<text x="174" y="5211" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;canon&quot;, &quot;kind&quot;: &quot;canon_statement&quot;, &quot;text&quot;: &quot;Okabe alone remembers prior worldlines (Reading Steiner). The D-Mail</text>
-<text x="174" y="5229" font-size="12" fill="#172a3a">chain shifts worldlines: beta (Mayuri dies) to alpha (Kurisu dies, SERN dystopia). Each shift rewrites the single world; bodies</text>
-<text x="174" y="5247" font-size="12" fill="#172a3a">do not travel - only his memory crosses. The 1% barrier separates attractor fields; reaching divergence &gt;1% lands the Steins</text>
-<text x="174" y="5265" font-size="12" fill="#172a3a">Gate worldline where both survive.&quot;, &quot;title&quot;: &quot;Steins;Gate (2011), theatrical cut&quot;}</text>
-</g>
-<g >
-<rect x="32" y="5290" width="1060" height="94" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="5313" font-size="11" fill="#526575" font-weight="bold">allocation</text>
-<text x="174" y="5313" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;allocation&quot;, &quot;kind&quot;: &quot;test_fixture&quot;, &quot;text&quot;: &quot;Worldlines modeled as revisions: rBETA (original), rALPHA (post-D-Mail</text>
-<text x="174" y="5331" font-size="12" fill="#172a3a">attractor field alpha), rSTEINS (divergence 1.048596). Divergence values recorded on revision objects as allocated test data.</text>
-<text x="174" y="5349" font-size="12" fill="#172a3a">Kurisu&#x27;s apparent death in rBETA is &#x27;unknown&#x27; fate (she is saved in rSTEINS - same world, different revision).&quot;, &quot;title&quot;:</text>
-<text x="174" y="5367" font-size="12" fill="#172a3a">&quot;Fixture allocations&quot;}</text>
-</g>
-<g >
-<line x1="32" y1="5410" x2="1092" y2="5410" stroke="#d3dde5" stroke-width="1.5"/>
-<text x="40" y="5439" font-size="18" fill="#172a3a" font-weight="bold">Characters</text>
-</g>
-<g >
-<rect x="32" y="5458" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="5481" font-size="11" fill="#526575" font-weight="bold">okabe</text>
-<text x="174" y="5481" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;okabe&quot;, &quot;label&quot;: &quot;Rintaro Okabe&quot;}</text>
-</g>
-<g >
-<rect x="32" y="5508" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="5531" font-size="11" fill="#526575" font-weight="bold">kurisu</text>
-<text x="174" y="5531" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;kurisu&quot;, &quot;label&quot;: &quot;Kurisu Makise&quot;}</text>
-</g>
-<g >
-<rect x="32" y="5558" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="5581" font-size="11" fill="#526575" font-weight="bold">mayuri</text>
-<text x="174" y="5581" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;mayuri&quot;, &quot;label&quot;: &quot;Mayuri Shiina&quot;}</text>
-</g>
-<g >
-<line x1="32" y1="5626" x2="1092" y2="5626" stroke="#d3dde5" stroke-width="1.5"/>
-<text x="40" y="5655" font-size="18" fill="#172a3a" font-weight="bold">Travellers</text>
-</g>
-<g >
-<rect x="32" y="5674" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="5697" font-size="11" fill="#526575" font-weight="bold">okabe-mind</text>
-<text x="174" y="5697" font-size="12" fill="#172a3a">{&quot;character&quot;: &quot;okabe&quot;, &quot;id&quot;: &quot;okabe-mind&quot;}</text>
-</g>
-<g >
-<line x1="32" y1="5742" x2="1092" y2="5742" stroke="#d3dde5" stroke-width="1.5"/>
-<text x="40" y="5771" font-size="18" fill="#172a3a" font-weight="bold">Namespaces</text>
-</g>
-<g >
-<rect x="32" y="5790" width="1060" height="42" fill="#ffffff" stroke="#d3dde5" rx="7"/>
-<text x="46" y="5813" font-size="11" fill="#526575" font-weight="bold">SG</text>
-<text x="174" y="5813" font-size="12" fill="#172a3a">{&quot;id&quot;: &quot;SG&quot;, &quot;label&quot;: &quot;Steins;Gate&quot;}</text>
-</g>
-<g >
-<line x1="32" y1="5858" x2="1092" y2="5858" stroke="#d3dde5" stroke-width="1.5"/>
-<text x="40" y="5887" font-size="18" fill="#172a3a" font-weight="bold">Chart note</text>
-</g>
-<text x="40" y="5919" font-size="13" fill="#526575">Worldlines are revisions of one world; divergence values gate convergence (attractor field).</text>
-</svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1664" height="8054" viewBox="0 0 1664 8054" role="img" aria-labelledby="atlas-title atlas-desc"><title id="atlas-title">Steins;Gate</title><desc id="atlas-desc">Universe timeline atlas. Event positions use declared ordinal values, not elapsed time. Diagram references link to complete records below. Projection depth has no semantic meaning.</desc><metadata id="input-model">{&quot;abstract_model&quot;: &quot;universe-timeline/1.0&quot;, &quot;title&quot;: &quot;Steins;Gate&quot;, &quot;subtitle&quot;: &quot;Worldline shifts with divergence metric - Okabe&#x27;s Reading Steiner carries memory across&quot;, &quot;footer&quot;: &quot;Worldlines are revisions of one world; divergence values gate convergence (attractor field).&quot;, &quot;profile&quot;: {&quot;name&quot;: &quot;steins-gate&quot;, &quot;params&quot;: {&quot;history_model&quot;: &quot;revisions&quot;, &quot;branching&quot;: &quot;overwrite&quot;, &quot;coexistence&quot;: &quot;single_active&quot;, &quot;time_mechanics&quot;: [&quot;memory&quot;], &quot;joined_worlds&quot;: &quot;preexist&quot;, &quot;turnstiles&quot;: &quot;none&quot;, &quot;protagonist_scope&quot;: &quot;singular&quot;, &quot;axis&quot;: &quot;story_order&quot;, &quot;validation&quot;: &quot;evidence_pending&quot;, &quot;merges&quot;: &quot;forbidden&quot;, &quot;genealogy&quot;: &quot;acyclic&quot;}, &quot;rules&quot;: &quot;none&quot;}, &quot;sources&quot;: [{&quot;id&quot;: &quot;canon&quot;, &quot;title&quot;: &quot;Steins;Gate (2011), theatrical cut&quot;, &quot;kind&quot;: &quot;canon_statement&quot;, &quot;text&quot;: &quot;Okabe alone remembers prior worldlines (Reading Steiner). The D-Mail chain shifts worldlines: beta (Mayuri dies) to alpha (Kurisu dies, SERN dystopia). Each shift rewrites the single world; bodies do not travel - only his memory crosses. The 1% barrier separates attractor fields; reaching divergence &gt;1% lands the Steins Gate worldline where both survive.&quot;}, {&quot;id&quot;: &quot;allocation&quot;, &quot;title&quot;: &quot;Fixture allocations&quot;, &quot;kind&quot;: &quot;test_fixture&quot;, &quot;text&quot;: &quot;Worldlines modeled as revisions: rBETA (original), rALPHA (post-D-Mail attractor field alpha), rSTEINS (divergence 1.048596). Divergence values recorded on revision objects as allocated test data. Kurisu&#x27;s apparent death in rBETA is &#x27;unknown&#x27; fate (she is saved in rSTEINS - same world, different revision).&quot;}], &quot;characters&quot;: [{&quot;id&quot;: &quot;okabe&quot;, &quot;label&quot;: &quot;Rintaro Okabe&quot;}, {&quot;id&quot;: &quot;kurisu&quot;, &quot;label&quot;: &quot;Kurisu Makise&quot;}, {&quot;id&quot;: &quot;mayuri&quot;, &quot;label&quot;: &quot;Mayuri Shiina&quot;}], &quot;travellers&quot;: [{&quot;id&quot;: &quot;okabe-mind&quot;, &quot;character&quot;: &quot;okabe&quot;}], &quot;namespaces&quot;: [{&quot;id&quot;: &quot;SG&quot;, &quot;label&quot;: &quot;Steins;Gate&quot;}], &quot;graphs&quot;: [{&quot;namespace&quot;: &quot;SG&quot;, &quot;title&quot;: &quot;Steins;Gate&quot;, &quot;worlds&quot;: [{&quot;id&quot;: &quot;W&quot;, &quot;label&quot;: &quot;One mutable worldline&quot;, &quot;origin&quot;: &quot;initial&quot;}], &quot;events&quot;: [{&quot;id&quot;: &quot;e-kurisu&quot;, &quot;kind&quot;: &quot;start&quot;, &quot;universe&quot;: &quot;W&quot;, &quot;order&quot;: 0, &quot;label&quot;: &quot;Kurisu found in a pool of blood - the beta worldline begins&quot;, &quot;cite&quot;: {&quot;source&quot;: &quot;canon&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;locator&quot;: &quot;Opening discovery&quot;, &quot;status&quot;: &quot;unavailable&quot;}}, {&quot;id&quot;: &quot;e-dmail&quot;, &quot;kind&quot;: &quot;anchor&quot;, &quot;universe&quot;: &quot;W&quot;, &quot;order&quot;: 10, &quot;label&quot;: &quot;The first D-Mail crosses to the past - worldline shifts to alpha&quot;, &quot;cite&quot;: {&quot;source&quot;: &quot;canon&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;locator&quot;: &quot;D-Mail #1&quot;, &quot;status&quot;: &quot;unavailable&quot;}}, {&quot;id&quot;: &quot;e-mayuri&quot;, &quot;kind&quot;: &quot;cutoff&quot;, &quot;universe&quot;: &quot;W&quot;, &quot;order&quot;: 20, &quot;label&quot;: &quot;Mayuri dies again and again - alpha&#x27;s attractor converges on her death&quot;, &quot;cite&quot;: {&quot;source&quot;: &quot;canon&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;locator&quot;: &quot;Mayuri death loop&quot;, &quot;status&quot;: &quot;unavailable&quot;}}, {&quot;id&quot;: &quot;e-undone&quot;, &quot;kind&quot;: &quot;anchor&quot;, &quot;universe&quot;: &quot;W&quot;, &quot;order&quot;: 30, &quot;label&quot;: &quot;D-Mails undone one by one - back to beta; now Mayuri is doomed instead&quot;, &quot;cite&quot;: {&quot;source&quot;: &quot;canon&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;locator&quot;: &quot;Alpha undo sequence&quot;, &quot;status&quot;: &quot;unavailable&quot;}}, {&quot;id&quot;: &quot;e-operation-skuld&quot;, &quot;kind&quot;: &quot;outcome&quot;, &quot;universe&quot;: &quot;W&quot;, &quot;order&quot;: 40, &quot;label&quot;: &quot;Operation Skuld - the lie that fools the world; divergence passes 1%&quot;, &quot;cite&quot;: {&quot;source&quot;: &quot;canon&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;locator&quot;: &quot;Operation Skuld&quot;, &quot;status&quot;: &quot;unavailable&quot;}}, {&quot;id&quot;: &quot;e-end&quot;, &quot;kind&quot;: &quot;cutoff&quot;, &quot;universe&quot;: &quot;W&quot;, &quot;order&quot;: 50, &quot;label&quot;: &quot;Steins Gate - Kurisu alive, Mayuri alive, no SERN dystopia&quot;, &quot;cite&quot;: {&quot;source&quot;: &quot;canon&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;locator&quot;: &quot;Final scene&quot;, &quot;status&quot;: &quot;unavailable&quot;}}], &quot;segments&quot;: [{&quot;id&quot;: &quot;seg-beta&quot;, &quot;universe&quot;: &quot;W&quot;, &quot;from&quot;: &quot;e-kurisu&quot;, &quot;to&quot;: &quot;e-kurisu&quot;, &quot;label&quot;: &quot;beta - the world as first seen&quot;}, {&quot;id&quot;: &quot;seg-alpha&quot;, &quot;universe&quot;: &quot;W&quot;, &quot;from&quot;: &quot;e-dmail&quot;, &quot;to&quot;: &quot;e-mayuri&quot;, &quot;label&quot;: &quot;alpha - SERN&#x27;s shadow&quot;}, {&quot;id&quot;: &quot;seg-steins&quot;, &quot;universe&quot;: &quot;W&quot;, &quot;from&quot;: &quot;e-operation-skuld&quot;, &quot;to&quot;: &quot;e-end&quot;, &quot;label&quot;: &quot;Steins Gate - past the 1% barrier&quot;}], &quot;beats&quot;: [{&quot;id&quot;: &quot;b-rs&quot;, &quot;segment&quot;: &quot;seg-alpha&quot;, &quot;order&quot;: 15, &quot;text&quot;: &quot;Only Okabe carries memory across the shift - Reading Steiner as the sole continuity&quot;, &quot;cite&quot;: {&quot;source&quot;: &quot;canon&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;locator&quot;: &quot;Worldline shift montage&quot;, &quot;status&quot;: &quot;unavailable&quot;}}, {&quot;id&quot;: &quot;b-lie&quot;, &quot;segment&quot;: &quot;seg-steins&quot;, &quot;order&quot;: 45, &quot;text&quot;: &quot;He lies to the world about Kurisu&#x27;s death - the deception that shifts the field&quot;, &quot;cite&quot;: {&quot;source&quot;: &quot;canon&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;locator&quot;: &quot;The lie&quot;, &quot;status&quot;: &quot;unavailable&quot;}}], &quot;splits&quot;: [], &quot;transfers&quot;: [], &quot;route&quot;: {&quot;traveller&quot;: &quot;okabe-mind&quot;, &quot;visits&quot;: [{&quot;id&quot;: &quot;ov0&quot;, &quot;universe&quot;: &quot;W&quot;, &quot;entry&quot;: &quot;e-kurisu&quot;, &quot;exit&quot;: &quot;e-kurisu&quot;, &quot;passes&quot;: []}, {&quot;id&quot;: &quot;ov1&quot;, &quot;universe&quot;: &quot;W&quot;, &quot;entry&quot;: &quot;e-dmail&quot;, &quot;exit&quot;: &quot;e-mayuri&quot;, &quot;passes&quot;: []}, {&quot;id&quot;: &quot;ov2&quot;, &quot;universe&quot;: &quot;W&quot;, &quot;entry&quot;: &quot;e-undone&quot;, &quot;exit&quot;: &quot;e-undone&quot;, &quot;passes&quot;: []}, {&quot;id&quot;: &quot;ov3&quot;, &quot;universe&quot;: &quot;W&quot;, &quot;entry&quot;: &quot;e-operation-skuld&quot;, &quot;exit&quot;: &quot;e-end&quot;, &quot;passes&quot;: []}], &quot;links&quot;: [{&quot;from&quot;: &quot;ov0&quot;, &quot;to&quot;: &quot;ov1&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;via&quot;: null}, {&quot;from&quot;: &quot;ov1&quot;, &quot;to&quot;: &quot;ov2&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;via&quot;: null}, {&quot;from&quot;: &quot;ov2&quot;, &quot;to&quot;: &quot;ov3&quot;, &quot;kind&quot;: &quot;revision&quot;, &quot;via&quot;: null}]}, &quot;fates&quot;: [{&quot;id&quot;: &quot;f-kurisu-beta&quot;, &quot;universe&quot;: &quot;W&quot;, &quot;instance&quot;: &quot;kurisu&quot;, &quot;event&quot;: &quot;e-kurisu&quot;, &quot;status&quot;: &quot;unknown&quot;, &quot;cite&quot;: {&quot;source&quot;: &quot;canon&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;locator&quot;: &quot;Blood pool - fate ambiguous until rSTEINS&quot;, &quot;status&quot;: &quot;unavailable&quot;}}, {&quot;id&quot;: &quot;f-mayuri-alpha&quot;, &quot;universe&quot;: &quot;W&quot;, &quot;instance&quot;: &quot;mayuri&quot;, &quot;event&quot;: &quot;e-mayuri&quot;, &quot;status&quot;: &quot;dead&quot;, &quot;cite&quot;: {&quot;source&quot;: &quot;canon&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;locator&quot;: &quot;Alpha convergence&quot;, &quot;status&quot;: &quot;unavailable&quot;}}, {&quot;id&quot;: &quot;f-kurisu-steins&quot;, &quot;universe&quot;: &quot;W&quot;, &quot;instance&quot;: &quot;kurisu&quot;, &quot;event&quot;: &quot;e-end&quot;, &quot;status&quot;: &quot;alive&quot;, &quot;cite&quot;: {&quot;source&quot;: &quot;canon&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;locator&quot;: &quot;Final scene&quot;, &quot;status&quot;: &quot;unavailable&quot;}}, {&quot;id&quot;: &quot;f-mayuri-steins&quot;, &quot;universe&quot;: &quot;W&quot;, &quot;instance&quot;: &quot;mayuri&quot;, &quot;event&quot;: &quot;e-end&quot;, &quot;status&quot;: &quot;alive&quot;, &quot;cite&quot;: {&quot;source&quot;: &quot;canon&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;locator&quot;: &quot;Final scene&quot;, &quot;status&quot;: &quot;unavailable&quot;}}], &quot;merges&quot;: 0, &quot;assumptions&quot;: [&quot;No physical transfers: every crossing is a memory-only revision link (E118/R8 semantics)&quot;, &quot;Divergence values are fixture allocations keyed to canon numbers&quot;, &quot;Attractor-field convergence (why Mayuri always dies in alpha) is canon constraint, not mechanism - charted as the death loop cutoff&quot;], &quot;evidence&quot;: [{&quot;where&quot;: &quot;e-kurisu&quot;, &quot;note&quot;: &quot;Kurisu found in a pool of blood - the beta worldline begins&quot;, &quot;cite&quot;: {&quot;source&quot;: &quot;canon&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;locator&quot;: &quot;Opening discovery&quot;, &quot;status&quot;: &quot;unavailable&quot;}}, {&quot;where&quot;: &quot;e-dmail&quot;, &quot;note&quot;: &quot;The first D-Mail crosses to the past - worldline shifts to alpha&quot;, &quot;cite&quot;: {&quot;source&quot;: &quot;canon&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;locator&quot;: &quot;D-Mail #1&quot;, &quot;status&quot;: &quot;unavailable&quot;}}, {&quot;where&quot;: &quot;e-mayuri&quot;, &quot;note&quot;: &quot;Mayuri dies again and again - alpha&#x27;s attractor converges on her death&quot;, &quot;cite&quot;: {&quot;source&quot;: &quot;canon&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;locator&quot;: &quot;Mayuri death loop&quot;, &quot;status&quot;: &quot;unavailable&quot;}}, {&quot;where&quot;: &quot;e-undone&quot;, &quot;note&quot;: &quot;D-Mails undone one by one - back to beta; now Mayuri is doomed instead&quot;, &quot;cite&quot;: {&quot;source&quot;: &quot;canon&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;locator&quot;: &quot;Alpha undo sequence&quot;, &quot;status&quot;: &quot;unavailable&quot;}}, {&quot;where&quot;: &quot;e-operation-skuld&quot;, &quot;note&quot;: &quot;Operation Skuld - the lie that fools the world; divergence passes 1%&quot;, &quot;cite&quot;: {&quot;source&quot;: &quot;canon&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;locator&quot;: &quot;Operation Skuld&quot;, &quot;status&quot;: &quot;unavailable&quot;}}, {&quot;where&quot;: &quot;e-end&quot;, &quot;note&quot;: &quot;Steins Gate - Kurisu alive, Mayuri alive, no SERN dystopia&quot;, &quot;cite&quot;: {&quot;source&quot;: &quot;canon&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;locator&quot;: &quot;Final scene&quot;, &quot;status&quot;: &quot;unavailable&quot;}}, {&quot;where&quot;: &quot;b-rs&quot;, &quot;note&quot;: &quot;Only Okabe carries memory across the shift - Reading Steiner as the sole continuity&quot;, &quot;cite&quot;: {&quot;source&quot;: &quot;canon&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;locator&quot;: &quot;Worldline shift montage&quot;, &quot;status&quot;: &quot;unavailable&quot;}}, {&quot;where&quot;: &quot;b-lie&quot;, &quot;note&quot;: &quot;He lies to the world about Kurisu&#x27;s death - the deception that shifts the field&quot;, &quot;cite&quot;: {&quot;source&quot;: &quot;canon&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;locator&quot;: &quot;The lie&quot;, &quot;status&quot;: &quot;unavailable&quot;}}, {&quot;where&quot;: &quot;f-kurisu-beta&quot;, &quot;note&quot;: &quot;unknown&quot;, &quot;cite&quot;: {&quot;source&quot;: &quot;canon&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;locator&quot;: &quot;Blood pool - fate ambiguous until rSTEINS&quot;, &quot;status&quot;: &quot;unavailable&quot;}}, {&quot;where&quot;: &quot;f-mayuri-alpha&quot;, &quot;note&quot;: &quot;dead&quot;, &quot;cite&quot;: {&quot;source&quot;: &quot;canon&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;locator&quot;: &quot;Alpha convergence&quot;, &quot;status&quot;: &quot;unavailable&quot;}}, {&quot;where&quot;: &quot;f-kurisu-steins&quot;, &quot;note&quot;: &quot;alive&quot;, &quot;cite&quot;: {&quot;source&quot;: &quot;canon&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;locator&quot;: &quot;Final scene&quot;, &quot;status&quot;: &quot;unavailable&quot;}}, {&quot;where&quot;: &quot;f-mayuri-steins&quot;, &quot;note&quot;: &quot;alive&quot;, &quot;cite&quot;: {&quot;source&quot;: &quot;canon&quot;, &quot;page&quot;: null, &quot;scene&quot;: null, &quot;locator&quot;: &quot;Final scene&quot;, &quot;status&quot;: &quot;unavailable&quot;}}]}]}</metadata><defs><marker id="arrow-16877e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#16877e"/></marker><marker id="arrow-178469" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#178469"/></marker><marker id="arrow-3e79b1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#3e79b1"/></marker><marker id="arrow-657684" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#657684"/></marker><marker id="arrow-8460a4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#8460a4"/></marker><marker id="arrow-a76908" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#a76908"/></marker><marker id="arrow-b67524" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#b67524"/></marker><marker id="arrow-c05a55" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#c05a55"/></marker></defs><style>
+        text { font-family: Inter, ui-sans-serif, system-ui, -apple-system,
+               "Segoe UI", sans-serif; }
+        .serif { font-family: Georgia, "Times New Roman", serif; }
+        .mono { font-family: ui-monospace, SFMono-Regular, Consolas,
+                "Liberation Mono", monospace; }
+        a { cursor: pointer; }
+        a:hover .event-hit { stroke: #172c3c; stroke-width: 3; }
+        .record:target > .record-bg, .record.search-hit > .record-bg {
+            stroke: #a76908; stroke-width: 3;
+        }
+        .record { scroll-margin: 80px; }
+        .hide-splits .layer-splits,
+        .hide-transfers .layer-transfers,
+        .hide-route .layer-route,
+        .hide-annotations .layer-annotations { display: none; }
+        </style><rect width="100%" height="100%" fill="#f5f3ed"/><rect x="0" y="0" width="1664" height="9" fill="#172c3c" rx="0"/><text x="48" y="49" font-size="11" fill="#637482">U N I V E R S E   A T L A S</text><text x="46" y="101" font-size="43" fill="#172c3c" class-="serif">Steins;Gate</text><text x="49" y="131" font-size="14" fill="#637482">Worldline shifts with divergence metric - Okabe&#x27;s Reading Steiner carries memory across</text><text x="49" y="170" font-size="12" fill="#172c3c" class-="mono">1 graphs  /  1 declared worlds  /  6 events  /  0 transfers</text><text x="49" y="189" font-size="11" fill="#637482">2D · flat world rails  /  Profile: steins-gate</text><rect x="48" y="217" width="1144" height="128" fill="#eaf0ee" rx="12"/><text x="66" y="241" font-size="10" fill="#637482" letter-spacing="1.5">READING KEY</text><rect x="66" y="253" width="25" height="21" fill="#ffffff" rx="10.5" stroke="#b67524" stroke-width="1"/><text x="78.5" y="267.7" font-size="10" fill="#b67524" text-anchor="middle" font-weight="650">B</text><text x="99" y="267" font-size="11" fill="#637482">body</text><rect x="130.2" y="253" width="25" height="21" fill="#ffffff" rx="10.5" stroke="#16877e" stroke-width="1"/><text x="142.7" y="267.7" font-size="10" fill="#16877e" text-anchor="middle" font-weight="650">M</text><text x="163.2" y="267" font-size="11" fill="#637482">memory</text><rect x="207.0" y="253" width="25" height="21" fill="#ffffff" rx="10.5" stroke="#8460a4" stroke-width="1"/><text x="219.5" y="267.7" font-size="10" fill="#8460a4" text-anchor="middle" font-weight="650">C</text><text x="240.0" y="267" font-size="11" fill="#637482">consciousness</text><rect x="327.9" y="253" width="25" height="21" fill="#ffffff" rx="10.5" stroke="#3e79b1" stroke-width="1"/><text x="340.4" y="267.7" font-size="10" fill="#3e79b1" text-anchor="middle" font-weight="650">S</text><text x="360.9" y="267" font-size="11" fill="#637482">signal</text><rect x="404.7" y="253" width="25" height="21" fill="#ffffff" rx="10.5" stroke="#637482" stroke-width="1"/><text x="417.2" y="267.7" font-size="10" fill="#637482" text-anchor="middle" font-weight="650">?</text><text x="437.7" y="267" font-size="11" fill="#637482">other / unspecified — literal name retained</text><text x="66" y="297" font-size="12" fill="#172c3c">+ / −  declared split outcomes     →  transfer direction     R  traveller route     §  source reference</text><text x="66" y="322" font-size="11" fill="#637482">Rails are containment guides. Order spacing is ordinal, not duration. Click any numbered item for its full record.</text><g transform="translate(0,368)"><text x="48" y="21" font-size="10" fill="#637482" letter-spacing="1.3">01  /  SG</text><text x="48" y="55" font-size="25" fill="#172c3c" class-="serif">Steins;Gate</text><text x="48" y="77" font-size="11" fill="#637482">Declared event.order · ordinal spacing  |  equal-order slots are presentation only</text><path d="M 345.00,104.00 L 1614.00,104.00 L 1614.00,354.00 L 345.00,354.00 Z" fill="#eef2ef" stroke="#d6dfdf"/><line x1="482.0" y1="104" x2="482.0" y2="354" stroke="#d8e1df" stroke-width="1" stroke-dasharray="2 7"/><text x="482.0" y="91" font-size="11" fill="#637482" text-anchor="middle" class-="mono">0</text><line x1="626.0" y1="104" x2="626.0" y2="354" stroke="#d8e1df" stroke-width="1" stroke-dasharray="2 7"/><text x="626.0" y="91" font-size="11" fill="#637482" text-anchor="middle" class-="mono">10</text><line x1="770.0" y1="104" x2="770.0" y2="354" stroke="#d8e1df" stroke-width="1" stroke-dasharray="2 7"/><text x="770.0" y="91" font-size="11" fill="#637482" text-anchor="middle" class-="mono">15</text><line x1="914.0" y1="104" x2="914.0" y2="354" stroke="#d8e1df" stroke-width="1" stroke-dasharray="2 7"/><text x="914.0" y="91" font-size="11" fill="#637482" text-anchor="middle" class-="mono">20</text><line x1="1058.0" y1="104" x2="1058.0" y2="354" stroke="#d8e1df" stroke-width="1" stroke-dasharray="2 7"/><text x="1058.0" y="91" font-size="11" fill="#637482" text-anchor="middle" class-="mono">30</text><line x1="1202.0" y1="104" x2="1202.0" y2="354" stroke="#d8e1df" stroke-width="1" stroke-dasharray="2 7"/><text x="1202.0" y="91" font-size="11" fill="#637482" text-anchor="middle" class-="mono">40</text><line x1="1346.0" y1="104" x2="1346.0" y2="354" stroke="#d8e1df" stroke-width="1" stroke-dasharray="2 7"/><text x="1346.0" y="91" font-size="11" fill="#637482" text-anchor="middle" class-="mono">45</text><line x1="1490.0" y1="104" x2="1490.0" y2="354" stroke="#d8e1df" stroke-width="1" stroke-dasharray="2 7"/><text x="1490.0" y="91" font-size="11" fill="#637482" text-anchor="middle" class-="mono">50</text><line x1="345" y1="229.0" x2="1614" y2="229.0" stroke="#287f8b" stroke-width="19" opacity=".075"/><line x1="345" y1="229.0" x2="1614" y2="229.0" stroke="#287f8b" stroke-width="1.7" opacity=".55"/><a href="#record-10"><title>{
+  &quot;id&quot;: &quot;W&quot;,
+  &quot;label&quot;: &quot;One mutable worldline&quot;,
+  &quot;origin&quot;: &quot;initial&quot;
+}</title><rect x="56" y="188.0" width="4" height="50" fill="#287f8b" rx="2"/><text x="71" y="206.0" font-size="10" fill="#287f8b" class-="mono">010  /  W</text><text x="71" y="226.0" font-size="14" fill="#172c3c" font-weight="600">One mutable worldline</text><text x="71" y="248.0" font-size="11" fill="#637482">origin · initial</text></a><g class="layer-annotations"><a href="#record-17"><title>{
+  &quot;id&quot;: &quot;seg-beta&quot;,
+  &quot;universe&quot;: &quot;W&quot;,
+  &quot;from&quot;: &quot;e-kurisu&quot;,
+  &quot;to&quot;: &quot;e-kurisu&quot;,
+  &quot;label&quot;: &quot;beta - the world as first seen&quot;
+}</title><line x1="482" y1="212.0" x2="482" y2="212.0" stroke="#80989b" stroke-width="5" opacity=".35"/><rect x="456.0" y="200.0" width="58" height="21" fill="#ffffff" rx="10.5" stroke="#60787d" stroke-width="1"/><text x="485.0" y="214.7" font-size="10" fill="#60787d" text-anchor="middle" font-weight="650">Sg 017</text></a></g><g class="layer-annotations"><a href="#record-18"><title>{
+  &quot;id&quot;: &quot;seg-alpha&quot;,
+  &quot;universe&quot;: &quot;W&quot;,
+  &quot;from&quot;: &quot;e-dmail&quot;,
+  &quot;to&quot;: &quot;e-mayuri&quot;,
+  &quot;label&quot;: &quot;alpha - SERN&#x27;s shadow&quot;
+}</title><line x1="626" y1="212.0" x2="914" y2="212.0" stroke="#80989b" stroke-width="5" opacity=".35"/><rect x="744.0" y="200.0" width="58" height="21" fill="#ffffff" rx="10.5" stroke="#60787d" stroke-width="1"/><text x="773.0" y="214.7" font-size="10" fill="#60787d" text-anchor="middle" font-weight="650">Sg 018</text></a></g><g class="layer-annotations"><a href="#record-19"><title>{
+  &quot;id&quot;: &quot;seg-steins&quot;,
+  &quot;universe&quot;: &quot;W&quot;,
+  &quot;from&quot;: &quot;e-operation-skuld&quot;,
+  &quot;to&quot;: &quot;e-end&quot;,
+  &quot;label&quot;: &quot;Steins Gate - past the 1% barrier&quot;
+}</title><line x1="1202" y1="212.0" x2="1490" y2="212.0" stroke="#80989b" stroke-width="5" opacity=".35"/><rect x="1320.0" y="200.0" width="58" height="21" fill="#ffffff" rx="10.5" stroke="#60787d" stroke-width="1"/><text x="1349.0" y="214.7" font-size="10" fill="#60787d" text-anchor="middle" font-weight="650">Sg 019</text></a></g><g class="layer-route"><a href="#record-22"><title>{
+  &quot;id&quot;: &quot;ov0&quot;,
+  &quot;universe&quot;: &quot;W&quot;,
+  &quot;entry&quot;: &quot;e-kurisu&quot;,
+  &quot;exit&quot;: &quot;e-kurisu&quot;,
+  &quot;passes&quot;: []
+}</title><line x1="482" y1="255.0" x2="482" y2="255.0" stroke="#ffffff" stroke-width="7"/><line x1="482" y1="255.0" x2="482" y2="255.0" stroke="#a76908" stroke-width="3" marker-end="url(#arrow-a76908)"/><line x1="482" y1="240.0" x2="482" y2="255.0" stroke="#a76908" stroke-width="1.1" stroke-dasharray="2 3"/><line x1="482" y1="240.0" x2="482" y2="255.0" stroke="#a76908" stroke-width="1.1" stroke-dasharray="2 3"/><rect x="461" y="245.0" width="40" height="21" fill="#fff8e8" rx="10.5" stroke="#a76908" stroke-width="1"/><text x="481.0" y="259.7" font-size="10" fill="#a76908" text-anchor="middle" font-weight="650">R1</text></a></g><g class="layer-route"><a href="#record-22"><title>{
+  &quot;id&quot;: &quot;ov1&quot;,
+  &quot;universe&quot;: &quot;W&quot;,
+  &quot;entry&quot;: &quot;e-dmail&quot;,
+  &quot;exit&quot;: &quot;e-mayuri&quot;,
+  &quot;passes&quot;: []
+}</title><line x1="626" y1="269.0" x2="914" y2="269.0" stroke="#ffffff" stroke-width="7"/><line x1="626" y1="269.0" x2="914" y2="269.0" stroke="#a76908" stroke-width="3" marker-end="url(#arrow-a76908)"/><line x1="626" y1="240.0" x2="626" y2="269.0" stroke="#a76908" stroke-width="1.1" stroke-dasharray="2 3"/><line x1="914" y1="240.0" x2="914" y2="269.0" stroke="#a76908" stroke-width="1.1" stroke-dasharray="2 3"/><rect x="605" y="259.0" width="40" height="21" fill="#fff8e8" rx="10.5" stroke="#a76908" stroke-width="1"/><text x="625.0" y="273.7" font-size="10" fill="#a76908" text-anchor="middle" font-weight="650">R2</text></a></g><g class="layer-route"><a href="#record-22"><title>{
+  &quot;id&quot;: &quot;ov2&quot;,
+  &quot;universe&quot;: &quot;W&quot;,
+  &quot;entry&quot;: &quot;e-undone&quot;,
+  &quot;exit&quot;: &quot;e-undone&quot;,
+  &quot;passes&quot;: []
+}</title><line x1="1058" y1="283.0" x2="1058" y2="283.0" stroke="#ffffff" stroke-width="7"/><line x1="1058" y1="283.0" x2="1058" y2="283.0" stroke="#a76908" stroke-width="3" marker-end="url(#arrow-a76908)"/><line x1="1058" y1="240.0" x2="1058" y2="283.0" stroke="#a76908" stroke-width="1.1" stroke-dasharray="2 3"/><line x1="1058" y1="240.0" x2="1058" y2="283.0" stroke="#a76908" stroke-width="1.1" stroke-dasharray="2 3"/><rect x="1037" y="273.0" width="40" height="21" fill="#fff8e8" rx="10.5" stroke="#a76908" stroke-width="1"/><text x="1057.0" y="287.7" font-size="10" fill="#a76908" text-anchor="middle" font-weight="650">R3</text></a></g><g class="layer-route"><a href="#record-22"><title>{
+  &quot;id&quot;: &quot;ov3&quot;,
+  &quot;universe&quot;: &quot;W&quot;,
+  &quot;entry&quot;: &quot;e-operation-skuld&quot;,
+  &quot;exit&quot;: &quot;e-end&quot;,
+  &quot;passes&quot;: []
+}</title><line x1="1202" y1="297.0" x2="1490" y2="297.0" stroke="#ffffff" stroke-width="7"/><line x1="1202" y1="297.0" x2="1490" y2="297.0" stroke="#a76908" stroke-width="3" marker-end="url(#arrow-a76908)"/><line x1="1202" y1="240.0" x2="1202" y2="297.0" stroke="#a76908" stroke-width="1.1" stroke-dasharray="2 3"/><line x1="1490" y1="240.0" x2="1490" y2="297.0" stroke="#a76908" stroke-width="1.1" stroke-dasharray="2 3"/><rect x="1181" y="287.0" width="40" height="21" fill="#fff8e8" rx="10.5" stroke="#a76908" stroke-width="1"/><text x="1201.0" y="301.7" font-size="10" fill="#a76908" text-anchor="middle" font-weight="650">R4</text></a></g><a href="#record-11"><title>{
+  &quot;id&quot;: &quot;e-kurisu&quot;,
+  &quot;kind&quot;: &quot;start&quot;,
+  &quot;universe&quot;: &quot;W&quot;,
+  &quot;order&quot;: 0,
+  &quot;label&quot;: &quot;Kurisu found in a pool of blood - the beta worldline begins&quot;,
+  &quot;cite&quot;: {
+    &quot;source&quot;: &quot;canon&quot;,
+    &quot;page&quot;: null,
+    &quot;scene&quot;: null,
+    &quot;locator&quot;: &quot;Opening discovery&quot;,
+    &quot;status&quot;: &quot;unavailable&quot;
+  }
+}</title><rect x="414" y="153.0" width="136" height="62" fill="#f5f3ed" rx="7" opacity=".96"/><text x="482" y="169.0" font-size="10" fill="#287f8b" text-anchor="middle" font-weight="700">011 · start</text><text x="482" y="186.0" font-size="10" fill="#172c3c" text-anchor="middle">Kurisu found in a pool</text><text x="482" y="200.0" font-size="10" fill="#172c3c" text-anchor="middle">of blood - the beta…</text><circle cx="482" cy="229.0" r="12" fill="#ffffff" stroke="#287f8b" stroke-width="2" class="event-hit"/><circle cx="482" cy="229.0" r="4" fill="#287f8b"/></a><a href="#record-2"><title>Citation as declared:
+{
+  &quot;source&quot;: &quot;canon&quot;,
+  &quot;page&quot;: null,
+  &quot;scene&quot;: null,
+  &quot;locator&quot;: &quot;Opening discovery&quot;,
+  &quot;status&quot;: &quot;unavailable&quot;
+}</title><text x="500" y="233.0" font-size="16" fill="#a76908">§</text></a><a href="#record-12"><title>{
+  &quot;id&quot;: &quot;e-dmail&quot;,
+  &quot;kind&quot;: &quot;anchor&quot;,
+  &quot;universe&quot;: &quot;W&quot;,
+  &quot;order&quot;: 10,
+  &quot;label&quot;: &quot;The first D-Mail crosses to the past - worldline shifts to alpha&quot;,
+  &quot;cite&quot;: {
+    &quot;source&quot;: &quot;canon&quot;,
+    &quot;page&quot;: null,
+    &quot;scene&quot;: null,
+    &quot;locator&quot;: &quot;D-Mail #1&quot;,
+    &quot;status&quot;: &quot;unavailable&quot;
+  }
+}</title><rect x="558" y="153.0" width="136" height="62" fill="#f5f3ed" rx="7" opacity=".96"/><text x="626" y="169.0" font-size="10" fill="#287f8b" text-anchor="middle" font-weight="700">012 · anchor</text><text x="626" y="186.0" font-size="10" fill="#172c3c" text-anchor="middle">The first D-Mail</text><text x="626" y="200.0" font-size="10" fill="#172c3c" text-anchor="middle">crosses to the past -…</text><circle cx="626" cy="229.0" r="12" fill="#ffffff" stroke="#287f8b" stroke-width="2" class="event-hit"/><path d="M 626,223.0 l 6,6 -6,6 -6,-6 Z" fill="none" stroke="#287f8b" stroke-width="1.5"/></a><a href="#record-2"><title>Citation as declared:
+{
+  &quot;source&quot;: &quot;canon&quot;,
+  &quot;page&quot;: null,
+  &quot;scene&quot;: null,
+  &quot;locator&quot;: &quot;D-Mail #1&quot;,
+  &quot;status&quot;: &quot;unavailable&quot;
+}</title><text x="644" y="233.0" font-size="16" fill="#a76908">§</text></a><a href="#record-13"><title>{
+  &quot;id&quot;: &quot;e-mayuri&quot;,
+  &quot;kind&quot;: &quot;cutoff&quot;,
+  &quot;universe&quot;: &quot;W&quot;,
+  &quot;order&quot;: 20,
+  &quot;label&quot;: &quot;Mayuri dies again and again - alpha&#x27;s attractor converges on her death&quot;,
+  &quot;cite&quot;: {
+    &quot;source&quot;: &quot;canon&quot;,
+    &quot;page&quot;: null,
+    &quot;scene&quot;: null,
+    &quot;locator&quot;: &quot;Mayuri death loop&quot;,
+    &quot;status&quot;: &quot;unavailable&quot;
+  }
+}</title><rect x="846" y="153.0" width="136" height="62" fill="#f5f3ed" rx="7" opacity=".96"/><text x="914" y="169.0" font-size="10" fill="#287f8b" text-anchor="middle" font-weight="700">013 · cutoff</text><text x="914" y="186.0" font-size="10" fill="#172c3c" text-anchor="middle">Mayuri dies again and</text><text x="914" y="200.0" font-size="10" fill="#172c3c" text-anchor="middle">again - alpha&#x27;s…</text><circle cx="914" cy="229.0" r="12" fill="#ffffff" stroke="#287f8b" stroke-width="2" class="event-hit"/><line x1="910" y1="224.0" x2="910" y2="234.0" stroke="#287f8b" stroke-width="2"/><line x1="918" y1="224.0" x2="918" y2="234.0" stroke="#287f8b" stroke-width="2"/></a><a href="#record-2"><title>Citation as declared:
+{
+  &quot;source&quot;: &quot;canon&quot;,
+  &quot;page&quot;: null,
+  &quot;scene&quot;: null,
+  &quot;locator&quot;: &quot;Mayuri death loop&quot;,
+  &quot;status&quot;: &quot;unavailable&quot;
+}</title><text x="932" y="233.0" font-size="16" fill="#a76908">§</text></a><a href="#record-14"><title>{
+  &quot;id&quot;: &quot;e-undone&quot;,
+  &quot;kind&quot;: &quot;anchor&quot;,
+  &quot;universe&quot;: &quot;W&quot;,
+  &quot;order&quot;: 30,
+  &quot;label&quot;: &quot;D-Mails undone one by one - back to beta; now Mayuri is doomed instead&quot;,
+  &quot;cite&quot;: {
+    &quot;source&quot;: &quot;canon&quot;,
+    &quot;page&quot;: null,
+    &quot;scene&quot;: null,
+    &quot;locator&quot;: &quot;Alpha undo sequence&quot;,
+    &quot;status&quot;: &quot;unavailable&quot;
+  }
+}</title><rect x="990" y="153.0" width="136" height="62" fill="#f5f3ed" rx="7" opacity=".96"/><text x="1058" y="169.0" font-size="10" fill="#287f8b" text-anchor="middle" font-weight="700">014 · anchor</text><text x="1058" y="186.0" font-size="10" fill="#172c3c" text-anchor="middle">D-Mails undone one by</text><text x="1058" y="200.0" font-size="10" fill="#172c3c" text-anchor="middle">one - back to beta;…</text><circle cx="1058" cy="229.0" r="12" fill="#ffffff" stroke="#287f8b" stroke-width="2" class="event-hit"/><path d="M 1058,223.0 l 6,6 -6,6 -6,-6 Z" fill="none" stroke="#287f8b" stroke-width="1.5"/></a><a href="#record-2"><title>Citation as declared:
+{
+  &quot;source&quot;: &quot;canon&quot;,
+  &quot;page&quot;: null,
+  &quot;scene&quot;: null,
+  &quot;locator&quot;: &quot;Alpha undo sequence&quot;,
+  &quot;status&quot;: &quot;unavailable&quot;
+}</title><text x="1076" y="233.0" font-size="16" fill="#a76908">§</text></a><a href="#record-15"><title>{
+  &quot;id&quot;: &quot;e-operation-skuld&quot;,
+  &quot;kind&quot;: &quot;outcome&quot;,
+  &quot;universe&quot;: &quot;W&quot;,
+  &quot;order&quot;: 40,
+  &quot;label&quot;: &quot;Operation Skuld - the lie that fools the world; divergence passes 1%&quot;,
+  &quot;cite&quot;: {
+    &quot;source&quot;: &quot;canon&quot;,
+    &quot;page&quot;: null,
+    &quot;scene&quot;: null,
+    &quot;locator&quot;: &quot;Operation Skuld&quot;,
+    &quot;status&quot;: &quot;unavailable&quot;
+  }
+}</title><rect x="1134" y="153.0" width="136" height="62" fill="#f5f3ed" rx="7" opacity=".96"/><text x="1202" y="169.0" font-size="10" fill="#287f8b" text-anchor="middle" font-weight="700">015 · outcome</text><text x="1202" y="186.0" font-size="10" fill="#172c3c" text-anchor="middle">Operation Skuld - the</text><text x="1202" y="200.0" font-size="10" fill="#172c3c" text-anchor="middle">lie that fools the…</text><circle cx="1202" cy="229.0" r="12" fill="#ffffff" stroke="#287f8b" stroke-width="2" class="event-hit"/><circle cx="1202" cy="229.0" r="4" fill="#287f8b"/></a><a href="#record-2"><title>Citation as declared:
+{
+  &quot;source&quot;: &quot;canon&quot;,
+  &quot;page&quot;: null,
+  &quot;scene&quot;: null,
+  &quot;locator&quot;: &quot;Operation Skuld&quot;,
+  &quot;status&quot;: &quot;unavailable&quot;
+}</title><text x="1220" y="233.0" font-size="16" fill="#a76908">§</text></a><a href="#record-16"><title>{
+  &quot;id&quot;: &quot;e-end&quot;,
+  &quot;kind&quot;: &quot;cutoff&quot;,
+  &quot;universe&quot;: &quot;W&quot;,
+  &quot;order&quot;: 50,
+  &quot;label&quot;: &quot;Steins Gate - Kurisu alive, Mayuri alive, no SERN dystopia&quot;,
+  &quot;cite&quot;: {
+    &quot;source&quot;: &quot;canon&quot;,
+    &quot;page&quot;: null,
+    &quot;scene&quot;: null,
+    &quot;locator&quot;: &quot;Final scene&quot;,
+    &quot;status&quot;: &quot;unavailable&quot;
+  }
+}</title><rect x="1422" y="153.0" width="136" height="62" fill="#f5f3ed" rx="7" opacity=".96"/><text x="1490" y="169.0" font-size="10" fill="#287f8b" text-anchor="middle" font-weight="700">016 · cutoff</text><text x="1490" y="186.0" font-size="10" fill="#172c3c" text-anchor="middle">Steins Gate - Kurisu</text><text x="1490" y="200.0" font-size="10" fill="#172c3c" text-anchor="middle">alive, Mayuri alive,…</text><circle cx="1490" cy="229.0" r="12" fill="#ffffff" stroke="#287f8b" stroke-width="2" class="event-hit"/><line x1="1486" y1="224.0" x2="1486" y2="234.0" stroke="#287f8b" stroke-width="2"/><line x1="1494" y1="224.0" x2="1494" y2="234.0" stroke="#287f8b" stroke-width="2"/></a><a href="#record-2"><title>Citation as declared:
+{
+  &quot;source&quot;: &quot;canon&quot;,
+  &quot;page&quot;: null,
+  &quot;scene&quot;: null,
+  &quot;locator&quot;: &quot;Final scene&quot;,
+  &quot;status&quot;: &quot;unavailable&quot;
+}</title><text x="1508" y="233.0" font-size="16" fill="#a76908">§</text></a><g class="layer-annotations"><a href="#record-20"><title>{
+  &quot;id&quot;: &quot;b-rs&quot;,
+  &quot;segment&quot;: &quot;seg-alpha&quot;,
+  &quot;order&quot;: 15,
+  &quot;text&quot;: &quot;Only Okabe carries memory across the shift - Reading Steiner as the sole continuity&quot;,
+  &quot;cite&quot;: {
+    &quot;source&quot;: &quot;canon&quot;,
+    &quot;page&quot;: null,
+    &quot;scene&quot;: null,
+    &quot;locator&quot;: &quot;Worldline shift montage&quot;,
+    &quot;status&quot;: &quot;unavailable&quot;
+  }
+}</title><rect x="738.0" y="296.0" width="64" height="21" fill="#ffffff" rx="10.5" stroke="#60787d" stroke-width="1"/><text x="770.0" y="310.7" font-size="10" fill="#60787d" text-anchor="middle" font-weight="650">◇ 020</text></a></g><g class="layer-annotations"><a href="#record-21"><title>{
+  &quot;id&quot;: &quot;b-lie&quot;,
+  &quot;segment&quot;: &quot;seg-steins&quot;,
+  &quot;order&quot;: 45,
+  &quot;text&quot;: &quot;He lies to the world about Kurisu&#x27;s death - the deception that shifts the field&quot;,
+  &quot;cite&quot;: {
+    &quot;source&quot;: &quot;canon&quot;,
+    &quot;page&quot;: null,
+    &quot;scene&quot;: null,
+    &quot;locator&quot;: &quot;The lie&quot;,
+    &quot;status&quot;: &quot;unavailable&quot;
+  }
+}</title><rect x="1314.0" y="296.0" width="64" height="21" fill="#ffffff" rx="10.5" stroke="#60787d" stroke-width="1"/><text x="1346.0" y="310.7" font-size="10" fill="#60787d" text-anchor="middle" font-weight="650">◇ 021</text></a></g><g class="layer-annotations"><a href="#record-23"><title>{
+  &quot;id&quot;: &quot;f-kurisu-beta&quot;,
+  &quot;universe&quot;: &quot;W&quot;,
+  &quot;instance&quot;: &quot;kurisu&quot;,
+  &quot;event&quot;: &quot;e-kurisu&quot;,
+  &quot;status&quot;: &quot;unknown&quot;,
+  &quot;cite&quot;: {
+    &quot;source&quot;: &quot;canon&quot;,
+    &quot;page&quot;: null,
+    &quot;scene&quot;: null,
+    &quot;locator&quot;: &quot;Blood pool - fate ambiguous until rSTEINS&quot;,
+    &quot;status&quot;: &quot;unavailable&quot;
+  }
+}</title><rect x="425.25" y="333.0" width="113.5" height="21" fill="#ffffff" rx="10.5" stroke="#727e88" stroke-width="1"/><text x="482.0" y="347.7" font-size="10" fill="#727e88" text-anchor="middle" font-weight="650">? unknown · 023</text></a></g><g class="layer-annotations"><a href="#record-24"><title>{
+  &quot;id&quot;: &quot;f-mayuri-alpha&quot;,
+  &quot;universe&quot;: &quot;W&quot;,
+  &quot;instance&quot;: &quot;mayuri&quot;,
+  &quot;event&quot;: &quot;e-mayuri&quot;,
+  &quot;status&quot;: &quot;dead&quot;,
+  &quot;cite&quot;: {
+    &quot;source&quot;: &quot;canon&quot;,
+    &quot;page&quot;: null,
+    &quot;scene&quot;: null,
+    &quot;locator&quot;: &quot;Alpha convergence&quot;,
+    &quot;status&quot;: &quot;unavailable&quot;
+  }
+}</title><rect x="867.0" y="333.0" width="94.0" height="21" fill="#ffffff" rx="10.5" stroke="#bc5054" stroke-width="1"/><text x="914.0" y="347.7" font-size="10" fill="#bc5054" text-anchor="middle" font-weight="650">× dead · 024</text></a></g><g class="layer-annotations"><a href="#record-25"><title>{
+  &quot;id&quot;: &quot;f-kurisu-steins&quot;,
+  &quot;universe&quot;: &quot;W&quot;,
+  &quot;instance&quot;: &quot;kurisu&quot;,
+  &quot;event&quot;: &quot;e-end&quot;,
+  &quot;status&quot;: &quot;alive&quot;,
+  &quot;cite&quot;: {
+    &quot;source&quot;: &quot;canon&quot;,
+    &quot;page&quot;: null,
+    &quot;scene&quot;: null,
+    &quot;locator&quot;: &quot;Final scene&quot;,
+    &quot;status&quot;: &quot;unavailable&quot;
+  }
+}</title><rect x="1439.75" y="333.0" width="100.5" height="21" fill="#ffffff" rx="10.5" stroke="#178469" stroke-width="1"/><text x="1490.0" y="347.7" font-size="10" fill="#178469" text-anchor="middle" font-weight="650">● alive · 025</text></a></g><g class="layer-annotations"><a href="#record-26"><title>{
+  &quot;id&quot;: &quot;f-mayuri-steins&quot;,
+  &quot;universe&quot;: &quot;W&quot;,
+  &quot;instance&quot;: &quot;mayuri&quot;,
+  &quot;event&quot;: &quot;e-end&quot;,
+  &quot;status&quot;: &quot;alive&quot;,
+  &quot;cite&quot;: {
+    &quot;source&quot;: &quot;canon&quot;,
+    &quot;page&quot;: null,
+    &quot;scene&quot;: null,
+    &quot;locator&quot;: &quot;Final scene&quot;,
+    &quot;status&quot;: &quot;unavailable&quot;
+  }
+}</title><rect x="1439.75" y="357.0" width="100.5" height="21" fill="#ffffff" rx="10.5" stroke="#178469" stroke-width="1"/><text x="1490.0" y="371.7" font-size="10" fill="#178469" text-anchor="middle" font-weight="650">● alive · 026</text></a></g><text x="48" y="399" font-size="11" fill="#637482">Node labels are excerpts. Numbered links open complete records. Unavailable citations remain explicitly unavailable.</text><rect x="48" y="425" width="1144" height="116" fill="#f0eade" rx="9" stroke="#e1d5bf"/><text x="65" y="449" font-size="10" fill="#a76908" letter-spacing="1">PLACEMENT NOTES / NO GUESSED ENDPOINTS</text><text x="65" y="472" font-size="11" fill="#76603f">• Declared merges: 0. No merge endpoints are supplied by this field.</text><text x="65" y="489" font-size="11" fill="#76603f">• Route link 1: via transfer is missing, ambiguous or unplaceable.</text><text x="65" y="506" font-size="11" fill="#76603f">• Route link 2: via transfer is missing, ambiguous or unplaceable.</text><text x="65" y="523" font-size="11" fill="#76603f">• Route link 3: via transfer is missing, ambiguous or unplaceable.</text></g><line x1="48" y1="959" x2="1616" y2="959" stroke="#172c3c" stroke-width="1"/><text x="48" y="998" font-size="29" fill="#172c3c" class-="serif">The record index</text><text x="48" y="1023" font-size="12" fill="#637482">Complete declared values, including evidence, assumptions, profile parameters, opaque extensions and unresolved references.</text><g id="record-1" class="record"><rect x="48" y="1050" width="600" height="400" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="48" y="1064" width="3" height="25" fill="#39828b" rx="1"/><text x="66" y="1077" font-size="10" fill="#637482" letter-spacing="1">001  /  PROFILE</text><text x="66" y="1099" font-size="13" fill="#172c3c" font-weight="600">steins-gate</text><text x="66" y="1118" font-size="10" fill="#637482" class-="mono">$.profile</text><line x1="66" y1="1139" x2="630" y2="1139" stroke="#d6dfdf" stroke-width="1"/><text x="66" y="1156" font-size="11" fill="#415767" class-="mono">{</text><text x="66" y="1171" font-size="11" fill="#415767" class-="mono">  &quot;name&quot;: &quot;steins-gate&quot;,</text><text x="66" y="1186" font-size="11" fill="#415767" class-="mono">  &quot;params&quot;: {</text><text x="66" y="1201" font-size="11" fill="#415767" class-="mono">    &quot;history_model&quot;: &quot;revisions&quot;,</text><text x="66" y="1216" font-size="11" fill="#415767" class-="mono">    &quot;branching&quot;: &quot;overwrite&quot;,</text><text x="66" y="1231" font-size="11" fill="#415767" class-="mono">    &quot;coexistence&quot;: &quot;single_active&quot;,</text><text x="66" y="1246" font-size="11" fill="#415767" class-="mono">    &quot;time_mechanics&quot;: [</text><text x="66" y="1261" font-size="11" fill="#415767" class-="mono">      &quot;memory&quot;</text><text x="66" y="1276" font-size="11" fill="#415767" class-="mono">    ],</text><text x="66" y="1291" font-size="11" fill="#415767" class-="mono">    &quot;joined_worlds&quot;: &quot;preexist&quot;,</text><text x="66" y="1306" font-size="11" fill="#415767" class-="mono">    &quot;turnstiles&quot;: &quot;none&quot;,</text><text x="66" y="1321" font-size="11" fill="#415767" class-="mono">    &quot;protagonist_scope&quot;: &quot;singular&quot;,</text><text x="66" y="1336" font-size="11" fill="#415767" class-="mono">    &quot;axis&quot;: &quot;story_order&quot;,</text><text x="66" y="1351" font-size="11" fill="#415767" class-="mono">    &quot;validation&quot;: &quot;evidence_pending&quot;,</text><text x="66" y="1366" font-size="11" fill="#415767" class-="mono">    &quot;merges&quot;: &quot;forbidden&quot;,</text><text x="66" y="1381" font-size="11" fill="#415767" class-="mono">    &quot;genealogy&quot;: &quot;acyclic&quot;</text><text x="66" y="1396" font-size="11" fill="#415767" class-="mono">  },</text><text x="66" y="1411" font-size="11" fill="#415767" class-="mono">  &quot;rules&quot;: &quot;none&quot;</text><text x="66" y="1426" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-2" class="record"><rect x="668" y="1050" width="600" height="265" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="668" y="1064" width="3" height="25" fill="#39828b" rx="1"/><text x="686" y="1077" font-size="10" fill="#637482" letter-spacing="1">002  /  SOURCES</text><text x="686" y="1099" font-size="13" fill="#172c3c" font-weight="600">Steins;Gate (2011), theatrical cut</text><text x="686" y="1118" font-size="10" fill="#637482" class-="mono">$.sources[0]</text><line x1="686" y1="1139" x2="1250" y2="1139" stroke="#d6dfdf" stroke-width="1"/><text x="686" y="1156" font-size="11" fill="#415767" class-="mono">{</text><text x="686" y="1171" font-size="11" fill="#415767" class-="mono">  &quot;id&quot;: &quot;canon&quot;,</text><text x="686" y="1186" font-size="11" fill="#415767" class-="mono">  &quot;title&quot;: &quot;Steins;Gate (2011), theatrical cut&quot;,</text><text x="686" y="1201" font-size="11" fill="#415767" class-="mono">  &quot;kind&quot;: &quot;canon_statement&quot;,</text><text x="686" y="1216" font-size="11" fill="#415767" class-="mono">  &quot;text&quot;: &quot;Okabe alone remembers prior worldlines (Reading Steiner). The D-Mail chain</text><text x="686" y="1231" font-size="11" fill="#415767" class-="mono">  ↳  shifts worldlines: beta (Mayuri dies) to alpha (Kurisu dies, SERN dystopia). </text><text x="686" y="1246" font-size="11" fill="#415767" class-="mono">  ↳ Each shift rewrites the single world; bodies do not travel - only his memory </text><text x="686" y="1261" font-size="11" fill="#415767" class-="mono">  ↳ crosses. The 1% barrier separates attractor fields; reaching divergence &gt;1% lands</text><text x="686" y="1276" font-size="11" fill="#415767" class-="mono">  ↳  the Steins Gate worldline where both survive.&quot;</text><text x="686" y="1291" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-3" class="record"><rect x="48" y="1470" width="600" height="250" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="48" y="1484" width="3" height="25" fill="#39828b" rx="1"/><text x="66" y="1497" font-size="10" fill="#637482" letter-spacing="1">003  /  SOURCES</text><text x="66" y="1519" font-size="13" fill="#172c3c" font-weight="600">Fixture allocations</text><text x="66" y="1538" font-size="10" fill="#637482" class-="mono">$.sources[1]</text><line x1="66" y1="1559" x2="630" y2="1559" stroke="#d6dfdf" stroke-width="1"/><text x="66" y="1576" font-size="11" fill="#415767" class-="mono">{</text><text x="66" y="1591" font-size="11" fill="#415767" class-="mono">  &quot;id&quot;: &quot;allocation&quot;,</text><text x="66" y="1606" font-size="11" fill="#415767" class-="mono">  &quot;title&quot;: &quot;Fixture allocations&quot;,</text><text x="66" y="1621" font-size="11" fill="#415767" class-="mono">  &quot;kind&quot;: &quot;test_fixture&quot;,</text><text x="66" y="1636" font-size="11" fill="#415767" class-="mono">  &quot;text&quot;: &quot;Worldlines modeled as revisions: rBETA (original), rALPHA (post-D-Mail </text><text x="66" y="1651" font-size="11" fill="#415767" class-="mono">  ↳ attractor field alpha), rSTEINS (divergence 1.048596). Divergence values recorded</text><text x="66" y="1666" font-size="11" fill="#415767" class-="mono">  ↳  on revision objects as allocated test data. Kurisu&#x27;s apparent death in rBETA is </text><text x="66" y="1681" font-size="11" fill="#415767" class-="mono">  ↳ &#x27;unknown&#x27; fate (she is saved in rSTEINS - same world, different revision).&quot;</text><text x="66" y="1696" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-4" class="record"><rect x="668" y="1470" width="600" height="175" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="668" y="1484" width="3" height="25" fill="#39828b" rx="1"/><text x="686" y="1497" font-size="10" fill="#637482" letter-spacing="1">004  /  CHARACTERS</text><text x="686" y="1519" font-size="13" fill="#172c3c" font-weight="600">Rintaro Okabe</text><text x="686" y="1538" font-size="10" fill="#637482" class-="mono">$.characters[0]</text><line x1="686" y1="1559" x2="1250" y2="1559" stroke="#d6dfdf" stroke-width="1"/><text x="686" y="1576" font-size="11" fill="#415767" class-="mono">{</text><text x="686" y="1591" font-size="11" fill="#415767" class-="mono">  &quot;id&quot;: &quot;okabe&quot;,</text><text x="686" y="1606" font-size="11" fill="#415767" class-="mono">  &quot;label&quot;: &quot;Rintaro Okabe&quot;</text><text x="686" y="1621" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-5" class="record"><rect x="48" y="1740" width="600" height="175" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="48" y="1754" width="3" height="25" fill="#39828b" rx="1"/><text x="66" y="1767" font-size="10" fill="#637482" letter-spacing="1">005  /  CHARACTERS</text><text x="66" y="1789" font-size="13" fill="#172c3c" font-weight="600">Kurisu Makise</text><text x="66" y="1808" font-size="10" fill="#637482" class-="mono">$.characters[1]</text><line x1="66" y1="1829" x2="630" y2="1829" stroke="#d6dfdf" stroke-width="1"/><text x="66" y="1846" font-size="11" fill="#415767" class-="mono">{</text><text x="66" y="1861" font-size="11" fill="#415767" class-="mono">  &quot;id&quot;: &quot;kurisu&quot;,</text><text x="66" y="1876" font-size="11" fill="#415767" class-="mono">  &quot;label&quot;: &quot;Kurisu Makise&quot;</text><text x="66" y="1891" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-6" class="record"><rect x="668" y="1740" width="600" height="175" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="668" y="1754" width="3" height="25" fill="#39828b" rx="1"/><text x="686" y="1767" font-size="10" fill="#637482" letter-spacing="1">006  /  CHARACTERS</text><text x="686" y="1789" font-size="13" fill="#172c3c" font-weight="600">Mayuri Shiina</text><text x="686" y="1808" font-size="10" fill="#637482" class-="mono">$.characters[2]</text><line x1="686" y1="1829" x2="1250" y2="1829" stroke="#d6dfdf" stroke-width="1"/><text x="686" y="1846" font-size="11" fill="#415767" class-="mono">{</text><text x="686" y="1861" font-size="11" fill="#415767" class-="mono">  &quot;id&quot;: &quot;mayuri&quot;,</text><text x="686" y="1876" font-size="11" fill="#415767" class-="mono">  &quot;label&quot;: &quot;Mayuri Shiina&quot;</text><text x="686" y="1891" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-7" class="record"><rect x="48" y="1935" width="600" height="175" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="48" y="1949" width="3" height="25" fill="#39828b" rx="1"/><text x="66" y="1962" font-size="10" fill="#637482" letter-spacing="1">007  /  TRAVELLERS</text><text x="66" y="1984" font-size="13" fill="#172c3c" font-weight="600">okabe-mind</text><text x="66" y="2003" font-size="10" fill="#637482" class-="mono">$.travellers[0]</text><line x1="66" y1="2024" x2="630" y2="2024" stroke="#d6dfdf" stroke-width="1"/><text x="66" y="2041" font-size="11" fill="#415767" class-="mono">{</text><text x="66" y="2056" font-size="11" fill="#415767" class-="mono">  &quot;id&quot;: &quot;okabe-mind&quot;,</text><text x="66" y="2071" font-size="11" fill="#415767" class-="mono">  &quot;character&quot;: &quot;okabe&quot;</text><text x="66" y="2086" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-8" class="record"><rect x="668" y="1935" width="600" height="175" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="668" y="1949" width="3" height="25" fill="#39828b" rx="1"/><text x="686" y="1962" font-size="10" fill="#637482" letter-spacing="1">008  /  NAMESPACES</text><text x="686" y="1984" font-size="13" fill="#172c3c" font-weight="600">Steins;Gate</text><text x="686" y="2003" font-size="10" fill="#637482" class-="mono">$.namespaces[0]</text><line x1="686" y1="2024" x2="1250" y2="2024" stroke="#d6dfdf" stroke-width="1"/><text x="686" y="2041" font-size="11" fill="#415767" class-="mono">{</text><text x="686" y="2056" font-size="11" fill="#415767" class-="mono">  &quot;id&quot;: &quot;SG&quot;,</text><text x="686" y="2071" font-size="11" fill="#415767" class-="mono">  &quot;label&quot;: &quot;Steins;Gate&quot;</text><text x="686" y="2086" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-9" class="record"><rect x="48" y="2130" width="600" height="235" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="48" y="2144" width="3" height="25" fill="#39828b" rx="1"/><text x="66" y="2157" font-size="10" fill="#637482" letter-spacing="1">009  /  DOCUMENT</text><text x="66" y="2179" font-size="13" fill="#172c3c" font-weight="600">Steins;Gate</text><text x="66" y="2198" font-size="10" fill="#637482" class-="mono">$</text><line x1="66" y1="2219" x2="630" y2="2219" stroke="#d6dfdf" stroke-width="1"/><text x="66" y="2236" font-size="11" fill="#415767" class-="mono">{</text><text x="66" y="2251" font-size="11" fill="#415767" class-="mono">  &quot;abstract_model&quot;: &quot;universe-timeline/1.0&quot;,</text><text x="66" y="2266" font-size="11" fill="#415767" class-="mono">  &quot;title&quot;: &quot;Steins;Gate&quot;,</text><text x="66" y="2281" font-size="11" fill="#415767" class-="mono">  &quot;subtitle&quot;: &quot;Worldline shifts with divergence metric - Okabe&#x27;s Reading Steiner </text><text x="66" y="2296" font-size="11" fill="#415767" class-="mono">  ↳ carries memory across&quot;,</text><text x="66" y="2311" font-size="11" fill="#415767" class-="mono">  &quot;footer&quot;: &quot;Worldlines are revisions of one world; divergence values gate </text><text x="66" y="2326" font-size="11" fill="#415767" class-="mono">  ↳ convergence (attractor field).&quot;</text><text x="66" y="2341" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-10" class="record"><rect x="668" y="2130" width="600" height="190" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="668" y="2144" width="3" height="25" fill="#39828b" rx="1"/><text x="686" y="2157" font-size="10" fill="#637482" letter-spacing="1">010  /  WORLDS</text><text x="686" y="2179" font-size="13" fill="#172c3c" font-weight="600">One mutable worldline</text><text x="686" y="2198" font-size="10" fill="#637482" class-="mono">$.graphs[0].worlds[0]</text><line x1="686" y1="2219" x2="1250" y2="2219" stroke="#d6dfdf" stroke-width="1"/><text x="686" y="2236" font-size="11" fill="#415767" class-="mono">{</text><text x="686" y="2251" font-size="11" fill="#415767" class-="mono">  &quot;id&quot;: &quot;W&quot;,</text><text x="686" y="2266" font-size="11" fill="#415767" class-="mono">  &quot;label&quot;: &quot;One mutable worldline&quot;,</text><text x="686" y="2281" font-size="11" fill="#415767" class-="mono">  &quot;origin&quot;: &quot;initial&quot;</text><text x="686" y="2296" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-11" class="record"><rect x="48" y="2385" width="600" height="325" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="48" y="2399" width="3" height="25" fill="#39828b" rx="1"/><text x="66" y="2412" font-size="10" fill="#637482" letter-spacing="1">011  /  EVENTS</text><text x="66" y="2434" font-size="13" fill="#172c3c" font-weight="600">Kurisu found in a pool of blood - the beta worldline begins</text><text x="66" y="2453" font-size="10" fill="#637482" class-="mono">$.graphs[0].events[0]</text><line x1="66" y1="2474" x2="630" y2="2474" stroke="#d6dfdf" stroke-width="1"/><text x="66" y="2491" font-size="11" fill="#415767" class-="mono">{</text><text x="66" y="2506" font-size="11" fill="#415767" class-="mono">  &quot;id&quot;: &quot;e-kurisu&quot;,</text><text x="66" y="2521" font-size="11" fill="#415767" class-="mono">  &quot;kind&quot;: &quot;start&quot;,</text><text x="66" y="2536" font-size="11" fill="#415767" class-="mono">  &quot;universe&quot;: &quot;W&quot;,</text><text x="66" y="2551" font-size="11" fill="#415767" class-="mono">  &quot;order&quot;: 0,</text><text x="66" y="2566" font-size="11" fill="#415767" class-="mono">  &quot;label&quot;: &quot;Kurisu found in a pool of blood - the beta worldline begins&quot;,</text><text x="66" y="2581" font-size="11" fill="#415767" class-="mono">  &quot;cite&quot;: {</text><text x="66" y="2596" font-size="11" fill="#415767" class-="mono">    &quot;source&quot;: &quot;canon&quot;,</text><text x="66" y="2611" font-size="11" fill="#415767" class-="mono">    &quot;page&quot;: null,</text><text x="66" y="2626" font-size="11" fill="#415767" class-="mono">    &quot;scene&quot;: null,</text><text x="66" y="2641" font-size="11" fill="#415767" class-="mono">    &quot;locator&quot;: &quot;Opening discovery&quot;,</text><text x="66" y="2656" font-size="11" fill="#415767" class-="mono">    &quot;status&quot;: &quot;unavailable&quot;</text><text x="66" y="2671" font-size="11" fill="#415767" class-="mono">  }</text><text x="66" y="2686" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-12" class="record"><rect x="668" y="2385" width="600" height="325" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="668" y="2399" width="3" height="25" fill="#39828b" rx="1"/><text x="686" y="2412" font-size="10" fill="#637482" letter-spacing="1">012  /  EVENTS</text><text x="686" y="2434" font-size="13" fill="#172c3c" font-weight="600">The first D-Mail crosses to the past - worldline shifts to alpha</text><text x="686" y="2453" font-size="10" fill="#637482" class-="mono">$.graphs[0].events[1]</text><line x1="686" y1="2474" x2="1250" y2="2474" stroke="#d6dfdf" stroke-width="1"/><text x="686" y="2491" font-size="11" fill="#415767" class-="mono">{</text><text x="686" y="2506" font-size="11" fill="#415767" class-="mono">  &quot;id&quot;: &quot;e-dmail&quot;,</text><text x="686" y="2521" font-size="11" fill="#415767" class-="mono">  &quot;kind&quot;: &quot;anchor&quot;,</text><text x="686" y="2536" font-size="11" fill="#415767" class-="mono">  &quot;universe&quot;: &quot;W&quot;,</text><text x="686" y="2551" font-size="11" fill="#415767" class-="mono">  &quot;order&quot;: 10,</text><text x="686" y="2566" font-size="11" fill="#415767" class-="mono">  &quot;label&quot;: &quot;The first D-Mail crosses to the past - worldline shifts to alpha&quot;,</text><text x="686" y="2581" font-size="11" fill="#415767" class-="mono">  &quot;cite&quot;: {</text><text x="686" y="2596" font-size="11" fill="#415767" class-="mono">    &quot;source&quot;: &quot;canon&quot;,</text><text x="686" y="2611" font-size="11" fill="#415767" class-="mono">    &quot;page&quot;: null,</text><text x="686" y="2626" font-size="11" fill="#415767" class-="mono">    &quot;scene&quot;: null,</text><text x="686" y="2641" font-size="11" fill="#415767" class-="mono">    &quot;locator&quot;: &quot;D-Mail #1&quot;,</text><text x="686" y="2656" font-size="11" fill="#415767" class-="mono">    &quot;status&quot;: &quot;unavailable&quot;</text><text x="686" y="2671" font-size="11" fill="#415767" class-="mono">  }</text><text x="686" y="2686" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-13" class="record"><rect x="48" y="2730" width="600" height="325" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="48" y="2744" width="3" height="25" fill="#39828b" rx="1"/><text x="66" y="2757" font-size="10" fill="#637482" letter-spacing="1">013  /  EVENTS</text><text x="66" y="2779" font-size="13" fill="#172c3c" font-weight="600">Mayuri dies again and again - alpha&#x27;s attractor converges on her death</text><text x="66" y="2798" font-size="10" fill="#637482" class-="mono">$.graphs[0].events[2]</text><line x1="66" y1="2819" x2="630" y2="2819" stroke="#d6dfdf" stroke-width="1"/><text x="66" y="2836" font-size="11" fill="#415767" class-="mono">{</text><text x="66" y="2851" font-size="11" fill="#415767" class-="mono">  &quot;id&quot;: &quot;e-mayuri&quot;,</text><text x="66" y="2866" font-size="11" fill="#415767" class-="mono">  &quot;kind&quot;: &quot;cutoff&quot;,</text><text x="66" y="2881" font-size="11" fill="#415767" class-="mono">  &quot;universe&quot;: &quot;W&quot;,</text><text x="66" y="2896" font-size="11" fill="#415767" class-="mono">  &quot;order&quot;: 20,</text><text x="66" y="2911" font-size="11" fill="#415767" class-="mono">  &quot;label&quot;: &quot;Mayuri dies again and again - alpha&#x27;s attractor converges on her death&quot;,</text><text x="66" y="2926" font-size="11" fill="#415767" class-="mono">  &quot;cite&quot;: {</text><text x="66" y="2941" font-size="11" fill="#415767" class-="mono">    &quot;source&quot;: &quot;canon&quot;,</text><text x="66" y="2956" font-size="11" fill="#415767" class-="mono">    &quot;page&quot;: null,</text><text x="66" y="2971" font-size="11" fill="#415767" class-="mono">    &quot;scene&quot;: null,</text><text x="66" y="2986" font-size="11" fill="#415767" class-="mono">    &quot;locator&quot;: &quot;Mayuri death loop&quot;,</text><text x="66" y="3001" font-size="11" fill="#415767" class-="mono">    &quot;status&quot;: &quot;unavailable&quot;</text><text x="66" y="3016" font-size="11" fill="#415767" class-="mono">  }</text><text x="66" y="3031" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-14" class="record"><rect x="668" y="2730" width="600" height="325" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="668" y="2744" width="3" height="25" fill="#39828b" rx="1"/><text x="686" y="2757" font-size="10" fill="#637482" letter-spacing="1">014  /  EVENTS</text><text x="686" y="2779" font-size="13" fill="#172c3c" font-weight="600">D-Mails undone one by one - back to beta; now Mayuri is doomed instead</text><text x="686" y="2798" font-size="10" fill="#637482" class-="mono">$.graphs[0].events[3]</text><line x1="686" y1="2819" x2="1250" y2="2819" stroke="#d6dfdf" stroke-width="1"/><text x="686" y="2836" font-size="11" fill="#415767" class-="mono">{</text><text x="686" y="2851" font-size="11" fill="#415767" class-="mono">  &quot;id&quot;: &quot;e-undone&quot;,</text><text x="686" y="2866" font-size="11" fill="#415767" class-="mono">  &quot;kind&quot;: &quot;anchor&quot;,</text><text x="686" y="2881" font-size="11" fill="#415767" class-="mono">  &quot;universe&quot;: &quot;W&quot;,</text><text x="686" y="2896" font-size="11" fill="#415767" class-="mono">  &quot;order&quot;: 30,</text><text x="686" y="2911" font-size="11" fill="#415767" class-="mono">  &quot;label&quot;: &quot;D-Mails undone one by one - back to beta; now Mayuri is doomed instead&quot;,</text><text x="686" y="2926" font-size="11" fill="#415767" class-="mono">  &quot;cite&quot;: {</text><text x="686" y="2941" font-size="11" fill="#415767" class-="mono">    &quot;source&quot;: &quot;canon&quot;,</text><text x="686" y="2956" font-size="11" fill="#415767" class-="mono">    &quot;page&quot;: null,</text><text x="686" y="2971" font-size="11" fill="#415767" class-="mono">    &quot;scene&quot;: null,</text><text x="686" y="2986" font-size="11" fill="#415767" class-="mono">    &quot;locator&quot;: &quot;Alpha undo sequence&quot;,</text><text x="686" y="3001" font-size="11" fill="#415767" class-="mono">    &quot;status&quot;: &quot;unavailable&quot;</text><text x="686" y="3016" font-size="11" fill="#415767" class-="mono">  }</text><text x="686" y="3031" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-15" class="record"><rect x="48" y="3075" width="600" height="325" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="48" y="3089" width="3" height="25" fill="#39828b" rx="1"/><text x="66" y="3102" font-size="10" fill="#637482" letter-spacing="1">015  /  EVENTS</text><text x="66" y="3124" font-size="13" fill="#172c3c" font-weight="600">Operation Skuld - the lie that fools the world; divergence passes 1%</text><text x="66" y="3143" font-size="10" fill="#637482" class-="mono">$.graphs[0].events[4]</text><line x1="66" y1="3164" x2="630" y2="3164" stroke="#d6dfdf" stroke-width="1"/><text x="66" y="3181" font-size="11" fill="#415767" class-="mono">{</text><text x="66" y="3196" font-size="11" fill="#415767" class-="mono">  &quot;id&quot;: &quot;e-operation-skuld&quot;,</text><text x="66" y="3211" font-size="11" fill="#415767" class-="mono">  &quot;kind&quot;: &quot;outcome&quot;,</text><text x="66" y="3226" font-size="11" fill="#415767" class-="mono">  &quot;universe&quot;: &quot;W&quot;,</text><text x="66" y="3241" font-size="11" fill="#415767" class-="mono">  &quot;order&quot;: 40,</text><text x="66" y="3256" font-size="11" fill="#415767" class-="mono">  &quot;label&quot;: &quot;Operation Skuld - the lie that fools the world; divergence passes 1%&quot;,</text><text x="66" y="3271" font-size="11" fill="#415767" class-="mono">  &quot;cite&quot;: {</text><text x="66" y="3286" font-size="11" fill="#415767" class-="mono">    &quot;source&quot;: &quot;canon&quot;,</text><text x="66" y="3301" font-size="11" fill="#415767" class-="mono">    &quot;page&quot;: null,</text><text x="66" y="3316" font-size="11" fill="#415767" class-="mono">    &quot;scene&quot;: null,</text><text x="66" y="3331" font-size="11" fill="#415767" class-="mono">    &quot;locator&quot;: &quot;Operation Skuld&quot;,</text><text x="66" y="3346" font-size="11" fill="#415767" class-="mono">    &quot;status&quot;: &quot;unavailable&quot;</text><text x="66" y="3361" font-size="11" fill="#415767" class-="mono">  }</text><text x="66" y="3376" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-16" class="record"><rect x="668" y="3075" width="600" height="325" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="668" y="3089" width="3" height="25" fill="#39828b" rx="1"/><text x="686" y="3102" font-size="10" fill="#637482" letter-spacing="1">016  /  EVENTS</text><text x="686" y="3124" font-size="13" fill="#172c3c" font-weight="600">Steins Gate - Kurisu alive, Mayuri alive, no SERN dystopia</text><text x="686" y="3143" font-size="10" fill="#637482" class-="mono">$.graphs[0].events[5]</text><line x1="686" y1="3164" x2="1250" y2="3164" stroke="#d6dfdf" stroke-width="1"/><text x="686" y="3181" font-size="11" fill="#415767" class-="mono">{</text><text x="686" y="3196" font-size="11" fill="#415767" class-="mono">  &quot;id&quot;: &quot;e-end&quot;,</text><text x="686" y="3211" font-size="11" fill="#415767" class-="mono">  &quot;kind&quot;: &quot;cutoff&quot;,</text><text x="686" y="3226" font-size="11" fill="#415767" class-="mono">  &quot;universe&quot;: &quot;W&quot;,</text><text x="686" y="3241" font-size="11" fill="#415767" class-="mono">  &quot;order&quot;: 50,</text><text x="686" y="3256" font-size="11" fill="#415767" class-="mono">  &quot;label&quot;: &quot;Steins Gate - Kurisu alive, Mayuri alive, no SERN dystopia&quot;,</text><text x="686" y="3271" font-size="11" fill="#415767" class-="mono">  &quot;cite&quot;: {</text><text x="686" y="3286" font-size="11" fill="#415767" class-="mono">    &quot;source&quot;: &quot;canon&quot;,</text><text x="686" y="3301" font-size="11" fill="#415767" class-="mono">    &quot;page&quot;: null,</text><text x="686" y="3316" font-size="11" fill="#415767" class-="mono">    &quot;scene&quot;: null,</text><text x="686" y="3331" font-size="11" fill="#415767" class-="mono">    &quot;locator&quot;: &quot;Final scene&quot;,</text><text x="686" y="3346" font-size="11" fill="#415767" class-="mono">    &quot;status&quot;: &quot;unavailable&quot;</text><text x="686" y="3361" font-size="11" fill="#415767" class-="mono">  }</text><text x="686" y="3376" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-17" class="record"><rect x="48" y="3420" width="600" height="220" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="48" y="3434" width="3" height="25" fill="#39828b" rx="1"/><text x="66" y="3447" font-size="10" fill="#637482" letter-spacing="1">017  /  SEGMENTS</text><text x="66" y="3469" font-size="13" fill="#172c3c" font-weight="600">beta - the world as first seen</text><text x="66" y="3488" font-size="10" fill="#637482" class-="mono">$.graphs[0].segments[0]</text><line x1="66" y1="3509" x2="630" y2="3509" stroke="#d6dfdf" stroke-width="1"/><text x="66" y="3526" font-size="11" fill="#415767" class-="mono">{</text><text x="66" y="3541" font-size="11" fill="#415767" class-="mono">  &quot;id&quot;: &quot;seg-beta&quot;,</text><text x="66" y="3556" font-size="11" fill="#415767" class-="mono">  &quot;universe&quot;: &quot;W&quot;,</text><text x="66" y="3571" font-size="11" fill="#415767" class-="mono">  &quot;from&quot;: &quot;e-kurisu&quot;,</text><text x="66" y="3586" font-size="11" fill="#415767" class-="mono">  &quot;to&quot;: &quot;e-kurisu&quot;,</text><text x="66" y="3601" font-size="11" fill="#415767" class-="mono">  &quot;label&quot;: &quot;beta - the world as first seen&quot;</text><text x="66" y="3616" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-18" class="record"><rect x="668" y="3420" width="600" height="220" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="668" y="3434" width="3" height="25" fill="#39828b" rx="1"/><text x="686" y="3447" font-size="10" fill="#637482" letter-spacing="1">018  /  SEGMENTS</text><text x="686" y="3469" font-size="13" fill="#172c3c" font-weight="600">alpha - SERN&#x27;s shadow</text><text x="686" y="3488" font-size="10" fill="#637482" class-="mono">$.graphs[0].segments[1]</text><line x1="686" y1="3509" x2="1250" y2="3509" stroke="#d6dfdf" stroke-width="1"/><text x="686" y="3526" font-size="11" fill="#415767" class-="mono">{</text><text x="686" y="3541" font-size="11" fill="#415767" class-="mono">  &quot;id&quot;: &quot;seg-alpha&quot;,</text><text x="686" y="3556" font-size="11" fill="#415767" class-="mono">  &quot;universe&quot;: &quot;W&quot;,</text><text x="686" y="3571" font-size="11" fill="#415767" class-="mono">  &quot;from&quot;: &quot;e-dmail&quot;,</text><text x="686" y="3586" font-size="11" fill="#415767" class-="mono">  &quot;to&quot;: &quot;e-mayuri&quot;,</text><text x="686" y="3601" font-size="11" fill="#415767" class-="mono">  &quot;label&quot;: &quot;alpha - SERN&#x27;s shadow&quot;</text><text x="686" y="3616" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-19" class="record"><rect x="48" y="3660" width="600" height="220" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="48" y="3674" width="3" height="25" fill="#39828b" rx="1"/><text x="66" y="3687" font-size="10" fill="#637482" letter-spacing="1">019  /  SEGMENTS</text><text x="66" y="3709" font-size="13" fill="#172c3c" font-weight="600">Steins Gate - past the 1% barrier</text><text x="66" y="3728" font-size="10" fill="#637482" class-="mono">$.graphs[0].segments[2]</text><line x1="66" y1="3749" x2="630" y2="3749" stroke="#d6dfdf" stroke-width="1"/><text x="66" y="3766" font-size="11" fill="#415767" class-="mono">{</text><text x="66" y="3781" font-size="11" fill="#415767" class-="mono">  &quot;id&quot;: &quot;seg-steins&quot;,</text><text x="66" y="3796" font-size="11" fill="#415767" class-="mono">  &quot;universe&quot;: &quot;W&quot;,</text><text x="66" y="3811" font-size="11" fill="#415767" class-="mono">  &quot;from&quot;: &quot;e-operation-skuld&quot;,</text><text x="66" y="3826" font-size="11" fill="#415767" class-="mono">  &quot;to&quot;: &quot;e-end&quot;,</text><text x="66" y="3841" font-size="11" fill="#415767" class-="mono">  &quot;label&quot;: &quot;Steins Gate - past the 1% barrier&quot;</text><text x="66" y="3856" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-20" class="record"><rect x="668" y="3660" width="600" height="342" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="668" y="3674" width="3" height="25" fill="#39828b" rx="1"/><text x="686" y="3687" font-size="10" fill="#637482" letter-spacing="1">020  /  BEATS</text><text x="686" y="3709" font-size="13" fill="#172c3c" font-weight="600">Only Okabe carries memory across the shift - Reading Steiner as the sole</text><text x="686" y="3726" font-size="13" fill="#172c3c" font-weight="600">continuity</text><text x="686" y="3745" font-size="10" fill="#637482" class-="mono">$.graphs[0].beats[0]</text><line x1="686" y1="3766" x2="1250" y2="3766" stroke="#d6dfdf" stroke-width="1"/><text x="686" y="3783" font-size="11" fill="#415767" class-="mono">{</text><text x="686" y="3798" font-size="11" fill="#415767" class-="mono">  &quot;id&quot;: &quot;b-rs&quot;,</text><text x="686" y="3813" font-size="11" fill="#415767" class-="mono">  &quot;segment&quot;: &quot;seg-alpha&quot;,</text><text x="686" y="3828" font-size="11" fill="#415767" class-="mono">  &quot;order&quot;: 15,</text><text x="686" y="3843" font-size="11" fill="#415767" class-="mono">  &quot;text&quot;: &quot;Only Okabe carries memory across the shift - Reading Steiner as the sole </text><text x="686" y="3858" font-size="11" fill="#415767" class-="mono">  ↳ continuity&quot;,</text><text x="686" y="3873" font-size="11" fill="#415767" class-="mono">  &quot;cite&quot;: {</text><text x="686" y="3888" font-size="11" fill="#415767" class-="mono">    &quot;source&quot;: &quot;canon&quot;,</text><text x="686" y="3903" font-size="11" fill="#415767" class-="mono">    &quot;page&quot;: null,</text><text x="686" y="3918" font-size="11" fill="#415767" class-="mono">    &quot;scene&quot;: null,</text><text x="686" y="3933" font-size="11" fill="#415767" class-="mono">    &quot;locator&quot;: &quot;Worldline shift montage&quot;,</text><text x="686" y="3948" font-size="11" fill="#415767" class-="mono">    &quot;status&quot;: &quot;unavailable&quot;</text><text x="686" y="3963" font-size="11" fill="#415767" class-="mono">  }</text><text x="686" y="3978" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-21" class="record"><rect x="48" y="4022" width="600" height="325" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="48" y="4036" width="3" height="25" fill="#39828b" rx="1"/><text x="66" y="4049" font-size="10" fill="#637482" letter-spacing="1">021  /  BEATS</text><text x="66" y="4071" font-size="13" fill="#172c3c" font-weight="600">He lies to the world about Kurisu&#x27;s death - the deception that shifts the field</text><text x="66" y="4090" font-size="10" fill="#637482" class-="mono">$.graphs[0].beats[1]</text><line x1="66" y1="4111" x2="630" y2="4111" stroke="#d6dfdf" stroke-width="1"/><text x="66" y="4128" font-size="11" fill="#415767" class-="mono">{</text><text x="66" y="4143" font-size="11" fill="#415767" class-="mono">  &quot;id&quot;: &quot;b-lie&quot;,</text><text x="66" y="4158" font-size="11" fill="#415767" class-="mono">  &quot;segment&quot;: &quot;seg-steins&quot;,</text><text x="66" y="4173" font-size="11" fill="#415767" class-="mono">  &quot;order&quot;: 45,</text><text x="66" y="4188" font-size="11" fill="#415767" class-="mono">  &quot;text&quot;: &quot;He lies to the world about Kurisu&#x27;s death - the deception that shifts the </text><text x="66" y="4203" font-size="11" fill="#415767" class-="mono">  ↳ field&quot;,</text><text x="66" y="4218" font-size="11" fill="#415767" class-="mono">  &quot;cite&quot;: {</text><text x="66" y="4233" font-size="11" fill="#415767" class-="mono">    &quot;source&quot;: &quot;canon&quot;,</text><text x="66" y="4248" font-size="11" fill="#415767" class-="mono">    &quot;page&quot;: null,</text><text x="66" y="4263" font-size="11" fill="#415767" class-="mono">    &quot;scene&quot;: null,</text><text x="66" y="4278" font-size="11" fill="#415767" class-="mono">    &quot;locator&quot;: &quot;The lie&quot;,</text><text x="66" y="4293" font-size="11" fill="#415767" class-="mono">    &quot;status&quot;: &quot;unavailable&quot;</text><text x="66" y="4308" font-size="11" fill="#415767" class-="mono">  }</text><text x="66" y="4323" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-22" class="record"><rect x="668" y="4022" width="600" height="910" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="668" y="4036" width="3" height="25" fill="#39828b" rx="1"/><text x="686" y="4049" font-size="10" fill="#637482" letter-spacing="1">022  /  ROUTE</text><text x="686" y="4071" font-size="13" fill="#172c3c" font-weight="600">okabe-mind</text><text x="686" y="4090" font-size="10" fill="#637482" class-="mono">$.graphs[0].route</text><line x1="686" y1="4111" x2="1250" y2="4111" stroke="#d6dfdf" stroke-width="1"/><text x="686" y="4128" font-size="11" fill="#415767" class-="mono">{</text><text x="686" y="4143" font-size="11" fill="#415767" class-="mono">  &quot;traveller&quot;: &quot;okabe-mind&quot;,</text><text x="686" y="4158" font-size="11" fill="#415767" class-="mono">  &quot;visits&quot;: [</text><text x="686" y="4173" font-size="11" fill="#415767" class-="mono">    {</text><text x="686" y="4188" font-size="11" fill="#415767" class-="mono">      &quot;id&quot;: &quot;ov0&quot;,</text><text x="686" y="4203" font-size="11" fill="#415767" class-="mono">      &quot;universe&quot;: &quot;W&quot;,</text><text x="686" y="4218" font-size="11" fill="#415767" class-="mono">      &quot;entry&quot;: &quot;e-kurisu&quot;,</text><text x="686" y="4233" font-size="11" fill="#415767" class-="mono">      &quot;exit&quot;: &quot;e-kurisu&quot;,</text><text x="686" y="4248" font-size="11" fill="#415767" class-="mono">      &quot;passes&quot;: []</text><text x="686" y="4263" font-size="11" fill="#415767" class-="mono">    },</text><text x="686" y="4278" font-size="11" fill="#415767" class-="mono">    {</text><text x="686" y="4293" font-size="11" fill="#415767" class-="mono">      &quot;id&quot;: &quot;ov1&quot;,</text><text x="686" y="4308" font-size="11" fill="#415767" class-="mono">      &quot;universe&quot;: &quot;W&quot;,</text><text x="686" y="4323" font-size="11" fill="#415767" class-="mono">      &quot;entry&quot;: &quot;e-dmail&quot;,</text><text x="686" y="4338" font-size="11" fill="#415767" class-="mono">      &quot;exit&quot;: &quot;e-mayuri&quot;,</text><text x="686" y="4353" font-size="11" fill="#415767" class-="mono">      &quot;passes&quot;: []</text><text x="686" y="4368" font-size="11" fill="#415767" class-="mono">    },</text><text x="686" y="4383" font-size="11" fill="#415767" class-="mono">    {</text><text x="686" y="4398" font-size="11" fill="#415767" class-="mono">      &quot;id&quot;: &quot;ov2&quot;,</text><text x="686" y="4413" font-size="11" fill="#415767" class-="mono">      &quot;universe&quot;: &quot;W&quot;,</text><text x="686" y="4428" font-size="11" fill="#415767" class-="mono">      &quot;entry&quot;: &quot;e-undone&quot;,</text><text x="686" y="4443" font-size="11" fill="#415767" class-="mono">      &quot;exit&quot;: &quot;e-undone&quot;,</text><text x="686" y="4458" font-size="11" fill="#415767" class-="mono">      &quot;passes&quot;: []</text><text x="686" y="4473" font-size="11" fill="#415767" class-="mono">    },</text><text x="686" y="4488" font-size="11" fill="#415767" class-="mono">    {</text><text x="686" y="4503" font-size="11" fill="#415767" class-="mono">      &quot;id&quot;: &quot;ov3&quot;,</text><text x="686" y="4518" font-size="11" fill="#415767" class-="mono">      &quot;universe&quot;: &quot;W&quot;,</text><text x="686" y="4533" font-size="11" fill="#415767" class-="mono">      &quot;entry&quot;: &quot;e-operation-skuld&quot;,</text><text x="686" y="4548" font-size="11" fill="#415767" class-="mono">      &quot;exit&quot;: &quot;e-end&quot;,</text><text x="686" y="4563" font-size="11" fill="#415767" class-="mono">      &quot;passes&quot;: []</text><text x="686" y="4578" font-size="11" fill="#415767" class-="mono">    }</text><text x="686" y="4593" font-size="11" fill="#415767" class-="mono">  ],</text><text x="686" y="4608" font-size="11" fill="#415767" class-="mono">  &quot;links&quot;: [</text><text x="686" y="4623" font-size="11" fill="#415767" class-="mono">    {</text><text x="686" y="4638" font-size="11" fill="#415767" class-="mono">      &quot;from&quot;: &quot;ov0&quot;,</text><text x="686" y="4653" font-size="11" fill="#415767" class-="mono">      &quot;to&quot;: &quot;ov1&quot;,</text><text x="686" y="4668" font-size="11" fill="#415767" class-="mono">      &quot;kind&quot;: &quot;revision&quot;,</text><text x="686" y="4683" font-size="11" fill="#415767" class-="mono">      &quot;via&quot;: null</text><text x="686" y="4698" font-size="11" fill="#415767" class-="mono">    },</text><text x="686" y="4713" font-size="11" fill="#415767" class-="mono">    {</text><text x="686" y="4728" font-size="11" fill="#415767" class-="mono">      &quot;from&quot;: &quot;ov1&quot;,</text><text x="686" y="4743" font-size="11" fill="#415767" class-="mono">      &quot;to&quot;: &quot;ov2&quot;,</text><text x="686" y="4758" font-size="11" fill="#415767" class-="mono">      &quot;kind&quot;: &quot;revision&quot;,</text><text x="686" y="4773" font-size="11" fill="#415767" class-="mono">      &quot;via&quot;: null</text><text x="686" y="4788" font-size="11" fill="#415767" class-="mono">    },</text><text x="686" y="4803" font-size="11" fill="#415767" class-="mono">    {</text><text x="686" y="4818" font-size="11" fill="#415767" class-="mono">      &quot;from&quot;: &quot;ov2&quot;,</text><text x="686" y="4833" font-size="11" fill="#415767" class-="mono">      &quot;to&quot;: &quot;ov3&quot;,</text><text x="686" y="4848" font-size="11" fill="#415767" class-="mono">      &quot;kind&quot;: &quot;revision&quot;,</text><text x="686" y="4863" font-size="11" fill="#415767" class-="mono">      &quot;via&quot;: null</text><text x="686" y="4878" font-size="11" fill="#415767" class-="mono">    }</text><text x="686" y="4893" font-size="11" fill="#415767" class-="mono">  ]</text><text x="686" y="4908" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-23" class="record"><rect x="48" y="4952" width="600" height="325" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="48" y="4966" width="3" height="25" fill="#39828b" rx="1"/><text x="66" y="4979" font-size="10" fill="#637482" letter-spacing="1">023  /  FATES</text><text x="66" y="5001" font-size="13" fill="#172c3c" font-weight="600">f-kurisu-beta</text><text x="66" y="5020" font-size="10" fill="#637482" class-="mono">$.graphs[0].fates[0]</text><line x1="66" y1="5041" x2="630" y2="5041" stroke="#d6dfdf" stroke-width="1"/><text x="66" y="5058" font-size="11" fill="#415767" class-="mono">{</text><text x="66" y="5073" font-size="11" fill="#415767" class-="mono">  &quot;id&quot;: &quot;f-kurisu-beta&quot;,</text><text x="66" y="5088" font-size="11" fill="#415767" class-="mono">  &quot;universe&quot;: &quot;W&quot;,</text><text x="66" y="5103" font-size="11" fill="#415767" class-="mono">  &quot;instance&quot;: &quot;kurisu&quot;,</text><text x="66" y="5118" font-size="11" fill="#415767" class-="mono">  &quot;event&quot;: &quot;e-kurisu&quot;,</text><text x="66" y="5133" font-size="11" fill="#415767" class-="mono">  &quot;status&quot;: &quot;unknown&quot;,</text><text x="66" y="5148" font-size="11" fill="#415767" class-="mono">  &quot;cite&quot;: {</text><text x="66" y="5163" font-size="11" fill="#415767" class-="mono">    &quot;source&quot;: &quot;canon&quot;,</text><text x="66" y="5178" font-size="11" fill="#415767" class-="mono">    &quot;page&quot;: null,</text><text x="66" y="5193" font-size="11" fill="#415767" class-="mono">    &quot;scene&quot;: null,</text><text x="66" y="5208" font-size="11" fill="#415767" class-="mono">    &quot;locator&quot;: &quot;Blood pool - fate ambiguous until rSTEINS&quot;,</text><text x="66" y="5223" font-size="11" fill="#415767" class-="mono">    &quot;status&quot;: &quot;unavailable&quot;</text><text x="66" y="5238" font-size="11" fill="#415767" class-="mono">  }</text><text x="66" y="5253" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-24" class="record"><rect x="668" y="4952" width="600" height="325" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="668" y="4966" width="3" height="25" fill="#39828b" rx="1"/><text x="686" y="4979" font-size="10" fill="#637482" letter-spacing="1">024  /  FATES</text><text x="686" y="5001" font-size="13" fill="#172c3c" font-weight="600">f-mayuri-alpha</text><text x="686" y="5020" font-size="10" fill="#637482" class-="mono">$.graphs[0].fates[1]</text><line x1="686" y1="5041" x2="1250" y2="5041" stroke="#d6dfdf" stroke-width="1"/><text x="686" y="5058" font-size="11" fill="#415767" class-="mono">{</text><text x="686" y="5073" font-size="11" fill="#415767" class-="mono">  &quot;id&quot;: &quot;f-mayuri-alpha&quot;,</text><text x="686" y="5088" font-size="11" fill="#415767" class-="mono">  &quot;universe&quot;: &quot;W&quot;,</text><text x="686" y="5103" font-size="11" fill="#415767" class-="mono">  &quot;instance&quot;: &quot;mayuri&quot;,</text><text x="686" y="5118" font-size="11" fill="#415767" class-="mono">  &quot;event&quot;: &quot;e-mayuri&quot;,</text><text x="686" y="5133" font-size="11" fill="#415767" class-="mono">  &quot;status&quot;: &quot;dead&quot;,</text><text x="686" y="5148" font-size="11" fill="#415767" class-="mono">  &quot;cite&quot;: {</text><text x="686" y="5163" font-size="11" fill="#415767" class-="mono">    &quot;source&quot;: &quot;canon&quot;,</text><text x="686" y="5178" font-size="11" fill="#415767" class-="mono">    &quot;page&quot;: null,</text><text x="686" y="5193" font-size="11" fill="#415767" class-="mono">    &quot;scene&quot;: null,</text><text x="686" y="5208" font-size="11" fill="#415767" class-="mono">    &quot;locator&quot;: &quot;Alpha convergence&quot;,</text><text x="686" y="5223" font-size="11" fill="#415767" class-="mono">    &quot;status&quot;: &quot;unavailable&quot;</text><text x="686" y="5238" font-size="11" fill="#415767" class-="mono">  }</text><text x="686" y="5253" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-25" class="record"><rect x="48" y="5297" width="600" height="325" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="48" y="5311" width="3" height="25" fill="#39828b" rx="1"/><text x="66" y="5324" font-size="10" fill="#637482" letter-spacing="1">025  /  FATES</text><text x="66" y="5346" font-size="13" fill="#172c3c" font-weight="600">f-kurisu-steins</text><text x="66" y="5365" font-size="10" fill="#637482" class-="mono">$.graphs[0].fates[2]</text><line x1="66" y1="5386" x2="630" y2="5386" stroke="#d6dfdf" stroke-width="1"/><text x="66" y="5403" font-size="11" fill="#415767" class-="mono">{</text><text x="66" y="5418" font-size="11" fill="#415767" class-="mono">  &quot;id&quot;: &quot;f-kurisu-steins&quot;,</text><text x="66" y="5433" font-size="11" fill="#415767" class-="mono">  &quot;universe&quot;: &quot;W&quot;,</text><text x="66" y="5448" font-size="11" fill="#415767" class-="mono">  &quot;instance&quot;: &quot;kurisu&quot;,</text><text x="66" y="5463" font-size="11" fill="#415767" class-="mono">  &quot;event&quot;: &quot;e-end&quot;,</text><text x="66" y="5478" font-size="11" fill="#415767" class-="mono">  &quot;status&quot;: &quot;alive&quot;,</text><text x="66" y="5493" font-size="11" fill="#415767" class-="mono">  &quot;cite&quot;: {</text><text x="66" y="5508" font-size="11" fill="#415767" class-="mono">    &quot;source&quot;: &quot;canon&quot;,</text><text x="66" y="5523" font-size="11" fill="#415767" class-="mono">    &quot;page&quot;: null,</text><text x="66" y="5538" font-size="11" fill="#415767" class-="mono">    &quot;scene&quot;: null,</text><text x="66" y="5553" font-size="11" fill="#415767" class-="mono">    &quot;locator&quot;: &quot;Final scene&quot;,</text><text x="66" y="5568" font-size="11" fill="#415767" class-="mono">    &quot;status&quot;: &quot;unavailable&quot;</text><text x="66" y="5583" font-size="11" fill="#415767" class-="mono">  }</text><text x="66" y="5598" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-26" class="record"><rect x="668" y="5297" width="600" height="325" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="668" y="5311" width="3" height="25" fill="#39828b" rx="1"/><text x="686" y="5324" font-size="10" fill="#637482" letter-spacing="1">026  /  FATES</text><text x="686" y="5346" font-size="13" fill="#172c3c" font-weight="600">f-mayuri-steins</text><text x="686" y="5365" font-size="10" fill="#637482" class-="mono">$.graphs[0].fates[3]</text><line x1="686" y1="5386" x2="1250" y2="5386" stroke="#d6dfdf" stroke-width="1"/><text x="686" y="5403" font-size="11" fill="#415767" class-="mono">{</text><text x="686" y="5418" font-size="11" fill="#415767" class-="mono">  &quot;id&quot;: &quot;f-mayuri-steins&quot;,</text><text x="686" y="5433" font-size="11" fill="#415767" class-="mono">  &quot;universe&quot;: &quot;W&quot;,</text><text x="686" y="5448" font-size="11" fill="#415767" class-="mono">  &quot;instance&quot;: &quot;mayuri&quot;,</text><text x="686" y="5463" font-size="11" fill="#415767" class-="mono">  &quot;event&quot;: &quot;e-end&quot;,</text><text x="686" y="5478" font-size="11" fill="#415767" class-="mono">  &quot;status&quot;: &quot;alive&quot;,</text><text x="686" y="5493" font-size="11" fill="#415767" class-="mono">  &quot;cite&quot;: {</text><text x="686" y="5508" font-size="11" fill="#415767" class-="mono">    &quot;source&quot;: &quot;canon&quot;,</text><text x="686" y="5523" font-size="11" fill="#415767" class-="mono">    &quot;page&quot;: null,</text><text x="686" y="5538" font-size="11" fill="#415767" class-="mono">    &quot;scene&quot;: null,</text><text x="686" y="5553" font-size="11" fill="#415767" class-="mono">    &quot;locator&quot;: &quot;Final scene&quot;,</text><text x="686" y="5568" font-size="11" fill="#415767" class-="mono">    &quot;status&quot;: &quot;unavailable&quot;</text><text x="686" y="5583" font-size="11" fill="#415767" class-="mono">  }</text><text x="686" y="5598" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-27" class="record"><rect x="48" y="5642" width="600" height="145" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="48" y="5656" width="3" height="25" fill="#39828b" rx="1"/><text x="66" y="5669" font-size="10" fill="#637482" letter-spacing="1">027  /  ASSUMPTIONS</text><text x="66" y="5691" font-size="13" fill="#172c3c" font-weight="600">assumptions 1</text><text x="66" y="5710" font-size="10" fill="#637482" class-="mono">$.graphs[0].assumptions[0]</text><line x1="66" y1="5731" x2="630" y2="5731" stroke="#d6dfdf" stroke-width="1"/><text x="66" y="5748" font-size="11" fill="#415767" class-="mono">&quot;No physical transfers: every crossing is a memory-only revision link (E118/R8 </text><text x="66" y="5763" font-size="11" fill="#415767" class-="mono">↳ semantics)&quot;</text></g><g id="record-28" class="record"><rect x="668" y="5642" width="600" height="130" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="668" y="5656" width="3" height="25" fill="#39828b" rx="1"/><text x="686" y="5669" font-size="10" fill="#637482" letter-spacing="1">028  /  ASSUMPTIONS</text><text x="686" y="5691" font-size="13" fill="#172c3c" font-weight="600">assumptions 2</text><text x="686" y="5710" font-size="10" fill="#637482" class-="mono">$.graphs[0].assumptions[1]</text><line x1="686" y1="5731" x2="1250" y2="5731" stroke="#d6dfdf" stroke-width="1"/><text x="686" y="5748" font-size="11" fill="#415767" class-="mono">&quot;Divergence values are fixture allocations keyed to canon numbers&quot;</text></g><g id="record-29" class="record"><rect x="48" y="5807" width="600" height="145" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="48" y="5821" width="3" height="25" fill="#39828b" rx="1"/><text x="66" y="5834" font-size="10" fill="#637482" letter-spacing="1">029  /  ASSUMPTIONS</text><text x="66" y="5856" font-size="13" fill="#172c3c" font-weight="600">assumptions 3</text><text x="66" y="5875" font-size="10" fill="#637482" class-="mono">$.graphs[0].assumptions[2]</text><line x1="66" y1="5896" x2="630" y2="5896" stroke="#d6dfdf" stroke-width="1"/><text x="66" y="5913" font-size="11" fill="#415767" class-="mono">&quot;Attractor-field convergence (why Mayuri always dies in alpha) is canon constraint, </text><text x="66" y="5928" font-size="11" fill="#415767" class-="mono">↳ not mechanism - charted as the death loop cutoff&quot;</text></g><g id="record-30" class="record"><rect x="668" y="5807" width="600" height="280" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="668" y="5821" width="3" height="25" fill="#39828b" rx="1"/><text x="686" y="5834" font-size="10" fill="#637482" letter-spacing="1">030  /  EVIDENCE</text><text x="686" y="5856" font-size="13" fill="#172c3c" font-weight="600">evidence 1</text><text x="686" y="5875" font-size="10" fill="#637482" class-="mono">$.graphs[0].evidence[0]</text><line x1="686" y1="5896" x2="1250" y2="5896" stroke="#d6dfdf" stroke-width="1"/><text x="686" y="5913" font-size="11" fill="#415767" class-="mono">{</text><text x="686" y="5928" font-size="11" fill="#415767" class-="mono">  &quot;where&quot;: &quot;e-kurisu&quot;,</text><text x="686" y="5943" font-size="11" fill="#415767" class-="mono">  &quot;note&quot;: &quot;Kurisu found in a pool of blood - the beta worldline begins&quot;,</text><text x="686" y="5958" font-size="11" fill="#415767" class-="mono">  &quot;cite&quot;: {</text><text x="686" y="5973" font-size="11" fill="#415767" class-="mono">    &quot;source&quot;: &quot;canon&quot;,</text><text x="686" y="5988" font-size="11" fill="#415767" class-="mono">    &quot;page&quot;: null,</text><text x="686" y="6003" font-size="11" fill="#415767" class-="mono">    &quot;scene&quot;: null,</text><text x="686" y="6018" font-size="11" fill="#415767" class-="mono">    &quot;locator&quot;: &quot;Opening discovery&quot;,</text><text x="686" y="6033" font-size="11" fill="#415767" class-="mono">    &quot;status&quot;: &quot;unavailable&quot;</text><text x="686" y="6048" font-size="11" fill="#415767" class-="mono">  }</text><text x="686" y="6063" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-31" class="record"><rect x="48" y="6107" width="600" height="280" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="48" y="6121" width="3" height="25" fill="#39828b" rx="1"/><text x="66" y="6134" font-size="10" fill="#637482" letter-spacing="1">031  /  EVIDENCE</text><text x="66" y="6156" font-size="13" fill="#172c3c" font-weight="600">evidence 2</text><text x="66" y="6175" font-size="10" fill="#637482" class-="mono">$.graphs[0].evidence[1]</text><line x1="66" y1="6196" x2="630" y2="6196" stroke="#d6dfdf" stroke-width="1"/><text x="66" y="6213" font-size="11" fill="#415767" class-="mono">{</text><text x="66" y="6228" font-size="11" fill="#415767" class-="mono">  &quot;where&quot;: &quot;e-dmail&quot;,</text><text x="66" y="6243" font-size="11" fill="#415767" class-="mono">  &quot;note&quot;: &quot;The first D-Mail crosses to the past - worldline shifts to alpha&quot;,</text><text x="66" y="6258" font-size="11" fill="#415767" class-="mono">  &quot;cite&quot;: {</text><text x="66" y="6273" font-size="11" fill="#415767" class-="mono">    &quot;source&quot;: &quot;canon&quot;,</text><text x="66" y="6288" font-size="11" fill="#415767" class-="mono">    &quot;page&quot;: null,</text><text x="66" y="6303" font-size="11" fill="#415767" class-="mono">    &quot;scene&quot;: null,</text><text x="66" y="6318" font-size="11" fill="#415767" class-="mono">    &quot;locator&quot;: &quot;D-Mail #1&quot;,</text><text x="66" y="6333" font-size="11" fill="#415767" class-="mono">    &quot;status&quot;: &quot;unavailable&quot;</text><text x="66" y="6348" font-size="11" fill="#415767" class-="mono">  }</text><text x="66" y="6363" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-32" class="record"><rect x="668" y="6107" width="600" height="280" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="668" y="6121" width="3" height="25" fill="#39828b" rx="1"/><text x="686" y="6134" font-size="10" fill="#637482" letter-spacing="1">032  /  EVIDENCE</text><text x="686" y="6156" font-size="13" fill="#172c3c" font-weight="600">evidence 3</text><text x="686" y="6175" font-size="10" fill="#637482" class-="mono">$.graphs[0].evidence[2]</text><line x1="686" y1="6196" x2="1250" y2="6196" stroke="#d6dfdf" stroke-width="1"/><text x="686" y="6213" font-size="11" fill="#415767" class-="mono">{</text><text x="686" y="6228" font-size="11" fill="#415767" class-="mono">  &quot;where&quot;: &quot;e-mayuri&quot;,</text><text x="686" y="6243" font-size="11" fill="#415767" class-="mono">  &quot;note&quot;: &quot;Mayuri dies again and again - alpha&#x27;s attractor converges on her death&quot;,</text><text x="686" y="6258" font-size="11" fill="#415767" class-="mono">  &quot;cite&quot;: {</text><text x="686" y="6273" font-size="11" fill="#415767" class-="mono">    &quot;source&quot;: &quot;canon&quot;,</text><text x="686" y="6288" font-size="11" fill="#415767" class-="mono">    &quot;page&quot;: null,</text><text x="686" y="6303" font-size="11" fill="#415767" class-="mono">    &quot;scene&quot;: null,</text><text x="686" y="6318" font-size="11" fill="#415767" class-="mono">    &quot;locator&quot;: &quot;Mayuri death loop&quot;,</text><text x="686" y="6333" font-size="11" fill="#415767" class-="mono">    &quot;status&quot;: &quot;unavailable&quot;</text><text x="686" y="6348" font-size="11" fill="#415767" class-="mono">  }</text><text x="686" y="6363" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-33" class="record"><rect x="48" y="6407" width="600" height="280" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="48" y="6421" width="3" height="25" fill="#39828b" rx="1"/><text x="66" y="6434" font-size="10" fill="#637482" letter-spacing="1">033  /  EVIDENCE</text><text x="66" y="6456" font-size="13" fill="#172c3c" font-weight="600">evidence 4</text><text x="66" y="6475" font-size="10" fill="#637482" class-="mono">$.graphs[0].evidence[3]</text><line x1="66" y1="6496" x2="630" y2="6496" stroke="#d6dfdf" stroke-width="1"/><text x="66" y="6513" font-size="11" fill="#415767" class-="mono">{</text><text x="66" y="6528" font-size="11" fill="#415767" class-="mono">  &quot;where&quot;: &quot;e-undone&quot;,</text><text x="66" y="6543" font-size="11" fill="#415767" class-="mono">  &quot;note&quot;: &quot;D-Mails undone one by one - back to beta; now Mayuri is doomed instead&quot;,</text><text x="66" y="6558" font-size="11" fill="#415767" class-="mono">  &quot;cite&quot;: {</text><text x="66" y="6573" font-size="11" fill="#415767" class-="mono">    &quot;source&quot;: &quot;canon&quot;,</text><text x="66" y="6588" font-size="11" fill="#415767" class-="mono">    &quot;page&quot;: null,</text><text x="66" y="6603" font-size="11" fill="#415767" class-="mono">    &quot;scene&quot;: null,</text><text x="66" y="6618" font-size="11" fill="#415767" class-="mono">    &quot;locator&quot;: &quot;Alpha undo sequence&quot;,</text><text x="66" y="6633" font-size="11" fill="#415767" class-="mono">    &quot;status&quot;: &quot;unavailable&quot;</text><text x="66" y="6648" font-size="11" fill="#415767" class-="mono">  }</text><text x="66" y="6663" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-34" class="record"><rect x="668" y="6407" width="600" height="280" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="668" y="6421" width="3" height="25" fill="#39828b" rx="1"/><text x="686" y="6434" font-size="10" fill="#637482" letter-spacing="1">034  /  EVIDENCE</text><text x="686" y="6456" font-size="13" fill="#172c3c" font-weight="600">evidence 5</text><text x="686" y="6475" font-size="10" fill="#637482" class-="mono">$.graphs[0].evidence[4]</text><line x1="686" y1="6496" x2="1250" y2="6496" stroke="#d6dfdf" stroke-width="1"/><text x="686" y="6513" font-size="11" fill="#415767" class-="mono">{</text><text x="686" y="6528" font-size="11" fill="#415767" class-="mono">  &quot;where&quot;: &quot;e-operation-skuld&quot;,</text><text x="686" y="6543" font-size="11" fill="#415767" class-="mono">  &quot;note&quot;: &quot;Operation Skuld - the lie that fools the world; divergence passes 1%&quot;,</text><text x="686" y="6558" font-size="11" fill="#415767" class-="mono">  &quot;cite&quot;: {</text><text x="686" y="6573" font-size="11" fill="#415767" class-="mono">    &quot;source&quot;: &quot;canon&quot;,</text><text x="686" y="6588" font-size="11" fill="#415767" class-="mono">    &quot;page&quot;: null,</text><text x="686" y="6603" font-size="11" fill="#415767" class-="mono">    &quot;scene&quot;: null,</text><text x="686" y="6618" font-size="11" fill="#415767" class-="mono">    &quot;locator&quot;: &quot;Operation Skuld&quot;,</text><text x="686" y="6633" font-size="11" fill="#415767" class-="mono">    &quot;status&quot;: &quot;unavailable&quot;</text><text x="686" y="6648" font-size="11" fill="#415767" class-="mono">  }</text><text x="686" y="6663" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-35" class="record"><rect x="48" y="6707" width="600" height="280" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="48" y="6721" width="3" height="25" fill="#39828b" rx="1"/><text x="66" y="6734" font-size="10" fill="#637482" letter-spacing="1">035  /  EVIDENCE</text><text x="66" y="6756" font-size="13" fill="#172c3c" font-weight="600">evidence 6</text><text x="66" y="6775" font-size="10" fill="#637482" class-="mono">$.graphs[0].evidence[5]</text><line x1="66" y1="6796" x2="630" y2="6796" stroke="#d6dfdf" stroke-width="1"/><text x="66" y="6813" font-size="11" fill="#415767" class-="mono">{</text><text x="66" y="6828" font-size="11" fill="#415767" class-="mono">  &quot;where&quot;: &quot;e-end&quot;,</text><text x="66" y="6843" font-size="11" fill="#415767" class-="mono">  &quot;note&quot;: &quot;Steins Gate - Kurisu alive, Mayuri alive, no SERN dystopia&quot;,</text><text x="66" y="6858" font-size="11" fill="#415767" class-="mono">  &quot;cite&quot;: {</text><text x="66" y="6873" font-size="11" fill="#415767" class-="mono">    &quot;source&quot;: &quot;canon&quot;,</text><text x="66" y="6888" font-size="11" fill="#415767" class-="mono">    &quot;page&quot;: null,</text><text x="66" y="6903" font-size="11" fill="#415767" class-="mono">    &quot;scene&quot;: null,</text><text x="66" y="6918" font-size="11" fill="#415767" class-="mono">    &quot;locator&quot;: &quot;Final scene&quot;,</text><text x="66" y="6933" font-size="11" fill="#415767" class-="mono">    &quot;status&quot;: &quot;unavailable&quot;</text><text x="66" y="6948" font-size="11" fill="#415767" class-="mono">  }</text><text x="66" y="6963" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-36" class="record"><rect x="668" y="6707" width="600" height="295" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="668" y="6721" width="3" height="25" fill="#39828b" rx="1"/><text x="686" y="6734" font-size="10" fill="#637482" letter-spacing="1">036  /  EVIDENCE</text><text x="686" y="6756" font-size="13" fill="#172c3c" font-weight="600">evidence 7</text><text x="686" y="6775" font-size="10" fill="#637482" class-="mono">$.graphs[0].evidence[6]</text><line x1="686" y1="6796" x2="1250" y2="6796" stroke="#d6dfdf" stroke-width="1"/><text x="686" y="6813" font-size="11" fill="#415767" class-="mono">{</text><text x="686" y="6828" font-size="11" fill="#415767" class-="mono">  &quot;where&quot;: &quot;b-rs&quot;,</text><text x="686" y="6843" font-size="11" fill="#415767" class-="mono">  &quot;note&quot;: &quot;Only Okabe carries memory across the shift - Reading Steiner as the sole </text><text x="686" y="6858" font-size="11" fill="#415767" class-="mono">  ↳ continuity&quot;,</text><text x="686" y="6873" font-size="11" fill="#415767" class-="mono">  &quot;cite&quot;: {</text><text x="686" y="6888" font-size="11" fill="#415767" class-="mono">    &quot;source&quot;: &quot;canon&quot;,</text><text x="686" y="6903" font-size="11" fill="#415767" class-="mono">    &quot;page&quot;: null,</text><text x="686" y="6918" font-size="11" fill="#415767" class-="mono">    &quot;scene&quot;: null,</text><text x="686" y="6933" font-size="11" fill="#415767" class-="mono">    &quot;locator&quot;: &quot;Worldline shift montage&quot;,</text><text x="686" y="6948" font-size="11" fill="#415767" class-="mono">    &quot;status&quot;: &quot;unavailable&quot;</text><text x="686" y="6963" font-size="11" fill="#415767" class-="mono">  }</text><text x="686" y="6978" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-37" class="record"><rect x="48" y="7022" width="600" height="295" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="48" y="7036" width="3" height="25" fill="#39828b" rx="1"/><text x="66" y="7049" font-size="10" fill="#637482" letter-spacing="1">037  /  EVIDENCE</text><text x="66" y="7071" font-size="13" fill="#172c3c" font-weight="600">evidence 8</text><text x="66" y="7090" font-size="10" fill="#637482" class-="mono">$.graphs[0].evidence[7]</text><line x1="66" y1="7111" x2="630" y2="7111" stroke="#d6dfdf" stroke-width="1"/><text x="66" y="7128" font-size="11" fill="#415767" class-="mono">{</text><text x="66" y="7143" font-size="11" fill="#415767" class-="mono">  &quot;where&quot;: &quot;b-lie&quot;,</text><text x="66" y="7158" font-size="11" fill="#415767" class-="mono">  &quot;note&quot;: &quot;He lies to the world about Kurisu&#x27;s death - the deception that shifts the </text><text x="66" y="7173" font-size="11" fill="#415767" class-="mono">  ↳ field&quot;,</text><text x="66" y="7188" font-size="11" fill="#415767" class-="mono">  &quot;cite&quot;: {</text><text x="66" y="7203" font-size="11" fill="#415767" class-="mono">    &quot;source&quot;: &quot;canon&quot;,</text><text x="66" y="7218" font-size="11" fill="#415767" class-="mono">    &quot;page&quot;: null,</text><text x="66" y="7233" font-size="11" fill="#415767" class-="mono">    &quot;scene&quot;: null,</text><text x="66" y="7248" font-size="11" fill="#415767" class-="mono">    &quot;locator&quot;: &quot;The lie&quot;,</text><text x="66" y="7263" font-size="11" fill="#415767" class-="mono">    &quot;status&quot;: &quot;unavailable&quot;</text><text x="66" y="7278" font-size="11" fill="#415767" class-="mono">  }</text><text x="66" y="7293" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-38" class="record"><rect x="668" y="7022" width="600" height="280" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="668" y="7036" width="3" height="25" fill="#39828b" rx="1"/><text x="686" y="7049" font-size="10" fill="#637482" letter-spacing="1">038  /  EVIDENCE</text><text x="686" y="7071" font-size="13" fill="#172c3c" font-weight="600">evidence 9</text><text x="686" y="7090" font-size="10" fill="#637482" class-="mono">$.graphs[0].evidence[8]</text><line x1="686" y1="7111" x2="1250" y2="7111" stroke="#d6dfdf" stroke-width="1"/><text x="686" y="7128" font-size="11" fill="#415767" class-="mono">{</text><text x="686" y="7143" font-size="11" fill="#415767" class-="mono">  &quot;where&quot;: &quot;f-kurisu-beta&quot;,</text><text x="686" y="7158" font-size="11" fill="#415767" class-="mono">  &quot;note&quot;: &quot;unknown&quot;,</text><text x="686" y="7173" font-size="11" fill="#415767" class-="mono">  &quot;cite&quot;: {</text><text x="686" y="7188" font-size="11" fill="#415767" class-="mono">    &quot;source&quot;: &quot;canon&quot;,</text><text x="686" y="7203" font-size="11" fill="#415767" class-="mono">    &quot;page&quot;: null,</text><text x="686" y="7218" font-size="11" fill="#415767" class-="mono">    &quot;scene&quot;: null,</text><text x="686" y="7233" font-size="11" fill="#415767" class-="mono">    &quot;locator&quot;: &quot;Blood pool - fate ambiguous until rSTEINS&quot;,</text><text x="686" y="7248" font-size="11" fill="#415767" class-="mono">    &quot;status&quot;: &quot;unavailable&quot;</text><text x="686" y="7263" font-size="11" fill="#415767" class-="mono">  }</text><text x="686" y="7278" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-39" class="record"><rect x="48" y="7337" width="600" height="280" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="48" y="7351" width="3" height="25" fill="#39828b" rx="1"/><text x="66" y="7364" font-size="10" fill="#637482" letter-spacing="1">039  /  EVIDENCE</text><text x="66" y="7386" font-size="13" fill="#172c3c" font-weight="600">evidence 10</text><text x="66" y="7405" font-size="10" fill="#637482" class-="mono">$.graphs[0].evidence[9]</text><line x1="66" y1="7426" x2="630" y2="7426" stroke="#d6dfdf" stroke-width="1"/><text x="66" y="7443" font-size="11" fill="#415767" class-="mono">{</text><text x="66" y="7458" font-size="11" fill="#415767" class-="mono">  &quot;where&quot;: &quot;f-mayuri-alpha&quot;,</text><text x="66" y="7473" font-size="11" fill="#415767" class-="mono">  &quot;note&quot;: &quot;dead&quot;,</text><text x="66" y="7488" font-size="11" fill="#415767" class-="mono">  &quot;cite&quot;: {</text><text x="66" y="7503" font-size="11" fill="#415767" class-="mono">    &quot;source&quot;: &quot;canon&quot;,</text><text x="66" y="7518" font-size="11" fill="#415767" class-="mono">    &quot;page&quot;: null,</text><text x="66" y="7533" font-size="11" fill="#415767" class-="mono">    &quot;scene&quot;: null,</text><text x="66" y="7548" font-size="11" fill="#415767" class-="mono">    &quot;locator&quot;: &quot;Alpha convergence&quot;,</text><text x="66" y="7563" font-size="11" fill="#415767" class-="mono">    &quot;status&quot;: &quot;unavailable&quot;</text><text x="66" y="7578" font-size="11" fill="#415767" class-="mono">  }</text><text x="66" y="7593" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-40" class="record"><rect x="668" y="7337" width="600" height="280" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="668" y="7351" width="3" height="25" fill="#39828b" rx="1"/><text x="686" y="7364" font-size="10" fill="#637482" letter-spacing="1">040  /  EVIDENCE</text><text x="686" y="7386" font-size="13" fill="#172c3c" font-weight="600">evidence 11</text><text x="686" y="7405" font-size="10" fill="#637482" class-="mono">$.graphs[0].evidence[10]</text><line x1="686" y1="7426" x2="1250" y2="7426" stroke="#d6dfdf" stroke-width="1"/><text x="686" y="7443" font-size="11" fill="#415767" class-="mono">{</text><text x="686" y="7458" font-size="11" fill="#415767" class-="mono">  &quot;where&quot;: &quot;f-kurisu-steins&quot;,</text><text x="686" y="7473" font-size="11" fill="#415767" class-="mono">  &quot;note&quot;: &quot;alive&quot;,</text><text x="686" y="7488" font-size="11" fill="#415767" class-="mono">  &quot;cite&quot;: {</text><text x="686" y="7503" font-size="11" fill="#415767" class-="mono">    &quot;source&quot;: &quot;canon&quot;,</text><text x="686" y="7518" font-size="11" fill="#415767" class-="mono">    &quot;page&quot;: null,</text><text x="686" y="7533" font-size="11" fill="#415767" class-="mono">    &quot;scene&quot;: null,</text><text x="686" y="7548" font-size="11" fill="#415767" class-="mono">    &quot;locator&quot;: &quot;Final scene&quot;,</text><text x="686" y="7563" font-size="11" fill="#415767" class-="mono">    &quot;status&quot;: &quot;unavailable&quot;</text><text x="686" y="7578" font-size="11" fill="#415767" class-="mono">  }</text><text x="686" y="7593" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-41" class="record"><rect x="48" y="7637" width="600" height="280" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="48" y="7651" width="3" height="25" fill="#39828b" rx="1"/><text x="66" y="7664" font-size="10" fill="#637482" letter-spacing="1">041  /  EVIDENCE</text><text x="66" y="7686" font-size="13" fill="#172c3c" font-weight="600">evidence 12</text><text x="66" y="7705" font-size="10" fill="#637482" class-="mono">$.graphs[0].evidence[11]</text><line x1="66" y1="7726" x2="630" y2="7726" stroke="#d6dfdf" stroke-width="1"/><text x="66" y="7743" font-size="11" fill="#415767" class-="mono">{</text><text x="66" y="7758" font-size="11" fill="#415767" class-="mono">  &quot;where&quot;: &quot;f-mayuri-steins&quot;,</text><text x="66" y="7773" font-size="11" fill="#415767" class-="mono">  &quot;note&quot;: &quot;alive&quot;,</text><text x="66" y="7788" font-size="11" fill="#415767" class-="mono">  &quot;cite&quot;: {</text><text x="66" y="7803" font-size="11" fill="#415767" class-="mono">    &quot;source&quot;: &quot;canon&quot;,</text><text x="66" y="7818" font-size="11" fill="#415767" class-="mono">    &quot;page&quot;: null,</text><text x="66" y="7833" font-size="11" fill="#415767" class-="mono">    &quot;scene&quot;: null,</text><text x="66" y="7848" font-size="11" fill="#415767" class-="mono">    &quot;locator&quot;: &quot;Final scene&quot;,</text><text x="66" y="7863" font-size="11" fill="#415767" class-="mono">    &quot;status&quot;: &quot;unavailable&quot;</text><text x="66" y="7878" font-size="11" fill="#415767" class-="mono">  }</text><text x="66" y="7893" font-size="11" fill="#415767" class-="mono">}</text></g><g id="record-42" class="record"><rect x="668" y="7637" width="600" height="220" fill="#ffffff" rx="10" stroke="#d6dfdf" class="record-bg"/><rect x="668" y="7651" width="3" height="25" fill="#39828b" rx="1"/><text x="686" y="7664" font-size="10" fill="#637482" letter-spacing="1">042  /  GRAPH</text><text x="686" y="7686" font-size="13" fill="#172c3c" font-weight="600">Steins;Gate</text><text x="686" y="7705" font-size="10" fill="#637482" class-="mono">$.graphs[0]</text><line x1="686" y1="7726" x2="1250" y2="7726" stroke="#d6dfdf" stroke-width="1"/><text x="686" y="7743" font-size="11" fill="#415767" class-="mono">{</text><text x="686" y="7758" font-size="11" fill="#415767" class-="mono">  &quot;namespace&quot;: &quot;SG&quot;,</text><text x="686" y="7773" font-size="11" fill="#415767" class-="mono">  &quot;title&quot;: &quot;Steins;Gate&quot;,</text><text x="686" y="7788" font-size="11" fill="#415767" class-="mono">  &quot;splits&quot;: [],</text><text x="686" y="7803" font-size="11" fill="#415767" class-="mono">  &quot;transfers&quot;: [],</text><text x="686" y="7818" font-size="11" fill="#415767" class-="mono">  &quot;merges&quot;: 0</text><text x="686" y="7833" font-size="11" fill="#415767" class-="mono">}</text></g><text x="48" y="7962" font-size="12" fill="#637482">Worldlines are revisions of one world; divergence values gate convergence (attractor field).</text><text x="48" y="8022" font-size="10" fill="#637482" letter-spacing="1">UNIVERSE ATLAS  /  Explicit structure · complete records · no inferred topology</text></svg>

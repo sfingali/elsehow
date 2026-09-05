@@ -1,60 +1,39 @@
-# Visual overhaul design (Astra, 2026-09-05)
+# Visual design (Astra, 2026-09-05)
 
-Design review + complete rewrite of the elsehow renderer, produced by Astra
-(gpt-6-astra via OpenRouter). Supersedes the previous "Worlds and Thread" atlas
-as the current visual approach.
+The renderer's visual language, from a blank brief (data contract only — no
+prescribed style, no template to mirror). Authored by Astra (gpt-6-astra via
+OpenRouter). This supersedes the earlier atlas and the rejected text-card
+overhaul as the current approach.
 
-**Verdict:** the old renderer compresses the information that needs space and
-gives crossings no visual discipline. This is a replacement, not a restyle.
+## Design principles
 
-## Why this works
+- **Worlds are containment rails, not inferred histories.** Each world is a rail;
+  nothing about a world's past is guessed.
+- **Horizontal positions rank declared numeric orders; gaps are not durations.**
+  Spatial separation is ordinal, never a time scale.
+- **Null orders occupy a separately labelled, explicitly unordered area.**
+- **Only declared relationships produce connectors.** No inferred links,
+  transfers, worlds, resets, or world-time values.
+- **2.5D: the same diagram is projected onto a receding plane. Depth has no
+  narrative or temporal meaning** — it is purely a clearer view.
+- **Every input value is retained** in a visible, linked record appendix and in
+  the SVG metadata. **Unresolvable relationships are reported, not guessed.**
 
-- Full-size, untruncated event cards; the canvas grows instead of shrinking
-  typography.
-- Connections occupy reserved routing gutters — not label space. Separate
-  tracks, arrowheads, white crossing bridges, and keyed badges preserve
-  attribution.
-- The 2.5D view uses shallow **cabinet-axonometric decks**, not overlapping
-  sheared plates. Text remains screen-facing.
+## Data conventions recognised
 
-## How to read it
+The schema leaves `segments`, `beats`, `visits`, and `route links` structurally
+open. This renderer recognises the sample conventions:
 
-- Read story order downward; equal-order cards share a band, not necessarily
-  physical time.
-- Slate rails identify worlds. Amber connections are split outcomes; blue
-  connections are transfers; emerald tracks are explicitly recorded visits and
-  links.
-- Connector keys resolve to a relationship ledger. Numbered citations resolve to
-  a complete evidence appendix.
-- `time_travel` stays `time_travel`; it is **not** silently relabelled body
-  transport.
+- `segment: {id, universe, from: event_id, to: event_id}`
+- `beat:    {segment: segment_id, order: number, text}`
+- `visit:   {id, universe, entry: event_id, exit: event_id, passes: [event_id, ...]}`
+- `link:    {from: visit_id, to: visit_id, kind, via: transfer_id}`
 
-## Exact layout
-
-- World order follows the input array. Card width: **304 px**; text: **14 px /
-  20 px leading**.
-- Each ordinal band contains measured, vertically stacked cards, followed by
-  **26 px per connector endpoint** of routing space.
-- Each world reserves separate vertical tracks for connection trunks, endpoint
-  stems, and overlapping visits.
-- 2D: `P(x,y,z)=(x,y)`. 2.5D: `P(x,y,z)=(x+0.5z, y−0.3z)`; decks use `z=24`,
-  cables `z=40`. Depth is decorative separation only.
-- Both commands write **SVG and a self-contained HTML companion**:
-
-```
-python3 render.py tenet.json -o tenet.svg
-python3 render.py tenet.json -o tenet-25d.svg --view 2.5d
-```
-
-## Hard rules the rewrite keeps (never invented)
-
-- No inferred route links, transfers, worlds, resets or world-time values.
-- `time_travel` / `body` / `memory` / `consciousness` / `signal` mechanisms are
-  reported as declared, never relabelled.
-- A "nonexistent" fate stays `∅`, never restyled as another kind of death.
+Other structures remain fully visible in the record appendix.
 
 ## Provenance
 
-Design and implementation authored by Astra (gpt-6-astra) via OpenRouter,
-2026-09-05. The previous design (visual-representation-design.md) and the 2.5D
-guide (2.5d-guide.md) remain as historical the source design it supersedes.
+Implementation authored by Astra (gpt-6-astra) via OpenRouter, 2026-09-05, from a
+blank brief (data contract only). Prior designs — visual-representation-design.md,
+2.5d-guide.md, and the earlier text-card overhaul — are retained as history and
+are superseded by this document.

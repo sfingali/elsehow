@@ -1,164 +1,148 @@
 #!/usr/bin/env python3
-"""Elsehow — clarity-first Worlds and Thread atlas.
-
-Python 3.8+, standard library only.
+"""
+Universe Timeline Atlas — Python 3, standard library only.
 
 Usage:
-    python3 render.py tenet.json -o tenet.svg
-    python3 render.py tenet.json -o tenet-25d.svg --view 2.5d
-    python3 render.py tenet.json -o tenet.html --format html
-    python3 render.py --self-test
+    python3 render.py input.json -o output.svg
+    python3 render.py input.json -o output.svg --view 2.5d
+    python3 render.py input.json -o output.html --format html
 
-Every normal invocation writes an SVG master and an HTML companion.
-SVG includes legends, relationship records, citations, assumptions and sources.
-HTML adds zoom, layer controls and a complete, escaped model inspector.
+Both <output-stem>.svg and <output-stem>.html are always written.
+--format selects the primary output reported by the CLI.
 
-Layout:
-    - Input world order; ordinal event/beat bands; explicit unspecified shelf.
-    - Measured cards, no truncation and no collision-placement fallback.
-    - Per-world trunk, endpoint-stem and visit corridors.
-    - Every relationship endpoint gets a dedicated horizontal routing bus.
-    - No inferred route links, transfers, worlds, resets or world-time values.
-    - 2.5D is a shallow cabinet-axonometric extrusion, not a sheared chart.
+Design:
+  • Worlds are containment rails, not inferred histories.
+  • Horizontal positions rank declared numeric orders; gaps are not durations.
+  • Null orders occupy a separately labelled, explicitly unordered area.
+  • Only declared relationships produce connectors.
+  • In 2.5d, the same diagram is projected onto a receding plane. Depth has
+    no narrative or temporal meaning.
+  • Every input value is retained in a visible, linked record appendix and
+    in the SVG metadata. Unresolvable relationships are reported, not guessed.
+
+The schema leaves segments, beats, visits, and route links structurally open.
+This renderer recognizes the sample conventions:
+  segment: {id, universe, from: event_id, to: event_id}
+  beat:    {segment: segment_id, order: number, text}
+  visit:   {id, universe, entry: event_id, exit: event_id,
+            passes: [event_id, ...]}
+  link:    {from: visit_id, to: visit_id, kind, via: transfer_id}
+Other structures remain fully visible in the record appendix.
 """
-
 import argparse
-import collections
-import copy
 import html
 import json
 import math
-from pathlib import Path
 import sys
-import unicodedata
-import xml.etree.ElementTree as ET
+import textwrap
+from collections import Counter, defaultdict
+from pathlib import Path
 
 
-FONT = "DejaVu Sans, Arial, Helvetica, sans-serif"
-C = {
-    "paper": "#f5f6f8",
-    "white": "#ffffff",
-    "ink": "#172a3a",
-    "muted": "#526575",
-    "rule": "#d3dde5",
-    "rail": "#667b8a",
-    "split": "#ad6200",
-    "transfer": "#285ac7",
-    "route": "#087d60",
-    "reference": "#7a637c",
-    "dead": "#b82f46",
-    "alive": "#087d60",
-    "unknown": "#64717d",
-    "nonexistent": "#343a47",
-    "warning": "#a33732",
-}
+PAPER = "#f5f3ed"
+INK = "#172c3c"
+MUTED = "#637482"
+LINE = "#d6dfdf"
+WHITE = "#ffffff"
+GOLD = "#a76908"
+PLUS = "#178469"
+MINUS = "#c05a55"
 WORLD_COLORS = [
-    "#416f99", "#78639a", "#397f78", "#997144",
-    "#93637c", "#5a768f", "#778449",
+    "#287f8b", "#8064a2", "#ac7051", "#537da9",
+    "#628247", "#a3577b", "#607e86", "#927936"
 ]
-ORIGINS = {
-    "initial": "INITIAL IN MODEL",
-    "preexisting": "ALREADY EXISTED",
-    "born": "BORN AT DECLARED EVENT",
-    "unknown": "ORIGIN UNKNOWN",
-}
 MECHANISMS = {
-    "body": "B", "body_transport": "B",
-    "memory": "M", "memory_transfer": "M",
-    "consciousness": "C", "consciousness_transfer": "C",
-    "signal": "S", "signal_transfer": "S",
+    "body": ("B", "#b67524"),
+    "memory": ("M", "#16877e"),
+    "consciousness": ("C", "#8460a4"),
+    "signal": ("S", "#3e79b1"),
 }
-FATES = {
-    "dead": ("×", C["dead"]),
-    "alive": ("●", C["alive"]),
-    "unknown": ("?", C["unknown"]),
-    "nonexistent": ("∅", C["nonexistent"]),
+UNKNOWN_MECHANISM = ("?", "#657684")
+STATUS = {
+    "alive": ("●", "#178469"),
+    "dead": ("×", "#bc5054"),
+    "unknown": ("?", "#727e88"),
+    "nonexistent": ("∅", "#727e88"),
+}
+KINDS = {
+    "start", "split", "outcome", "entry", "exit", "anchor",
+    "cutoff", "gate_entry", "gate_exit"
 }
 
-CARD_W = 304
-PAD = 16
-LINE_H = 20
-ROW_GAP = 18
-BUS_STEP = 26
-LEFT = 142
-RIGHT = 42
-DECK_Z = 24
-CABLE_Z = 40
 
-
-def clean(value):
-    """Remove XML 1.0-invalid controls, retaining normal Unicode."""
-    s = str("" if value is None else value)
-    return "".join(
-        ch for ch in s
-        if ch in "\t\n\r"
-        or 0x20 <= ord(ch) <= 0xD7FF
-        or 0xE000 <= ord(ch) <= 0xFFFD
-        or 0x10000 <= ord(ch) <= 0x10FFFF
+def xml(value):
+    """Escape input as XML text/attributes; replace XML-illegal characters."""
+    s = str(value)
+    s = "".join(
+        c if (
+            c in "\t\n\r" or
+            0x20 <= ord(c) <= 0xD7FF or
+            0xE000 <= ord(c) <= 0xFFFD or
+            0x10000 <= ord(c) <= 0x10FFFF
+        ) else "\ufffd" for c in s
     )
-
-
-def esc(value):
-    return html.escape(clean(value), quote=True)
+    return html.escape(s, quote=True)
 
 
 def compact(value):
-    if isinstance(value, str):
-        return value
-    return json.dumps(value, ensure_ascii=False, sort_keys=True,
-                      separators=(", ", ": "))
+    return json.dumps(value, ensure_ascii=False, separators=(", ", ": "))
 
 
-def width_estimate(s, size=14):
-    """Conservative advance estimates; all cards also retain inner padding."""
-    total = 0.0
-    for ch in clean(s):
-        if unicodedata.combining(ch):
-            continue
-        if unicodedata.east_asian_width(ch) in ("W", "F"):
-            em = 1.04
-        elif ch in "MW@%&":
-            em = 1.00
-        elif ch in "ilI.,:;!'|` ":
-            em = 0.38
-        elif ch.isupper():
-            em = 0.80
-        else:
-            em = 0.69
-        total += em * size
-    return total
+def pretty(value):
+    return json.dumps(value, ensure_ascii=False, indent=2)
 
 
-def wrap_text(value, width, size=14):
-    """Pixel-budget wrapping; split long tokens; never ellipsize."""
+def arr(value):
+    return value if isinstance(value, list) else []
+
+
+def obj(value):
+    return value if isinstance(value, dict) else {}
+
+
+def numeric(value):
+    return (
+        isinstance(value, (int, float))
+        and not isinstance(value, bool)
+        and (not isinstance(value, float) or math.isfinite(value))
+    )
+
+
+def wrap(value, width):
     result = []
-    for paragraph in clean(value).split("\n"):
-        if not paragraph:
-            result.append("")
-            continue
-        line = ""
-        for word in paragraph.split():
-            candidate = (line + " " + word).strip()
-            if width_estimate(candidate, size) <= width:
-                line = candidate
-                continue
-            if line:
-                result.append(line)
-                line = ""
-            chunk = ""
-            for ch in word:
-                if chunk and width_estimate(chunk + ch, size) > width:
-                    result.append(chunk)
-                    chunk = ""
-                chunk += ch
-            line = chunk
-        result.append(line)
-    return result or [""]
+    for line in str(value).splitlines() or [""]:
+        result.extend(textwrap.wrap(
+            line, width=max(8, int(width)),
+            replace_whitespace=False, drop_whitespace=True,
+            break_long_words=True, break_on_hyphens=False
+        ) or [""])
+    return result
+
+
+def snippet(value, width=23, limit=2):
+    lines = wrap(value, width)
+    if len(lines) > limit:
+        lines = lines[:limit]
+        lines[-1] = lines[-1].rstrip(" .") + "…"
+    return lines
+
+
+def unique_index(items, key="id"):
+    counts = Counter(
+        item.get(key) for item in items
+        if isinstance(item, dict) and isinstance(item.get(key), str)
+    )
+    return {
+        item[key]: item for item in items
+        if isinstance(item, dict)
+        and isinstance(item.get(key), str)
+        and counts[item[key]] == 1
+    }, [k for k, n in counts.items() if n > 1]
 
 
 def attrs(values):
-    return " ".join(
-        '%s="%s"' % (k.rstrip("_").replace("_", "-"), esc(v))
+    return "".join(
+        ' {}="{}"'.format(k.replace("_", "-"), xml(v))
         for k, v in values.items() if v is not None
     )
 
@@ -171,1449 +155,1157 @@ class SVG:
         self.parts.append(value)
 
     def start(self, tag, **kw):
-        self.raw("<%s %s>" % (tag, attrs(kw)))
+        self.raw("<" + tag + attrs(kw) + ">")
 
-    def end(self, tag):
-        self.raw("</%s>" % tag)
+    def end(self, tag="g"):
+        self.raw("</" + tag + ">")
 
     def element(self, tag, **kw):
-        self.raw("<%s %s/>" % (tag, attrs(kw)))
+        self.raw("<" + tag + attrs(kw) + "/>")
 
-    def text(self, x, y, value, size=14, color=None, weight=None, **kw):
-        kw.update(x=round(x, 2), y=round(y, 2), font_size=size,
-                  fill=color or C["ink"], font_weight=weight)
-        self.raw("<text %s>%s</text>" % (attrs(kw), esc(value)))
+    def text(self, x, y, value, size=12, fill=INK, **kw):
+        self.raw(
+            "<text" + attrs(dict(x=round(x, 2), y=round(y, 2),
+                                font_size=size, fill=fill, **kw)) +
+            ">" + xml(value) + "</text>"
+        )
+
+    def lines(self, x, y, lines, size=12, leading=17, **kw):
+        for i, line in enumerate(lines):
+            self.text(x, y + i * leading, line, size, **kw)
+
+    def rect(self, x, y, width, height, fill=WHITE, rx=0, **kw):
+        self.element("rect", x=x, y=y, width=width, height=height,
+                     fill=fill, rx=rx, **kw)
+
+    def line(self, x1, y1, x2, y2, stroke=LINE, width=1, **kw):
+        self.element("line", x1=x1, y1=y1, x2=x2, y2=y2,
+                     stroke=stroke, stroke_width=width, **kw)
 
     def title(self, value):
-        self.raw("<title>%s</title>" % esc(value))
+        self.raw("<title>" + xml(value) + "</title>")
 
-    def rect(self, x, y, w, h, fill, stroke=None, rx=0, **kw):
-        self.element("rect", x=x, y=y, width=w, height=h, fill=fill,
-                     stroke=stroke, rx=rx, **kw)
+    def link(self, target, title=None):
+        self.start("a", href="#" + target)
+        if title:
+            self.title(title)
 
-    def line(self, x1, y1, x2, y2, color, width=1, **kw):
-        self.element("line", x1=x1, y1=y1, x2=x2, y2=y2,
-                     stroke=color, stroke_width=width, **kw)
-
-    def circle(self, x, y, r, fill, stroke=None, **kw):
-        self.element("circle", cx=x, cy=y, r=r, fill=fill,
-                     stroke=stroke, **kw)
-
-    def poly(self, points, fill, stroke=None, **kw):
-        self.element("polygon",
-                     points=" ".join("%.2f,%.2f" % p for p in points),
-                     fill=fill, stroke=stroke, **kw)
-
-    def paragraph(self, x, y, value, width, size=14, color=None,
-                  leading=None, weight=None):
-        leading = leading or size * 1.45
-        for line in wrap_text(value, width, size):
-            self.text(x, y + size, line, size, color, weight)
-            y += leading
-        return y
-
-    def output(self):
-        return "\n".join(self.parts)
+    def __str__(self):
+        return "".join(self.parts)
 
 
-class Evidence:
-    """Document-wide deduplication, retaining every citation owner."""
-    def __init__(self):
-        self.rows = []
-        self.index = {}
-
-    def add(self, cite, owner):
-        if not isinstance(cite, dict) or not cite:
-            return None
-        key = json.dumps(cite, sort_keys=True, ensure_ascii=False)
-        if key not in self.index:
-            self.index[key] = len(self.rows) + 1
-            self.rows.append({"cite": copy.deepcopy(cite), "owners": []})
-        number = self.index[key]
-        owners = self.rows[number - 1]["owners"]
-        if owner not in owners:
-            owners.append(owner)
-        return number
-
-    def scan(self, obj, owner="document"):
-        if isinstance(obj, dict):
-            name = obj.get("id") or obj.get("where") or owner
-            here = owner if str(name) == owner else owner + " / " + str(name)
-            if isinstance(obj.get("cite"), dict):
-                self.add(obj["cite"], here)
-            for key, value in obj.items():
-                if key != "cite":
-                    self.scan(value, here)
-        elif isinstance(obj, list):
-            for value in obj:
-                self.scan(value, owner)
-
-    def number(self, cite):
-        if not isinstance(cite, dict) or not cite:
-            return None
-        key = json.dumps(cite, sort_keys=True, ensure_ascii=False)
-        return self.index.get(key)
+class Record:
+    def __init__(self, number, category, label, value, path):
+        self.anchor = "record-{}".format(number)
+        self.code = "{:03d}".format(number)
+        self.category = category
+        self.label = str(label)
+        self.value = value
+        self.path = path
 
 
-def rich_row(value, size=12, color=None, weight=None, href=None):
-    return {
-        "text": clean(value), "size": size, "color": color or C["muted"],
-        "weight": weight, "href": href,
-    }
-
-
-def citation_row(evidence, cite):
-    number = evidence.number(cite)
-    if number is None:
-        return rich_row("No citation supplied", 11)
-    fields = ["[%d]" % number]
-    for key, label in (("scene", "Scene"), ("page", "p."),
-                       ("locator", "Locator")):
-        if cite.get(key) is not None:
-            fields.append("%s %s" % (label, cite[key]))
-    fields.append(str(cite.get("status", "status unspecified")))
-    return rich_row(" · ".join(fields), 11, C["transfer"],
-                    href="#evidence-%d" % number)
-
-
-def measure_card(item):
-    laid = []
-    y = PAD
-    for row in item["rows"]:
-        leading = LINE_H if row["size"] >= 14 else 17
-        lines = wrap_text(row["text"], CARD_W - 2 * PAD, row["size"])
-        laid.append((y, lines, leading, row))
-        y += len(lines) * leading + 6
-    item["laid"] = laid
-    item["height"] = max(76, y + PAD - 6)
-
-
-class Graph:
-    def __init__(self, graph, index, evidence, view):
-        self.g = graph
-        self.index = index
-        self.prefix = "g%d" % index
-        self.ev = evidence
+class Atlas:
+    def __init__(self, model, view):
+        self.model = model
         self.view = view
-        self.worlds = copy.deepcopy(graph.get("worlds", []))
-        self.world_map = {}
-        self.items = []
-        self.events = {}
-        self.edges = []
-        self.visits = []
-        self.warnings = []
-        self.edge_records = []
-        self.route_records = []
-        self.passed = set()
-        self._prepare()
+        self.records = []
+        self.lookup = {}
+        self.source_records = {}
+        self.add_records()
 
-    def warn(self, message):
-        if message not in self.warnings:
-            self.warnings.append(message)
+    def add(self, category, label, value, path, lookup=None):
+        r = Record(len(self.records) + 1, category, label, value, path)
+        self.records.append(r)
+        if lookup is not None:
+            self.lookup[lookup] = r
+        return r
 
-    def owner(self, wid):
-        if wid in self.world_map:
-            return self.world_map[wid]
-        literal = "(missing universe)" if wid is None else str(wid)
-        # This is explicitly a diagnostics column, not a modeled world.
-        world = {
-            "id": wid,
-            "label": "Undeclared reference: " + literal,
-            "origin": "unknown",
-            "_diagnostic": True,
-        }
-        self.worlds.append(world)
-        self.world_map[wid] = world
-        self.warn("Undeclared world reference: %s. Its column is diagnostic, "
-                  "not an inferred world." % literal)
-        return world
-
-    def item(self, record, wid, order, category, rows, kind=None):
-        self.owner(wid)
-        item = {
-            "key": "%s-item-%d" % (self.prefix, len(self.items) + 1),
-            "record": record, "world": wid, "order": order,
-            "category": category, "kind": kind, "rows": rows,
-        }
-        self.items.append(item)
-        return item
-
-    def endpoint(self, eid, context):
-        item = self.events.get(eid)
-        if item is None:
-            self.warn("%s: missing event %r; no endpoint invented." %
-                      (context, eid))
-        return item
-
-    def check_world(self, declared, item, context):
-        if declared is not None and item and declared != item["world"]:
-            self.warn("%s: declared world %r disagrees with event world %r; "
-                      "the event is the connection anchor." %
-                      (context, declared, item["world"]))
-
-    def edge(self, code, kind, a, b, badge, detail, record,
-             sign=None, selected=False):
-        self.edge_records.append((code, detail, record))
-        if a is None or b is None:
-            return None
-        edge = {
-            "code": code, "kind": kind, "a": a, "b": b,
-            "badge": badge, "detail": detail, "record": record,
-            "sign": sign, "selected": selected,
-        }
-        self.edges.append(edge)
-        return edge
-
-    def _prepare(self):
-        seen = set()
-        kept = []
-        for world in self.worlds:
-            wid = world.get("id")
-            if wid in seen:
-                self.warn("Duplicate world ID %r; first declaration used." % wid)
+    def add_records(self):
+        # Partition the document without dropping fields or empty containers.
+        top_meta = {}
+        for key, value in self.model.items():
+            if key == "graphs":
                 continue
-            seen.add(wid)
-            kept.append(world)
-            self.world_map[wid] = world
-        self.worlds = kept
-
-        for event in self.g.get("events", []):
-            eid = event.get("id")
-            if eid in self.events:
-                self.warn("Duplicate event ID %r; first event is the reference "
-                          "target; both records remain visible." % eid)
-            rows = [
-                rich_row("%s  ·  %s" %
-                         (str(event.get("kind", "event")).upper(), eid),
-                         11, C["muted"], "bold"),
-                rich_row(event.get("label") or eid, 14, C["ink"]),
-                citation_row(self.ev, event.get("cite")),
-            ]
-            item = self.item(event, event.get("universe"), event.get("order"),
-                             "event", rows, event.get("kind"))
-            self.events.setdefault(eid, item)
-
-        segments = {s.get("id"): s for s in self.g.get("segments", [])
-                    if isinstance(s, dict)}
-        for beat in self.g.get("beats", []):
-            if not isinstance(beat, dict):
-                self.warn("Unstructured beat retained in the document inspector.")
-                continue
-            segment = segments.get(beat.get("segment"), {})
-            wid = beat.get("universe", segment.get("universe"))
-            rows = [
-                rich_row("BEAT  ·  %s" % beat.get("id", "unnamed"), 11,
-                         C["muted"], "bold"),
-                rich_row(beat.get("text") or beat.get("label") or compact(beat),
-                         14, C["ink"]),
-                rich_row("Segment: %s" % beat.get("segment", "unspecified"), 11),
-                citation_row(self.ev, beat.get("cite")),
-            ]
-            self.item(beat, wid, beat.get("order"), "beat", rows)
-
-        for fate in self.g.get("fates", []):
-            at = self.events.get(fate.get("event"))
-            wid = fate.get("universe", at["world"] if at else None)
-            status = fate.get("status", "unknown")
-            symbol, color = FATES.get(status, FATES["unknown"])
-            rows = [
-                rich_row("%s %s  ·  %s" %
-                         (symbol, str(status).upper(),
-                          fate.get("instance", "instance unspecified")),
-                         12, color, "bold"),
-                rich_row("Fate %s · at %s" %
-                         (fate.get("id", "?"),
-                          fate.get("event", "event unspecified")), 11),
-                citation_row(self.ev, fate.get("cite")),
-            ]
-            if at and wid == at["world"]:
-                at["rows"].extend(rows)
+            if isinstance(value, list) and value:
+                for i, item in enumerate(value):
+                    d = obj(item)
+                    label = d.get("title", d.get("label", d.get("id", key)))
+                    r = self.add(key, label, item, "$.{}[{}]".format(key, i))
+                    if key == "sources" and isinstance(d.get("id"), str):
+                        self.source_records.setdefault(d["id"], []).append(r)
+            elif isinstance(value, dict) and value:
+                self.add(key, value.get("name", key), value, "$." + key)
             else:
-                item = self.item(
-                    fate, wid, at["order"] if at else None, "fate", rows
-                )
-                if at:
-                    self.edge(
-                        "F%d" % (len(self.edge_records) + 1), "reference",
-                        at, item, "ref", "Fate reference, not a transfer: " +
-                        compact(fate), fate
+                top_meta[key] = value
+        self.add("document", self.model["title"], top_meta, "$")
+
+        for gi, graph in enumerate(self.model["graphs"]):
+            meta = {}
+            for key, value in graph.items():
+                if isinstance(value, list) and value:
+                    for i, item in enumerate(value):
+                        d = obj(item)
+                        label = d.get(
+                            "label", d.get("text", d.get(
+                                "id", d.get("event", "{} {}".format(key, i + 1))
+                            ))
+                        )
+                        self.add(
+                            key, label, item,
+                            "$.graphs[{}].{}[{}]".format(gi, key, i),
+                            (gi, key, i)
+                        )
+                elif isinstance(value, dict) and value:
+                    self.add(
+                        key, value.get("traveller", key), value,
+                        "$.graphs[{}].{}".format(gi, key), (gi, key)
                     )
                 else:
-                    self.warn("Fate %s has no resolved event; shown on the "
-                              "unspecified-order shelf." % fate.get("id", "?"))
+                    meta[key] = value
+            self.add("graph", graph.get("title", graph["namespace"]), meta,
+                     "$.graphs[{}]".format(gi), (gi, "meta"))
 
-        split_lookup = {}
-        for number, split in enumerate(self.g.get("splits", []), 1):
-            source = self.endpoint(split.get("event"), "Split S%d" % number)
-            self.check_world(split.get("source_universe"), source,
-                             "Split S%d" % number)
-            if source:
-                facts = []
-                for key in ("cause", "automatic", "traveller",
-                            "source_disposition"):
-                    if key in split:
-                        facts.append("%s: %s" % (key.replace("_", " "),
-                                                compact(split[key])))
-                source["rows"].append(rich_row(
-                    "S%d · %s" % (number, " · ".join(facts)), 11, C["split"]
-                ))
-            for sign, outcome in (split.get("outcomes") or {}).items():
-                target = self.endpoint(outcome.get("entry"), "Split S%d" % number)
-                self.check_world(outcome.get("universe"), target,
-                                 "Split S%d outcome %s" % (number, sign))
-                display_sign = "−" if sign == "-" else str(sign)
-                code = "S%d%s" % (number, display_sign)
-                detail = "%s → %s · outcome %s · %s" % (
-                    split.get("event"), outcome.get("entry"), display_sign,
-                    compact(outcome)
-                )
-                edge = self.edge(code, "split", source, target, code,
-                                 detail, {"split": split, "outcome": outcome},
-                                 sign=sign)
-                split_lookup[(split.get("event"), sign)] = edge
+    def record(self, gi, key, i=None):
+        return self.lookup.get((gi, key) if i is None else (gi, key, i))
 
-        transfer_lookup = {}
-        for number, transfer in enumerate(self.g.get("transfers", []), 1):
-            code = "T%d" % number
-            a_ref = transfer.get("from") or {}
-            b_ref = transfer.get("to") or {}
-            a = self.endpoint(a_ref.get("exit"), code)
-            b = self.endpoint(b_ref.get("entry"), code)
-            self.check_world(a_ref.get("universe"), a, code + " source")
-            self.check_world(b_ref.get("universe"), b, code + " destination")
-            mechanism = str(transfer.get("mechanism") or "unspecified")
-            letter = MECHANISMS.get(mechanism.lower(), "?")
-            detail = "%s · %s · %s → %s · mechanism: %s" % (
-                transfer.get("id", code),
-                transfer.get("traveller", "traveller unspecified"),
-                a_ref.get("exit"), b_ref.get("entry"), mechanism
+    def source(self, source_id):
+        found = self.source_records.get(source_id, [])
+        return found[0] if len(found) == 1 else None
+
+    def render(self):
+        scenes = [GraphScene(self, i, g) for i, g in enumerate(self.model["graphs"])]
+        width = max([1240] + [s.width for s in scenes])
+        out = SVG()
+        y = self.header(out, width)
+
+        for scene in scenes:
+            out.start("g", transform="translate(0,{})".format(y))
+            out.raw(scene.render())
+            out.end()
+            y += scene.height + 34
+
+        y = self.record_appendix(out, y, width)
+        footer = self.model.get("footer", "")
+        if footer:
+            lines = wrap(footer, min(150, (width - 96) / 7))
+            out.lines(48, y + 25, lines, 12, 18, fill=MUTED)
+            y += 45 + len(lines) * 18
+        out.text(48, y + 22,
+                 "UNIVERSE ATLAS  /  Explicit structure · complete records · no inferred topology",
+                 10, MUTED, letter_spacing="1")
+        height = math.ceil(y + 54)
+
+        defs = SVG()
+        for color in sorted(set(
+                [PLUS, MINUS, GOLD, UNKNOWN_MECHANISM[1]] +
+                [v[1] for v in MECHANISMS.values()])):
+            mid = marker_id(color)
+            defs.raw(
+                '<marker id="{}" viewBox="0 0 10 10" refX="9" refY="5" '
+                'markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" '
+                'orient="auto-start-reverse">'
+                '<path d="M 1 1 L 9 5 L 1 9 Z" fill="{}"/></marker>'.format(mid, color)
             )
-            if transfer.get("relation"):
-                detail += " · relation: " + compact(transfer["relation"])
-            edge = self.edge(code, "transfer", a, b, code + " " + letter,
-                             detail, transfer)
-            transfer_lookup[transfer.get("id")] = edge
 
-        route = self.g.get("route") or {}
-        visits_by_id = {}
-        for number, visit in enumerate(route.get("visits", []), 1):
-            code = "V%d" % number
-            a = self.endpoint(visit.get("entry"), code)
-            b = self.endpoint(visit.get("exit"), code)
-            detail = "%s · %s · %s → %s · %s" % (
-                code, visit.get("id", "?"), visit.get("entry"),
-                visit.get("exit"), compact(visit)
-            )
-            self.route_records.append(detail)
-            visits_by_id[visit.get("id")] = (visit, a, b, code)
-            for item, role in ((a, "entry"), (b, "exit")):
-                if item:
-                    item["rows"].append(rich_row(
-                        "%s %s · %s" %
-                        (code, role, route.get("traveller", "route")),
-                        11, C["route"], "bold"
-                    ))
-            if a and b:
-                self.check_world(visit.get("universe"), a, code)
-                self.check_world(visit.get("universe"), b, code)
-                if a["world"] == b["world"]:
-                    self.visits.append({
-                        "code": code, "a": a, "b": b, "record": visit
-                    })
-                else:
-                    self.warn("%s spans worlds. Its explicit endpoints are "
-                              "shown as a route connection, not a world rail." %
-                              code)
-                    self.edge(code, "route", a, b, code, detail, visit)
+        style = """
+        text { font-family: Inter, ui-sans-serif, system-ui, -apple-system,
+               "Segoe UI", sans-serif; }
+        .serif { font-family: Georgia, "Times New Roman", serif; }
+        .mono { font-family: ui-monospace, SFMono-Regular, Consolas,
+                "Liberation Mono", monospace; }
+        a { cursor: pointer; }
+        a:hover .event-hit { stroke: #172c3c; stroke-width: 3; }
+        .record:target > .record-bg, .record.search-hit > .record-bg {
+            stroke: #a76908; stroke-width: 3;
+        }
+        .record { scroll-margin: 80px; }
+        .hide-splits .layer-splits,
+        .hide-transfers .layer-transfers,
+        .hide-route .layer-route,
+        .hide-annotations .layer-annotations { display: none; }
+        """
+        return (
+            '<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<svg xmlns="http://www.w3.org/2000/svg" '
+            'width="{w}" height="{h}" viewBox="0 0 {w} {h}" '
+            'role="img" aria-labelledby="atlas-title atlas-desc">'
+            '<title id="atlas-title">{title}</title>'
+            '<desc id="atlas-desc">Universe timeline atlas. Event positions use '
+            'declared ordinal values, not elapsed time. Diagram references link '
+            'to complete records below. Projection depth has no semantic meaning.'
+            '</desc><metadata id="input-model">{metadata}</metadata>'
+            '<defs>{defs}</defs><style>{style}</style>'
+            '<rect width="100%" height="100%" fill="{paper}"/>'
+            '{body}</svg>'
+        ).format(
+            w=math.ceil(width), h=height, title=xml(self.model["title"]),
+            metadata=xml(json.dumps(self.model, ensure_ascii=True)),
+            defs=str(defs), style=style, paper=PAPER, body=str(out)
+        )
 
-            # Loose pass records: only explicit event + sign pairs are applied.
-            for passed in visit.get("passes", []) or []:
-                if not isinstance(passed, dict):
-                    continue
-                event_id = passed.get("event", passed.get("split"))
-                sign = passed.get("tine", passed.get("sign"))
-                match = split_lookup.get((event_id, sign))
-                if match:
-                    match["selected"] = True
-                    self.passed.add(match["code"])
+    def header(self, s, width):
+        s.rect(0, 0, width, 9, INK)
+        s.text(48, 49, "U N I V E R S E   A T L A S", 11, MUTED)
+        title_lines = wrap(self.model["title"], 42)
+        s.lines(46, 101, title_lines, 43, 49, class_="serif")
+        y = 112 + (len(title_lines) - 1) * 49
+        subtitle = self.model.get("subtitle", "")
+        if subtitle:
+            lines = wrap(subtitle, 126)
+            s.lines(49, y + 19, lines, 14, 21, fill=MUTED)
+            y += len(lines) * 21 + 12
 
-        linked_pairs = set()
-        for number, link in enumerate(route.get("links", []), 1):
-            code = "L%d" % number
-            av = visits_by_id.get(link.get("from"))
-            bv = visits_by_id.get(link.get("to"))
-            detail = "%s · %s → %s · %s" % (
-                code, link.get("from"), link.get("to"), compact(link)
-            )
-            self.route_records.append(detail)
-            if not av or not bv:
-                self.warn("%s references a missing visit; no link invented." %
-                          code)
-                continue
-            a, b = av[2], bv[1]
-            linked_pairs.add((link.get("from"), link.get("to")))
-            via = link.get("via")
-            transfer = transfer_lookup.get(via) if isinstance(via, str) else None
-            if transfer and transfer["a"] is a and transfer["b"] is b:
-                transfer["selected"] = True
-                transfer["detail"] += " · followed by " + code
-                continue
+        graphs = self.model["graphs"]
+        nw = sum(len(g.get("worlds", [])) for g in graphs)
+        ne = sum(len(arr(g.get("events"))) for g in graphs)
+        nt = sum(len(arr(g.get("transfers"))) for g in graphs)
+        profile = obj(self.model.get("profile"))
+        info = "{} graphs  /  {} declared worlds  /  {} events  /  {} transfers".format(
+            len(graphs), nw, ne, nt
+        )
+        s.text(49, y + 25, info, 12, INK, class_="mono")
+        y += 44
+        view_label = (
+            "2.5D · receding display plane; depth is not data"
+            if self.view == "2.5d" else "2D · flat world rails"
+        )
+        profile_label = "Profile: " + str(profile.get("name", "unspecified"))
+        for line in wrap(view_label + "  /  " + profile_label, 145):
+            s.text(49, y, line, 11, MUTED)
+            y += 16
+        y += 12
 
-            matched = None
-            if link.get("kind") == "split":
-                for edge in self.edges:
-                    if (edge["kind"] == "split" and edge["a"] is a
-                            and edge["b"] is b):
-                        matched = edge
-                        break
-            if matched:
-                matched["selected"] = True
-                matched["detail"] += " · followed by " + code
-            else:
-                if transfer:
-                    self.warn("%s via %r disagrees with visit endpoints; "
-                              "explicit route endpoints are drawn separately." %
-                              (code, via))
-                self.edge(code, "route", a, b, code, detail, link)
-
-        ordered_visits = route.get("visits", [])
-        for a, b in zip(ordered_visits, ordered_visits[1:]):
-            if (a.get("id"), b.get("id")) not in linked_pairs:
-                self.route_records.append(
-                    "GAP · No explicit link from %s to %s; no continuity drawn."
-                    % (a.get("id"), b.get("id"))
-                )
-
-        for item in self.items:
-            measure_card(item)
-        self._layout()
-
-    def _layout(self):
-        orders = sorted({i["order"] for i in self.items
-                         if i["order"] is not None})
-        if any(i["order"] is None for i in self.items) or not orders:
-            orders.append(None)
-        self.orders = orders
-        self.by_band = collections.defaultdict(list)
-        for item in self.items:
-            self.by_band[item["order"]].append(item)
-
-        # Dedicated trunks belong to the source world.
-        trunk_counts = collections.Counter()
-        endpoint_counts = collections.Counter()
-        for edge in self.edges:
-            world = edge["a"]["world"]
-            edge["trunk_slot"] = trunk_counts[world]
-            trunk_counts[world] += 1
-            for end in ("a", "b"):
-                item = edge[end]
-                key = (item["world"], item["order"])
-                edge[end + "_port"] = endpoint_counts[key]
-                endpoint_counts[key] += 1
-
-        visit_counts = collections.Counter()
-        for visit in self.visits:
-            wid = visit["a"]["world"]
-            visit["slot"] = visit_counts[wid]
-            visit_counts[wid] += 1
-
-        x = LEFT
-        header_heights = []
-        for number, world in enumerate(self.worlds):
-            wid = world.get("id")
-            ports = max([count for (w, _), count in endpoint_counts.items()
-                         if w == wid] or [0])
-            visits = visit_counts[wid]
-            trunks = trunk_counts[wid]
-            # Left-to-right: trunks, endpoint stems, visits, rail, card.
-            trunk_w = 96 + 12 * trunks
-            port_w = 12 + 9 * ports
-            visit_w = 20 + 10 * visits
-            rail_x = x + trunk_w + port_w + visit_w
-            world.update({
-                "_x": x, "_rail": rail_x, "_card": rail_x + 24,
-                "_width": rail_x + 24 + CARD_W + 24 - x,
-                "_trunk_w": trunk_w, "_ports": ports,
-                "_visits": visits,
-                "_color": (C["warning"] if world.get("_diagnostic")
-                           else WORLD_COLORS[number % len(WORLD_COLORS)]),
-            })
-            header_rows = [
-                rich_row(str(wid) if wid is not None else "UNRESOLVED", 15,
-                         world["_color"], "bold"),
-                rich_row(world.get("label", ""), 14, C["ink"], "bold"),
-                rich_row("UNDECLARED WORLD — DIAGNOSTIC ONLY"
-                         if world.get("_diagnostic") else
-                         ORIGINS.get(world.get("origin"), "ORIGIN UNKNOWN"),
-                         11),
-            ]
-            if world.get("born"):
-                header_rows.append(rich_row(
-                    "Birth declaration: " + compact(world["born"]), 11
-                ))
-            if world.get("ancestry"):
-                header_rows.append(rich_row(
-                    "Ancestry: " + str(world["ancestry"]).replace("_", " "), 11
-                ))
-            header = {"rows": header_rows}
-            measure_card(header)
-            world["_header"] = header
-            header_heights.append(header["height"])
-            x += world["_width"] + 28
-        self.width = max(1040, x + RIGHT)
-
-        self.header_h = max(header_heights or [100])
-        y = self.header_h + 54
-        self.chart_top = y
-        self.bands = []
-        for rank, order in enumerate(self.orders):
-            items = self.by_band[order]
-            per_world = collections.defaultdict(list)
-            for item in items:
-                per_world[item["world"]].append(item)
-            body_h = max(
-                [sum(i["height"] + ROW_GAP for i in values)
-                 for values in per_world.values()] or [70]
-            )
-            for wid, values in per_world.items():
-                iy = y + 20
-                for item in values:
-                    item["x"] = self.world_map[wid]["_card"]
-                    item["y"] = iy
-                    item["node_y"] = iy + 25
-                    iy += item["height"] + ROW_GAP
-            buses = []
-            for edge in self.edges:
-                for end in ("a", "b"):
-                    if edge[end]["order"] == order:
-                        buses.append((edge, end))
-            bus_top = y + 20 + body_h + 10
-            for slot, (edge, end) in enumerate(buses):
-                edge[end + "_bus"] = bus_top + 16 + BUS_STEP * slot
-            height = 20 + body_h + 30 + BUS_STEP * len(buses)
-            self.bands.append({
-                "order": order, "rank": rank, "top": y,
-                "body_bottom": bus_top - 6, "height": height,
-            })
-            y += height
-        self.chart_bottom = y + 26
-        self.height = self.chart_bottom + 65
-
-        for world in self.worlds:
-            wid = world.get("id")
-            origin = world.get("origin")
-            owned = [i for i in self.items if i["world"] == wid]
-            first = min([i["node_y"] for i in owned] or [self.chart_top + 20])
-            start = self.chart_top
-            if origin == "born":
-                birth = world.get("born") or {}
-                event = self.events.get(birth.get("event"))
-                if event:
-                    start = event["node_y"]
-                    parent = birth.get("parent")
-                    if parent is not None and event["world"] != parent:
-                        self.warn("World %s: born.parent differs from the "
-                                  "declared birth event's world." % wid)
-                    if any(i["node_y"] < start for i in owned):
-                        self.warn("World %s has records before its declared "
-                                  "birth. Records remain visible; the rail "
-                                  "does not extend before birth." % wid)
-                else:
-                    start = first
-                    self.warn("World %s has an unresolved birth event; rail "
-                              "starts at its first displayed record, with "
-                              "origin unresolved." % wid)
-            elif origin == "unknown":
-                start = first
-
-            end = self.chart_bottom
-            for split in self.g.get("splits", []):
-                if split.get("source_disposition") != "ancestry_prefix":
-                    continue
-                event = self.events.get(split.get("event"))
-                source = split.get("source_universe",
-                                   event["world"] if event else None)
-                if source == wid and event:
-                    end = min(end, event["node_y"])
-            world["_start"], world["_end"] = start, max(start, end)
-
-    def project(self, x, y, z=DECK_Z):
-        if self.view == "2.5d":
-            return x + 0.5 * z, y - 0.3 * z
-        return x, y
-
-    def path_data(self, points, z=DECK_Z):
-        projected = [self.project(x, y, z) for x, y in points]
-        return "M " + " L ".join("%.2f %.2f" % p for p in projected)
-
-    def stroke(self, svg, points, color, width, marker=None, dash=None,
-               z=DECK_Z, halo=True):
-        d = self.path_data(points, z)
-        if halo:
-            svg.element("path", d=d, fill="none", stroke=C["white"],
-                        stroke_width=width + 4, stroke_linejoin="round",
-                        stroke_linecap="round")
-        svg.element("path", d=d, fill="none", stroke=color,
-                    stroke_width=width, stroke_linejoin="round",
-                    stroke_linecap="round", stroke_dasharray=dash,
-                    marker_end=("url(#arrow-%s)" % marker) if marker else None)
-
-    def card(self, svg, item, x=None, y=None, header=False):
-        x = item.get("x") if x is None else x
-        y = item.get("y") if y is None else y
-        px, py = self.project(x, y)
-        world = self.world_map.get(item.get("world"))
-        accent = world["_color"] if world else C["rail"]
-        if item.get("category") == "beat":
-            fill = "#f9fafc"
-        elif item.get("category") == "fate":
-            fill = "#fff9fa"
-        else:
-            fill = C["white"]
-        svg.start("g", id=item.get("key"), class_="card",
-                  role="group", aria_label=compact(item.get("record", {})))
-        if item.get("record"):
-            svg.title(compact(item["record"]))
-        svg.rect(px, py + 2, CARD_W, item["height"], "#e7edf2", rx=9)
-        svg.rect(px, py, CARD_W, item["height"], fill, C["rule"], rx=9)
-        if not header:
-            svg.rect(px, py + 12, 3, item["height"] - 24, accent, rx=1.5)
-        for offset, lines, leading, row in item["laid"]:
-            if row.get("href"):
-                svg.start("a", href=row["href"], class_="citation",
-                          aria_label=row["text"])
-            for number, line in enumerate(lines):
-                svg.text(px + PAD, py + offset + row["size"] +
-                         number * leading, line, row["size"],
-                         row["color"], row["weight"])
-            if row.get("href"):
-                svg.end("a")
-        svg.end("g")
-
-    def node(self, svg, item):
-        world = self.world_map[item["world"]]
-        x, y = self.project(world["_rail"], item["node_y"])
-        kind = item.get("kind")
-        color = world["_color"]
-        svg.start("g", class_="event-node")
-        svg.title("%s · %s" % (item["record"].get("id", ""),
-                               item["record"].get("label", "")))
-        svg.circle(x, y, 11, C["white"])
-        if item["category"] != "event":
-            svg.circle(x, y, 4, C["white"], color, stroke_width=2)
-        elif kind == "split":
-            svg.circle(x, y, 8, "#fff1d7", C["split"], stroke_width=2.5)
-            svg.text(x, y + 4, "Y", 11, C["split"], "bold",
-                     text_anchor="middle")
-        elif kind == "anchor":
-            svg.poly([(x, y - 8), (x + 8, y), (x, y + 8), (x - 8, y)],
-                     C["white"], color, stroke_width=2.5)
-        elif kind == "start":
-            svg.rect(x - 7, y - 7, 14, 14, C["route"],
-                     C["white"], rx=2, stroke_width=2)
-        elif kind == "cutoff":
-            svg.line(x - 9, y - 4, x + 9, y - 4, color, 3)
-            svg.line(x - 9, y + 4, x + 9, y + 4, color, 3)
-        elif kind in ("entry", "exit", "gate_entry", "gate_exit"):
-            svg.circle(x, y, 8, C["white"], color, stroke_width=2.5)
-            if kind in ("entry", "gate_entry"):
-                points = [(x - 3, y - 4), (x + 3, y), (x - 3, y + 4)]
-            else:
-                points = [(x + 3, y - 4), (x - 3, y), (x + 3, y + 4)]
-            svg.poly(points, color)
-            if kind.startswith("gate"):
-                svg.line(x - 11, y - 10, x - 11, y + 10, color, 2)
-                svg.line(x + 11, y - 10, x + 11, y + 10, color, 2)
-        else:
-            svg.circle(x, y, 6, color, C["white"], stroke_width=2)
-        svg.end("g")
-
-    def edge_points(self, edge):
-        a, b = edge["a"], edge["b"]
-        wa, wb = self.world_map[a["world"]], self.world_map[b["world"]]
-        ax, bx = wa["_rail"], wb["_rail"]
-        # Stems stay left of all visit tracks; trunks stay farther left.
-        pa = (ax - 30 - 10 * wa["_visits"] - 9 * edge["a_port"])
-        pb = (bx - 30 - 10 * wb["_visits"] - 9 * edge["b_port"])
-        tx = wa["_x"] + 20 + 12 * edge["trunk_slot"]
-        ay, by = a["node_y"], b["node_y"]
-        ya, yb = edge["a_bus"], edge["b_bus"]
-        points = [
-            (ax - 9, ay), (pa, ay), (pa, ya), (tx, ya),
-            (tx, yb), (pb, yb), (pb, by), (bx - 10, by)
+        s.rect(48, y, min(width - 96, 1144), 128, "#eaf0ee", 12)
+        s.text(66, y + 24, "READING KEY", 10, MUTED, letter_spacing="1.5")
+        entries = [
+            ("B", "body", MECHANISMS["body"][1]),
+            ("M", "memory", MECHANISMS["memory"][1]),
+            ("C", "consciousness", MECHANISMS["consciousness"][1]),
+            ("S", "signal", MECHANISMS["signal"][1]),
+            ("?", "other / unspecified — literal name retained", MUTED),
         ]
-        return points, ((tx + pa) / 2, ya)
+        x = 66
+        for badge, label, color in entries:
+            pill(s, x, y + 36, badge, color, width=25)
+            s.text(x + 33, y + 50, label, 11, MUTED)
+            x += 39 + len(label) * 6.3
+        s.text(66, y + 80,
+               "+ / −  declared split outcomes     →  transfer direction"
+               "     R  traveller route     §  source reference", 12, INK)
+        s.text(66, y + 105,
+               "Rails are containment guides. Order spacing is ordinal, not duration."
+               " Click any numbered item for its full record.", 11, MUTED)
+        return y + 151
 
-    def draw_edge(self, svg, edge):
-        kind = edge["kind"]
-        color = C[kind]
-        marker = kind
-        points, badge = self.edge_points(edge)
-        z = CABLE_Z if self.view == "2.5d" else DECK_Z
-        svg.start("g", class_="layer-" + kind,
-                  id=self.prefix + "-edge-" + str(self.edges.index(edge) + 1))
-        svg.title(edge["detail"] + "\n" + compact(edge["record"]))
-        # Cables are raised, but risers visibly join the deck endpoints.
-        if self.view == "2.5d":
-            for endpoint in (points[0], points[-1]):
-                low = self.project(*endpoint, DECK_Z)
-                high = self.project(*endpoint, z)
-                svg.line(*low, *high, C["white"], 8)
-                svg.line(*low, *high, color, 3)
-        dash = "8 5" if (kind == "split" and edge.get("sign") == "-") else None
-        if kind == "reference":
-            dash = "3 5"
-        width = 6 if edge["selected"] else (4 if kind != "reference" else 2)
-        self.stroke(svg, points, color, width, marker, dash, z)
-        if edge["selected"]:
-            svg.start("g", class_="layer-route")
-            self.stroke(svg, points, C["route"], 2.6,
-                        z=z, halo=False)
-            svg.end("g")
-        px, py = self.project(*badge, z)
-        badge_w = max(48, width_estimate(edge["badge"], 11) + 18)
-        svg.start("a", href="#%s-relationships" % self.prefix,
-                  aria_label=edge["detail"])
-        svg.rect(px - badge_w / 2, py - 10, badge_w, 20,
-                 C["white"], color, rx=6, stroke_width=1.6)
-        svg.text(px, py + 4, edge["badge"], 11, color, "bold",
-                 text_anchor="middle")
-        svg.end("a")
-        svg.end("g")
+    def record_appendix(self, s, y, width):
+        s.line(48, y, width - 48, y, INK)
+        s.text(48, y + 39, "The record index", 29, INK, class_="serif")
+        s.text(48, y + 64,
+               "Complete declared values, including evidence, assumptions, profile parameters,"
+               " opaque extensions and unresolved references.", 12, MUTED)
+        y += 91
 
-    def draw_visit(self, svg, visit):
-        a, b = visit["a"], visit["b"]
-        world = self.world_map[a["world"]]
-        rail = world["_rail"]
-        x = rail - 17 - 10 * visit["slot"]
-        ay, by = a["node_y"], b["node_y"]
-        svg.start("g", class_="layer-route")
-        svg.title("%s · %s" % (visit["code"], compact(visit["record"])))
-        if a is b:
-            points = [(rail - 8, ay), (x, ay), (x, ay + 16),
-                      (rail - 8, ay + 16), (rail - 8, ay + 9)]
+        # A wide chart need not force unreadably wide record text.
+        columns = max(2, min(4, int((width - 72) // 540)))
+        card_width = min(600, (width - 96 - (columns - 1) * 20) / columns)
+        total_width = columns * card_width + (columns - 1) * 20
+        left = 48
+        if total_width > width - 96:
+            card_width = (width - 96 - (columns - 1) * 20) / columns
+
+        row = []
+        for r in self.records:
+            row.append(r)
+            if len(row) == columns:
+                heights = [
+                    self.record_card(s, r, left + i * (card_width + 20), y, card_width)
+                    for i, r in enumerate(row)
+                ]
+                y += max(heights) + 20
+                row = []
+        if row:
+            heights = [
+                self.record_card(s, r, left + i * (card_width + 20), y, card_width)
+                for i, r in enumerate(row)
+            ]
+            y += max(heights) + 20
+        return y
+
+    def record_card(self, s, record, x, y, width):
+        label = wrap(record.label, (width - 38) / 7.0)
+        code_lines = []
+        code_width = max(20, int((width - 38) / 6.6))
+        for line in pretty(record.value).splitlines():
+            indent = min(len(line) - len(line.lstrip()), 20)
+            chunks = textwrap.wrap(
+                line, width=code_width, subsequent_indent=" " * indent + "↳ ",
+                replace_whitespace=False, drop_whitespace=False,
+                break_long_words=True, break_on_hyphens=False
+            )
+            code_lines.extend(chunks or [""])
+        path_lines = wrap(record.path, (width - 38) / 6.2)
+        height = (
+            48 + len(label) * 17 + len(path_lines) * 14 +
+            18 + len(code_lines) * 15 + 18
+        )
+        s.start("g", id=record.anchor, **{"class": "record"})
+        s.rect(x, y, width, height, WHITE, 10, stroke=LINE,
+               **{"class": "record-bg"})
+        s.rect(x, y + 14, 3, 25, "#39828b", 1)
+        s.text(x + 18, y + 27,
+               record.code + "  /  " + record.category.upper(), 10, MUTED,
+               letter_spacing="1")
+        yy = y + 49
+        s.lines(x + 18, yy, label, 13, 17, font_weight="600")
+        yy += len(label) * 17 + 2
+        s.lines(x + 18, yy, path_lines, 10, 14, fill=MUTED, class_="mono")
+        yy += len(path_lines) * 14 + 9
+        s.line(x + 18, yy - 2, x + width - 18, yy - 2, LINE)
+        yy += 15
+        s.lines(x + 18, yy, code_lines, 11, 15, fill="#415767", class_="mono")
+        s.end()
+        return height
+
+
+def marker_id(color):
+    return "arrow-" + color.lstrip("#")
+
+
+def pill(s, x, y, label, color, width=None, height=21, background=WHITE):
+    width = width or max(27, len(str(label)) * 6.6 + 16)
+    s.rect(x, y, width, height, background, height / 2,
+           stroke=color, stroke_width=1)
+    s.text(x + width / 2, y + height * 0.70, label, 10, color,
+           text_anchor="middle", font_weight="650")
+    return width
+
+
+def path_line(points):
+    if not points:
+        return ""
+    return "M " + " L ".join("{:.2f},{:.2f}".format(*p) for p in points)
+
+
+def curve(a, b, index=0):
+    """A directional connector, including backwards and self references."""
+    ax, ay = a
+    bx, by = b
+    if abs(ay - by) < 25:
+        lift = 66 + (index % 5) * 17
+        if abs(ax - bx) < 3:
+            c1, c2 = (ax + 80, ay - lift), (bx - 80, by - lift)
         else:
-            points = [(rail - 8, ay), (x, ay), (x, by), (rail - 10, by)]
-        self.stroke(svg, points, C["route"], 4.5, "route")
-        # Mid-track chevron supplies an unambiguous direction along the visit.
-        if abs(by - ay) > 42:
-            direction = 1 if by > ay else -1
-            mid = (ay + by) / 2
-            self.stroke(svg, [(x, mid - direction * 9),
-                              (x, mid + direction * 9)],
-                        C["route"], 4.5, "route", halo=False)
-        svg.end("g")
+            c1 = (ax + (bx - ax) * .22, min(ay, by) - lift)
+            c2 = (ax + (bx - ax) * .78, min(ay, by) - lift)
+    else:
+        direction = 1 if bx >= ax else -1
+        bend = max(56, min(155, abs(bx - ax) * .48))
+        shift = ((index % 5) - 2) * 12
+        c1 = (ax + direction * bend, ay + shift)
+        c2 = (bx - direction * bend, by + shift)
+
+    def trim(p, towards, amount):
+        dx, dy = towards[0] - p[0], towards[1] - p[1]
+        length = math.hypot(dx, dy) or 1
+        return p[0] + amount * dx / length, p[1] + amount * dy / length
+
+    start = trim(a, c1, 10)
+    end = trim(b, c2, 12)
+    middle = (
+        (start[0] + 3 * c1[0] + 3 * c2[0] + end[0]) / 8,
+        (start[1] + 3 * c1[1] + 3 * c2[1] + end[1]) / 8,
+    )
+    d = "M {:.2f},{:.2f} C {:.2f},{:.2f} {:.2f},{:.2f} {:.2f},{:.2f}".format(
+        *start, *c1, *c2, *end
+    )
+    return d, middle
+
+
+class GraphScene:
+    def __init__(self, atlas, gi, graph):
+        self.a, self.gi, self.g = atlas, gi, graph
+        self.worlds = arr(graph.get("worlds"))
+        self.events = arr(graph.get("events"))
+        self.segments = arr(graph.get("segments"))
+        self.beats = arr(graph.get("beats"))
+        self.transfers = arr(graph.get("transfers"))
+        self.splits = arr(graph.get("splits"))
+        self.fates = arr(graph.get("fates"))
+        self.route = obj(graph.get("route"))
+        self.notes = []
+        self.note_set = set()
+        self.wmap, wd = unique_index(self.worlds)
+        self.emap, ed = unique_index(self.events)
+        self.smap, sd = unique_index(self.segments)
+        self.tmap, td = unique_index(self.transfers)
+        for kind, duplicates in [
+            ("world", wd), ("event", ed), ("segment", sd), ("transfer", td)
+        ]:
+            for value in duplicates:
+                self.note("Duplicate {} ID {!r}; references to it are ambiguous.".format(kind, value))
+
+        self.wrow = {
+            w["id"]: i for i, w in enumerate(self.worlds)
+            if self.wmap.get(w.get("id")) is w
+        }
+        orders = set()
+        counts = defaultdict(Counter)
+        for e in self.events:
+            if numeric(e.get("order")):
+                orders.add(e["order"])
+                counts[e["order"]][e["universe"]] += 1
+        for b in self.beats:
+            if isinstance(b, dict) and numeric(b.get("order")):
+                orders.add(b["order"])
+        self.orders = sorted(orders)
+
+        self.columns = {}
+        self.spans = {}
+        x = 65
+        for order in self.orders:
+            slots = max([1] + list(counts[order].values()))
+            width = 144 * slots
+            self.columns[order] = x + width / 2
+            self.spans[order] = (x, width)
+            x += width
+        self.ordered_end = x + 12
+
+        null_counts = Counter(e["universe"] for e in self.events if e.get("order") is None)
+        self.has_unordered = bool(null_counts)
+        self.unordered_start = self.ordered_end + 42
+        self.local_width = max(
+            640, self.ordered_end + (
+                max(null_counts.values()) * 144 + 84 if null_counts else 40
+            )
+        )
+
+        max_visits = Counter(
+            obj(v).get("universe") for v in arr(self.route.get("visits"))
+            if isinstance(obj(v).get("universe"), str)
+        )
+        max_fates = Counter(
+            f.get("event") for f in self.fates if isinstance(f, dict)
+            and isinstance(f.get("event"), str)
+        )
+        self.row_height = max(
+            210,
+            148 + 14 * max([0] + list(max_visits.values())) +
+            23 * max([0] + list(max_fates.values()))
+        )
+        self.plane_height = max(1, len(self.worlds)) * self.row_height
+        self.depth = atlas.view == "2.5d"
+        self.width = math.ceil(345 + self.local_width + (175 if self.depth else 0) + 50)
+        self.title_lines = wrap(graph.get("title", graph["namespace"]), 75)
+        self.chart_top = 104 + 29 * (len(self.title_lines) - 1)
+        self.positions = {}
+        self.event_positions = {}
+        lane_slots = defaultdict(Counter)
+        null_slots = Counter()
+        for i, e in enumerate(self.events):
+            world = e["universe"]
+            if world not in self.wrow:
+                self.note("Event {!r}: universe {!r} is missing or ambiguous; node is in the index only."
+                          .format(e["id"], world))
+                continue
+            order = e.get("order")
+            if numeric(order):
+                start, width = self.spans[order]
+                slot = lane_slots[order][world]
+                lane_slots[order][world] += 1
+                ex = start + 72 + slot * 144
+            else:
+                ex = self.unordered_start + 72 + null_slots[world] * 144
+                null_slots[world] += 1
+            ey = self.row_height * (self.wrow[world] + .5)
+            point = self.project(ex, ey)
+            self.event_positions[i] = point
+            if self.emap.get(e["id"]) is e:
+                self.positions[e["id"]] = point
+
+        self.transfer_geometry = {}
+        self.visit_geometry = {}
+        self.edge_counter = 0
+        # Render once to establish warning count and exact scene height.
+        self.body = self.draw()
+        self.height = self.computed_height
+
+    def note(self, message):
+        if message not in self.note_set:
+            self.notes.append(message)
+            self.note_set.add(message)
+
+    def project(self, x, y):
+        if not self.depth:
+            return 345 + x, self.chart_top + y
+        depth = (self.plane_height - y) / self.plane_height
+        scale = 1 - .15 * depth
+        return (
+            345 + 170 * depth + x * scale,
+            self.chart_top + .82 * y + .10 * (self.local_width - x) * scale
+        )
+
+    def rec(self, kind, i=None):
+        return self.a.record(self.gi, kind, i)
+
+    def resolve(self, event_id, universe=None, context="Reference"):
+        if not isinstance(event_id, str):
+            self.note(context + ": no explicit event endpoint; no temporal position inferred.")
+            return None
+        event = self.emap.get(event_id)
+        if event is None or event_id not in self.positions:
+            self.note("{}: event {!r} is missing, ambiguous or unplaceable.".format(context, event_id))
+            return None
+        if universe is not None and universe != event["universe"]:
+            self.note("{}: universe {!r} conflicts with event {!r}; connector not drawn."
+                      .format(context, universe, event_id))
+            return None
+        return self.positions[event_id]
+
+    def connector(self, s, a, b, label, color, record, layer,
+                  dashed=False, width=2, tooltip="", geometry=None):
+        if a is None or b is None:
+            return None
+        if geometry is None:
+            geometry = curve(a, b, self.edge_counter)
+            self.edge_counter += 1
+        d, mid = geometry
+        s.start("g", **{"class": "layer-" + layer})
+        if record:
+            s.link(record.anchor, tooltip or pretty(record.value))
+        elif tooltip:
+            s.title(tooltip)
+        s.element("path", d=d, fill="none", stroke=PAPER,
+                  stroke_width=width + 5, stroke_linecap="round", opacity=".94")
+        s.element(
+            "path", d=d, fill="none", stroke=color, stroke_width=width,
+            stroke_dasharray="6 5" if dashed else None,
+            marker_end="url(#{})".format(marker_id(color)),
+            stroke_linecap="round"
+        )
+        if label:
+            bw = max(30, len(label) * 6.5 + 16)
+            pill(s, mid[0] - bw / 2, mid[1] - 11, label, color, bw)
+        if record:
+            s.end("a")
+        s.end()
+        return geometry
 
     def draw(self):
-        svg = SVG()
-        svg.text(24, 20, "STORY", 11, C["muted"], "bold")
-        svg.text(24, 37, "ORDER ↓", 11, C["muted"], "bold")
+        s = SVG()
+        s.text(48, 21, "{:02d}  /  {}".format(self.gi + 1, self.g["namespace"]),
+               10, MUTED, letter_spacing="1.3")
+        s.lines(48, 55, self.title_lines, 25, 29, class_="serif")
+        subtitle_y = 77 + 29 * (len(self.title_lines) - 1)
+        s.text(48, subtitle_y,
+               "Declared event.order · ordinal spacing"
+               "  |  equal-order slots are presentation only", 11, MUTED)
+        if numeric(self.g.get("merges")):
+            self.note("Declared merges: {}. No merge endpoints are supplied by this field."
+                      .format(self.g["merges"]))
 
-        for world in self.worlds:
-            x = world["_x"]
-            width = world["_width"]
-            top, bottom = self.chart_top - 12, self.chart_bottom + 8
-            if self.view == "2.5d":
-                front = [
-                    self.project(x, top), self.project(x + width, top),
-                    self.project(x + width, bottom), self.project(x, bottom)
-                ]
-                base_right = self.project(x + width, bottom, 0)
-                base_top_right = self.project(x + width, top, 0)
-                base_left = self.project(x, bottom, 0)
-                svg.poly([front[1], base_top_right, base_right, front[2]],
-                         "#d9e2ea", "#becbd6", stroke_width=1)
-                svg.poly([front[3], front[2], base_right, base_left],
-                         "#cbd7e1", "#b7c6d2", stroke_width=1)
-                svg.poly(front, "#eef3f7", "#c7d3dd", stroke_width=1)
-            else:
-                svg.rect(x, top, width, bottom - top, "#eef3f7",
-                         "#d6e0e8", rx=10)
+        corners = [
+            self.project(0, 0), self.project(self.local_width, 0),
+            self.project(self.local_width, self.plane_height),
+            self.project(0, self.plane_height)
+        ]
+        if self.depth:
+            shadow = [(x + 2, y + 12) for x, y in corners]
+            s.element("path", d=path_line(shadow) + " Z", fill="#d7dfdc")
+        s.element("path", d=path_line(corners) + " Z",
+                  fill="#eef2ef", stroke=LINE)
 
-            self.card(svg, world["_header"], world["_card"], 4, header=True)
-            hx, hy = self.project(world["_x"] + 14, 12)
-            svg.rect(hx, hy, 5, self.header_h - 14,
-                     world["_color"], rx=2)
+        if not self.worlds:
+            s.text(370, self.chart_top + 90,
+                   "No worlds declared. All supplied records remain below.", 15, MUTED)
 
-        # Band rules cross only empty space, never card interiors.
-        for band in self.bands:
-            y = band["top"]
-            py = self.project(0, y)[1]
-            svg.line(20, py, self.width - RIGHT, py, C["rule"], 1)
-            label = "Unspecified" if band["order"] is None else str(band["order"])
-            for n, line in enumerate(wrap_text(label, 106, 12)):
-                svg.text(24, py + 28 + n * 17, line, 12, C["ink"], "bold")
-            svg.text(24, py + 53 + 17 * max(0, len(wrap_text(label, 106, 12)) - 1),
-                     "rank %02d" % (band["rank"] + 1), 10, C["muted"])
+        for order in self.orders:
+            x = self.columns[order]
+            a, b = self.project(x, 0), self.project(x, self.plane_height)
+            s.line(*a, *b, "#d8e1df", 1, stroke_dasharray="2 7")
+            # Values shown here are exclusively input order values.
+            s.text(a[0], a[1] - 13, str(order), 11, MUTED,
+                   text_anchor="middle", class_="mono")
+        if self.has_unordered:
+            a = self.project(self.unordered_start, 0)
+            b = self.project(self.unordered_start, self.plane_height)
+            s.line(*a, *b, "#a4afae", 1.2, stroke_dasharray="4 6")
+            s.text(a[0] + 13, a[1] - 13, "UNORDERED", 10, MUTED,
+                   letter_spacing="1")
 
-        # Rails never end at a character death or ordinary cutoff event.
-        for world in self.worlds:
-            if world.get("_diagnostic"):
+        for i, w in enumerate(self.worlds):
+            color = WORLD_COLORS[i % len(WORLD_COLORS)]
+            y = self.row_height * (i + .5)
+            a, b = self.project(0, y), self.project(self.local_width, y)
+            s.line(*a, *b, color, 19, opacity=".075")
+            s.line(*a, *b, color, 1.7, opacity=".55")
+            record = self.rec("worlds", i)
+            if record:
+                s.link(record.anchor, pretty(w))
+            lx = a[0] - 289
+            s.rect(lx, a[1] - 41, 4, 50, color, 2)
+            s.text(lx + 15, a[1] - 23,
+                   "{}  /  {}".format(record.code if record else "", w["id"]),
+                   10, color, class_="mono")
+            lines = snippet(w["label"], 31, 2)
+            s.lines(lx + 15, a[1] - 3, lines, 14, 18, font_weight="600")
+            yy = a[1] + 18 * (len(lines) - 1) + 19
+            s.text(lx + 15, yy, "origin · " + w["origin"], 11, MUTED)
+            detail = []
+            born = obj(w.get("born"))
+            for key in ("parent", "event", "tine"):
+                if key in born:
+                    detail.append(key + ": " + str(born[key]))
+            if "ancestry" in w:
+                detail.append("ancestry: " + str(w["ancestry"]))
+            s.lines(lx + 15, yy + 17,
+                    snippet(" · ".join(detail), 37, 3) if detail else [],
+                    10, 14, fill=MUTED)
+            if record:
+                s.end("a")
+            if w["origin"] == "born":
+                for key, mapping in (("parent", self.wmap), ("event", self.emap)):
+                    ref = born.get(key)
+                    if isinstance(ref, str) and ref not in mapping:
+                        self.note("World {!r}: born.{} reference {!r} is unresolved."
+                                  .format(w["id"], key, ref))
+            # Origins are declarations, not automatically inferred split edges.
+
+        self.draw_segments(s)
+        self.draw_splits(s)
+        self.draw_transfers(s)
+        self.draw_route(s)
+        self.draw_events(s)
+        self.draw_beats(s)
+        self.draw_fates(s)
+
+        bottom = max(y for x, y in corners) + 45
+        s.text(48, bottom,
+               "Node labels are excerpts. Numbered links open complete records."
+               " Unavailable citations remain explicitly unavailable.", 11, MUTED)
+        bottom += 26
+
+        if self.notes:
+            lines = []
+            for note in self.notes:
+                wrapped = wrap(note, 145)
+                lines.extend(["• " + wrapped[0]] + ["  " + v for v in wrapped[1:]])
+            height = 48 + len(lines) * 17
+            s.rect(48, bottom, min(self.width - 96, 1144), height,
+                   "#f0eade", 9, stroke="#e1d5bf")
+            s.text(65, bottom + 24, "PLACEMENT NOTES / NO GUESSED ENDPOINTS",
+                   10, GOLD, letter_spacing="1")
+            s.lines(65, bottom + 47, lines, 11, 17, fill="#76603f")
+            bottom += height + 8
+        self.computed_height = bottom + 8
+        return str(s)
+
+    def draw_segments(self, s):
+        for i, value in enumerate(self.segments):
+            seg = obj(value)
+            record = self.rec("segments", i)
+            context = "Segment {}".format(seg.get("id", i + 1))
+            if not seg:
+                self.note(context + ": opaque structure retained in the index.")
                 continue
-            x, start, end = world["_rail"], world["_start"], world["_end"]
-            self.stroke(svg, [(x, start), (x, end)], C["rail"], 3,
-                        halo=False)
-            px, py = self.project(x, start)
-            origin = world.get("origin")
-            if origin == "initial":
-                svg.rect(px - 6, py - 6, 12, 12, C["white"],
-                         world["_color"], rx=1, stroke_width=2)
-            elif origin == "preexisting":
-                svg.element("path",
-                            d="M %.2f %.2f l -5 -7 m 5 7 l 5 -7" % (px, py),
-                            fill="none", stroke=world["_color"], stroke_width=2)
-            elif origin == "born":
-                svg.poly([(px, py - 7), (px + 7, py), (px, py + 7),
-                          (px - 7, py)], "#fff1d7", C["split"], stroke_width=2)
+            a = self.resolve(seg.get("from"), seg.get("universe"), context)
+            b = self.resolve(seg.get("to"), seg.get("universe"), context)
+            if a is None or b is None:
+                continue
+            # A segment is an extent, not an invented directional transfer.
+            s.start("g", **{"class": "layer-annotations"})
+            s.link(record.anchor, pretty(value))
+            s.line(a[0], a[1] - 17, b[0], b[1] - 17, "#80989b", 5, opacity=".35")
+            pill(s, (a[0] + b[0]) / 2 - 26, (a[1] + b[1]) / 2 - 29,
+                 "Sg " + record.code, "#60787d", 58)
+            s.end("a")
+            s.end()
+
+    def draw_splits(self, s):
+        for i, split in enumerate(self.splits):
+            record = self.rec("splits", i)
+            context = "Split " + str(split.get("event", i + 1))
+            a = self.resolve(split.get("event"), split.get("source_universe"), context)
+            outcomes = obj(split.get("outcomes"))
+            if not outcomes:
+                self.note(context + ": no outcome endpoints declared.")
+            for sign, outcome in outcomes.items():
+                if not isinstance(outcome, dict):
+                    self.note(context + ": opaque outcome {!r} retained in the index.".format(sign))
+                    continue
+                b = self.resolve(
+                    outcome.get("entry"), outcome.get("universe"),
+                    context + " / outcome " + str(sign)
+                )
+                label = str(sign) + " · " + record.code
+                color = PLUS if sign == "+" else MINUS if sign == "-" else MUTED
+                self.connector(s, a, b, label, color, record, "splits",
+                               dashed=True, tooltip=pretty(split))
+
+    def draw_transfers(self, s):
+        for i, transfer in enumerate(self.transfers):
+            record = self.rec("transfers", i)
+            fr, to = obj(transfer.get("from")), obj(transfer.get("to"))
+            context = "Transfer " + str(transfer.get("id", i + 1))
+            a = self.resolve(fr.get("exit"), fr.get("universe"), context + " / from")
+            b = self.resolve(to.get("entry"), to.get("universe"), context + " / to")
+            mechanism = transfer.get("mechanism")
+            badge, color = MECHANISMS.get(mechanism, UNKNOWN_MECHANISM)
+            literal = mechanism if mechanism is not None else "unspecified"
+            # No aliasing: time_travel is not silently mapped to body.
+            label = badge + " · " + str(literal)
+            geometry = self.connector(s, a, b, label, color, record, "transfers",
+                                      width=2.5, tooltip=pretty(transfer))
+            if geometry and self.tmap.get(transfer.get("id")) is transfer:
+                self.transfer_geometry[transfer["id"]] = (a, b, geometry)
+
+    def draw_route(self, s):
+        if not self.route:
+            return
+        record = self.rec("route")
+        visits = arr(self.route.get("visits"))
+        visit_map, duplicates = unique_index(visits)
+        for duplicate in duplicates:
+            self.note("Route: duplicate visit ID {!r}; links to it are ambiguous.".format(duplicate))
+        slots = Counter()
+        for i, value in enumerate(visits):
+            v = obj(value)
+            context = "Route visit " + str(v.get("id", i + 1))
+            world = v.get("universe")
+            passed = v.get("passes", [])
+            if not isinstance(passed, list):
+                self.note(context + ": passes is opaque; retained in the index.")
+                passed = []
+            # Unknown pass shapes break, rather than silently bypass, the path.
+            refs = [v.get("entry")] + passed + [v.get("exit")]
+            pts = [self.resolve(ref, world, context) for ref in refs]
+            slot_key = world if isinstance(world, str) else ""
+            offset = 26 + slots[slot_key] * 14
+            slots[slot_key] += 1
+
+            s.start("g", **{"class": "layer-route"})
+            s.link(record.anchor, pretty(value))
+            for a, b in zip(pts, pts[1:]):
+                if a is None or b is None:
+                    continue
+                shifted_a = (a[0], a[1] + offset)
+                shifted_b = (b[0], b[1] + offset)
+                s.line(*shifted_a, *shifted_b, WHITE, 7)
+                s.line(*shifted_a, *shifted_b, GOLD, 3,
+                       marker_end="url(#{})".format(marker_id(GOLD)))
+            for p in (pts[0], pts[-1]):
+                if p:
+                    s.line(p[0], p[1] + 11, p[0], p[1] + offset, GOLD, 1.1,
+                           stroke_dasharray="2 3")
+            first = next((p for p in pts if p is not None), None)
+            if first:
+                pill(s, first[0] - 21, first[1] + offset - 10,
+                     "R" + str(i + 1), GOLD, 40, background="#fff8e8")
+            s.end("a")
+            s.end()
+            if visit_map.get(v.get("id")) is v:
+                self.visit_geometry[v["id"]] = (pts[0], pts[-1])
+
+        for i, value in enumerate(arr(self.route.get("links"))):
+            link = obj(value)
+            context = "Route link {}".format(i + 1)
+            fr, to = link.get("from"), link.get("to")
+            if not isinstance(fr, str) or not isinstance(to, str):
+                self.note(context + ": unsupported visit reference shape; retained in the index.")
+                continue
+            source = self.visit_geometry.get(fr)
+            target = self.visit_geometry.get(to)
+            if source is None or target is None:
+                self.note(context + ": missing or ambiguous visit reference.")
+                continue
+            a, b = source[1], target[0]
+            if "via" in link:
+                via = link["via"]
+                declared = self.transfer_geometry.get(via) if isinstance(via, str) else None
+                if declared is None:
+                    self.note(context + ": via transfer is missing, ambiguous or unplaceable.")
+                    continue
+                ta, tb, geometry = declared
+                if a != ta or b != tb:
+                    self.note(context + ": via transfer endpoints disagree with visit endpoints; "
+                              "no replacement connection inferred.")
+                    continue
+                # Follow only the explicitly referenced transfer, as a separate
+                # dashed overlay. The transfer's literal mechanism stays visible.
+                d, mid = geometry
+                s.start("g", **{"class": "layer-route"})
+                s.link(record.anchor, pretty(link))
+                s.element("path", d=d, fill="none", stroke=GOLD,
+                          stroke_width=5.5, stroke_dasharray="2 9", opacity=".9")
+                pill(s, mid[0] - 15, mid[1] + 16, "R", GOLD, 30,
+                     background="#fff8e8")
+                s.end("a")
+                s.end()
             else:
-                svg.circle(px, py, 9, C["white"], C["rail"], stroke_width=2)
-                svg.text(px, py + 4, "?", 12, C["rail"], "bold",
-                         text_anchor="middle")
-            ex, ey = self.project(x, end)
-            svg.line(ex - 7, ey, ex + 7, ey, C["rail"], 2)
-            if end < self.chart_bottom:
-                text = "Ancestry prefix ends"
+                self.connector(
+                    s, a, b, "R · " + str(link.get("kind", "link")),
+                    GOLD, record, "route", dashed=True, width=2.5,
+                    tooltip=pretty(link)
+                )
+
+    def draw_events(self, s):
+        for i, event in enumerate(self.events):
+            p = self.event_positions.get(i)
+            if p is None:
+                continue
+            x, y = p
+            record = self.rec("events", i)
+            color = WORLD_COLORS[self.wrow[event["universe"]] % len(WORLD_COLORS)]
+            kind = event["kind"]
+            s.link(record.anchor, pretty(event))
+            # Label plates preserve readability where relations cross labels.
+            lines = snippet(event["label"], 22, 2)
+            box_y = y - 76
+            s.rect(x - 68, box_y, 136, 62, PAPER, 7, opacity=".96")
+            s.text(x, box_y + 16, record.code + " · " + kind, 10, color,
+                   text_anchor="middle", font_weight="700")
+            s.lines(x, box_y + 33, lines, 10, 14,
+                    fill=INK, text_anchor="middle")
+            s.element("circle", cx=x, cy=y, r=12, fill=WHITE,
+                      stroke=color, stroke_width=2, **{"class": "event-hit"})
+            if kind == "split":
+                s.element("path", d="M {},{} l 6,6 -6,6 -6,-6 Z".format(x, y - 6),
+                          fill=color)
+            elif kind in ("entry", "gate_entry"):
+                s.element("path", d="M {},{} l 8,5 -8,5 Z".format(x - 4, y - 5),
+                          fill=color)
+            elif kind in ("exit", "gate_exit"):
+                s.element("path", d="M {},{} l -8,5 8,5".format(x + 4, y - 5),
+                          fill="none", stroke=color, stroke_width=2)
+            elif kind == "cutoff":
+                s.line(x - 4, y - 5, x - 4, y + 5, color, 2)
+                s.line(x + 4, y - 5, x + 4, y + 5, color, 2)
+            elif kind == "anchor":
+                s.element("path", d="M {},{} l 6,6 -6,6 -6,-6 Z".format(x, y - 6),
+                          fill="none", stroke=color, stroke_width=1.5)
             else:
-                text = "End of displayed extent"
-            svg.text(ex + 15, ey + 5, text, 10, C["muted"])
+                s.element("circle", cx=x, cy=y, r=4, fill=color)
+            s.end("a")
 
-        for visit in self.visits:
-            self.draw_visit(svg, visit)
-        # Crossing order is deterministic. White casings mean bridges, not joins.
-        for edge in self.edges:
-            self.draw_edge(svg, edge)
+            cite = obj(event.get("cite"))
+            if cite:
+                source = self.a.source(cite.get("source"))
+                target = source.anchor if source else record.anchor
+                s.link(target, "Citation as declared:\n" + pretty(cite))
+                s.text(x + 18, y + 4, "§", 16,
+                       GOLD if cite.get("status") == "unavailable" else MUTED)
+                s.end("a")
+                if "source" in cite and source is None:
+                    self.note("Event {!r}: citation source {!r} is missing or ambiguous."
+                              .format(event["id"], cite["source"]))
 
-        # Cards and short attachment leaders occupy exclusive body rectangles.
-        for item in self.items:
-            world = self.world_map[item["world"]]
-            y = item["node_y"]
-            a = self.project(world["_rail"] + 10, y)
-            b = self.project(item["x"], y)
-            svg.line(*a, *b, world["_color"], 1.8)
-            self.card(svg, item)
-        for item in self.items:
-            self.node(svg, item)
+    def draw_beats(self, s):
+        occupied = Counter()
+        for i, value in enumerate(self.beats):
+            beat = obj(value)
+            segment_id = beat.get("segment")
+            segment = self.smap.get(segment_id) if isinstance(segment_id, str) else None
+            world = obj(segment).get("universe", beat.get("universe"))
+            order = beat.get("order")
+            record = self.rec("beats", i)
+            if world not in self.wrow or not numeric(order):
+                self.note("Beat {}: no supported world/order placement; retained in the index."
+                          .format(beat.get("id", i + 1)))
+                continue
+            offset = occupied[(world, order)] * 23
+            occupied[(world, order)] += 1
+            y = self.row_height * (self.wrow[world] + .5)
+            x, yy = self.project(self.columns[order], y)
+            yy += 79 + offset
+            s.start("g", **{"class": "layer-annotations"})
+            s.link(record.anchor, pretty(value))
+            pill(s, x - 32, yy - 12, "◇ " + record.code, "#60787d", 64)
+            s.end("a")
+            s.end()
 
-        return svg.output()
+    def draw_fates(self, s):
+        slots = Counter()
+        for i, fate in enumerate(self.fates):
+            record = self.rec("fates", i)
+            context = "Fate " + str(fate.get("id", i + 1))
+            p = self.resolve(fate.get("event"), fate.get("universe"), context)
+            if p is None:
+                continue
+            symbol, color = STATUS[fate["status"]]
+            offset = slots[fate.get("event")] * 24
+            slots[fate.get("event")] += 1
+            label = "{} {} · {}".format(symbol, fate["status"], record.code)
+            width = len(label) * 6.5 + 16
+            s.start("g", **{"class": "layer-annotations"})
+            s.link(record.anchor, pretty(fate))
+            pill(s, p[0] - width / 2, p[1] + 104 + offset,
+                 label, color, width)
+            s.end("a")
+            s.end()
+
+    def render(self):
+        return self.body
 
 
-def validate(story):
-    """Small contract check, deliberately not a pretend JSON-Schema engine."""
-    if not isinstance(story, dict):
-        raise ValueError("The document root must be an object.")
-    if story.get("abstract_model") != "universe-timeline/1.0":
+def validate(model):
+    """Structural guardrails, deliberately not a full JSON Schema validator."""
+    if not isinstance(model, dict):
+        raise ValueError("The JSON root must be an object.")
+    if model.get("abstract_model") != "universe-timeline/1.0":
         raise ValueError("abstract_model must be 'universe-timeline/1.0'.")
-    if not isinstance(story.get("title"), str):
+    if not isinstance(model.get("title"), str):
         raise ValueError("title must be a string.")
-    graphs = story.get("graphs")
+    graphs = model.get("graphs")
     if not isinstance(graphs, list) or not graphs:
         raise ValueError("graphs must be a nonempty array.")
-    for index, graph in enumerate(graphs):
-        if not isinstance(graph, dict):
-            raise ValueError("graphs[%d] must be an object." % index)
+
+    def string_fields(value, fields, context):
+        if not isinstance(value, dict):
+            raise ValueError(context + " must be an object.")
+        for field in fields:
+            if not isinstance(value.get(field), str):
+                raise ValueError(context + "." + field + " must be a string.")
+
+    for gi, graph in enumerate(graphs):
+        context = "graphs[{}]".format(gi)
+        string_fields(graph, ["namespace"], context)
         if not isinstance(graph.get("worlds"), list):
-            raise ValueError("graphs[%d].worlds must be an array." % index)
-        for key in ("events", "beats", "segments", "splits", "transfers",
-                    "fates", "evidence", "assumptions"):
-            if key in graph and not isinstance(graph[key], list):
-                raise ValueError("graphs[%d].%s must be an array." % (index, key))
-        for event in graph.get("events", []):
-            if not isinstance(event, dict):
-                raise ValueError("Every event must be an object.")
-            order = event.get("order")
-            if order is not None and (isinstance(order, bool)
-                                      or not isinstance(order, int)):
-                raise ValueError("Event %r has a non-integer order." %
-                                 event.get("id"))
-        for beat in graph.get("beats", []):
-            if isinstance(beat, dict):
-                order = beat.get("order")
-                if order is not None and (isinstance(order, bool)
-                                          or not isinstance(order, int)):
-                    raise ValueError("Beat %r has a non-integer order." %
-                                     beat.get("id"))
+            raise ValueError(context + ".worlds must be an array.")
+        for name in ("events", "segments", "beats", "splits", "transfers",
+                     "fates", "assumptions", "evidence"):
+            if name in graph and not isinstance(graph[name], list):
+                raise ValueError(context + "." + name + " must be an array.")
+        if "route" in graph and not isinstance(graph["route"], dict):
+            raise ValueError(context + ".route must be an object.")
+        for wi, world in enumerate(graph["worlds"]):
+            wc = context + ".worlds[{}]".format(wi)
+            string_fields(world, ["id", "label", "origin"], wc)
+            if world["origin"] not in ("initial", "born", "preexisting", "unknown"):
+                raise ValueError(wc + ": unsupported origin.")
+        for ei, event in enumerate(graph.get("events", [])):
+            ec = context + ".events[{}]".format(ei)
+            string_fields(event, ["id", "kind", "universe", "label"], ec)
+            if event["kind"] not in KINDS:
+                raise ValueError(ec + ": unsupported event kind.")
+            if "order" not in event or not (
+                event["order"] is None or
+                isinstance(event["order"], int) and not isinstance(event["order"], bool)
+            ):
+                raise ValueError(ec + ".order must be an integer or null.")
+        for si, split in enumerate(graph.get("splits", [])):
+            sc = context + ".splits[{}]".format(si)
+            string_fields(split, ["event"], sc)
+            if not isinstance(split.get("outcomes"), dict):
+                raise ValueError(sc + ".outcomes must be an object.")
+        for ti, transfer in enumerate(graph.get("transfers", [])):
+            tc = context + ".transfers[{}]".format(ti)
+            string_fields(transfer, ["id", "traveller"], tc)
+            if "mechanism" in transfer and not isinstance(transfer["mechanism"], str):
+                raise ValueError(tc + ".mechanism must be a string.")
+        for fi, fate in enumerate(graph.get("fates", [])):
+            fc = context + ".fates[{}]".format(fi)
+            string_fields(fate, ["id", "status"], fc)
+            if fate["status"] not in STATUS:
+                raise ValueError(fc + ": unsupported fate status.")
 
 
-def definitions(svg):
-    svg.start("defs")
-    for kind in ("split", "transfer", "route", "reference"):
-        svg.start("marker", id="arrow-" + kind, viewBox="0 0 10 10",
-                  refX=8, refY=5, markerWidth=7, markerHeight=7,
-                  markerUnits="userSpaceOnUse", orient="auto",
-                  overflow="visible")
-        svg.element("path", d="M 1 1 L 9 5 L 1 9 Z", fill=C[kind])
-        svg.end("marker")
-    svg.end("defs")
-    svg.raw("""
-<style>
-text { font-kerning: normal; }
-a { cursor: pointer; }
-a:hover text { text-decoration: underline; }
-.card:hover > rect { stroke: #879ead; }
-:target > rect { stroke: #285ac7; stroke-width: 2; }
-.hide-split .layer-split,
-.hide-transfer .layer-transfer,
-.hide-route .layer-route,
-.hide-evidence .citation { display: none; }
-</style>""")
-
-
-def section(svg, y, title, width, ident=None):
-    svg.start("g", id=ident)
-    svg.line(32, y, width - 32, y, C["rule"], 1.5)
-    svg.text(40, y + 29, title, 18, C["ink"], "bold")
-    svg.end("g")
-    return y + 48
-
-
-def ledger_record(svg, y, key, text, width, color=None, ident=None):
-    available = min(width - 190, 1160)
-    lines = wrap_text(text, available, 12)
-    h = max(42, 22 + len(lines) * 18)
-    svg.start("g", id=ident)
-    svg.rect(32, y, width - 64, h, C["white"], C["rule"], rx=7)
-    label_lines = wrap_text(key, 112, 11)
-    # Long keys are allowed to increase row height rather than overlap.
-    needed = 22 + 17 * len(label_lines)
-    if needed > h:
-        h = needed
-        svg.rect(32, y, width - 64, h, C["white"], C["rule"], rx=7)
-    for n, line in enumerate(label_lines):
-        svg.text(46, y + 23 + n * 17, line, 11, color or C["muted"], "bold")
-    for n, line in enumerate(lines):
-        svg.text(174, y + 23 + n * 18, line, 12, C["ink"])
-    svg.end("g")
-    return y + h + 8
-
-
-def graph_appendix(svg, graph, y, width):
-    g = graph.g
-    y = section(svg, y, "Relationship ledger", width,
-                graph.prefix + "-relationships")
-    if not graph.edge_records:
-        y = svg.paragraph(40, y, "No split or transfer edges supplied.",
-                          min(width - 80, 1150), 12) + 12
-    selected = {e["code"]: e for e in graph.edges}
-    for code, detail, record in graph.edge_records:
-        edge = selected.get(code)
-        if edge:
-            detail = edge["detail"]
-            color = C[edge["kind"]]
-        else:
-            detail += " · UNRESOLVED ENDPOINT — no geometry fabricated"
-            color = C["warning"]
-        y = ledger_record(svg, y, code, detail, width, color)
-
-    if graph.route_records:
-        route = g.get("route") or {}
-        y = section(svg, y + 18,
-                    "Thread / " + str(route.get("traveller", "unspecified")),
-                    width)
-        for number, text in enumerate(graph.route_records, 1):
-            y = ledger_record(svg, y, "ROUTE %02d" % number, text,
-                              width, C["route"])
-
-    if g.get("segments"):
-        y = section(svg, y + 18, "Declared segments", width)
-        for number, segment in enumerate(g["segments"], 1):
-            if isinstance(segment, dict):
-                key = segment.get("id", "SEG %d" % number)
-                text = "%s · %s · %s → %s" % (
-                    segment.get("label", ""),
-                    segment.get("universe", "world unspecified"),
-                    segment.get("from", "?"), segment.get("to", "?")
-                )
-                extra = {k: v for k, v in segment.items()
-                         if k not in ("id", "label", "universe", "from", "to")}
-                if extra:
-                    text += " · " + compact(extra)
-            else:
-                key, text = "SEG %d" % number, compact(segment)
-            y = ledger_record(svg, y, key, text, width)
-
-    notes = list(g.get("assumptions", []))
-    if "merges" in g:
-        notes.append("Declared merge count: %s. A count supplies no merge "
-                     "locations; none are invented." % g["merges"])
-    if notes:
-        y = section(svg, y + 18, "Interpretive assumptions / model notes", width)
-        for number, note in enumerate(notes, 1):
-            y = ledger_record(svg, y, "NOTE %02d" % number,
-                              str(note), width)
-    if graph.warnings:
-        y = section(svg, y + 18, "Diagnostics — records retained, nothing guessed",
-                    width)
-        for number, warning in enumerate(graph.warnings, 1):
-            y = ledger_record(svg, y, "CHECK %02d" % number, warning,
-                              width, C["warning"])
-    return y + 24
-
-
-def render_document(story, view="2d"):
-    validate(story)
-    evidence = Evidence()
-    evidence.scan(story)
-    graphs = [Graph(g, i + 1, evidence, view)
-              for i, g in enumerate(story["graphs"])]
-    width = math.ceil(max([g.width for g in graphs] + [1100]) + 24)
-    svg = SVG()
-    definitions(svg)
-
-    y = 34
-    svg.text(40, y + 13, "ELSEHOW  /  WORLDS & THREAD",
-             11, C["route"], "bold", letter_spacing=1.5)
-    y += 35
-    y = svg.paragraph(40, y, story["title"], min(width - 80, 1400),
-                      34, C["ink"], 43, "bold") + 8
-    if story.get("subtitle"):
-        y = svg.paragraph(40, y, story["subtitle"], min(width - 80, 1300),
-                          15, C["muted"], 23) + 14
-    mode = ("2.5D · cabinet axonometric · depth separates surfaces only"
-            if view == "2.5d" else "2D · categorical world columns")
-    y = svg.paragraph(
-        40, y, mode + " · Story-order ranks, not elapsed time. "
-        "Equal ranks do not assert physical simultaneity.",
-        min(width - 80, 1350), 12, C["muted"], 18
-    ) + 18
-
-    legend_lines = [
-        ("split", "Amber S±", "Split outcomes. + and − are signs, not fates."),
-        ("transfer", "Blue T", "Directed transfers. B body · M memory · "
-         "C consciousness · S signal · ? literal/unspecified mechanism."),
-        ("route", "Emerald V / L", "Numbered visits and explicit links only. "
-         "Emerald centre on a cable means the route follows that connection."),
-        ("rail", "Slate rail", "World identity. Cutoff means chart boundary, "
-         "not destruction. Crossings are bridges; only markers are joins."),
-        ("reference", "Evidence / fate", "[n] opens the evidence record. "
-         "× dead · ● alive · ? unknown · ∅ nonexistent. "
-         "Purple dotted connections are annotation references."),
-    ]
-    for kind, label, detail in legend_lines:
-        sx = 45
-        svg.line(sx, y + 10, sx + 31, y + 10, C[kind], 4)
-        y = svg.paragraph(90, y, label + " — " + detail,
-                          min(width - 140, 1260), 12, C["ink"], 18) + 9
-    y += 12
-
-    profile = story.get("profile") or {}
-    if profile:
-        y = section(svg, y, "Declared interpretation", width)
-        profile_text = "Profile: %s · rules: %s" % (
-            profile.get("name", "unspecified"),
-            profile.get("rules", "unspecified")
-        )
-        y = ledger_record(svg, y, "PROFILE", profile_text, width)
-        params = profile.get("params") or {}
-        if params:
-            y = ledger_record(
-                svg, y, "PARAMETERS",
-                " · ".join("%s: %s" % (k, compact(v))
-                           for k, v in params.items()), width
-            )
-        y = ledger_record(
-            svg, y, "POLICY",
-            "Explicit records determine geometry. Profile declarations do not "
-            "manufacture branches, activation intervals, genealogy, repeated "
-            "worlds or replacement links. No reset is drawn. World-time "
-            "coordinates are unavailable in this contract.", width
-        )
-        y += 16
-
-    for graph in graphs:
-        g = graph.g
-        y = section(svg, y, "%s  /  %s" %
-                    (g.get("namespace", "?"), g.get("title") or story["title"]),
-                    width, graph.prefix)
-        count = "%d declared worlds · %d events · %d transfers · %d split records" % (
-            len(g.get("worlds", [])), len(g.get("events", [])),
-            len(g.get("transfers", [])), len(g.get("splits", []))
-        )
-        y = svg.paragraph(40, y, count, width - 80, 12, C["muted"], 18) + 26
-        svg.start("g", transform="translate(0 %.2f)" % y,
-                  role="group",
-                  aria_label="Atlas for " + str(g.get("namespace", "")))
-        svg.raw(graph.draw())
-        svg.end("g")
-        y += graph.height
-        y = graph_appendix(svg, graph, y, width)
-
-    if evidence.rows:
-        y = section(svg, y + 8, "Evidence / complete citation register", width,
-                    "evidence")
-        y = svg.paragraph(
-            40, y,
-            "Status is the supplied evidence status, not a truth rating. "
-            "Repeated citations are deduplicated; all owners remain listed.",
-            min(width - 80, 1280), 12, C["muted"], 18
-        ) + 15
-        for number, row in enumerate(evidence.rows, 1):
-            cite = row["cite"]
-            fields = ["%s: %s" % (k, compact(v))
-                      for k, v in cite.items() if v is not None]
-            text = " · ".join(fields)
-            text += " · Referenced by: " + "; ".join(row["owners"])
-            y = ledger_record(svg, y, "[%d]" % number, text,
-                              width, C["transfer"],
-                              ident="evidence-%d" % number)
-
-    if story.get("sources"):
-        y = section(svg, y + 18, "Sources — including fixture provenance", width)
-        for number, source in enumerate(story["sources"], 1):
-            y = ledger_record(svg, y, source.get("id", "SOURCE %d" % number),
-                              compact(source), width)
-
-    for field, heading in (("characters", "Characters"),
-                           ("travellers", "Travellers"),
-                           ("namespaces", "Namespaces")):
-        if story.get(field):
-            y = section(svg, y + 18, heading, width)
-            for record in story[field]:
-                y = ledger_record(svg, y, record.get("id", field),
-                                  compact(record), width)
-
-    if story.get("footer"):
-        y = section(svg, y + 18, "Chart note", width)
-        y = svg.paragraph(40, y, story["footer"], min(width - 80, 1280),
-                          13, C["muted"], 20) + 20
-    y += 32
-    height = math.ceil(y)
-    description = (
-        "Worlds and Thread atlas. Story order progresses downward. "
-        "Connections use reserved routing space. Full relationship and "
-        "citation ledgers follow the chart. The HTML companion contains "
-        "the complete accessible model."
-    )
-    result = (
-        '<svg xmlns="http://www.w3.org/2000/svg" '
-        'width="%d" height="%d" viewBox="0 0 %d %d" '
-        'font-family="%s" role="img" aria-labelledby="atlas-title atlas-desc">\n'
-        '<title id="atlas-title">%s</title>\n'
-        '<desc id="atlas-desc">%s</desc>\n'
-        '<rect width="%d" height="%d" fill="%s"/>\n%s\n</svg>\n'
-    ) % (
-        width, height, width, height, FONT, esc(story["title"]),
-        esc(description), width, height, C["paper"], svg.output()
-    )
-    warnings = [warning for graph in graphs for warning in graph.warnings]
-    return result, width, height, warnings
-
-
-def accessible_ledger(story):
-    parts = []
-    for graph in story["graphs"]:
-        parts.append("<h3>%s — %s</h3>" % (
-            esc(graph.get("namespace", "")), esc(graph.get("title", ""))
-        ))
-        parts.append("<table><thead><tr><th>World</th><th>Order</th>"
-                     "<th>Event</th><th>Description</th><th>Citation</th>"
-                     "</tr></thead><tbody>")
-        for event in graph.get("events", []):
-            parts.append("<tr>%s</tr>" % "".join(
-                "<td>%s</td>" % esc(value) for value in (
-                    event.get("universe"),
-                    "unspecified" if event.get("order") is None
-                    else event["order"],
-                    str(event.get("id")) + " / " + str(event.get("kind")),
-                    event.get("label"),
-                    compact(event.get("cite") or "No citation supplied"),
-                )
-            ))
-        parts.append("</tbody></table>")
-        for field in ("worlds", "splits", "transfers", "route", "fates",
-                      "segments", "beats", "assumptions", "evidence"):
-            if graph.get(field):
-                parts.append("<details><summary>%s</summary><pre>%s</pre>"
-                             "</details>" %
-                             (esc(field), esc(json.dumps(
-                                 graph[field], ensure_ascii=False, indent=2))))
-    return "\n".join(parts)
-
-
-def render_html(story, svg, width, height, view):
-    raw_model = esc(json.dumps(story, ensure_ascii=False, indent=2))
-    title = esc(story["title"])
+def make_html(svg, title):
+    # Inline SVG: the companion has no network or file dependencies.
+    svg = svg.split("\n", 1)[1] if svg.startswith("<?xml") else svg
     template = """<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>@@TITLE@@ — Elsehow</title>
+<title>__TITLE__ — Universe Atlas</title>
 <style>
 :root { color-scheme: light; }
 * { box-sizing: border-box; }
-body { margin:0; color:#172a3a; background:#f5f6f8;
-       font:14px/1.5 system-ui,Arial,sans-serif; }
+html { scroll-behavior: smooth; }
+body { margin:0; color:#172c3c; background:#e6ebe7;
+       font:13px system-ui,-apple-system,"Segoe UI",sans-serif; }
 header { position:sticky; top:0; z-index:10; display:flex; flex-wrap:wrap;
-         align-items:center; gap:10px 18px; padding:12px 20px;
-         background:#fff; border-bottom:1px solid #cbd7e1; }
-header strong { margin-right:auto; }
-button, input { font:inherit; }
-button { border:1px solid #bbcbd6; background:#fff; color:#172a3a;
-         border-radius:6px; padding:5px 12px; cursor:pointer; }
-button:hover { background:#edf3f7; }
-button:focus-visible, a:focus-visible, summary:focus-visible {
-    outline:3px solid #285ac7; outline-offset:3px;
-}
-label { white-space:nowrap; font-size:12px; }
-#viewport { height:78vh; overflow:auto; overscroll-behavior:contain;
-            border-bottom:1px solid #cbd7e1; }
-#surface { position:relative; }
-#surface > svg { display:block; position:absolute; left:0; top:0;
-                 transform-origin:top left; max-width:none; }
-main > p, main > details { margin:18px 24px; }
-details { background:#fff; padding:12px 16px; border:1px solid #d3dde5;
-          border-radius:8px; }
-details details { margin:10px 0; }
-summary { cursor:pointer; font-weight:600; }
-pre { white-space:pre-wrap; overflow-wrap:anywhere; font-size:12px; }
-table { border-collapse:collapse; width:100%; font-size:12px; }
-th,td { padding:9px; text-align:left; vertical-align:top;
-        border-bottom:1px solid #d3dde5; overflow-wrap:anywhere; }
-th { background:#eef3f7; }
+         align-items:center; gap:10px; padding:12px 18px;
+         color:#f6f5ef; background:#172c3cf5; box-shadow:0 3px 14px #172c3c25; }
+header strong { margin-right:12px; letter-spacing:2px; font-size:11px; }
+button, input[type=search] { border:1px solid #6d808b; border-radius:6px;
+         background:#fff; color:#172c3c; padding:7px 10px; font:inherit; }
+button { cursor:pointer; }
+button:hover { background:#f3e9d1; }
+button:focus-visible, input:focus-visible { outline:3px solid #eac87f; }
+label { display:inline-flex; gap:4px; align-items:center; font-size:12px; }
+.controls { display:flex; gap:6px; align-items:center; flex-wrap:wrap; }
+.divider { width:1px; height:24px; background:#536773; margin:0 4px; }
+#viewport { overflow:auto; padding:20px; }
+#art { margin:0 auto; width:max-content; }
+#art svg { display:block; box-shadow:0 12px 45px #172c3c18; }
+#zoom-label { min-width:43px; text-align:center; font-variant-numeric:tabular-nums; }
+#status { color:#d3dedf; font-size:12px; }
+.hint { margin:0; padding:10px 20px; color:#566c77; }
 @media print {
-    header,.screen-note { display:none; }
-    #viewport { height:auto; overflow:visible; border:0; }
-    #surface { width:auto!important; height:auto!important; }
-    #surface > svg { position:static; transform:none!important;
-                     width:100%; height:auto; }
-    main > details { display:none; }
+  header, .hint { display:none; }
+  #viewport { padding:0; overflow:visible; }
+  #art { width:100%; }
+  #art svg { width:100% !important; height:auto !important; box-shadow:none; }
 }
 </style>
 </head>
 <body>
 <header>
-<strong>@@TITLE@@ <small> / @@VIEW@@</small></strong>
-<button type="button" id="minus" aria-label="Zoom out">−</button>
-<output id="zoom-label" aria-live="polite">100%</output>
-<button type="button" id="plus" aria-label="Zoom in">+</button>
-<button type="button" id="actual">100%</button>
-<button type="button" id="fit">Fit width</button>
-<label><input type="checkbox" data-layer="split" checked> Splits</label>
-<label><input type="checkbox" data-layer="transfer" checked> Transfers</label>
-<label><input type="checkbox" data-layer="route" checked> Thread</label>
-<label><input type="checkbox" data-layer="evidence" checked> Citation tabs</label>
-</header>
-<main>
-<div id="viewport" tabindex="0" aria-label="Scrollable timeline atlas">
-<div id="surface">@@SVG@@</div>
+<strong>UNIVERSE ATLAS</strong>
+<div class="controls">
+<button id="out" aria-label="Zoom out">−</button>
+<span id="zoom-label">100%</span>
+<button id="in" aria-label="Zoom in">+</button>
+<button id="fit">Fit width</button>
+<button id="actual">100%</button>
 </div>
-<p class="screen-note">Native-size text is the default. Pan with the scrollbars;
-zoom with the controls. Hiding a layer changes presentation only.
-Citation tabs navigate to the evidence appendix. Hover cards or cables for
-their exact records. No external scripts, fonts or assets are required.</p>
-<details><summary>Accessible event and relationship ledger</summary>
-@@LEDGER@@
-</details>
-<details><summary>Complete input model — including loose-schema fields</summary>
-<pre>@@MODEL@@</pre></details>
-</main>
+<span class="divider"></span>
+<label><input type="checkbox" data-layer="splits" checked> Splits</label>
+<label><input type="checkbox" data-layer="transfers" checked> Transfers</label>
+<label><input type="checkbox" data-layer="route" checked> Route</label>
+<label><input type="checkbox" data-layer="annotations" checked> Annotations</label>
+<span class="divider"></span>
+<form id="search-form" class="controls">
+<input id="search" type="search" placeholder="Search complete records"
+       aria-label="Search complete records">
+<button>Find next</button>
+</form>
+<button id="download">Download SVG</button>
+<span id="status" role="status" aria-live="polite"></span>
+</header>
+<p class="hint">Scroll to explore. Hover for original values; click numbered items for full records.
+The SVG is embedded here and works offline. Search finds values in the record index.</p>
+<main id="viewport"><div id="art">__SVG__</div></main>
 <script>
-"use strict";
 (() => {
-    const viewport = document.getElementById("viewport");
-    const surface = document.getElementById("surface");
-    const svg = surface.querySelector("svg");
-    const label = document.getElementById("zoom-label");
-    const W = @@WIDTH@@, H = @@HEIGHT@@;
-    let zoom = 1;
-    function setZoom(value) {
-        const old = zoom;
-        zoom = Math.max(0.08, Math.min(3, value));
-        const cx = (viewport.scrollLeft + viewport.clientWidth / 2) / old;
-        const cy = (viewport.scrollTop + viewport.clientHeight / 2) / old;
-        surface.style.width = (W * zoom) + "px";
-        surface.style.height = (H * zoom) + "px";
-        svg.style.transform = "scale(" + zoom + ")";
-        label.textContent = Math.round(zoom * 100) + "%";
-        viewport.scrollLeft = Math.max(0, cx * zoom - viewport.clientWidth / 2);
-        viewport.scrollTop = Math.max(0, cy * zoom - viewport.clientHeight / 2);
-    }
-    document.getElementById("minus").onclick = () => setZoom(zoom / 1.2);
-    document.getElementById("plus").onclick = () => setZoom(zoom * 1.2);
-    document.getElementById("actual").onclick = () => setZoom(1);
-    document.getElementById("fit").onclick = () =>
-        setZoom((viewport.clientWidth - 20) / W);
-    document.querySelectorAll("[data-layer]").forEach(input => {
-        input.addEventListener("change", () =>
-            svg.classList.toggle("hide-" + input.dataset.layer, !input.checked));
+  "use strict";
+  const svg = document.querySelector("#art svg");
+  const viewport = document.getElementById("viewport");
+  const box = svg.viewBox.baseVal;
+  const naturalWidth = box.width, naturalHeight = box.height;
+  const status = document.getElementById("status");
+  let zoom = 1, lastQuery = "", matchIndex = -1;
+  function setZoom(value) {
+    zoom = Math.max(.015, Math.min(3, value));
+    svg.style.width = (naturalWidth * zoom) + "px";
+    svg.style.height = (naturalHeight * zoom) + "px";
+    document.getElementById("zoom-label").textContent = Math.round(zoom * 100) + "%";
+  }
+  function fit() { setZoom((viewport.clientWidth - 42) / naturalWidth); }
+  document.getElementById("in").onclick = () => setZoom(zoom * 1.25);
+  document.getElementById("out").onclick = () => setZoom(zoom / 1.25);
+  document.getElementById("fit").onclick = fit;
+  document.getElementById("actual").onclick = () => setZoom(1);
+  document.querySelectorAll("[data-layer]").forEach(input => {
+    input.addEventListener("change", () => {
+      svg.classList.toggle("hide-" + input.dataset.layer, !input.checked);
     });
-    svg.addEventListener("click", event => {
-        const anchor = event.target.closest("a");
-        if (!anchor) return;
-        const href = anchor.getAttribute("href");
-        if (!href || !href.startsWith("#")) return;
-        const target = document.getElementById(href.slice(1));
-        if (!target) return;
-        event.preventDefault();
-        const box = target.getBBox();
-        viewport.scrollTop = Math.max(0, box.y * zoom - 24);
-        viewport.scrollLeft = Math.max(0, box.x * zoom - 24);
-        target.setAttribute("tabindex", "-1");
-        target.focus({preventScroll:true});
-    });
-    setZoom(1);
-    viewport.scrollLeft = 0;
-    viewport.scrollTop = 0;
+  });
+  document.getElementById("search-form").addEventListener("submit", event => {
+    event.preventDefault();
+    const query = document.getElementById("search").value.trim().toLowerCase();
+    document.querySelectorAll(".search-hit").forEach(n => n.classList.remove("search-hit"));
+    if (!query) { status.textContent = ""; return; }
+    const matches = Array.from(svg.querySelectorAll(".record"))
+      .filter(n => n.textContent.toLowerCase().includes(query));
+    if (query !== lastQuery) matchIndex = -1;
+    lastQuery = query;
+    if (!matches.length) { status.textContent = "No matching records"; return; }
+    matchIndex = (matchIndex + 1) % matches.length;
+    const target = matches[matchIndex];
+    target.classList.add("search-hit");
+    target.scrollIntoView({block:"center", inline:"center", behavior:"smooth"});
+    status.textContent = (matchIndex + 1) + " / " + matches.length + " matching records";
+  });
+  svg.addEventListener("click", event => {
+    const a = event.target.closest("a");
+    if (!a) return;
+    const href = a.getAttribute("href");
+    if (!href || !href.startsWith("#")) return;
+    const target = document.getElementById(href.slice(1));
+    if (!target) return;
+    event.preventDefault();
+    svg.querySelectorAll(".search-hit").forEach(n => n.classList.remove("search-hit"));
+    target.classList.add("search-hit");
+    target.scrollIntoView({block:"center", inline:"center", behavior:"smooth"});
+  });
+  document.getElementById("download").onclick = () => {
+    const clone = svg.cloneNode(true);
+    clone.removeAttribute("style");
+    clone.removeAttribute("class");
+    clone.querySelectorAll(".search-hit").forEach(n => n.classList.remove("search-hit"));
+    const text = '<?xml version="1.0" encoding="UTF-8"?>\\n' +
+      new XMLSerializer().serializeToString(clone);
+    const url = URL.createObjectURL(new Blob([text], {type:"image/svg+xml;charset=utf-8"}));
+    const a = document.createElement("a");
+    a.href = url; a.download = "universe-atlas.svg"; a.click();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  };
+  fit();
 })();
 </script>
 </body>
 </html>
 """
-    replacements = {
-        "@@TITLE@@": title,
-        "@@VIEW@@": esc(view),
-        "@@SVG@@": svg,
-        "@@LEDGER@@": accessible_ledger(story),
-        "@@MODEL@@": raw_model,
-        "@@WIDTH@@": str(width),
-        "@@HEIGHT@@": str(height),
-    }
-    # Single-pass replacement: input text cannot introduce new substitutions.
-    import re
-    return re.sub(r"@@(?:TITLE|VIEW|SVG|LEDGER|MODEL|WIDTH|HEIGHT)@@",
-                  lambda match: replacements[match.group(0)], template)
+    # Replace SVG last so model text cannot act as a template placeholder.
+    return template.replace("__TITLE__", html.escape(title)).replace("__SVG__", svg)
 
 
-# Backward-compatible public helpers.
-def render_js(story, view="2d"):
-    return render_document(story, view)[0]
+def reject_constant(value):
+    raise ValueError("Non-finite JSON constant is not supported: " + value)
 
 
-def self_test():
-    """Geometry/XML regression smoke tests, not a substitute for visual review."""
-    story = {
-        "abstract_model": "universe-timeline/1.0",
-        "title": 'Atlas test < & " Unicode − ∅',
-        "graphs": [{
-            "namespace": "TEST",
-            "worlds": [
-                {"id": "A", "label": "Opening world", "origin": "initial"},
-                {"id": "B", "label": "Born world", "origin": "born",
-                 "born": {"event": "fork", "parent": "A", "tine": "-"}},
-                {"id": "C", "label": "Empty preexisting world",
-                 "origin": "preexisting"},
-            ],
-            "events": [
-                {"id": "start", "kind": "start", "universe": "A", "order": 0,
-                 "label": "A deliberately long event label " * 8,
-                 "cite": {"source": "fixture", "locator": "<opening>",
-                          "status": "pending"}},
-                {"id": "fork", "kind": "split", "universe": "A", "order": 1,
-                 "label": "Fork"},
-                {"id": "same", "kind": "outcome", "universe": "A", "order": 1,
-                 "label": "Same rank; separate card"},
-                {"id": "entry", "kind": "entry", "universe": "B", "order": 1,
-                 "label": "Born-world entry"},
-                {"id": "end", "kind": "cutoff", "universe": "B", "order": None,
-                 "label": "Order unspecified"},
-            ],
-            "splits": [{
-                "event": "fork", "outcomes": {
-                    "+": {"universe": "A", "entry": "same"},
-                    "-": {"universe": "B", "entry": "entry"},
-                }
-            }],
-            "transfers": [
-                {"id": "t1", "traveller": "p", "mechanism": "consciousness",
-                 "from": {"exit": "fork"}, "to": {"entry": "entry"}},
-                {"id": "loop", "traveller": "p", "mechanism": "time_travel",
-                 "from": {"exit": "same"}, "to": {"entry": "same"}},
-            ],
-            "route": {
-                "traveller": "p",
-                "visits": [
-                    {"id": "v1", "universe": "A", "entry": "start",
-                     "exit": "fork"},
-                    {"id": "v2", "universe": "B", "entry": "entry",
-                     "exit": "end"},
-                    {"id": "v3", "universe": "B", "entry": "entry",
-                     "exit": "entry"},
-                ],
-                "links": [{"from": "v1", "to": "v2", "via": "t1",
-                           "kind": "transfer"}],
-            },
-            "fates": [
-                {"id": "f1", "universe": "B", "event": "end",
-                 "instance": "p", "status": "alive"},
-                {"id": "f2", "universe": "A", "event": "end",
-                 "instance": "other", "status": "nonexistent"},
-            ],
-        }],
-    }
-    for view in ("2d", "2.5d"):
-        result, width, height, warnings = render_document(story, view)
-        ET.fromstring(result)
-        assert width > 1000 and height > 500
-        assert "time_travel" in result and "T1 C" in result
-        assert "Same rank; separate card" in result
-        assert "Order unspecified" in result
-        assert render_document(story, view)[0] == result
-        wrapper = render_html(story, result, width, height, view)
-        assert "<!doctype html>" in wrapper
-        evidence = Evidence()
-        evidence.scan(story)
-        graph = Graph(story["graphs"][0], 1, evidence, view)
-        for world in graph.worlds:
-            cards = [item for item in graph.items
-                     if item["world"] == world["id"]]
-            for i, a in enumerate(cards):
-                for b in cards[i + 1:]:
-                    assert (a["y"] + a["height"] <= b["y"]
-                            or b["y"] + b["height"] <= a["y"])
-        for edge in graph.edges:
-            assert "a_bus" in edge and "b_bus" in edge
-        assert graph.world_map["B"]["_start"] == graph.events["fork"]["node_y"]
-    print("self-test: deterministic SVG/XML, both views, card separation, "
-          "birth start, ties, null order, self-transfer and citation escaping OK")
+def reject_duplicate_keys(pairs):
+    result = {}
+    for key, value in pairs:
+        if key in result:
+            raise ValueError("Duplicate JSON object key: " + repr(key))
+        result[key] = value
+    return result
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Render a readable Worlds and Thread atlas; writes SVG + HTML."
+        description="Render an abstract universe timeline as an offline SVG/HTML atlas.",
+        epilog="Both companion files are written. --format selects the primary output."
     )
-    parser.add_argument("input", nargs="?", help="Abstract model JSON file")
-    parser.add_argument("-o", "--out", help="Primary output path (.svg or .html)")
+    parser.add_argument("input", type=Path, help="Input JSON model")
+    parser.add_argument("-o", "--output", type=Path, default=Path("output.svg"),
+                        help="Output basename or filename (default: output.svg)")
     parser.add_argument("--view", choices=("2d", "2.5d"), default="2d")
-    parser.add_argument("--format", choices=("svg", "html"),
-                        help="Primary format; companion is always written")
-    parser.add_argument("--self-test", action="store_true")
+    parser.add_argument("--format", choices=("svg", "html"), default="svg")
     args = parser.parse_args()
-    if args.self_test:
-        self_test()
-        return
-    if not args.input or not args.out:
-        parser.error("input and -o/--out are required unless --self-test is used")
+
     try:
-        input_path = Path(args.input)
-        out = Path(args.out)
-        fmt = args.format or (
-            "html" if out.suffix.lower() in (".html", ".htm") else "svg"
+        with args.input.open("r", encoding="utf-8-sig") as f:
+            model = json.load(
+                f, parse_constant=reject_constant,
+                object_pairs_hook=reject_duplicate_keys
+            )
+        validate(model)
+        atlas = Atlas(model, args.view)
+        svg = atlas.render()
+        companion = make_html(svg, model["title"])
+
+        base = args.output
+        if base.suffix.lower() in (".svg", ".html", ".htm"):
+            base = base.with_suffix("")
+        svg_path = Path(str(base) + ".svg")
+        html_path = Path(str(base) + ".html")
+        for path in (svg_path, html_path):
+            if path.resolve() == args.input.resolve():
+                raise ValueError("Output must not overwrite the input JSON.")
+            path.parent.mkdir(parents=True, exist_ok=True)
+        svg_path.write_text(svg, encoding="utf-8")
+        html_path.write_text(companion, encoding="utf-8")
+        primary, secondary = (
+            (svg_path, html_path) if args.format == "svg" else (html_path, svg_path)
         )
-        other_suffix = ".html" if fmt == "svg" else ".svg"
-        companion = out.with_suffix(other_suffix)
-        if companion == out:
-            companion = out.with_name(out.name + other_suffix)
-        if input_path.resolve() in (out.resolve(), companion.resolve()):
-            raise ValueError("An output path would overwrite the input JSON.")
-        with input_path.open("r", encoding="utf-8") as handle:
-            story = json.load(handle)
-        svg, width, height, warnings = render_document(story, args.view)
-        wrapper = render_html(story, svg, width, height, args.view)
-        # Parse the generated SVG before committing either output.
-        ET.fromstring(svg)
-        primary = svg if fmt == "svg" else wrapper
-        secondary = wrapper if fmt == "svg" else svg
-        out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_text(primary, encoding="utf-8")
-        companion.write_text(secondary, encoding="utf-8")
-        print("wrote %s" % out)
-        print("wrote %s" % companion)
-        print("%s · %d × %d px · %d diagnostic(s)" %
-              (args.view, width, height, len(warnings)))
-        for warning in warnings:
-            print("warning: " + warning, file=sys.stderr)
-    except (OSError, ValueError, TypeError, KeyError, ET.ParseError) as exc:
-        parser.exit(2, "render.py: %s\n" % exc)
+        print("Primary:   {}".format(primary))
+        print("Companion: {}".format(secondary))
+        print("View: {} | Complete records: {}".format(args.view, len(atlas.records)))
+    except (OSError, ValueError, TypeError, RecursionError) as exc:
+        parser.exit(1, "render.py: error: {}\n".format(exc))
 
 
 if __name__ == "__main__":
