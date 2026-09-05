@@ -42,8 +42,9 @@ python3 <elsewhen>/to_abstract.py <fixture>.json -o story.json     # elsewhen
 python3 <elsewhen>/author.py ...                                     # elsewhen
 
 # Render it here
-python3 render.py story.json -o story.svg                 # SVG
-python3 render.py story.json -o story.html --format html  # HTML
+python3 render.py story.json -o story.svg                  # 2D atlas (SVG)
+python3 render.py story.json -o story.html --format html   # 2D (HTML)
+python3 render.py story.json -o story-25d.svg --view 2.5d   # 2.5D orthographic
 ```
 
 The renderer is intentionally decoupled: it reads the abstract JSON directly and
@@ -53,10 +54,16 @@ render here, any time.
 ## Layout
 
 ```
-render.py                     the "Worlds and Thread" renderer (abstract JSON -> SVG/HTML)
+render.py                     the "Worlds and Thread" renderer (abstract JSON -> SVG/HTML, 2D + 2.5D)
 references/visual-representation-design.md   the Astra design it implements
-examples/                     sample renders (tenet, bens_story as SVG)
+references/2.5d-guide.md      the Astra guide for the 2.5D projection
+examples/                     sample renders (tenet, bens_story; 2D + 2.5D as SVG)
 ```
+
+Review-drive corrections applied: ordinal order bands (not proportional spacing),
+link-driven route thread (missing links are gaps, not guessed continuity),
+unknown-world diagnostic cards, birth-aware rails, corrected `+`/`−` legend, and
+world+order collision grouping.
 
 ## Provenance
 
