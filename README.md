@@ -15,6 +15,12 @@ Design source:
 prescribed style or template). Supersedes the earlier atlas and the interim
 text-card overhaul.
 
+## Gallery
+
+Full-resolution renders of published films, in both views — see
+**[the gallery](samples/GALLERY.md)** (SVG vector masters + native-resolution
+PNGs per film).
+
 ## How it draws
 
 - **Worlds are containment rails** — one rail per universe; nothing about a
@@ -56,7 +62,7 @@ render.py                     the atlas renderer (abstract JSON -> SVG + HTML, 2
 references/visual-overhaul-design.md   the Astra design it implements (current)
 references/visual-representation-design.md  the prior design (superseded)
 references/2.5d-guide.md      the prior 2.5D guide (superseded)
-samples/                      sample renders (published films only, 2D + 2.5D as SVG + PNG)
+samples/                      full-resolution gallery (published films only, 2D + 2.5D as SVG + PNG + GALLERY.md)
 ```
 
 ## Provenance
