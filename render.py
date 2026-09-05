@@ -57,6 +57,91 @@ def esc(s):
     return sx.escape(str(s if s is not None else ""))
 
 
+# ---- label layout helpers (collision avoidance + leader lines) ----
+CHAR_W = 5.4        # avg glyph width at font-size 9 (Arial)
+LINE_H = 11.0
+LABEL_PAD = 3.0     # collision padding around each label box
+
+
+def text_w(s, fs=9.0):
+    return len(s) * CHAR_W * (fs / 9.0)
+
+
+def wrap(s, width_chars=24):
+    """Word-wrap to <=2 lines (ellipsis if longer). Returns list of lines."""
+    words = str(s).split()
+    lines, cur = [], []
+    for w in words:
+        if cur and len(" ".join(cur)) + 1 + len(w) > width_chars:
+            lines.append(" ".join(cur)); cur = [w]
+        else:
+            cur.append(w)
+    if cur:
+        lines.append(" ".join(cur))
+    if len(lines) > 2:
+        lines = lines[:2]
+        if len(lines[1]) > 3:
+            lines[1] = lines[1][:-3].rstrip() + "..."
+    return lines or [""]
+
+
+def _rects_overlap(a, b):
+    ax, ay, aw, ah = a
+    bx, by, bw, bh = b
+    return not (ax + aw < bx or bx + bw < ax or ay + ah < by or by + bh < ay)
+
+
+def layout_labels(pending, xmax, ymax, obstacles=None):
+    """Greedy non-overlap layout for billboard labels.
+
+    pending: list of dicts {ax, ay, text}. Placed top-left anchor is the node
+    centre; each label is pushed right/above/below/left/stacked until free and
+    its leader pulled back to the node. `obstacles` (node glyph boxes etc.) are
+    pre-placed so labels don't sit on top of markers. Returns list of
+    (ax, ay, lines, lead_from, lead_to) where lead_from is the node point.
+    """
+    pending = sorted(
+        [{**p, "tex": wrap(p["text"])} for p in pending],
+        key=lambda p: (p["ay"], p["ax"]),
+    )
+    placed = list(obstacles) if obstacles else []
+    out = []
+    for p in pending:
+        lines = p["tex"]
+        w = max((text_w(l, 9) for l in lines), default=0)
+        h = LINE_H * len(lines)
+        ax, ay = p["ax"], p["ay"]
+        # candidate placements, priority order: right, above, right-stacked, left, below
+        cands = [
+            ("right", ax + 12, ay - h / 2.0, (ax, ay), (ax + 12, ay)),
+            ("above", ax - w / 2.0, ay - 10 - h, (ax, ay), (ax - w / 2.0, ay - 10)),
+        ]
+        for k in range(1, 8):  # stacked right, sliding down one row each
+            cands.append(("right_stack", ax + 12, ay - h / 2.0 + k * LINE_H, (ax, ay), (ax + 12, ay - h / 2.0 + k * LINE_H)))
+        for k in range(1, 8):  # stacked above, sliding up
+            cands.append(("above_stack", ax - w / 2.0, ay - 10 - h - k * LINE_H, (ax, ay), (ax - w / 2.0, ay - 10 - k * LINE_H)))
+        cands += [
+            ("left", ax - 12 - w, ay - h / 2.0, (ax + 12, ay), (ax - 12, ay)),
+            ("below", ax - w / 2.0, ay + 12, (ax, ay), (ax - w / 2.0, ay + 12)),
+        ]
+        best = None
+        for side, bx, by, lead_a, lead_b in cands:
+            # keep on canvas
+            if bx < LABEL_PAD or by < LABEL_PAD or bx + w > xmax - LABEL_PAD or by + h > ymax - LABEL_PAD:
+                continue
+            box = (bx - LABEL_PAD, by - LABEL_PAD, w + 2 * LABEL_PAD, h + 2 * LABEL_PAD)
+            if not any(_rects_overlap(box, pl) for pl in placed):
+                best = (bx, by, lead_a, lead_b)
+                placed.append(box)
+                break
+        if best is None:  # fallback: right at node, ignore collision
+            bx, by = ax + 12, ay - h / 2.0
+            best = (bx, by, (ax, ay), (ax + 12, ay))
+            placed.append((bx - LABEL_PAD, by - LABEL_PAD, w + 2 * LABEL_PAD, h + 2 * LABEL_PAD))
+        out.append((best[0], best[1], lines, best[2], best[3]))
+    return out
+
+
 def order_bands(g):
     """Ordinal bands: rank distinct story orders (not proportional spacing)."""
     orders = sorted({e.get("order") for e in g.get("events", []) if e.get("order") is not None})
@@ -229,6 +314,8 @@ def emit(scene, view, W, H, bad_refs, story, g):
                 f'stroke="{color}" stroke-width="{width}"{d} stroke-opacity="{op}"/>')
 
     out = []
+    pending = []   # deferred event labels -> collision-avoided callouts
+    node_boxes = []  # node glyph obstacles so labels push off markers
     # headers
     cx = W / 2.0
     out.append(f'<text x="{cx:.0f}" y="24" text-anchor="middle" font-size="18" font-weight="bold" fill="{COL["text"]}">{esc(story.get("title",""))}</text>')
@@ -281,6 +368,7 @@ def emit(scene, view, W, H, bad_refs, story, g):
         elif item[0] == "node":
             x, y, kind, eid, order, label, cite = item[1]
             a = P(x, y)
+            node_boxes.append((a[0] - 13, a[1] - 13, 26, 26))
             if kind == "split":
                 out.append(f'<circle cx="{a[0]:.1f}" cy="{a[1]:.1f}" r="7" fill="{COL["split"]}" stroke="{COL["text"]}"/>')
             elif kind == "start":
@@ -295,13 +383,20 @@ def emit(scene, view, W, H, bad_refs, story, g):
                 out.append(f'<circle cx="{a[0]:.1f}" cy="{a[1]:.1f}" r="4" fill="{COL["text"]}"/>')
             out.append(f'<text x="{a[0]:.1f}" y="{a[1]+16:.1f}" text-anchor="middle" font-size="9" fill="{COL["muted"]}">{esc(str(order if order is not None else "∅"))}{esc(("·" + cite) if cite else "")}</text>')
             if label:
-                out.append(f'<text x="{a[0]+9:.1f}" y="{a[1]+3:.1f}" font-size="9" fill="{COL["muted"]}">{esc(label[:26])}</text>')
+                pending.append({"ax": a[0], "ay": a[1], "text": label})
         elif item[0] == "fate":
             x, y, status, inst = item[1]
             a = P(x, y)
             symbol, color = FATE.get(status, FATE["unknown"])
             out.append(f'<text x="{a[0]:.1f}" y="{a[1]+4:.1f}" font-size="14" font-weight="bold" fill="{color}">{symbol}</text>')
             out.append(f'<text x="{a[0]+4:.1f}" y="{a[1]+4:.1f}" font-size="8" fill="{COL["muted"]}">{esc(inst)}</text>')
+
+    # event labels: collision-avoided billboards with leader callouts
+    if pending:
+        for bx, by, lines, (lx1, ly1), (lx2, ly2) in layout_labels(pending, W, H, node_boxes):
+            out.append(f'<line x1="{lx1:.1f}" y1="{ly1:.1f}" x2="{lx2:.1f}" y2="{ly2:.1f}" stroke="{COL["muted"]}" stroke-width="1" stroke-opacity="0.5"/>')
+            for i, line in enumerate(lines):
+                out.append(f'<text x="{bx:.1f}" y="{by + (i+1)*LINE_H - 3:.1f}" font-size="9" fill="{COL["muted"]}">{esc(line)}</text>')
 
     # diagnostics (unknown world refs etc.)
     if bad_refs:

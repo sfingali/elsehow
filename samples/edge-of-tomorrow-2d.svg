@@ -8,18 +8,26 @@
 <line x1="100.0" y1="96.0" x2="100.0" y2="258.0" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
 <rect x="94.0" y="90.0" width="12" height="12" fill="#3d8f4f" stroke="#202124"/>
 <text x="100.0" y="112.0" text-anchor="middle" font-size="9" fill="#5f6368">0</text>
-<text x="109.0" y="99.0" font-size="9" fill="#5f6368">The day resets — Cage wake</text>
 <circle cx="100.0" cy="150.0" r="7" fill="#e8a33d" stroke="#202124"/>
 <text x="100.0" y="166.0" text-anchor="middle" font-size="9" fill="#5f6368">10</text>
-<text x="109.0" y="153.0" font-size="9" fill="#5f6368">He dies in combat — the Om</text>
 <circle cx="100.0" cy="204.0" r="4" fill="#202124"/>
 <text x="100.0" y="220.0" text-anchor="middle" font-size="9" fill="#5f6368">20</text>
-<text x="109.0" y="207.0" font-size="9" fill="#5f6368">Touched by the Alpha — onl</text>
 <rect x="94.0" y="252.0" width="12" height="12" fill="#5f6368" stroke="#202124"/>
 <text x="100.0" y="274.0" text-anchor="middle" font-size="9" fill="#5f6368">30</text>
-<text x="109.0" y="261.0" font-size="9" fill="#5f6368">The loop breaks — the Omeg</text>
 <text x="114.0" y="262.0" font-size="14" font-weight="bold" fill="#2f7d4f">●</text>
 <text x="118.0" y="262.0" font-size="8" fill="#5f6368">cage-e</text>
 <text x="114.0" y="262.0" font-size="14" font-weight="bold" fill="#2f7d4f">●</text>
-<text x="118.0" y="262.0" font-size="8" fill="#5f6368">rita-e</text></g>
+<text x="118.0" y="262.0" font-size="8" fill="#5f6368">rita-e</text>
+<line x1="100.0" y1="96.0" x2="40.6" y2="75.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
+<text x="40.6" y="61.0" font-size="9" fill="#5f6368">The day resets — Cage</text>
+<text x="40.6" y="72.0" font-size="9" fill="#5f6368">wakes on the transport</text>
+<line x1="100.0" y1="150.0" x2="112.0" y2="150.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
+<text x="112.0" y="147.0" font-size="9" fill="#5f6368">He dies in combat — the</text>
+<text x="112.0" y="158.0" font-size="9" fill="#5f6368">Omega resets the day</text>
+<line x1="100.0" y1="204.0" x2="112.0" y2="204.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
+<text x="112.0" y="201.0" font-size="9" fill="#5f6368">Touched by the Alpha —</text>
+<text x="112.0" y="212.0" font-size="9" fill="#5f6368">only Cage keeps the l...</text>
+<line x1="100.0" y1="258.0" x2="112.0" y2="280.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
+<text x="112.0" y="288.0" font-size="9" fill="#5f6368">The loop breaks — the</text>
+<text x="112.0" y="299.0" font-size="9" fill="#5f6368">Omega is defeated</text></g>
 </svg>

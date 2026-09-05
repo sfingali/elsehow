@@ -40,27 +40,41 @@
 <line x1="277.5" y1="326.3" x2="21.7" y2="327.0" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
 <rect x="805.5" y="228.4" width="12" height="12" fill="#3d8f4f" stroke="#202124"/>
 <text x="811.5" y="250.4" text-anchor="middle" font-size="9" fill="#5f6368">0</text>
-<text x="820.5" y="237.4" font-size="9" fill="#5f6368">Evelyn at the laundromat b</text>
 <circle cx="800.2" cy="280.1" r="5" fill="#ffffff" stroke="#202124"/>
 <text x="800.2" y="296.1" text-anchor="middle" font-size="9" fill="#5f6368">10</text>
-<text x="809.2" y="283.1" font-size="9" fill="#5f6368">She learns to verse-jump i</text>
 <circle cx="789.0" cy="325.9" r="7" fill="#e8a33d" stroke="#202124"/>
 <text x="789.0" y="341.9" text-anchor="middle" font-size="9" fill="#5f6368">20</text>
-<text x="798.0" y="328.9" font-size="9" fill="#5f6368">A decision that spawns a b</text>
 <circle cx="533.2" cy="326.6" r="5" fill="#ffffff" stroke="#202124"/>
 <text x="533.2" y="342.6" text-anchor="middle" font-size="9" fill="#5f6368">25</text>
-<text x="542.2" y="329.6" font-size="9" fill="#5f6368">She enters the Alpha verse</text>
 <circle cx="277.5" cy="327.3" r="5" fill="#ffffff" stroke="#202124"/>
 <text x="277.5" y="343.3" text-anchor="middle" font-size="9" fill="#5f6368">30</text>
-<text x="286.5" y="330.3" font-size="9" fill="#5f6368">She hops into the hot-dog-</text>
 <circle cx="21.7" cy="328.0" r="5" fill="#ffffff" stroke="#202124"/>
 <text x="21.7" y="344.0" text-anchor="middle" font-size="9" fill="#5f6368">40</text>
-<text x="30.7" y="331.0" font-size="9" fill="#5f6368">She takes comfort in a qui</text>
 <rect x="738.1" y="502.8" width="12" height="12" fill="#5f6368" stroke="#202124"/>
 <text x="744.1" y="524.8" text-anchor="middle" font-size="9" fill="#5f6368">50</text>
-<text x="753.1" y="511.8" font-size="9" fill="#5f6368">She chooses the googly-eye</text>
 <text x="757.8" y="515.4" font-size="14" font-weight="bold" fill="#2f7d4f">●</text>
 <text x="761.8" y="515.4" font-size="8" fill="#5f6368">ev-e0</text>
 <text x="757.8" y="515.4" font-size="14" font-weight="bold" fill="#2f7d4f">●</text>
-<text x="761.8" y="515.4" font-size="8" fill="#5f6368">ev-v1</text></g>
+<text x="761.8" y="515.4" font-size="8" fill="#5f6368">ev-v1</text>
+<line x1="811.5" y1="234.4" x2="823.5" y2="256.4" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
+<text x="823.5" y="264.4" font-size="9" fill="#5f6368">Evelyn at the laundromat</text>
+<text x="823.5" y="275.4" font-size="9" fill="#5f6368">before the IRS audit</text>
+<line x1="800.2" y1="280.1" x2="812.2" y2="302.1" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
+<text x="812.2" y="310.1" font-size="9" fill="#5f6368">She learns to verse-jump</text>
+<text x="812.2" y="321.1" font-size="9" fill="#5f6368">into her parallel selves</text>
+<line x1="789.0" y1="325.9" x2="801.0" y2="347.9" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
+<text x="801.0" y="355.9" font-size="9" fill="#5f6368">A decision that spawns a</text>
+<text x="801.0" y="366.9" font-size="9" fill="#5f6368">branch verse</text>
+<line x1="533.2" y1="326.6" x2="545.2" y2="348.6" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
+<text x="545.2" y="356.6" font-size="9" fill="#5f6368">She enters the Alpha</text>
+<text x="545.2" y="367.6" font-size="9" fill="#5f6368">verse</text>
+<line x1="277.5" y1="327.3" x2="289.5" y2="349.3" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
+<text x="289.5" y="357.3" font-size="9" fill="#5f6368">She hops into the</text>
+<text x="289.5" y="368.3" font-size="9" fill="#5f6368">hot-dog-fingers verse</text>
+<line x1="21.7" y1="328.0" x2="33.7" y2="350.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
+<text x="33.7" y="358.0" font-size="9" fill="#5f6368">She takes comfort in a</text>
+<text x="33.7" y="369.0" font-size="9" fill="#5f6368">quieter verse</text>
+<line x1="744.1" y1="508.8" x2="756.1" y2="530.8" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
+<text x="756.1" y="538.8" font-size="9" fill="#5f6368">She chooses the</text>
+<text x="756.1" y="549.8" font-size="9" fill="#5f6368">googly-eyed family...</text></g>
 </svg>

@@ -8,19 +8,29 @@
 <line x1="100.0" y1="96.0" x2="100.0" y2="312.0" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
 <rect x="94.0" y="90.0" width="12" height="12" fill="#3d8f4f" stroke="#202124"/>
 <text x="100.0" y="112.0" text-anchor="middle" font-size="9" fill="#5f6368">0</text>
-<text x="109.0" y="99.0" font-size="9" fill="#5f6368">The bartender's ordinary d</text>
 <path d="M 100.0 144.0 L 106.0 150.0 L 100.0 156.0 L 94.0 150.0 Z" fill="#5f6368" stroke="#202124"/>
 <text x="100.0" y="166.0" text-anchor="middle" font-size="9" fill="#5f6368">10</text>
-<text x="109.0" y="153.0" font-size="9" fill="#5f6368">He meets the Unmarried Mot</text>
 <circle cx="100.0" cy="204.0" r="4" fill="#202124"/>
 <text x="100.0" y="220.0" text-anchor="middle" font-size="9" fill="#5f6368">20</text>
-<text x="109.0" y="207.0" font-size="9" fill="#5f6368">The surgery — he is 'the U</text>
 <path d="M 100.0 252.0 L 106.0 258.0 L 100.0 264.0 L 94.0 258.0 Z" fill="#5f6368" stroke="#202124"/>
 <text x="100.0" y="274.0" text-anchor="middle" font-size="9" fill="#5f6368">30</text>
-<text x="109.0" y="261.0" font-size="9" fill="#5f6368">He is sent to meet his own</text>
 <rect x="94.0" y="306.0" width="12" height="12" fill="#5f6368" stroke="#202124"/>
 <text x="100.0" y="328.0" text-anchor="middle" font-size="9" fill="#5f6368">40</text>
-<text x="109.0" y="315.0" font-size="9" fill="#5f6368">He takes the place of the </text>
 <text x="114.0" y="316.0" font-size="14" font-weight="bold" fill="#2f7d4f">●</text>
-<text x="118.0" y="316.0" font-size="8" fill="#5f6368">a-t</text></g>
+<text x="118.0" y="316.0" font-size="8" fill="#5f6368">a-t</text>
+<line x1="100.0" y1="96.0" x2="35.2" y2="75.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
+<text x="35.2" y="61.0" font-size="9" fill="#5f6368">The bartender's ordinary</text>
+<text x="35.2" y="72.0" font-size="9" fill="#5f6368">day</text>
+<line x1="100.0" y1="150.0" x2="112.0" y2="150.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
+<text x="112.0" y="147.0" font-size="9" fill="#5f6368">He meets the Unmarried</text>
+<text x="112.0" y="158.0" font-size="9" fill="#5f6368">Mother</text>
+<line x1="100.0" y1="204.0" x2="112.0" y2="204.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
+<text x="112.0" y="201.0" font-size="9" fill="#5f6368">The surgery — he is 'the</text>
+<text x="112.0" y="212.0" font-size="9" fill="#5f6368">Unmarried Mother'</text>
+<line x1="100.0" y1="258.0" x2="112.0" y2="258.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
+<text x="112.0" y="255.0" font-size="9" fill="#5f6368">He is sent to meet his</text>
+<text x="112.0" y="266.0" font-size="9" fill="#5f6368">own past self</text>
+<line x1="100.0" y1="312.0" x2="112.0" y2="334.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
+<text x="112.0" y="342.0" font-size="9" fill="#5f6368">He takes the place of</text>
+<text x="112.0" y="353.0" font-size="9" fill="#5f6368">the bartender — the l...</text></g>
 </svg>

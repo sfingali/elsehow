@@ -13,27 +13,41 @@
 <line x1="32.9" y1="281.3" x2="21.7" y2="327.0" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
 <rect x="71.9" y="93.3" width="12" height="12" fill="#3d8f4f" stroke="#202124"/>
 <text x="77.9" y="115.3" text-anchor="middle" font-size="9" fill="#5f6368">0</text>
-<text x="86.9" y="102.3" font-size="9" fill="#5f6368">October 26 1985 - the thre</text>
 <circle cx="66.6" cy="145.1" r="5" fill="#ffffff" stroke="#202124"/>
 <text x="66.6" y="161.1" text-anchor="middle" font-size="9" fill="#5f6368">10</text>
-<text x="75.6" y="148.1" font-size="9" fill="#5f6368">October 21 2015 - arrival;</text>
 <path d="M 55.4 184.8 L 61.4 190.8 L 55.4 196.8 L 49.4 190.8 Z" fill="#5f6368" stroke="#202124"/>
 <text x="55.4" y="206.8" text-anchor="middle" font-size="9" fill="#5f6368">20</text>
-<text x="64.4" y="193.8" font-size="9" fill="#5f6368">November 12 1955 - Old Bif</text>
 <circle cx="44.2" cy="236.6" r="5" fill="#ffffff" stroke="#202124"/>
 <text x="44.2" y="252.6" text-anchor="middle" font-size="9" fill="#5f6368">30</text>
-<text x="53.2" y="239.6" font-size="9" fill="#5f6368">alt-1985 - Biff's world: G</text>
 <path d="M 32.9 276.3 L 38.9 282.3 L 32.9 288.3 L 26.9 282.3 Z" fill="#5f6368" stroke="#202124"/>
 <text x="32.9" y="298.3" text-anchor="middle" font-size="9" fill="#5f6368">40</text>
-<text x="41.9" y="285.3" font-size="9" fill="#5f6368">November 12 1955 (rB) - Ma</text>
 <circle cx="21.7" cy="328.0" r="4" fill="#202124"/>
 <text x="21.7" y="344.0" text-anchor="middle" font-size="9" fill="#5f6368">50</text>
-<text x="30.7" y="331.0" font-size="9" fill="#5f6368">The almanac burns - histor</text>
 <rect x="4.5" y="367.8" width="12" height="12" fill="#5f6368" stroke="#202124"/>
 <text x="10.5" y="389.8" text-anchor="middle" font-size="9" fill="#5f6368">60</text>
-<text x="19.5" y="376.8" font-size="9" fill="#5f6368">Doc is struck by lightning</text>
 <text x="57.9" y="243.1" font-size="14" font-weight="bold" fill="#c0392b">×</text>
 <text x="61.9" y="243.1" font-size="8" fill="#5f6368">marty</text>
 <text x="35.4" y="334.6" font-size="14" font-weight="bold" fill="#000000">∅</text>
-<text x="39.4" y="334.6" font-size="8" fill="#5f6368">biff-old</text></g>
+<text x="39.4" y="334.6" font-size="8" fill="#5f6368">biff-old</text>
+<line x1="77.9" y1="99.3" x2="89.9" y2="121.3" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
+<text x="89.9" y="129.3" font-size="9" fill="#5f6368">October 26 1985 - the</text>
+<text x="89.9" y="140.3" font-size="9" fill="#5f6368">three depart for 2015</text>
+<line x1="66.6" y1="145.1" x2="78.6" y2="167.1" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
+<text x="78.6" y="175.1" font-size="9" fill="#5f6368">October 21 2015 -</text>
+<text x="78.6" y="186.1" font-size="9" fill="#5f6368">arrival; Marty buys...</text>
+<line x1="55.4" y1="190.8" x2="67.4" y2="212.8" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
+<text x="67.4" y="220.8" font-size="9" fill="#5f6368">November 12 1955 - Old</text>
+<text x="67.4" y="231.8" font-size="9" fill="#5f6368">Biff gives young B...</text>
+<line x1="44.2" y1="236.6" x2="56.2" y2="258.6" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
+<text x="56.2" y="266.6" font-size="9" fill="#5f6368">alt-1985 - Biff's world:</text>
+<text x="56.2" y="277.6" font-size="9" fill="#5f6368">George dead, Lorra...</text>
+<line x1="32.9" y1="282.3" x2="44.9" y2="304.3" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
+<text x="44.9" y="312.3" font-size="9" fill="#5f6368">November 12 1955 (rB) -</text>
+<text x="44.9" y="323.3" font-size="9" fill="#5f6368">Marty and Doc arrive...</text>
+<line x1="21.7" y1="328.0" x2="33.7" y2="350.0" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
+<text x="33.7" y="358.0" font-size="9" fill="#5f6368">The almanac burns -</text>
+<text x="33.7" y="369.0" font-size="9" fill="#5f6368">history begins restor...</text>
+<line x1="10.5" y1="373.8" x2="22.5" y2="395.8" stroke="#5f6368" stroke-width="1" stroke-opacity="0.5"/>
+<text x="22.5" y="403.8" font-size="9" fill="#5f6368">Doc is struck by</text>
+<text x="22.5" y="414.8" font-size="9" fill="#5f6368">lightning and sent...</text></g>
 </svg>
