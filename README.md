@@ -22,7 +22,8 @@ Design source: [`references/visual-representation-design.md`](references/visual-
 - **Event nodes** — start (green square), split (amber circle), entry/exit
   (dot/anchor diamond), cutoff (grey square); story order printed downward.
 - **Splits** — structural edges from the split node to every outcome, marked
-  `+` (follow, solid) and `−` (death, dashed). Never a "reset".
+  `+` and `−`. Both are *outcome signs*, not follow/death: the followed tine
+  comes from the route links, never from the sign. Never a "reset".
 - **Transfers** — elbowed connectors with a mechanism badge **B/M/C/S**
   (body / memory / consciousness / signal).
 - **Route/thread** — a thick green stroke along the protagonist's visits.
@@ -57,7 +58,7 @@ render here, any time.
 render.py                     the "Worlds and Thread" renderer (abstract JSON -> SVG/HTML, 2D + 2.5D)
 references/visual-representation-design.md   the Astra design it implements
 references/2.5d-guide.md      the Astra guide for the 2.5D projection
-examples/                     sample renders (tenet, bens_story; 2D + 2.5D as SVG)
+samples/                      sample renders (published films only, 2D + 2.5D as SVG + PNG)
 ```
 
 Review-drive corrections applied: ordinal order bands (not proportional spacing),
@@ -69,3 +70,7 @@ world+order collision grouping.
 
 Design by Astra (gpt-6-astra) via Experiential Labs. Rendered with the `elsewhen`
 abstract model. Committed on `sfingali`.
+
+The `samples/` gallery publishes **published films only** — sensitive or
+unpublished screenplays (e.g. THE WAIF) are deliberately excluded and never
+used as public reference/sample diagrams.

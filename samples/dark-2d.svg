@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1450" height="790" viewBox="0 0 1450 790" font-family="Arial, Helvetica, sans-serif">
+<rect width="1450" height="790" fill="#ffffff"/>
+<g transform="translate(0,0)"><text x="725" y="24" text-anchor="middle" font-size="18" font-weight="bold" fill="#202124">Dark</text>
+<text x="725" y="42" text-anchor="middle" font-size="11" fill="#5f6368">DARK — Dark - the knot · Knot topology - Winden eras linked by the cave corridor</text>
+<line x1="1100.0" y1="90.0" x2="1100.0" y2="474.0" stroke="#9aa0a6" stroke-width="2" stroke-opacity="1.0"/>
+<rect x="1093.0" y="72.0" width="14" height="14" fill="#e8f0fe" stroke="#202124"/>
+<text x="1100.0" y="58.0" text-anchor="middle" font-size="11" fill="#202124">E2019: 2019/2020 Winden</text>
+<line x1="850.0" y1="90.0" x2="850.0" y2="258.0" stroke="#9aa0a6" stroke-width="2" stroke-opacity="1.0"/>
+<text x="850.0" y="82.0" text-anchor="middle" font-size="10" fill="#5f6368">* already existed</text>
+<text x="850.0" y="58.0" text-anchor="middle" font-size="11" fill="#202124">E2052: 2052/2053 Winden</text>
+<line x1="600.0" y1="90.0" x2="600.0" y2="312.0" stroke="#9aa0a6" stroke-width="2" stroke-opacity="1.0"/>
+<text x="600.0" y="82.0" text-anchor="middle" font-size="10" fill="#5f6368">* already existed</text>
+<text x="600.0" y="58.0" text-anchor="middle" font-size="11" fill="#202124">E1986: 1986/1987 Winden</text>
+<line x1="350.0" y1="90.0" x2="350.0" y2="96.0" stroke="#9aa0a6" stroke-width="2" stroke-opacity="1.0"/>
+<text x="350.0" y="82.0" text-anchor="middle" font-size="10" fill="#5f6368">* already existed</text>
+<text x="350.0" y="58.0" text-anchor="middle" font-size="11" fill="#202124">E1919: 1920/1921 Winden</text>
+<line x1="100.0" y1="90.0" x2="100.0" y2="96.0" stroke="#9aa0a6" stroke-width="2" stroke-opacity="1.0"/>
+<text x="100.0" y="82.0" text-anchor="middle" font-size="10" fill="#5f6368">* already existed</text>
+<text x="100.0" y="58.0" text-anchor="middle" font-size="11" fill="#202124">E1953: 1953/1954 Winden</text>
+<polyline points="1100.0,150.0 975.0,150.0 975.0,204.0 850.0,204.0" fill="none" stroke="#2f7d4f" stroke-width="2" stroke-opacity="0.6"/>
+<circle cx="975.0" cy="177.0" r="10" fill="#ffffff" stroke="#2f7d4f"/>
+<text x="975.0" y="181.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2f7d4f">·</text>
+<polyline points="850.0,258.0 725.0,258.0 725.0,312.0 600.0,312.0" fill="none" stroke="#2f7d4f" stroke-width="2" stroke-opacity="0.6"/>
+<circle cx="725.0" cy="285.0" r="10" fill="#ffffff" stroke="#2f7d4f"/>
+<text x="725.0" y="289.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2f7d4f">·</text>
+<polyline points="600.0,312.0 850.0,312.0 850.0,420.0 1100.0,420.0" fill="none" stroke="#2f7d4f" stroke-width="2" stroke-opacity="0.6"/>
+<circle cx="850.0" cy="366.0" r="10" fill="#ffffff" stroke="#2f7d4f"/>
+<text x="850.0" y="370.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2f7d4f">·</text>
+<line x1="1100.0" y1="96.0" x2="1100.0" y2="150.0" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
+<line x1="850.0" y1="204.0" x2="850.0" y2="258.0" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
+<line x1="600.0" y1="312.0" x2="600.0" y2="312.0" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
+<line x1="1100.0" y1="150.0" x2="850.0" y2="204.0" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
+<line x1="850.0" y1="258.0" x2="600.0" y2="312.0" stroke="#2f7d4f" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
+<rect x="1094.0" y="90.0" width="12" height="12" fill="#3d8f4f" stroke="#202124"/>
+<text x="1100.0" y="112.0" text-anchor="middle" font-size="9" fill="#5f6368">0</text>
+<text x="1109.0" y="99.0" font-size="9" fill="#5f6368">Jonas returns to 2019 afte</text>
+<circle cx="1100.0" cy="150.0" r="5" fill="#ffffff" stroke="#202124"/>
+<text x="1100.0" y="166.0" text-anchor="middle" font-size="9" fill="#5f6368">10</text>
+<text x="1109.0" y="153.0" font-size="9" fill="#5f6368">Jonas enters the cave head</text>
+<circle cx="850.0" cy="204.0" r="5" fill="#ffffff" stroke="#202124"/>
+<text x="850.0" y="220.0" text-anchor="middle" font-size="9" fill="#5f6368">20</text>
+<text x="859.0" y="207.0" font-size="9" fill="#5f6368">Jonas arrives in 2052 - th</text>
+<circle cx="850.0" cy="258.0" r="5" fill="#ffffff" stroke="#202124"/>
+<text x="850.0" y="274.0" text-anchor="middle" font-size="9" fill="#5f6368">30</text>
+<text x="859.0" y="261.0" font-size="9" fill="#5f6368">Jonas leaves 2052 via the </text>
+<circle cx="600.0" cy="312.0" r="5" fill="#ffffff" stroke="#202124"/>
+<text x="600.0" y="328.0" text-anchor="middle" font-size="9" fill="#5f6368">40</text>
+<text x="609.0" y="315.0" font-size="9" fill="#5f6368">Jonas arrives 1986 - meets</text>
+<rect x="1094.0" y="360.0" width="12" height="12" fill="#5f6368" stroke="#202124"/>
+<text x="1100.0" y="382.0" text-anchor="middle" font-size="9" fill="#5f6368">50</text>
+<text x="1109.0" y="369.0" font-size="9" fill="#5f6368">Adam (old Jonas) kills Mar</text>
+<circle cx="1100.0" cy="420.0" r="5" fill="#ffffff" stroke="#202124"/>
+<text x="1100.0" y="436.0" text-anchor="middle" font-size="9" fill="#5f6368">60</text>
+<text x="1109.0" y="423.0" font-size="9" fill="#5f6368">Alternate Martha arrives -</text>
+<rect x="1094.0" y="468.0" width="12" height="12" fill="#5f6368" stroke="#202124"/>
+<text x="1100.0" y="490.0" text-anchor="middle" font-size="9" fill="#5f6368">70</text>
+<text x="1109.0" y="477.0" font-size="9" fill="#5f6368">The origin world erases bo</text>
+<text x="1114.0" y="370.0" font-size="14" font-weight="bold" fill="#c0392b">×</text>
+<text x="1118.0" y="370.0" font-size="8" fill="#5f6368">martha2-2019</text>
+<text x="1114.0" y="478.0" font-size="14" font-weight="bold" fill="#000000">∅</text>
+<text x="1118.0" y="478.0" font-size="8" fill="#5f6368">jonas-2019</text></g>
+</svg>

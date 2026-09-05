@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "bttf2",
+    "title": "Back to the Future Part II",
+    "worlds": 1
+  },
+  {
+    "slug": "dark",
+    "title": "Dark",
+    "worlds": 5
+  },
+  {
+    "slug": "edge-of-tomorrow",
+    "title": "EDGE OF TOMORROW \u2014 The Verdun loop",
+    "worlds": 1
+  },
+  {
+    "slug": "eeaao",
+    "title": "EVERYTHING EVERYWHERE ALL AT ONCE \u2014 The verse-jump net",
+    "worlds": 4
+  },
+  {
+    "slug": "groundhog",
+    "title": "Groundhog Day",
+    "worlds": 1
+  },
+  {
+    "slug": "interstellar",
+    "title": "INTERSTELLAR \u2014 The tesseract signal",
+    "worlds": 1
+  },
+  {
+    "slug": "predestination",
+    "title": "PREDESTINATION \u2014 The temporal agency loop",
+    "worlds": 1
+  },
+  {
+    "slug": "steinsgate",
+    "title": "Steins;Gate",
+    "worlds": 1
+  },
+  {
+    "slug": "tenet",
+    "title": "Tenet",
+    "worlds": 3
+  }
+]
