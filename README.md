@@ -19,7 +19,7 @@ text-card overhaul.
 
 Full-resolution renders of published films, in both views — see
 **[the gallery](samples/GALLERY.md)**. The default image is the **atlas chart**;
-the **record index** (2D) is a separate image; SVG vector masters are linked per film.
+the **record index** is a separate image; SVG vector masters are linked per film.
 
 ## How it draws
 

@@ -41,7 +41,7 @@ from pathlib import Path
 
 PAPER = "#f5f3ed"
 INK = "#172c3c"
-MUTED = "#637482"
+MUTED = "#526674"
 LINE = "#d6dfdf"
 WHITE = "#ffffff"
 GOLD = "#a76908"
@@ -297,15 +297,24 @@ class Atlas:
 
         defs = SVG()
         for color in sorted(set(
-                [PLUS, MINUS, GOLD, UNKNOWN_MECHANISM[1]] +
+                [PLUS, MINUS, GOLD, MUTED, UNKNOWN_MECHANISM[1]] +
                 [v[1] for v in MECHANISMS.values()])):
-            mid = marker_id(color)
-            defs.raw(
-                '<marker id="{}" viewBox="0 0 10 10" refX="9" refY="5" '
-                'markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" '
-                'orient="auto-start-reverse">'
-                '<path d="M 1 1 L 9 5 L 1 9 Z" fill="{}"/></marker>'.format(mid, color)
-            )
+            for kind in ("transfer", "split", "route"):
+                if kind == "transfer":
+                    shape = '<path d="M 1 1 L 10 5 L 1 9 Z" fill="{}"/>'.format(color)
+                else:
+                    d = ("M 1 1 L 9 5 L 1 9" if kind == "split" else
+                         "M 1 1 L 6 5 L 1 9 M 5 1 L 10 5 L 5 9")
+                    shape = (
+                        '<path d="{}" fill="none" stroke="{}" '
+                        'stroke-width="1.8" stroke-linejoin="round"/>'
+                    ).format(d, color)
+                defs.raw(
+                    '<marker id="{}" viewBox="0 0 12 10" refX="10" refY="5" '
+                    'markerWidth="13" markerHeight="11" markerUnits="userSpaceOnUse" '
+                    'orient="auto-start-reverse">{}</marker>'.format(
+                        marker_id(color, kind), shape)
+                )
 
         style = """
         text { font-family: Inter, ui-sans-serif, system-ui, -apple-system,
@@ -344,138 +353,166 @@ class Atlas:
         )
 
     def header(self, s, width):
-        s.rect(0, 0, width, 9, INK)
-        s.text(48, 49, "U N I V E R S E   A T L A S", 11, MUTED)
-        title_lines = wrap(self.model["title"], 42)
-        s.lines(46, 101, title_lines, 43, 49, class_="serif")
-        y = 112 + (len(title_lines) - 1) * 49
+        s.rect(0, 0, width, 5, INK)
+        s.text(48, 29, "U N I V E R S E   A T L A S", 10, MUTED)
+        title_lines = wrap(self.model["title"], min(64, (width - 96) / 19))
+        s.lines(46, 67, title_lines, 34, 39, class_="serif")
+        y = 78 + (len(title_lines) - 1) * 39
         subtitle = self.model.get("subtitle", "")
         if subtitle:
-            lines = wrap(subtitle, 126)
-            s.lines(49, y + 19, lines, 14, 21, fill=MUTED)
-            y += len(lines) * 21 + 12
-
+            lines = wrap(subtitle, (width - 100) / 7.5)
+            s.lines(49, y + 13, lines, 14, 19, fill=MUTED)
+            y += len(lines) * 19 + 5
         graphs = self.model["graphs"]
         nw = sum(len(g.get("worlds", [])) for g in graphs)
         ne = sum(len(arr(g.get("events"))) for g in graphs)
         nt = sum(len(arr(g.get("transfers"))) for g in graphs)
         profile = obj(self.model.get("profile"))
-        info = "{} graphs  /  {} declared worlds  /  {} events  /  {} transfers".format(
-            len(graphs), nw, ne, nt
+        view = "2.5D presentation; depth is not data" if self.view == "2.5d" else "2D analytical view"
+        info = "{}  /  {} worlds · {} events · {} transfers  /  Profile: {}".format(
+            view, nw, ne, nt, profile.get("name", "unspecified")
         )
-        s.text(49, y + 25, info, 12, INK, class_="mono")
-        y += 44
-        view_label = (
-            "2.5D · receding display plane; depth is not data"
-            if self.view == "2.5d" else "2D · flat world rails"
-        )
-        profile_label = "Profile: " + str(profile.get("name", "unspecified"))
-        for line in wrap(view_label + "  /  " + profile_label, 145):
-            s.text(49, y, line, 11, MUTED)
-            y += 16
-        y += 12
-
-        s.rect(48, y, min(width - 96, 1144), 128, "#eaf0ee", 12)
-        s.text(66, y + 24, "READING KEY", 10, MUTED, letter_spacing="1.5")
-        entries = [
-            ("B", "body", MECHANISMS["body"][1]),
-            ("M", "memory", MECHANISMS["memory"][1]),
-            ("C", "consciousness", MECHANISMS["consciousness"][1]),
-            ("S", "signal", MECHANISMS["signal"][1]),
-            ("?", "other / unspecified — literal name retained", MUTED),
+        key = [
+            info,
+            "ROUTE: heavy, double-chevron  /  SPLIT: dashed, diamond junction, open arrow"
+            "  /  TRANSFER: solid, filled arrow",
+            "B body · M memory · C consciousness · S signal · ? other"
+            "  /  + and − are branch outcomes; boxed glyphs are character fates.",
+            "Event order is ordinal, not duration. Inactive lanes remain visible."
+            " Numbered links open complete records; § opens declared evidence.",
         ]
-        x = 66
-        for badge, label, color in entries:
-            pill(s, x, y + 36, badge, color, width=25)
-            s.text(x + 33, y + 50, label, 11, MUTED)
-            x += 39 + len(label) * 6.3
-        s.text(66, y + 80,
-               "+ / −  declared split outcomes     →  transfer direction"
-               "     R  traveller route     §  source reference", 12, INK)
-        s.text(66, y + 105,
-               "Rails are containment guides. Order spacing is ordinal, not duration."
-               " Click any numbered item for its full record.", 11, MUTED)
-        return y + 151
+        for text in key:
+            lines = wrap(text, (width - 100) / 6.4)
+            s.lines(49, y + 16, lines, 11, 16, fill=MUTED)
+            y += len(lines) * 16
+        s.line(48, y + 25, width - 48, y + 25, LINE)
+        return y + 43
 
     def record_appendix(self, s, y, width):
-        s.line(48, y, width - 48, y, INK)
-        s.text(48, y + 39, "The record index", 29, INK, class_="serif")
-        s.text(48, y + 64,
-               "Complete declared values, including evidence, assumptions, profile parameters,"
-               " opaque extensions and unresolved references.", 12, MUTED)
-        y += 91
-
-        # A wide chart need not force unreadably wide record text.
-        columns = max(2, min(4, int((width - 72) // 540)))
-        card_width = min(600, (width - 96 - (columns - 1) * 20) / columns)
-        total_width = columns * card_width + (columns - 1) * 20
-        left = 48
-        if total_width > width - 96:
-            card_width = (width - 96 - (columns - 1) * 20) / columns
-
-        row = []
+        """Page-sized sections; raw JSON is wrapped, never omitted."""
+        page_width = min(width, 1240)
+        card_width = (page_width - 116) / 2
+        groups = defaultdict(list)
         for r in self.records:
-            row.append(r)
-            if len(row) == columns:
-                heights = [
-                    self.record_card(s, r, left + i * (card_width + 20), y, card_width)
-                    for i, r in enumerate(row)
-                ]
-                y += max(heights) + 20
-                row = []
-        if row:
-            heights = [
-                self.record_card(s, r, left + i * (card_width + 20), y, card_width)
-                for i, r in enumerate(row)
-            ]
-            y += max(heights) + 20
+            groups[r.category].append(r)
+        pages = []
+        for category, records in groups.items():
+            pending = []
+            for r in records:
+                wide = r.category == "route"
+                cw = page_width - 96 if wide else card_width
+                lines = record_lines(r.value, cw)
+                limit = 38 if wide else 30
+                chunks = [lines[i:i + limit] for i in range(0, len(lines), limit)]
+                if wide and pending:
+                    pages.append((category, pending))
+                    pending = []
+                for part, chunk in enumerate(chunks, 1):
+                    item = (r, cw, chunk, part, len(chunks))
+                    if wide:
+                        pages.append((category, [item]))
+                    else:
+                        pending.append(item)
+                        if len(pending) == 2:
+                            pages.append((category, pending))
+                            pending = []
+            if pending:
+                pages.append((category, pending))
+        # Absolute SVG coordinates are also the postprocessor's crop contract.
+        s.rect(0, y, page_width, 1, PAPER, id="record-appendix")
+        for page_number, (category, items) in enumerate(pages, 1):
+            page = SVG()
+            title_lines = wrap(self.model["title"], 72)
+            page.lines(48, y + 35, title_lines, 24, 29, class_="serif")
+            yy = y + 49 + 29 * (len(title_lines) - 1)
+            codes = [int(item[0].code) for item in items]
+            page.text(48, yy + 15,
+                      "RECORD INDEX / {} / #{:03d}–#{:03d} / Page {} of {}".format(
+                          category.upper(), min(codes), max(codes),
+                          page_number, len(pages)), 12, INK, font_weight="650")
+            page.text(48, yy + 35,
+                      "Key facts above; complete declared JSON below. Continuations retain the record number.",
+                      11, MUTED)
+            yy += 53
+            heights = []
+            for column, (record, cw, chunk, part, total) in enumerate(items):
+                x = 48 + column * (card_width + 20)
+                heights.append(self.record_card(
+                    page, record, x, yy, cw, chunk, part, total))
+            height = yy - y + max(heights) + 28
+            s.rect(0, y, page_width, height, PAPER,
+                   **{"class": "record-page", "data-page": page_number})
+            s.raw(str(page))
+            y += height + 24
         return y
 
-    def record_card(self, s, record, x, y, width):
-        label = wrap(record.label, (width - 38) / 7.0)
-        code_lines = []
-        code_width = max(20, int((width - 38) / 6.6))
-        for line in pretty(record.value).splitlines():
-            indent = min(len(line) - len(line.lstrip()), 20)
-            chunks = textwrap.wrap(
-                line, width=code_width, subsequent_indent=" " * indent + "↳ ",
-                replace_whitespace=False, drop_whitespace=False,
-                break_long_words=True, break_on_hyphens=False
-            )
-            code_lines.extend(chunks or [""])
+    def record_card(self, s, record, x, y, width, code_lines=None, part=1, total=1):
+        label = snippet(record.label, (width - 38) / 7.5, 3)
+        if code_lines is None:
+            code_lines = record_lines(record.value, width)
+        facts = []
+        for key in ("universe", "order", "kind", "traveller", "mechanism",
+                    "status", "event", "from", "to"):
+            value = obj(record.value)
+            if key in value and not isinstance(value[key], (dict, list)):
+                facts.extend(wrap("{}: {}".format(key, compact(value[key])),
+                                  (width - 38) / 7.2))
         path_lines = wrap(record.path, (width - 38) / 6.2)
         height = (
             48 + len(label) * 17 + len(path_lines) * 14 +
-            18 + len(code_lines) * 15 + 18
+            18 + len(facts) * 17 + len(code_lines) * 15 + 18
         )
-        s.start("g", id=record.anchor, **{"class": "record"})
+        anchor = record.anchor if part == 1 else record.anchor + "-part-" + str(part)
+        s.start("g", id=anchor, **{"class": "record"})
         s.rect(x, y, width, height, WHITE, 10, stroke=LINE,
                **{"class": "record-bg"})
         s.rect(x, y + 14, 3, 25, "#39828b", 1)
         s.text(x + 18, y + 27,
-               record.code + "  /  " + record.category.upper(), 10, MUTED,
-               letter_spacing="1")
+               "#{} / {}{}".format(
+                   record.code, record.category.upper(),
+                   " / part {} of {}".format(part, total) if total > 1 else ""),
+               10, MUTED, letter_spacing=".6")
         yy = y + 49
-        s.lines(x + 18, yy, label, 13, 17, font_weight="600")
+        s.lines(x + 18, yy, label, 14, 17, font_weight="600")
         yy += len(label) * 17 + 2
         s.lines(x + 18, yy, path_lines, 10, 14, fill=MUTED, class_="mono")
         yy += len(path_lines) * 14 + 9
         s.line(x + 18, yy - 2, x + width - 18, yy - 2, LINE)
         yy += 15
+        s.lines(x + 18, yy, facts, 12, 17, fill=INK)
+        yy += len(facts) * 17
         s.lines(x + 18, yy, code_lines, 11, 15, fill="#415767", class_="mono")
+        if part < total:
+            s.text(x + width - 18, y + height - 10,
+                   "Continued → #{} / part {}".format(record.code, part + 1),
+                   10, MUTED, text_anchor="end")
         s.end()
         return height
 
 
-def marker_id(color):
-    return "arrow-" + color.lstrip("#")
+def marker_id(color, kind="transfer"):
+    return "arrow-{}-{}".format(kind, color.lstrip("#"))
+
+
+def record_lines(value, width):
+    """Retain every JSON line, with visible continuation indentation."""
+    result = []
+    code_width = max(20, int((width - 38) / 6.6))
+    for line in pretty(value).splitlines():
+        indent = min(len(line) - len(line.lstrip()), 20)
+        result.extend(textwrap.wrap(
+            line, width=code_width, subsequent_indent=" " * indent + "↳ ",
+            replace_whitespace=False, drop_whitespace=False,
+            break_long_words=True, break_on_hyphens=False
+        ) or [""])
+    return result
 
 
 def pill(s, x, y, label, color, width=None, height=21, background=WHITE):
     width = width or max(27, len(str(label)) * 6.6 + 16)
     s.rect(x, y, width, height, background, height / 2,
            stroke=color, stroke_width=1)
-    s.text(x + width / 2, y + height * 0.70, label, 10, color,
+    s.text(x + width / 2, y + height * 0.70, label, 11, INK,
            text_anchor="middle", font_weight="650")
     return width
 
@@ -561,10 +598,15 @@ class GraphScene:
 
         self.columns = {}
         self.spans = {}
+        # Equal ordinal pitch is retained; captions get a genuine middle tier.
+        self.slot_width = 208
+        self.caption_lines = {
+            i: wrap(e["label"], 24) for i, e in enumerate(self.events)
+        }
         x = 65
         for order in self.orders:
             slots = max([1] + list(counts[order].values()))
-            width = 144 * slots
+            width = self.slot_width * slots
             self.columns[order] = x + width / 2
             self.spans[order] = (x, width)
             x += width
@@ -575,7 +617,7 @@ class GraphScene:
         self.unordered_start = self.ordered_end + 42
         self.local_width = max(
             640, self.ordered_end + (
-                max(null_counts.values()) * 144 + 84 if null_counts else 40
+                max(null_counts.values()) * self.slot_width + 84 if null_counts else 40
             )
         )
 
@@ -587,16 +629,58 @@ class GraphScene:
             f.get("event") for f in self.fates if isinstance(f, dict)
             and isinstance(f.get("event"), str)
         )
-        self.row_height = max(
-            210,
-            148 + 14 * max([0] + list(max_visits.values())) +
-            23 * max([0] + list(max_fates.values()))
-        )
-        self.plane_height = max(1, len(self.worlds)) * self.row_height
+        event_load = Counter(e["universe"] for e in self.events)
+        crossing_load = Counter()
+
+        def count_endpoint(ref):
+            event = self.emap.get(ref) if isinstance(ref, str) else None
+            if event:
+                crossing_load[event["universe"]] += 1
+
+        for transfer in self.transfers:
+            count_endpoint(obj(transfer.get("from")).get("exit"))
+            count_endpoint(obj(transfer.get("to")).get("entry"))
+        for split in self.splits:
+            count_endpoint(split.get("event"))
+            for outcome in obj(split.get("outcomes")).values():
+                count_endpoint(obj(outcome).get("entry"))
+        beat_load = Counter()
+        for value in self.beats:
+            beat = obj(value)
+            ref = beat.get("segment")
+            segment = self.smap.get(ref) if isinstance(ref, str) else None
+            world = obj(segment).get("universe", beat.get("universe"))
+            if isinstance(world, str) and numeric(beat.get("order")):
+                beat_load[world] += 1
+        self.row_centers = []
+        self.inactive_rows = set()
+        cursor = 0
+        for row, world in enumerate(self.worlds):
+            wid = world["id"]
+            captions = [len(self.caption_lines[i]) for i, e in enumerate(self.events)
+                        if e["universe"] == wid]
+            fate_count = max([0] + [max_fates[e["id"]] for e in self.events
+                                    if e["universe"] == wid])
+            inactive = not event_load[wid] and not beat_load[wid]
+            if inactive:
+                self.inactive_rows.add(row)
+                top = 48
+                bottom = max(42, 18 * len(wrap(world["label"], 28)) + 12)
+            else:
+                top = max(100, 49 + 18 * max([0] + captions))
+                top += 14 * min(8, crossing_load[wid])
+                bottom = max(96, 44 + 22 * max_visits[wid] +
+                             28 * fate_count + 24 * beat_load[wid])
+                bottom = max(bottom, 18 * len(wrap(world["label"], 28)) + 76)
+            self.row_centers.append(cursor + top)
+            cursor += top + bottom
+        self.plane_height = max(160, cursor)
         self.depth = atlas.view == "2.5d"
-        self.width = math.ceil(345 + self.local_width + (175 if self.depth else 0) + 50)
-        self.title_lines = wrap(graph.get("title", graph["namespace"]), 75)
-        self.chart_top = 104 + 29 * (len(self.title_lines) - 1)
+        self.width = math.ceil(345 + self.local_width + (70 if self.depth else 0) + 50)
+        graph_title = graph.get("title", graph["namespace"])
+        same_title = str(graph_title).strip().casefold() == str(atlas.model["title"]).strip().casefold()
+        self.title_lines = [] if same_title else wrap(graph_title, 80)
+        self.chart_top = 65 + 25 * len(self.title_lines)
         self.positions = {}
         self.event_positions = {}
         lane_slots = defaultdict(Counter)
@@ -612,16 +696,25 @@ class GraphScene:
                 start, width = self.spans[order]
                 slot = lane_slots[order][world]
                 lane_slots[order][world] += 1
-                ex = start + 72 + slot * 144
+                ex = start + self.slot_width / 2 + slot * self.slot_width
             else:
-                ex = self.unordered_start + 72 + null_slots[world] * 144
+                ex = self.unordered_start + self.slot_width / 2 + null_slots[world] * self.slot_width
                 null_slots[world] += 1
-            ey = self.row_height * (self.wrow[world] + .5)
+            ey = self.row_centers[self.wrow[world]]
             point = self.project(ex, ey)
             self.event_positions[i] = point
             if self.emap.get(e["id"]) is e:
                 self.positions[e["id"]] = point
 
+        # Reserve captions before any connector labels are placed.
+        self.occupied = []
+        for i, (ex, ey) in self.event_positions.items():
+            self.occupied.append(self.event_box(i))
+            self.occupied.append((ex - 20, ey - 20, 40, 40))
+        self.label_left = self.project(0, 0)[0] + 12
+        self.label_bottom = max(
+            self.project(0, self.plane_height)[1],
+            self.project(self.local_width, self.plane_height)[1])
         self.transfer_geometry = {}
         self.visit_geometry = {}
         self.edge_counter = 0
@@ -638,11 +731,70 @@ class GraphScene:
         if not self.depth:
             return 345 + x, self.chart_top + y
         depth = (self.plane_height - y) / self.plane_height
-        scale = 1 - .15 * depth
+        scale = 1 - .04 * depth
         return (
-            345 + 170 * depth + x * scale,
-            self.chart_top + .82 * y + .10 * (self.local_width - x) * scale
+            345 + 65 * depth + x * scale,
+            self.chart_top + .96 * y + .025 * (self.local_width - x) * scale
         )
+
+    def event_box(self, index):
+        x, y = self.event_positions[index]
+        height = len(self.caption_lines[index]) * 18 + 27
+        width = self.slot_width - 24
+        return x - width / 2, y - height - 22, width, height
+
+    def reserve_label(self, s, anchor, width, height, color=MUTED, dx=0, dy=-30):
+        """Nearest free shelf, then an expandable footer shelf; always anchored."""
+        ax, ay = anchor
+        right = self.width - 24
+        width = min(width, right - self.label_left)
+
+        def free(box):
+            x, y, w, h = box
+            return not any(
+                x < ox + ow + 7 and x + w + 7 > ox and
+                y < oy + oh + 7 and y + h + 7 > oy
+                for ox, oy, ow, oh in self.occupied
+            )
+
+        found = None
+        for shelf in (0, -36, 36, -72, 72, -108, 108, -144, 144):
+            for shift in (0, -72, 72, -144, 144):
+                x = min(right - width, max(self.label_left, ax - width / 2 + dx + shift))
+                y = ay + dy + shelf
+                box = (x, y, width, height)
+                if y >= self.chart_top + 8 and free(box):
+                    found = box
+                    break
+            if found:
+                break
+        if found is None:
+            x = min(right - width, max(self.label_left, ax - width / 2 + dx))
+            found = (x, self.label_bottom + 16, width, height)
+        self.occupied.append(found)
+        x, y, width, height = found
+        self.label_bottom = max(self.label_bottom, y + height)
+        # Leaders terminate on the actual plate edge, not its text baseline.
+        bx = max(x, min(ax, x + width))
+        by = max(y, min(ay, y + height))
+        if x <= ax <= x + width and y <= ay <= y + height:
+            by = y if ay < y + height / 2 else y + height
+        s.line(ax, ay, bx, by, PAPER, 4)
+        s.line(ax, ay, bx, by, color, 1.1)
+        return found
+
+    def annotation(self, s, anchor, label, color, dx=0, dy=-30, square=False):
+        """Shared, collision-aware placement for relationships and annotations."""
+        lines = wrap(label, 32)
+        width = max(44, max(len(line) for line in lines) * 7.2 + 20)
+        height = len(lines) * 17 + 11
+        x, y, width, height = self.reserve_label(
+            s, anchor, width, height, color, dx, dy)
+        s.rect(x, y, width, height, WHITE, 3 if square else 9,
+               stroke=color, stroke_width=1.3)
+        s.lines(x + width / 2, y + 18, lines, 12, 17,
+                fill=INK, text_anchor="middle", font_weight="600")
+        return x, y, width, height
 
     def rec(self, kind, i=None):
         return self.a.record(self.gi, kind, i)
@@ -662,13 +814,16 @@ class GraphScene:
         return self.positions[event_id]
 
     def connector(self, s, a, b, label, color, record, layer,
-                  dashed=False, width=2, tooltip="", geometry=None):
+                  dashed=False, width=2, tooltip="", geometry=None, label_anchor=None):
         if a is None or b is None:
             return None
         if geometry is None:
             geometry = curve(a, b, self.edge_counter)
             self.edge_counter += 1
         d, mid = geometry
+        kind = {"splits": "split", "transfers": "transfer", "route": "route"}[layer]
+        width = max(width, {"split": 2.2, "transfer": 3.2, "route": 4.2}[kind])
+        dash = "3 6" if kind == "split" else "12 4" if dashed else None
         s.start("g", **{"class": "layer-" + layer})
         if record:
             s.link(record.anchor, tooltip or pretty(record.value))
@@ -678,13 +833,20 @@ class GraphScene:
                   stroke_width=width + 5, stroke_linecap="round", opacity=".94")
         s.element(
             "path", d=d, fill="none", stroke=color, stroke_width=width,
-            stroke_dasharray="6 5" if dashed else None,
-            marker_end="url(#{})".format(marker_id(color)),
+            stroke_dasharray=dash,
+            marker_end="url(#{})".format(marker_id(color, kind)),
             stroke_linecap="round"
         )
+        if kind == "split":
+            ax, ay = a
+            s.element("path",
+                      d=path_line([(ax, ay - 18), (ax + 18, ay),
+                                   (ax, ay + 18), (ax - 18, ay)]) + " Z",
+                      fill=PAPER, stroke=color, stroke_width=2)
         if label:
-            bw = max(30, len(label) * 6.5 + 16)
-            pill(s, mid[0] - bw / 2, mid[1] - 11, label, color, bw)
+            self.annotation(s, label_anchor if label_anchor is not None else mid,
+                            label, color, dy=18 if kind == "split" else -32,
+                            square=kind == "split")
         if record:
             s.end("a")
         s.end()
@@ -694,11 +856,11 @@ class GraphScene:
         s = SVG()
         s.text(48, 21, "{:02d}  /  {}".format(self.gi + 1, self.g["namespace"]),
                10, MUTED, letter_spacing="1.3")
-        s.lines(48, 55, self.title_lines, 25, 29, class_="serif")
-        subtitle_y = 77 + 29 * (len(self.title_lines) - 1)
+        s.lines(48, 49, self.title_lines, 21, 25, class_="serif")
+        subtitle_y = 41 + 25 * len(self.title_lines)
         s.text(48, subtitle_y,
-               "Declared event.order · ordinal spacing"
-               "  |  equal-order slots are presentation only", 11, MUTED)
+               "EVENT ORDER →  declared event.order; equal spacing is ordinal"
+               "  |  equal-order slots are presentation only", 12, MUTED)
         if numeric(self.g.get("merges")):
             self.note("Declared merges: {}. No merge endpoints are supplied by this field."
                       .format(self.g["merges"]))
@@ -709,10 +871,10 @@ class GraphScene:
             self.project(0, self.plane_height)
         ]
         if self.depth:
-            shadow = [(x + 2, y + 12) for x, y in corners]
-            s.element("path", d=path_line(shadow) + " Z", fill="#d7dfdc")
+            shadow = [(x + 1, y + 4) for x, y in corners]
+            s.element("path", d=path_line(shadow) + " Z", fill="#e4e8e1")
         s.element("path", d=path_line(corners) + " Z",
-                  fill="#eef2ef", stroke=LINE)
+                  fill="#f0f3ef", stroke=LINE, stroke_width=".7")
 
         if not self.worlds:
             s.text(370, self.chart_top + 90,
@@ -723,7 +885,7 @@ class GraphScene:
             a, b = self.project(x, 0), self.project(x, self.plane_height)
             s.line(*a, *b, "#d8e1df", 1, stroke_dasharray="2 7")
             # Values shown here are exclusively input order values.
-            s.text(a[0], a[1] - 13, str(order), 11, MUTED,
+            s.text(a[0], a[1] - 13, str(order), 12, INK,
                    text_anchor="middle", class_="mono")
         if self.has_unordered:
             a = self.project(self.unordered_start, 0)
@@ -734,22 +896,27 @@ class GraphScene:
 
         for i, w in enumerate(self.worlds):
             color = WORLD_COLORS[i % len(WORLD_COLORS)]
-            y = self.row_height * (i + .5)
+            y = self.row_centers[i]
             a, b = self.project(0, y), self.project(self.local_width, y)
             s.line(*a, *b, color, 19, opacity=".075")
-            s.line(*a, *b, color, 1.7, opacity=".55")
+            s.line(*a, *b, color, 2.2, opacity=".88",
+                   stroke_dasharray="3 6" if i in self.inactive_rows else None)
             record = self.rec("worlds", i)
             if record:
                 s.link(record.anchor, pretty(w))
             lx = a[0] - 289
+            s.line(lx + 269, a[1], a[0], a[1], color, 1.5)
+            s.element("circle", cx=a[0], cy=a[1], r=3.5, fill=color)
             s.rect(lx, a[1] - 41, 4, 50, color, 2)
             s.text(lx + 15, a[1] - 23,
-                   "{}  /  {}".format(record.code if record else "", w["id"]),
+                   "{}  /  #{}".format(w["id"], record.code if record else "—"),
                    10, color, class_="mono")
-            lines = snippet(w["label"], 31, 2)
-            s.lines(lx + 15, a[1] - 3, lines, 14, 18, font_weight="600")
+            lines = wrap(w["label"], 28)
+            s.lines(lx + 15, a[1] - 3, lines, 15, 18, font_weight="650")
             yy = a[1] + 18 * (len(lines) - 1) + 19
-            s.text(lx + 15, yy, "origin · " + w["origin"], 11, MUTED)
+            summary = ("No plotted events" if i in self.inactive_rows else
+                       "origin · " + w["origin"])
+            s.text(lx + 15, yy, summary, 11, MUTED)
             detail = []
             born = obj(w.get("born"))
             for key in ("parent", "event", "tine"):
@@ -758,7 +925,7 @@ class GraphScene:
             if "ancestry" in w:
                 detail.append("ancestry: " + str(w["ancestry"]))
             s.lines(lx + 15, yy + 17,
-                    snippet(" · ".join(detail), 37, 3) if detail else [],
+                    snippet(" · ".join(detail), 37, 3) if detail and i not in self.inactive_rows else [],
                     10, 14, fill=MUTED)
             if record:
                 s.end("a")
@@ -778,23 +945,28 @@ class GraphScene:
         self.draw_beats(s)
         self.draw_fates(s)
 
-        bottom = max(y for x, y in corners) + 45
+        bottom = max(max(y for x, y in corners), self.label_bottom) + 27
         s.text(48, bottom,
-               "Node labels are excerpts. Numbered links open complete records."
+               "Event titles are shown in full. # references open complete records."
                " Unavailable citations remain explicitly unavailable.", 11, MUTED)
-        bottom += 26
+        bottom += 20
 
         if self.notes:
             lines = []
             for note in self.notes:
-                wrapped = wrap(note, 145)
+                wrapped = wrap(note, (self.width - 130) / 6.5)
                 lines.extend(["• " + wrapped[0]] + ["  " + v for v in wrapped[1:]])
-            height = 48 + len(lines) * 17
-            s.rect(48, bottom, min(self.width - 96, 1144), height,
-                   "#f0eade", 9, stroke="#e1d5bf")
-            s.text(65, bottom + 24, "PLACEMENT NOTES / NO GUESSED ENDPOINTS",
-                   10, GOLD, letter_spacing="1")
-            s.lines(65, bottom + 47, lines, 11, 17, fill="#76603f")
+            exceptional = any(
+                word in note for note in self.notes
+                for word in ("missing", "ambiguous", "conflicts", "unplaceable", "disagree")
+            )
+            height = 30 + len(lines) * 16
+            if exceptional:
+                s.rect(48, bottom, self.width - 96, height,
+                       "#f4eddf", 5, stroke="#d9c9aa")
+            s.text(60, bottom + 17, "PLACEMENT / NO GUESSED ENDPOINTS",
+                   10, MUTED, letter_spacing=".7")
+            s.lines(60, bottom + 35, lines, 11, 16, fill=MUTED)
             bottom += height + 8
         self.computed_height = bottom + 8
         return str(s)
@@ -814,9 +986,12 @@ class GraphScene:
             # A segment is an extent, not an invented directional transfer.
             s.start("g", **{"class": "layer-annotations"})
             s.link(record.anchor, pretty(value))
-            s.line(a[0], a[1] - 17, b[0], b[1] - 17, "#80989b", 5, opacity=".35")
-            pill(s, (a[0] + b[0]) / 2 - 26, (a[1] + b[1]) / 2 - 29,
-                 "Sg " + record.code, "#60787d", 58)
+            s.line(a[0], a[1] - 17, b[0], b[1] - 17, "#60787d", 2)
+            for point in (a, b):
+                s.line(point[0], point[1] - 23, point[0], point[1] - 11, "#60787d", 2)
+            self.annotation(s, ((a[0] + b[0]) / 2, (a[1] + b[1]) / 2 - 17),
+                            "{} · #{}".format(seg.get("label", seg.get("id", "Segment")),
+                                             record.code), "#60787d", dy=-42)
             s.end("a")
             s.end()
 
@@ -836,10 +1011,11 @@ class GraphScene:
                     outcome.get("entry"), outcome.get("universe"),
                     context + " / outcome " + str(sign)
                 )
-                label = str(sign) + " · " + record.code
+                label = "{} outcome · #{}".format(sign, record.code)
                 color = PLUS if sign == "+" else MINUS if sign == "-" else MUTED
                 self.connector(s, a, b, label, color, record, "splits",
-                               dashed=True, tooltip=pretty(split))
+                               dashed=True, tooltip=pretty(split),
+                               label_anchor=b)
 
     def draw_transfers(self, s):
         for i, transfer in enumerate(self.transfers):
@@ -852,9 +1028,10 @@ class GraphScene:
             badge, color = MECHANISMS.get(mechanism, UNKNOWN_MECHANISM)
             literal = mechanism if mechanism is not None else "unspecified"
             # No aliasing: time_travel is not silently mapped to body.
-            label = badge + " · " + str(literal)
+            label = "{} · {}\n{} · #{}".format(
+                badge, literal, transfer["traveller"], record.code)
             geometry = self.connector(s, a, b, label, color, record, "transfers",
-                                      width=2.5, tooltip=pretty(transfer))
+                                      width=3.2, tooltip=pretty(transfer))
             if geometry and self.tmap.get(transfer.get("id")) is transfer:
                 self.transfer_geometry[transfer["id"]] = (a, b, geometry)
 
@@ -879,7 +1056,7 @@ class GraphScene:
             refs = [v.get("entry")] + passed + [v.get("exit")]
             pts = [self.resolve(ref, world, context) for ref in refs]
             slot_key = world if isinstance(world, str) else ""
-            offset = 26 + slots[slot_key] * 14
+            offset = 30 + slots[slot_key] * 22
             slots[slot_key] += 1
 
             s.start("g", **{"class": "layer-route"})
@@ -890,16 +1067,19 @@ class GraphScene:
                 shifted_a = (a[0], a[1] + offset)
                 shifted_b = (b[0], b[1] + offset)
                 s.line(*shifted_a, *shifted_b, WHITE, 7)
-                s.line(*shifted_a, *shifted_b, GOLD, 3,
-                       marker_end="url(#{})".format(marker_id(GOLD)))
+                s.line(*shifted_a, *shifted_b, GOLD, 4.2,
+                       marker_end="url(#{})".format(marker_id(GOLD, "route")))
             for p in (pts[0], pts[-1]):
                 if p:
-                    s.line(p[0], p[1] + 11, p[0], p[1] + offset, GOLD, 1.1,
-                           stroke_dasharray="2 3")
+                    s.line(p[0], p[1] + 13, p[0], p[1] + offset, GOLD, 2)
+                    s.line(p[0] - 4, p[1] + offset, p[0] + 4, p[1] + offset, GOLD, 2)
             first = next((p for p in pts if p is not None), None)
             if first:
-                pill(s, first[0] - 21, first[1] + offset - 10,
-                     "R" + str(i + 1), GOLD, 40, background="#fff8e8")
+                label = "R{} · #{}".format(i + 1, record.code)
+                if i == 0:
+                    label = str(self.route.get("traveller", "Traveller unspecified")) + "\n" + label
+                self.annotation(s, (first[0], first[1] + offset),
+                                label, GOLD, dx=-35, dy=17)
             s.end("a")
             s.end()
             if visit_map.get(v.get("id")) is v:
@@ -929,20 +1109,23 @@ class GraphScene:
                     self.note(context + ": via transfer endpoints disagree with visit endpoints; "
                               "no replacement connection inferred.")
                     continue
-                # Follow only the explicitly referenced transfer, as a separate
-                # dashed overlay. The transfer's literal mechanism stays visible.
+                # A parallel dotted tracer denotes this declared route's use
+                # of the transfer, without painting over its solid mechanism.
                 d, mid = geometry
                 s.start("g", **{"class": "layer-route"})
                 s.link(record.anchor, pretty(link))
                 s.element("path", d=d, fill="none", stroke=GOLD,
-                          stroke_width=5.5, stroke_dasharray="2 9", opacity=".9")
-                pill(s, mid[0] - 15, mid[1] + 16, "R", GOLD, 30,
-                     background="#fff8e8")
+                          transform="translate(0,7)", stroke_width=3.4,
+                          stroke_dasharray="1 8", stroke_linecap="round",
+                          marker_end="url(#{})".format(marker_id(GOLD, "route")))
+                self.annotation(s, (mid[0], mid[1] + 7),
+                                "Route via {} · #{}".format(via, record.code),
+                                GOLD, dy=20)
                 s.end("a")
                 s.end()
             else:
                 self.connector(
-                    s, a, b, "R · " + str(link.get("kind", "link")),
+                    s, a, b, "Route · {} · #{}".format(link.get("kind", "link"), record.code),
                     GOLD, record, "route", dashed=True, width=2.5,
                     tooltip=pretty(link)
                 )
@@ -958,15 +1141,18 @@ class GraphScene:
             kind = event["kind"]
             s.link(record.anchor, pretty(event))
             # Label plates preserve readability where relations cross labels.
-            lines = snippet(event["label"], 22, 2)
-            box_y = y - 76
-            s.rect(x - 68, box_y, 136, 62, PAPER, 7, opacity=".96")
-            s.text(x, box_y + 16, record.code + " · " + kind, 10, color,
-                   text_anchor="middle", font_weight="700")
-            s.lines(x, box_y + 33, lines, 10, 14,
-                    fill=INK, text_anchor="middle")
+            lines = self.caption_lines[i]
+            box_x, box_y, box_width, box_height = self.event_box(i)
+            s.line(x, box_y + box_height, x, y - 14, color, 1.3)
+            s.rect(box_x, box_y, box_width, box_height, PAPER, 5,
+                   stroke=LINE, stroke_width=".7")
+            s.lines(x, box_y + 19, lines, 14, 18,
+                    fill=INK, text_anchor="middle", font_weight="650")
+            s.text(x, box_y + 20 + len(lines) * 18,
+                   "#{} · {}".format(record.code, kind), 10, MUTED,
+                   text_anchor="middle")
             s.element("circle", cx=x, cy=y, r=12, fill=WHITE,
-                      stroke=color, stroke_width=2, **{"class": "event-hit"})
+                      stroke=color, stroke_width=2.6, **{"class": "event-hit"})
             if kind == "split":
                 s.element("path", d="M {},{} l 6,6 -6,6 -6,-6 Z".format(x, y - 6),
                           fill=color)
@@ -999,7 +1185,6 @@ class GraphScene:
                               .format(event["id"], cite["source"]))
 
     def draw_beats(self, s):
-        occupied = Counter()
         for i, value in enumerate(self.beats):
             beat = obj(value)
             segment_id = beat.get("segment")
@@ -1007,18 +1192,18 @@ class GraphScene:
             world = obj(segment).get("universe", beat.get("universe"))
             order = beat.get("order")
             record = self.rec("beats", i)
-            if world not in self.wrow or not numeric(order):
+            if not isinstance(world, str) or world not in self.wrow or not numeric(order):
                 self.note("Beat {}: no supported world/order placement; retained in the index."
                           .format(beat.get("id", i + 1)))
                 continue
-            offset = occupied[(world, order)] * 23
-            occupied[(world, order)] += 1
-            y = self.row_height * (self.wrow[world] + .5)
+            y = self.row_centers[self.wrow[world]]
             x, yy = self.project(self.columns[order], y)
-            yy += 79 + offset
             s.start("g", **{"class": "layer-annotations"})
             s.link(record.anchor, pretty(value))
-            pill(s, x - 32, yy - 12, "◇ " + record.code, "#60787d", 64)
+            label = "{}\nEvolution · #{}".format(
+                beat.get("text", beat.get("label", beat.get("id", "Declared beat"))),
+                record.code)
+            self.annotation(s, (x, yy), label, "#60787d", dy=68)
             s.end("a")
             s.end()
 
@@ -1031,14 +1216,28 @@ class GraphScene:
             if p is None:
                 continue
             symbol, color = STATUS[fate["status"]]
-            offset = slots[fate.get("event")] * 24
+            offset = slots[fate.get("event")] * 32
             slots[fate.get("event")] += 1
-            label = "{} {} · {}".format(symbol, fate["status"], record.code)
-            width = len(label) * 6.5 + 16
+            person = fate.get("character", fate.get("traveller", fate.get("subject")))
+            if isinstance(person, dict):
+                person = person.get("name", person.get("label", person.get("id", compact(person))))
+            if person is None:
+                person = "Character unspecified"
+            names = wrap(person, 26)
+            width = max(190, max(len(line) for line in names) * 7.2 + 54)
+            height = len(names) * 17 + 31
             s.start("g", **{"class": "layer-annotations"})
             s.link(record.anchor, pretty(fate))
-            pill(s, p[0] - width / 2, p[1] + 104 + offset,
-                 label, color, width)
+            x, y, width, height = self.reserve_label(
+                s, p, width, height, color, dy=100 + offset)
+            s.rect(x, y, width, height, WHITE, 5, stroke=color, stroke_width=1.3)
+            # A fixed square status cell cannot be mistaken for a branch sign.
+            s.rect(x + 7, y + 8, 26, 26, PAPER, 2, stroke=color, stroke_width=1.5)
+            s.text(x + 20, y + 27, symbol, 19, color,
+                   text_anchor="middle", font_weight="750")
+            s.lines(x + 42, y + 18, names, 12, 17, font_weight="650")
+            s.text(x + 42, y + 20 + len(names) * 17,
+                   "{} · #{}".format(fate["status"], record.code), 11, MUTED)
             s.end("a")
             s.end()
 
